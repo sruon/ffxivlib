@@ -10,6 +10,8 @@ namespace ffxivlib
     {
         #region Fields
         private Int32 ffxiv_pid;
+        private Process ffxiv_process;
+        private MemoryReader mr = null;
         #endregion
         #region Constructors
         // Instanciation without PID
@@ -34,7 +36,9 @@ namespace ffxivlib
             {
                 throw new System.InvalidOperationException("Wrong MMS.");
             }
+            this.ffxiv_process = ffxiv_process;
             this.ffxiv_pid = ffxiv_process.Id;
+            this.mr = new MemoryReader(ffxiv_process);
             Console.WriteLine("PID is " + this.ffxiv_pid.ToString());
             #endregion
         }
@@ -46,8 +50,14 @@ namespace ffxivlib
         }
         #endregion
         #region Static methods
-        static public string Test()
+        public string TestMR()
         {
+          
+            int outres;
+            IntPtr pointer = mr.ReadPointerPath(Constants.OWNPCPTR);
+            Console.WriteLine("Adress of own PC is: " + pointer.ToString("X"));
+            var name = mr.ReadAdress((IntPtr)pointer, 32, out outres);
+            Console.WriteLine("Character name is: " + Encoding.UTF8.GetString(name, 0, name.Length));
             return "Test";
         }
         #endregion

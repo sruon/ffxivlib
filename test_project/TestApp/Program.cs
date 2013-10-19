@@ -11,6 +11,7 @@ namespace TestApp
         static void Main(string[] args)
         {
             FFXIVLIB lib = new FFXIVLIB();
+            lib.TestMR();
             Console.ReadLine();
         }
     }

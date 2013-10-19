@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Collections.Generic;
 
 namespace ffxivlib
 {
@@ -25,10 +26,11 @@ namespace ffxivlib
         #endregion
 
         private IntPtr _processHandle;
-
-        public MemoryReader(uint FFXIVPID)
+        private Process ffxiv_process;
+        public MemoryReader(Process ffxiv_process)
         {
-            OpenProcess(FFXIVPID);
+            this.ffxiv_process = ffxiv_process;
+            OpenProcess((uint)ffxiv_process.Id);
         }
 
         [DllImport("kernel32.dll")]
@@ -88,7 +90,29 @@ namespace ffxivlib
                 return new byte[] {0, 0, 0, 0};
             }
         }
+        public IntPtr ReadPointerPath(List<int> path)
+        {
+            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
+            IntPtr result = IntPtr.Zero;
+            int readBytes;
+            var count = path.Count;
+            var i = 0;
 
+            foreach (int pointer in path)
+            {
+                if (++i < count)
+                {
+                    currentPtr += pointer;
+                    var chunk = this.ReadAdress(currentPtr, 4, out readBytes);
+                    currentPtr = (IntPtr)BitConverter.ToInt32(chunk, 0);
+                }
+                else
+                {
+                    result = currentPtr + pointer;
+                }
+            }
+            return result;
+        }
         public void CloseHandle()
         {
             int retValue = CloseHandle(_processHandle);
