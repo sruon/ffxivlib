@@ -90,6 +90,18 @@ namespace ffxivlib
                 return new byte[] {0, 0, 0, 0};
             }
         }
+        // Only works for single pointer path for now (testing yadda yadda)
+        public IntPtr GetArrayStart(List<int> path)
+        {
+            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
+            IntPtr result = IntPtr.Zero;
+            foreach (int pointer in path)
+            {
+                currentPtr += pointer;
+            }
+            return currentPtr;
+        }
+
         public IntPtr ReadPointerPath(List<int> path)
         {
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;

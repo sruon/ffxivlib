@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
@@ -54,10 +55,27 @@ namespace ffxivlib
         {
           
             int outres;
-            IntPtr pointer = mr.ReadPointerPath(Constants.OWNPCPTR);
-            Console.WriteLine("Adress of own PC is: " + pointer.ToString("X"));
-            var name = mr.ReadAdress((IntPtr)pointer, 32, out outres);
-            Console.WriteLine("Character name is: " + Encoding.UTF8.GetString(name, 0, name.Length));
+            IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
+            Console.WriteLine("Adress of PC array is: " + pointer.ToString("X"));
+
+            for (int i = 0; i < 100; i++)
+            {
+                // Read the adress
+                var pcptr = mr.ReadAdress((IntPtr)pointer, 4, out outres);
+                var pcptr_ = (IntPtr)BitConverter.ToInt32(pcptr, 0);
+                if (pcptr_ != IntPtr.Zero)
+                {
+                    var mypcstruct = mr.ReadAdress((IntPtr)pcptr_, 6000, out outres);
+                    GCHandle handle = GCHandle.Alloc(mypcstruct, GCHandleType.Pinned);
+                    Player p = new Player();
+                    Player.PlayerS ownChar = (Player.PlayerS)Marshal.PtrToStructure(
+                        handle.AddrOfPinnedObject(), typeof(Player.PlayerS));
+                    handle.Free();
+                    Console.WriteLine("PC name is: " + p.getName(ownChar));
+                    Console.WriteLine("PC X position: " + p.getXPos(ownChar).ToString());
+                }
+                pointer += 4;
+            }
             return "Test";
         }
         #endregion
