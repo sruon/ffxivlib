@@ -43,7 +43,7 @@
     <Compile Include="FFXIVLIB.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="MemoryReader.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SigScanner.cs" />
   </ItemGroup>

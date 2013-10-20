@@ -101,7 +101,27 @@ namespace ffxivlib
             }
             return currentPtr;
         }
-
+        public List<T> ListOfObjects<T>(IntPtr arrayStart, uint range)
+        {
+            List<T> list = new List<T>();
+            IntPtr pointer = arrayStart;
+            int outres;
+            for (int i = 0; i < range; i++)
+            {
+                var next_node_address = ReadAdress(pointer, 4, out outres);
+                var next_node = (IntPtr)BitConverter.ToInt32(next_node_address, 0);
+                if (next_node != IntPtr.Zero)
+                {
+                    var mypcstruct = ReadAdress((IntPtr)next_node, (uint)Marshal.SizeOf(typeof(T)), out outres);
+                    GCHandle handle = GCHandle.Alloc(mypcstruct, GCHandleType.Pinned);
+                    T element = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+                    handle.Free();
+                    list.Add(element);
+                }
+                pointer += 0x4;
+            }
+            return list;
+        }
         public IntPtr ReadPointerPath(List<int> path)
         {
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
