@@ -6,18 +6,10 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    internal class Player
+    internal class Entity
     {
-        public string getName(PlayerS p)
-        {
-            return p.name;
-        }
-        public float getXPos(PlayerS p)
-        {
-            return p.X;
-        }
         [StructLayout(LayoutKind.Explicit, Pack=1)]
-        public struct PlayerS
+        public struct ENTITYINFO
         {
             [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)]
             [FieldOffset(0x30)]
@@ -45,7 +37,7 @@ namespace ffxivlib
             int ModelID;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x188)]
-            PSTATUS PlayerStatus;
+            ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x189)]
             bool IsGM;
@@ -82,7 +74,7 @@ namespace ffxivlib
 
         };
 
-        enum PSTATUS : byte
+        enum ENTITYSTATUS : byte
         {
             Idle = 0x01,
             Dead = 0x02,
