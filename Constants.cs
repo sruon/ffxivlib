@@ -14,5 +14,6 @@ static class Constants
         0x010BED9C,
         0x0
     };
+    public const uint ENTITY_ARRAY_SIZE = 100;
     #endregion
 }
