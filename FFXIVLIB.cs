@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.ComponentModel;
+using ObjectDumper;
 
 namespace ffxivlib
 {
+
     public class FFXIVLIB
     {
         #region Fields
@@ -16,6 +19,7 @@ namespace ffxivlib
         #endregion
         #region Constructors
         // Instanciation without PID
+
         public FFXIVLIB()
         {
             Process[] p = Process.GetProcessesByName(Constants.PROCESS_NAME);
@@ -37,46 +41,41 @@ namespace ffxivlib
             {
                 throw new System.InvalidOperationException("Wrong MMS.");
             }
+            #endregion
             this.ffxiv_process = ffxiv_process;
             this.ffxiv_pid = ffxiv_process.Id;
             this.mr = new MemoryReader(ffxiv_process);
-            Console.WriteLine("PID is " + this.ffxiv_pid.ToString());
-            #endregion
+            Debug.WriteLine("PID is " + this.ffxiv_pid.ToString());
         }
 
         // Instanciation with PID
         public FFXIVLIB(int pid)
         {
-            throw new System.NotImplementedException("NIE");
+            Process ffxiv_process = Process.GetProcessById(pid);
+            #region Sanity checks
+            if (!ffxiv_process.MainWindowTitle.Equals(Constants.WINDOW_TITLE))
+            {
+                throw new System.InvalidOperationException("We're might not be attaching to FFXIV, is something wrong?");
+            }
+            if (ffxiv_process.MainModule.ModuleMemorySize < Constants.PROCESS_MMS)
+            {
+                throw new System.InvalidOperationException("Wrong MMS.");
+            }
+            #endregion
+            this.ffxiv_process = ffxiv_process;
+            this.ffxiv_pid = ffxiv_process.Id;
+            this.mr = new MemoryReader(ffxiv_process);
         }
         #endregion
         #region Static methods
-        public string TestMR()
-        {
-          
-            int outres;
-            IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
-            Console.WriteLine("Adress of PC array is: " + pointer.ToString("X"));
 
-            for (int i = 0; i < 100; i++)
-            {
-                // Read the adress
-                var pcptr = mr.ReadAdress((IntPtr)pointer, 4, out outres);
-                var pcptr_ = (IntPtr)BitConverter.ToInt32(pcptr, 0);
-                if (pcptr_ != IntPtr.Zero)
-                {
-                    var mypcstruct = mr.ReadAdress((IntPtr)pcptr_, 6000, out outres);
-                    GCHandle handle = GCHandle.Alloc(mypcstruct, GCHandleType.Pinned);
-                    Player p = new Player();
-                    Player.PlayerS ownChar = (Player.PlayerS)Marshal.PtrToStructure(
-                        handle.AddrOfPinnedObject(), typeof(Player.PlayerS));
-                    handle.Free();
-                    Console.WriteLine("PC name is: " + p.getName(ownChar));
-                    Console.WriteLine("PC X position: " + p.getXPos(ownChar).ToString());
-                }
-                pointer += 4;
-            }
-            return "Test";
+        public Entity.ENTITYINFO getEntityInfo(int id)
+        {
+            if (id >= Constants.ENTITY_ARRAY_SIZE)
+                throw new IndexOutOfRangeException();
+            IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
+            Console.WriteLine("Adress of ENTITY array is: " + pointer.ToString("X"));
+            return mr.CreateStructFromAddress<Entity.ENTITYINFO>(IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4));
         }
         #endregion
     }
