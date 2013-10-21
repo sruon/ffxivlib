@@ -101,6 +101,28 @@ namespace ffxivlib
             }
             return currentPtr;
         }
+
+        public T CreateStructFromAddress<T>(IntPtr address)
+        {
+            int outres;
+            T structure = default(T);
+
+            var pointer = ReadAdress(address, 4, out outres);
+            var ffxiv_structure = (IntPtr)BitConverter.ToInt32(pointer, 0);
+            if (ffxiv_structure != IntPtr.Zero)
+            {
+                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
+                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+                handle.Free();
+            }
+            else
+            {
+                throw new Exception("Nothing at this address.");
+            }
+            return structure;
+        }
+
         public List<T> ListOfObjects<T>(IntPtr arrayStart, uint range)
         {
             List<T> list = new List<T>();
