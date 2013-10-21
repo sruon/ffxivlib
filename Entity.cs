@@ -6,7 +6,8 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    internal class Entity
+
+    public class Entity : IContainer<Entity>
     {
         [StructLayout(LayoutKind.Explicit, Pack=1)]
         public struct ENTITYINFO
@@ -73,7 +74,7 @@ namespace ffxivlib
             short mGP;
 
         };
-
+        #region Enums
         enum ENTITYSTATUS : byte
         {
             Idle = 0x01,
@@ -96,5 +97,6 @@ namespace ffxivlib
             Mob = 0x02,
             NPC = 0x03
         }
+        #endregion
     }
 }
