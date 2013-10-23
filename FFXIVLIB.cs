@@ -77,7 +77,7 @@ namespace ffxivlib
             if (id >= Constants.ENTITY_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
             IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4);
-            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), pointer);
+            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer));
             return e;
         }
         public PartyMember getPartyMemberInfo(int id)
@@ -92,7 +92,7 @@ namespace ffxivlib
         public Entity getCurrentTarget()
         {
             IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
-            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), pointer);
+            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer));
             return e;
         }
 

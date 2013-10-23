@@ -81,7 +81,7 @@ namespace ffxivlib
             {
             }
         }
-
+        
         public int WriteAddress(IntPtr memoryAddress, byte[] value)
         {
             int byteswritten;
@@ -122,6 +122,13 @@ namespace ffxivlib
                 bytesReaded = 0;
                 return new byte[] {0, 0, 0, 0};
             }
+        }
+        public IntPtr ResolveAddress(IntPtr pointer)
+        {
+            int outres;
+            var structure = ReadAdress(pointer, 4, out outres);
+            var target = (IntPtr)BitConverter.ToInt32(structure, 0);
+            return target;
         }
         // Only works for single pointer path for now (testing yadda yadda)
         public IntPtr GetArrayStart(List<int> path)
