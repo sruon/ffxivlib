@@ -18,9 +18,9 @@ namespace ffxivlib
         private MemoryReader mr = null;
         private SigScanner ss = null;
         #endregion
+
         #region Constructors
         // Instanciation without PID
-
         public FFXIVLIB()
         {
             Process[] p = Process.GetProcessesByName(Constants.PROCESS_NAME);
@@ -49,7 +49,6 @@ namespace ffxivlib
             this.ss = new SigScanner(this.ffxiv_pid, true);
             Debug.WriteLine("PID is " + this.ffxiv_pid.ToString());
         }
-
         // Instanciation with PID
         public FFXIVLIB(int pid)
         {
@@ -70,7 +69,6 @@ namespace ffxivlib
             this.ss = new SigScanner(this.ffxiv_pid, true);
         }
         #endregion
-
         #region Exposed funcs
         public Entity getEntityInfo(int id)
         {
