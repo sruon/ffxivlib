@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ffxivlib
 {
-    public class MemoryReader
+    public sealed class MemoryReader
     {
         #region ProcessAccessFlags
 
@@ -24,13 +24,29 @@ namespace ffxivlib
         }
 
         #endregion
-
+        static MemoryReader instance = null;
         private IntPtr _processHandle;
         private Process ffxiv_process;
-        public MemoryReader(Process ffxiv_process)
+        MemoryReader(Process ffxiv_process)
         {
             this.ffxiv_process = ffxiv_process;
             OpenProcess((uint)ffxiv_process.Id);
+        }
+        public static MemoryReader setInstance(Process ffxiv_process)
+        {
+            if (instance == null)
+            {
+                instance = new MemoryReader(ffxiv_process);
+            }
+            return instance;
+        }
+        public static MemoryReader getInstance()
+        {
+            if (instance == null)
+            {
+                throw new Exception("Something terrible happened.");
+            }
+            return instance;
         }
 
         [DllImport("kernel32.dll")]
@@ -52,6 +68,8 @@ namespace ffxivlib
             UInt32 size,
             out IntPtr lpNumberOfBytesRead
             );
+        [DllImport("kernel32.dll", SetLastError = true)]
+        static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, uint nSize, out int lpNumberOfBytesWritten);
 
         private void OpenProcess(uint FFXIVPID)
         {
@@ -64,6 +82,21 @@ namespace ffxivlib
             }
         }
 
+        public int WriteAddress(IntPtr memoryAddress, byte[] value)
+        {
+            int byteswritten;
+
+            try
+            {
+                WriteProcessMemory(_processHandle, memoryAddress, value, (UInt32)value.Length, out byteswritten);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Failed to WriteAddress: " + ex.Message);
+                return 0;
+            }
+            return byteswritten;
+        }
         public byte[] ReadAdress(IntPtr memoryAddress, uint bytesToRead,
                                  out int bytesReaded)
         {
@@ -103,6 +136,26 @@ namespace ffxivlib
         }
 
         public T CreateStructFromAddress<T>(IntPtr address)
+        {
+            int outres;
+            T structure = default(T);
+
+            var ffxiv_structure = address;
+            if (ffxiv_structure != IntPtr.Zero)
+            {
+                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
+                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+                handle.Free();
+            }
+            else
+            {
+                throw new Exception("Nothing at this address.");
+            }
+            return structure;
+        }
+
+        public T CreateStructFromPointer<T>(IntPtr address)
         {
             int outres;
             T structure = default(T);

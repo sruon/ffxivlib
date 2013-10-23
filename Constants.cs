@@ -14,6 +14,23 @@ static class Constants
         0x010BED9C,
         0x0
     };
+    // This is the widget for party
+    public static readonly List<int> PARTYPTR = new List<int>
+    {
+        0x0014B600,
+        0x0
+    };
+    public static readonly List<int> TARGETPTR = new List<int>
+    {
+        0x00C87644,
+        0x28
+    };
+    public static readonly List<int> PLAYERPTR = new List<int>
+    {
+        0x5C570,
+        0x0
+    };
     public const uint ENTITY_ARRAY_SIZE = 100;
+    public const uint PARTY_MEMBER_ARRAY_SIZE = 8;
     #endregion
 }

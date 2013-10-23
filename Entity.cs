@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 namespace ffxivlib
 {
 
-    public class Entity : IContainer<Entity>
+    public class Entity : IContainer<Entity, Entity.ENTITYINFO>
     {
         [StructLayout(LayoutKind.Explicit, Pack=1)]
         public struct ENTITYINFO
@@ -17,86 +17,67 @@ namespace ffxivlib
             public string name;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x74)] 
-            int MobID;
+            public int MobID;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x8A)] 
-            TYPE MobType;
+            public TYPE MobType;
             [MarshalAs(UnmanagedType.R4)]
             [FieldOffset(0xA0)] 
             public float X;
             [MarshalAs(UnmanagedType.R4)]
-            [FieldOffset(0xA4)] 
-            float Z;
+            [FieldOffset(0xA4)]
+            public float Z;
             [MarshalAs(UnmanagedType.R4)]
-            [FieldOffset(0xA8)] 
-            float Y;
+            [FieldOffset(0xA8)]
+            public float Y;
             [MarshalAs(UnmanagedType.R4)]
-            [FieldOffset(0xB0)] 
-            float heading;
+            [FieldOffset(0xB0)]
+            public float heading;
             [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x174)] 
-            int ModelID;
+            [FieldOffset(0x174)]
+            public int ModelID;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x188)]
-            ENTITYSTATUS PlayerStatus;
+            public ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x189)]
-            bool IsGM;
+            public bool IsGM;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x18A)]
-            byte icon;
+            public byte icon;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x195)]
-            STATUS IsEngaged;
+            public STATUS IsEngaged;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0xD58)]
-            int TargetId;
+            public int TargetId;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x1690)]
-            int cHP;
+            public int cHP;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x1694)]
-            int mHP;
+            public int mHP;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x1698)]
-            int cMP;
+            public int cMP;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x169C)]
-            int mMP;
+            public int mMP;
             [MarshalAs(UnmanagedType.I2)]
             [FieldOffset(0x16A0)]
-            short cTP;
+            public short cTP;
             [MarshalAs(UnmanagedType.I2)]
             [FieldOffset(0x16A2)]
-            short cGP;
+            public short cGP;
             [MarshalAs(UnmanagedType.I2)]
             [FieldOffset(0x16A4)]
-            short mGP;
+            public short mGP;
 
         };
-        #region Enums
-        enum ENTITYSTATUS : byte
+        public Entity(ENTITYINFO _structure, IntPtr _address)
         {
-            Idle = 0x01,
-            Dead = 0x02,
-            Sitting = 0x03,
-            Mounted = 0x04,
-            Crafting = 0x05,
-            Gathering = 0x06,
-            Melding = 0x07,
-            SMachine = 0x08
+            structure = _structure;
+            address = _address;
         }
-        enum STATUS : byte
-        {
-            Idle = 0x02,
-            Engaged = 0x06
-        }
-        enum TYPE : byte
-        {
-            Player = 0x01,
-            Mob = 0x02,
-            NPC = 0x03
-        }
-        #endregion
     }
 }
