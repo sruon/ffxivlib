@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ffxivlib
 {
-    public sealed class MemoryReader
+    internal sealed class MemoryReader
     {
         #region ProcessAccessFlags
         private enum ProcessAccessFlags : uint
