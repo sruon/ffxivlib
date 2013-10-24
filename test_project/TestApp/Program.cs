@@ -14,9 +14,7 @@ namespace TestApp
         {
             FFXIVLIB instance = new FFXIVLIB();
             Entity info = instance.getEntityInfo(0);
-            PartyMember pmember = instance.getPartyMemberInfo(0);
-            Player p = instance.getPlayerInfo();
-            info.modify<byte>("icon", 12);
+            info.modify<byte>("icon", 1);
             info = instance.getEntityInfo(0);
             Console.ReadLine();
         }

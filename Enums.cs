@@ -58,4 +58,36 @@
         Mob = 0x02,
         NPC = 0x03
     }
+    public enum ICON : byte
+    {
+        // I obviously don't know what most of these mean... names are tentative
+        None = 0x0,
+        Yoshida = 0x1,
+        GM = 0x2,
+        SGM = 0x3,
+        Clover = 0x4,
+        DC = 0x5,
+        Smiley = 0x6,
+        Red_cross = 0x9,
+        Grey_DC = 0xA,
+        Processing = 0xB,
+        Busy = 0xC,
+        Duty = 0xD,
+        Processing_yellow = 0xE,
+        Processing_grey = 0xF,
+        Cutscene = 0x10,
+        Chocobo = 0x12,
+        Sitting = 0x13,
+        Wrench_yellow = 0x14,
+        Wrench = 0x15,
+        Dice = 0x16,
+        Processing_green = 0x17,
+        Sword = 0x18,
+        DutyFinder = 0x19,
+        Alliance_leader = 0x1A,
+        Alliance_blue_leader = 0x1B,
+        Alliance_blue = 0x1C,
+        Sprout = 0x1F,
+        Gil = 0x20
+    }
 }
