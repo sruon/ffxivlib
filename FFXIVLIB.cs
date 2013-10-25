@@ -5,7 +5,6 @@ using System.Text;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
-using ObjectDumper;
 
 namespace ffxivlib
 {
