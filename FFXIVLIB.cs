@@ -17,6 +17,7 @@ namespace ffxivlib
         private Process ffxiv_process;
         private MemoryReader mr = null;
         private SigScanner ss = null;
+        private SendKeyInput ski = null;
         #endregion
 
         #region Constructors
@@ -47,6 +48,7 @@ namespace ffxivlib
             this.ffxiv_pid = ffxiv_process.Id;
             this.mr = MemoryReader.setInstance(ffxiv_process);
             this.ss = new SigScanner(this.ffxiv_pid, true);
+            this.ski = new SendKeyInput(ffxiv_process.MainWindowHandle);
             Debug.WriteLine("PID is " + this.ffxiv_pid.ToString());
         }
         // Instanciation with PID
@@ -70,6 +72,10 @@ namespace ffxivlib
         }
         #endregion
         #region Exposed funcs
+        public void Test()
+        {
+            ski.SendKeyPress(SendKeyInput.VKKeys.KEY_Y);
+        }
         public Entity getEntityInfo(int id)
         {
             if (id >= Constants.ENTITY_ARRAY_SIZE)

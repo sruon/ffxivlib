@@ -10,7 +10,7 @@ namespace ffxivlib
     public class IContainer<T, U>
     {
         protected IntPtr address;
-        protected U structure;
+        public U structure;
 
         public void modify<X>(string variable, X value)
         {
