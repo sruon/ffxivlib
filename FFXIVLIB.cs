@@ -71,9 +71,9 @@ namespace ffxivlib
         }
         #endregion
         #region Exposed funcs
-        public void Test()
+        public void SendKey(IntPtr key, int delay = 100)
         {
-            ski.SendKeyPress(SendKeyInput.VKKeys.KEY_Y);
+            ski.SendKeyPress((SendKeyInput.VKKeys)key, delay);
         }
         public Entity getEntityInfo(int id)
         {
@@ -97,6 +97,16 @@ namespace ffxivlib
             IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
             Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer));
             return e;
+        }
+
+        public Entity getPreviousTarget()
+        {
+            return null;
+        }
+
+        public Entity getMouseoverTarget()
+        {
+            return null;
         }
 
         public Player getPlayerInfo()

@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace ffxivlib
 {
-    public class SendKeyInput
+    internal class SendKeyInput
     {
         #region Imports
         // Return Type: BOOL->int     
@@ -432,26 +432,26 @@ namespace ffxivlib
         /// Send text string to game window
         /// </summary>
         /// <param name="cString"></param>
-        public void ConvertTextToInput(IEnumerable<char> cString)
+        public void ConvertTextToInput(IEnumerable<char> cString, int delay=300)
         {
             //SetFocus(FFXIVWindow);
             foreach (char c in cString)
             {
                 PostMessageWPTR(FFXIVWindow, WM_CHAR, new IntPtr(c), IntPtr.Zero); //Send the chars one by one
             }
-            Thread.Sleep(300);
+            Thread.Sleep(delay);
             SendReturnKey();
         }
 
         /// <summary>
         /// Send Enter keypress
         /// </summary>
-        public void SendReturnKey()
+        public void SendReturnKey(int delay = 100)
         {
             //
             PostMessage(FFXIVWindow, WM_KEYDOWN, VKKeys.RETURN,
                         (Int32)(MapVirtualKey((UInt16)VKKeys.RETURN, 0x00) << 16));
-            Thread.Sleep(100);
+            Thread.Sleep(delay);
             PostMessage(FFXIVWindow, WM_KEYUP, VKKeys.RETURN,
                         (Int32)(MapVirtualKey((UInt16)VKKeys.RETURN, 0x00) << 16));
         }
@@ -460,20 +460,13 @@ namespace ffxivlib
         /// Send KeyPress to FFXIV Client
         /// </summary>
         /// <param name="Key"></param>
-        public void SendKeyPress(VKKeys Key)
+        public void SendKeyPress(VKKeys Key, int delay = 100)
         {
             PostMessage(FFXIVWindow, WM_KEYDOWN, Key, 0);
-            Thread.Sleep(100);
+            Thread.Sleep(delay);
             PostMessage(FFXIVWindow, WM_KEYUP, Key, 0);
         }
-        public void SendMoveTest()
-        {
-            PostMessage(FFXIVWindow, WM_KEYDOWN, VKKeys.LBUTTON, 0);
-            PostMessage(FFXIVWindow, WM_KEYDOWN, VKKeys.RBUTTON, 0);
-            Thread.Sleep(30000);
-            PostMessage(FFXIVWindow, WM_KEYUP, VKKeys.LBUTTON, 0);
-            PostMessage(FFXIVWindow, WM_KEYUP, VKKeys.RBUTTON, 0);
-        }
+
         public void SetFocus()
         {
             SetFocus(FFXIVWindow);
@@ -482,26 +475,6 @@ namespace ffxivlib
         public void PostMessagePTR(uint Msg, IntPtr wParam, IntPtr lParam)
         {
             PostMessagePTR(FFXIVWindow, Msg, wParam, lParam);
-        }
-
-        public void EnterCraftModeViaMenu()
-        {
-            SendKeyPress(VKKeys.SUBTRACT);
-            SendReturnKey();
-        }
-
-        public void EnterCraftModeViaBinding(VKKeys binding)
-        {
-            SendKeyPress(binding);
-        }
-
-        /// <summary>
-        /// Sleep for # Milliseconds
-        /// </summary>
-        /// <param name="milliseconds"></param>
-        public void Sleep(int milliseconds)
-        {
-            Thread.Sleep(milliseconds);
         }
     }
 }

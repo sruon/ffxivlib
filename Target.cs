@@ -24,5 +24,10 @@ namespace ffxivlib
             [FieldOffset(0x60)]
             public int CurrentTargetID;
         }
+        public Target(TARGET _structure, IntPtr _address)
+        {
+            structure = _structure;
+            address = _address;
+        }
     }
 }
