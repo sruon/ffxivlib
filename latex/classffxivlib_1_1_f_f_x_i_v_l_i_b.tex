@@ -1,0 +1,196 @@
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b}{\section{ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B Class Reference}
+\label{classffxivlib_1_1_f_f_x_i_v_l_i_b}\index{ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa69576bcd69bdd2d43650d094614dbae}{{\bfseries F\-F\-X\-I\-V\-L\-I\-B} (int pid)}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa69576bcd69bdd2d43650d094614dbae}
+
+\item 
+void \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}{Send\-Key} (Int\-Ptr key, int delay=100)
+\begin{DoxyCompactList}\small\item\em This function sends a keystroke to the Final Fantasy X\-I\-V window \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}{get\-Entity\-Info} (int id)
+\begin{DoxyCompactList}\small\item\em This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object according to the position in the \hyperlink{classffxivlib_1_1_entity}{Entity} array You may effectively loop by yourself on this function. \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aeb451cfae304d94e04729c7ea5d26da6}{get\-Entity\-By\-Name} (string name)
+\begin{DoxyCompactList}\small\item\em This function attempts to retrieve an \hyperlink{classffxivlib_1_1_entity}{Entity} by its name in the \hyperlink{classffxivlib_1_1_entity}{Entity} array This is potentially a costly call as we build a complete list to look for the \hyperlink{classffxivlib_1_1_entity}{Entity}. \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{get\-Party\-Member\-Info} (int id)
+\begin{DoxyCompactList}\small\item\em This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{get\-Current\-Target} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}{get\-Previous\-Target} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the previous target \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}{get\-Mouseover\-Target} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the current Mouseover target \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{get\-Player\-Info} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info \end{DoxyCompactList}\item 
+Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{get\-Sig\-Scan} (byte\mbox{[}$\,$\mbox{]} signature)
+\begin{DoxyCompactList}\small\item\em Finds address of specified signature This hasnt been tested in a long time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Current\-Target@{get\-Current\-Target}}
+\index{get\-Current\-Target@{get\-Current\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Current\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Current\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}
+
+
+This function retrieves the current target 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aeb451cfae304d94e04729c7ea5d26da6}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-By\-Name@{get\-Entity\-By\-Name}}
+\index{get\-Entity\-By\-Name@{get\-Entity\-By\-Name}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Entity\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aeb451cfae304d94e04729c7ea5d26da6}
+
+
+This function attempts to retrieve an \hyperlink{classffxivlib_1_1_entity}{Entity} by its name in the \hyperlink{classffxivlib_1_1_entity}{Entity} array This is potentially a costly call as we build a complete list to look for the \hyperlink{classffxivlib_1_1_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the \hyperlink{classffxivlib_1_1_entity}{Entity} to be retrieved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-Info@{get\-Entity\-Info}}
+\index{get\-Entity\-Info@{get\-Entity\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Entity\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-Info (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}
+
+
+This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object according to the position in the \hyperlink{classffxivlib_1_1_entity}{Entity} array You may effectively loop by yourself on this function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Position in the \hyperlink{classffxivlib_1_1_entity}{Entity} Array, use Constants.\-E\-N\-T\-I\-T\-Y\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-I\-Z\-E as your max (exclusive)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Index\-Out\-Of\-Range\-Exception} & Out of range\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Mouseover\-Target@{get\-Mouseover\-Target}}
+\index{get\-Mouseover\-Target@{get\-Mouseover\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Mouseover\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Mouseover\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}
+
+
+This function retrieves the current Mouseover target 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Party\-Member\-Info@{get\-Party\-Member\-Info}}
+\index{get\-Party\-Member\-Info@{get\-Party\-Member\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Party\-Member\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Party\-Member} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Party\-Member\-Info (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}
+
+
+This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Position in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} Array, use Constants.\-P\-A\-R\-T\-Y\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-I\-Z\-E as your max (exclusive)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} object
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Index\-Out\-Of\-Range\-Exception} & Out of range\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Player\-Info@{get\-Player\-Info}}
+\index{get\-Player\-Info@{get\-Player\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Player\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Player\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}
+
+
+This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_player}{Player} object
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Previous\-Target@{get\-Previous\-Target}}
+\index{get\-Previous\-Target@{get\-Previous\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Previous\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Previous\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}
+
+
+This function retrieves the previous target 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Sig\-Scan@{get\-Sig\-Scan}}
+\index{get\-Sig\-Scan@{get\-Sig\-Scan}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Sig\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Sig\-Scan (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{signature}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}
+
+
+Finds address of specified signature This hasnt been tested in a long time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signature} & Signature to look for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int\-Ptr of address found or Int\-Ptr.\-Zero
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Send\-Key@{Send\-Key}}
+\index{Send\-Key@{Send\-Key}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Send\-Key}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Send\-Key (
+\begin{DoxyParamCaption}
+\item[{Int\-Ptr}]{key, }
+\item[{int}]{delay = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}
+
+
+This function sends a keystroke to the Final Fantasy X\-I\-V window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to press (see Virtual Key Codes for information)\\
+\hline
+{\em delay} & (Optional) Delay between keypress down and keypress up\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+F\-F\-X\-I\-V\-L\-I\-B.\-cs\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\hypertarget{namespaceffxivlib}{\section{Package ffxivlib}
+\label{namespaceffxivlib}\index{ffxivlib@{ffxivlib}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classffxivlib_1_1_entity}{Entity}
+\item 
+class \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B}
+\item 
+class \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4}{I\-Container$<$ T, U $>$}
+\item 
+class {\bfseries Memory\-Reader}
+\item 
+class \hyperlink{classffxivlib_1_1_party_member}{Party\-Member}
+\item 
+class \hyperlink{classffxivlib_1_1_player}{Player}
+\item 
+class {\bfseries Send\-Key\-Input}
+\item 
+class {\bfseries Sig\-Scanner}
+\item 
+class \hyperlink{classffxivlib_1_1_target}{Target}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries J\-O\-B} \-: byte \{ \\*
+{\bfseries G\-L\-D} = 0x1, 
+{\bfseries P\-G\-L} = 0x2, 
+{\bfseries M\-R\-D} = 0x3, 
+{\bfseries L\-N\-C} = 0x4, 
+\\*
+{\bfseries A\-R\-C} = 0x5, 
+{\bfseries C\-N\-J} = 0x6, 
+{\bfseries T\-H\-M} = 0x7, 
+{\bfseries C\-P\-T} = 0x8, 
+\\*
+{\bfseries B\-S\-M} = 0x9, 
+{\bfseries A\-R\-M} = 0x\-A, 
+{\bfseries G\-S\-M} = 0x\-B, 
+{\bfseries L\-T\-W} = 0x\-C, 
+\\*
+{\bfseries W\-V\-R} = 0x\-D, 
+{\bfseries A\-L\-C} = 0x\-E, 
+{\bfseries C\-U\-L} = 0x\-F, 
+{\bfseries M\-I\-N} = 0x10, 
+\\*
+{\bfseries B\-O\-T} = 0x11, 
+{\bfseries F\-S\-H} = 0x12, 
+{\bfseries P\-L\-D} = 0x13, 
+{\bfseries M\-N\-K} = 0x14, 
+\\*
+{\bfseries W\-A\-R} = 0x15, 
+{\bfseries D\-R\-G} = 0x16, 
+{\bfseries B\-R\-D} = 0x17, 
+{\bfseries W\-H\-M} = 0x18, 
+\\*
+{\bfseries B\-L\-M} = 0x19, 
+{\bfseries A\-C\-N} = 0x2\-A, 
+{\bfseries S\-M\-N} = 0x2\-B, 
+{\bfseries S\-C\-H} = 0x2\-C, 
+\\*
+{\bfseries Chocobo} = 0x2\-D, 
+{\bfseries Pet} = 0x2\-E
+ \}
+\item 
+enum {\bfseries B\-U\-F\-F} \-: byte 
+\item 
+enum {\bfseries E\-N\-T\-I\-T\-Y\-S\-T\-A\-T\-U\-S} \-: byte \{ \\*
+{\bfseries Idle} = 0x01, 
+{\bfseries Dead} = 0x02, 
+{\bfseries Sitting} = 0x03, 
+{\bfseries Mounted} = 0x04, 
+\\*
+{\bfseries Crafting} = 0x05, 
+{\bfseries Gathering} = 0x06, 
+{\bfseries Melding} = 0x07, 
+{\bfseries S\-Machine} = 0x08
+ \}
+\item 
+enum {\bfseries S\-T\-A\-T\-U\-S} \-: byte \{ {\bfseries Engaged} = 0x01, 
+{\bfseries Idle} = 0x02
+ \}
+\item 
+enum {\bfseries T\-Y\-P\-E} \-: byte \{ {\bfseries Player} = 0x01, 
+{\bfseries Mob} = 0x02, 
+{\bfseries N\-P\-C} = 0x03
+ \}
+\item 
+enum {\bfseries I\-C\-O\-N} \-: byte \{ \\*
+{\bfseries None} = 0x0, 
+{\bfseries Yoshida} = 0x1, 
+{\bfseries G\-M} = 0x2, 
+{\bfseries S\-G\-M} = 0x3, 
+\\*
+{\bfseries Clover} = 0x4, 
+{\bfseries D\-C} = 0x5, 
+{\bfseries Smiley} = 0x6, 
+{\bfseries Red\-\_\-cross} = 0x9, 
+\\*
+{\bfseries Grey\-\_\-\-D\-C} = 0x\-A, 
+{\bfseries Processing} = 0x\-B, 
+{\bfseries Busy} = 0x\-C, 
+{\bfseries Duty} = 0x\-D, 
+\\*
+{\bfseries Processing\-\_\-yellow} = 0x\-E, 
+{\bfseries Processing\-\_\-grey} = 0x\-F, 
+{\bfseries Cutscene} = 0x10, 
+{\bfseries Chocobo} = 0x12, 
+\\*
+{\bfseries Sitting} = 0x13, 
+{\bfseries Wrench\-\_\-yellow} = 0x14, 
+{\bfseries Wrench} = 0x15, 
+{\bfseries Dice} = 0x16, 
+\\*
+{\bfseries Processing\-\_\-green} = 0x17, 
+{\bfseries Sword} = 0x18, 
+{\bfseries Duty\-Finder} = 0x19, 
+{\bfseries Alliance\-\_\-leader} = 0x1\-A, 
+\\*
+{\bfseries Alliance\-\_\-blue\-\_\-leader} = 0x1\-B, 
+{\bfseries Alliance\-\_\-blue} = 0x1\-C, 
+{\bfseries Sprout} = 0x1\-F, 
+{\bfseries Gil} = 0x20
+ \}
+\item 
+enum {\bfseries C\-U\-R\-R\-E\-N\-T\-T\-A\-R\-G\-E\-T} \-: byte \{ {\bfseries True} = 0x2, 
+{\bfseries False} = 0x4
+ \}
+\end{DoxyCompactItemize}
