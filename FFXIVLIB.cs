@@ -18,7 +18,6 @@ namespace ffxivlib
         private SigScanner ss = null;
         private SendKeyInput ski = null;
         #endregion
-
         #region Constructors
         // Instanciation without PID
         public FFXIVLIB()
@@ -70,19 +69,69 @@ namespace ffxivlib
             this.ss = new SigScanner(this.ffxiv_pid, true);
         }
         #endregion
-        #region Exposed funcs
+        /// <summary>
+        /// This function sends a keystroke to the Final Fantasy XIV window
+        /// </summary>
+        /// <param name="key">Key to press (see Virtual Key Codes for information)</param>
+        /// <param name="delay">(Optional) Delay between keypress down and keypress up</param>
         public void SendKey(IntPtr key, int delay = 100)
         {
             ski.SendKeyPress((SendKeyInput.VKKeys)key, delay);
         }
+        /// <summary>
+        /// This function build an Entity object according to the position in the Entity array
+        /// You may effectively loop by yourself on this function.
+        /// </summary>
+        /// <param name="id">Position in the Entity Array, use Constants.ENTITY_ARRAY_SIZE as your max (exclusive)</param>
+        /// <returns>Entity object or null</returns>
+        /// <exception cref="System.IndexOutOfRangeException">Out of range</exception>
         public Entity getEntityInfo(int id)
         {
             if (id >= Constants.ENTITY_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
             IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4);
-            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer));
-            return e;
+            try
+            {
+                Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer)); 
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
+        /// <summary>
+        /// This function attempts to retrieve an Entity by its name in the Entity array
+        /// This is potentially a costly call as we build a complete list to look for the Entity.
+        /// </summary>
+        /// <param name="name">Name of the Entity to be retrieved</param>
+        /// <returns>Entity object or null</returns>
+        public Entity getEntityByName(string name)
+        {
+            IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
+            List<Entity> entity_list = new List<Entity>();
+            for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
+            {
+                IntPtr address = pointer + (i * 0x4);
+                try
+                {
+                    entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
+                }
+                catch (Exception)
+                {
+                    // No Entity at this position
+                }
+            }
+            Entity result = entity_list.SingleOrDefault(obj => obj.structure.name == name);
+            return result;
+        }
+        /// <summary>
+        /// This function retrieves a PartyMember by its id in the PartyMember array
+        /// The result might be empty, there is no sanity check at the time
+        /// </summary>
+        /// <param name="id">Position in the PartyMember Array, use Constants.PARTY_MEMBER_ARRAY_SIZE as your max (exclusive)</param>
+        /// <returns>PartyMember object</returns>
+        /// <exception cref="System.IndexOutOfRangeException">Out of range</exception>
         public PartyMember getPartyMemberInfo(int id)
         {
             if (id >= Constants.PARTY_MEMBER_ARRAY_SIZE)
@@ -92,37 +141,80 @@ namespace ffxivlib
             PartyMember p = new PartyMember(mr.CreateStructFromAddress<PartyMember.PARTYMEMBERINFO>(pointer), pointer);
             return p;
         }
+        /// <summary>
+        /// This function retrieves the current target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
         public Entity getCurrentTarget()
         {
             IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
-            Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer));
-            return e;
+            Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                Entity e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.CurrentTarget), (IntPtr)t.structure.CurrentTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
-
+        /// <summary>
+        /// This function retrieves the previous target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
         public Entity getPreviousTarget()
         {
-            return null;
+            IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
+            Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                Entity e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.PreviousTarget), (IntPtr)t.structure.PreviousTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
-
+        /// <summary>
+        /// This function retrieves the current Mouseover target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
         public Entity getMouseoverTarget()
         {
-            return null;
+            IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
+            Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                Entity e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.MouseoverTarget), (IntPtr)t.structure.MouseoverTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
-
+        /// <summary>
+        /// This function retrieves the current Player info
+        /// </summary>
+        /// <returns>Player object</returns>
         public Player getPlayerInfo()
         {
             IntPtr pointer = mr.ReadPointerPath(Constants.PLAYERPTR);
             Player p = new Player(mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }
-        /*
-         * This is not useful to us right now, I'm providing it as a helper for people to do custom stuff
-         * I have not tested it for a very long time.
-         */
+        /// <summary>
+        /// Finds address of specified signature
+        /// This hasnt been tested in a long time
+        /// </summary>
+        /// <param name="signature">Signature to look for</param>
+        /// <returns>IntPtr of address found or IntPtr.Zero</returns>
         public IntPtr getSigScan(byte[] signature)
         {
             return this.ss.SigScan(signature);
         }
-        #endregion
+        
     }
 }
