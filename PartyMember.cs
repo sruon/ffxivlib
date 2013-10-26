@@ -66,7 +66,7 @@ namespace ffxivlib
         {
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0)]
-            public BUFF buff;
+            public byte buff;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x8)]
             public int provider;
