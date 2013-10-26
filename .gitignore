@@ -108,3 +108,4 @@ Backup*/
 UpgradeLog*.XML
 us.stackdump
 test_project/TestApp/ffxivlib.dll
+html/
