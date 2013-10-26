@@ -14,7 +14,7 @@ namespace ffxivlib
     /// <typeparam name="U">Structure type</typeparam>
     public class IContainer<T, U>
     {
-        protected IntPtr address;
+        public IntPtr address;
         public U structure;
         /// <summary>
         /// This function computes the address inside FFXIV process space to be modified for a given field

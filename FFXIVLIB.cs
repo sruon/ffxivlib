@@ -165,6 +165,16 @@ namespace ffxivlib
             }
         }
         /// <summary>
+        /// This function retrieves the target array
+        /// </summary>
+        /// <returns>Target object</returns>
+        public Target getTargets()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
+            Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            return t;
+        }
+        /// <summary>
         /// This function retrieves the previous target
         /// </summary>
         /// <returns>Entity object or null</returns>
