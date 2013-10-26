@@ -8,7 +8,6 @@ using System.ComponentModel;
 
 namespace ffxivlib
 {
-
     public class FFXIVLIB
     {
         #region Fields
@@ -19,7 +18,10 @@ namespace ffxivlib
         private SendKeyInput ski = null;
         #endregion
         #region Constructors
-        // Instanciation without PID
+        /// <summary>
+        /// Instantiates FFXIVLIB.
+        /// </summary>
+        /// <remarks>There can only be one FFXIV process running for this to work.</remarks>
         public FFXIVLIB()
         {
             Process[] p = Process.GetProcessesByName(Constants.PROCESS_NAME);
@@ -49,7 +51,10 @@ namespace ffxivlib
             this.ski = new SendKeyInput(ffxiv_process.MainWindowHandle);
             Debug.WriteLine("PID is " + this.ffxiv_pid.ToString());
         }
-        // Instanciation with PID
+        /// <summary>
+        /// Instantiates FFXIVLIB with a given PID.
+        /// </summary>
+        /// <param name="pid">FFXIV PID</param>
         public FFXIVLIB(int pid)
         {
             Process ffxiv_process = Process.GetProcessById(pid);
@@ -92,7 +97,7 @@ namespace ffxivlib
             IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4);
             try
             {
-                Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolveAddress(pointer)); 
+                Entity e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolvePointer(pointer)); 
                 return e;
             }
             catch (Exception)
@@ -136,7 +141,7 @@ namespace ffxivlib
         {
             if (id >= Constants.PARTY_MEMBER_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
-            IntPtr pointer = mr.ReadPointerPath(Constants.PARTYPTR);
+            IntPtr pointer = mr.ResolvePointerPath(Constants.PARTYPTR);
             pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof(PartyMember.PARTYMEMBERINFO)) * id);
             PartyMember p = new PartyMember(mr.CreateStructFromAddress<PartyMember.PARTYMEMBERINFO>(pointer), pointer);
             return p;
@@ -147,7 +152,7 @@ namespace ffxivlib
         /// <returns>Entity object or null</returns>
         public Entity getCurrentTarget()
         {
-            IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
             {
@@ -165,7 +170,7 @@ namespace ffxivlib
         /// <returns>Entity object or null</returns>
         public Entity getPreviousTarget()
         {
-            IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
             {
@@ -183,7 +188,7 @@ namespace ffxivlib
         /// <returns>Entity object or null</returns>
         public Entity getMouseoverTarget()
         {
-            IntPtr pointer = mr.ReadPointerPath(Constants.TARGETPTR);
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             Target t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
             {
@@ -201,7 +206,7 @@ namespace ffxivlib
         /// <returns>Player object</returns>
         public Player getPlayerInfo()
         {
-            IntPtr pointer = mr.ReadPointerPath(Constants.PLAYERPTR);
+            IntPtr pointer = mr.ResolvePointerPath(Constants.PLAYERPTR);
             Player p = new Player(mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }

@@ -7,13 +7,25 @@ using System.Reflection;
 
 namespace ffxivlib
 {
+    /// <summary>
+    /// Basic managed container for structures and other infos
+    /// </summary>
+    /// <typeparam name="T">Managed object type</typeparam>
+    /// <typeparam name="U">Structure type</typeparam>
     public class IContainer<T, U>
     {
         protected IntPtr address;
         public U structure;
-        public void modify<X>(string variable, X value)
+        /// <summary>
+        /// This function computes the address inside FFXIV process space to be modified for a given field
+        /// and then modifies it.
+        /// </summary>
+        /// <typeparam name="X">Type of the value to modify, stick to base types</typeparam>
+        /// <param name="field">Name of the structure field to modify</param>
+        /// <param name="value">Value to assign to field</param>
+        public void modify<X>(string field, X value)
         {
-            IntPtr tobemodified = IntPtr.Add(address, (int)Marshal.OffsetOf(typeof(U), variable));
+            IntPtr tobemodified = IntPtr.Add(address, (int)Marshal.OffsetOf(typeof(U), field));
                try
                 {
                     var byte_value = typeof(BitConverter).GetMethod("GetBytes", new Type[] { value.GetType() })

@@ -28,15 +28,27 @@ namespace ffxivlib
         private Process ffxiv_process;
         #endregion
         #region [C|D]tor/setters
-        MemoryReader(Process ffxiv_process)
+        /// <summary>
+        /// Private constructor
+        /// </summary>
+        /// <param name="ffxiv_process">FFXIV Process</param>
+        private MemoryReader(Process ffxiv_process)
         {
             this.ffxiv_process = ffxiv_process;
             OpenProcess((uint)ffxiv_process.Id);
         }
+        /// <summary>
+        /// Destructor, make sure we close the handle.
+        /// </summary>
         ~MemoryReader()
         {
-            CloseHandle(this._processHandle);
+            CloseHandle(_processHandle);
         }
+        /// <summary>
+        /// This is the Singleton instance creator
+        /// </summary>
+        /// <param name="ffxiv_process">FFXIV Process</param>
+        /// <returns>The single MR instance</returns>
         public static MemoryReader setInstance(Process ffxiv_process)
         {
             if (instance == null)
@@ -45,6 +57,11 @@ namespace ffxivlib
             }
             return instance;
         }
+        /// <summary>
+        /// Retrieve the singleton instance.
+        /// This will choke in its own vomit if called before setInstance()
+        /// </summary>
+        /// <returns>The single MR instance</returns>
         public static MemoryReader getInstance()
         {
             if (instance == null)
@@ -64,13 +81,13 @@ namespace ffxivlib
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, uint nSize, out int lpNumberOfBytesWritten);
         #endregion
-        #region Write/Read/Close trifecta
-        public void CloseHandle()
-        {
-            int retValue = CloseHandle(_processHandle);
-            if (retValue == 0)
-                throw new Exception("CloseHandle failed");
-        }
+        #region kernel32 wrapper
+        /// <summary>
+        /// Simple wrapper function around WriteProcessMemory. Size is automatically determined.
+        /// </summary>
+        /// <param name="memoryAddress">Adress to write at in FFXIV memory</param>
+        /// <param name="value">Array of byte representing what's to be written</param>
+        /// <returns>Amount of bytes written or 0.</returns>
         public int WriteAddress(IntPtr memoryAddress, byte[] value)
         {
             int byteswritten;
@@ -86,7 +103,14 @@ namespace ffxivlib
             }
             return byteswritten;
         }
-        public byte[] ReadAdress(IntPtr memoryAddress, uint bytesToRead, out int bytesReaded)
+        /// <summary>
+        /// Simple wrapper function around ReadProcessMemory
+        /// </summary>
+        /// <param name="memoryAddress">Adress to read in FFXIV memory</param>
+        /// <param name="bytesToRead">Amount of bytes to read</param>
+        /// <param name="bytesRead">Out value for the amount of bytes effectively read</param>
+        /// <returns>Array of byte representing what was read or [0, 0, 0, 0] on failure.</returns>
+        public byte[] ReadAdress(IntPtr memoryAddress, uint bytesToRead, out int bytesRead)
         {
             try
             {
@@ -95,19 +119,19 @@ namespace ffxivlib
                     var buffer = new byte[bytesToRead];
                     IntPtr ptrBytesReaded;
                     ReadProcessMemory(_processHandle, memoryAddress, buffer, bytesToRead, out ptrBytesReaded);
-                    bytesReaded = ptrBytesReaded.ToInt32();
+                    bytesRead = ptrBytesReaded.ToInt32();
                     return buffer;
                 }
                 else
                 {
-                    bytesReaded = 0;
+                    bytesRead = 0;
                     return new byte[] {0, 0, 0, 0};
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("Error in ReadAddress Function: " + ex.Message);
-                bytesReaded = 0;
+                bytesRead = 0;
                 return new byte[] {0, 0, 0, 0};
             }
         }
@@ -123,64 +147,24 @@ namespace ffxivlib
             {
             }
         }
-        public IntPtr ResolveAddress(IntPtr pointer)
+        /// <summary>
+        /// Simple pointer reading
+        /// </summary>
+        /// <param name="pointer">Pointer to read</param>
+        /// <returns>Address pointed</returns>
+        public IntPtr ResolvePointer(IntPtr pointer)
         {
             int outres;
             var structure = ReadAdress(pointer, 4, out outres);
             var target = (IntPtr)BitConverter.ToInt32(structure, 0);
             return target;
         }
-        public IntPtr GetArrayStart(List<int> path)
-        {
-            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
-            IntPtr result = IntPtr.Zero;
-            foreach (int pointer in path)
-            {
-                currentPtr += pointer;
-            }
-            return currentPtr;
-        }
-        public T CreateStructFromAddress<T>(IntPtr address)
-        {
-            int outres;
-            T structure = default(T);
-
-            var ffxiv_structure = address;
-            if (ffxiv_structure != IntPtr.Zero)
-            {
-                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
-                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
-                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
-                handle.Free();
-            }
-            else
-            {
-                throw new Exception("Nothing at this address.");
-            }
-            return structure;
-        }
-        public T CreateStructFromPointer<T>(IntPtr address)
-        {
-            int outres;
-            T structure = default(T);
-
-            var pointer = ReadAdress(address, 4, out outres);
-            var ffxiv_structure = (IntPtr)BitConverter.ToInt32(pointer, 0);
-            if (ffxiv_structure != IntPtr.Zero)
-            {
-                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
-                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
-                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
-                handle.Free();
-            }
-            else
-            {
-                throw new Exception("Nothing at this address.");
-            }
-            return structure;
-        }
-        
-        public IntPtr ReadPointerPath(List<int> path)
+        /// <summary>
+        /// Follows a pointer path (MLP)
+        /// </summary>
+        /// <param name="path">List of pointers to follow, last element is expected to be an offset to be added to the final result.</param>
+        /// <returns>Final address</returns>
+        public IntPtr ResolvePointerPath(List<int> path)
         {
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
             IntPtr result = IntPtr.Zero;
@@ -203,6 +187,77 @@ namespace ffxivlib
             }
             return result;
         }
+        /// <summary>
+        /// This is pretty useless, adds base module to a single level offset.
+        /// This should be removed in favor of something more generic.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public IntPtr GetArrayStart(List<int> path)
+        {
+            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
+            IntPtr result = IntPtr.Zero;
+            foreach (int pointer in path)
+            {
+                currentPtr += pointer;
+            }
+            return currentPtr;
+        }
+        /// <summary>
+        /// Builds a structure 1:1 from FFXIV Memory
+        /// </summary>
+        /// <typeparam name="T">Type of the structure to create</typeparam>
+        /// <param name="address">Address in FFXIV to start reading from</param>
+        /// <returns>Created Structure</returns>
+        /// <exception cref="Exception">Throws an exception if address is IntPtr.Zero</exception>
+        public T CreateStructFromAddress<T>(IntPtr address)
+        {
+            int outres;
+            T structure = default(T);
+
+            var ffxiv_structure = address;
+            if (ffxiv_structure != IntPtr.Zero)
+            {
+                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
+                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+                handle.Free();
+            }
+            else
+            {
+                throw new Exception("Nothing at this address.");
+            }
+            return structure;
+        }
+        /// <summary>
+        /// Builds a structure 1:1 from FFXIV Memory, after dereferencing a pointer.
+        /// This should be removed and simply replaced by ResolvePointer in the primary calls
+        /// </summary>
+        /// <typeparam name="T">Type of the structure to create</typeparam>
+        /// <param name="address">Address of pointer in FFXIV to dereference</param>
+        /// <returns>Created Structure</returns>
+        /// <exception cref="Exception">Throws an exception if pointer result is IntPtr.Zero</exception>
+        public T CreateStructFromPointer<T>(IntPtr address)
+        {
+            int outres;
+            T structure = default(T);
+
+            var pointer = ReadAdress(address, 4, out outres);
+            var ffxiv_structure = (IntPtr)BitConverter.ToInt32(pointer, 0);
+            if (ffxiv_structure != IntPtr.Zero)
+            {
+                var chunk = ReadAdress(ffxiv_structure, (uint)Marshal.SizeOf(typeof(T)), out outres);
+                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+                handle.Free();
+            }
+            else
+            {
+                throw new Exception("Nothing at this address.");
+            }
+            return structure;
+        }
+
         #endregion
     }
 }
