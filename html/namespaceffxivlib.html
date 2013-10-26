@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li><a href="namespacemembers.html"><span>Package&#160;Functions</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,6 +96,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html">FFXIVLIB</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html">IContainer&lt; T, U &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic managed container for structures and other infos  <a href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>MemoryReader</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +113,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7273810711af045adb7151580e025a86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>JOB</b> : byte { <br/>
+<tr class="memitem:a7273810711af045adb7151580e025a86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#a7273810711af045adb7151580e025a86">JOB</a> : byte { <br/>
 &#160;&#160;<b>GLD</b> = 0x1, 
 <b>PGL</b> = 0x2, 
 <b>MRD</b> = 0x3, 
@@ -151,10 +153,9 @@ Enumerations</h2></td></tr>
 <b>Pet</b> = 0x2E
 <br/>
  }</td></tr>
+<tr class="memdesc:a7273810711af045adb7151580e025a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Job ID as used in various structures  <a href="namespaceffxivlib.html#a7273810711af045adb7151580e025a86">More...</a><br/></td></tr>
 <tr class="separator:a7273810711af045adb7151580e025a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9fe48732b454c4242ea8392fc4165a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>BUFF</b> : byte </td></tr>
-<tr class="separator:a9a9fe48732b454c4242ea8392fc4165a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f054414b7ccf7ba7c36f54fcc392f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ENTITYSTATUS</b> : byte { <br/>
+<tr class="memitem:a93f054414b7ccf7ba7c36f54fcc392f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#a93f054414b7ccf7ba7c36f54fcc392f5">ENTITYSTATUS</a> : byte { <br/>
 &#160;&#160;<b>Idle</b> = 0x01, 
 <b>Dead</b> = 0x02, 
 <b>Sitting</b> = 0x03, 
@@ -166,17 +167,20 @@ Enumerations</h2></td></tr>
 <b>SMachine</b> = 0x08
 <br/>
  }</td></tr>
+<tr class="memdesc:a93f054414b7ccf7ba7c36f54fcc392f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current action of an Entity (PC)  <a href="namespaceffxivlib.html#a93f054414b7ccf7ba7c36f54fcc392f5">More...</a><br/></td></tr>
 <tr class="separator:a93f054414b7ccf7ba7c36f54fcc392f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856915176aeab1f9b643c0243cb008ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>STATUS</b> : byte { <b>Engaged</b> = 0x01, 
+<tr class="memitem:a856915176aeab1f9b643c0243cb008ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#a856915176aeab1f9b643c0243cb008ee">STATUS</a> : byte { <b>Engaged</b> = 0x01, 
 <b>Idle</b> = 0x02
  }</td></tr>
+<tr class="memdesc:a856915176aeab1f9b643c0243cb008ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of an Entity (PC/NPC)  <a href="namespaceffxivlib.html#a856915176aeab1f9b643c0243cb008ee">More...</a><br/></td></tr>
 <tr class="separator:a856915176aeab1f9b643c0243cb008ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4e86d1ea6dbc1661147e6616256e68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b> : byte { <b>Player</b> = 0x01, 
+<tr class="memitem:aaa4e86d1ea6dbc1661147e6616256e68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">TYPE</a> : byte { <b>Player</b> = 0x01, 
 <b>Mob</b> = 0x02, 
 <b>NPC</b> = 0x03
  }</td></tr>
+<tr class="memdesc:aaa4e86d1ea6dbc1661147e6616256e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the entity  <a href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">More...</a><br/></td></tr>
 <tr class="separator:aaa4e86d1ea6dbc1661147e6616256e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a6b3a65a3fc9ba42586b2ccc07e4aac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ICON</b> : byte { <br/>
+<tr class="memitem:a3a6b3a65a3fc9ba42586b2ccc07e4aac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#a3a6b3a65a3fc9ba42586b2ccc07e4aac">ICON</a> : byte { <br/>
 &#160;&#160;<b>None</b> = 0x0, 
 <b>Yoshida</b> = 0x1, 
 <b>GM</b> = 0x2, 
@@ -213,16 +217,104 @@ Enumerations</h2></td></tr>
 <b>Gil</b> = 0x20
 <br/>
  }</td></tr>
+<tr class="memdesc:a3a6b3a65a3fc9ba42586b2ccc07e4aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icons  <a href="namespaceffxivlib.html#a3a6b3a65a3fc9ba42586b2ccc07e4aac">More...</a><br/></td></tr>
 <tr class="separator:a3a6b3a65a3fc9ba42586b2ccc07e4aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027fd426531e3a42243f5c2b946dde31"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>CURRENTTARGET</b> : byte { <b>True</b> = 0x2, 
+<tr class="memitem:a027fd426531e3a42243f5c2b946dde31"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceffxivlib.html#a027fd426531e3a42243f5c2b946dde31">CURRENTTARGET</a> : byte { <b>Own</b> = 0x1, 
+<b>True</b> = 0x2, 
 <b>False</b> = 0x4
  }</td></tr>
+<tr class="memdesc:a027fd426531e3a42243f5c2b946dde31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Because SE likes to use values that don't make sense.  <a href="namespaceffxivlib.html#a027fd426531e3a42243f5c2b946dde31">More...</a><br/></td></tr>
 <tr class="separator:a027fd426531e3a42243f5c2b946dde31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a027fd426531e3a42243f5c2b946dde31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#a027fd426531e3a42243f5c2b946dde31">ffxivlib.CURRENTTARGET</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Because SE likes to use values that don't make sense. </p>
+
+</div>
+</div>
+<a class="anchor" id="a93f054414b7ccf7ba7c36f54fcc392f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#a93f054414b7ccf7ba7c36f54fcc392f5">ffxivlib.ENTITYSTATUS</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current action of an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> (PC) </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6b3a65a3fc9ba42586b2ccc07e4aac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#a3a6b3a65a3fc9ba42586b2ccc07e4aac">ffxivlib.ICON</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Icons </p>
+
+</div>
+</div>
+<a class="anchor" id="a7273810711af045adb7151580e025a86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#a7273810711af045adb7151580e025a86">ffxivlib.JOB</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Job ID as used in various structures </p>
+
+</div>
+</div>
+<a class="anchor" id="a856915176aeab1f9b643c0243cb008ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#a856915176aeab1f9b643c0243cb008ee">ffxivlib.STATUS</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> (PC/NPC) </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa4e86d1ea6dbc1661147e6616256e68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">ffxivlib.TYPE</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the entity </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 26 2013 12:38:30 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 26 2013 14:14:48 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

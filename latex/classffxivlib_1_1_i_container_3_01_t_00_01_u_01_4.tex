@@ -1,6 +1,11 @@
 \hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4}{\section{ffxivlib.\-I\-Container$<$ T, U $>$ Class Template Reference}
 \label{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4}\index{ffxivlib.\-I\-Container$<$ T, U $>$@{ffxivlib.\-I\-Container$<$ T, U $>$}}
 }
+
+
+Basic managed container for structures and other infos  
+
+
 Inheritance diagram for ffxivlib.\-I\-Container$<$ T, U $>$\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,9 +15,8 @@ Inheritance diagram for ffxivlib.\-I\-Container$<$ T, U $>$\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_aeecd4e8cfa5cf178b823201e065e129c}{void {\bfseries modify$<$ X $>$} (string variable, X value)}\label{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_aeecd4e8cfa5cf178b823201e065e129c}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_ae9081b3163d43d4d655dc72ea50b7a3d}{modify$<$ X $>$} (string field, X value)
+\begin{DoxyCompactList}\small\item\em This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,6 +29,45 @@ Inheritance diagram for ffxivlib.\-I\-Container$<$ T, U $>$\-:\begin{figure}[H]
 \hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_a4c25b42d6bd8f3114947d137bea657c1}{Int\-Ptr {\bfseries address}}\label{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_a4c25b42d6bd8f3114947d137bea657c1}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic managed container for structures and other infos 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Managed object type\\
+\hline
+{\em U} & Structure type\\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_ae9081b3163d43d4d655dc72ea50b7a3d}{\index{ffxivlib\-::\-I\-Container$<$ T, U $>$@{ffxivlib\-::\-I\-Container$<$ T, U $>$}!modify$<$ X $>$@{modify$<$ X $>$}}
+\index{modify$<$ X $>$@{modify$<$ X $>$}!ffxivlib::IContainer< T, U >@{ffxivlib\-::\-I\-Container$<$ T, U $>$}}
+\subsubsection[{modify$<$ X $>$}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-I\-Container$<$ T, U $>$.modify$<$ X $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{field, }
+\item[{X}]{value}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_ae9081b3163d43d4d655dc72ea50b7a3d}
+
+
+This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em X} & Type of the value to modify, stick to base types\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em field} & Name of the structure field to modify\\
+\hline
+{\em value} & Value to assign to field\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
