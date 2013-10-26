@@ -8,8 +8,8 @@
     <ProjectGuid>{BCF1BDDC-FA27-474D-9F22-0D15A01CFA30}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestApp</RootNamespace>
-    <AssemblyName>TestApp</AssemblyName>
+    <RootNamespace>CurrentTarget</RootNamespace>
+    <AssemblyName>CurrentTarget</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
