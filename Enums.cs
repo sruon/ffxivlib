@@ -49,8 +49,8 @@
     }
     public enum STATUS : byte
     {
-        Idle = 0x02,
-        Engaged = 0x06
+        Engaged = 0x01,
+        Idle = 0x02
     }
     public enum TYPE : byte
     {
@@ -89,5 +89,10 @@
         Alliance_blue = 0x1C,
         Sprout = 0x1F,
         Gil = 0x20
+    }
+    public enum CURRENTTARGET : byte
+    {
+        True = 0x2,
+        False = 0x4,
     }
 }
