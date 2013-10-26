@@ -179,6 +179,7 @@ namespace ffxivlib
             }
             return structure;
         }
+        
         public IntPtr ReadPointerPath(List<int> path)
         {
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;

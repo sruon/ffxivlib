@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using ffxivlib;
 using System.Threading;
 
-namespace TestApp
+namespace CurrentTarget
 {
     class Program
     {
@@ -15,15 +15,17 @@ namespace TestApp
             FFXIVLIB instance = new FFXIVLIB();
             while (true)
             {
-                try
+                Entity currentTarget = instance.getCurrentTarget();
+                Entity mouseoverTarget = instance.getMouseoverTarget();
+                if (currentTarget != null)
                 {
-                    Entity target = instance.getCurrentTarget();
-                    Console.WriteLine("{0} : {1}/{2} HP", target.structure.name, target.structure.cHP, target.structure.mHP);
+                    Console.WriteLine("Current target => {0} : {1}/{2} HP", currentTarget.structure.name, currentTarget.structure.cHP, currentTarget.structure.mHP);
                 }
-                catch
+                if (mouseoverTarget != null)
                 {
+                    Console.WriteLine("Mouseover target => {0} : {1}/{2} HP", mouseoverTarget.structure.name, mouseoverTarget.structure.cHP, mouseoverTarget.structure.mHP);
                 }
-                Thread.Sleep(3000);
+                Thread.Sleep(1000);
             }
          }
     }
