@@ -15,12 +15,19 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)]
             [FieldOffset(0x30)]
             public string name;
+            // Not exactly PC ID...
             [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x74)] 
-            public int MobID;
+            [FieldOffset(0x74)]
+            public int PCID;
+            [MarshalAs(UnmanagedType.I4)]
+            [FieldOffset(0x78)] 
+            public int NPCID;
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x8A)] 
             public TYPE MobType;
+            [MarshalAs(UnmanagedType.I1)]
+            [FieldOffset(0x8C)]
+            public CURRENTTARGET currentTarget;
             [MarshalAs(UnmanagedType.R4)]
             [FieldOffset(0xA0)] 
             public float X;
