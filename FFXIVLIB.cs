@@ -164,6 +164,12 @@ namespace ffxivlib
                 return null;
             }
         }
+        public Chatlog getChatlog()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.CHATPTR);
+            Chatlog c = new Chatlog(mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
+            return c;
+        }
         /// <summary>
         /// This function retrieves the target array
         /// </summary>

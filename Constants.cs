@@ -30,6 +30,13 @@ static class Constants
         0x5C570,
         0x0
     };
+    public static readonly List<int> CHATPTR = new List<int>
+    {
+        0x7D7238,
+        0x10,
+        0x0
+    };
+    public const uint CHATLOG_ARRAY_SIZE = 1000;
     public const uint ENTITY_ARRAY_SIZE = 100;
     public const uint PARTY_MEMBER_ARRAY_SIZE = 8;
     #endregion

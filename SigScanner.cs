@@ -1,8 +1,4 @@
-﻿/*
- * Credits to h1pp0 for initial implementation
- * 
-*/
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 

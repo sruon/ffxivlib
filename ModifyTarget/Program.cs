@@ -8,6 +8,10 @@ namespace ModifyTarget
 {
     class Program
     {
+        /// <summary>
+        /// Changes current target to yourself.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
