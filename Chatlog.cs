@@ -28,21 +28,12 @@ namespace ffxivlib
             public int ArrayStart;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x3D8)]
-            public int ArrayPos;
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x3DC)]
-            public int ArrayEnd;
+            public int ArrayCurrent;
             [MarshalAs(UnmanagedType.I4)]
             [FieldOffset(0x3E4)]
             public int LogStart;
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x3E8)]
-            public int LogNext;
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x3EC)]
-            public int LogEnd;
         };
-        public struct CHATLOGENTRY
+        public class ChatLogEntry
         {
             DateTime Timestamp;
             int code;
@@ -89,7 +80,7 @@ namespace ffxivlib
             updateOffsetArray();
             var ret = new List<string>();
             structure = mr.CreateStructFromAddress<CHATLOGINFO>(address);
-            int currentArrayIndex = (structure.ArrayPos - structure.ArrayStart) / 4;
+            int currentArrayIndex = (structure.ArrayCurrent - structure.ArrayStart) / 4;
 
             // I forgot why we did this
             if (currentArrayIndex < previousArrayIndex)
