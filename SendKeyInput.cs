@@ -8,6 +8,7 @@ namespace ffxivlib
     internal class SendKeyInput
     {
         #region Imports
+
         // Return Type: BOOL->int     
         //fBlockIt: BOOL->int     
         [DllImport("user32.dll", EntryPoint = "BlockInput")]
@@ -74,7 +75,7 @@ namespace ffxivlib
         #region WMCode
 
         /// <summary>
-        /// WMCodes
+        ///     WMCodes
         /// </summary>
         private const uint WM_KEYDOWN = 0x100;
 
@@ -420,7 +421,7 @@ namespace ffxivlib
         private readonly IntPtr FFXIVWindow;
 
         /// <summary>
-        /// Constructor
+        ///     Constructor
         /// </summary>
         /// <param name="FFXIVWindow"></param>
         public SendKeyInput(IntPtr FFXIVWindow)
@@ -429,10 +430,10 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// Send text string to game window
+        ///     Send text string to game window
         /// </summary>
         /// <param name="cString"></param>
-        public void ConvertTextToInput(IEnumerable<char> cString, int delay=300)
+        public void ConvertTextToInput(IEnumerable<char> cString, int delay = 300)
         {
             //SetFocus(FFXIVWindow);
             foreach (char c in cString)
@@ -444,20 +445,20 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// Send Enter keypress
+        ///     Send Enter keypress
         /// </summary>
         public void SendReturnKey(int delay = 100)
         {
             //
             PostMessage(FFXIVWindow, WM_KEYDOWN, VKKeys.RETURN,
-                        (Int32)(MapVirtualKey((UInt16)VKKeys.RETURN, 0x00) << 16));
+                        (Int32) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
             Thread.Sleep(delay);
             PostMessage(FFXIVWindow, WM_KEYUP, VKKeys.RETURN,
-                        (Int32)(MapVirtualKey((UInt16)VKKeys.RETURN, 0x00) << 16));
+                        (Int32) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
         }
 
         /// <summary>
-        /// Send KeyPress to FFXIV Client
+        ///     Send KeyPress to FFXIV Client
         /// </summary>
         /// <param name="Key"></param>
         public void SendKeyPress(VKKeys Key, int delay = 100)

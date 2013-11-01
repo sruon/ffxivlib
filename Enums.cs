@@ -1,7 +1,7 @@
 ﻿namespace ffxivlib
 {
     /// <summary>
-    /// Job ID as used in various structures
+    ///     Job ID as used in various structures
     /// </summary>
     public enum JOB : byte
     {
@@ -36,8 +36,9 @@
         Chocobo = 0x2D,
         Pet = 0x2E
     }
+
     /// <summary>
-    /// Current action of an Entity (PC)
+    ///     Current action of an Entity (PC)
     /// </summary>
     public enum ENTITYSTATUS : byte
     {
@@ -50,16 +51,18 @@
         Melding = 0x07,
         SMachine = 0x08
     }
+
     /// <summary>
-    /// Status of an Entity (PC/NPC)
+    ///     Status of an Entity (PC/NPC)
     /// </summary>
     public enum STATUS : byte
     {
         Engaged = 0x01,
         Idle = 0x02
     }
+
     /// <summary>
-    /// Type of the entity
+    ///     Type of the entity
     /// </summary>
     public enum TYPE : byte
     {
@@ -67,8 +70,9 @@
         Mob = 0x02,
         NPC = 0x03
     }
+
     /// <summary>
-    /// Icons
+    ///     Icons
     /// </summary>
     public enum ICON : byte
     {
@@ -102,8 +106,9 @@
         Sprout = 0x1F,
         Gil = 0x20
     }
+
     /// <summary>
-    /// Because SE likes to use values that don't make sense.
+    ///     Because SE likes to use values that don't make sense.
     /// </summary>
     public enum CURRENTTARGET : byte
     {

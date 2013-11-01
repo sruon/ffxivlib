@@ -67,7 +67,9 @@ namespace ffxivlib
 
             while (true)
             {
-                Debug.WriteLine((string.Format("Current Loc {0} Block Size: {1}\n", CurrentLoc.ToInt64().ToString("X2"), (SearchBlockOverride != 0) ? SearchBlockOverride:SearchBlockSize)));
+                Debug.WriteLine(
+                    (string.Format("Current Loc {0} Block Size: {1}\n", CurrentLoc.ToInt64().ToString("X2"),
+                                   (SearchBlockOverride != 0) ? SearchBlockOverride : SearchBlockSize)));
                 MemoryChunk = new byte[SearchBlockSize];
                 while (true)
                 {
