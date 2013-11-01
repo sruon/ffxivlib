@@ -8,8 +8,8 @@
     <ProjectGuid>{983D6309-EB0A-4A1B-BD03-33EFC3E4D4FA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chatlog</RootNamespace>
-    <AssemblyName>Chatlog</AssemblyName>
+    <RootNamespace>ChatlogTest</RootNamespace>
+    <AssemblyName>ChatlogTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
