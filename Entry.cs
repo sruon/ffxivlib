@@ -85,7 +85,6 @@ namespace ffxivlib
             /// <returns></returns>
             private List<byte> cleanMob(List<byte> working_copy)
             {
-                string testing = Encoding.UTF8.GetString(working_copy.ToArray());
                 var pattern = new List<byte>
                     {
                         0x20,
@@ -111,7 +110,6 @@ namespace ffxivlib
             /// <returns></returns>
             private List<byte> cleanHQ(List<byte> working_copy)
             {
-                string testing = Encoding.UTF8.GetString(working_copy.ToArray());
                 var pattern = new List<byte>
                     {
                         0xEE,

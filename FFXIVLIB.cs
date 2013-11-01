@@ -41,7 +41,7 @@ namespace ffxivlib
 
             if (!ffxiv_process.MainWindowTitle.Equals(Constants.WINDOW_TITLE))
             {
-                throw new InvalidOperationException("We're might not be attaching to FFXIV, is something wrong?");
+                throw new InvalidOperationException("We might not be attaching to FFXIV, is something wrong?");
             }
             if (ffxiv_process.MainModule.ModuleMemorySize < Constants.PROCESS_MMS)
             {
@@ -55,7 +55,6 @@ namespace ffxivlib
             mr = MemoryReader.setInstance(ffxiv_process);
             ss = new SigScanner(ffxiv_pid, true);
             ski = new SendKeyInput(ffxiv_process.MainWindowHandle);
-            Debug.WriteLine("PID is " + ffxiv_pid.ToString());
         }
 
         /// <summary>
@@ -70,7 +69,7 @@ namespace ffxivlib
 
             if (!ffxiv_process.MainWindowTitle.Equals(Constants.WINDOW_TITLE))
             {
-                throw new InvalidOperationException("We're might not be attaching to FFXIV, is something wrong?");
+                throw new InvalidOperationException("We might not be attaching to FFXIV, is something wrong?");
             }
             if (ffxiv_process.MainModule.ModuleMemorySize < Constants.PROCESS_MMS)
             {

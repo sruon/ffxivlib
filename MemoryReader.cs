@@ -196,7 +196,6 @@ namespace ffxivlib
         {
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
             IntPtr result = IntPtr.Zero;
-            int readBytes;
             int count = path.Count;
             int i = 0;
 
@@ -204,6 +203,7 @@ namespace ffxivlib
             {
                 if (++i < count)
                 {
+                    int readBytes;
                     currentPtr += pointer;
                     byte[] chunk = ReadAdress(currentPtr, 4, out readBytes);
                     currentPtr = (IntPtr) BitConverter.ToInt32(chunk, 0);
@@ -242,12 +242,12 @@ namespace ffxivlib
         /// <exception cref="Exception">Throws an exception if address is IntPtr.Zero</exception>
         public T CreateStructFromAddress<T>(IntPtr address)
         {
-            int outres;
             T structure = default(T);
 
             IntPtr ffxiv_structure = address;
             if (ffxiv_structure != IntPtr.Zero)
             {
+                int outres;
                 byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
                 GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
                 structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
