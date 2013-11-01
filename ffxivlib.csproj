@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chatlog.cs" />
+    <Compile Include="Entry.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="FFXIVLIB.cs" />
     <Compile Include="Constants.cs" />

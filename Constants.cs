@@ -32,12 +32,19 @@ static class Constants
     };
     public static readonly List<int> CHATPTR = new List<int>
     {
-        0x7D7238,
-        0x10,
-        0x0
+        0xF875A8,
+        0x18,
+        0x200
     };
+    #endregion
+    #region Array size
     public const uint CHATLOG_ARRAY_SIZE = 1000;
     public const uint ENTITY_ARRAY_SIZE = 100;
     public const uint PARTY_MEMBER_ARRAY_SIZE = 8;
+    #endregion
+
+    #region Chat related
+    public const int TIMESTAMP_SIZE = 8;
+    public const int CHATCODE_SIZE = 4;
     #endregion
 }
