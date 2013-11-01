@@ -19,7 +19,7 @@ namespace CurrentTarget
                 Entity mouseoverTarget = instance.getMouseoverTarget();
                 if (currentTarget != null)
                 {
-                    Console.WriteLine("Current target => {0} : {1}/{2} HP", currentTarget.structure.name, currentTarget.structure.cHP, currentTarget.structure.mHP);
+                    Console.WriteLine("Current target => {0} : {1}/{2} HP distance: {3} yalms", currentTarget.structure.name, currentTarget.structure.cHP, currentTarget.structure.mHP, currentTarget.structure.distance);
                 }
                 if (mouseoverTarget != null)
                 {
