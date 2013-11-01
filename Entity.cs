@@ -28,6 +28,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)]
             [FieldOffset(0x8C)]
             public CURRENTTARGET currentTarget;
+            [MarshalAs(UnmanagedType.I1)]
+            [FieldOffset(0x8D)]
+            public byte distance;
             [MarshalAs(UnmanagedType.R4)]
             [FieldOffset(0xA0)] 
             public float X;
