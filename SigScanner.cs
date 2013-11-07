@@ -157,6 +157,7 @@ namespace ffxivlib
 
         #endregion
     }
+
     public partial class FFXIVLIB
     {
         /// <summary>

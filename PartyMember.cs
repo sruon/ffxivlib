@@ -41,6 +41,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public int provider;
         };
     }
+
     public partial class FFXIVLIB
     {
         /// <summary>
@@ -55,7 +56,7 @@ namespace ffxivlib
             if (id >= Constants.PARTY_MEMBER_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
             IntPtr pointer = mr.ResolvePointerPath(Constants.PARTYPTR);
-            pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof(PartyMember.PARTYMEMBERINFO)) * id);
+            pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof (PartyMember.PARTYMEMBERINFO))*id);
             var p = new PartyMember(mr.CreateStructFromAddress<PartyMember.PARTYMEMBERINFO>(pointer), pointer);
             return p;
         }

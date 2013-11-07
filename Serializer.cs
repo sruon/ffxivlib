@@ -56,13 +56,13 @@ namespace ffxivlib
                     return des_list;
                 }
             catch (IOException ex)
-            {
-                Debug.WriteLine("Serialize failed with IOException: {0}", ex.Message);
-            }
+                {
+                    Debug.WriteLine("Serialize failed with IOException: {0}", ex.Message);
+                }
             catch (Exception ex)
-            {
-                Debug.WriteLine("Serialize failed with Exception: {0}", ex.Message);
-            }
+                {
+                    Debug.WriteLine("Serialize failed with Exception: {0}", ex.Message);
+                }
             return default(T);
         }
     }

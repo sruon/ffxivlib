@@ -10,7 +10,6 @@ namespace ffxivlib
     {
         public class Entry
         {
-
             public byte[] raw { get; set; }
             public DateTime timestamp { get; set; }
             public string code { get; set; }
@@ -40,17 +39,17 @@ namespace ffxivlib
                 if (raw.Length < Constants.TIMESTAMP_SIZE + Constants.CHATCODE_SIZE)
                     return;
                 try
-                {
-                    timestamp = getTimeStamp(int.Parse(
-                        Encoding.UTF8.GetString(
-                            working_copy.ToArray()
-                            ).Substring(0, Constants.TIMESTAMP_SIZE),
-                        NumberStyles.HexNumber));
-                }
+                    {
+                        timestamp = getTimeStamp(int.Parse(
+                            Encoding.UTF8.GetString(
+                                working_copy.ToArray()
+                                ).Substring(0, Constants.TIMESTAMP_SIZE),
+                            NumberStyles.HexNumber));
+                    }
                 catch
-                {
-                    return;
-                }
+                    {
+                        return;
+                    }
                 working_copy.RemoveRange(0, 8);
                 code = Encoding.UTF8.GetString(working_copy.ToArray(), 0, Constants.CHATCODE_SIZE);
                 working_copy.RemoveRange(0, 4);
@@ -95,10 +94,10 @@ namespace ffxivlib
                         0x20
                     };
                 for (int i = 0; i < pattern.Count; i++)
-                {
-                    if (working_copy[i] != pattern[i])
-                        return working_copy;
-                }
+                    {
+                        if (working_copy[i] != pattern[i])
+                            return working_copy;
+                    }
                 working_copy.RemoveRange(0, pattern.Count);
                 return working_copy;
             }
@@ -126,10 +125,10 @@ namespace ffxivlib
                 if (i == -1)
                     return working_copy;
                 for (; i < pattern.Count; i++)
-                {
-                    if (working_copy[i] != pattern[i])
-                        return working_copy;
-                }
+                    {
+                        if (working_copy[i] != pattern[i])
+                            return working_copy;
+                    }
                 working_copy.RemoveRange(i, pattern.Count);
                 working_copy.InsertRange(i, hq_rep);
                 return working_copy;
@@ -147,22 +146,20 @@ namespace ffxivlib
                 int[] idx = working_copy.Select((b, i) => b == 0x02 ? i : -1).Where(i => i != -1).ToArray();
                 bool changed = false;
                 foreach (int i in idx)
-                {
-                    if (working_copy.Count > i + 8 && working_copy[i + 8] == 0x03)
                     {
-                        working_copy.RemoveRange(i, 9);
-                        changed = true;
+                        if (working_copy.Count > i + 8 && working_copy[i + 8] == 0x03)
+                            {
+                                working_copy.RemoveRange(i, 9);
+                                changed = true;
+                            }
+                        if (working_copy.Count > i + 4 && working_copy[i + 4] == 0x03)
+                            {
+                                working_copy.RemoveRange(i, 5);
+                                changed = true;
+                            }
+                        if (changed)
+                            working_copy = cleanFormat(working_copy);
                     }
-                    if (working_copy.Count > i + 4 && working_copy[i + 4] == 0x03)
-                    {
-                        working_copy.RemoveRange(i, 5);
-                        changed = true;
-                    }
-                    if (changed)
-                    {
-                        working_copy = cleanFormat(working_copy);
-                    }
-                }
                 return working_copy;
             }
 
@@ -177,14 +174,12 @@ namespace ffxivlib
                     return working_copy;
                 int name = working_copy.FindIndex(0, item => item == 0x3);
                 if (name != -1)
-                {
-                    working_copy.RemoveRange(0, name + 1);
-                    name = working_copy.FindIndex(0, item => item == 0x3);
-                    if (name != -1)
                     {
-                        working_copy.RemoveRange(name - 9, 10);
+                        working_copy.RemoveRange(0, name + 1);
+                        name = working_copy.FindIndex(0, item => item == 0x3);
+                        if (name != -1)
+                            working_copy.RemoveRange(name - 9, 10);
                     }
-                }
                 return working_copy;
             }
 

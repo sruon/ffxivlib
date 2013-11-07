@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using ffxivlib;
 
 namespace RecordWaypoint
 {
-    class Program
+    internal class Program
     {
         /// <summary>
         /// Instantiates a movementhelper, start recording 
@@ -15,7 +11,7 @@ namespace RecordWaypoint
         /// Copy that file over to the program called PlayWaypoint
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
             MovementHelper mh = instance.getMovementHelper();

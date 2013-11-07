@@ -71,6 +71,7 @@ namespace ffxivlib
         private static extern IntPtr SetFocus(IntPtr hwnd);
 
         #endregion
+
         #region WMCode
 
         /// <summary>
@@ -96,6 +97,7 @@ namespace ffxivlib
         //}
 
         #endregion
+
         #region VKKeys
 
         public enum VKKeys
@@ -418,6 +420,7 @@ namespace ffxivlib
 
         private readonly IntPtr FFXIVWindow;
         private static SendKeyInput instance;
+
         /// <summary>
         ///     Constructor
         /// </summary>
@@ -430,20 +433,17 @@ namespace ffxivlib
         public static SendKeyInput setInstance(IntPtr FFXIVWindow)
         {
             if (instance == null)
-                {
-                    instance = new SendKeyInput(FFXIVWindow);
-                }
+                instance = new SendKeyInput(FFXIVWindow);
             return instance;
         }
 
         public static SendKeyInput getInstance()
         {
             if (instance == null)
-                {
-                    throw new Exception("Something terrible happened.");
-                }
+                throw new Exception("Something terrible happened.");
             return instance;
         }
+
         /// <summary>
         ///     Send text string to game window
         /// </summary>
@@ -452,9 +452,7 @@ namespace ffxivlib
         {
             //SetFocus(FFXIVWindow);
             foreach (char c in cString)
-            {
                 PostMessageWPTR(FFXIVWindow, WM_CHAR, new IntPtr(c), IntPtr.Zero); //Send the chars one by one
-            }
             Thread.Sleep(delay);
             SendReturnKey();
         }
@@ -498,6 +496,7 @@ namespace ffxivlib
             PostMessagePTR(FFXIVWindow, Msg, wParam, lParam);
         }
     }
+
     public partial class FFXIVLIB
     {
         /// <summary>
@@ -507,7 +506,7 @@ namespace ffxivlib
         /// <param name="delay">(Optional) Delay between keypress down and keypress up</param>
         public void SendKey(IntPtr key, bool keyup = true, int delay = 100)
         {
-            ski.SendKeyPress((SendKeyInput.VKKeys)key, keyup, delay);
+            ski.SendKeyPress((SendKeyInput.VKKeys) key, keyup, delay);
         }
     }
 }

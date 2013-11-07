@@ -20,6 +20,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x60)] public int CurrentTargetID;
         }
     }
+
     public partial class FFXIVLIB
     {
         /// <summary>
@@ -42,15 +43,16 @@ namespace ffxivlib
             IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
-            {
-                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.PreviousTarget),
-                                   (IntPtr)t.structure.PreviousTarget);
-                return e;
-            }
+                {
+                    var e =
+                        new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.structure.PreviousTarget),
+                                   (IntPtr) t.structure.PreviousTarget);
+                    return e;
+                }
             catch (Exception)
-            {
-                return null;
-            }
+                {
+                    return null;
+                }
         }
 
         /// <summary>
@@ -62,15 +64,16 @@ namespace ffxivlib
             IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
-            {
-                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.MouseoverTarget),
-                                   (IntPtr)t.structure.MouseoverTarget);
-                return e;
-            }
+                {
+                    var e =
+                        new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.structure.MouseoverTarget),
+                                   (IntPtr) t.structure.MouseoverTarget);
+                    return e;
+                }
             catch (Exception)
-            {
-                return null;
-            }
+                {
+                    return null;
+                }
         }
 
         /// <summary>
@@ -82,15 +85,16 @@ namespace ffxivlib
             IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
-            {
-                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.CurrentTarget),
-                                   (IntPtr)t.structure.CurrentTarget);
-                return e;
-            }
+                {
+                    var e = new Entity(
+                        mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.structure.CurrentTarget),
+                        (IntPtr) t.structure.CurrentTarget);
+                    return e;
+                }
             catch (Exception)
-            {
-                return null;
-            }
+                {
+                    return null;
+                }
         }
     }
 }

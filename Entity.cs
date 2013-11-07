@@ -44,12 +44,13 @@ namespace ffxivlib
 
         public float getDistanceTo(Entity other)
         {
-            float fDistX = Math.Abs(this.structure.X - other.structure.X);
-            float fDistY = Math.Abs(this.structure.Y - other.structure.Y);
-            float fDistZ = Math.Abs(this.structure.Z - other.structure.Z);
-            return (float)Math.Sqrt((fDistX * fDistX) + (fDistY * fDistY) + (fDistZ * fDistZ));
+            float fDistX = Math.Abs(structure.X - other.structure.X);
+            float fDistY = Math.Abs(structure.Y - other.structure.Y);
+            float fDistZ = Math.Abs(structure.Z - other.structure.Z);
+            return (float) Math.Sqrt((fDistX*fDistX) + (fDistY*fDistY) + (fDistZ*fDistZ));
         }
     }
+
     public partial class FFXIVLIB
     {
         /// <summary>
@@ -63,16 +64,17 @@ namespace ffxivlib
         {
             if (id >= Constants.ENTITY_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
-            IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4);
+            IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id*0x4);
             try
-            {
-                var e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolvePointer(pointer));
-                return e;
-            }
+                {
+                    var e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer),
+                                       mr.ResolvePointer(pointer));
+                    return e;
+                }
             catch (Exception)
-            {
-                return null;
-            }
+                {
+                    return null;
+                }
         }
 
         /// <summary>
@@ -86,17 +88,17 @@ namespace ffxivlib
             IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
             var entity_list = new List<Entity>();
             for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
-            {
-                IntPtr address = pointer + (i * 0x4);
-                try
                 {
-                    entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
+                    IntPtr address = pointer + (i*0x4);
+                    try
+                        {
+                            entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
+                        }
+                    catch (Exception)
+                        {
+                            // No Entity at this position
+                        }
                 }
-                catch (Exception)
-                {
-                    // No Entity at this position
-                }
-            }
             Entity result = entity_list.SingleOrDefault(obj => obj.structure.name == name);
             return result;
         }

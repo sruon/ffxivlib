@@ -61,9 +61,7 @@ namespace ffxivlib
         public static MemoryReader setInstance(Process ffxiv_process)
         {
             if (instance == null)
-            {
                 instance = new MemoryReader(ffxiv_process);
-            }
             return instance;
         }
 
@@ -75,9 +73,7 @@ namespace ffxivlib
         public static MemoryReader getInstance()
         {
             if (instance == null)
-            {
                 throw new Exception("Something terrible happened.");
-            }
             return instance;
         }
 
@@ -115,14 +111,14 @@ namespace ffxivlib
             int byteswritten;
 
             try
-            {
-                WriteProcessMemory(_processHandle, memoryAddress, value, (UInt32) value.Length, out byteswritten);
-            }
+                {
+                    WriteProcessMemory(_processHandle, memoryAddress, value, (UInt32) value.Length, out byteswritten);
+                }
             catch (Exception ex)
-            {
-                Debug.WriteLine("Failed to WriteAddress: " + ex.Message);
-                return 0;
-            }
+                {
+                    Debug.WriteLine("Failed to WriteAddress: " + ex.Message);
+                    return 0;
+                }
             return byteswritten;
         }
 
@@ -136,27 +132,27 @@ namespace ffxivlib
         public byte[] ReadAdress(IntPtr memoryAddress, uint bytesToRead, out int bytesRead)
         {
             try
-            {
-                if (bytesToRead > 0)
                 {
-                    var buffer = new byte[bytesToRead];
-                    IntPtr ptrBytesReaded;
-                    ReadProcessMemory(_processHandle, memoryAddress, buffer, bytesToRead, out ptrBytesReaded);
-                    bytesRead = ptrBytesReaded.ToInt32();
-                    return buffer;
+                    if (bytesToRead > 0)
+                        {
+                            var buffer = new byte[bytesToRead];
+                            IntPtr ptrBytesReaded;
+                            ReadProcessMemory(_processHandle, memoryAddress, buffer, bytesToRead, out ptrBytesReaded);
+                            bytesRead = ptrBytesReaded.ToInt32();
+                            return buffer;
+                        }
+                    else
+                        {
+                            bytesRead = 0;
+                            return new byte[] {0, 0, 0, 0};
+                        }
                 }
-                else
+            catch (Exception ex)
                 {
+                    Debug.WriteLine("Error in ReadAddress Function: " + ex.Message);
                     bytesRead = 0;
                     return new byte[] {0, 0, 0, 0};
                 }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Error in ReadAddress Function: " + ex.Message);
-                bytesRead = 0;
-                return new byte[] {0, 0, 0, 0};
-            }
         }
 
         #endregion
@@ -166,12 +162,10 @@ namespace ffxivlib
         private void OpenProcess(uint FFXIVPID)
         {
             try
-            {
-                _processHandle = OpenProcess(ProcessAccessFlags.All, false, FFXIVPID);
-            }
-            catch
-            {
-            }
+                {
+                    _processHandle = OpenProcess(ProcessAccessFlags.All, false, FFXIVPID);
+                }
+            catch {}
         }
 
         /// <summary>
@@ -200,19 +194,17 @@ namespace ffxivlib
             int i = 0;
 
             foreach (int pointer in path)
-            {
-                if (++i < count)
                 {
-                    int readBytes;
-                    currentPtr += pointer;
-                    byte[] chunk = ReadAdress(currentPtr, 4, out readBytes);
-                    currentPtr = (IntPtr) BitConverter.ToInt32(chunk, 0);
+                    if (++i < count)
+                        {
+                            int readBytes;
+                            currentPtr += pointer;
+                            byte[] chunk = ReadAdress(currentPtr, 4, out readBytes);
+                            currentPtr = (IntPtr) BitConverter.ToInt32(chunk, 0);
+                        }
+                    else
+                        result = currentPtr + pointer;
                 }
-                else
-                {
-                    result = currentPtr + pointer;
-                }
-            }
             return result;
         }
 
@@ -227,9 +219,7 @@ namespace ffxivlib
             IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
             IntPtr result = IntPtr.Zero;
             foreach (int pointer in path)
-            {
                 currentPtr += pointer;
-            }
             return currentPtr;
         }
 
@@ -246,17 +236,15 @@ namespace ffxivlib
 
             IntPtr ffxiv_structure = address;
             if (ffxiv_structure != IntPtr.Zero)
-            {
-                int outres;
-                byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
-                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
-                structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
-                handle.Free();
-            }
+                {
+                    int outres;
+                    byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
+                    GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                    structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
+                    handle.Free();
+                }
             else
-            {
                 throw new Exception("Nothing at this address.");
-            }
             return structure;
         }
 
@@ -276,16 +264,14 @@ namespace ffxivlib
             byte[] pointer = ReadAdress(address, 4, out outres);
             var ffxiv_structure = (IntPtr) BitConverter.ToInt32(pointer, 0);
             if (ffxiv_structure != IntPtr.Zero)
-            {
-                byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
-                GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
-                structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
-                handle.Free();
-            }
+                {
+                    byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
+                    GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
+                    structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
+                    handle.Free();
+                }
             else
-            {
                 throw new Exception("Nothing at this address.");
-            }
             return structure;
         }
 

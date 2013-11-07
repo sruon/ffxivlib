@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ffxivlib
 {
@@ -21,9 +20,9 @@ namespace ffxivlib
         private readonly SendKeyInput.VKKeys forward_key;
 
         internal MovementHelper(Entity _player,
-                              SendKeyInput.VKKeys _left_key = SendKeyInput.VKKeys.KEY_A,
-                              SendKeyInput.VKKeys _right_key = SendKeyInput.VKKeys.KEY_D,
-                              SendKeyInput.VKKeys _forward_key = SendKeyInput.VKKeys.KEY_W)
+                                SendKeyInput.VKKeys _left_key = SendKeyInput.VKKeys.KEY_A,
+                                SendKeyInput.VKKeys _right_key = SendKeyInput.VKKeys.KEY_D,
+                                SendKeyInput.VKKeys _forward_key = SendKeyInput.VKKeys.KEY_W)
         {
             player = _player;
             left_key = _left_key;

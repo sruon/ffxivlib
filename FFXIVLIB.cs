@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Threading;
 
 namespace ffxivlib
 {
@@ -15,8 +11,9 @@ namespace ffxivlib
         private readonly MemoryReader mr;
         internal readonly SendKeyInput ski;
         private readonly SigScanner ss;
-        private Process ffxiv_process;
+        private readonly Process ffxiv_process;
         private MovementHelper mh;
+
         #endregion
 
         #region Constructors
@@ -29,32 +26,23 @@ namespace ffxivlib
         public FFXIVLIB(int pid = 0)
         {
             if (pid != 0)
-                this.ffxiv_process = Process.GetProcessById(pid);
+                ffxiv_process = Process.GetProcessById(pid);
             else
                 {
-
                     Process[] p = Process.GetProcessesByName(Constants.PROCESS_NAME);
                     if (p.Length <= 0)
-                        {
-                            throw new InvalidOperationException("No FFXIV process.");
-                        }
+                        throw new InvalidOperationException("No FFXIV process.");
                     else if (p.Length > 1)
-                        {
-                            throw new NotImplementedException("Call the constructor with PID if multiple process.");
-                        }
-                    this.ffxiv_process = p[0];
+                        throw new NotImplementedException("Call the constructor with PID if multiple process.");
+                    ffxiv_process = p[0];
                 }
 
             #region Sanity checks
 
             if (!ffxiv_process.MainWindowTitle.Equals(Constants.WINDOW_TITLE))
-            {
                 throw new InvalidOperationException("We might not be attaching to FFXIV, is something wrong?");
-            }
             if (ffxiv_process.MainModule.ModuleMemorySize < Constants.PROCESS_MMS)
-            {
                 throw new InvalidOperationException("Wrong MMS.");
-            }
 
             #endregion
 

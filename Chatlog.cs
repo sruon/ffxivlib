@@ -28,9 +28,7 @@ namespace ffxivlib
             offsets_list.Clear();
             MemoryReader mr = MemoryReader.getInstance();
             for (int i = 0; i < Constants.CHATLOG_ARRAY_SIZE; i++)
-            {
                 offsets_list.Add((int) mr.ResolvePointer((IntPtr) (structure.ArrayStart + (i*0x4))));
-            }
         }
 
         /// <summary>
@@ -60,11 +58,11 @@ namespace ffxivlib
         {
             var ret = new List<Entry>();
             for (int i = start; i < end; i++)
-            {
-                currentOffset = offsets_list[i];
-                ret.Add(ReadEntry(previousOffset, currentOffset));
-                previousOffset = currentOffset;
-            }
+                {
+                    currentOffset = offsets_list[i];
+                    ret.Add(ReadEntry(previousOffset, currentOffset));
+                    previousOffset = currentOffset;
+                }
             return ret;
         }
 
@@ -89,11 +87,11 @@ namespace ffxivlib
 
             // I forgot why we did this
             if (currentArrayIndex < previousArrayIndex)
-            {
-                buffer.AddRange(ReadEntries(previousArrayIndex, (int) Constants.CHATLOG_ARRAY_SIZE));
-                previousOffset = 0;
-                previousArrayIndex = 0;
-            }
+                {
+                    buffer.AddRange(ReadEntries(previousArrayIndex, (int) Constants.CHATLOG_ARRAY_SIZE));
+                    previousOffset = 0;
+                    previousArrayIndex = 0;
+                }
             if (previousArrayIndex < currentArrayIndex)
                 buffer.AddRange(ReadEntries(previousArrayIndex, currentArrayIndex));
             previousArrayIndex = currentArrayIndex;
