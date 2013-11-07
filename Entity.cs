@@ -41,7 +41,11 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A2)] public short cGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short mGP;
         };
-
+        /// <summary>
+        /// Returns the distance between current Entity and a given Entity
+        /// </summary>
+        /// <param name="other">Entity to compare to</param>
+        /// <returns>Distance</returns>
         public float getDistanceTo(Entity other)
         {
             float fDistX = Math.Abs(structure.X - other.structure.X);
