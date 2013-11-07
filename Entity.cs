@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace ffxivlib
@@ -39,5 +41,64 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A2)] public short cGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short mGP;
         };
+
+        public float getDistanceTo(Entity other)
+        {
+            float fDistX = Math.Abs(this.structure.X - other.structure.X);
+            float fDistY = Math.Abs(this.structure.Y - other.structure.Y);
+            float fDistZ = Math.Abs(this.structure.Z - other.structure.Z);
+            return (float)Math.Sqrt((fDistX * fDistX) + (fDistY * fDistY) + (fDistZ * fDistZ));
+        }
+    }
+    public partial class FFXIVLIB
+    {
+        /// <summary>
+        ///     This function build an Entity object according to the position in the Entity array
+        ///     You may effectively loop by yourself on this function.
+        /// </summary>
+        /// <param name="id">Position in the Entity Array, use Constants.ENTITY_ARRAY_SIZE as your max (exclusive)</param>
+        /// <returns>Entity object or null</returns>
+        /// <exception cref="System.IndexOutOfRangeException">Out of range</exception>
+        public Entity getEntityInfo(int id)
+        {
+            if (id >= Constants.ENTITY_ARRAY_SIZE)
+                throw new IndexOutOfRangeException();
+            IntPtr pointer = IntPtr.Add(mr.GetArrayStart(Constants.PCPTR), id * 0x4);
+            try
+            {
+                var e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer), mr.ResolvePointer(pointer));
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        ///     This function attempts to retrieve an Entity by its name in the Entity array
+        ///     This is potentially a costly call as we build a complete list to look for the Entity.
+        /// </summary>
+        /// <param name="name">Name of the Entity to be retrieved</param>
+        /// <returns>Entity object or null</returns>
+        public Entity getEntityByName(string name)
+        {
+            IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
+            var entity_list = new List<Entity>();
+            for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
+            {
+                IntPtr address = pointer + (i * 0x4);
+                try
+                {
+                    entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
+                }
+                catch (Exception)
+                {
+                    // No Entity at this position
+                }
+            }
+            Entity result = entity_list.SingleOrDefault(obj => obj.structure.name == name);
+            return result;
+        }
     }
 }
