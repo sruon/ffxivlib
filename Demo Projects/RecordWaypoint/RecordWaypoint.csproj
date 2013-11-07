@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{32B4089B-3BE1-40C5-B2CA-F38F0D662CAD}</ProjectGuid>
+    <ProjectGuid>{87419FD2-7CEA-448C-A27D-1D56DD48F55E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModifyIcon</RootNamespace>
-    <AssemblyName>ModifyIcon</AssemblyName>
+    <RootNamespace>RecordWaypoint</RootNamespace>
+    <AssemblyName>RecordWaypoint</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -47,7 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ffxivlib.csproj">
+    <ProjectReference Include="..\..\ffxivlib.csproj">
       <Project>{3B68E5B2-4439-4CAC-A701-58102F1B8A21}</Project>
       <Name>ffxivlib</Name>
     </ProjectReference>
