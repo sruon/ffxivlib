@@ -20,4 +20,77 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x60)] public int CurrentTargetID;
         }
     }
+    public partial class FFXIVLIB
+    {
+        /// <summary>
+        ///     This function retrieves the target array
+        /// </summary>
+        /// <returns>Target object</returns>
+        public Target getTargets()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
+            var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            return t;
+        }
+
+        /// <summary>
+        ///     This function retrieves the previous target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
+        public Entity getPreviousTarget()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
+            var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.PreviousTarget),
+                                   (IntPtr)t.structure.PreviousTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        ///     This function retrieves the current Mouseover target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
+        public Entity getMouseoverTarget()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
+            var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.MouseoverTarget),
+                                   (IntPtr)t.structure.MouseoverTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        ///     This function retrieves the current target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
+        public Entity getCurrentTarget()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.TARGETPTR);
+            var t = new Target(mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+            {
+                var e = new Entity(mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.structure.CurrentTarget),
+                                   (IntPtr)t.structure.CurrentTarget);
+                return e;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+    }
 }

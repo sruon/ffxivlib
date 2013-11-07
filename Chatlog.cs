@@ -120,4 +120,18 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x30)] public int LogStart;
         };
     }
+
+    public partial class FFXIVLIB
+    {
+        /// <summary>
+        ///     This function instantiates a Chatlog object
+        /// </summary>
+        /// <returns>Chatlog instance</returns>
+        public Chatlog getChatlog()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.CHATPTR);
+            var c = new Chatlog(mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
+            return c;
+        }
+    }
 }

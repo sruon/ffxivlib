@@ -141,4 +141,17 @@ namespace ffxivlib
             #endregion
         };
     }
+    public partial class FFXIVLIB
+    {
+        /// <summary>
+        ///     This function retrieves the current Player info
+        /// </summary>
+        /// <returns>Player object</returns>
+        public Player getPlayerInfo()
+        {
+            IntPtr pointer = mr.ResolvePointerPath(Constants.PLAYERPTR);
+            var p = new Player(mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
+            return p;
+        }
+    }
 }
