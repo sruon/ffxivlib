@@ -10,7 +10,12 @@ namespace ffxivlib
     {
         public class Entry
         {
-            public byte[] raw;
+
+            public byte[] raw { get; set; }
+            public DateTime timestamp { get; set; }
+            public string code { get; set; }
+            public string text { get; set; }
+            public string raw_string { get; set; }
 
             /// <summary>
             ///     Builds a chatlog entry out of a byte array
@@ -23,11 +28,6 @@ namespace ffxivlib
                 raw_string = Encoding.UTF8.GetString(_raw);
                 processEntry(_raw);
             }
-
-            public DateTime timestamp { get; set; }
-            public string code { get; set; }
-            public string text { get; set; }
-            public string raw_string { get; set; }
 
             /// <summary>
             ///     Main processing function
@@ -105,6 +105,7 @@ namespace ffxivlib
 
             /// <summary>
             ///     This replaces the HQ icon 0xEE 0x80 0xBC by a simple HQ 0x48 0x51
+            ///     This unfortunately isn't very reliable as it might replaces other icons used by SE.
             /// </summary>
             /// <param name="working_copy"></param>
             /// <returns></returns>
