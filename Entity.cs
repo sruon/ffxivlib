@@ -40,6 +40,8 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A0)] public short cTP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A2)] public short cGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short mGP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A6)] public short cCP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A8)] public short mCP;
         };
         /// <summary>
         /// Returns the distance between current Entity and a given Entity
