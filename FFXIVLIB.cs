@@ -12,7 +12,6 @@ namespace ffxivlib
         internal readonly SendKeyInput ski;
         private readonly SigScanner ss;
         private readonly Process ffxiv_process;
-        private MovementHelper mh;
 
         #endregion
 
