@@ -9,6 +9,7 @@ namespace ffxivlib
     /// </summary>
     /// <typeparam name="T">Managed object type</typeparam>
     /// <typeparam name="U">Structure type</typeparam>
+    /// <remarks>Name is misleading, this is not an Interface.</remarks>
     public class IContainer<T, U>
     {
         public IntPtr address;
@@ -45,6 +46,14 @@ namespace ffxivlib
                 byte_array[0] = Convert.ToByte(value);
                 MemoryReader.getInstance().WriteAddress(tobemodified, byte_array);
             }
+        }
+        /// <summary>
+        /// This refreshes the instance
+        /// It may have unexpected behavior if address changes.
+        /// </summary>
+        public void refresh()
+        {
+            structure = MemoryReader.getInstance().CreateStructFromAddress<U>(address);
         }
     }
 }
