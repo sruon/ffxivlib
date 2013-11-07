@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace ffxivlib
 {
-    internal class SendKeyInput
+    public class SendKeyInput
     {
         #region Imports
 
@@ -71,7 +71,6 @@ namespace ffxivlib
         private static extern IntPtr SetFocus(IntPtr hwnd);
 
         #endregion
-
         #region WMCode
 
         /// <summary>
@@ -97,7 +96,6 @@ namespace ffxivlib
         //}
 
         #endregion
-
         #region VKKeys
 
         public enum VKKeys
@@ -419,16 +417,33 @@ namespace ffxivlib
         #endregion
 
         private readonly IntPtr FFXIVWindow;
-
+        private static SendKeyInput instance;
         /// <summary>
         ///     Constructor
         /// </summary>
         /// <param name="FFXIVWindow"></param>
-        public SendKeyInput(IntPtr FFXIVWindow)
+        private SendKeyInput(IntPtr FFXIVWindow)
         {
             this.FFXIVWindow = FFXIVWindow;
         }
 
+        public static SendKeyInput setInstance(IntPtr FFXIVWindow)
+        {
+            if (instance == null)
+                {
+                    instance = new SendKeyInput(FFXIVWindow);
+                }
+            return instance;
+        }
+
+        public static SendKeyInput getInstance()
+        {
+            if (instance == null)
+                {
+                    throw new Exception("Something terrible happened.");
+                }
+            return instance;
+        }
         /// <summary>
         ///     Send text string to game window
         /// </summary>
@@ -458,14 +473,19 @@ namespace ffxivlib
         }
 
         /// <summary>
-        ///     Send KeyPress to FFXIV Client
+        /// Send a Virtual Key to FFXIV
         /// </summary>
-        /// <param name="Key"></param>
-        public void SendKeyPress(VKKeys Key, int delay = 100)
+        /// <param name="Key">Virtual Key to press</param>
+        /// <param name="keyup">Should we keypress up (default: true)</param>
+        /// <param name="delay">Delay between keydown and keyup (default: 100ms)</param>
+        public void SendKeyPress(VKKeys Key, bool keyup = true, int delay = 100)
         {
             PostMessage(FFXIVWindow, WM_KEYDOWN, Key, 0);
-            Thread.Sleep(delay);
-            PostMessage(FFXIVWindow, WM_KEYUP, Key, 0);
+            if (keyup)
+                {
+                    Thread.Sleep(delay);
+                    PostMessage(FFXIVWindow, WM_KEYUP, Key, 0);
+                }
         }
 
         public void SetFocus()
@@ -476,6 +496,18 @@ namespace ffxivlib
         public void PostMessagePTR(uint Msg, IntPtr wParam, IntPtr lParam)
         {
             PostMessagePTR(FFXIVWindow, Msg, wParam, lParam);
+        }
+    }
+    public partial class FFXIVLIB
+    {
+        /// <summary>
+        ///     This function sends a keystroke to the Final Fantasy XIV window
+        /// </summary>
+        /// <param name="key">Key to press (see Virtual Key Codes for information)</param>
+        /// <param name="delay">(Optional) Delay between keypress down and keypress up</param>
+        public void SendKey(IntPtr key, bool keyup = true, int delay = 100)
+        {
+            ski.SendKeyPress((SendKeyInput.VKKeys)key, keyup, delay);
         }
     }
 }
