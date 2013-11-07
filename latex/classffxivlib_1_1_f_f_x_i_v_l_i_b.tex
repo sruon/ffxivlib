@@ -4,66 +4,68 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa168e0ea04fa7591285822c023595d32}{F\-F\-X\-I\-V\-L\-I\-B} ()
-\begin{DoxyCompactList}\small\item\em Instantiates \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B}. \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa69576bcd69bdd2d43650d094614dbae}{F\-F\-X\-I\-V\-L\-I\-B} (int pid)
-\begin{DoxyCompactList}\small\item\em Instantiates \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B} with a given P\-I\-D. \end{DoxyCompactList}\item 
-void \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}{Send\-Key} (Int\-Ptr key, int delay=100)
-\begin{DoxyCompactList}\small\item\em This function sends a keystroke to the Final Fantasy X\-I\-V window \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_chatlog}{Chatlog} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}{get\-Chatlog} ()
+\begin{DoxyCompactList}\small\item\em This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} object \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}{get\-Entity\-Info} (int id)
 \begin{DoxyCompactList}\small\item\em This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object according to the position in the \hyperlink{classffxivlib_1_1_entity}{Entity} array You may effectively loop by yourself on this function. \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aeb451cfae304d94e04729c7ea5d26da6}{get\-Entity\-By\-Name} (string name)
 \begin{DoxyCompactList}\small\item\em This function attempts to retrieve an \hyperlink{classffxivlib_1_1_entity}{Entity} by its name in the \hyperlink{classffxivlib_1_1_entity}{Entity} array This is potentially a costly call as we build a complete list to look for the \hyperlink{classffxivlib_1_1_entity}{Entity}. \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac9deecbc7f2ceeac2b48b06620e8a665}{F\-F\-X\-I\-V\-L\-I\-B} (int pid=0)
+\begin{DoxyCompactList}\small\item\em Instantiates a \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B} instance. P\-I\-D is optionnal but required if multiple F\-F\-X\-I\-V process are running. \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}{get\-Movement\-Helper} (Send\-Key\-Input.\-V\-K\-Keys \-\_\-left\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-A, Send\-Key\-Input.\-V\-K\-Keys \-\_\-right\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-D, Send\-Key\-Input.\-V\-K\-Keys \-\_\-forward\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-W)
+\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance ready for work. \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{get\-Party\-Member\-Info} (int id)
 \begin{DoxyCompactList}\small\item\em This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{get\-Current\-Target} ()
-\begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\item 
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}{\hyperlink{classffxivlib_1_1_chatlog}{Chatlog} {\bfseries get\-Chatlog} ()}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}
-
-\item 
+\hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{get\-Player\-Info} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info \end{DoxyCompactList}\item 
+void \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac4d88c5b015e78af8455be0bef6f3aca}{Send\-Key} (Int\-Ptr key, bool keyup=true, int delay=100)
+\begin{DoxyCompactList}\small\item\em This function sends a keystroke to the Final Fantasy X\-I\-V window \end{DoxyCompactList}\item 
+Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{get\-Sig\-Scan} (byte\mbox{[}$\,$\mbox{]} signature)
+\begin{DoxyCompactList}\small\item\em Finds address of specified signature This hasnt been tested in a long time \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_target}{Target} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa2b9e679d4edcc20ecda7e4457dffc5d}{get\-Targets} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the target array \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}{get\-Previous\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the previous target \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}{get\-Mouseover\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current Mouseover target \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{get\-Player\-Info} ()
-\begin{DoxyCompactList}\small\item\em This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info \end{DoxyCompactList}\item 
-Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{get\-Sig\-Scan} (byte\mbox{[}$\,$\mbox{]} signature)
-\begin{DoxyCompactList}\small\item\em Finds address of specified signature This hasnt been tested in a long time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{get\-Current\-Target} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa168e0ea04fa7591285822c023595d32}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!F\-F\-X\-I\-V\-L\-I\-B@{F\-F\-X\-I\-V\-L\-I\-B}}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac9deecbc7f2ceeac2b48b06620e8a665}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!F\-F\-X\-I\-V\-L\-I\-B@{F\-F\-X\-I\-V\-L\-I\-B}}
 \index{F\-F\-X\-I\-V\-L\-I\-B@{F\-F\-X\-I\-V\-L\-I\-B}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
 \subsubsection[{F\-F\-X\-I\-V\-L\-I\-B}]{\setlength{\rightskip}{0pt plus 5cm}ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-F\-F\-X\-I\-V\-L\-I\-B (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{pid = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa168e0ea04fa7591285822c023595d32}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac9deecbc7f2ceeac2b48b06620e8a665}
 
 
-Instantiates \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B}. 
-
-There can only be one F\-F\-X\-I\-V process running for this to work.\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa69576bcd69bdd2d43650d094614dbae}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!F\-F\-X\-I\-V\-L\-I\-B@{F\-F\-X\-I\-V\-L\-I\-B}}
-\index{F\-F\-X\-I\-V\-L\-I\-B@{F\-F\-X\-I\-V\-L\-I\-B}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{F\-F\-X\-I\-V\-L\-I\-B}]{\setlength{\rightskip}{0pt plus 5cm}ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-F\-F\-X\-I\-V\-L\-I\-B (
-\begin{DoxyParamCaption}
-\item[{int}]{pid}
-\end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa69576bcd69bdd2d43650d094614dbae}
-
-
-Instantiates \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B} with a given P\-I\-D. 
+Instantiates a \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B} instance. P\-I\-D is optionnal but required if multiple F\-F\-X\-I\-V process are running. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pid} & F\-F\-X\-I\-V P\-I\-D\\
+{\em pid} & F\-F\-X\-I\-V P\-I\-D (optionnal)\\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Chatlog@{get\-Chatlog}}
+\index{get\-Chatlog@{get\-Chatlog}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Chatlog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chatlog} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Chatlog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}
+
+
+This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} object 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_chatlog}{Chatlog} instance
+\end{DoxyReturn}
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Current\-Target@{get\-Current\-Target}}
 \index{get\-Current\-Target@{get\-Current\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
 \subsubsection[{get\-Current\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Current\-Target (
@@ -134,6 +136,31 @@ This function retrieves the current Mouseover target
 
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_entity}{Entity} object or null
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Movement\-Helper@{get\-Movement\-Helper}}
+\index{get\-Movement\-Helper@{get\-Movement\-Helper}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{get\-Movement\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Movement\-Helper} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Movement\-Helper (
+\begin{DoxyParamCaption}
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-left\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-A}, }
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-right\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-D}, }
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-forward\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-W}}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}
+
+
+Returns a \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance ready for work. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-left\-\_\-key} & Left key (default\-: A)\\
+\hline
+{\em \-\_\-right\-\_\-key} & Right key (default\-: D)\\
+\hline
+{\em \-\_\-forward\-\_\-key} & Forward key (default\-: W)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance
 \end{DoxyReturn}
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Party\-Member\-Info@{get\-Party\-Member\-Info}}
 \index{get\-Party\-Member\-Info@{get\-Party\-Member\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
@@ -220,14 +247,15 @@ This function retrieves the target array
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_target}{Target} object
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Send\-Key@{Send\-Key}}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac4d88c5b015e78af8455be0bef6f3aca}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Send\-Key@{Send\-Key}}
 \index{Send\-Key@{Send\-Key}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
 \subsubsection[{Send\-Key}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Send\-Key (
 \begin{DoxyParamCaption}
 \item[{Int\-Ptr}]{key, }
+\item[{bool}]{keyup = {\ttfamily true}, }
 \item[{int}]{delay = {\ttfamily 100}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08db049a37a36d4587c603aded939e17}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac4d88c5b015e78af8455be0bef6f3aca}
 
 
 This function sends a keystroke to the Final Fantasy X\-I\-V window 
@@ -241,6 +269,14 @@ This function sends a keystroke to the Final Fantasy X\-I\-V window
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-F\-F\-X\-I\-V\-L\-I\-B.\-cs\end{DoxyCompactItemize}
+Chatlog.\-cs\item 
+F\-F\-X\-I\-V\-L\-I\-B.\-cs\item 
+Entity.\-cs\item 
+Movement\-Helper.\-cs\item 
+Party\-Member.\-cs\item 
+Player.\-cs\item 
+Send\-Key\-Input.\-cs\item 
+Sig\-Scanner.\-cs\item 
+Target.\-cs\end{DoxyCompactItemize}

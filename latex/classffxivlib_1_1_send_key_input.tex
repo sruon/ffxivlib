@@ -1,0 +1,267 @@
+\hypertarget{classffxivlib_1_1_send_key_input}{\section{ffxivlib.\-Send\-Key\-Input Class Reference}
+\label{classffxivlib_1_1_send_key_input}\index{ffxivlib.\-Send\-Key\-Input@{ffxivlib.\-Send\-Key\-Input}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries V\-K\-Keys} \{ \\*
+{\bfseries L\-B\-U\-T\-T\-O\-N} = 0x01, 
+{\bfseries R\-B\-U\-T\-T\-O\-N} = 0x02, 
+{\bfseries C\-A\-N\-C\-E\-L} = 0x03, 
+{\bfseries M\-B\-U\-T\-T\-O\-N} = 0x04, 
+\\*
+{\bfseries X\-B\-U\-T\-T\-O\-N1} = 0x05, 
+{\bfseries X\-B\-U\-T\-T\-O\-N2} = 0x06, 
+{\bfseries B\-A\-C\-K} = 0x08, 
+{\bfseries T\-A\-B} = 0x09, 
+\\*
+{\bfseries C\-L\-E\-A\-R} = 0x0\-C, 
+{\bfseries R\-E\-T\-U\-R\-N} = 0x0\-D, 
+{\bfseries S\-H\-I\-F\-T} = 0x10, 
+{\bfseries C\-O\-N\-T\-R\-O\-L} = 0x11, 
+\\*
+{\bfseries M\-E\-N\-U} = 0x12, 
+{\bfseries P\-A\-U\-S\-E} = 0x13, 
+{\bfseries C\-A\-P\-I\-T\-A\-L} = 0x14, 
+{\bfseries K\-A\-N\-A} = 0x15, 
+\\*
+{\bfseries H\-A\-N\-G\-U\-L} = 0x15, 
+{\bfseries J\-U\-N\-J\-A} = 0x17, 
+{\bfseries F\-I\-N\-A\-L} = 0x18, 
+{\bfseries H\-A\-N\-J\-A} = 0x19, 
+\\*
+{\bfseries K\-A\-N\-J\-I} = 0x19, 
+{\bfseries E\-S\-C\-A\-P\-E} = 0x1\-B, 
+{\bfseries C\-O\-N\-V\-E\-R\-T} = 0x1\-C, 
+{\bfseries N\-O\-N\-C\-O\-N\-V\-E\-R\-T} = 0x1\-D, 
+\\*
+{\bfseries A\-C\-C\-E\-P\-T} = 0x1\-E, 
+{\bfseries M\-O\-D\-E\-C\-H\-A\-N\-G\-E} = 0x1\-F, 
+{\bfseries S\-P\-A\-C\-E} = 0x20, 
+{\bfseries P\-R\-I\-O\-R} = 0x21, 
+\\*
+{\bfseries N\-E\-X\-T} = 0x22, 
+{\bfseries E\-N\-D} = 0x23, 
+{\bfseries H\-O\-M\-E} = 0x24, 
+{\bfseries L\-E\-F\-T} = 0x25, 
+\\*
+{\bfseries U\-P} = 0x26, 
+{\bfseries R\-I\-G\-H\-T} = 0x27, 
+{\bfseries D\-O\-W\-N} = 0x28, 
+{\bfseries S\-E\-L\-E\-C\-T} = 0x29, 
+\\*
+{\bfseries P\-R\-I\-N\-T} = 0x2\-A, 
+{\bfseries E\-X\-E\-C\-U\-T\-E} = 0x2\-B, 
+{\bfseries S\-N\-A\-P\-S\-H\-O\-T} = 0x2\-C, 
+{\bfseries I\-N\-S\-E\-R\-T} = 0x2\-D, 
+\\*
+{\bfseries D\-E\-L\-E\-T\-E} = 0x2\-E, 
+{\bfseries H\-E\-L\-P} = 0x2\-F, 
+{\bfseries K\-E\-Y\-\_\-0} = 0x30, 
+{\bfseries K\-E\-Y\-\_\-1} = 0x31, 
+\\*
+{\bfseries K\-E\-Y\-\_\-2} = 0x32, 
+{\bfseries K\-E\-Y\-\_\-3} = 0x33, 
+{\bfseries K\-E\-Y\-\_\-4} = 0x34, 
+{\bfseries K\-E\-Y\-\_\-5} = 0x35, 
+\\*
+{\bfseries K\-E\-Y\-\_\-6} = 0x36, 
+{\bfseries K\-E\-Y\-\_\-7} = 0x37, 
+{\bfseries K\-E\-Y\-\_\-8} = 0x38, 
+{\bfseries K\-E\-Y\-\_\-9} = 0x39, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-A} = 0x41, 
+{\bfseries K\-E\-Y\-\_\-\-B} = 0x42, 
+{\bfseries K\-E\-Y\-\_\-\-C} = 0x43, 
+{\bfseries K\-E\-Y\-\_\-\-D} = 0x44, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-E} = 0x45, 
+{\bfseries K\-E\-Y\-\_\-\-F} = 0x46, 
+{\bfseries K\-E\-Y\-\_\-\-G} = 0x47, 
+{\bfseries K\-E\-Y\-\_\-\-H} = 0x48, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-I} = 0x49, 
+{\bfseries K\-E\-Y\-\_\-\-J} = 0x4\-A, 
+{\bfseries K\-E\-Y\-\_\-\-K} = 0x4\-B, 
+{\bfseries K\-E\-Y\-\_\-\-L} = 0x4\-C, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-M} = 0x4\-D, 
+{\bfseries K\-E\-Y\-\_\-\-N} = 0x4\-E, 
+{\bfseries K\-E\-Y\-\_\-\-O} = 0x4\-F, 
+{\bfseries K\-E\-Y\-\_\-\-P} = 0x50, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-Q} = 0x51, 
+{\bfseries K\-E\-Y\-\_\-\-R} = 0x52, 
+{\bfseries K\-E\-Y\-\_\-\-S} = 0x53, 
+{\bfseries K\-E\-Y\-\_\-\-T} = 0x54, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-U} = 0x55, 
+{\bfseries K\-E\-Y\-\_\-\-V} = 0x56, 
+{\bfseries K\-E\-Y\-\_\-\-W} = 0x57, 
+{\bfseries K\-E\-Y\-\_\-\-X} = 0x58, 
+\\*
+{\bfseries K\-E\-Y\-\_\-\-Y} = 0x59, 
+{\bfseries K\-E\-Y\-\_\-\-Z} = 0x5\-A, 
+{\bfseries S\-L\-E\-E\-P} = 0x5\-F, 
+{\bfseries N\-U\-M\-P\-A\-D0} = 0x60, 
+\\*
+{\bfseries N\-U\-M\-P\-A\-D1} = 0x61, 
+{\bfseries N\-U\-M\-P\-A\-D2} = 0x62, 
+{\bfseries N\-U\-M\-P\-A\-D3} = 0x63, 
+{\bfseries N\-U\-M\-P\-A\-D4} = 0x64, 
+\\*
+{\bfseries N\-U\-M\-P\-A\-D5} = 0x65, 
+{\bfseries N\-U\-M\-P\-A\-D6} = 0x66, 
+{\bfseries N\-U\-M\-P\-A\-D7} = 0x67, 
+{\bfseries N\-U\-M\-P\-A\-D8} = 0x68, 
+\\*
+{\bfseries N\-U\-M\-P\-A\-D9} = 0x69, 
+{\bfseries M\-U\-L\-T\-I\-P\-L\-Y} = 0x6\-A, 
+{\bfseries A\-D\-D} = 0x6\-B, 
+{\bfseries S\-E\-P\-A\-R\-A\-T\-O\-R} = 0x6\-C, 
+\\*
+{\bfseries S\-U\-B\-T\-R\-A\-C\-T} = 0x6\-D, 
+{\bfseries D\-E\-C\-I\-M\-A\-L} = 0x6\-E, 
+{\bfseries D\-I\-V\-I\-D\-E} = 0x6\-F, 
+{\bfseries F1} = 0x70, 
+\\*
+{\bfseries F2} = 0x71, 
+{\bfseries F3} = 0x72, 
+{\bfseries F4} = 0x73, 
+{\bfseries F5} = 0x74, 
+\\*
+{\bfseries F6} = 0x75, 
+{\bfseries F7} = 0x76, 
+{\bfseries F8} = 0x77, 
+{\bfseries F9} = 0x78, 
+\\*
+{\bfseries F10} = 0x79, 
+{\bfseries F11} = 0x7\-A, 
+{\bfseries F12} = 0x7\-B, 
+{\bfseries F13} = 0x7\-C, 
+\\*
+{\bfseries F14} = 0x7\-D, 
+{\bfseries F15} = 0x7\-E, 
+{\bfseries F16} = 0x7\-F, 
+{\bfseries F17} = 0x80, 
+\\*
+{\bfseries F18} = 0x81, 
+{\bfseries F19} = 0x82, 
+{\bfseries F20} = 0x83, 
+{\bfseries F21} = 0x84, 
+\\*
+{\bfseries F22} = 0x85, 
+{\bfseries F23} = 0x86, 
+{\bfseries F24} = 0x87, 
+{\bfseries N\-U\-M\-L\-O\-C\-K} = 0x90, 
+\\*
+{\bfseries S\-C\-R\-O\-L\-L} = 0x91, 
+{\bfseries L\-S\-H\-I\-F\-T} = 0x\-A0, 
+{\bfseries R\-S\-H\-I\-F\-T} = 0x\-A1, 
+{\bfseries L\-C\-O\-N\-T\-R\-O\-L} = 0x\-A2, 
+\\*
+{\bfseries R\-C\-O\-N\-T\-R\-O\-L} = 0x\-A3, 
+{\bfseries L\-M\-E\-N\-U} = 0x\-A4, 
+{\bfseries R\-M\-E\-N\-U} = 0x\-A5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classffxivlib_1_1_send_key_input_aa8f7cbdf5bafad8f57313b1bd5731cf4}{Convert\-Text\-To\-Input} (I\-Enumerable$<$ char $>$ c\-String, int delay=300)
+\begin{DoxyCompactList}\small\item\em Send text string to game window \end{DoxyCompactList}\item 
+void \hyperlink{classffxivlib_1_1_send_key_input_a3302a44e82c7edee92ad9ceacce87fa6}{Send\-Return\-Key} (int delay=100)
+\begin{DoxyCompactList}\small\item\em Send Enter keypress \end{DoxyCompactList}\item 
+void \hyperlink{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}{Send\-Key\-Press} (V\-K\-Keys Key, bool keyup=true, int delay=100)
+\begin{DoxyCompactList}\small\item\em Send a Virtual Key to F\-F\-X\-I\-V \end{DoxyCompactList}\item 
+\hypertarget{classffxivlib_1_1_send_key_input_aec916a6b910122da2683c311b2cacb67}{void {\bfseries Set\-Focus} ()}\label{classffxivlib_1_1_send_key_input_aec916a6b910122da2683c311b2cacb67}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a01a23da6e4e33c5e8d107c6942c491d8}{void {\bfseries Post\-Message\-P\-T\-R} (uint Msg, Int\-Ptr w\-Param, Int\-Ptr l\-Param)}\label{classffxivlib_1_1_send_key_input_a01a23da6e4e33c5e8d107c6942c491d8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a61972fc0a62991c8a5d9b0987cd5984f}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries set\-Instance} (Int\-Ptr F\-F\-X\-I\-V\-Window)}\label{classffxivlib_1_1_send_key_input_a61972fc0a62991c8a5d9b0987cd5984f}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a75e37e328b5fe2d9ad557f9702b17119}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries get\-Instance} ()}\label{classffxivlib_1_1_send_key_input_a75e37e328b5fe2d9ad557f9702b17119}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a62f44b27440541f08692f7fdc9449b54}{const uint {\bfseries M\-A\-P\-V\-K\-\_\-\-V\-K\-\_\-\-T\-O\-\_\-\-V\-S\-C} = 0x00}\label{classffxivlib_1_1_send_key_input_a62f44b27440541f08692f7fdc9449b54}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a97ed4265a7e81c791176f086ff4d1594}{const uint {\bfseries M\-A\-P\-V\-K\-\_\-\-V\-S\-C\-\_\-\-T\-O\-\_\-\-V\-K} = 0x01}\label{classffxivlib_1_1_send_key_input_a97ed4265a7e81c791176f086ff4d1594}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a2f007e817ec2f4685991abc65bdab764}{const uint {\bfseries M\-A\-P\-V\-K\-\_\-\-V\-K\-\_\-\-T\-O\-\_\-\-C\-H\-A\-R} = 0x02}\label{classffxivlib_1_1_send_key_input_a2f007e817ec2f4685991abc65bdab764}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_a640377bab26690b4e4441cdae829735e}{const uint {\bfseries M\-A\-P\-V\-K\-\_\-\-V\-S\-C\-\_\-\-T\-O\-\_\-\-V\-K\-\_\-\-E\-X} = 0x03}\label{classffxivlib_1_1_send_key_input_a640377bab26690b4e4441cdae829735e}
+
+\item 
+\hypertarget{classffxivlib_1_1_send_key_input_ad6810737c7a8628f75effb48599b8fd0}{const uint {\bfseries M\-A\-P\-V\-K\-\_\-\-V\-K\-\_\-\-T\-O\-\_\-\-V\-S\-C\-\_\-\-E\-X} = 0x04}\label{classffxivlib_1_1_send_key_input_ad6810737c7a8628f75effb48599b8fd0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classffxivlib_1_1_send_key_input_aa8f7cbdf5bafad8f57313b1bd5731cf4}{\index{ffxivlib\-::\-Send\-Key\-Input@{ffxivlib\-::\-Send\-Key\-Input}!Convert\-Text\-To\-Input@{Convert\-Text\-To\-Input}}
+\index{Convert\-Text\-To\-Input@{Convert\-Text\-To\-Input}!ffxivlib::SendKeyInput@{ffxivlib\-::\-Send\-Key\-Input}}
+\subsubsection[{Convert\-Text\-To\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Send\-Key\-Input.\-Convert\-Text\-To\-Input (
+\begin{DoxyParamCaption}
+\item[{I\-Enumerable$<$ char $>$}]{c\-String, }
+\item[{int}]{delay = {\ttfamily 300}}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_send_key_input_aa8f7cbdf5bafad8f57313b1bd5731cf4}
+
+
+Send text string to game window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}{\index{ffxivlib\-::\-Send\-Key\-Input@{ffxivlib\-::\-Send\-Key\-Input}!Send\-Key\-Press@{Send\-Key\-Press}}
+\index{Send\-Key\-Press@{Send\-Key\-Press}!ffxivlib::SendKeyInput@{ffxivlib\-::\-Send\-Key\-Input}}
+\subsubsection[{Send\-Key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Send\-Key\-Input.\-Send\-Key\-Press (
+\begin{DoxyParamCaption}
+\item[{V\-K\-Keys}]{Key, }
+\item[{bool}]{keyup = {\ttfamily true}, }
+\item[{int}]{delay = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}
+
+
+Send a Virtual Key to F\-F\-X\-I\-V 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key} & Virtual Key to press\\
+\hline
+{\em keyup} & Should we keypress up (default\-: true)\\
+\hline
+{\em delay} & Delay between keydown and keyup (default\-: 100ms)\\
+\hline
+\end{DoxyParams}
+\hypertarget{classffxivlib_1_1_send_key_input_a3302a44e82c7edee92ad9ceacce87fa6}{\index{ffxivlib\-::\-Send\-Key\-Input@{ffxivlib\-::\-Send\-Key\-Input}!Send\-Return\-Key@{Send\-Return\-Key}}
+\index{Send\-Return\-Key@{Send\-Return\-Key}!ffxivlib::SendKeyInput@{ffxivlib\-::\-Send\-Key\-Input}}
+\subsubsection[{Send\-Return\-Key}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Send\-Key\-Input.\-Send\-Return\-Key (
+\begin{DoxyParamCaption}
+\item[{int}]{delay = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_send_key_input_a3302a44e82c7edee92ad9ceacce87fa6}
+
+
+Send Enter keypress 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Send\-Key\-Input.\-cs\end{DoxyCompactItemize}

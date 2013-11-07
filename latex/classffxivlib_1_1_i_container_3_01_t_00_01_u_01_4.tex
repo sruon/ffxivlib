@@ -16,7 +16,9 @@ Inheritance diagram for ffxivlib.\-I\-Container$<$ T, U $>$\-:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_ae9081b3163d43d4d655dc72ea50b7a3d}{modify$<$ X $>$} (string field, X value)
-\begin{DoxyCompactList}\small\item\em This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. \end{DoxyCompactList}\item 
+void \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_adf190803540c072242e04f8380befc46}{refresh} ()
+\begin{DoxyCompactList}\small\item\em This refreshes the instance It may have unexpected behavior if address changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +41,8 @@ Basic managed container for structures and other infos
 \hline
 \end{DoxyTemplParams}
 
+
+Name is misleading, this is not an Interface.
 
 \subsection{Member Function Documentation}
 \hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_ae9081b3163d43d4d655dc72ea50b7a3d}{\index{ffxivlib\-::\-I\-Container$<$ T, U $>$@{ffxivlib\-::\-I\-Container$<$ T, U $>$}!modify$<$ X $>$@{modify$<$ X $>$}}
@@ -65,6 +69,17 @@ This function computes the address inside F\-F\-X\-I\-V process space to be modi
 {\em value} & Value to assign to field\\
 \hline
 \end{DoxyParams}
+\hypertarget{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_adf190803540c072242e04f8380befc46}{\index{ffxivlib\-::\-I\-Container$<$ T, U $>$@{ffxivlib\-::\-I\-Container$<$ T, U $>$}!refresh@{refresh}}
+\index{refresh@{refresh}!ffxivlib::IContainer< T, U >@{ffxivlib\-::\-I\-Container$<$ T, U $>$}}
+\subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-I\-Container$<$ T, U $>$.refresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4_adf190803540c072242e04f8380befc46}
+
+
+This refreshes the instance It may have unexpected behavior if address changes. 
+
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
