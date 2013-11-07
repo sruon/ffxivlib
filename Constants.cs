@@ -9,7 +9,7 @@ internal static class Constants
     public const Int32 PROCESS_MMS = 10000000;
 
     #region Pointer paths
-
+    // Simple representation of pointer paths, do not add base module, last member will be expected to be the offset so may have to add extra 0 at the end if you dont need it
     public static readonly List<int> PCPTR = new List<int>
         {
             0x010BED9C,
@@ -59,5 +59,4 @@ internal static class Constants
 
     #endregion
 
-    // Simple representation of pointer paths, do not add base module, last member will be expected to be the offset so may have to add extra 0 at the end if you dont need it
 }
