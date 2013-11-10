@@ -116,4 +116,26 @@
         True = 0x2,
         False = 0x4,
     }
+
+    /// <summary>
+    /// This is used for getCurrentEquipment()
+    /// Need to do -1 if no Offhand equipped unfortunately, to fix.
+    /// </summary>
+    public enum EQUIP_POS : byte
+    {
+        MainHand = 0,
+        OffHand = 1,
+        Head = 2,
+        Body = 3,
+        Hands = 4,
+        Waist = 5,
+        Legs = 6,
+        Feet = 7,
+        Neck = 8,
+        Ears = 9,
+        Wrists = 10,
+        LeftRing = 11,
+        RightRing = 12,
+        SoulCrystal = 13
+    }
 }

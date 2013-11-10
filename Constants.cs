@@ -41,6 +41,11 @@ internal static class Constants
             0x18,
             0x200
         };
+    public static readonly List<int> INVENTORYPTR = new List<int>
+        {
+            0x10B95B8,
+            -0x8
+        };
 
     #endregion
 
@@ -56,6 +61,21 @@ internal static class Constants
 
     public const int TIMESTAMP_SIZE = 8;
     public const int CHATCODE_SIZE = 4;
+
+    #endregion
+
+    #region Inventory related
+
+    public const int INVENTORY_PTR_OFFSET = 0x20;
+    public const int SELF_INVENTORY_SIZE = 4;
+    public const int CURRENT_EQUIPMENT_SIZE = 1;
+    public const int SELF_EXTRA_SIZE = 11;
+    public const int RETAINER_INVENTORY_SIZE = 7;
+    public const int RETAINER_EXTRA_SIZE = 3;
+    public const int ARMORY_CHEST_MH_SIZE = 1;
+    public const int ARMORY_CHEST_SIZE = 12;
+    public const int COMPANY_INVENTORY_SIZE = 3;
+    public const int COMPANY_EXTRA_SIZE = 2;
 
     #endregion
 
