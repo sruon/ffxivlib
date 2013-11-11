@@ -119,7 +119,6 @@
 
     /// <summary>
     /// This is used for getCurrentEquipment()
-    /// Need to do -1 if no Offhand equipped unfortunately, to fix.
     /// </summary>
     public enum EQUIP_POS : byte
     {
