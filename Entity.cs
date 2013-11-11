@@ -43,6 +43,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short mGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A6)] public short cCP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A8)] public short mCP;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB8)] public byte Race;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2F48)] public BUFF[] Buffs;
         };
 
