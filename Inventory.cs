@@ -175,7 +175,7 @@ namespace ffxivlib
         /// This returns your inventory, extra inventory (gil, crystals, tomes, seals), 
         /// key items, calamity salvager and currently equipped items
         /// </summary>
-        /// <returns>Requested Inventory</returns>
+        /// <returns>List of items</returns>
         public List<Inventory.ITEM> getSelfInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
@@ -186,7 +186,7 @@ namespace ffxivlib
         /// <summary>
         /// This returns your currently equipped items. See EQUIP_POS enum.
         /// </summary>
-        /// <returns>Requested Inventory</returns>
+        /// <returns>List of items</returns>
         public List<Inventory.ITEM> getCurrentEquipment()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
@@ -198,7 +198,7 @@ namespace ffxivlib
         /// This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale.
         /// This only works while checking a retainer.
         /// </summary>
-        /// <returns>Requested Inventory</returns>
+        /// <returns>List of items</returns>
         public List<Inventory.ITEM> getRetainerInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
@@ -209,7 +209,7 @@ namespace ffxivlib
         /// <summary>
         /// This returns your whole Armory Chest.
         /// </summary>
-        /// <returns>Requested Inventory</returns>
+        /// <returns>List of items</returns>
         public List<Inventory.ITEM> getArmoryChest()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
@@ -221,7 +221,7 @@ namespace ffxivlib
         /// This returns your Free Company inventory, extra inventory (currency, crystals)
         /// This might only work while checking the Free Company chest.
         /// </summary>
-        /// <returns>Requested Inventory</returns>
+        /// <returns>List of items</returns>
         public List<Inventory.ITEM> getCompanyInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
