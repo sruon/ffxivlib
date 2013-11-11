@@ -11,7 +11,7 @@ namespace GetInventory
         static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
-            Inventory.InventoryContainer ic = instance.getSelfInventory();
+            List<Inventory.ITEM> ic = instance.getSelfInventory();
             ic = instance.getArmoryChest();
             ic = instance.getCompanyInventory();
             ic = instance.getRetainerInventory();

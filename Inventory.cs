@@ -72,9 +72,9 @@ namespace ffxivlib
         /// <summary>
         /// Basic container for our list of items.
         /// </summary>
-        public class InventoryContainer
+        public class InventoryBuilder
         {
-            private List<ITEM> items { get; set; }
+            public List<ITEM> items { get; set; }
             private readonly MemoryReader mr = MemoryReader.getInstance();
 
             /// <summary>
@@ -83,7 +83,7 @@ namespace ffxivlib
             /// <param name="pointer">Subarray pointer</param>
             /// <param name="count">Subarray max elements</param>
             /// <param name="clean">Should we ignore empty objects? Useful for currently equipped items.</param>
-            internal InventoryContainer(IntPtr pointer, int count, bool clean)
+            internal InventoryBuilder(IntPtr pointer, int count, bool clean)
             {
                 items = new List<ITEM>();
                 for (int i = 0; i < count; i++)
@@ -94,7 +94,7 @@ namespace ffxivlib
                     }
             }
 
-            internal InventoryContainer() {}
+            internal InventoryBuilder() {}
 
             /// <summary>
             /// Merges two lists
@@ -102,9 +102,9 @@ namespace ffxivlib
             /// <param name="ic1">First list</param>
             /// <param name="ic2">Second list</param>
             /// <returns>New merged list</returns>
-            public static InventoryContainer operator +(InventoryContainer ic1, InventoryContainer ic2)
+            public static InventoryBuilder operator +(InventoryBuilder ic1, InventoryBuilder ic2)
             {
-                InventoryContainer ic = new InventoryContainer();
+                InventoryBuilder ic = new InventoryBuilder();
                 ic.items = new List<ITEM>();
                 if (ic1.items != null)
                     ic.items.AddRange(ic1.items);
@@ -121,51 +121,51 @@ namespace ffxivlib
         /// <param name="count">Number of pointers to process</param>
         /// <param name="offset">Offset between pointers</param>
         /// <returns>Final list</returns>
-        private InventoryContainer buildSubList(IntPtr ptr, int count, bool clean = true)
+        private InventoryBuilder buildSubList(IntPtr ptr, int count, bool clean = true)
         {
-            InventoryContainer ic = new InventoryContainer();
+            InventoryBuilder ic = new InventoryBuilder();
             for (int i = 0; i < count; i++)
                 {
                     IntPtr ic_ptr = mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET));
                     // Count of container is at 0xC.
                     int ic_count = (int)mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET) + 0xC);
-                    ic = ic + new InventoryContainer(ic_ptr, ic_count, clean);
+                    ic = ic + new InventoryBuilder(ic_ptr, ic_count, clean);
                 }
             return ic;
         }
 
-        internal InventoryContainer getSelfInventory()
+        internal List<ITEM> getSelfInventory()
         {
-            InventoryContainer ic = buildSubList((IntPtr) structure.SelfInventory, Constants.SELF_INVENTORY_SIZE);
+            InventoryBuilder ic = buildSubList((IntPtr) structure.SelfInventory, Constants.SELF_INVENTORY_SIZE);
             ic = ic + buildSubList((IntPtr) structure.SelfExtra, Constants.SELF_EXTRA_SIZE);
             ic = ic + buildSubList((IntPtr) structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE);
-            return ic;
+            return ic.items;
         }
 
-        internal InventoryContainer getCurrentEquipment()
+        internal List<ITEM> getCurrentEquipment()
         {
-            return buildSubList((IntPtr) structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE, false);
+            return buildSubList((IntPtr) structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE, false).items;
         }
 
-        internal InventoryContainer getRetainerInventory()
+        internal List<ITEM> getRetainerInventory()
         {
-            InventoryContainer ic = buildSubList((IntPtr) structure.RetainerInventory, Constants.RETAINER_INVENTORY_SIZE);
+            InventoryBuilder ic = buildSubList((IntPtr) structure.RetainerInventory, Constants.RETAINER_INVENTORY_SIZE);
             ic = ic + buildSubList((IntPtr) structure.RetainerExtra, Constants.RETAINER_EXTRA_SIZE);
-            return ic;
+            return ic.items;
         }
 
-        internal InventoryContainer getArmoryChest()
+        internal List<ITEM> getArmoryChest()
         {
-            InventoryContainer ic = buildSubList((IntPtr) structure.ArmoryChestMH, Constants.ARMORY_CHEST_MH_SIZE);
+            InventoryBuilder ic = buildSubList((IntPtr) structure.ArmoryChestMH, Constants.ARMORY_CHEST_MH_SIZE);
             ic = ic + buildSubList((IntPtr) structure.ArmoryChest, Constants.ARMORY_CHEST_SIZE);
-            return ic;
+            return ic.items;
         }
 
-        internal InventoryContainer getCompanyInventory()
+        internal List<ITEM> getCompanyInventory()
         {
-            InventoryContainer ic = buildSubList((IntPtr) structure.CompanyInventory, Constants.COMPANY_INVENTORY_SIZE);
+            InventoryBuilder ic = buildSubList((IntPtr) structure.CompanyInventory, Constants.COMPANY_INVENTORY_SIZE);
             ic = ic + buildSubList((IntPtr) structure.CompanyExtra, Constants.COMPANY_EXTRA_SIZE);
-            return ic;
+            return ic.items;
         }
     }
 
@@ -176,24 +176,22 @@ namespace ffxivlib
         /// key items, calamity salvager and currently equipped items
         /// </summary>
         /// <returns>Requested Inventory</returns>
-        public Inventory.InventoryContainer getSelfInventory()
+        public List<Inventory.ITEM> getSelfInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
             var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            Inventory.InventoryContainer ic = i.getSelfInventory();
-            return ic;
+            return i.getSelfInventory();
         }
 
         /// <summary>
         /// This returns your currently equipped items. See EQUIP_POS enum.
         /// </summary>
         /// <returns>Requested Inventory</returns>
-        public Inventory.InventoryContainer getCurrentEquipment()
+        public List<Inventory.ITEM> getCurrentEquipment()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
             var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            Inventory.InventoryContainer ic = i.getCurrentEquipment();
-            return ic;
+            return i.getCurrentEquipment();
         }
 
         /// <summary>
@@ -201,24 +199,22 @@ namespace ffxivlib
         /// This only works while checking a retainer.
         /// </summary>
         /// <returns>Requested Inventory</returns>
-        public Inventory.InventoryContainer getRetainerInventory()
+        public List<Inventory.ITEM> getRetainerInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
             var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            Inventory.InventoryContainer ic = i.getRetainerInventory();
-            return ic;
+            return i.getRetainerInventory();
         }
 
         /// <summary>
         /// This returns your whole Armory Chest.
         /// </summary>
         /// <returns>Requested Inventory</returns>
-        public Inventory.InventoryContainer getArmoryChest()
+        public List<Inventory.ITEM> getArmoryChest()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
             var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            Inventory.InventoryContainer ic = i.getArmoryChest();
-            return ic;
+            return i.getArmoryChest();
         }
 
         /// <summary>
@@ -226,12 +222,11 @@ namespace ffxivlib
         /// This might only work while checking the Free Company chest.
         /// </summary>
         /// <returns>Requested Inventory</returns>
-        public Inventory.InventoryContainer getCompanyInventory()
+        public List<Inventory.ITEM> getCompanyInventory()
         {
             IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
             var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            Inventory.InventoryContainer ic = i.getCompanyInventory();
-            return ic;
+            return i.getCompanyInventory();
         }
     }
 }
