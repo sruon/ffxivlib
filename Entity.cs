@@ -42,7 +42,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short mGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A6)] public short cCP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A8)] public short mCP;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2F48)] public BUFF[] Buffs;
         };
+
         /// <summary>
         /// Returns the distance between current Entity and a given Entity
         /// </summary>
@@ -66,7 +68,7 @@ namespace ffxivlib
         /// <param name="id">Position in the Entity Array, use Constants.ENTITY_ARRAY_SIZE as your max (exclusive)</param>
         /// <returns>Entity object or null</returns>
         /// <exception cref="System.IndexOutOfRangeException">Out of range</exception>
-        public Entity getEntityInfo(int id)
+        public Entity getEntityById(int id)
         {
             if (id >= Constants.ENTITY_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
@@ -81,6 +83,16 @@ namespace ffxivlib
                 {
                     return null;
                 }
+        }
+
+        /// <summary>
+        /// Deprecated, use getEntityById
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Entity getEntityInfo(int id)
+        {
+            return getEntityById(id);
         }
 
         /// <summary>
