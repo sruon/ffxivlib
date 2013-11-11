@@ -98,7 +98,7 @@ namespace ResourcesDumper
         static void Main(string[] args)
         {
             Serializer s = new Serializer();
-            FFXIVLIB instance = new FFXIVLIB();
+            //FFXIVLIB instance = new FFXIVLIB();
             //dumpBuffs(instance, s);
             dumpSqlite("app_data.sqlite");
         }

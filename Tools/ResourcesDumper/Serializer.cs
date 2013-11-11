@@ -28,8 +28,9 @@ namespace ResourcesDumper
                     // I'll make my own XML, with black jack and hookers
                     xmlContent = xmlContent.Replace("<SerializableDictionaryOfStringString>\r\n  ", "");
                     xmlContent = xmlContent.Replace("</SerializableDictionaryOfStringString>\r\n  ", "");
-                    xmlContent = xmlContent.Replace("SerializableDictionaryOfStringString", table);
+                    xmlContent = xmlContent.Replace("</SerializableDictionaryOfStringString>\r\n", "");
                     xmlContent = xmlContent.Replace("XMLNODE", table);
+                    xmlContent = xmlContent.Replace("SerializableDictionaryOfStringString", table);
                     // JP entries have extra /n... why
                     xmlContent = xmlContent.Replace("\n<", "<");
                     textWriter.Write(xmlContent);
