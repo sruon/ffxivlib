@@ -277,4 +277,12 @@ namespace ffxivlib
 
         #endregion
     }
+    public partial class FFXIVLIB
+    {
+        public byte[] ReadMemory(IntPtr pointer, uint count)
+        {
+            int outbytes;
+            return this.mr.ReadAdress(pointer, count, out outbytes);
+        }
+    }
 }
