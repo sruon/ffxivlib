@@ -37,6 +37,11 @@
         Pet = 0x2E
     }
 
+    public enum SEX : byte
+    {
+        Male = 0x0,
+        Female = 0x1
+    }
     /// <summary>
     ///     Current action of an Entity (PC)
     /// </summary>
