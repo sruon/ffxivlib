@@ -33,6 +33,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x18A)] public byte icon;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x195)] public STATUS IsEngaged;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD58)] public int TargetId;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168E)] public byte Title;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1690)] public int cHP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1694)] public int mHP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1698)] public int cMP;
