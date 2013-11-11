@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGCRankLimsaMaleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GCRankLimsaMaleText>
+      <Key>1</Key>
+      <SGL_ja>二等甲兵</SGL_ja>
+      <SGL_en>Storm Private Third Class</SGL_en>
+      <SGL_fr>soldat 3e classe</SGL_fr>
+      <SGL_de>Sturmmariner 3. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>2</Key>
+      <SGL_ja>一等甲兵</SGL_ja>
+      <SGL_en>Storm Private Second Class</SGL_en>
+      <SGL_fr>soldat 2e classe</SGL_fr>
+      <SGL_de>Sturmmariner 2. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>3</Key>
+      <SGL_ja>上等甲兵</SGL_ja>
+      <SGL_en>Storm Private First Class</SGL_en>
+      <SGL_fr>soldat 1re classe</SGL_fr>
+      <SGL_de>Sturmmariner 1. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>4</Key>
+      <SGL_ja>甲兵長</SGL_ja>
+      <SGL_en>Storm Corporal</SGL_en>
+      <SGL_fr>caporal</SGL_fr>
+      <SGL_de>Großsturmmariner</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>5</Key>
+      <SGL_ja>甲伍長</SGL_ja>
+      <SGL_en>Storm Sergeant Third Class</SGL_en>
+      <SGL_fr>adjudant</SGL_fr>
+      <SGL_de>Sturmmaat 3. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>6</Key>
+      <SGL_ja>甲軍曹</SGL_ja>
+      <SGL_en>Storm Sergeant Second Class</SGL_en>
+      <SGL_fr>sergent</SGL_fr>
+      <SGL_de>Sturmmaat 2. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>7</Key>
+      <SGL_ja>甲曹長</SGL_ja>
+      <SGL_en>Storm Sergeant First Class</SGL_en>
+      <SGL_fr>sergent-major</SGL_fr>
+      <SGL_de>Sturmmaat 1. Klasse</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>8</Key>
+      <SGL_ja>准甲士</SGL_ja>
+      <SGL_en>Chief Storm Sergeant</SGL_en>
+      <SGL_fr>major</SGL_fr>
+      <SGL_de>Großsturmmaat</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>9</Key>
+      <SGL_ja>少甲士</SGL_ja>
+      <SGL_en>Second Storm Lieutenant</SGL_en>
+      <SGL_fr>sous-lieutenant</SGL_fr>
+      <SGL_de>Zweiter Sturmbootsmann</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>10</Key>
+      <SGL_ja>中甲士</SGL_ja>
+      <SGL_en>First Storm Lieutenant</SGL_en>
+      <SGL_fr>lieutenant</SGL_fr>
+      <SGL_de>Erster Sturmbootsmann</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>11</Key>
+      <SGL_ja>大甲士</SGL_ja>
+      <SGL_en>Storm Captain</SGL_en>
+      <SGL_fr>capitaine</SGL_fr>
+      <SGL_de>Großsturmbootsmann</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>12</Key>
+      <SGL_ja>少甲佐</SGL_ja>
+      <SGL_en>Second Storm Commander</SGL_en>
+      <SGL_fr>sous-commandant</SGL_fr>
+      <SGL_de>Zweiter Sturmkapitänleutnant</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>13</Key>
+      <SGL_ja>中甲佐</SGL_ja>
+      <SGL_en>First Storm Commander</SGL_en>
+      <SGL_fr>commandant</SGL_fr>
+      <SGL_de>Erster Sturmkapitänleutnant</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>14</Key>
+      <SGL_ja>大甲佐</SGL_ja>
+      <SGL_en>High Storm Commander</SGL_en>
+      <SGL_fr>colonel</SGL_fr>
+      <SGL_de>Großsturmkapitänleutnant</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>15</Key>
+      <SGL_ja>准甲将</SGL_ja>
+      <SGL_en>Rear Storm Marshal</SGL_en>
+      <SGL_fr>sous-maréchal</SGL_fr>
+      <SGL_de>Galeerenkapitän</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>16</Key>
+      <SGL_ja>少甲将</SGL_ja>
+      <SGL_en>Vice Storm Marshal</SGL_en>
+      <SGL_fr>vice-maréchal</SGL_fr>
+      <SGL_de>Galeassenkapitän</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>17</Key>
+      <SGL_ja>中甲将</SGL_ja>
+      <SGL_en>Storm Marshal</SGL_en>
+      <SGL_fr>maréchal</SGL_fr>
+      <SGL_de>Galeonenkapitän</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>18</Key>
+      <SGL_ja>大甲将</SGL_ja>
+      <SGL_en>Grand Storm Marshal</SGL_en>
+      <SGL_fr>grand maréchal</SGL_fr>
+      <SGL_de>Konteradmiral</SGL_de>
+    </GCRankLimsaMaleText>
+    <GCRankLimsaMaleText>
+      <Key>19</Key>
+      <SGL_ja>提督</SGL_ja>
+      <SGL_en>Storm Champion</SGL_en>
+      <SGL_fr>général</SGL_fr>
+      <SGL_de>Admiral</SGL_de>
+    </GCRankLimsaMaleText>
+  </GCRankLimsaMaleText></ArrayOfGCRankLimsaMaleText>

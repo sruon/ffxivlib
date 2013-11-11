@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfShop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Shop>
+      <Key>262144</Key>
+      <Name_ja>テストショップ</Name_ja>
+      <Name_en>Test Shop</Name_en>
+      <Name_fr />
+      <Name_de>Test-Laden</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262151</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262152</Key>
+      <Name_ja>服（ララフェル用）の取引</Name_ja>
+      <Name_en>Purchase Lalafellin Gear</Name_en>
+      <Name_fr>Équipement lalafell</Name_fr>
+      <Name_de>Lalafell-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262153</Key>
+      <Name_ja>服（ルガディン用）の取引</Name_ja>
+      <Name_en>Purchase Roegadyn Gear</Name_en>
+      <Name_fr>Équipement roegadyn</Name_fr>
+      <Name_de>Roegadyn-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262154</Key>
+      <Name_ja>服（エレゼン用）の取引</Name_ja>
+      <Name_en>Purchase Elezen Gear</Name_en>
+      <Name_fr>Équipement élézen</Name_fr>
+      <Name_de>Elezen-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262155</Key>
+      <Name_ja>服（ヒューラン用）の取引</Name_ja>
+      <Name_en>Purchase Hyuran Gear</Name_en>
+      <Name_fr>Équipement hyur</Name_fr>
+      <Name_de>Hyuran-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262156</Key>
+      <Name_ja>服（ミコッテ用）の取引</Name_ja>
+      <Name_en>Purchase Miqo'te Gear</Name_en>
+      <Name_fr>Équipement miqo'te</Name_fr>
+      <Name_de>Miqo'te-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262158</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262159</Key>
+      <Name_ja>服（ララフェル用）の取引</Name_ja>
+      <Name_en>Purchase Lalafellin Gear</Name_en>
+      <Name_fr>Équipement lalafell</Name_fr>
+      <Name_de>Lalafell-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262160</Key>
+      <Name_ja>服（ルガディン用）の取引</Name_ja>
+      <Name_en>Purchase Roegadyn Gear</Name_en>
+      <Name_fr>Équipement roegadyn</Name_fr>
+      <Name_de>Roegadyn-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262161</Key>
+      <Name_ja>服（エレゼン用）の取引</Name_ja>
+      <Name_en>Purchase Elezen Gear</Name_en>
+      <Name_fr>Équipement élézen</Name_fr>
+      <Name_de>Elezen-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262162</Key>
+      <Name_ja>服（ヒューラン用）の取引</Name_ja>
+      <Name_en>Purchase Hyuran Gear</Name_en>
+      <Name_fr>Équipement hyur</Name_fr>
+      <Name_de>Hyuran-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262163</Key>
+      <Name_ja>服（ミコッテ用）の取引</Name_ja>
+      <Name_en>Purchase Miqo'te Gear</Name_en>
+      <Name_fr>Équipement miqo'te</Name_fr>
+      <Name_de>Miqo'te-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262164</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262165</Key>
+      <Name_ja>服（ララフェル用）の取引</Name_ja>
+      <Name_en>Purchase Lalafellin Gear</Name_en>
+      <Name_fr>Équipement lalafell</Name_fr>
+      <Name_de>Lalafell-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262166</Key>
+      <Name_ja>服（ルガディン用）の取引</Name_ja>
+      <Name_en>Purchase Roegadyn Gear</Name_en>
+      <Name_fr>Équipement roegadyn</Name_fr>
+      <Name_de>Roegadyn-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262167</Key>
+      <Name_ja>服（エレゼン用）の取引</Name_ja>
+      <Name_en>Purchase Elezen Gear</Name_en>
+      <Name_fr>Équipement élézen</Name_fr>
+      <Name_de>Elezen-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262168</Key>
+      <Name_ja>服（ヒューラン用）の取引</Name_ja>
+      <Name_en>Purchase Hyuran Gear</Name_en>
+      <Name_fr>Équipement hyur</Name_fr>
+      <Name_de>Hyuran-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262169</Key>
+      <Name_ja>服（ミコッテ用）の取引</Name_ja>
+      <Name_en>Purchase Miqo'te Gear</Name_en>
+      <Name_fr>Équipement miqo'te</Name_fr>
+      <Name_de>Miqo'te-Kleidung</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262178</Key>
+      <Name_ja>アクセサリ（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Accessories</Name_en>
+      <Name_fr>Accessoires de combat</Name_fr>
+      <Name_de>Accessoires (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262179</Key>
+      <Name_ja>アクセサリ（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Accessories</Name_en>
+      <Name_fr>Accessoires de travail</Name_fr>
+      <Name_de>Accessoires (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262181</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262183</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262184</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262186</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262187</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262188</Key>
+      <Name_ja>アクセサリ（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Accessories</Name_en>
+      <Name_fr>Accessoires de combat</Name_fr>
+      <Name_de>Accessoires (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262189</Key>
+      <Name_ja>アクセサリ（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Accessories</Name_en>
+      <Name_fr>Accessoires de travail</Name_fr>
+      <Name_de>Accessoires (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262191</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262193</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262194</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262195</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262196</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262198</Key>
+      <Name_ja>アクセサリ（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Accessories</Name_en>
+      <Name_fr>Accessoires de combat</Name_fr>
+      <Name_de>Accessoires (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262199</Key>
+      <Name_ja>アクセサリ（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Accessories</Name_en>
+      <Name_fr>Accessoires de travail</Name_fr>
+      <Name_de>Accessoires (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262201</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262203</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262204</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262205</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262206</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262209</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262212</Key>
+      <Name_ja>アクセサリ（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Accessories</Name_en>
+      <Name_fr>Accessoires de combat</Name_fr>
+      <Name_de>Accessoires (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262213</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262214</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262215</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262216</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262217</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262218</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262219</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262220</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262221</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262222</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262223</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262224</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262225</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262226</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262227</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262228</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262229</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262230</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262231</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262232</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262233</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262234</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262235</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262236</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262237</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262238</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262239</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262240</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262241</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262242</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262243</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262244</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262245</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262246</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262247</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262248</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262249</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262250</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262251</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262252</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262253</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262254</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262255</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262256</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262258</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262259</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262260</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262261</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262262</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262263</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262264</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262265</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262266</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262267</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262268</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262269</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262270</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262271</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262272</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262273</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262274</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262275</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262276</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262277</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262278</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262279</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262280</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262281</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262282</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262283</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262284</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262285</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262286</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262287</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262288</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262289</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262290</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262291</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262292</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262293</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262294</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262295</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262296</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262297</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262298</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262299</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262300</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262301</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262302</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262303</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262304</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262305</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262306</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262307</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262308</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262309</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262310</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262311</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262312</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262313</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262314</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262315</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262316</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262317</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262318</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262319</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262320</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262321</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262322</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262323</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262324</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262325</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262326</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262327</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262328</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262329</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262330</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262331</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262332</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262333</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262334</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262335</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262336</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262337</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262338</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262339</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262340</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262341</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262342</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262343</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262344</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262345</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262346</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262347</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262348</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262349</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262351</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262352</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262353</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262354</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262355</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262356</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262357</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262358</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262359</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262360</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262361</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262362</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262363</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262364</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262365</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262366</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262367</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262368</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262369</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262370</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262371</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262372</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262373</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262374</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262375</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262378</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262379</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262380</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262381</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262382</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262383</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262384</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262385</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262386</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262387</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262388</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262389</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262390</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262391</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262392</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262393</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262394</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262395</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262396</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262397</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262398</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262399</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262400</Key>
+      <Name_ja>道具の取引</Name_ja>
+      <Name_en>Purchase Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262401</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262402</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262403</Key>
+      <Name_ja>防具（製作・採集）の取引</Name_ja>
+      <Name_en>Purchase Field Gear</Name_en>
+      <Name_fr>Équipement de travail</Name_fr>
+      <Name_de>Rüstungen (Sammler/Handwerker)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262408</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262409</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262410</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262411</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262412</Key>
+      <Name_ja>武器の取引</Name_ja>
+      <Name_en>Purchase Weapons</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </Shop>
+    <Shop>
+      <Key>262413</Key>
+      <Name_ja>防具（戦闘）の取引</Name_ja>
+      <Name_en>Purchase Battle Gear</Name_en>
+      <Name_fr>Équipement de combat</Name_fr>
+      <Name_de>Rüstungen (Krieger/Magier)</Name_de>
+    </Shop>
+  </Shop></ArrayOfShop>

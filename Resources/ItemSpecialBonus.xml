@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfItemSpecialBonus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ItemSpecialBonus>
+      <Key>2</Key>
+      <Name_ja>セットボーナス: </Name_ja>
+      <Name_en>Set Bonus: </Name_en>
+      <Name_fr>Bonus de tenue : </Name_fr>
+      <Name_de>Set-Bonus: </Name_de>
+    </ItemSpecialBonus>
+    <ItemSpecialBonus>
+      <Key>4</Key>
+      <Name_ja>サンクション中: </Name_ja>
+      <Name_en>Sanction: </Name_en>
+      <Name_fr>Sanction : </Name_fr>
+      <Name_de>Ermächtigung: </Name_de>
+    </ItemSpecialBonus>
+  </ItemSpecialBonus></ArrayOfItemSpecialBonus>

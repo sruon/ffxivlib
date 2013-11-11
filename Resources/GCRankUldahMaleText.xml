@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGCRankUldahMaleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GCRankUldahMaleText>
+      <Key>1</Key>
+      <SGL_ja>二等闘兵</SGL_ja>
+      <SGL_en>Flame Private Third Class</SGL_en>
+      <SGL_fr>soldat 3e classe</SGL_fr>
+      <SGL_de>Legionär 3. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>2</Key>
+      <SGL_ja>一等闘兵</SGL_ja>
+      <SGL_en>Flame Private Second Class</SGL_en>
+      <SGL_fr>soldat 2e classe</SGL_fr>
+      <SGL_de>Legionär 2. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>3</Key>
+      <SGL_ja>上等闘兵</SGL_ja>
+      <SGL_en>Flame Private First Class</SGL_en>
+      <SGL_fr>soldat 1re classe</SGL_fr>
+      <SGL_de>Legionär 1. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>4</Key>
+      <SGL_ja>闘兵長</SGL_ja>
+      <SGL_en>Flame Corporal</SGL_en>
+      <SGL_fr>caporal</SGL_fr>
+      <SGL_de>Phönixlegionär</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>5</Key>
+      <SGL_ja>闘伍長</SGL_ja>
+      <SGL_en>Flame Sergeant Third Class</SGL_en>
+      <SGL_fr>adjudant</SGL_fr>
+      <SGL_de>Legionsgefreiter 3. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>6</Key>
+      <SGL_ja>闘軍曹</SGL_ja>
+      <SGL_en>Flame Sergeant Second Class</SGL_en>
+      <SGL_fr>sergent</SGL_fr>
+      <SGL_de>Legionsgefreiter 2. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>7</Key>
+      <SGL_ja>闘曹長</SGL_ja>
+      <SGL_en>Flame Sergeant First Class</SGL_en>
+      <SGL_fr>sergent-major</SGL_fr>
+      <SGL_de>Legionsgefreiter 1. Klasse</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>8</Key>
+      <SGL_ja>准闘士</SGL_ja>
+      <SGL_en>Chief Flame Sergeant</SGL_en>
+      <SGL_fr>major</SGL_fr>
+      <SGL_de>Phönixgefreiter</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>9</Key>
+      <SGL_ja>少闘士</SGL_ja>
+      <SGL_en>Second Flame Lieutenant</SGL_en>
+      <SGL_fr>sous-lieutenant</SGL_fr>
+      <SGL_de>Zweiter Legionsfähnrich</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>10</Key>
+      <SGL_ja>中闘士</SGL_ja>
+      <SGL_en>First Flame Lieutenant</SGL_en>
+      <SGL_fr>lieutenant</SGL_fr>
+      <SGL_de>Erster Legionsfähnrich</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>11</Key>
+      <SGL_ja>大闘士</SGL_ja>
+      <SGL_en>Flame Captain</SGL_en>
+      <SGL_fr>capitaine</SGL_fr>
+      <SGL_de>Phönixfähnrich</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>12</Key>
+      <SGL_ja>少闘佐</SGL_ja>
+      <SGL_en>Second Flame Commander</SGL_en>
+      <SGL_fr>sous-commandant</SGL_fr>
+      <SGL_de>Zweiter Legionshauptmann</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>13</Key>
+      <SGL_ja>中闘佐</SGL_ja>
+      <SGL_en>First Flame Commander</SGL_en>
+      <SGL_fr>commandant</SGL_fr>
+      <SGL_de>Erster Legionshauptmann</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>14</Key>
+      <SGL_ja>大闘佐</SGL_ja>
+      <SGL_en>High Flame Commander</SGL_en>
+      <SGL_fr>colonel</SGL_fr>
+      <SGL_de>Phönixhauptmann</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>15</Key>
+      <SGL_ja>准闘将</SGL_ja>
+      <SGL_en>Rear Flame Marshal</SGL_en>
+      <SGL_fr>sous-maréchal</SGL_fr>
+      <SGL_de>Major der Legion</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>16</Key>
+      <SGL_ja>少闘将</SGL_ja>
+      <SGL_en>Vice Flame Marshal</SGL_en>
+      <SGL_fr>vice-maréchal</SGL_fr>
+      <SGL_de>Oberst der Legion</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>17</Key>
+      <SGL_ja>中闘将</SGL_ja>
+      <SGL_en>Flame Marshal</SGL_en>
+      <SGL_fr>maréchal</SGL_fr>
+      <SGL_de>Generalmajor der Legion</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>18</Key>
+      <SGL_ja>大闘将</SGL_ja>
+      <SGL_en>Grand Flame Marshal</SGL_en>
+      <SGL_fr>grand maréchal</SGL_fr>
+      <SGL_de>General der Legion</SGL_de>
+    </GCRankUldahMaleText>
+    <GCRankUldahMaleText>
+      <Key>19</Key>
+      <SGL_ja>闘聖</SGL_ja>
+      <SGL_en>Flame Champion</SGL_en>
+      <SGL_fr>général</SGL_fr>
+      <SGL_de>Phönixgeneral</SGL_de>
+    </GCRankUldahMaleText>
+  </GCRankUldahMaleText></ArrayOfGCRankUldahMaleText>

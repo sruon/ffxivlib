@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfItemUICategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ItemUICategory>
+      <Key>1</Key>
+      <Kind>1</Kind>
+      <Name_ja>格闘武器</Name_ja>
+      <Name_en>Pugilist's Arm</Name_en>
+      <Name_fr>Arme de pugiliste</Name_fr>
+      <Name_de>Hauptwaffe der Faustkämpfer</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>2</Key>
+      <Kind>1</Kind>
+      <Name_ja>片手剣</Name_ja>
+      <Name_en>Gladiator's Arm</Name_en>
+      <Name_fr>Arme de gladiateur</Name_fr>
+      <Name_de>Hauptwaffe der Gladiatoren</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>3</Key>
+      <Kind>1</Kind>
+      <Name_ja>両手斧</Name_ja>
+      <Name_en>Marauder's Arm</Name_en>
+      <Name_fr>Arme de maraudeur</Name_fr>
+      <Name_de>Hauptwaffe der Marodeure</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>4</Key>
+      <Kind>1</Kind>
+      <Name_ja>弓</Name_ja>
+      <Name_en>Archer's Arm</Name_en>
+      <Name_fr>Arme d'archer</Name_fr>
+      <Name_de>Hauptwaffe der Waldläufer</Name_de>
+      <Priority>4</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>5</Key>
+      <Kind>1</Kind>
+      <Name_ja>両手槍</Name_ja>
+      <Name_en>Lancer's Arm</Name_en>
+      <Name_fr>Arme d'hast</Name_fr>
+      <Name_de>Hauptwaffe der Pikeniere</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>6</Key>
+      <Kind>1</Kind>
+      <Name_ja>片手呪具</Name_ja>
+      <Name_en>Thaumaturge's Arm</Name_en>
+      <Name_fr>Arme d'occultiste</Name_fr>
+      <Name_de>Thaumaturgen-Waffe</Name_de>
+      <Priority>7</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>7</Key>
+      <Kind>1</Kind>
+      <Name_ja>両手呪具</Name_ja>
+      <Name_en>Two-handed Thaumaturge's Arm</Name_en>
+      <Name_fr>Arme à deux mains d'occultiste</Name_fr>
+      <Name_de>Thaumaturgen-Zweihandwaffe</Name_de>
+      <Priority>8</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>8</Key>
+      <Kind>1</Kind>
+      <Name_ja>片手幻具</Name_ja>
+      <Name_en>Conjurer's Arm</Name_en>
+      <Name_fr>Arme d'élémentaliste</Name_fr>
+      <Name_de>Druiden-Waffe</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>9</Key>
+      <Kind>1</Kind>
+      <Name_ja>両手幻具</Name_ja>
+      <Name_en>Two-handed Conjurer's Arm</Name_en>
+      <Name_fr>Arme à deux mains d'élémentaliste</Name_fr>
+      <Name_de>Druiden-Zweihandwaffe</Name_de>
+      <Priority>6</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>10</Key>
+      <Kind>1</Kind>
+      <Name_ja>魔道書</Name_ja>
+      <Name_en>Arcanist's Grimoire</Name_en>
+      <Name_fr>Arme d'arcaniste</Name_fr>
+      <Name_de>Grimoire</Name_de>
+      <Priority>9</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>11</Key>
+      <Kind>3</Kind>
+      <Name_ja>盾</Name_ja>
+      <Name_en>Shield</Name_en>
+      <Name_fr>Bouclier</Name_fr>
+      <Name_de>Schild</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>12</Key>
+      <Kind>2</Kind>
+      <Name_ja>木工道具（主道具）</Name_ja>
+      <Name_en>Carpenter's Primary Tool</Name_en>
+      <Name_fr>Outil principal de menuisier</Name_fr>
+      <Name_de>Zimmermannszeug</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>13</Key>
+      <Kind>2</Kind>
+      <Name_ja>木工道具（副道具）</Name_ja>
+      <Name_en>Carpenter's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de menuisier</Name_fr>
+      <Name_de>Zimmermannszeug (sekundär)</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>14</Key>
+      <Kind>2</Kind>
+      <Name_ja>鍛冶道具（主道具）</Name_ja>
+      <Name_en>Blacksmith's Primary Tool</Name_en>
+      <Name_fr>Outil principal de forgeron</Name_fr>
+      <Name_de>Schmiedezeug</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>15</Key>
+      <Kind>2</Kind>
+      <Name_ja>鍛冶道具（副道具）</Name_ja>
+      <Name_en>Blacksmith's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de forgeron</Name_fr>
+      <Name_de>Schmiedezeug (sekundär)</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>16</Key>
+      <Kind>2</Kind>
+      <Name_ja>甲冑道具（主道具）</Name_ja>
+      <Name_en>Armorer's Primary Tool</Name_en>
+      <Name_fr>Outil principal d'armurier</Name_fr>
+      <Name_de>Plattnerzeug</Name_de>
+      <Priority>4</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>17</Key>
+      <Kind>2</Kind>
+      <Name_ja>甲冑道具（副道具）</Name_ja>
+      <Name_en>Armorer's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire d'armurier</Name_fr>
+      <Name_de>Plattnerzeug (sekundär)</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>18</Key>
+      <Kind>2</Kind>
+      <Name_ja>彫金道具（主道具）</Name_ja>
+      <Name_en>Goldsmith's Primary Tool</Name_en>
+      <Name_fr>Outil principal d'orfèvre</Name_fr>
+      <Name_de>Goldschmiedezeug</Name_de>
+      <Priority>6</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>19</Key>
+      <Kind>2</Kind>
+      <Name_ja>彫金道具（副道具）</Name_ja>
+      <Name_en>Goldsmith's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire d'orfèvre</Name_fr>
+      <Name_de>Goldschmiedezeug (sekundär)</Name_de>
+      <Priority>7</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>20</Key>
+      <Kind>2</Kind>
+      <Name_ja>革細工道具（主道具）</Name_ja>
+      <Name_en>Leatherworker's Primary Tool</Name_en>
+      <Name_fr>Outil principal de tanneur</Name_fr>
+      <Name_de>Gerberzeug</Name_de>
+      <Priority>8</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>21</Key>
+      <Kind>2</Kind>
+      <Name_ja>革細工道具（副道具）</Name_ja>
+      <Name_en>Leatherworker's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de tanneur</Name_fr>
+      <Name_de>Gerberzeug (sekundär)</Name_de>
+      <Priority>9</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>22</Key>
+      <Kind>2</Kind>
+      <Name_ja>裁縫道具（主道具）</Name_ja>
+      <Name_en>Weaver's Primary Tool</Name_en>
+      <Name_fr>Outil principal de couturier</Name_fr>
+      <Name_de>Weberzeug</Name_de>
+      <Priority>10</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>23</Key>
+      <Kind>2</Kind>
+      <Name_ja>裁縫道具（副道具）</Name_ja>
+      <Name_en>Weaver's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de couturier</Name_fr>
+      <Name_de>Weberzeug (sekundär)</Name_de>
+      <Priority>11</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>24</Key>
+      <Kind>2</Kind>
+      <Name_ja>錬金道具（主道具）</Name_ja>
+      <Name_en>Alchemist's Primary Tool</Name_en>
+      <Name_fr>Outil principal d'alchimiste</Name_fr>
+      <Name_de>Alchemistenzeug</Name_de>
+      <Priority>12</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>25</Key>
+      <Kind>2</Kind>
+      <Name_ja>錬金道具（副道具）</Name_ja>
+      <Name_en>Alchemist's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire d'alchimiste</Name_fr>
+      <Name_de>Alchemistenzeug (sekundär)</Name_de>
+      <Priority>13</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>26</Key>
+      <Kind>2</Kind>
+      <Name_ja>調理道具（主道具）</Name_ja>
+      <Name_en>Culinarian's Primary Tool</Name_en>
+      <Name_fr>Outil principal de cuisinier</Name_fr>
+      <Name_de>Gourmetzeug</Name_de>
+      <Priority>14</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>27</Key>
+      <Kind>2</Kind>
+      <Name_ja>調理道具（副道具）</Name_ja>
+      <Name_en>Culinarian's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de cuisinier</Name_fr>
+      <Name_de>Gourmetzeug (sekundär)</Name_de>
+      <Priority>15</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>28</Key>
+      <Kind>2</Kind>
+      <Name_ja>採掘道具（主道具）</Name_ja>
+      <Name_en>Miner's Primary Tool</Name_en>
+      <Name_fr>Outil principal de mineur</Name_fr>
+      <Name_de>Minenarbeiterzeug</Name_de>
+      <Priority>16</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>29</Key>
+      <Kind>2</Kind>
+      <Name_ja>採掘道具（副道具）</Name_ja>
+      <Name_en>Miner's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de mineur</Name_fr>
+      <Name_de>Minenarbeiterzeug (sekundär)</Name_de>
+      <Priority>17</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>30</Key>
+      <Kind>2</Kind>
+      <Name_ja>園芸道具（主道具）</Name_ja>
+      <Name_en>Botanist's Primary Tool</Name_en>
+      <Name_fr>Outil principal de botaniste</Name_fr>
+      <Name_de>Gärtnerzeug</Name_de>
+      <Priority>18</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>31</Key>
+      <Kind>2</Kind>
+      <Name_ja>園芸道具（副道具）</Name_ja>
+      <Name_en>Botanist's Secondary Tool</Name_en>
+      <Name_fr>Outil secondaire de botaniste</Name_fr>
+      <Name_de>Gärtnerzeug (sekundär)</Name_de>
+      <Priority>19</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>32</Key>
+      <Kind>2</Kind>
+      <Name_ja>漁道具（主道具）</Name_ja>
+      <Name_en>Fisher's Primary Tool</Name_en>
+      <Name_fr>Outil principal de pêcheur</Name_fr>
+      <Name_de>Fischerzeug</Name_de>
+      <Priority>20</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>33</Key>
+      <Kind>2</Kind>
+      <Name_ja>釣餌</Name_ja>
+      <Name_en>Fishing Tackle</Name_en>
+      <Name_fr>Appât de pêche</Name_fr>
+      <Name_de>Angelköder</Name_de>
+      <Priority>21</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>34</Key>
+      <Kind>3</Kind>
+      <Name_ja>頭防具</Name_ja>
+      <Name_en>Head</Name_en>
+      <Name_fr>Tête</Name_fr>
+      <Name_de>Kopf</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>35</Key>
+      <Kind>3</Kind>
+      <Name_ja>胴防具</Name_ja>
+      <Name_en>Body</Name_en>
+      <Name_fr>Torse</Name_fr>
+      <Name_de>Rumpf</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>36</Key>
+      <Kind>3</Kind>
+      <Name_ja>脚防具</Name_ja>
+      <Name_en>Legs</Name_en>
+      <Name_fr>Jambes</Name_fr>
+      <Name_de>Beine</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>37</Key>
+      <Kind>3</Kind>
+      <Name_ja>手防具</Name_ja>
+      <Name_en>Hands</Name_en>
+      <Name_fr>Mains</Name_fr>
+      <Name_de>Hände</Name_de>
+      <Priority>4</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>38</Key>
+      <Kind>3</Kind>
+      <Name_ja>足防具</Name_ja>
+      <Name_en>Feet</Name_en>
+      <Name_fr>Pieds</Name_fr>
+      <Name_de>Füße</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>39</Key>
+      <Kind>3</Kind>
+      <Name_ja>帯防具</Name_ja>
+      <Name_en>Waist</Name_en>
+      <Name_fr>Ceinture</Name_fr>
+      <Name_de>Taille</Name_de>
+      <Priority>6</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>40</Key>
+      <Kind>4</Kind>
+      <Name_ja>首飾り</Name_ja>
+      <Name_en>Necklace</Name_en>
+      <Name_fr>Collier</Name_fr>
+      <Name_de>Halskette</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>41</Key>
+      <Kind>4</Kind>
+      <Name_ja>耳飾り</Name_ja>
+      <Name_en>Earrings</Name_en>
+      <Name_fr>Boucle d'oreille</Name_fr>
+      <Name_de>Ohrring</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>42</Key>
+      <Kind>4</Kind>
+      <Name_ja>腕輪</Name_ja>
+      <Name_en>Bracelets</Name_en>
+      <Name_fr>Bracelet</Name_fr>
+      <Name_de>Armreif</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>43</Key>
+      <Kind>4</Kind>
+      <Name_ja>指輪</Name_ja>
+      <Name_en>Ring</Name_en>
+      <Name_fr>Bague</Name_fr>
+      <Name_de>Ring</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>44</Key>
+      <Kind>5</Kind>
+      <Name_ja>薬品</Name_ja>
+      <Name_en>Medicine</Name_en>
+      <Name_fr>Médicament</Name_fr>
+      <Name_de>Arznei</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>45</Key>
+      <Kind>6</Kind>
+      <Name_ja>食材</Name_ja>
+      <Name_en>Ingredient</Name_en>
+      <Name_fr>Ingrédient</Name_fr>
+      <Name_de>Zutat</Name_de>
+      <Priority>0</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>46</Key>
+      <Kind>5</Kind>
+      <Name_ja>調理品</Name_ja>
+      <Name_en>Meal</Name_en>
+      <Name_fr>Plat ou boisson</Name_fr>
+      <Name_de>Gericht</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>47</Key>
+      <Kind>6</Kind>
+      <Name_ja>水産物</Name_ja>
+      <Name_en>Seafood</Name_en>
+      <Name_fr>Produit de la pêche</Name_fr>
+      <Name_de>Meeresfrüchte</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>48</Key>
+      <Kind>6</Kind>
+      <Name_ja>石材</Name_ja>
+      <Name_en>Stone</Name_en>
+      <Name_fr>Pierre</Name_fr>
+      <Name_de>Baustein</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>49</Key>
+      <Kind>6</Kind>
+      <Name_ja>金属材</Name_ja>
+      <Name_en>Metal</Name_en>
+      <Name_fr>Métal</Name_fr>
+      <Name_de>Metall</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>50</Key>
+      <Kind>6</Kind>
+      <Name_ja>木材</Name_ja>
+      <Name_en>Lumber</Name_en>
+      <Name_fr>Bois</Name_fr>
+      <Name_de>Nutzholz</Name_de>
+      <Priority>4</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>51</Key>
+      <Kind>6</Kind>
+      <Name_ja>布材</Name_ja>
+      <Name_en>Cloth</Name_en>
+      <Name_fr>Tissu</Name_fr>
+      <Name_de>Stoff</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>52</Key>
+      <Kind>6</Kind>
+      <Name_ja>皮革材</Name_ja>
+      <Name_en>Leather</Name_en>
+      <Name_fr>Cuir</Name_fr>
+      <Name_de>Leder</Name_de>
+      <Priority>6</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>53</Key>
+      <Kind>6</Kind>
+      <Name_ja>骨材</Name_ja>
+      <Name_en>Bone</Name_en>
+      <Name_fr>Os</Name_fr>
+      <Name_de>Knochen &amp; Horn</Name_de>
+      <Priority>7</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>54</Key>
+      <Kind>6</Kind>
+      <Name_ja>錬金術材</Name_ja>
+      <Name_en>Reagent</Name_en>
+      <Name_fr>Réactif</Name_fr>
+      <Name_de>Reagenz</Name_de>
+      <Priority>8</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>55</Key>
+      <Kind>6</Kind>
+      <Name_ja>染料</Name_ja>
+      <Name_en>Dye</Name_en>
+      <Name_fr>Teinture</Name_fr>
+      <Name_de>Farbstoff</Name_de>
+      <Priority>9</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>56</Key>
+      <Kind>6</Kind>
+      <Name_ja>部品</Name_ja>
+      <Name_en>Part</Name_en>
+      <Name_fr>Composant</Name_fr>
+      <Name_de>Einzelteil</Name_de>
+      <Priority>10</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>58</Key>
+      <Kind>7</Kind>
+      <Name_ja>マテリア</Name_ja>
+      <Name_en>Materia</Name_en>
+      <Name_fr>Matéria</Name_fr>
+      <Name_de>Materia</Name_de>
+      <Priority>1</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>59</Key>
+      <Kind>7</Kind>
+      <Name_ja>クリスタル</Name_ja>
+      <Name_en>Crystal</Name_en>
+      <Name_fr>Cristal</Name_fr>
+      <Name_de>Kristall</Name_de>
+      <Priority>2</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>60</Key>
+      <Kind>7</Kind>
+      <Name_ja>触媒</Name_ja>
+      <Name_en>Catalyst</Name_en>
+      <Name_fr>Catalyseur</Name_fr>
+      <Name_de>Katalysator</Name_de>
+      <Priority>3</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>61</Key>
+      <Kind>7</Kind>
+      <Name_ja>雑貨</Name_ja>
+      <Name_en>Miscellany</Name_en>
+      <Name_fr>Divers</Name_fr>
+      <Name_de>Verschiedenes</Name_de>
+      <Priority>4</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>62</Key>
+      <Kind>7</Kind>
+      <Name_ja>ソウルクリスタル</Name_ja>
+      <Name_en>Soul Crystal</Name_en>
+      <Name_fr>Cristal de job</Name_fr>
+      <Name_de>Jobkristall</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>63</Key>
+      <Kind>7</Kind>
+      <Name_ja>その他</Name_ja>
+      <Name_en>Other</Name_en>
+      <Name_fr>Autre</Name_fr>
+      <Name_de>Anderes</Name_de>
+      <Priority>6</Priority>
+    </ItemUICategory>
+  </ItemUICategory></ArrayOfItemUICategory>

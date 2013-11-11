@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGeneralAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GeneralAction>
+      <Key>1</Key>
+      <Icon>101</Icon>
+      <Name_ja>オートアタック</Name_ja>
+      <Name_en>Auto-attack</Name_en>
+      <Name_fr>Attaque automatique</Name_fr>
+      <Name_de>Auto-Attacke</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>2</Key>
+      <Icon>102</Icon>
+      <Name_ja>ジャンプ</Name_ja>
+      <Name_en>Jump</Name_en>
+      <Name_fr>Saut</Name_fr>
+      <Name_de>Springen</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>3</Key>
+      <Icon>103</Icon>
+      <Name_ja>リミットブレイク</Name_ja>
+      <Name_en>Limit Break</Name_en>
+      <Name_fr>Transcendance</Name_fr>
+      <Name_de>Limitrausch</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>4</Key>
+      <Icon>104</Icon>
+      <Name_ja>スプリント</Name_ja>
+      <Name_en>Sprint</Name_en>
+      <Name_fr>Sprint</Name_fr>
+      <Name_de>Sprint</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>6</Key>
+      <Icon>106</Icon>
+      <Name_ja>修理</Name_ja>
+      <Name_en>Repair</Name_en>
+      <Name_fr>Réparation</Name_fr>
+      <Name_de>Reparatur</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>7</Key>
+      <Icon>111</Icon>
+      <Name_ja>テレポ</Name_ja>
+      <Name_en>Teleport</Name_en>
+      <Name_fr>Téléportation</Name_fr>
+      <Name_de>Teleport</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>8</Key>
+      <Icon>112</Icon>
+      <Name_ja>デジョン</Name_ja>
+      <Name_en>Return</Name_en>
+      <Name_fr>Rapatriement</Name_fr>
+      <Name_de>Rückführung</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>12</Key>
+      <Icon>107</Icon>
+      <Name_ja>マテリア装着</Name_ja>
+      <Name_en>Materia Melding</Name_en>
+      <Name_fr>Sertissage de matéria</Name_fr>
+      <Name_de>Materia verschmelzen</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>13</Key>
+      <Icon>108</Icon>
+      <Name_ja>マテリア装着II</Name_ja>
+      <Name_en>Advanced Materia Melding</Name_en>
+      <Name_fr>Sertissage avancé de matéria</Name_fr>
+      <Name_de>Materia verschmelzen II</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>14</Key>
+      <Icon>109</Icon>
+      <Name_ja>マテリア化</Name_ja>
+      <Name_en>Materia Assimilating</Name_en>
+      <Name_fr>Matérialisation</Name_fr>
+      <Name_de>Materia-Synthese</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>15</Key>
+      <Icon>110</Icon>
+      <Name_ja>染色</Name_ja>
+      <Name_en>Dye</Name_en>
+      <Name_fr>Teinture</Name_fr>
+      <Name_de>Färben</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>16</Key>
+      <Icon>113</Icon>
+      <Name_ja>ターゲット・順送り </Name_ja>
+      <Name_en>Target Forward</Name_en>
+      <Name_fr>Ciblage</Name_fr>
+      <Name_de>Zielen vorwärts</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>17</Key>
+      <Icon>114</Icon>
+      <Name_ja>ターゲット・逆送り </Name_ja>
+      <Name_en>Target Back</Name_en>
+      <Name_fr>Ciblage contraire</Name_fr>
+      <Name_de>Zielen rückwärts</Name_de>
+    </GeneralAction>
+  </GeneralAction></ArrayOfGeneralAction>

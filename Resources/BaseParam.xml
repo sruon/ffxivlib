@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfBaseParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BaseParam>
+      <Key>1</Key>
+      <Name_ja>STR</Name_ja>
+      <Name_en>Strength</Name_en>
+      <Name_fr>Force</Name_fr>
+      <Name_de>Stärke</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>2</Key>
+      <Name_ja>DEX</Name_ja>
+      <Name_en>Dexterity</Name_en>
+      <Name_fr>Dextérité</Name_fr>
+      <Name_de>Geschick</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>3</Key>
+      <Name_ja>VIT</Name_ja>
+      <Name_en>Vitality</Name_en>
+      <Name_fr>Vitalité</Name_fr>
+      <Name_de>Konstitution</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>4</Key>
+      <Name_ja>INT</Name_ja>
+      <Name_en>Intelligence</Name_en>
+      <Name_fr>Intelligence</Name_fr>
+      <Name_de>Intelligenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>5</Key>
+      <Name_ja>MND</Name_ja>
+      <Name_en>Mind</Name_en>
+      <Name_fr>Esprit</Name_fr>
+      <Name_de>Willenskraft</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>6</Key>
+      <Name_ja>PIE</Name_ja>
+      <Name_en>Piety</Name_en>
+      <Name_fr>Piété</Name_fr>
+      <Name_de>Frömmigkeit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>7</Key>
+      <Name_ja>HP</Name_ja>
+      <Name_en>HP</Name_en>
+      <Name_fr>PV</Name_fr>
+      <Name_de>LP</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>8</Key>
+      <Name_ja>MP</Name_ja>
+      <Name_en>MP</Name_en>
+      <Name_fr>PM</Name_fr>
+      <Name_de>MP</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>9</Key>
+      <Name_ja>TP</Name_ja>
+      <Name_en>TP</Name_en>
+      <Name_fr>PT</Name_fr>
+      <Name_de>TP</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>10</Key>
+      <Name_ja>GP</Name_ja>
+      <Name_en>GP</Name_en>
+      <Name_fr>PR</Name_fr>
+      <Name_de>SP</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>11</Key>
+      <Name_ja>CP</Name_ja>
+      <Name_en>CP</Name_en>
+      <Name_fr>PS</Name_fr>
+      <Name_de>HP</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>12</Key>
+      <Name_ja>物理基本性能</Name_ja>
+      <Name_en>Physical Damage</Name_en>
+      <Name_fr>Dégâts physiques</Name_fr>
+      <Name_de>Phys. Basiswert</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>13</Key>
+      <Name_ja>魔法基本性能</Name_ja>
+      <Name_en>Magic Damage</Name_en>
+      <Name_fr>Dégâts magiques</Name_fr>
+      <Name_de>Mag. Basiswert</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>14</Key>
+      <Name_ja>攻撃間隔</Name_ja>
+      <Name_en>Delay</Name_en>
+      <Name_fr>Délai</Name_fr>
+      <Name_de>Verzögerung</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>15</Key>
+      <Name_ja>追加効果</Name_ja>
+      <Name_en>Additional Effect: </Name_en>
+      <Name_fr>Effet supplémentaire : </Name_fr>
+      <Name_de>Zusatzeffekt: </Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>16</Key>
+      <Name_ja>攻撃回数</Name_ja>
+      <Name_en>Attack Speed</Name_en>
+      <Name_fr>Nombre d'attaques</Name_fr>
+      <Name_de>Anzahl der Attacken: </Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>17</Key>
+      <Name_ja>ブロック発動力</Name_ja>
+      <Name_en>Block Rate</Name_en>
+      <Name_fr>Taux de blocage</Name_fr>
+      <Name_de>Blockrate</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>18</Key>
+      <Name_ja>ブロック性能</Name_ja>
+      <Name_en>Block Strength</Name_en>
+      <Name_fr>Blocage</Name_fr>
+      <Name_de>Blockeffekt</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>19</Key>
+      <Name_ja>受け流し発動力</Name_ja>
+      <Name_en>Parry</Name_en>
+      <Name_fr>Parade</Name_fr>
+      <Name_de>Parade</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>20</Key>
+      <Name_ja>物理攻撃力</Name_ja>
+      <Name_en>Attack Power</Name_en>
+      <Name_fr>Attaque</Name_fr>
+      <Name_de>Attacke</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>21</Key>
+      <Name_ja>物理防御力</Name_ja>
+      <Name_en>Defense</Name_en>
+      <Name_fr>Défense</Name_fr>
+      <Name_de>Verteidigung</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>22</Key>
+      <Name_ja>命中力</Name_ja>
+      <Name_en>Accuracy</Name_en>
+      <Name_fr>Précision</Name_fr>
+      <Name_de>Präzision</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>23</Key>
+      <Name_ja>回避力</Name_ja>
+      <Name_en>Evasion</Name_en>
+      <Name_fr>Esquive</Name_fr>
+      <Name_de>Ausweichen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>24</Key>
+      <Name_ja>魔法防御力</Name_ja>
+      <Name_en>Magic Defense</Name_en>
+      <Name_fr>Défense magique</Name_fr>
+      <Name_de>Magieabwehr</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>25</Key>
+      <Name_ja>クリティカル攻撃力</Name_ja>
+      <Name_en>Critical Hit Power</Name_en>
+      <Name_fr>Attaque critique</Name_fr>
+      <Name_de>Kritischer Attackewert</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>26</Key>
+      <Name_ja>クリティカル防御力</Name_ja>
+      <Name_en>Critical Hit Resilience</Name_en>
+      <Name_fr>Résilience</Name_fr>
+      <Name_de>Abwehr kritischer Treffer</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>27</Key>
+      <Name_ja>クリティカル発動力</Name_ja>
+      <Name_en>Critical Hit Rate</Name_en>
+      <Name_fr>Critique</Name_fr>
+      <Name_de>Rate kritischer Treffer</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>28</Key>
+      <Name_ja>クリティカル回避力</Name_ja>
+      <Name_en>Critical Hit Evasion</Name_en>
+      <Name_fr>Esquive critique</Name_fr>
+      <Name_de>Kritisches Ausweichen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>29</Key>
+      <Name_ja>斬耐性</Name_ja>
+      <Name_en>Slashing Resistance</Name_en>
+      <Name_fr>Résistance au tranchant</Name_fr>
+      <Name_de>Hiebresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>30</Key>
+      <Name_ja>突耐性</Name_ja>
+      <Name_en>Piercing Resistance</Name_en>
+      <Name_fr>Résistance au perforant</Name_fr>
+      <Name_de>Stichresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>31</Key>
+      <Name_ja>打耐性</Name_ja>
+      <Name_en>Blunt Resistance</Name_en>
+      <Name_fr>Résistance au contondant</Name_fr>
+      <Name_de>Schlagresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>32</Key>
+      <Name_ja>射耐性</Name_ja>
+      <Name_en>Projectile Resistance</Name_en>
+      <Name_fr>Résistance aux projectiles</Name_fr>
+      <Name_de>Projektilresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>33</Key>
+      <Name_ja>攻撃魔法威力</Name_ja>
+      <Name_en>Attack Magic Potency</Name_en>
+      <Name_fr>Magie offensive</Name_fr>
+      <Name_de>Offensivmagie</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>34</Key>
+      <Name_ja>回復魔法威力</Name_ja>
+      <Name_en>Healing Magic Potency</Name_en>
+      <Name_fr>Magie curative</Name_fr>
+      <Name_de>Heilmagie</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>35</Key>
+      <Name_ja>強化魔法威力</Name_ja>
+      <Name_en>Enhancement Magic Potency</Name_en>
+      <Name_fr>Magie fortifiante</Name_fr>
+      <Name_de>Stärkungsmagie</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>36</Key>
+      <Name_ja>弱体魔法威力</Name_ja>
+      <Name_en>Enfeebling Magic Potency</Name_en>
+      <Name_fr>Magie fragilisante</Name_fr>
+      <Name_de>Schwächungsmagie</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>37</Key>
+      <Name_ja>火</Name_ja>
+      <Name_en>Fire Resistance</Name_en>
+      <Name_fr>Résistance au feu</Name_fr>
+      <Name_de>Feuerresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>38</Key>
+      <Name_ja>氷</Name_ja>
+      <Name_en>Ice Resistance</Name_en>
+      <Name_fr>Résistance à la glace</Name_fr>
+      <Name_de>Eisresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>39</Key>
+      <Name_ja>風</Name_ja>
+      <Name_en>Wind Resistance</Name_en>
+      <Name_fr>Résistance au vent</Name_fr>
+      <Name_de>Windresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>40</Key>
+      <Name_ja>土</Name_ja>
+      <Name_en>Earth Resistance</Name_en>
+      <Name_fr>Résistance à la terre</Name_fr>
+      <Name_de>Erdresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>41</Key>
+      <Name_ja>雷</Name_ja>
+      <Name_en>Lightning Resistance</Name_en>
+      <Name_fr>Résistance à la foudre</Name_fr>
+      <Name_de>Blitzresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>42</Key>
+      <Name_ja>水</Name_ja>
+      <Name_en>Water Resistance</Name_en>
+      <Name_fr>Résistance à l'eau</Name_fr>
+      <Name_de>Wasserresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>43</Key>
+      <Name_ja>全魔法耐性</Name_ja>
+      <Name_en>Magic Resistance</Name_en>
+      <Name_fr>Résistance magique</Name_fr>
+      <Name_de>Magieresistenz</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>44</Key>
+      <Name_ja>意思力</Name_ja>
+      <Name_en>Determination</Name_en>
+      <Name_fr>Détermination</Name_fr>
+      <Name_de>Entschlossenheit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>45</Key>
+      <Name_ja>スキルスピード</Name_ja>
+      <Name_en>Skill Speed</Name_en>
+      <Name_fr>Vivacité</Name_fr>
+      <Name_de>Schnelligkeit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>46</Key>
+      <Name_ja>スペルスピード</Name_ja>
+      <Name_en>Spell Speed</Name_en>
+      <Name_fr>Célérité</Name_fr>
+      <Name_de>Zaubertempo</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>47</Key>
+      <Name_ja>速度</Name_ja>
+      <Name_en />
+      <Name_fr />
+      <Name_de />
+    </BaseParam>
+    <BaseParam>
+      <Key>48</Key>
+      <Name_ja>モラル</Name_ja>
+      <Name_en>Morale</Name_en>
+      <Name_fr>Moral</Name_fr>
+      <Name_de>Moral</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>49</Key>
+      <Name_ja>敵視</Name_ja>
+      <Name_en>Enmity</Name_en>
+      <Name_fr>Inimitié</Name_fr>
+      <Name_de>Feindseligkeit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>50</Key>
+      <Name_ja>敵視-</Name_ja>
+      <Name_en>Enmity Reduction</Name_en>
+      <Name_fr>Réduction d'inimitié</Name_fr>
+      <Name_de>Feindseligkeitsreduktion</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>51</Key>
+      <Name_ja>ヒーリングHP</Name_ja>
+      <Name_en>Resting HP</Name_en>
+      <Name_fr>PV au repos</Name_fr>
+      <Name_de>LP beim Ausruhen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>52</Key>
+      <Name_ja>ヒーリングMP</Name_ja>
+      <Name_en>Resting MP</Name_en>
+      <Name_fr>PM au repos</Name_fr>
+      <Name_de>MP beim Ausruhen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>53</Key>
+      <Name_ja>リジェネ</Name_ja>
+      <Name_en>Regen</Name_en>
+      <Name_fr>Récup</Name_fr>
+      <Name_de>Regena</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>54</Key>
+      <Name_ja>リフレシュ</Name_ja>
+      <Name_en>Refresh</Name_en>
+      <Name_fr>Recharge</Name_fr>
+      <Name_de>Erfrischen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>55</Key>
+      <Name_ja>移動速度</Name_ja>
+      <Name_en>Movement Speed</Name_en>
+      <Name_fr>Vitesse de déplacement</Name_fr>
+      <Name_de>Bewegungsgeschwindigkeit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>56</Key>
+      <Name_ja>スパイク効果</Name_ja>
+      <Name_en>Spikes</Name_en>
+      <Name_fr>Pointes</Name_fr>
+      <Name_de>Stachel</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>57</Key>
+      <Name_ja>スロウ耐性</Name_ja>
+      <Name_en>Slow Resistance</Name_en>
+      <Name_fr>Résistance à Lenteur</Name_fr>
+      <Name_de>Resistenz gegen Gemach</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>58</Key>
+      <Name_ja>石化耐性</Name_ja>
+      <Name_en>Petrification Resistance</Name_en>
+      <Name_fr>Résistance à Pétrification</Name_fr>
+      <Name_de>Resistenz gegen Stein</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>59</Key>
+      <Name_ja>麻痺耐性</Name_ja>
+      <Name_en>Paralysis Resistance</Name_en>
+      <Name_fr>Résistance à Paralysie</Name_fr>
+      <Name_de>Resistenz gegen Paralyse</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>60</Key>
+      <Name_ja>静寂耐性</Name_ja>
+      <Name_en>Silence Resistance</Name_en>
+      <Name_fr>Résistance à Silence</Name_fr>
+      <Name_de>Resistenz gegen Schweigen</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>61</Key>
+      <Name_ja>暗闇耐性</Name_ja>
+      <Name_en>Blind Resistance</Name_en>
+      <Name_fr>Résistance à Cécité</Name_fr>
+      <Name_de>Resistenz gegen Blind</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>62</Key>
+      <Name_ja>中毒耐性</Name_ja>
+      <Name_en>Poison Resistance</Name_en>
+      <Name_fr>Résistance à Poison</Name_fr>
+      <Name_de>Resistenz gegen Gift</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>63</Key>
+      <Name_ja>スタン耐性</Name_ja>
+      <Name_en>Stun Resistance</Name_en>
+      <Name_fr>Résistance à Étourdissement</Name_fr>
+      <Name_de>Resistenz gegen Betäubung</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>64</Key>
+      <Name_ja>睡眠耐性</Name_ja>
+      <Name_en>Sleep Resistance</Name_en>
+      <Name_fr>Résistance à Sommeil</Name_fr>
+      <Name_de>Resistenz gegen Schlaf</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>65</Key>
+      <Name_ja>バインド耐性</Name_ja>
+      <Name_en>Bind Resistance</Name_en>
+      <Name_fr>Résistance à Entrave</Name_fr>
+      <Name_de>Resistenz gegen Fessel</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>66</Key>
+      <Name_ja>ヘヴィ耐性</Name_ja>
+      <Name_en>Heavy Resistance</Name_en>
+      <Name_fr>Résistance à Pesanteur</Name_fr>
+      <Name_de>Resistenz gegen Gewicht</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>67</Key>
+      <Name_ja>死の宣告耐性</Name_ja>
+      <Name_en>Doom Resistance</Name_en>
+      <Name_fr>Résistance à Glas</Name_fr>
+      <Name_de>Resistenz gegen Verhängnis</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>68</Key>
+      <Name_ja>装備消耗耐性</Name_ja>
+      <Name_en>Reduced Durability Loss</Name_en>
+      <Name_fr>Résistance à l'usure</Name_fr>
+      <Name_de>Verschleißminderung</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>69</Key>
+      <Name_ja>錬精度上昇量</Name_ja>
+      <Name_en>Increased Spiritbond Gain</Name_en>
+      <Name_fr>Gain accru de symbiose</Name_fr>
+      <Name_de>Erhöhte Bindung</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>70</Key>
+      <Name_ja>作業精度</Name_ja>
+      <Name_en>Craftsmanship</Name_en>
+      <Name_fr>Habileté</Name_fr>
+      <Name_de>Kunstfertigkeit</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>71</Key>
+      <Name_ja>加工精度</Name_ja>
+      <Name_en>Control</Name_en>
+      <Name_fr>Contrôle</Name_fr>
+      <Name_de>Kontrolle</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>72</Key>
+      <Name_ja>獲得力</Name_ja>
+      <Name_en>Gathering</Name_en>
+      <Name_fr>Collecte</Name_fr>
+      <Name_de>Sammelgeschick</Name_de>
+    </BaseParam>
+    <BaseParam>
+      <Key>73</Key>
+      <Name_ja>識質力</Name_ja>
+      <Name_en>Perception</Name_en>
+      <Name_fr>Discernement</Name_fr>
+      <Name_de>Wahrnehmung</Name_de>
+    </BaseParam>
+  </BaseParam></ArrayOfBaseParam>

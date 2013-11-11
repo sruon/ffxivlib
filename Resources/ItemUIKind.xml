@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfItemUIKind xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ItemUIKind>
+      <Key>1</Key>
+      <Name_ja>武器</Name_ja>
+      <Name_en>Arms</Name_en>
+      <Name_fr>Armes</Name_fr>
+      <Name_de>Waffen</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>2</Key>
+      <Name_ja>道具</Name_ja>
+      <Name_en>Tools</Name_en>
+      <Name_fr>Outils</Name_fr>
+      <Name_de>Werkzeuge</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>3</Key>
+      <Name_ja>防具</Name_ja>
+      <Name_en>Armor</Name_en>
+      <Name_fr>Armures</Name_fr>
+      <Name_de>Rüstung</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>4</Key>
+      <Name_ja>アクセサリ</Name_ja>
+      <Name_en>Accessories</Name_en>
+      <Name_fr>Accessoires</Name_fr>
+      <Name_de>Accessoires</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>5</Key>
+      <Name_ja>薬品・調理品</Name_ja>
+      <Name_en>Medicines &amp; Meals</Name_en>
+      <Name_fr>Consommables</Name_fr>
+      <Name_de>Arznei/Gerichte</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>6</Key>
+      <Name_ja>素材</Name_ja>
+      <Name_en>Materials</Name_en>
+      <Name_fr>Matériaux</Name_fr>
+      <Name_de>Materialien</Name_de>
+    </ItemUIKind>
+    <ItemUIKind>
+      <Key>7</Key>
+      <Name_ja>その他</Name_ja>
+      <Name_en>Other</Name_en>
+      <Name_fr>Autres</Name_fr>
+      <Name_de>Anderes</Name_de>
+    </ItemUIKind>
+  </ItemUIKind></ArrayOfItemUIKind>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfFCHierarchy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FCHierarchy>
+      <Key>0</Key>
+      <Name_ja>マスター</Name_ja>
+      <Name_en>Master</Name_en>
+      <Name_fr>Maître</Name_fr>
+      <Name_de>Meister</Name_de>
+    </FCHierarchy>
+    <FCHierarchy>
+      <Key>1</Key>
+      <Name_ja>オフィサー</Name_ja>
+      <Name_en>Officer</Name_en>
+      <Name_fr>Officier</Name_fr>
+      <Name_de>Offizier</Name_de>
+    </FCHierarchy>
+    <FCHierarchy>
+      <Key>2</Key>
+      <Name_ja>メンバー</Name_ja>
+      <Name_en>Member</Name_en>
+      <Name_fr>Membre</Name_fr>
+      <Name_de>Mitglied</Name_de>
+    </FCHierarchy>
+    <FCHierarchy>
+      <Key>15</Key>
+      <Name_ja>ゲスト</Name_ja>
+      <Name_en>Guest</Name_en>
+      <Name_fr>Invité</Name_fr>
+      <Name_de>Gast</Name_de>
+    </FCHierarchy>
+    <FCHierarchy>
+      <Key>16</Key>
+      <Name_ja>招待者</Name_ja>
+      <Name_en>Recruit</Name_en>
+      <Name_fr>Recruteur</Name_fr>
+      <Name_de>Anwärter</Name_de>
+    </FCHierarchy>
+  </FCHierarchy></ArrayOfFCHierarchy>

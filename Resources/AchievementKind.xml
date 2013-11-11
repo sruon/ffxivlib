@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfAchievementKind xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AchievementKind>
+      <Key>1</Key>
+      <Name_ja>バトル</Name_ja>
+      <Name_en>Battle</Name_en>
+      <Name_fr>Combats</Name_fr>
+      <Name_de>Kampferfolge</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>2</Key>
+      <Name_ja>キャラクター</Name_ja>
+      <Name_en>Class</Name_en>
+      <Name_fr>Personnage</Name_fr>
+      <Name_de>Charakterentwicklung</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>4</Key>
+      <Name_ja>アイテム</Name_ja>
+      <Name_en>Items</Name_en>
+      <Name_fr>Objets</Name_fr>
+      <Name_de>Objekte der Begierde</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>5</Key>
+      <Name_ja>製作</Name_ja>
+      <Name_en>Crafting</Name_en>
+      <Name_fr>Synthèse</Name_fr>
+      <Name_de>Synthese</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>6</Key>
+      <Name_ja>採集</Name_ja>
+      <Name_en>Gathering</Name_en>
+      <Name_fr>Récolte</Name_fr>
+      <Name_de>Sammelleidenschaft</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>8</Key>
+      <Name_ja>クエスト</Name_ja>
+      <Name_en>Quests</Name_en>
+      <Name_fr>Quêtes</Name_fr>
+      <Name_de>Auftragslage</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>11</Key>
+      <Name_ja>探検</Name_ja>
+      <Name_en>Exploration</Name_en>
+      <Name_fr>Exploration</Name_fr>
+      <Name_de>Erkundungen</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>12</Key>
+      <Name_ja>グランドカンパニー</Name_ja>
+      <Name_en>Grand Company</Name_en>
+      <Name_fr>Grandes compagnies</Name_fr>
+      <Name_de>Staatliche Gesellschaften</Name_de>
+    </AchievementKind>
+    <AchievementKind>
+      <Key>13</Key>
+      <Name_ja>レガシー</Name_ja>
+      <Name_en>Legacy</Name_en>
+      <Name_fr>Legacy</Name_fr>
+      <Name_de>Legacy</Name_de>
+    </AchievementKind>
+  </AchievementKind></ArrayOfAchievementKind>

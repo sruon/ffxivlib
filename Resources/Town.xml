@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfTown xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Town>
+      <Key>1</Key>
+      <Name_ja>リムサ・ロミンサ</Name_ja>
+      <Name_en>Limsa Lominsa</Name_en>
+      <Name_fr>Limsa Lominsa</Name_fr>
+      <Name_de>Limsa Lominsa</Name_de>
+    </Town>
+    <Town>
+      <Key>2</Key>
+      <Name_ja>グリダニア</Name_ja>
+      <Name_en>Gridania</Name_en>
+      <Name_fr>Gridania</Name_fr>
+      <Name_de>Gridania</Name_de>
+    </Town>
+    <Town>
+      <Key>3</Key>
+      <Name_ja>ウルダハ</Name_ja>
+      <Name_en>Ul'dah</Name_en>
+      <Name_fr>Ul'dah</Name_fr>
+      <Name_de>Ul'dah</Name_de>
+    </Town>
+    <Town>
+      <Key>4</Key>
+      <Name_ja>イシュガルド</Name_ja>
+      <Name_en>Ishgard</Name_en>
+      <Name_fr>Ishgard</Name_fr>
+      <Name_de>Ishgard</Name_de>
+    </Town>
+  </Town></ArrayOfTown>

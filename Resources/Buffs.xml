@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBuff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Buff>
+    <id>0</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>1</id>
+    <name>Petrification</name>
+    <description>Stone-like rigidity is preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>2</id>
+    <name>Stun</name>
+    <description>Unable to execute actions.</description>
+  </Buff>
+  <Buff>
+    <id>3</id>
+    <name>Sleep</name>
+    <description>Overwhelming drowsiness is preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>4</id>
+    <name>Daze</name>
+    <description>Scattered senses are preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>5</id>
+    <name>Daze</name>
+    <description>Scattered senses are preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>6</id>
+    <name>Pacification</name>
+    <description>Unable to use weaponskills.</description>
+  </Buff>
+  <Buff>
+    <id>7</id>
+    <name>Silence</name>
+    <description>A stifling magic is preventing casts.</description>
+  </Buff>
+  <Buff>
+    <id>8</id>
+    <name>Haste</name>
+    <description>Weaponskill recast time, spell recast time, and auto-attack delay are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>9</id>
+    <name>Haste</name>
+    <description>Weaponskill recast time, spell recast time, and auto-attack delay are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>10</id>
+    <name>Slow</name>
+    <description>Weaponskill recast time, spell recast time, and auto-attack delay are increased.</description>
+  </Buff>
+  <Buff>
+    <id>11</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>12</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>13</id>
+    <name>Bind</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>14</id>
+    <name>Heavy</name>
+    <description>Movement speed is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>15</id>
+    <name>Blind</name>
+    <description>Encroaching darkness is lowering accuracy.</description>
+  </Buff>
+  <Buff>
+    <id>16</id>
+    <name>Blind</name>
+    <description>Encroaching darkness is lowering accuracy.</description>
+  </Buff>
+  <Buff>
+    <id>17</id>
+    <name>Paralysis</name>
+    <description>Deadened nerves are sometimes preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>18</id>
+    <name>Poison</name>
+    <description>Toxins are causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>19</id>
+    <name>Pollen</name>
+    <description>Deadly pollen has filled the lungs, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>20</id>
+    <name>TP Bleed</name>
+    <description>Bleeding TP over time.</description>
+  </Buff>
+  <Buff>
+    <id>21</id>
+    <name>HP Boost</name>
+    <description>Maximum HP is increased.</description>
+  </Buff>
+  <Buff>
+    <id>22</id>
+    <name>HP Boost</name>
+    <description>Maximum HP is increased.</description>
+  </Buff>
+  <Buff>
+    <id>23</id>
+    <name>MP Boost</name>
+    <description>Maximum MP is increased.</description>
+  </Buff>
+  <Buff>
+    <id>24</id>
+    <name>MP Penalty</name>
+    <description>Maximum MP is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>25</id>
+    <name>Attack Up</name>
+    <description>Attack power is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>26</id>
+    <name>Attack Down</name>
+    <description>Attack power is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>27</id>
+    <name>Accuracy Up</name>
+    <description>Accuracy is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>28</id>
+    <name>Accuracy Up</name>
+    <description>Accuracy is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>29</id>
+    <name>Defense Up</name>
+    <description>Defense is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>30</id>
+    <name>Defense Down</name>
+    <description>Defense is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>31</id>
+    <name>Evasion Up</name>
+    <description>Evasion is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>32</id>
+    <name>Evasion Down</name>
+    <description>Evasion is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>33</id>
+    <name>Magic Potency Up</name>
+    <description>Spell potency is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>34</id>
+    <name>Magic Potency Up</name>
+    <description>Spell potency is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>35</id>
+    <name>Healing Potency Up</name>
+    <description>Healing magic potency is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>36</id>
+    <name>Healing Potency Down</name>
+    <description>Healing magic potency is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>37</id>
+    <name>Magic Defense Up</name>
+    <description>Magic defense is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>38</id>
+    <name>Magic Defense Down</name>
+    <description>Magic defense is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>39</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>40</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>41</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>42</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>43</id>
+    <name>Weakness</name>
+    <description>Maximum HP and MP are reduced 15%.</description>
+  </Buff>
+  <Buff>
+    <id>44</id>
+    <name>Brink of Death</name>
+    <description>Maximum HP, maximum MP, and all battle-related stats are reduced by 30%.</description>
+  </Buff>
+  <Buff>
+    <id>45</id>
+    <name>Crafter's Grace</name>
+    <description>Chance of increased experience point gains as a Disciple of the Hand.</description>
+  </Buff>
+  <Buff>
+    <id>46</id>
+    <name>Crafter's Grace</name>
+    <description>Chance of increased experience point gains as a Disciple of the Hand.</description>
+  </Buff>
+  <Buff>
+    <id>47</id>
+    <name>Stealth</name>
+    <description>Cannot be detected by enemies. Movement speed is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>48</id>
+    <name>Food Benefits (EXP +3%)</name>
+    <description></description>
+  </Buff>
+  <Buff>
+    <id>49</id>
+    <name></name>
+    <description></description>
+  </Buff>
+  <Buff>
+    <id>50</id>
+    <name>Sprint</name>
+    <description>Movement speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>51</id>
+    <name>Strength Down</name>
+    <description>Strength is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>52</id>
+    <name>Strength Down</name>
+    <description>Strength is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>53</id>
+    <name>Physical Damage Up</name>
+    <description>The amount of damage dealt by physical attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>54</id>
+    <name>Physical Damage Down</name>
+    <description>The amount of damage dealt by physical attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>55</id>
+    <name>Physical Vulnerability Down</name>
+    <description>The amount of damage suffered from physical attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>56</id>
+    <name>Physical Vulnerability Up</name>
+    <description>The amount of damage suffered from physical attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>57</id>
+    <name>Magic Damage Up</name>
+    <description>The amount of damage dealt by magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>58</id>
+    <name>Magic Damage Up</name>
+    <description>The amount of damage dealt by magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>59</id>
+    <name>Magic Vulnerability Down</name>
+    <description>The amount of damage suffered from magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>60</id>
+    <name>Magic Vulnerability Up</name>
+    <description>The amount of damage suffered from magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>61</id>
+    <name>Determination Up</name>
+    <description>The amount of damage dealt by both physical and magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>62</id>
+    <name>Determination Down</name>
+    <description>The amount of damage dealt by both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>63</id>
+    <name>Vulnerability Down</name>
+    <description>The amount of damage suffered from both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>64</id>
+    <name>Vulnerability Up</name>
+    <description>The amount of damage suffered from both physical and magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>65</id>
+    <name>Vulnerability Up</name>
+    <description>The amount of damage suffered from both physical and magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>66</id>
+    <name>Terror</name>
+    <description>Frozen with fear.</description>
+  </Buff>
+  <Buff>
+    <id>67</id>
+    <name>Leaden</name>
+    <description>Movement speed is reduced, and cannot be restored by normal means.</description>
+  </Buff>
+  <Buff>
+    <id>68</id>
+    <name>Drainstrikes</name>
+    <description>Auto-attacks are generating an Absorb HP effect.</description>
+  </Buff>
+  <Buff>
+    <id>69</id>
+    <name>Aspirstrikes</name>
+    <description>Auto-attacks are generating an Absorb MP effect.</description>
+  </Buff>
+  <Buff>
+    <id>70</id>
+    <name>Stunstrikes</name>
+    <description>Auto-attacks may stun target.</description>
+  </Buff>
+  <Buff>
+    <id>71</id>
+    <name>Stunstrikes</name>
+    <description>Auto-attacks may stun target.</description>
+  </Buff>
+  <Buff>
+    <id>72</id>
+    <name>Convalescence</name>
+    <description>Increasing HP restored by spells or actions.</description>
+  </Buff>
+  <Buff>
+    <id>73</id>
+    <name>Awareness</name>
+    <description>Cannot suffer critical damage.</description>
+  </Buff>
+  <Buff>
+    <id>74</id>
+    <name>Sentinel</name>
+    <description>Reducing the amount of damage taken.</description>
+  </Buff>
+  <Buff>
+    <id>75</id>
+    <name>Tempered Will</name>
+    <description>Immune to knockback and draw-in effects.</description>
+  </Buff>
+  <Buff>
+    <id>76</id>
+    <name>Fight or Flight</name>
+    <description>Physical damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>77</id>
+    <name>Fight or Flight</name>
+    <description>Physical damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>78</id>
+    <name>Sword Oath</name>
+    <description>Auto-attacks are enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>79</id>
+    <name>Shield Oath</name>
+    <description>Damage taken and dealt is reduced, while enmity is increased.</description>
+  </Buff>
+  <Buff>
+    <id>80</id>
+    <name>Cover</name>
+    <description>Protecting a party member.</description>
+  </Buff>
+  <Buff>
+    <id>81</id>
+    <name>Covered</name>
+    <description>Under the protection of a party member.</description>
+  </Buff>
+  <Buff>
+    <id>82</id>
+    <name>Hallowed Ground</name>
+    <description>Impervious to most attacks.</description>
+  </Buff>
+  <Buff>
+    <id>83</id>
+    <name>Hallowed Ground</name>
+    <description>Impervious to most attacks.</description>
+  </Buff>
+  <Buff>
+    <id>84</id>
+    <name>Bloodbath</name>
+    <description>Attacks generate HP equal to a portion of damage dealt.</description>
+  </Buff>
+  <Buff>
+    <id>85</id>
+    <name>Maim</name>
+    <description>Damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>86</id>
+    <name>Berserk</name>
+    <description>Attack power is enhanced. Will be unable to use weaponskills for several seconds after effect ends.</description>
+  </Buff>
+  <Buff>
+    <id>87</id>
+    <name>Thrill of Battle</name>
+    <description>Maximum HP is increased.</description>
+  </Buff>
+  <Buff>
+    <id>88</id>
+    <name>Holmgang</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>89</id>
+    <name>Holmgang</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>90</id>
+    <name>Storm's Eye</name>
+    <description>Slashing resistance and HP recovery via curing magic are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>91</id>
+    <name>Defiance</name>
+    <description>Maximum HP and enmity are increased, while damage dealt is reduced. Using certain actions will incur Wrath.</description>
+  </Buff>
+  <Buff>
+    <id>92</id>
+    <name>Unchained</name>
+    <description>Damage penalty inflicted by Defiance is nullified.</description>
+  </Buff>
+  <Buff>
+    <id>93</id>
+    <name>Wrath</name>
+    <description>Critical hit rate and amount of HP restored by spells is increased.</description>
+  </Buff>
+  <Buff>
+    <id>94</id>
+    <name>Wrath II</name>
+    <description>Critical hit rate and amount of HP restored by spells is increased.</description>
+  </Buff>
+  <Buff>
+    <id>95</id>
+    <name>Wrath II</name>
+    <description>Critical hit rate and amount of HP restored by spells is increased.</description>
+  </Buff>
+  <Buff>
+    <id>96</id>
+    <name>Wrath IV</name>
+    <description>Critical hit rate and amount of HP restored by spells is increased.</description>
+  </Buff>
+  <Buff>
+    <id>97</id>
+    <name>Infuriated</name>
+    <description>Critical hit rate and amount of HP restored by spells is increased.</description>
+  </Buff>
+  <Buff>
+    <id>98</id>
+    <name>Dragon Kick</name>
+    <description>Blunt resistance and intelligence are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>99</id>
+    <name>Featherfoot</name>
+    <description>Evasion is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>100</id>
+    <name>Internal Release</name>
+    <description>Critical hit rate is increased.</description>
+  </Buff>
+  <Buff>
+    <id>101</id>
+    <name>Twin Snakes</name>
+    <description>Damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>102</id>
+    <name>Twin Snakes</name>
+    <description>Damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>103</id>
+    <name>Fists of Fire</name>
+    <description>MP is being consumed to convert attacks to fire attacks and grant a bonus to attack power.</description>
+  </Buff>
+  <Buff>
+    <id>104</id>
+    <name>Fists of Earth</name>
+    <description>MP is being consumed to convert attacks to earth attacks and grant a bonus to physical defense.</description>
+  </Buff>
+  <Buff>
+    <id>105</id>
+    <name>Fists of Wind</name>
+    <description>MP is being consumed to convert attacks to wind attacks and grant a bonus to movement speed and weaponskill recast times. </description>
+  </Buff>
+  <Buff>
+    <id>106</id>
+    <name>Touch of Death</name>
+    <description>Organs are failing, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>107</id>
+    <name>Opo-opo Form</name>
+    <description>Employing the opo-opo fighting stance.</description>
+  </Buff>
+  <Buff>
+    <id>108</id>
+    <name>Opo-opo Form</name>
+    <description>Employing the opo-opo fighting stance.</description>
+  </Buff>
+  <Buff>
+    <id>109</id>
+    <name>Coeurl Form</name>
+    <description>Employing the coeurl fighting stance.</description>
+  </Buff>
+  <Buff>
+    <id>110</id>
+    <name>Perfect Balance</name>
+    <description>Employing all three pugilistic fighting stances─opo-opo, raptor, and coeurl.</description>
+  </Buff>
+  <Buff>
+    <id>111</id>
+    <name>Greased Lightning</name>
+    <description>Damage dealt and attack speed are increased.</description>
+  </Buff>
+  <Buff>
+    <id>112</id>
+    <name>Greased Lightning II</name>
+    <description>Damage dealt and attack speed are increased.</description>
+  </Buff>
+  <Buff>
+    <id>113</id>
+    <name>Greased Lightning III</name>
+    <description>Damage dealt and attack speed are increased.</description>
+  </Buff>
+  <Buff>
+    <id>114</id>
+    <name>Greased Lightning III</name>
+    <description>Damage dealt and attack speed are increased.</description>
+  </Buff>
+  <Buff>
+    <id>115</id>
+    <name>Heavy Thrust</name>
+    <description>Damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>116</id>
+    <name>Life Surge</name>
+    <description>Next weaponskill is a critical hit with resulting damage being absorbed as HP.</description>
+  </Buff>
+  <Buff>
+    <id>117</id>
+    <name>Blood for Blood</name>
+    <description>Increasing damage dealt while increasing damage taken.</description>
+  </Buff>
+  <Buff>
+    <id>118</id>
+    <name>Chaos Thrust</name>
+    <description>Wounds are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>119</id>
+    <name>Phlebotomize</name>
+    <description>Wounds are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>120</id>
+    <name>Phlebotomize</name>
+    <description>Wounds are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>121</id>
+    <name>Disembowel</name>
+    <description>Piercing resistance is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>122</id>
+    <name>Straighter Shot</name>
+    <description>Next Straight Shot will result in a critical hit.</description>
+  </Buff>
+  <Buff>
+    <id>123</id>
+    <name>Hawk's Eye</name>
+    <description>Accuracy and dexterity are increased.</description>
+  </Buff>
+  <Buff>
+    <id>124</id>
+    <name>Venomous Bite</name>
+    <description>Toxins are causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>125</id>
+    <name>Raging Strikes</name>
+    <description>Attack power is increased.</description>
+  </Buff>
+  <Buff>
+    <id>126</id>
+    <name>Raging Strikes</name>
+    <description>Attack power is increased.</description>
+  </Buff>
+  <Buff>
+    <id>127</id>
+    <name>Quelling Strikes</name>
+    <description>Attacks are generating reduced enmity.</description>
+  </Buff>
+  <Buff>
+    <id>128</id>
+    <name>Barrage</name>
+    <description>Striking multiple times per auto-attack.</description>
+  </Buff>
+  <Buff>
+    <id>129</id>
+    <name>Windbite</name>
+    <description>Wounds are exposed to the elements, causing wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>130</id>
+    <name>Straight Shot</name>
+    <description>Critical hit rate is increased.</description>
+  </Buff>
+  <Buff>
+    <id>131</id>
+    <name>Downpour of Death</name>
+    <description>Next Rain of Death will not require any TP.</description>
+  </Buff>
+  <Buff>
+    <id>132</id>
+    <name>Downpour of Death</name>
+    <description>Next Rain of Death will not require any TP.</description>
+  </Buff>
+  <Buff>
+    <id>133</id>
+    <name>Swiftsong</name>
+    <description>Nearby party member movement speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>134</id>
+    <name>Swiftsong</name>
+    <description>Movement speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>135</id>
+    <name>Mage's Ballad</name>
+    <description>Using MP to gradually restore the MP of nearby party members. Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>136</id>
+    <name>Mage's Ballad</name>
+    <description>Restoring MP over time.</description>
+  </Buff>
+  <Buff>
+    <id>137</id>
+    <name>Army's Paeon</name>
+    <description>Using MP to gradually generate the TP of nearby party members. Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>138</id>
+    <name>Army's Paeon</name>
+    <description>Using MP to gradually generate the TP of nearby party members. Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>139</id>
+    <name>Foe Requiem</name>
+    <description>Using MP to lower the elemental resistances of nearby enemies.</description>
+  </Buff>
+  <Buff>
+    <id>140</id>
+    <name>Foe Requiem</name>
+    <description>All elemental resistances are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>141</id>
+    <name>Battle Voice</name>
+    <description>The effectiveness of songs is increased.</description>
+  </Buff>
+  <Buff>
+    <id>142</id>
+    <name>Chameleon</name>
+    <description>All elemental resistances are increased.</description>
+  </Buff>
+  <Buff>
+    <id>143</id>
+    <name>Aero</name>
+    <description>Taking wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>144</id>
+    <name>Aero II</name>
+    <description>Taking wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>145</id>
+    <name>Aero II</name>
+    <description>Taking wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>146</id>
+    <name>Protect</name>
+    <description>Defense is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>147</id>
+    <name>Protect</name>
+    <description>Both physical and magic defense are enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>148</id>
+    <name>Raise</name>
+    <description>Teetering on the brink of consciousness.</description>
+  </Buff>
+  <Buff>
+    <id>149</id>
+    <name>Rebirth</name>
+    <description>Rebirth</description>
+  </Buff>
+  <Buff>
+    <id>150</id>
+    <name>Medica II</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>151</id>
+    <name>Medica II</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>152</id>
+    <name>ストンスキン（物理攻撃）</name>
+    <description>一定量の物理ダメージを無効化する状態。</description>
+  </Buff>
+  <Buff>
+    <id>153</id>
+    <name>ストンスキン（魔法攻撃）</name>
+    <description>一定量の魔法ダメージを無効化する状態。</description>
+  </Buff>
+  <Buff>
+    <id>154</id>
+    <name>Shroud of Saints</name>
+    <description>Enmity is temporarily halved and MP is gradually being restored.</description>
+  </Buff>
+  <Buff>
+    <id>155</id>
+    <name>Freecure</name>
+    <description>Next Cure II will not require any MP to cast.</description>
+  </Buff>
+  <Buff>
+    <id>156</id>
+    <name>Overcure</name>
+    <description>Next Cure III will restore critical HP.</description>
+  </Buff>
+  <Buff>
+    <id>157</id>
+    <name>Overcure</name>
+    <description>Next Cure III will restore critical HP.</description>
+  </Buff>
+  <Buff>
+    <id>158</id>
+    <name>Regen</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>159</id>
+    <name>Divine Seal</name>
+    <description>Cure magic potency is increased.</description>
+  </Buff>
+  <Buff>
+    <id>160</id>
+    <name>Surecast</name>
+    <description>Next spell cannot be interrupted by taking damage.</description>
+  </Buff>
+  <Buff>
+    <id>161</id>
+    <name>Thunder</name>
+    <description>Taking lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>162</id>
+    <name>Thunder II</name>
+    <description>Taking lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>163</id>
+    <name>Thunder II</name>
+    <description>Taking lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>164</id>
+    <name>Thundercloud</name>
+    <description>Next Thunder, Thunder II, or Thunder III will add its full damage over time amount to its initial damage, require no time to cast, and cost no MP.</description>
+  </Buff>
+  <Buff>
+    <id>165</id>
+    <name>Firestarter</name>
+    <description>Next Fire III will require no time to cast and cost no MP.</description>
+  </Buff>
+  <Buff>
+    <id>166</id>
+    <name>Succor</name>
+    <description>Next Succor will cost no MP.</description>
+  </Buff>
+  <Buff>
+    <id>167</id>
+    <name>Swiftcast</name>
+    <description>Next spell will require no time to cast.</description>
+  </Buff>
+  <Buff>
+    <id>168</id>
+    <name>Manaward</name>
+    <description>An aetherial barrier is preventing all magic damage.</description>
+  </Buff>
+  <Buff>
+    <id>169</id>
+    <name>Manaward</name>
+    <description>An aetherial barrier is preventing all magic damage.</description>
+  </Buff>
+  <Buff>
+    <id>170</id>
+    <name>Apocatastasis</name>
+    <description>Fire, ice, and lightning resistances are increased by 30%.</description>
+  </Buff>
+  <Buff>
+    <id>171</id>
+    <name>Ekpyrosis</name>
+    <description>Unable to receive Apocatastasis.</description>
+  </Buff>
+  <Buff>
+    <id>172</id>
+    <name>Infirmity</name>
+    <description>Recovering HP at a slower rate.</description>
+  </Buff>
+  <Buff>
+    <id>173</id>
+    <name>Astral Fire</name>
+    <description>Aetherial balance of mind and spirit is leaning astrally. Fire-aspected spells require more MP, but do more damage. Ice-aspected spells require less MP, but do less damage. MP regeneration has stopped.</description>
+  </Buff>
+  <Buff>
+    <id>174</id>
+    <name>Astral Fire II</name>
+    <description>Aetherial balance of mind and spirit is leaning astrally. Fire-aspected spells require more MP, but do more damage. Ice-aspected spells require less MP, but do less damage. MP regeneration has stopped.</description>
+  </Buff>
+  <Buff>
+    <id>175</id>
+    <name>Astral Fire II</name>
+    <description>Aetherial balance of mind and spirit is leaning astrally. Fire-aspected spells require more MP, but do more damage. Ice-aspected spells require less MP, but do less damage. MP regeneration has stopped.</description>
+  </Buff>
+  <Buff>
+    <id>176</id>
+    <name>Umbral Ice</name>
+    <description>Aetherial balance of mind and spirit is leaning umbrally. Fire-aspected spells require less MP, but do less damage. MP regeneration has quickened.</description>
+  </Buff>
+  <Buff>
+    <id>177</id>
+    <name>Umbral Ice II</name>
+    <description>Aetherial balance of mind and spirit is leaning umbrally. Fire-aspected spells require less MP, but do less damage. MP regeneration has quickened.</description>
+  </Buff>
+  <Buff>
+    <id>178</id>
+    <name>Umbral Ice III</name>
+    <description>Aetherial balance of mind and spirit is leaning umbrally. Fire-aspected spells require less MP, but do less damage, and casting times are halved. MP regeneration has quickened.</description>
+  </Buff>
+  <Buff>
+    <id>179</id>
+    <name>Bio</name>
+    <description>Contagions are spreading, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>180</id>
+    <name>Miasma</name>
+    <description>Lungs are failing, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>181</id>
+    <name>Miasma</name>
+    <description>Lungs are failing, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>182</id>
+    <name>Virus</name>
+    <description>Motor skills are hampered, causing reduced strength and dexterity.</description>
+  </Buff>
+  <Buff>
+    <id>183</id>
+    <name>Fever</name>
+    <description>Head is burning, causing reduced mind and intelligence.</description>
+  </Buff>
+  <Buff>
+    <id>184</id>
+    <name>Sustain</name>
+    <description>Recovering HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>185</id>
+    <name>Eye for an Eye</name>
+    <description>Chance that next hit suffered will lower the attacker's damage dealt.</description>
+  </Buff>
+  <Buff>
+    <id>186</id>
+    <name>Eye for an Eye</name>
+    <description>Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>187</id>
+    <name>Eye for an Eye</name>
+    <description>Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>188</id>
+    <name>Miasma II</name>
+    <description>Contagions are spreading, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>189</id>
+    <name>Bio II</name>
+    <description>Lungs are failing, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>190</id>
+    <name>Shadow Flare</name>
+    <description>Burning shadows dance across the ground, dealing unaspected damage to any who enter.</description>
+  </Buff>
+  <Buff>
+    <id>191</id>
+    <name>Tri-disaster</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>192</id>
+    <name>Spur</name>
+    <description>Attack power and magic potency are increased.</description>
+  </Buff>
+  <Buff>
+    <id>193</id>
+    <name>Spur</name>
+    <description>Attack power and magic potency are increased.</description>
+  </Buff>
+  <Buff>
+    <id>194</id>
+    <name>Shield Wall</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>195</id>
+    <name>Mighty Guard</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>196</id>
+    <name>Last Bastion</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>197</id>
+    <name>Blaze Spikes</name>
+    <description>Fire spikes are damaging attackers.</description>
+  </Buff>
+  <Buff>
+    <id>198</id>
+    <name>Ice Spikes</name>
+    <description>Ice spikes are damaging and sometimes slowing down attackers.</description>
+  </Buff>
+  <Buff>
+    <id>199</id>
+    <name>Ice Spikes</name>
+    <description>Ice spikes are damaging and sometimes slowing down attackers.</description>
+  </Buff>
+  <Buff>
+    <id>200</id>
+    <name>Physical Vulnerability Up</name>
+    <description>The amount of damage suffered from physical attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>201</id>
+    <name>Stun</name>
+    <description>Unable to execute actions.</description>
+  </Buff>
+  <Buff>
+    <id>202</id>
+    <name>Vulnerability Up</name>
+    <description>The amount of damage suffered from both physical and magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>203</id>
+    <name>Boost</name>
+    <description>Attack power on next special technique is increased.</description>
+  </Buff>
+  <Buff>
+    <id>204</id>
+    <name>Enfire</name>
+    <description>Fire damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>205</id>
+    <name>Enfire</name>
+    <description>Fire damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>206</id>
+    <name>Enaero</name>
+    <description>Wind damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>207</id>
+    <name>Enstone</name>
+    <description>Earth damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>208</id>
+    <name>Enthunder</name>
+    <description>Lightning damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>209</id>
+    <name>Enwater</name>
+    <description>Water damage added to auto-attacks.</description>
+  </Buff>
+  <Buff>
+    <id>210</id>
+    <name>Doom</name>
+    <description>Certain death when counter reaches zero.</description>
+  </Buff>
+  <Buff>
+    <id>211</id>
+    <name>Doom</name>
+    <description>Certain death when counter reaches zero.</description>
+  </Buff>
+  <Buff>
+    <id>212</id>
+    <name>True Sight</name>
+    <description>Able to see through the levequest target's glamour.</description>
+  </Buff>
+  <Buff>
+    <id>213</id>
+    <name>Pacification</name>
+    <description>The target is pacified and will no longer attack.</description>
+  </Buff>
+  <Buff>
+    <id>214</id>
+    <name>Agitation</name>
+    <description>Excited by failed pacification. Attack power and spell potency are enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>215</id>
+    <name>Determination Down</name>
+    <description>The amount of damage dealt by both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>216</id>
+    <name>Paralysis</name>
+    <description>Deadened nerves are sometimes preventing the execution of actions.</description>
+  </Buff>
+  <Buff>
+    <id>217</id>
+    <name>Triangulate</name>
+    <description>Able to locate mature trees and lush vegetation.</description>
+  </Buff>
+  <Buff>
+    <id>218</id>
+    <name>Triangulate</name>
+    <description>Able to locate mature trees and lush vegetation.</description>
+  </Buff>
+  <Buff>
+    <id>219</id>
+    <name>Gathering Yield Up</name>
+    <description>Number of items obtained while gathering is increased.</description>
+  </Buff>
+  <Buff>
+    <id>220</id>
+    <name>Gathering Fortune Up</name>
+    <description>Chance of obtaining an HQ item while gathering is increased.</description>
+  </Buff>
+  <Buff>
+    <id>221</id>
+    <name>Truth of Forests</name>
+    <description>Able to locate unspoiled mature trees and lush vegetation.</description>
+  </Buff>
+  <Buff>
+    <id>222</id>
+    <name>Truth of Mountains</name>
+    <description>Able to locate unspoiled mineral deposits and rocky outcrops.</description>
+  </Buff>
+  <Buff>
+    <id>223</id>
+    <name>Byregot's Ward</name>
+    <description>Affinity to the element lightning is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>224</id>
+    <name>Byregot's Ward</name>
+    <description>Affinity to the element lightning is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>225</id>
+    <name>Prospect</name>
+    <description>Able to locate mineral deposits and rocky outcrops.</description>
+  </Buff>
+  <Buff>
+    <id>226</id>
+    <name>Haste</name>
+    <description>Weaponskill recast time, spell recast time, and auto-attack delay are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>227</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>228</id>
+    <name>Menphina's Ward</name>
+    <description>Affinity to the element ice is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>229</id>
+    <name>Nald'thal's Ward</name>
+    <description>Affinity to the element fire is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>230</id>
+    <name>Nald'thal's Ward</name>
+    <description>Affinity to the element fire is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>231</id>
+    <name>Thaliak's Ward</name>
+    <description>Affinity to the element water is increased while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>232</id>
+    <name>Preparation</name>
+    <description>Able to recognize the conditions for obtaining HQ items while gathering.</description>
+  </Buff>
+  <Buff>
+    <id>233</id>
+    <name>Arbor Call</name>
+    <description>Surveying the land for the nearest mature tree or lush vegetation.</description>
+  </Buff>
+  <Buff>
+    <id>234</id>
+    <name>Lay of the Land</name>
+    <description>Surveying the land for the nearest mineral deposit or rocky outcrop.</description>
+  </Buff>
+  <Buff>
+    <id>235</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>236</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>237</id>
+    <name>Choco Regen</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>238</id>
+    <name>Choco Surge</name>
+    <description>Healing magic potency is enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>239</id>
+    <name>The Echo</name>
+    <description>Maximum HP and damage dealt are increased.</description>
+  </Buff>
+  <Buff>
+    <id>240</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>241</id>
+    <name>Blessing of Light</name>
+    <description>Bathed in the light of the Mothercrystal.</description>
+  </Buff>
+  <Buff>
+    <id>242</id>
+    <name>Blessing of Light</name>
+    <description>Bathed in the light of the Mothercrystal.</description>
+  </Buff>
+  <Buff>
+    <id>243</id>
+    <name>Lay of the Land II</name>
+    <description>Surveying the land for the highest-level mineral deposit or rocky outcrop.</description>
+  </Buff>
+  <Buff>
+    <id>244</id>
+    <name>Fracture</name>
+    <description>Wounds are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>245</id>
+    <name>Sanction</name>
+    <description>Receiving the gear-enhancing benefits of a Grand Company sanction.</description>
+  </Buff>
+  <Buff>
+    <id>246</id>
+    <name>Demolish</name>
+    <description>Internal bleeding is causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>247</id>
+    <name>Rain of Death</name>
+    <description>Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>248</id>
+    <name>Rain of Death</name>
+    <description>Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>249</id>
+    <name>Flaming Arrow</name>
+    <description>Treading on coals, causing fire damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>250</id>
+    <name>Burns</name>
+    <description>Sustaining fire damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>251</id>
+    <name>Inner Quiet</name>
+    <description>Receiving a bonus to control with every increase in quality.</description>
+  </Buff>
+  <Buff>
+    <id>252</id>
+    <name>Waste Not</name>
+    <description>Durability loss is reduced by half.</description>
+  </Buff>
+  <Buff>
+    <id>253</id>
+    <name>Steady Hand</name>
+    <description>Action success rate is increased by 10%.</description>
+  </Buff>
+  <Buff>
+    <id>254</id>
+    <name>Steady Hand</name>
+    <description>Action success rate is increased by 10%.</description>
+  </Buff>
+  <Buff>
+    <id>255</id>
+    <name>Ingenuity</name>
+    <description>Recipe level is equal to your own.</description>
+  </Buff>
+  <Buff>
+    <id>256</id>
+    <name>Ingenuity II</name>
+    <description>Recipe level is three lower than your own.</description>
+  </Buff>
+  <Buff>
+    <id>257</id>
+    <name>Waste Not II</name>
+    <description>Durability loss is reduced by half.</description>
+  </Buff>
+  <Buff>
+    <id>258</id>
+    <name>Manipulation</name>
+    <description>Receiving 10 points of durability after each step.</description>
+  </Buff>
+  <Buff>
+    <id>259</id>
+    <name>Innovation</name>
+    <description>Control is increased by 30%.</description>
+  </Buff>
+  <Buff>
+    <id>260</id>
+    <name>Innovation</name>
+    <description>Control is increased by 30%.</description>
+  </Buff>
+  <Buff>
+    <id>261</id>
+    <name>Comfort Zone</name>
+    <description>Regaining 10 CP after each step.</description>
+  </Buff>
+  <Buff>
+    <id>262</id>
+    <name>Steady Hand II</name>
+    <description>Action success rate is increased by 30%.</description>
+  </Buff>
+  <Buff>
+    <id>263</id>
+    <name>Vulnerability Down</name>
+    <description>The amount of damage suffered from both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>264</id>
+    <name>Flesh Wound</name>
+    <description>Wounds dealt by a slashing weapon are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>265</id>
+    <name>Stab Wound</name>
+    <description>Wounds dealt by a piercing weapon are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>266</id>
+    <name>Stab Wound</name>
+    <description>Wounds dealt by a piercing weapon are bleeding, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>267</id>
+    <name>Burns</name>
+    <description>Sustaining fire damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>268</id>
+    <name>Frostbite</name>
+    <description>Sustaining ice damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>269</id>
+    <name>Windburn</name>
+    <description>Sustaining wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>270</id>
+    <name>Sludge</name>
+    <description>Sustaining earth damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>271</id>
+    <name>Electrocution</name>
+    <description>Sustaining lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>272</id>
+    <name>Electrocution</name>
+    <description>Sustaining lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>273</id>
+    <name>Bleeding</name>
+    <description>Sustaining damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>274</id>
+    <name>Recuperation</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>275</id>
+    <name>Poison +1</name>
+    <description>Toxins are causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>276</id>
+    <name>Voice of Valor</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>277</id>
+    <name>堅忍の誉れ：効果</name>
+    <description>受けるダメージの一部が軽減される状態。</description>
+  </Buff>
+  <Buff>
+    <id>278</id>
+    <name>堅忍の誉れ：効果</name>
+    <description>受けるダメージの一部が軽減される状態。</description>
+  </Buff>
+  <Buff>
+    <id>279</id>
+    <name>Rehabilitation</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>280</id>
+    <name>Bind</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>281</id>
+    <name>Physical Damage Down</name>
+    <description>The amount of damage dealt by physical attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>282</id>
+    <name>Mana Modulation</name>
+    <description>The amount of damage dealt by magic attacks and the amount of HP restored by healing spells is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>283</id>
+    <name>Dropsy</name>
+    <description>Sustaining water damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>284</id>
+    <name>Dropsy</name>
+    <description>Sustaining water damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>285</id>
+    <name>Frostbite</name>
+    <description>Sustaining ice damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>286</id>
+    <name>Windburn</name>
+    <description>Sustaining wind damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>287</id>
+    <name>Sludge</name>
+    <description>Sustaining earth damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>288</id>
+    <name>Electrocution</name>
+    <description>Sustaining lightning damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>289</id>
+    <name>Dropsy</name>
+    <description>Sustaining water damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>290</id>
+    <name>Dropsy</name>
+    <description>Sustaining water damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>291</id>
+    <name>Hundred Fists</name>
+    <description>Auto-attack, skill, and spell speed are all improved.</description>
+  </Buff>
+  <Buff>
+    <id>292</id>
+    <name>Fetters</name>
+    <description>Unable to move.</description>
+  </Buff>
+  <Buff>
+    <id>293</id>
+    <name>Skill Speed Up</name>
+    <description>Weaponskill cast and recast times are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>294</id>
+    <name>Spell Speed Up</name>
+    <description>Spell cast and recast times are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>295</id>
+    <name>Goldbile</name>
+    <description>Sulphuric sludge is eating away at the skin, causing extreme discomfort and gradual HP loss.</description>
+  </Buff>
+  <Buff>
+    <id>296</id>
+    <name>Goldbile</name>
+    <description>Sulphuric sludge is eating away at the skin, causing extreme discomfort and gradual HP loss.</description>
+  </Buff>
+  <Buff>
+    <id>297</id>
+    <name>Adloquium</name>
+    <description>A magicked barrier is nullifying damage.</description>
+  </Buff>
+  <Buff>
+    <id>298</id>
+    <name>Sacred Soil</name>
+    <description>An area of land has been sanctified, reducing damage taken for all who enter.</description>
+  </Buff>
+  <Buff>
+    <id>299</id>
+    <name>Sacred Soil</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>300</id>
+    <name>Determination Up</name>
+    <description>The amount of damage dealt by both physical and magic attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>301</id>
+    <name>Critical Strikes</name>
+    <description>All attacks are dealing critical damage.</description>
+  </Buff>
+  <Buff>
+    <id>302</id>
+    <name>Critical Strikes</name>
+    <description>All attacks are dealing critical damage.</description>
+  </Buff>
+  <Buff>
+    <id>303</id>
+    <name>Burrs</name>
+    <description>Hooked burrs have dug into your flesh.</description>
+  </Buff>
+  <Buff>
+    <id>304</id>
+    <name>Aetherflow</name>
+    <description>Aether is gathering in the body.</description>
+  </Buff>
+  <Buff>
+    <id>305</id>
+    <name>The Dragon's Curse</name>
+    <description>Under the power of the dragon's eye.</description>
+  </Buff>
+  <Buff>
+    <id>306</id>
+    <name>Inner Dragon</name>
+    <description>Under control of the dragon's eye.</description>
+  </Buff>
+  <Buff>
+    <id>307</id>
+    <name>Voice of Valor</name>
+    <description>Gradually restoring the HP of nearby party members. Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>308</id>
+    <name>Voice of Valor</name>
+    <description>Gradually restoring the HP of nearby party members. Damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>309</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>310</id>
+    <name>Curl</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>311</id>
+    <name>Earthen Ward</name>
+    <description>Damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>312</id>
+    <name>Earthen Fury</name>
+    <description>Jagged shards protrude from the ground, dealing earth damage to any who enter.</description>
+  </Buff>
+  <Buff>
+    <id>313</id>
+    <name>Radiant Shield</name>
+    <description>Countering any physical attacks.</description>
+  </Buff>
+  <Buff>
+    <id>314</id>
+    <name>Radiant Shield</name>
+    <description>Countering any physical attacks.</description>
+  </Buff>
+  <Buff>
+    <id>315</id>
+    <name>Whispering Dawn</name>
+    <description>Regenerating HP over time.</description>
+  </Buff>
+  <Buff>
+    <id>316</id>
+    <name>Fey Covenant</name>
+    <description>Magic defense is increased.</description>
+  </Buff>
+  <Buff>
+    <id>317</id>
+    <name>Fey Illumination</name>
+    <description>Amount of HP restored by healing magic is increased.</description>
+  </Buff>
+  <Buff>
+    <id>318</id>
+    <name>Fey Glow</name>
+    <description>Spell speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>319</id>
+    <name>Fey Light</name>
+    <description>Skill speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>320</id>
+    <name>Fey Light</name>
+    <description>Skill speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>321</id>
+    <name>Gungnir</name>
+    <description>The power slumbering within the legendary lance has awoken.</description>
+  </Buff>
+  <Buff>
+    <id>322</id>
+    <name>Crystal Veil</name>
+    <description>Damage taken from Eyes on Me is significantly reduced.</description>
+  </Buff>
+  <Buff>
+    <id>323</id>
+    <name>Reduced Immunity</name>
+    <description>Amount of HP recovered by healing magic is decreased. Can be cured with Esuna.</description>
+  </Buff>
+  <Buff>
+    <id>324</id>
+    <name>Greenwrath</name>
+    <description>The anger of the elementals tears at your very sanity, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>325</id>
+    <name>Invincibility</name>
+    <description>Invulnerable to all damage.</description>
+  </Buff>
+  <Buff>
+    <id>326</id>
+    <name>Lightning Charge</name>
+    <description>Lightning-aspected actions are enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>327</id>
+    <name>Lightning Charge</name>
+    <description>Lightning-aspected actions are enhanced.</description>
+  </Buff>
+  <Buff>
+    <id>328</id>
+    <name>Heart of the Mountain</name>
+    <description>Invulnerable to all damage.</description>
+  </Buff>
+  <Buff>
+    <id>329</id>
+    <name>Modification</name>
+    <description>Applying parts from another bot to enhance and repair systems.</description>
+  </Buff>
+  <Buff>
+    <id>330</id>
+    <name>Haste</name>
+    <description>Weaponskill recast time, spell recast time, and auto-attack delay are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>331</id>
+    <name>Magic Vulnerability Down</name>
+    <description>The amount of damage suffered from magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>332</id>
+    <name>Physical Damage Up</name>
+    <description>The amount of damage dealt by physical attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>333</id>
+    <name>Physical Damage Up</name>
+    <description>The amount of damage dealt by physical attacks is increased.</description>
+  </Buff>
+  <Buff>
+    <id>334</id>
+    <name>Allagan Immunity</name>
+    <description>Your body is showing resistance to the Allagan Rot.</description>
+  </Buff>
+  <Buff>
+    <id>335</id>
+    <name>Firestream</name>
+    <description>The flesh melts from your bones, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>336</id>
+    <name>Sequence AB1</name>
+    <description>Blunt resistance is increased.</description>
+  </Buff>
+  <Buff>
+    <id>337</id>
+    <name>Sequence AP1</name>
+    <description>Piercing resistance is increased.</description>
+  </Buff>
+  <Buff>
+    <id>338</id>
+    <name>Sequence AS1</name>
+    <description>Slashing resistance is increased.</description>
+  </Buff>
+  <Buff>
+    <id>339</id>
+    <name>Sequence AS1</name>
+    <description>Slashing resistance is increased.</description>
+  </Buff>
+  <Buff>
+    <id>340</id>
+    <name>Physical Field</name>
+    <description>Physical damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>341</id>
+    <name>Aetherial Field</name>
+    <description>Magic damage taken is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>342</id>
+    <name>Repelling Spray</name>
+    <description>Countering all ranged attacks.</description>
+  </Buff>
+  <Buff>
+    <id>343</id>
+    <name>Bleeding</name>
+    <description>Sustaining damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>344</id>
+    <name>Neurolink</name>
+    <description>Movement is slowed and damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>345</id>
+    <name>Neurolink</name>
+    <description>Movement is slowed and damage dealt is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>346</id>
+    <name>Waxen Flesh</name>
+    <description>The rate at which Firestream burns your flesh is increased.</description>
+  </Buff>
+  <Buff>
+    <id>347</id>
+    <name>Pox</name>
+    <description>An ancient pestilence corrupts your humours, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>348</id>
+    <name>Disseminate</name>
+    <description>Physical damage taken is increased.</description>
+  </Buff>
+  <Buff>
+    <id>349</id>
+    <name>Steel Scales</name>
+    <description>Physical damage dealt is increased.</description>
+  </Buff>
+  <Buff>
+    <id>350</id>
+    <name>Vulnerability Down</name>
+    <description>The amount of damage suffered from both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>351</id>
+    <name>Vulnerability Down</name>
+    <description>The amount of damage suffered from both physical and magic attacks is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>352</id>
+    <name>Spjot</name>
+    <description>Magicks of eld permeate your body, causing damage over time.</description>
+  </Buff>
+  <Buff>
+    <id>353</id>
+    <name>Brave New World</name>
+    <description>Attributes are increased when a Disciple of War or Magic below level 10. (Company Action)</description>
+  </Buff>
+  <Buff>
+    <id>354</id>
+    <name>Live off the Land</name>
+    <description>Gathering is increased when a Disciple of the Land. (Company Action)</description>
+  </Buff>
+  <Buff>
+    <id>355</id>
+    <name>What You See</name>
+    <description>Perception is increased when a Disciple of the Land. (Company Action)</description>
+  </Buff>
+  <Buff>
+    <id>356</id>
+    <name>Eat from the Hand</name>
+    <description>Craftsmanship is increased when a Disciple of the Hand. (Company Action)</description>
+  </Buff>
+  <Buff>
+    <id>357</id>
+    <name>Eat from the Hand</name>
+    <description>Craftsmanship is increased when a Disciple of the Hand. (Company Action)</description>
+  </Buff>
+  <Buff>
+    <id>358</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>359</id>
+    <name />
+    <description />
+  </Buff>
+  <Buff>
+    <id>360</id>
+    <name>Meat and Mead</name>
+    <description>Food effect duration is increased.</description>
+  </Buff>
+  <Buff>
+    <id>361</id>
+    <name>That Which Binds Us</name>
+    <description>Spiritbonding speed is increased.</description>
+  </Buff>
+  <Buff>
+    <id>362</id>
+    <name>Proper Care</name>
+    <description>Gear wear is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>363</id>
+    <name>Proper Care</name>
+    <description>Gear wear is reduced.</description>
+  </Buff>
+  <Buff>
+    <id>364</id>
+    <name>Reduced Rates</name>
+    <description>Teleportation fees are reduced.</description>
+  </Buff>
+  <Buff>
+    <id>365</id>
+    <name>The Heat of Battle</name>
+    <description>EXP earned through battle is increased.</description>
+  </Buff>
+  <Buff>
+    <id>366</id>
+    <name>A Man's Best Friend</name>
+    <description>EXP earned by companions is increased.</description>
+  </Buff>
+  <Buff>
+    <id>367</id>
+    <name>Earth and Water</name>
+    <description>EXP earned through gathering is increased.</description>
+  </Buff>
+  <Buff>
+    <id>368</id>
+    <name>Helping Hand</name>
+    <description>EXP earned through crafting is increased.</description>
+  </Buff>
+  <Buff>
+    <id>369</id>
+    <name>Helping Hand</name>
+    <description>EXP earned through crafting is increased.</description>
+  </Buff>
+</ArrayOfBuff>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfFCRank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FCRank>
+      <Key>1</Key>
+      <CurrentPoint>0</CurrentPoint>
+      <NextPoint>4043</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>2</Key>
+      <CurrentPoint>4043</CurrentPoint>
+      <NextPoint>16173</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>3</Key>
+      <CurrentPoint>16173</CurrentPoint>
+      <NextPoint>36389</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>4</Key>
+      <CurrentPoint>36389</CurrentPoint>
+      <NextPoint>64691</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>5</Key>
+      <CurrentPoint>64691</CurrentPoint>
+      <NextPoint>999999999</NextPoint>
+    </FCRank>
+  </FCRank></ArrayOfFCRank>

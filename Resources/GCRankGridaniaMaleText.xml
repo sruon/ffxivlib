@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGCRankGridaniaMaleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GCRankGridaniaMaleText>
+      <Key>1</Key>
+      <SGL_ja>二等牙兵</SGL_ja>
+      <SGL_en>Serpent Private Third Class</SGL_en>
+      <SGL_fr>soldat 3e classe</SGL_fr>
+      <SGL_de>Dritter Novize</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>2</Key>
+      <SGL_ja>一等牙兵</SGL_ja>
+      <SGL_en>Serpent Private Second Class</SGL_en>
+      <SGL_fr>soldat 2e classe</SGL_fr>
+      <SGL_de>Zweiter Novize</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>3</Key>
+      <SGL_ja>上等牙兵</SGL_ja>
+      <SGL_en>Serpent Private First Class</SGL_en>
+      <SGL_fr>soldat 1re classe</SGL_fr>
+      <SGL_de>Erster Novize</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>4</Key>
+      <SGL_ja>牙兵長</SGL_ja>
+      <SGL_en>Serpent Corporal</SGL_en>
+      <SGL_fr>caporal</SGL_fr>
+      <SGL_de>Erleuchteter Novize</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>5</Key>
+      <SGL_ja>牙伍長</SGL_ja>
+      <SGL_en>Serpent Sergeant Third Class</SGL_en>
+      <SGL_fr>adjudant</SGL_fr>
+      <SGL_de>Dritter Schlangenjünger</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>6</Key>
+      <SGL_ja>牙軍曹</SGL_ja>
+      <SGL_en>Serpent Sergeant Second Class</SGL_en>
+      <SGL_fr>sergent</SGL_fr>
+      <SGL_de>Zweiter Schlangenjünger</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>7</Key>
+      <SGL_ja>牙曹長</SGL_ja>
+      <SGL_en>Serpent Sergeant First Class</SGL_en>
+      <SGL_fr>sergent-major</SGL_fr>
+      <SGL_de>Erster Schlangenjünger</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>8</Key>
+      <SGL_ja>准牙士</SGL_ja>
+      <SGL_en>Chief Serpent Sergeant</SGL_en>
+      <SGL_fr>major</SGL_fr>
+      <SGL_de>Erleuchteter Schlangenjünger</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>9</Key>
+      <SGL_ja>少牙士</SGL_ja>
+      <SGL_en>Second Serpent Lieutenant</SGL_en>
+      <SGL_fr>sous-lieutenant</SGL_fr>
+      <SGL_de>Zweiter Schlangenpriester</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>10</Key>
+      <SGL_ja>中牙士</SGL_ja>
+      <SGL_en>First Serpent Lieutenant</SGL_en>
+      <SGL_fr>lieutenant</SGL_fr>
+      <SGL_de>Erster Schlangenpriester</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>11</Key>
+      <SGL_ja>大牙士</SGL_ja>
+      <SGL_en>Serpent Captain</SGL_en>
+      <SGL_fr>capitaine</SGL_fr>
+      <SGL_de>Erleuchteter Schlangenpriester</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>12</Key>
+      <SGL_ja>少牙佐</SGL_ja>
+      <SGL_en>Second Serpent Commander</SGL_en>
+      <SGL_fr>sous-commandant</SGL_fr>
+      <SGL_de>Zweiter Prior</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>13</Key>
+      <SGL_ja>中牙佐</SGL_ja>
+      <SGL_en>First Serpent Commander</SGL_en>
+      <SGL_fr>commandant</SGL_fr>
+      <SGL_de>Erster Prior</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>14</Key>
+      <SGL_ja>大牙佐</SGL_ja>
+      <SGL_en>High Serpent Commander</SGL_en>
+      <SGL_fr>colonel</SGL_fr>
+      <SGL_de>Erleuchteter Prior</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>15</Key>
+      <SGL_ja>准牙将</SGL_ja>
+      <SGL_en>Rear Serpent Marshal</SGL_en>
+      <SGL_fr>sous-maréchal</SGL_fr>
+      <SGL_de>Einäugiger Seher</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>16</Key>
+      <SGL_ja>少牙将</SGL_ja>
+      <SGL_en>Vice Serpent Marshal</SGL_en>
+      <SGL_fr>vice-maréchal</SGL_fr>
+      <SGL_de>Zweiäugiger Seher</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>17</Key>
+      <SGL_ja>中牙将</SGL_ja>
+      <SGL_en>Serpent Marshal</SGL_en>
+      <SGL_fr>maréchal</SGL_fr>
+      <SGL_de>Dreiäugiger Seher</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>18</Key>
+      <SGL_ja>大牙将</SGL_ja>
+      <SGL_en>Grand Serpent Marshal</SGL_en>
+      <SGL_fr>grand maréchal</SGL_fr>
+      <SGL_de>Auge der Schlange</SGL_de>
+    </GCRankGridaniaMaleText>
+    <GCRankGridaniaMaleText>
+      <Key>19</Key>
+      <SGL_ja>蛇将</SGL_ja>
+      <SGL_en>Serpent Champion</SGL_en>
+      <SGL_fr>général</SGL_fr>
+      <SGL_de>Saatseher</SGL_de>
+    </GCRankGridaniaMaleText>
+  </GCRankGridaniaMaleText></ArrayOfGCRankGridaniaMaleText>

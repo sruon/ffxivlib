@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfItemSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ItemSeries>
+      <Key>1</Key>
+      <Name_ja>黒渦団制式装備</Name_ja>
+      <Name_en>Maelstrom Uniform</Name_en>
+      <Name_fr>Uniforme du Maelstrom</Name_fr>
+      <Name_de>Mahlstrom-Uniform</Name_de>
+    </ItemSeries>
+    <ItemSeries>
+      <Key>2</Key>
+      <Name_ja>双蛇党制式装備</Name_ja>
+      <Name_en>Order of the Twin Adder Uniform</Name_en>
+      <Name_fr>Uniforme de l'Ordre des deux vipères</Name_fr>
+      <Name_de>Bruderschafts-Uniform</Name_de>
+    </ItemSeries>
+    <ItemSeries>
+      <Key>3</Key>
+      <Name_ja>不滅隊制式装備</Name_ja>
+      <Name_en>Immortal Flames Uniform</Name_en>
+      <Name_fr>Uniforme des Immortels</Name_fr>
+      <Name_de>Legions-Uniform</Name_de>
+    </ItemSeries>
+  </ItemSeries></ArrayOfItemSeries>

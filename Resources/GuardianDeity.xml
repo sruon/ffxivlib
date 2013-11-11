@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGuardianDeity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GuardianDeity>
+      <Key>1</Key>
+      <Name_ja>ハルオーネ</Name_ja>
+      <Name_en>Halone, the Fury</Name_en>
+      <Name_fr>Halone, la Conquérante</Name_fr>
+      <Name_de>Halone - Die Furie</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>2</Key>
+      <Name_ja>メネフィナ</Name_ja>
+      <Name_en>Menphina, the Lover</Name_en>
+      <Name_fr>Menphina, la Bien-aimante</Name_fr>
+      <Name_de>Menphina - Die Liebende</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>3</Key>
+      <Name_ja>サリャク</Name_ja>
+      <Name_en>Thaliak, the Scholar</Name_en>
+      <Name_fr>Thaliak, l'Érudit</Name_fr>
+      <Name_de>Thaliak - Der Forscher</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>4</Key>
+      <Name_ja>ニメーヤ</Name_ja>
+      <Name_en>Nymeia, the Spinner</Name_en>
+      <Name_fr>Nymeia, la Fileuse</Name_fr>
+      <Name_de>Nymeia - Die Norne</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>5</Key>
+      <Name_ja>リムレーン</Name_ja>
+      <Name_en>Llymlaen, the Navigator</Name_en>
+      <Name_fr>Llymlaen, la Navigatrice</Name_fr>
+      <Name_de>Llymlaen - Die Lotsin</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>6</Key>
+      <Name_ja>オシュオン</Name_ja>
+      <Name_en>Oschon, the Wanderer</Name_en>
+      <Name_fr>Oschon, le Vagabond</Name_fr>
+      <Name_de>Oschon - Der Wanderer</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>7</Key>
+      <Name_ja>ビエルゴ</Name_ja>
+      <Name_en>Byregot, the Builder</Name_en>
+      <Name_fr>Byregot, l'Artisan</Name_fr>
+      <Name_de>Byregot - Der Erbauer</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>8</Key>
+      <Name_ja>ラールガー</Name_ja>
+      <Name_en>Rhalgr, the Destroyer</Name_en>
+      <Name_fr>Rhalgr, le Destructeur</Name_fr>
+      <Name_de>Rhalgr - Der Zerstörer</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>9</Key>
+      <Name_ja>アーゼマ</Name_ja>
+      <Name_en>Azeyma, the Warden</Name_en>
+      <Name_fr>Azeyma, la Gardienne</Name_fr>
+      <Name_de>Azeyma - Die Aufseherin</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>10</Key>
+      <Name_ja>ナルザル</Name_ja>
+      <Name_en>Nald'thal, the Traders</Name_en>
+      <Name_fr>Nald'thal, les Marchands</Name_fr>
+      <Name_de>Nald'thal - Die Kaufleute</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>11</Key>
+      <Name_ja>ノフィカ</Name_ja>
+      <Name_en>Nophica, the Matron</Name_en>
+      <Name_fr>Nophica, la Mère</Name_fr>
+      <Name_de>Nophica - Die Mutter</Name_de>
+    </GuardianDeity>
+    <GuardianDeity>
+      <Key>12</Key>
+      <Name_ja>アルジク</Name_ja>
+      <Name_en>Althyk, the Keeper</Name_en>
+      <Name_fr>Althyk, le Contemplateur</Name_fr>
+      <Name_de>Althyk - Der Hüter</Name_de>
+    </GuardianDeity>
+  </GuardianDeity></ArrayOfGuardianDeity>

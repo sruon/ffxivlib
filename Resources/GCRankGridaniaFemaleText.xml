@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGCRankGridaniaFemaleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GCRankGridaniaFemaleText>
+      <Key>1</Key>
+      <SGL_ja>二等牙兵</SGL_ja>
+      <SGL_en>Serpent Private Third Class</SGL_en>
+      <SGL_fr>soldat 3e classe</SGL_fr>
+      <SGL_de>Dritte Novizin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>2</Key>
+      <SGL_ja>一等牙兵</SGL_ja>
+      <SGL_en>Serpent Private Second Class</SGL_en>
+      <SGL_fr>soldat 2e classe</SGL_fr>
+      <SGL_de>Zweite Novizin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>3</Key>
+      <SGL_ja>上等牙兵</SGL_ja>
+      <SGL_en>Serpent Private First Class</SGL_en>
+      <SGL_fr>soldat 1re classe</SGL_fr>
+      <SGL_de>Erste Novizin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>4</Key>
+      <SGL_ja>牙兵長</SGL_ja>
+      <SGL_en>Serpent Corporal</SGL_en>
+      <SGL_fr>caporale</SGL_fr>
+      <SGL_de>Erleuchtete Novizin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>5</Key>
+      <SGL_ja>牙伍長</SGL_ja>
+      <SGL_en>Serpent Sergeant Third Class</SGL_en>
+      <SGL_fr>adjudante</SGL_fr>
+      <SGL_de>Dritte Schlangenjüngerin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>6</Key>
+      <SGL_ja>牙軍曹</SGL_ja>
+      <SGL_en>Serpent Sergeant Second Class</SGL_en>
+      <SGL_fr>sergente</SGL_fr>
+      <SGL_de>Zweite Schlangenjüngerin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>7</Key>
+      <SGL_ja>牙曹長</SGL_ja>
+      <SGL_en>Serpent Sergeant First Class</SGL_en>
+      <SGL_fr>sergent-major</SGL_fr>
+      <SGL_de>Erste Schlangenjüngerin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>8</Key>
+      <SGL_ja>准牙士</SGL_ja>
+      <SGL_en>Chief Serpent Sergeant</SGL_en>
+      <SGL_fr>major</SGL_fr>
+      <SGL_de>Erleuchtete Schlangenjüngerin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>9</Key>
+      <SGL_ja>少牙士</SGL_ja>
+      <SGL_en>Second Serpent Lieutenant</SGL_en>
+      <SGL_fr>sous-lieutenante</SGL_fr>
+      <SGL_de>Zweite Schlangenpriesterin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>10</Key>
+      <SGL_ja>中牙士</SGL_ja>
+      <SGL_en>First Serpent Lieutenant</SGL_en>
+      <SGL_fr>lieutenante</SGL_fr>
+      <SGL_de>Erste Schlangenpriesterin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>11</Key>
+      <SGL_ja>大牙士</SGL_ja>
+      <SGL_en>Serpent Captain</SGL_en>
+      <SGL_fr>capitaine</SGL_fr>
+      <SGL_de>Erleuchtete Schlangenpriesterin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>12</Key>
+      <SGL_ja>少牙佐</SGL_ja>
+      <SGL_en>Second Serpent Commander</SGL_en>
+      <SGL_fr>sous-commandante</SGL_fr>
+      <SGL_de>Zweite Priorin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>13</Key>
+      <SGL_ja>中牙佐</SGL_ja>
+      <SGL_en>First Serpent Commander</SGL_en>
+      <SGL_fr>commandante</SGL_fr>
+      <SGL_de>Erste Priorin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>14</Key>
+      <SGL_ja>大牙佐</SGL_ja>
+      <SGL_en>High Serpent Commander</SGL_en>
+      <SGL_fr>colonelle</SGL_fr>
+      <SGL_de>Erleuchtete Priorin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>15</Key>
+      <SGL_ja>准牙将</SGL_ja>
+      <SGL_en>Rear Serpent Marshal</SGL_en>
+      <SGL_fr>sous-maréchale</SGL_fr>
+      <SGL_de>Einäugige Seherin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>16</Key>
+      <SGL_ja>少牙将</SGL_ja>
+      <SGL_en>Vice Serpent Marshal</SGL_en>
+      <SGL_fr>vice-maréchale</SGL_fr>
+      <SGL_de>Zweiäugige Seherin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>17</Key>
+      <SGL_ja>中牙将</SGL_ja>
+      <SGL_en>Serpent Marshal</SGL_en>
+      <SGL_fr>maréchale</SGL_fr>
+      <SGL_de>Dreiäugige Seherin</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>18</Key>
+      <SGL_ja>大牙将</SGL_ja>
+      <SGL_en>Grand Serpent Marshal</SGL_en>
+      <SGL_fr>grande maréchale</SGL_fr>
+      <SGL_de>Auge der Schlange</SGL_de>
+    </GCRankGridaniaFemaleText>
+    <GCRankGridaniaFemaleText>
+      <Key>19</Key>
+      <SGL_ja>蛇将</SGL_ja>
+      <SGL_en>Serpent Champion</SGL_en>
+      <SGL_fr>générale</SGL_fr>
+      <SGL_de>Saatseherin</SGL_de>
+    </GCRankGridaniaFemaleText>
+  </GCRankGridaniaFemaleText></ArrayOfGCRankGridaniaFemaleText>

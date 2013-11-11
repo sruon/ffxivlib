@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfGrandCompany xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GrandCompany>
+      <Key>1</Key>
+      <SGL_ja>黒渦団</SGL_ja>
+      <SGL_en>Maelstrom</SGL_en>
+      <SGL_fr>Le Maelstrom</SGL_fr>
+      <SGL_de>Mahlstrom</SGL_de>
+    </GrandCompany>
+    <GrandCompany>
+      <Key>2</Key>
+      <SGL_ja>双蛇党</SGL_ja>
+      <SGL_en>Order of the Twin Adder</SGL_en>
+      <SGL_fr>L'Ordre des deux vipères</SGL_fr>
+      <SGL_de>Bruderschaft der Morgenviper</SGL_de>
+    </GrandCompany>
+    <GrandCompany>
+      <Key>3</Key>
+      <SGL_ja>不滅隊</SGL_ja>
+      <SGL_en>Immortal Flames</SGL_en>
+      <SGL_fr>Les Immortels</SGL_fr>
+      <SGL_de>Legion der Unsterblichen</SGL_de>
+    </GrandCompany>
+  </GrandCompany></ArrayOfGrandCompany>

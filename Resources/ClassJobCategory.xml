@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfClassJobCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ClassJobCategory>
+      <Key>1</Key>
+      <Name_ja>全クラス</Name_ja>
+      <Name_en>All Classes</Name_en>
+      <Name_fr>Toutes les classes</Name_fr>
+      <Name_de>Alle Klassen</Name_de>
+      <classjob>,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>2</Key>
+      <Name_ja>剣術士</Name_ja>
+      <Name_en>GLA</Name_en>
+      <Name_fr>GLA</Name_fr>
+      <Name_de>GLA</Name_de>
+      <classjob>,1,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>3</Key>
+      <Name_ja>格闘士</Name_ja>
+      <Name_en>PGL</Name_en>
+      <Name_fr>PGL</Name_fr>
+      <Name_de>FST</Name_de>
+      <classjob>,2,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>4</Key>
+      <Name_ja>斧術士</Name_ja>
+      <Name_en>MRD</Name_en>
+      <Name_fr>MRD</Name_fr>
+      <Name_de>MAR</Name_de>
+      <classjob>,3,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>5</Key>
+      <Name_ja>槍術士</Name_ja>
+      <Name_en>LNC</Name_en>
+      <Name_fr>HAS</Name_fr>
+      <Name_de>PIK</Name_de>
+      <classjob>,4,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>6</Key>
+      <Name_ja>弓術士</Name_ja>
+      <Name_en>ARC</Name_en>
+      <Name_fr>ARC</Name_fr>
+      <Name_de>WDL</Name_de>
+      <classjob>,5,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>7</Key>
+      <Name_ja>幻術士</Name_ja>
+      <Name_en>CNJ</Name_en>
+      <Name_fr>ÉLM</Name_fr>
+      <Name_de>DRU</Name_de>
+      <classjob>,6,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>8</Key>
+      <Name_ja>呪術士</Name_ja>
+      <Name_en>THM</Name_en>
+      <Name_fr>OCC</Name_fr>
+      <Name_de>THM</Name_de>
+      <classjob>,7,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>9</Key>
+      <Name_ja>木工師</Name_ja>
+      <Name_en>CRP</Name_en>
+      <Name_fr>MEN</Name_fr>
+      <Name_de>ZMR</Name_de>
+      <classjob>,8,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>10</Key>
+      <Name_ja>鍛冶師</Name_ja>
+      <Name_en>BSM</Name_en>
+      <Name_fr>FRG</Name_fr>
+      <Name_de>GRS</Name_de>
+      <classjob>,9,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>11</Key>
+      <Name_ja>甲冑師</Name_ja>
+      <Name_en>ARM</Name_en>
+      <Name_fr>ARM</Name_fr>
+      <Name_de>PLA</Name_de>
+      <classjob>,10,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>12</Key>
+      <Name_ja>彫金師</Name_ja>
+      <Name_en>GSM</Name_en>
+      <Name_fr>ORF</Name_fr>
+      <Name_de>GLD</Name_de>
+      <classjob>,11,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>13</Key>
+      <Name_ja>革細工師</Name_ja>
+      <Name_en>LTW</Name_en>
+      <Name_fr>TAN</Name_fr>
+      <Name_de>GER</Name_de>
+      <classjob>,12,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>14</Key>
+      <Name_ja>裁縫師</Name_ja>
+      <Name_en>WVR</Name_en>
+      <Name_fr>COU</Name_fr>
+      <Name_de>WEB</Name_de>
+      <classjob>,13,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>15</Key>
+      <Name_ja>錬金術師</Name_ja>
+      <Name_en>ALC</Name_en>
+      <Name_fr>ALC</Name_fr>
+      <Name_de>ALC</Name_de>
+      <classjob>,14,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>16</Key>
+      <Name_ja>調理師</Name_ja>
+      <Name_en>CUL</Name_en>
+      <Name_fr>CUI</Name_fr>
+      <Name_de>GRM</Name_de>
+      <classjob>,15,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>17</Key>
+      <Name_ja>採掘師</Name_ja>
+      <Name_en>MIN</Name_en>
+      <Name_fr>MIN</Name_fr>
+      <Name_de>MIN</Name_de>
+      <classjob>,16,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>18</Key>
+      <Name_ja>園芸師</Name_ja>
+      <Name_en>BTN</Name_en>
+      <Name_fr>BOT</Name_fr>
+      <Name_de>GÄR</Name_de>
+      <classjob>,17,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>19</Key>
+      <Name_ja>漁師</Name_ja>
+      <Name_en>FSH</Name_en>
+      <Name_fr>PEC</Name_fr>
+      <Name_de>FIS</Name_de>
+      <classjob>,18,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>20</Key>
+      <Name_ja>ナイト</Name_ja>
+      <Name_en>PLD</Name_en>
+      <Name_fr>PLD</Name_fr>
+      <Name_de>PLD</Name_de>
+      <classjob>,19,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>21</Key>
+      <Name_ja>モンク</Name_ja>
+      <Name_en>MNK</Name_en>
+      <Name_fr>MOI</Name_fr>
+      <Name_de>MÖN</Name_de>
+      <classjob>,20,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>22</Key>
+      <Name_ja>戦士</Name_ja>
+      <Name_en>WAR</Name_en>
+      <Name_fr>GUE</Name_fr>
+      <Name_de>KRG</Name_de>
+      <classjob>,21,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>23</Key>
+      <Name_ja>竜騎士</Name_ja>
+      <Name_en>DRG</Name_en>
+      <Name_fr>DRG</Name_fr>
+      <Name_de>DRG</Name_de>
+      <classjob>,22,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>24</Key>
+      <Name_ja>吟遊詩人</Name_ja>
+      <Name_en>BRD</Name_en>
+      <Name_fr>BRD</Name_fr>
+      <Name_de>BRD</Name_de>
+      <classjob>,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>25</Key>
+      <Name_ja>白魔道士</Name_ja>
+      <Name_en>WHM</Name_en>
+      <Name_fr>MBL</Name_fr>
+      <Name_de>WMA</Name_de>
+      <classjob>,24,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>26</Key>
+      <Name_ja>黒魔道士</Name_ja>
+      <Name_en>BLM</Name_en>
+      <Name_fr>MNO</Name_fr>
+      <Name_de>SMA</Name_de>
+      <classjob>,25,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>27</Key>
+      <Name_ja>巴術士</Name_ja>
+      <Name_en>ACN</Name_en>
+      <Name_fr>ACN</Name_fr>
+      <Name_de>HRT</Name_de>
+      <classjob>,26,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>28</Key>
+      <Name_ja>召喚士</Name_ja>
+      <Name_en>SMN</Name_en>
+      <Name_fr>INV</Name_fr>
+      <Name_de>BSW</Name_de>
+      <classjob>,27,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>29</Key>
+      <Name_ja>学者</Name_ja>
+      <Name_en>SCH</Name_en>
+      <Name_fr>ÉRU</Name_fr>
+      <Name_de>GLT</Name_de>
+      <classjob>,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>30</Key>
+      <Name_ja>ファイター</Name_ja>
+      <Name_en>Disciple of War</Name_en>
+      <Name_fr>Combattants</Name_fr>
+      <Name_de>Krieger</Name_de>
+      <classjob>,1,2,3,4,5,19,20,21,22,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>31</Key>
+      <Name_ja>ソーサラー</Name_ja>
+      <Name_en>Disciple of Magic</Name_en>
+      <Name_fr>Mages</Name_fr>
+      <Name_de>Magier</Name_de>
+      <classjob>,6,7,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>32</Key>
+      <Name_ja>ギャザラー</Name_ja>
+      <Name_en>Disciple of the Land</Name_en>
+      <Name_fr>Récolteurs</Name_fr>
+      <Name_de>Sammler</Name_de>
+      <classjob>,16,17,18,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>33</Key>
+      <Name_ja>クラフター</Name_ja>
+      <Name_en>Disciple of the Hand</Name_en>
+      <Name_fr>Artisans</Name_fr>
+      <Name_de>Handwerker</Name_de>
+      <classjob>,8,9,10,11,12,13,14,15,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>34</Key>
+      <Name_ja>ファイター ソーサラー</Name_ja>
+      <Name_en>Disciples of War or Magic</Name_en>
+      <Name_fr>Combattants et mages</Name_fr>
+      <Name_de>Krieger, Magier</Name_de>
+      <classjob>,1,2,3,4,5,6,7,19,20,21,22,23,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>35</Key>
+      <Name_ja>クラフター ギャザラー</Name_ja>
+      <Name_en>Disciples of the Land or Hand</Name_en>
+      <Name_fr>Récolteurs et artisans</Name_fr>
+      <Name_de>Handwerker, Sammler</Name_de>
+      <classjob>,8,9,10,11,12,13,14,15,16,17,18,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>36</Key>
+      <Name_ja>剣術士を除くファイター</Name_ja>
+      <Name_en>Any Disciple of War but gladiator</Name_en>
+      <Name_fr>Combattants (sauf GLA)</Name_fr>
+      <Name_de>Krieger außer Gladiator</Name_de>
+      <classjob>,2,3,4,5,19,20,21,22,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>37</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 ナイト 戦士</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN PLD WAR</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN PLD GUE</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT PLD KRG</Name_de>
+      <classjob>,1,2,3,4,5,6,7,19,21,26,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>38</Key>
+      <Name_ja>剣術士 ナイト</Name_ja>
+      <Name_en>GLA PLD</Name_en>
+      <Name_fr>GLA PLD</Name_fr>
+      <Name_de>GLA PLD</Name_de>
+      <classjob>,1,19,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>39</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 ナイト 戦士</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC PLD WAR</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC PLD GUE</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL PLD KRG</Name_de>
+      <classjob>,1,2,3,4,5,19,21,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>40</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 モンク 戦士 竜騎士 吟遊詩人</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN MNK WAR DRG BRD</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN MOI GUE DRG BRD</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT MÖN KRG DRG BRD</Name_de>
+      <classjob>,1,2,3,4,5,6,7,20,21,22,23,26,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>41</Key>
+      <Name_ja>格闘士 モンク</Name_ja>
+      <Name_en>PGL MNK</Name_en>
+      <Name_fr>PGL MOI</Name_fr>
+      <Name_de>FST MÖN</Name_de>
+      <classjob>,2,20,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>42</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 モンク 戦士 竜騎士 吟遊詩人</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC MNK WAR DRG BRD</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC MOI GUE DRG BRD</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL MÖN KRG DRG</Name_de>
+      <classjob>,1,2,3,4,5,20,21,22,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>43</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 ナイト モンク 戦士 竜騎士</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN PLD MNK WAR DRG</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN PLD MOI GUE DRG</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT PLD MÖN KRG DRG</Name_de>
+      <classjob>,1,2,3,4,5,6,7,19,20,21,22,26,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>44</Key>
+      <Name_ja>斧術士 戦士</Name_ja>
+      <Name_en>MRD WAR</Name_en>
+      <Name_fr>MRD GUE</Name_fr>
+      <Name_de>MAR KRG</Name_de>
+      <classjob>,3,21,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>45</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 ナイト モンク 戦士 竜騎士</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC PLD MNK WAR DRG</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC PLD MOI GUE DRG</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL PLD MÖN KRG DRG</Name_de>
+      <classjob>,1,2,3,4,5,19,20,21,22,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>46</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 モンク 竜騎士 吟遊詩人</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN MNK DRG BRD</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN MOI DRG BRD</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT MÖN DRG BRD</Name_de>
+      <classjob>,1,2,3,4,5,6,7,20,22,23,26,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>47</Key>
+      <Name_ja>槍術士 竜騎士</Name_ja>
+      <Name_en>LNC DRG</Name_en>
+      <Name_fr>HAS DRG</Name_fr>
+      <Name_de>PIK DRG</Name_de>
+      <classjob>,4,22,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>48</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 モンク 竜騎士 吟遊詩人</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC MNK DRG BRD</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC MOI DRG BRD</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL MÖN DRG BRD</Name_de>
+      <classjob>,1,2,3,4,5,20,22,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>49</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 吟遊詩人 黒魔道士 召喚士</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN BRD BLM SMN</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN BRD MNO INV</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT BRD SMA BSW</Name_de>
+      <classjob>,1,2,3,4,5,6,7,23,25,26,27,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>50</Key>
+      <Name_ja>弓術士 吟遊詩人</Name_ja>
+      <Name_en>ARC BRD</Name_en>
+      <Name_fr>ARC BRD</Name_fr>
+      <Name_de>WDL BRD</Name_de>
+      <classjob>,5,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>51</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 吟遊詩人</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC BRD</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC BRD</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL BRD</Name_de>
+      <classjob>,1,2,3,4,5,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>52</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 ナイト 白魔道士 学者</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN PLD WHM SCH</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN PLD MBL ÉRU</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT PLD WMA GLT</Name_de>
+      <classjob>,1,2,3,4,5,6,7,19,24,26,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>53</Key>
+      <Name_ja>幻術士 白魔道士</Name_ja>
+      <Name_en>CNJ WHM</Name_en>
+      <Name_fr>ÉLM MBL</Name_fr>
+      <Name_de>DRU WMA</Name_de>
+      <classjob>,6,24,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>54</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 白魔道士 黒魔道士 召喚士 学者</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN WHM BLM SMN SCH</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN MBL MNO INV ÉRU</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT WMA SMA BSW GLT</Name_de>
+      <classjob>,1,2,3,4,5,6,7,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>55</Key>
+      <Name_ja>呪術士 黒魔道士</Name_ja>
+      <Name_en>THM BLM</Name_en>
+      <Name_fr>OCC MNO</Name_fr>
+      <Name_de>THM SMA</Name_de>
+      <classjob>,7,25,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>56</Key>
+      <Name_ja>剣術士 幻術士 呪術士 ナイト 白魔道士 黒魔道士</Name_ja>
+      <Name_en>GLA CNJ THM PLD WHM BLM</Name_en>
+      <Name_fr>GLA ÉLM OCC PLD MBL MNO</Name_fr>
+      <Name_de>GLA DRU THM PLD WMA SMA</Name_de>
+      <classjob>,1,6,7,19,24,25,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>57</Key>
+      <Name_ja>剣術士 呪術士 ナイト 黒魔道士</Name_ja>
+      <Name_en>GLA THM PLD BLM</Name_en>
+      <Name_fr>GLA OCC PLD MNO</Name_fr>
+      <Name_de>GLA THM PLD SMA</Name_de>
+      <classjob>,1,7,19,25,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>58</Key>
+      <Name_ja>剣術士 幻術士 ナイト 白魔道士</Name_ja>
+      <Name_en>GLA CNJ PLD WHM</Name_en>
+      <Name_fr>GLA ÉLM PLD MBL</Name_fr>
+      <Name_de>GLA DRU PLD WMA</Name_de>
+      <classjob>,1,6,19,24,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>59</Key>
+      <Name_ja>剣術士 斧術士 ナイト 戦士</Name_ja>
+      <Name_en>GLA MRD PLD WAR</Name_en>
+      <Name_fr>GLA MRD PLD GUE</Name_fr>
+      <Name_de>GLA MAR PLD KRG</Name_de>
+      <classjob>,1,3,19,21,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>60</Key>
+      <Name_ja>剣術士 斧術士 槍術士 ナイト 戦士 竜騎士</Name_ja>
+      <Name_en>GLA MRD LNC PLD WAR DRG</Name_en>
+      <Name_fr>GLA MRD HAS PLD GUE DRG</Name_fr>
+      <Name_de>GLA MAR PIK PLD KRG DRG</Name_de>
+      <classjob>,1,3,4,19,21,22,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>61</Key>
+      <Name_ja>幻術士 呪術士 巴術士 白魔道士 学者</Name_ja>
+      <Name_en>CNJ THM ACN WHM SMN SCH</Name_en>
+      <Name_fr>ÉLM OCC ACN MBL INV ÉRU</Name_fr>
+      <Name_de>DRU THM HRT WMA BSW GLT</Name_de>
+      <classjob>,6,7,24,26,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>62</Key>
+      <Name_ja>幻術士 呪術士 巴術士 白魔道士 黒魔道士 召喚士 学者</Name_ja>
+      <Name_en>CNJ THM ACN WHM BLM SMN SCH</Name_en>
+      <Name_fr>ÉLM OCC ACN MBL MNO INV ÉRU</Name_fr>
+      <Name_de>DRU THM HRT WMA SMA BSW GLT</Name_de>
+      <classjob>,6,7,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>63</Key>
+      <Name_ja>呪術士 巴術士 黒魔道士 召喚士</Name_ja>
+      <Name_en>THM ACN BLM SMN</Name_en>
+      <Name_fr>OCC ACN MNO INV</Name_fr>
+      <Name_de>THM HRT SMA BSW</Name_de>
+      <classjob>,7,25,26,27,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>64</Key>
+      <Name_ja>幻術士 白魔道士 学者</Name_ja>
+      <Name_en>CNJ WHM SCH</Name_en>
+      <Name_fr>ÉLM MBL ÉRU</Name_fr>
+      <Name_de>DRU WMA GLT</Name_de>
+      <classjob>,6,24,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>65</Key>
+      <Name_ja>格闘士 モンク</Name_ja>
+      <Name_en>PGL MNK</Name_en>
+      <Name_fr>PGL MOI</Name_fr>
+      <Name_de>FST MÖN</Name_de>
+      <classjob>,2,20,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>66</Key>
+      <Name_ja>弓術士 吟遊詩人</Name_ja>
+      <Name_en>ARC BRD</Name_en>
+      <Name_fr>ARC BRD</Name_fr>
+      <Name_de>WDL BRD</Name_de>
+      <classjob>,5,23,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>67</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 モンク 竜騎士</Name_ja>
+      <Name_en>GLA PGL MRD LNC MNK DRG</Name_en>
+      <Name_fr>GLA PGL MRD HAS MOI DRG</Name_fr>
+      <Name_de>GLA FST MAR PIK MÖN DRG</Name_de>
+      <classjob>,1,2,3,4,20,22,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>68</Key>
+      <Name_ja>巴術士 召喚士 学者</Name_ja>
+      <Name_en>ACN SMN SCH</Name_en>
+      <Name_fr>ACN INV ÉRU</Name_fr>
+      <Name_de>HRT BSW GLT</Name_de>
+      <classjob>,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>69</Key>
+      <Name_ja>巴術士 召喚士</Name_ja>
+      <Name_en>ACN SMN</Name_en>
+      <Name_fr>ACN INV</Name_fr>
+      <Name_de>HRT BSW</Name_de>
+      <classjob>,26,27,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>70</Key>
+      <Name_ja>調理師以外のクラフター</Name_ja>
+      <Name_en>Any Disciple of the Hand but culinarian</Name_en>
+      <Name_fr>Artisans (sauf CUI)</Name_fr>
+      <Name_de>Handwerker außer Gourmet</Name_de>
+      <classjob>,8,9,10,11,12,13,14,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>71</Key>
+      <Name_ja>剣術士 格闘士 斧術士 槍術士 弓術士 幻術士 呪術士 巴術士 白魔道士 黒魔道士 召喚士 学者</Name_ja>
+      <Name_en>GLA PGL MRD LNC ARC CNJ THM ACN WHM BLM SMN SCH</Name_en>
+      <Name_fr>GLA PGL MRD HAS ARC ÉLM OCC ACN MBL MNO INV ÉRU</Name_fr>
+      <Name_de>GLA FST MAR PIK WDL DRU THM HRT WMA SMA BSW GLT</Name_de>
+      <classjob>,1,2,3,4,5,6,7,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>72</Key>
+      <Name_ja>幻術士 呪術士 巴術士 白魔道士 黒魔道士 召喚士 学者</Name_ja>
+      <Name_en>CNJ THM ACN WHM BLM SMN SCH</Name_en>
+      <Name_fr>ÉLM OCC ACN MBL MNO INV ÉRU</Name_fr>
+      <Name_de>DRU THM HRT WMA SMA BSW GLT</Name_de>
+      <classjob>,6,7,24,25,26,27,28,</classjob>
+    </ClassJobCategory>
+    <ClassJobCategory>
+      <Key>73</Key>
+      <Name_ja>幻術士 白魔道士 学者</Name_ja>
+      <Name_en>CNJ WHM SCH</Name_en>
+      <Name_fr>ÉLM MBL ÉRU</Name_fr>
+      <Name_de>DRU WMA GLT</Name_de>
+      <classjob>,6,24,28,</classjob>
+    </ClassJobCategory>
+  </ClassJobCategory></ArrayOfClassJobCategory>

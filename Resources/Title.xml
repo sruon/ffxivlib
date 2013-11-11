@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfTitle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Title>
+      <Key>1</Key>
+      <Female_de>die Unersättliche</Female_de>
+      <Female_en>the Insatiable</Female_en>
+      <Female_fr>l'insatiable</Female_fr>
+      <Female_ja>the Insatiable</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Unersättliche</Male_de>
+      <Male_en>the Insatiable</Male_en>
+      <Male_fr>l'insatiable</Male_fr>
+      <Male_ja>the Insatiable</Male_ja>
+    </Title>
+    <Title>
+      <Key>2</Key>
+      <Female_de>die Aufrichtige</Female_de>
+      <Female_en>the True</Female_en>
+      <Female_fr>légataire de Curtana et du Bouclier saint</Female_fr>
+      <Female_ja>the True</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Aufrichtige</Male_de>
+      <Male_en>the True</Male_en>
+      <Male_fr>légataire de Curtana et du Bouclier saint</Male_fr>
+      <Male_ja>the True</Male_ja>
+    </Title>
+    <Title>
+      <Key>3</Key>
+      <Female_de>Coeurlfaust</Female_de>
+      <Female_en>Coeurlfist</Female_en>
+      <Female_fr>légataire des Sphairai</Female_fr>
+      <Female_ja>Coeurlfist</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Coeurlfaust</Male_de>
+      <Male_en>Coeurlfist</Male_en>
+      <Male_fr>légataire des Sphairai</Male_fr>
+      <Male_ja>Coeurlfist</Male_ja>
+    </Title>
+    <Title>
+      <Key>4</Key>
+      <Female_de>Eisenfresser</Female_de>
+      <Female_en>Ironeater</Female_en>
+      <Female_fr>légataire de Bravura</Female_fr>
+      <Female_ja>Ironeater</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Eisenfresser</Male_de>
+      <Male_en>Ironeater</Male_en>
+      <Male_fr>légataire de Bravura</Male_fr>
+      <Male_ja>Ironeater</Male_ja>
+    </Title>
+    <Title>
+      <Key>5</Key>
+      <Female_de>vom rachsüchtigen Speer</Female_de>
+      <Female_en>of the Vengeful Lance</Female_en>
+      <Female_fr>légataire du Gae bolg</Female_fr>
+      <Female_ja>of the Vengeful Lance</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom rachsüchtigen Speer</Male_de>
+      <Male_en>of the Vengeful Lance</Male_en>
+      <Male_fr>légataire du Gae bolg</Male_fr>
+      <Male_ja>of the Vengeful Lance</Male_ja>
+    </Title>
+    <Title>
+      <Key>6</Key>
+      <Female_de>Götterbogen</Female_de>
+      <Female_en>the Godsbow</Female_en>
+      <Female_fr>légataire de l'Arc d'Artémis</Female_fr>
+      <Female_ja>the Godsbow</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Götterbogen</Male_de>
+      <Male_en>the Godsbow</Male_en>
+      <Male_fr>légataire de l'Arc d'Artémis</Male_fr>
+      <Male_ja>the Godsbow</Male_ja>
+    </Title>
+    <Title>
+      <Key>7</Key>
+      <Female_de>die Weiße</Female_de>
+      <Female_en>the White</Female_en>
+      <Female_fr>légataire du Thyrse</Female_fr>
+      <Female_ja>the White</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Weiße</Male_de>
+      <Male_en>the White</Male_en>
+      <Male_fr>légataire du Thyrse</Male_fr>
+      <Male_ja>the White</Male_ja>
+    </Title>
+    <Title>
+      <Key>8</Key>
+      <Female_de>Sternenrufer</Female_de>
+      <Female_en>Starcaller</Female_en>
+      <Female_fr>légataire du Sceptre étoilé</Female_fr>
+      <Female_ja>Starcaller</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Sternenrufer</Male_de>
+      <Male_en>Starcaller</Male_en>
+      <Male_fr>légataire du Sceptre étoilé</Male_fr>
+      <Male_ja>Starcaller</Male_ja>
+    </Title>
+    <Title>
+      <Key>9</Key>
+      <Female_de>die Blutdürstige</Female_de>
+      <Female_en>the Exterminator</Female_en>
+      <Female_fr>la sanguinaire</Female_fr>
+      <Female_ja>Exterminator</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Blutdürstige</Male_de>
+      <Male_en>the Exterminator</Male_en>
+      <Male_fr>le sanguinaire</Male_fr>
+      <Male_ja>Exterminator</Male_ja>
+    </Title>
+    <Title>
+      <Key>10</Key>
+      <Female_de>Notorische Kopfgeldjägerin</Female_de>
+      <Female_en>Notorious Monster Hunter</Female_en>
+      <Female_fr>chasseuse célèbre</Female_fr>
+      <Female_ja>Notorious Monster Hunter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Notorischer Kopfgeldjäger</Male_de>
+      <Male_en>Notorious Monster Hunter</Male_en>
+      <Male_fr>chasseur célèbre</Male_fr>
+      <Male_ja>Notorious Monster Hunter</Male_ja>
+    </Title>
+    <Title>
+      <Key>11</Key>
+      <Female_de>Ehrenhafte Gillionärin</Female_de>
+      <Female_en>Honest Gillionaire</Female_en>
+      <Female_fr>journalière nantie</Female_fr>
+      <Female_ja>Honest Adventurer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ehrenhafter Gillionär</Male_de>
+      <Male_en>Honest Gillionaire</Male_en>
+      <Male_fr>journalier nanti</Male_fr>
+      <Male_ja>Honest Adventurer</Male_ja>
+    </Title>
+    <Title>
+      <Key>12</Key>
+      <Female_de>Ruchlose Gillionärin</Female_de>
+      <Female_en>Ruthless Gillionaire</Female_en>
+      <Female_fr>la détrousseuse</Female_fr>
+      <Female_ja>Scavenger</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ruchloser Gillionär</Male_de>
+      <Male_en>Ruthless Gillionaire</Male_en>
+      <Male_fr>le détrousseur</Male_fr>
+      <Male_ja>Scavenger</Male_ja>
+    </Title>
+    <Title>
+      <Key>13</Key>
+      <Female_de>Kriegstreiberin</Female_de>
+      <Female_en>Warmonger</Female_en>
+      <Female_fr>la va-t-en-guerre</Female_fr>
+      <Female_ja>Master Fighter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Kriegstreiber</Male_de>
+      <Male_en>Warmonger</Male_en>
+      <Male_fr>le va-t-en-guerre</Male_fr>
+      <Male_ja>Master Fighter</Male_ja>
+    </Title>
+    <Title>
+      <Key>14</Key>
+      <Female_de>Erzmagierin</Female_de>
+      <Female_en>Archmage</Female_en>
+      <Female_fr>l'archimage</Female_fr>
+      <Female_ja>Master Sorcerer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Erzmagier</Male_de>
+      <Male_en>Archmage</Male_en>
+      <Male_fr>l'archimage</Male_fr>
+      <Male_ja>Master Sorcerer</Male_ja>
+    </Title>
+    <Title>
+      <Key>15</Key>
+      <Female_de>Erbauerin des Reichs</Female_de>
+      <Female_en>Builder of the Realm</Female_en>
+      <Female_fr>maîtresse ouvrière</Female_fr>
+      <Female_ja>Master Crafter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Erbauer des Reichs</Male_de>
+      <Male_en>Builder of the Realm</Male_en>
+      <Male_fr>maître ouvrier</Male_fr>
+      <Male_ja>Master Crafter</Male_ja>
+    </Title>
+    <Title>
+      <Key>16</Key>
+      <Female_de>Erzeugerin des Reichs</Female_de>
+      <Female_en>Provider of the Realm</Female_en>
+      <Female_fr>as des ressources</Female_fr>
+      <Female_ja>Master Gatherer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Erzeuger des Reichs</Male_de>
+      <Male_en>Provider of the Realm</Male_en>
+      <Male_fr>as des ressources</Male_fr>
+      <Male_ja>Master Gatherer</Male_ja>
+    </Title>
+    <Title>
+      <Key>17</Key>
+      <Female_de>von der goldenen Säge</Female_de>
+      <Female_en>of the Golden Saw</Female_en>
+      <Female_fr>l'ébéniste</Female_fr>
+      <Female_ja>of the Golden Saw</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>von der goldenen Säge</Male_de>
+      <Male_en>of the Golden Saw</Male_en>
+      <Male_fr>l'ébéniste</Male_fr>
+      <Male_ja>of the Golden Saw</Male_ja>
+    </Title>
+    <Title>
+      <Key>18</Key>
+      <Female_de>vom goldenen Amboss</Female_de>
+      <Female_en>of the Golden Anvil</Female_en>
+      <Female_fr>la forgeuse</Female_fr>
+      <Female_ja>of the Golden Anvil</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom goldenen Amboss</Male_de>
+      <Male_en>of the Golden Anvil</Male_en>
+      <Male_fr>le forgeur</Male_fr>
+      <Male_ja>of the Golden Anvil</Male_ja>
+    </Title>
+    <Title>
+      <Key>19</Key>
+      <Female_de>vom goldenen Hammer</Female_de>
+      <Female_en>of the Golden Hammer</Female_en>
+      <Female_fr>la marteleuse</Female_fr>
+      <Female_ja>of the Golden Hammer</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom goldenen Hammer</Male_de>
+      <Male_en>of the Golden Hammer</Male_en>
+      <Male_fr>le marteleur</Male_fr>
+      <Male_ja>of the Golden Hammer</Male_ja>
+    </Title>
+    <Title>
+      <Key>20</Key>
+      <Female_de>vom goldenen Blatt</Female_de>
+      <Female_en>of the Golden Leaf</Female_en>
+      <Female_fr>la joaillière</Female_fr>
+      <Female_ja>of the Golden Leaf</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom goldenen Blatt</Male_de>
+      <Male_en>of the Golden Leaf</Male_en>
+      <Male_fr>le joaillier</Male_fr>
+      <Male_ja>of the Golden Leaf</Male_ja>
+    </Title>
+    <Title>
+      <Key>21</Key>
+      <Female_de>vom goldenen Fell</Female_de>
+      <Female_en>of the Golden Hide</Female_en>
+      <Female_fr>la mégissière</Female_fr>
+      <Female_ja>of the Golden Hide</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom goldenen Fell</Male_de>
+      <Male_en>of the Golden Hide</Male_en>
+      <Male_fr>le mégissier</Male_fr>
+      <Male_ja>of the Golden Hide</Male_ja>
+    </Title>
+    <Title>
+      <Key>22</Key>
+      <Female_de>von der goldenen Nadel</Female_de>
+      <Female_en>of the Golden Needle</Female_en>
+      <Female_fr>la tailleuse</Female_fr>
+      <Female_ja>of the Golden Needle</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>von der goldenen Nadel</Male_de>
+      <Male_en>of the Golden Needle</Male_en>
+      <Male_fr>le tailleur</Male_fr>
+      <Male_ja>of the Golden Needle</Male_ja>
+    </Title>
+    <Title>
+      <Key>23</Key>
+      <Female_de>vom goldenen Blei</Female_de>
+      <Female_en>of the Golden Lead</Female_en>
+      <Female_fr>l'apothicaire</Female_fr>
+      <Female_ja>of the Golden Lead</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>vom goldenen Blei</Male_de>
+      <Male_en>of the Golden Lead</Male_en>
+      <Male_fr>l'apothicaire</Male_fr>
+      <Male_ja>of the Golden Lead</Male_ja>
+    </Title>
+    <Title>
+      <Key>24</Key>
+      <Female_de>von der goldenen Kelle</Female_de>
+      <Female_en>of the Golden Ladle</Female_en>
+      <Female_fr>le cordon-bleu</Female_fr>
+      <Female_ja>of the Golden Ladle</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>von der goldenen Kelle</Male_de>
+      <Male_en>of the Golden Ladle</Male_en>
+      <Male_fr>le cordon-bleu</Male_fr>
+      <Male_ja>of the Golden Ladle</Male_ja>
+    </Title>
+    <Title>
+      <Key>25</Key>
+      <Female_de>die die Wiesen gräbt</Female_de>
+      <Female_en>Meadowbreaker</Female_en>
+      <Female_fr>mineuse de la prairie</Female_fr>
+      <Female_ja>La Noscea Digger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wiesen gräbt</Male_de>
+      <Male_en>Meadowbreaker</Male_en>
+      <Male_fr>mineur de la prairie</Male_fr>
+      <Male_ja>La Noscea Digger</Male_ja>
+    </Title>
+    <Title>
+      <Key>26</Key>
+      <Female_de>die die Wälder gräbt</Female_de>
+      <Female_en>Forestbreaker</Female_en>
+      <Female_fr>mineuse de la forêt</Female_fr>
+      <Female_ja>Shroud Digger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wälder gräbt</Male_de>
+      <Male_en>Forestbreaker</Male_en>
+      <Male_fr>mineur de la forêt</Male_fr>
+      <Male_ja>Shroud Digger</Male_ja>
+    </Title>
+    <Title>
+      <Key>27</Key>
+      <Female_de>die die Wüsten gräbt</Female_de>
+      <Female_en>Desertbreaker</Female_en>
+      <Female_fr>mineuse du désert</Female_fr>
+      <Female_ja>Thanalan Digger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wüsten gräbt</Male_de>
+      <Male_en>Desertbreaker</Male_en>
+      <Male_fr>mineur du désert</Male_fr>
+      <Male_ja>Thanalan Digger</Male_ja>
+    </Title>
+    <Title>
+      <Key>28</Key>
+      <Female_de>vom Auenstein</Female_de>
+      <Female_en>of the Meadow Mines</Female_en>
+      <Female_fr>extractrice de la prairie</Female_fr>
+      <Female_ja>La Noscea Crusher</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Auenstein</Male_de>
+      <Male_en>of the Meadow Mines</Male_en>
+      <Male_fr>extracteur de la prairie</Male_fr>
+      <Male_ja>La Noscea Crusher</Male_ja>
+    </Title>
+    <Title>
+      <Key>29</Key>
+      <Female_de>vom Tannenstein</Female_de>
+      <Female_en>of the Forest Mines</Female_en>
+      <Female_fr>extractrice de la forêt</Female_fr>
+      <Female_ja>Shroud Crusher</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Tannenstein</Male_de>
+      <Male_en>of the Forest Mines</Male_en>
+      <Male_fr>extracteur de la forêt</Male_fr>
+      <Male_ja>Shroud Crusher</Male_ja>
+    </Title>
+    <Title>
+      <Key>30</Key>
+      <Female_de>vom Steppenstein</Female_de>
+      <Female_en>of the Desert Mines</Female_en>
+      <Female_fr>extractrice du désert</Female_fr>
+      <Female_ja>Thanalan Crusher</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Steppenstein</Male_de>
+      <Male_en>of the Desert Mines</Male_en>
+      <Male_fr>extracteur du désert</Male_fr>
+      <Male_ja>Thanalan Crusher</Male_ja>
+    </Title>
+    <Title>
+      <Key>31</Key>
+      <Female_de>die die Wiesen rodet</Female_de>
+      <Female_en>Meadowreaper</Female_en>
+      <Female_fr>bûcheronne de la prairie</Female_fr>
+      <Female_ja>La Noscea Logger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wiesen rodet</Male_de>
+      <Male_en>Meadowreaper</Male_en>
+      <Male_fr>bûcheron de la prairie</Male_fr>
+      <Male_ja>La Noscea Logger</Male_ja>
+    </Title>
+    <Title>
+      <Key>32</Key>
+      <Female_de>die die Wälder rodet</Female_de>
+      <Female_en>Forestreaper</Female_en>
+      <Female_fr>bûcheronne de la forêt</Female_fr>
+      <Female_ja>Shroud Logger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wälder rodet</Male_de>
+      <Male_en>Forestreaper</Male_en>
+      <Male_fr>bûcheron de la forêt</Male_fr>
+      <Male_ja>Shroud Logger</Male_ja>
+    </Title>
+    <Title>
+      <Key>33</Key>
+      <Female_de>die die Wüsten rodet</Female_de>
+      <Female_en>Desertreaper</Female_en>
+      <Female_fr>bûcheronne du désert</Female_fr>
+      <Female_ja>Thanalan Logger</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wüsten rodet</Male_de>
+      <Male_en>Desertreaper</Male_en>
+      <Male_fr>bûcheron du désert</Male_fr>
+      <Male_ja>Thanalan Logger</Male_ja>
+    </Title>
+    <Title>
+      <Key>34</Key>
+      <Female_de>vom Auengras</Female_de>
+      <Female_en>of the Meadow Grasses</Female_en>
+      <Female_fr>faucheuse de la prairie</Female_fr>
+      <Female_ja>La Noscea Harvester</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Auengras</Male_de>
+      <Male_en>of the Meadow Grasses</Male_en>
+      <Male_fr>faucheur de la prairie</Male_fr>
+      <Male_ja>La Noscea Harvester</Male_ja>
+    </Title>
+    <Title>
+      <Key>35</Key>
+      <Female_de>vom Tannengras</Female_de>
+      <Female_en>of the Forest Grasses</Female_en>
+      <Female_fr>faucheuse de la forêt</Female_fr>
+      <Female_ja>Shroud Harvester</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Tannengras</Male_de>
+      <Male_en>of the Forest Grasses</Male_en>
+      <Male_fr>faucheur de la forêt</Male_fr>
+      <Male_ja>Shroud Harvester</Male_ja>
+    </Title>
+    <Title>
+      <Key>36</Key>
+      <Female_de>vom Steppengras</Female_de>
+      <Female_en>of the Desert Grasses</Female_en>
+      <Female_fr>faucheuse du désert</Female_fr>
+      <Female_ja>Thanalan Harvester</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Steppengras</Male_de>
+      <Male_en>of the Desert Grasses</Male_en>
+      <Male_fr>faucheur du désert</Male_fr>
+      <Male_ja>Thanalan Harvester</Male_ja>
+    </Title>
+    <Title>
+      <Key>37</Key>
+      <Female_de>die die Wiesen einholt</Female_de>
+      <Female_en>Meadowcaster</Female_en>
+      <Female_fr>pêcheuse de la prairie</Female_fr>
+      <Female_ja>La Noscea Angler</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wiesen einholt</Male_de>
+      <Male_en>Meadowcaster</Male_en>
+      <Male_fr>pêcheur de la prairie</Male_fr>
+      <Male_ja>La Noscea Angler</Male_ja>
+    </Title>
+    <Title>
+      <Key>38</Key>
+      <Female_de>die die Wälder einholt</Female_de>
+      <Female_en>Forestcaster</Female_en>
+      <Female_fr>pêcheuse de la forêt</Female_fr>
+      <Female_ja>Shroud Angler</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wälder einholt</Male_de>
+      <Male_en>Forestcaster</Male_en>
+      <Male_fr>pêcheur de la forêt</Male_fr>
+      <Male_ja>Shroud Angler</Male_ja>
+    </Title>
+    <Title>
+      <Key>39</Key>
+      <Female_de>die die Wüsten einholt</Female_de>
+      <Female_en>Desertcaster</Female_en>
+      <Female_fr>pêcheuse du désert</Female_fr>
+      <Female_ja>Thanalan Angler</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der die Wüsten einholt</Male_de>
+      <Male_en>Desertcaster</Male_en>
+      <Male_fr>pêcheur du désert</Male_fr>
+      <Male_ja>Thanalan Angler</Male_ja>
+    </Title>
+    <Title>
+      <Key>40</Key>
+      <Female_de>vom Auenteich</Female_de>
+      <Female_en>of the Meadow Pools</Female_en>
+      <Female_fr>harponneuse de la prairie</Female_fr>
+      <Female_ja>La Noscea Harpooner</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Auenteich</Male_de>
+      <Male_en>of the Meadow Pools</Male_en>
+      <Male_fr>harponneur de la prairie</Male_fr>
+      <Male_ja>La Noscea Harpooner</Male_ja>
+    </Title>
+    <Title>
+      <Key>41</Key>
+      <Female_de>vom Tannenteich</Female_de>
+      <Female_en>of the Forest Pools</Female_en>
+      <Female_fr>harponneuse de la forêt</Female_fr>
+      <Female_ja>Shroud Harpooner</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Tannenteich</Male_de>
+      <Male_en>of the Forest Pools</Male_en>
+      <Male_fr>harponneur de la forêt</Male_fr>
+      <Male_ja>Shroud Harpooner</Male_ja>
+    </Title>
+    <Title>
+      <Key>42</Key>
+      <Female_de>vom Steppenteich</Female_de>
+      <Female_en>of the Desert Pools</Female_en>
+      <Female_fr>harponneuse du désert</Female_fr>
+      <Female_ja>Thanalan Harpooner</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>vom Steppenteich</Male_de>
+      <Male_en>of the Desert Pools</Male_en>
+      <Male_fr>harponneur du désert</Male_fr>
+      <Male_ja>Thanalan Harpooner</Male_ja>
+    </Title>
+    <Title>
+      <Key>43</Key>
+      <Female_de>Virtuoser Materialist</Female_de>
+      <Female_en>Carrier of the Cauldron</Female_en>
+      <Female_fr>sertisseuse certifiée</Female_fr>
+      <Female_ja>Carrier of the Cauldron</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Virtuoser Materialist</Male_de>
+      <Male_en>Carrier of the Cauldron</Male_en>
+      <Male_fr>sertisseur certifié</Male_fr>
+      <Male_ja>Carrier of the Cauldron</Male_ja>
+    </Title>
+    <Title>
+      <Key>44</Key>
+      <Female_de>Materia-Maestro</Female_de>
+      <Female_en>the Assimilator</Female_en>
+      <Female_fr>maestro ès matérias</Female_fr>
+      <Female_ja>the Materia Master</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Materia-Maestro</Male_de>
+      <Male_en>the Assimilator</Male_en>
+      <Male_fr>maestro ès matérias</Male_fr>
+      <Male_ja>the Materia Master</Male_ja>
+    </Title>
+    <Title>
+      <Key>45</Key>
+      <Female_de>Kämpferseele</Female_de>
+      <Female_en>Seeker of Blood</Female_en>
+      <Female_fr>combattante zélée</Female_fr>
+      <Female_ja>Expert Fighter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Kämpferseele</Male_de>
+      <Male_en>Seeker of Blood</Male_en>
+      <Male_fr>combattant zélé</Male_fr>
+      <Male_ja>Expert Fighter</Male_ja>
+    </Title>
+    <Title>
+      <Key>46</Key>
+      <Female_de>Magierseele</Female_de>
+      <Female_en>Seeker of Truth</Female_en>
+      <Female_fr>mage zélée</Female_fr>
+      <Female_ja>Expert Sorcerer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Magierseele</Male_de>
+      <Male_en>Seeker of Truth</Male_en>
+      <Male_fr>mage zélé</Male_fr>
+      <Male_ja>Expert Sorcerer</Male_ja>
+    </Title>
+    <Title>
+      <Key>47</Key>
+      <Female_de>Handwerkerseele</Female_de>
+      <Female_en>Seeker of Skill</Female_en>
+      <Female_fr>artisane zélée</Female_fr>
+      <Female_ja>Expert Crafter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Handwerkerseele</Male_de>
+      <Male_en>Seeker of Skill</Male_en>
+      <Male_fr>artisan zélé</Male_fr>
+      <Male_ja>Expert Crafter</Male_ja>
+    </Title>
+    <Title>
+      <Key>48</Key>
+      <Female_de>Sammlerseele</Female_de>
+      <Female_en>Seeker of Bounty</Female_en>
+      <Female_fr>récolteuse zélée</Female_fr>
+      <Female_ja>Expert Gatherer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Sammlerseele</Male_de>
+      <Male_en>Seeker of Bounty</Male_en>
+      <Male_fr>récolteur zélé</Male_fr>
+      <Male_ja>Expert Gatherer</Male_ja>
+    </Title>
+    <Title>
+      <Key>49</Key>
+      <Female_de>die helfende Hand</Female_de>
+      <Female_en>Sidestepper</Female_en>
+      <Female_fr>la main tendue</Female_fr>
+      <Female_ja>the Helping Hand</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>die helfende Hand</Male_de>
+      <Male_en>Sidestepper</Male_en>
+      <Male_fr>la main tendue</Male_fr>
+      <Male_ja>the Helping Hand</Male_ja>
+    </Title>
+    <Title>
+      <Key>50</Key>
+      <Female_de>Söldnerveteranin</Female_de>
+      <Female_en>Lady Protector</Female_en>
+      <Female_fr>mandataire régionale</Female_fr>
+      <Female_ja>Veteran Mercenary</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Söldnerveteran</Male_de>
+      <Male_en>Lord Protector</Male_en>
+      <Male_fr>mandataire régional</Male_fr>
+      <Male_ja>Veteran Mercenary</Male_ja>
+    </Title>
+    <Title>
+      <Key>51</Key>
+      <Female_de>Meisterin ihrer Zunft</Female_de>
+      <Female_en>Lady Creator</Female_en>
+      <Female_fr>la sous-traitante</Female_fr>
+      <Female_ja>Master Craftswoman</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Meister seiner Zunft</Male_de>
+      <Male_en>Lord Creator</Male_en>
+      <Male_fr>le sous-traitant</Male_fr>
+      <Male_ja>Master Craftsman</Male_ja>
+    </Title>
+    <Title>
+      <Key>52</Key>
+      <Female_de>Bewahrerin des Friedens</Female_de>
+      <Female_en>Peacemaker</Female_en>
+      <Female_fr>gardienne de la paix</Female_fr>
+      <Female_ja>Peacemaker</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Bewahrer des Friedens</Male_de>
+      <Male_en>Peacemaker</Male_en>
+      <Male_fr>gardien de la paix</Male_fr>
+      <Male_ja>Peacemaker</Male_ja>
+    </Title>
+    <Title>
+      <Key>53</Key>
+      <Female_de>Verbissene Verfolgerin</Female_de>
+      <Female_en>the Last Resort</Female_en>
+      <Female_fr>commando</Female_fr>
+      <Female_ja>the Last Resort</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>True</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Verbissener Verfolger</Male_de>
+      <Male_en>the Last Resort</Male_en>
+      <Male_fr>commando</Male_fr>
+      <Male_ja>the Last Resort</Male_ja>
+    </Title>
+    <Title>
+      <Key>54</Key>
+      <Female_de>das Schwert von La Noscea</Female_de>
+      <Female_en>the Sword of La Noscea</Female_en>
+      <Female_fr>lame de la prairie</Female_fr>
+      <Female_ja>Sword of La Noscea</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>das Schwert von La Noscea</Male_de>
+      <Male_en>the Sword of La Noscea</Male_en>
+      <Male_fr>lame de la prairie</Male_fr>
+      <Male_ja>Sword of La Noscea</Male_ja>
+    </Title>
+    <Title>
+      <Key>55</Key>
+      <Female_de>das Schwert des Finsterwalds</Female_de>
+      <Female_en>the Sword of the Shroud</Female_en>
+      <Female_fr>lame de la forêt</Female_fr>
+      <Female_ja>Sword of the Shroud</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>das Schwert des Finsterwalds</Male_de>
+      <Male_en>the Sword of the Shroud</Male_en>
+      <Male_fr>lame de la forêt</Male_fr>
+      <Male_ja>Sword of the Shroud</Male_ja>
+    </Title>
+    <Title>
+      <Key>56</Key>
+      <Female_de>das Schwert von Thanalan</Female_de>
+      <Female_en>the Sword of Thanalan</Female_en>
+      <Female_fr>lame du désert</Female_fr>
+      <Female_ja>Sword of Thanalan</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>das Schwert von Thanalan</Male_de>
+      <Male_en>the Sword of Thanalan</Male_en>
+      <Male_fr>lame du désert</Male_fr>
+      <Male_ja>Sword of Thanalan</Male_ja>
+    </Title>
+    <Title>
+      <Key>57</Key>
+      <Female_de>das Schwert Eorzeas</Female_de>
+      <Female_en>the Sword of Eorzea</Female_en>
+      <Female_fr>lame d'Eorzéa</Female_fr>
+      <Female_ja>Sword of Eorzea</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>das Schwert Eorzeas</Male_de>
+      <Male_en>the Sword of Eorzea</Male_en>
+      <Male_fr>lame d'Eorzéa</Male_fr>
+      <Male_ja>Sword of Eorzea</Male_ja>
+    </Title>
+    <Title>
+      <Key>58</Key>
+      <Female_de>der Schild von La Noscea</Female_de>
+      <Female_en>the Shield of La Noscea</Female_en>
+      <Female_fr>bouclier de la prairie</Female_fr>
+      <Female_ja>Shield of La Noscea</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Schild von La Noscea</Male_de>
+      <Male_en>the Shield of La Noscea</Male_en>
+      <Male_fr>bouclier de la prairie</Male_fr>
+      <Male_ja>Shield of La Noscea</Male_ja>
+    </Title>
+    <Title>
+      <Key>59</Key>
+      <Female_de>der Schild des Finsterwalds</Female_de>
+      <Female_en>the Shield of the Shroud</Female_en>
+      <Female_fr>bouclier de la forêt</Female_fr>
+      <Female_ja>Shield of the Shroud</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Schild des Finsterwalds</Male_de>
+      <Male_en>the Shield of the Shroud</Male_en>
+      <Male_fr>bouclier de la forêt</Male_fr>
+      <Male_ja>Shield of the Shroud</Male_ja>
+    </Title>
+    <Title>
+      <Key>60</Key>
+      <Female_de>der Schild von Thanalan</Female_de>
+      <Female_en>the Shield of Thanalan</Female_en>
+      <Female_fr>bouclier du désert</Female_fr>
+      <Female_ja>Shield of Thanalan</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Schild von Thanalan</Male_de>
+      <Male_en>the Shield of Thanalan</Male_en>
+      <Male_fr>bouclier du désert</Male_fr>
+      <Male_ja>Shield of Thanalan</Male_ja>
+    </Title>
+    <Title>
+      <Key>61</Key>
+      <Female_de>der Schild Eorzeas</Female_de>
+      <Female_en>the Shield of Eorzea</Female_en>
+      <Female_fr>bouclier d'Eorzéa</Female_fr>
+      <Female_ja>Shield of Eorzea</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Schild Eorzeas</Male_de>
+      <Male_en>the Shield of Eorzea</Male_en>
+      <Male_fr>bouclier d'Eorzéa</Male_fr>
+      <Male_ja>Shield of Eorzea</Male_ja>
+    </Title>
+    <Title>
+      <Key>62</Key>
+      <Female_de>die Klingenbrecherin</Female_de>
+      <Female_en>Sister of the Broken Blade</Female_en>
+      <Female_fr>sœur des lames cassées</Female_fr>
+      <Female_ja>Sister of the Broken Blade</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Klingenbrecher</Male_de>
+      <Male_en>Brother of the Broken Blade</Male_en>
+      <Male_fr>frère des lames cassées</Male_fr>
+      <Male_ja>Brother of the Broken Blade</Male_ja>
+    </Title>
+    <Title>
+      <Key>63</Key>
+      <Female_de>das Ass Azeymas</Female_de>
+      <Female_en>the Warden's Wall</Female_en>
+      <Female_fr>bouclier d'Azeyma</Female_fr>
+      <Female_ja>Shield of the Warden</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>das Ass Azeymas</Male_de>
+      <Male_en>the Warden's Wall</Male_en>
+      <Male_fr>bouclier d'Azeyma</Male_fr>
+      <Male_ja>Shield of the Warden</Male_ja>
+    </Title>
+    <Title>
+      <Key>64</Key>
+      <Female_de>die Ruhmreiche</Female_de>
+      <Female_en>Bearer of the Horn</Female_en>
+      <Female_fr>associée de la Corne et la Main</Female_fr>
+      <Female_ja>Eye of the Hand</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Ruhmreiche</Male_de>
+      <Male_en>Bearer of the Horn</Male_en>
+      <Male_fr>associé de la Corne et la Main</Male_fr>
+      <Male_ja>Eye of the Hand</Male_ja>
+    </Title>
+    <Title>
+      <Key>65</Key>
+      <Female_de>die Härte des Gesetzes</Female_de>
+      <Female_en>the Uncommitted</Female_en>
+      <Female_fr>agent triple</Female_fr>
+      <Female_ja>Hammer of Justice</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>die Härte des Gesetzes</Male_de>
+      <Male_en>the Uncommitted</Male_en>
+      <Male_fr>agent triple</Male_fr>
+      <Male_ja>Hammer of Justice</Male_ja>
+    </Title>
+    <Title>
+      <Key>66</Key>
+      <Female_de>Der Profi</Female_de>
+      <Female_en>the Professional</Female_en>
+      <Female_fr>la professionnelle</Female_fr>
+      <Female_ja>the Tristar</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Der Profi</Male_de>
+      <Male_en>the Professional</Male_en>
+      <Male_fr>le professionnel</Male_fr>
+      <Male_ja>the Tristar</Male_ja>
+    </Title>
+    <Title>
+      <Key>67</Key>
+      <Female_de>Inquisitor</Female_de>
+      <Female_en>Inquisitor</Female_en>
+      <Female_fr>inquisitrice du 11e ordre</Female_fr>
+      <Female_ja>Inquisitor</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Inquisitor</Male_de>
+      <Male_en>Inquisitor</Male_en>
+      <Male_fr>inquisiteur du 11e ordre</Male_fr>
+      <Male_ja>Inquisitor</Male_ja>
+    </Title>
+    <Title>
+      <Key>68</Key>
+      <Female_de>Göttlicher Scharfrichter</Female_de>
+      <Female_en>Divine Crusher</Female_en>
+      <Female_fr>iconoclaste du divin</Female_fr>
+      <Female_ja>Divine Crusher</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Göttlicher Scharfrichter</Male_de>
+      <Male_en>Divine Crusher</Male_en>
+      <Male_fr>iconoclaste du divin</Male_fr>
+      <Male_ja>Divine Crusher</Male_ja>
+    </Title>
+    <Title>
+      <Key>69</Key>
+      <Female_de>Steinspalter</Female_de>
+      <Female_en>Stonesplitter</Female_en>
+      <Female_fr>briseuse de roche</Female_fr>
+      <Female_ja>Stonesplitter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Steinspalter</Male_de>
+      <Male_en>Stonesplitter</Male_en>
+      <Male_fr>briseur de roche</Male_fr>
+      <Male_ja>Stonesplitter</Male_ja>
+    </Title>
+    <Title>
+      <Key>70</Key>
+      <Female_de>des Kobolds schlimmster Albtraum</Female_de>
+      <Female_en>A Kobold's Worst Nightmare</Female_en>
+      <Female_fr>cauchemar des Kobolds</Female_fr>
+      <Female_ja>A Kobold's Worst Nightmare</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>des Kobolds schlimmster Albtraum</Male_de>
+      <Male_en>A Kobold's Worst Nightmare</Male_en>
+      <Male_fr>cauchemar des Kobolds</Male_fr>
+      <Male_ja>A Kobold's Worst Nightmare</Male_ja>
+    </Title>
+    <Title>
+      <Key>71</Key>
+      <Female_de>des Ixals schlimmster Albtraum</Female_de>
+      <Female_en>An Ixal's Worst Nightmare</Female_en>
+      <Female_fr>cauchemar des Ixali</Female_fr>
+      <Female_ja>An Ixal's Worst Nightmare</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>des Ixals schlimmster Albtraum</Male_de>
+      <Male_en>An Ixal's Worst Nightmare</Male_en>
+      <Male_fr>cauchemar des Ixali</Male_fr>
+      <Male_ja>An Ixal's Worst Nightmare</Male_ja>
+    </Title>
+    <Title>
+      <Key>72</Key>
+      <Female_de>des Amalj'aas schlimmster Albtraum</Female_de>
+      <Female_en>An Amalj'aa's Worst Nightmare</Female_en>
+      <Female_fr>cauchemar des Amal'jaa</Female_fr>
+      <Female_ja>An Amalj'aa's Worst Nightmare</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>des Amalj'aas schlimmster Albtraum</Male_de>
+      <Male_en>An Amalj'aa's Worst Nightmare</Male_en>
+      <Male_fr>cauchemar des Amal'jaa</Male_fr>
+      <Male_ja>An Amalj'aa's Worst Nightmare</Male_ja>
+    </Title>
+    <Title>
+      <Key>73</Key>
+      <Female_de>die Wächterin des Bierhafens</Female_de>
+      <Female_en>the Guardian of Aleport</Female_en>
+      <Female_fr>défenseur de Port-aux-ales</Female_fr>
+      <Female_ja>the Guardian of Aleport</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Wächter des Bierhafens</Male_de>
+      <Male_en>the Guardian of Aleport</Male_en>
+      <Male_fr>défenseur de Port-aux-ales</Male_fr>
+      <Male_ja>the Guardian of Aleport</Male_ja>
+    </Title>
+    <Title>
+      <Key>74</Key>
+      <Female_de>die Wächterin des Mühlenhains</Female_de>
+      <Female_en>the Guardian of Hyrstmill</Female_en>
+      <Female_fr>défenseur du Moulin des bois</Female_fr>
+      <Female_ja>the Guardian of Hyrstmill</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Wächter des Mühlenhains</Male_de>
+      <Male_en>the Guardian of Hyrstmill</Male_en>
+      <Male_fr>défenseur du Moulin des bois</Male_fr>
+      <Male_ja>the Guardian of Hyrstmill</Male_ja>
+    </Title>
+    <Title>
+      <Key>75</Key>
+      <Female_de>die Wächterin des Goldbasars</Female_de>
+      <Female_en>the Guardian of the Golden Bazaar</Female_en>
+      <Female_fr>défenseur du Bazar doré</Female_fr>
+      <Female_ja>the Guardian of the Golden Bazaar</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Wächter des Goldbasars</Male_de>
+      <Male_en>the Guardian of the Golden Bazaar</Male_en>
+      <Male_fr>défenseur du Bazar doré</Male_fr>
+      <Male_ja>the Guardian of the Golden Bazaar</Male_ja>
+    </Title>
+    <Title>
+      <Key>76</Key>
+      <Female_de>der frische Wind des Bierhafens</Female_de>
+      <Female_en>the Wind of Aleport</Female_en>
+      <Female_fr>pourvoyeuse de Port-aux-ales</Female_fr>
+      <Female_ja>the Wind of Aleport</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der frische Wind des Bierhafens</Male_de>
+      <Male_en>the Wind of Aleport</Male_en>
+      <Male_fr>pourvoyeur de Port-aux-ales</Male_fr>
+      <Male_ja>the Wind of Aleport</Male_ja>
+    </Title>
+    <Title>
+      <Key>77</Key>
+      <Female_de>der frische Wind des Mühlenhains</Female_de>
+      <Female_en>the Wind of Hyrstmill</Female_en>
+      <Female_fr>pourvoyeuse du Moulin des bois</Female_fr>
+      <Female_ja>the Wind of Hyrstmill</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der frische Wind des Mühlenhains</Male_de>
+      <Male_en>the Wind of Hyrstmill</Male_en>
+      <Male_fr>pourvoyeur du Moulin des bois</Male_fr>
+      <Male_ja>the Wind of Hyrstmill</Male_ja>
+    </Title>
+    <Title>
+      <Key>78</Key>
+      <Female_de>der frische Wind des Goldbasars</Female_de>
+      <Female_en>the Wind of the Golden Bazaar</Female_en>
+      <Female_fr>pourvoyeuse du Bazar doré</Female_fr>
+      <Female_ja>the Wind of the Golden Bazaar</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der frische Wind des Goldbasars</Male_de>
+      <Male_en>the Wind of the Golden Bazaar</Male_en>
+      <Male_fr>pourvoyeur du Bazar doré</Male_fr>
+      <Male_ja>the Wind of the Golden Bazaar</Male_ja>
+    </Title>
+    <Title>
+      <Key>79</Key>
+      <Female_de>die helfende Hand des Bierhafens</Female_de>
+      <Female_en>the Hand of Aleport</Female_en>
+      <Female_fr>sertisseuse de Port-aux-ales</Female_fr>
+      <Female_ja>the Hand of Aleport</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>die helfende Hand des Bierhafens</Male_de>
+      <Male_en>the Hand of Aleport</Male_en>
+      <Male_fr>sertisseur de Port-aux-ales</Male_fr>
+      <Male_ja>the Hand of Aleport</Male_ja>
+    </Title>
+    <Title>
+      <Key>80</Key>
+      <Female_de>die helfende Hand des Mühlenhains</Female_de>
+      <Female_en>the Hand of Hyrstmill</Female_en>
+      <Female_fr>sertisseuse du Moulin des bois</Female_fr>
+      <Female_ja>the Hand of Hyrstmill</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>die helfende Hand des Mühlenhains</Male_de>
+      <Male_en>the Hand of Hyrstmill</Male_en>
+      <Male_fr>sertisseur du Moulin des bois</Male_fr>
+      <Male_ja>the Hand of Hyrstmill</Male_ja>
+    </Title>
+    <Title>
+      <Key>81</Key>
+      <Female_de>die helfende Hand des Goldbasars</Female_de>
+      <Female_en>the Hand of the Golden Bazaar</Female_en>
+      <Female_fr>sertisseuse du Bazar doré</Female_fr>
+      <Female_ja>the Hand of the Golden Bazaar</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>die helfende Hand des Goldbasars</Male_de>
+      <Male_en>the Hand of the Golden Bazaar</Male_en>
+      <Male_fr>sertisseur du Bazar doré</Male_fr>
+      <Male_ja>the Hand of the Golden Bazaar</Male_ja>
+    </Title>
+    <Title>
+      <Key>82</Key>
+      <Female_de>Schneefrau</Female_de>
+      <Female_en>Wild Thing</Female_en>
+      <Female_fr>renne de beauté</Female_fr>
+      <Female_ja>Wild Thing</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Schneemann</Male_de>
+      <Male_en>Wild Thing</Male_en>
+      <Male_fr>renne de beauté</Male_fr>
+      <Male_ja>Wild Thing</Male_ja>
+    </Title>
+    <Title>
+      <Key>83</Key>
+      <Female_de>Winterdrache</Female_de>
+      <Female_en>the Winter Wyrm</Female_en>
+      <Female_fr>dragonne de vertu</Female_fr>
+      <Female_ja>the Winter Dragon</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Winterdrache</Male_de>
+      <Male_en>the Winter Wyrm</Male_en>
+      <Male_fr>dragon de vertu</Male_fr>
+      <Male_ja>the Winter Dragon</Male_ja>
+    </Title>
+    <Title>
+      <Key>84</Key>
+      <Female_de>Herzensbrecher</Female_de>
+      <Female_en>Messenger of Love</Female_en>
+      <Female_fr>cupidon en herbe</Female_fr>
+      <Female_ja>Messenger of Love</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Herzensbrecher</Male_de>
+      <Male_en>Messenger of Love</Male_en>
+      <Male_fr>cupidon en herbe</Male_fr>
+      <Male_ja>Messenger of Love</Male_ja>
+    </Title>
+    <Title>
+      <Key>85</Key>
+      <Female_de>Königlicher Seneschall</Female_de>
+      <Female_en>Princess for a Day</Female_en>
+      <Female_fr>princesse du jour</Female_fr>
+      <Female_ja>Princess for a Day</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Königlicher Seneschall</Male_de>
+      <Male_en>Royal Seneschal</Male_en>
+      <Male_fr>sénéchal royal</Male_fr>
+      <Male_ja>Royal Seneschal</Male_ja>
+    </Title>
+    <Title>
+      <Key>86</Key>
+      <Female_de>Eiertänzerin</Female_de>
+      <Female_en>Dreamseeker</Female_en>
+      <Female_fr>chasseuse d'œufs</Female_fr>
+      <Female_ja>Egg Hunter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Eiertänzer</Male_de>
+      <Male_en>Dreamseeker</Male_en>
+      <Male_fr>chasseur d'œufs</Male_fr>
+      <Male_ja>Egg Hunter</Male_ja>
+    </Title>
+    <Title>
+      <Key>87</Key>
+      <Female_de>Honorabler Kaskadeur</Female_de>
+      <Female_en>Cascadier</Female_en>
+      <Female_fr>recrue de la B.A.B.</Female_fr>
+      <Female_ja>ABU Honorary Member</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Honorabler Kaskadeur</Male_de>
+      <Male_en>Cascadier</Male_en>
+      <Male_fr>recrue de la B.A.B.</Male_fr>
+      <Male_ja>ABU Honorary Member</Male_ja>
+    </Title>
+    <Title>
+      <Key>88</Key>
+      <Female_de>Trägerin des Kristalls</Female_de>
+      <Female_en>Crystal Bearer</Female_en>
+      <Female_fr>porteuse du cristal</Female_fr>
+      <Female_ja>Crystal Bearer</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Träger des Kristalls</Male_de>
+      <Male_en>Crystal Bearer</Male_en>
+      <Male_fr>porteur du cristal</Male_fr>
+      <Male_ja>Crystal Bearer</Male_ja>
+    </Title>
+    <Title>
+      <Key>89</Key>
+      <Female_de>Sturmfürstin</Female_de>
+      <Female_en>Stormlady</Female_en>
+      <Female_fr>lige du Maelstrom</Female_fr>
+      <Female_ja>Lominsan Hero</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Sturmfürst</Male_de>
+      <Male_en>Stormlord</Male_en>
+      <Male_fr>lige du Maelstrom</Male_fr>
+      <Male_ja>Lominsan Hero</Male_ja>
+    </Title>
+    <Title>
+      <Key>90</Key>
+      <Female_de>Schlangenfürstin</Female_de>
+      <Female_en>Serpentlady</Female_en>
+      <Female_fr>lige de l'Ordre</Female_fr>
+      <Female_ja>Gridanian Hero</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Schlangenfürst</Male_de>
+      <Male_en>Serpentlord</Male_en>
+      <Male_fr>lige de l'Ordre</Male_fr>
+      <Male_ja>Gridanian Hero</Male_ja>
+    </Title>
+    <Title>
+      <Key>91</Key>
+      <Female_de>Phönixfürstin</Female_de>
+      <Female_en>Flamelady</Female_en>
+      <Female_fr>lige des Immortels</Female_fr>
+      <Female_ja>Ul'dahn Hero</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Phönixfürst</Male_de>
+      <Male_en>Flamelord</Male_en>
+      <Male_fr>lige des Immortels</Male_fr>
+      <Male_ja>Ul'dahn Hero</Male_ja>
+    </Title>
+    <Title>
+      <Key>92</Key>
+      <Female_de>der Rückhalt Limsas</Female_de>
+      <Female_en>the Stormsworn</Female_en>
+      <Female_fr>fidèle du Maelstrom</Female_fr>
+      <Female_ja>Lominsan Veteran</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Rückhalt Limsas</Male_de>
+      <Male_en>the Stormsworn</Male_en>
+      <Male_fr>fidèle du Maelstrom</Male_fr>
+      <Male_ja>Lominsan Veteran</Male_ja>
+    </Title>
+    <Title>
+      <Key>93</Key>
+      <Female_de>der Rückhalt Gridanias</Female_de>
+      <Female_en>the Serpentsworn</Female_en>
+      <Female_fr>fidèle de l'Ordre</Female_fr>
+      <Female_ja>Gridanian Veteran</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Rückhalt Gridanias</Male_de>
+      <Male_en>the Serpentsworn</Male_en>
+      <Male_fr>fidèle de l'Ordre</Male_fr>
+      <Male_ja>Gridanian Veteran</Male_ja>
+    </Title>
+    <Title>
+      <Key>94</Key>
+      <Female_de>der Rückhalt Ul'dahs</Female_de>
+      <Female_en>the Flamesworn</Female_en>
+      <Female_fr>fidèle des Immortels</Female_fr>
+      <Female_ja>Ul'dahn Veteran</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Rückhalt Ul'dahs</Male_de>
+      <Male_en>the Flamesworn</Male_en>
+      <Male_fr>fidèle des Immortels</Male_fr>
+      <Male_ja>Ul'dahn Veteran</Male_ja>
+    </Title>
+    <Title>
+      <Key>95</Key>
+      <Female_de>Merlwybs Botin</Female_de>
+      <Female_en>Stormcarrier</Female_en>
+      <Female_fr>fournisseuse du Maelstrom</Female_fr>
+      <Female_ja>Lominsan Carrier</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Merlwybs Bote</Male_de>
+      <Male_en>Stormcarrier</Male_en>
+      <Male_fr>fournisseur du Maelstrom</Male_fr>
+      <Male_ja>Lominsan Carrier</Male_ja>
+    </Title>
+    <Title>
+      <Key>96</Key>
+      <Female_de>Kan-E-Sennas Botin</Female_de>
+      <Female_en>Serpentcarrier</Female_en>
+      <Female_fr>fournisseuse de l'Ordre</Female_fr>
+      <Female_ja>Gridanian Carrier</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Kan-E-Sennas Bote</Male_de>
+      <Male_en>Serpentcarrier</Male_en>
+      <Male_fr>fournisseur de l'Ordre</Male_fr>
+      <Male_ja>Gridanian Carrier</Male_ja>
+    </Title>
+    <Title>
+      <Key>97</Key>
+      <Female_de>Raubahns Botin</Female_de>
+      <Female_en>Flamecarrier</Female_en>
+      <Female_fr>fournisseuse des Immortels</Female_fr>
+      <Female_ja>Ul'dahn Carrier</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Raubahns Bote</Male_de>
+      <Male_en>Flamecarrier</Male_en>
+      <Male_fr>fournisseur des Immortels</Male_fr>
+      <Male_ja>Ul'dahn Carrier</Male_ja>
+    </Title>
+    <Title>
+      <Key>98</Key>
+      <Female_de>die Versorgerin Limsas</Female_de>
+      <Female_en>Stormbringer</Female_en>
+      <Female_fr>intendante du Maelstrom</Female_fr>
+      <Female_ja>Lominsan Builder</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Versorger Limsas</Male_de>
+      <Male_en>Stormbringer</Male_en>
+      <Male_fr>intendant du Maelstrom</Male_fr>
+      <Male_ja>Lominsan Builder</Male_ja>
+    </Title>
+    <Title>
+      <Key>99</Key>
+      <Female_de>die Versorgerin Gridanias</Female_de>
+      <Female_en>Serpentbringer</Female_en>
+      <Female_fr>intendante de l'Ordre</Female_fr>
+      <Female_ja>Gridanian Builder</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Versorger Gridanias</Male_de>
+      <Male_en>Serpentbringer</Male_en>
+      <Male_fr>intendant de l'Ordre</Male_fr>
+      <Male_ja>Gridanian Builder</Male_ja>
+    </Title>
+    <Title>
+      <Key>100</Key>
+      <Female_de>die Versorgerin Ul'dahs</Female_de>
+      <Female_en>Flamebringer</Female_en>
+      <Female_fr>intendante des Immortels</Female_fr>
+      <Female_ja>Ul'dahn Builder</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Versorger Ul'dahs</Male_de>
+      <Male_en>Flamebringer</Male_en>
+      <Male_fr>intendant des Immortels</Male_fr>
+      <Male_ja>Ul'dahn Builder</Male_ja>
+    </Title>
+    <Title>
+      <Key>101</Key>
+      <Female_de>Expresszustellerin</Female_de>
+      <Female_en>Featherfoot</Female_en>
+      <Female_fr>escorte express</Female_fr>
+      <Female_ja>the Featherfoot</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Expresszusteller</Male_de>
+      <Male_en>Featherfoot</Male_en>
+      <Male_fr>escorte express</Male_fr>
+      <Male_ja>the Featherfoot</Male_ja>
+    </Title>
+    <Title>
+      <Key>102</Key>
+      <Female_de>Eskorteurin</Female_de>
+      <Female_en>A Bo's Best Friend</Female_en>
+      <Female_fr>la convoyeuse</Female_fr>
+      <Female_ja>Caravan Driver</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Eskorteur</Male_de>
+      <Male_en>A Bo's Best Friend</Male_en>
+      <Male_fr>le convoyeur</Male_fr>
+      <Male_ja>Caravan Driver</Male_ja>
+    </Title>
+    <Title>
+      <Key>103</Key>
+      <Female_de>Geölter Blitz</Female_de>
+      <Female_en>Lightning</Female_en>
+      <Female_fr>la foudre</Female_fr>
+      <Female_ja>Speedster</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Geölter Blitz</Male_de>
+      <Male_en>Lightning</Male_en>
+      <Male_fr>l'éclair</Male_fr>
+      <Male_ja>Speedster</Male_ja>
+    </Title>
+    <Title>
+      <Key>104</Key>
+      <Female_de>Chocobo-Ritter</Female_de>
+      <Female_en>Cavalier</Female_en>
+      <Female_fr>cavalière bardée</Female_fr>
+      <Female_ja>Chocobo Cavalier</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Chocobo-Ritter</Male_de>
+      <Male_en>Cavalier</Male_en>
+      <Male_fr>cavalier bardé</Male_fr>
+      <Male_ja>Chocobo Cavalier</Male_ja>
+    </Title>
+    <Title>
+      <Key>105</Key>
+      <Female_de>Des Wanderers Schatten</Female_de>
+      <Female_en>the Wanderer's Shadow</Female_en>
+      <Female_fr>disciple du Vagabond</Female_fr>
+      <Female_ja>Oschon's Saint</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Des Wanderers Schatten</Male_de>
+      <Male_en>the Wanderer's Shadow</Male_en>
+      <Male_fr>disciple du Vagabond</Male_fr>
+      <Male_ja>Oschon's Saint</Male_ja>
+    </Title>
+    <Title>
+      <Key>106</Key>
+      <Female_de>Grünauge</Female_de>
+      <Female_en>Green Eyes</Female_en>
+      <Female_fr>légataire d'Œilvert</Female_fr>
+      <Female_ja>the Oeilvert</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>Grünauge</Male_de>
+      <Male_en>Green Eyes</Male_en>
+      <Male_fr>légataire d'Œilvert</Male_fr>
+      <Male_ja>the Oeilvert</Male_ja>
+    </Title>
+    <Title>
+      <Key>107</Key>
+      <Female_de>die Strategin</Female_de>
+      <Female_en>the Strategist</Female_en>
+      <Female_fr>légataire de l'Omnilex</Female_fr>
+      <Female_ja>Strategist</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Stratege</Male_de>
+      <Male_en>the Strategist</Male_en>
+      <Male_fr>légataire de l'Omnilex</Male_fr>
+      <Male_ja>Strategist</Male_ja>
+    </Title>
+    <Title>
+      <Key>108</Key>
+      <Female_de>die Schnitterin</Female_de>
+      <Female_en>the Reaper</Female_en>
+      <Female_fr>faucheuse</Female_fr>
+      <Female_ja>the Reaper</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>True</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Schnitter</Male_de>
+      <Male_en>the Reaper</Male_en>
+      <Male_fr>faucheur</Male_fr>
+      <Male_ja>the Reaper</Male_ja>
+    </Title>
+    <Title>
+      <Key>109</Key>
+      <Female_de>die Dungeon-Entdeckerin</Female_de>
+      <Female_en>Dungeon Master</Female_en>
+      <Female_fr>maîtresse des donjons</Female_fr>
+      <Female_ja>Dungeon Explorer</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Dungeon-Entdecker</Male_de>
+      <Male_en>Dungeon Master</Male_en>
+      <Male_fr>maître des donjons</Male_fr>
+      <Male_ja>Dungeon Explorer</Male_ja>
+    </Title>
+    <Title>
+      <Key>110</Key>
+      <Female_de>die Schicksalsversucherin</Female_de>
+      <Female_en>Temptress of Fate</Female_en>
+      <Female_fr>jouet des aléas du destin</Female_fr>
+      <Female_ja>the Fates</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>False</Front_ja>
+      <Male_de>der Schicksalsversucher</Male_de>
+      <Male_en>Tempter of Fate</Male_en>
+      <Male_fr>jouet des aléas du destin</Male_fr>
+      <Male_ja>the Fates</Male_ja>
+    </Title>
+    <Title>
+      <Key>111</Key>
+      <Female_de>Elite-Kaskadeurin</Female_de>
+      <Female_en>Elite Cascadier</Female_en>
+      <Female_fr>membre honoraire de la B.A.B.</Female_fr>
+      <Female_ja>ABU Mercenary</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Elite-Kaskadeur</Male_de>
+      <Male_en>Elite Cascadier</Male_en>
+      <Male_fr>membre honoraire de la B.A.B.</Male_fr>
+      <Male_ja>ABU Mercenary</Male_ja>
+    </Title>
+  </Title></ArrayOfTitle>
