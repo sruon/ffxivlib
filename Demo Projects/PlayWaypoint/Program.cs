@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using ffxivlib;
 
 namespace PlayWaypoint
@@ -16,7 +17,11 @@ namespace PlayWaypoint
             FFXIVLIB instance = new FFXIVLIB();
             MovementHelper mh = instance.getMovementHelper();
             mh.playWaypoint("my_waypoint");
-            Console.WriteLine("Testing if blocking.");
+            // Run for 5 seconds, then pause the running for 10 seconds
+            Thread.Sleep(5000);
+            mh.pauseWaypoint();
+            Thread.Sleep(10000);
+            mh.pauseWaypoint();
         }
     }
 }

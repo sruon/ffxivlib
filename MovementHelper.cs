@@ -11,6 +11,7 @@ namespace ffxivlib
     public class MovementHelper
     {
         private volatile bool _stop;
+        private volatile bool _pause;
         private readonly Entity player;
         private readonly SendKeyInput ski = SendKeyInput.getInstance();
         private List<Coords> coords_list = new List<Coords>();
@@ -28,6 +29,7 @@ namespace ffxivlib
             left_key = _left_key;
             right_key = _right_key;
             forward_key = _forward_key;
+            _pause = false;
         }
 
         public struct Coords
@@ -154,23 +156,30 @@ namespace ffxivlib
             uint HeadingTolerance = 20;
             while (DistanceTo(X, Y, Z) > DistanceTolerance)
                 {
-                    player.refresh();
-                    Heading = HeadingTo(X, Y);
-                    PlayerHeading = XIVRadianToDegree(player.structure.heading);
-                    Herror = HeadingError(PlayerHeading, Heading);
-                    while (Herror > HeadingTolerance)
+                    if (!_pause)
                         {
-                            SendKeyInput.VKKeys key = WhereToHeadto(Heading, PlayerHeading);
-                            ski.SendKeyPress(key);
                             player.refresh();
                             Heading = HeadingTo(X, Y);
                             PlayerHeading = XIVRadianToDegree(player.structure.heading);
                             Herror = HeadingError(PlayerHeading, Heading);
+                            while (Herror > HeadingTolerance)
+                                {
+                                    SendKeyInput.VKKeys key = WhereToHeadto(Heading, PlayerHeading);
+                                    ski.SendKeyPress(key);
+                                    player.refresh();
+                                    Heading = HeadingTo(X, Y);
+                                    PlayerHeading = XIVRadianToDegree(player.structure.heading);
+                                    Herror = HeadingError(PlayerHeading, Heading);
+                                }
+                            if (!IsRunning)
+                                {
+                                    IsRunning = true;
+                                    ski.SendKeyPress(forward_key, false);
+                                }
                         }
-                    if (!IsRunning)
+                    else
                         {
-                            IsRunning = true;
-                            ski.SendKeyPress(forward_key, false);
+                            Thread.Sleep(500);
                         }
                 }
             ski.SendKeyPress(forward_key, true);
@@ -262,6 +271,17 @@ namespace ffxivlib
         {
             var t = new Thread(() => _playWaypoint(filename, list));
             t.Start();
+        }
+
+        /// <summary>
+        /// This pauses the playWaypoint thread.
+        /// Sets pause to true or false depending on current value.
+        /// </summary>
+        /// <returns>Value of pause after this call.</returns>
+        public bool pauseWaypoint()
+        {
+            _pause = !_pause;
+            return (_pause);
         }
     }
 
