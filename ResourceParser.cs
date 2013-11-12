@@ -51,7 +51,7 @@ namespace ffxivlib
         /// <param name="result_key">What field do we need to get back</param>
         /// <param name="search">The search parameter</param>
         /// <returns>The key (ID) or -1</returns>
-        public static int runLinqQuery(string filename, string node, string lookup_key, string result_key, string search)
+        private static int runLinqQuery(string filename, string node, string lookup_key, string result_key, string search)
         {
             if (search == "")
                 return -1;
@@ -90,7 +90,7 @@ namespace ffxivlib
         /// <param name="result_key">What field do we need to get back</param>
         /// <param name="search">The search parameter</param>
         /// <returns>The value (string) or string.empty</returns>
-        public static string runLinqQuery(string filename, string node, string lookup_key, string result_key, int search)
+        private static string runLinqQuery(string filename, string node, string lookup_key, string result_key, int search)
         {
             if (search == 0)
                 return string.Empty;
@@ -116,16 +116,31 @@ namespace ffxivlib
         }
 
         #region Item lookups
+        /// <summary>
+        /// Retrieves Item name corresponding to ID
+        /// </summary>
+        /// <param name="id">Item ID</param>
+        /// <returns>Item Name</returns>
         public static string getItemName(int id)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
+        /// <summary>
+        /// Retrieves Item name corresponding to ID in ITEM structure
+        /// </summary>
+        /// <param name="item">Item structure</param>
+        /// <returns>Item Name</returns>
         public static string getItemName(Inventory.ITEM item)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (int)item.ItemID);
         }
 
+        /// <summary>
+        /// Retrieves Item ID corresponding to name
+        /// </summary>
+        /// <param name="name">Item Name</param>
+        /// <returns>Item ID</returns>
         public static int getItemID(string name)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
@@ -133,16 +148,31 @@ namespace ffxivlib
         #endregion
 
         #region Buff lookups
+        /// <summary>
+        /// Retrieves Buff name corresponding to ID
+        /// </summary>
+        /// <param name="id">Buff ID</param>
+        /// <returns>Buff Name</returns>
         public static string getBuffName(short id)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", id);
         }
 
+        /// <summary>
+        /// Retrieves Buff name corresponding to ID in BUFF structure
+        /// </summary>
+        /// <param name="id">Buff structure</param>
+        /// <returns>Buff Name</returns>
         public static string getBuffName(BUFF item)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", item.BuffID);
         }
 
+        /// <summary>
+        /// Retrieves Buff ID corresponding to name.
+        /// </summary>
+        /// <param name="name">Buff name</param>
+        /// <returns>Buff ID</returns>
         public static int getBuffID(string name)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "name", "id", name);
@@ -151,34 +181,67 @@ namespace ffxivlib
 
         #region Title lookups
 
+        /// <summary>
+        /// Retrieves Title Name corresponding to ID.
+        /// </summary>
+        /// <param name="id">Title ID</param>
+        /// <returns>Title name</returns>
         public static string getTitleName(byte id)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
+        /// <summary>
+        /// Retrieves Title Name corresponding to ID in Entity.
+        /// </summary>
+        /// <param name="e">Entity</param>
+        /// <returns>Title name</returns>
         public static string getTitleName(Entity e)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.Title);
         }
+
         #endregion
 
         #region Grand Company lookups
 
+        /// <summary>
+        /// Retrieves Grand Company name corresponding to ID
+        /// </summary>
+        /// <param name="id">GC ID</param>
+        /// <returns>GC Name</returns>
         public static string getGrandCompany(byte id)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
+        /// <summary>
+        /// Retrieves Grand Company name corresponding to ID in Entity
+        /// </summary>
+        /// <param name="e">Entity</param>
+        /// <returns>GC Name</returns>
         public static string getGrandCompany(Entity e)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.GrandCompany);
         }
 
+        /// <summary>
+        /// Retrieves Grand Company rank corresponding to ID
+        /// Remarks: This returns only Uldah ranks at the moment
+        /// </summary>
+        /// <param name="id">GC Rank ID</param>
+        /// <returns>GC Rank Name</returns>
         public static string getGrandCompanyRank(byte id)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
+        /// <summary>
+        /// Retrieves Grand Company rank corresponding to ID in Entity
+        /// Remarks: This returns only Uldah ranks at the moment
+        /// </summary>
+        /// <param name="e">Entity</param>
+        /// <returns>GC Rank Name</returns>
         public static string getGrandCompanyRank(Entity e)
         {
             return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.GrandCompanyRank);
