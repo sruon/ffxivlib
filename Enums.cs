@@ -73,7 +73,8 @@
     {
         Player = 0x01,
         Mob = 0x02,
-        NPC = 0x03
+        NPC = 0x03,
+        Gathering = 0x06
     }
 
     /// <summary>
