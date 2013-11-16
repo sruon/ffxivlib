@@ -130,6 +130,7 @@ namespace ffxivlib
             var results = entity_list.Where(obj => obj.structure.name == name);
             return results;
         }
+
         /// <summary>
         /// Retrieves a list of Entity corresponding to the given TYPE
         /// Needs to be refactored.
