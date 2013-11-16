@@ -6,7 +6,6 @@ var searchData=
   ['getcompanyinventory',['getCompanyInventory',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a1c5ab49e698ec5996139d39f73e3ec5b',1,'ffxivlib::FFXIVLIB']]],
   ['getcurrentequipment',['getCurrentEquipment',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a8d3e897ef9b983484e479e237da9a424',1,'ffxivlib::FFXIVLIB']]],
   ['getcurrenttarget',['getCurrentTarget',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#aee1b206ae927123785f8362b4761aec3',1,'ffxivlib::FFXIVLIB']]],
-  ['getdatatable',['GetDataTable',['../class_s_q_lite_database.html#adc6db7bc86389a2a21d65afd6f271ac0',1,'SQLiteDatabase']]],
   ['getdistanceto',['getDistanceTo',['../classffxivlib_1_1_entity.html#ab8a6be98a59610b3ed8f8fb2cb653424',1,'ffxivlib::Entity']]],
   ['getentitybyid',['getEntityById',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a494ffffe0d2b77aef3457e9eb8969a3b',1,'ffxivlib::FFXIVLIB']]],
   ['getentitybyname',['getEntityByName',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ab88d3f8c698fc739a7afeb0f24a26a21',1,'ffxivlib::FFXIVLIB']]],
