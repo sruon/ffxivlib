@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
-   &#160;<span id="projectnumber">0.2.1</span>
+   &#160;<span id="projectnumber">0.3.1</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a179e48b58b038509c996fd001b630450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a179e48b58b038509c996fd001b630450"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringType</b></td></tr>
+<tr class="separator:a179e48b58b038509c996fd001b630450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa81612dd1f40544b2bc987c0d224413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa81612dd1f40544b2bc987c0d224413"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:afa81612dd1f40544b2bc987c0d224413"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>NPCID</b></td></tr>
 <tr class="memitem:a0e6a62641ac2a74cad2676eec880ac55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6a62641ac2a74cad2676eec880ac55"></a>
 byte&#160;</td><td class="memItemRight" valign="bottom"><b>distance</b></td></tr>
 <tr class="separator:a0e6a62641ac2a74cad2676eec880ac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773d937c244ff15ff7d5aa68d1083dc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a773d937c244ff15ff7d5aa68d1083dc5"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringStatus</b></td></tr>
+<tr class="separator:a773d937c244ff15ff7d5aa68d1083dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c542f7ef80b754b74031829ece457a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c542f7ef80b754b74031829ece457a3"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>X</b></td></tr>
 <tr class="separator:a6c542f7ef80b754b74031829ece457a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +134,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>Y</b></td></tr>
 <tr class="memitem:a2bbbb910363c2d8d5be8daeb24e9ee4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bbbb910363c2d8d5be8daeb24e9ee4d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>heading</b></td></tr>
 <tr class="separator:a2bbbb910363c2d8d5be8daeb24e9ee4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7d7eb6347c20ba16f2d5057638de41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e7d7eb6347c20ba16f2d5057638de41"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringInvisible</b></td></tr>
+<tr class="separator:a7e7d7eb6347c20ba16f2d5057638de41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c70bba9773173eb899896e495d9daf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c70bba9773173eb899896e495d9daf4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ModelID</b></td></tr>
 <tr class="separator:a5c70bba9773173eb899896e495d9daf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +155,15 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>icon</b></td></tr>
 <tr class="memitem:a5037220e6d432e2fb27d089a0e33336d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5037220e6d432e2fb27d089a0e33336d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>TargetId</b></td></tr>
 <tr class="separator:a5037220e6d432e2fb27d089a0e33336d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0f4f2a9875b4b94d7f248462f3b563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb0f4f2a9875b4b94d7f248462f3b563"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GrandCompany</b></td></tr>
+<tr class="separator:adb0f4f2a9875b4b94d7f248462f3b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6119649d0a4e78d01cdf8fa6a1b136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d6119649d0a4e78d01cdf8fa6a1b136"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GrandCompanyRank</b></td></tr>
+<tr class="separator:a5d6119649d0a4e78d01cdf8fa6a1b136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6f8a551e474839b27f784e0b85b561"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb6f8a551e474839b27f784e0b85b561"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Title</b></td></tr>
+<tr class="separator:adb6f8a551e474839b27f784e0b85b561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eb1c6c096373de42566abdbf6bc5921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eb1c6c096373de42566abdbf6bc5921"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>cHP</b></td></tr>
 <tr class="separator:a4eb1c6c096373de42566abdbf6bc5921"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +191,15 @@ short&#160;</td><td class="memItemRight" valign="bottom"><b>cCP</b></td></tr>
 <tr class="memitem:a4672bd0fd646d4eea56955cb07f41998"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4672bd0fd646d4eea56955cb07f41998"></a>
 short&#160;</td><td class="memItemRight" valign="bottom"><b>mCP</b></td></tr>
 <tr class="separator:a4672bd0fd646d4eea56955cb07f41998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699875cd7898172929592fd6b407c68c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699875cd7898172929592fd6b407c68c"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Race</b></td></tr>
+<tr class="separator:a699875cd7898172929592fd6b407c68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d07d9b89bec006286483c633cfc616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53d07d9b89bec006286483c633cfc616"></a>
+SEX&#160;</td><td class="memItemRight" valign="bottom"><b>Sex</b></td></tr>
+<tr class="separator:a53d07d9b89bec006286483c633cfc616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8a58b94d8da93ab2c21a658d8a1f8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8a58b94d8da93ab2c21a658d8a1f8e"></a>
+<a class="el" href="structffxivlib_1_1_b_u_f_f.html">BUFF</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Buffs</b></td></tr>
+<tr class="separator:aeb8a58b94d8da93ab2c21a658d8a1f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Entity.cs</li>
@@ -180,7 +207,7 @@ short&#160;</td><td class="memItemRight" valign="bottom"><b>mCP</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 7 2013 22:00:42 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 16 2013 22:28:21 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

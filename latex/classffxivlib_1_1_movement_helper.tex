@@ -21,7 +21,9 @@ void \hyperlink{classffxivlib_1_1_movement_helper_a2270670d0784b93acc9cc2952118b
 List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ \hyperlink{classffxivlib_1_1_movement_helper_a81625fd8f23faf6079d19ddd552b30ba}{stop\-Recording\-Waypoint} ()
 \begin{DoxyCompactList}\small\item\em Stops the recording of Waypoint and return the list of coordinates if you wish to process them. The waypoint is saved to file regardless. \end{DoxyCompactList}\item 
 void \hyperlink{classffxivlib_1_1_movement_helper_af119b35d20fb48f78a105bb6a5db9b08}{play\-Waypoint} (string filename=null, List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ list=null)
-\begin{DoxyCompactList}\small\item\em Plays a pre-\/recorded waypoint file (X\-M\-L) or a list of coordinates. It cannot handles both. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Plays a pre-\/recorded waypoint file (X\-M\-L) or a list of coordinates. It cannot handles both. \end{DoxyCompactList}\item 
+bool \hyperlink{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}{pause\-Waypoint} ()
+\begin{DoxyCompactList}\small\item\em This pauses the play\-Waypoint thread. Sets pause to true or false depending on current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -52,6 +54,20 @@ Heads to a given coordinate
 {\em Z} & Z\\
 \hline
 \end{DoxyParams}
+\hypertarget{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!pause\-Waypoint@{pause\-Waypoint}}
+\index{pause\-Waypoint@{pause\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
+\subsubsection[{pause\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}bool ffxivlib.\-Movement\-Helper.\-pause\-Waypoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}
+
+
+This pauses the play\-Waypoint thread. Sets pause to true or false depending on current value. 
+
+\begin{DoxyReturn}{Returns}
+Value of pause after this call.
+\end{DoxyReturn}
 \hypertarget{classffxivlib_1_1_movement_helper_af119b35d20fb48f78a105bb6a5db9b08}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!play\-Waypoint@{play\-Waypoint}}
 \index{play\-Waypoint@{play\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
 \subsubsection[{play\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-play\-Waypoint (

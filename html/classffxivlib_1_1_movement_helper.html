@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
-   &#160;<span id="projectnumber">0.2.1</span>
+   &#160;<span id="projectnumber">0.3.1</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af119b35d20fb48f78a105bb6a5db9b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#af119b35d20fb48f78a105bb6a5db9b08">playWaypoint</a> (string filename=null, List&lt; <a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a> &gt; list=null)</td></tr>
 <tr class="memdesc:af119b35d20fb48f78a105bb6a5db9b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a pre-recorded waypoint file (XML) or a list of coordinates. It cannot handles both.  <a href="#af119b35d20fb48f78a105bb6a5db9b08">More...</a><br/></td></tr>
 <tr class="separator:af119b35d20fb48f78a105bb6a5db9b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5910202861046f64d46a59fcbcd57076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a5910202861046f64d46a59fcbcd57076">pauseWaypoint</a> ()</td></tr>
+<tr class="memdesc:a5910202861046f64d46a59fcbcd57076"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pauses the playWaypoint thread. Sets pause to true or false depending on current value.  <a href="#a5910202861046f64d46a59fcbcd57076">More...</a><br/></td></tr>
+<tr class="separator:a5910202861046f64d46a59fcbcd57076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Credits to FFACETOOLS. </p>
@@ -162,6 +165,24 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a5910202861046f64d46a59fcbcd57076"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ffxivlib.MovementHelper.pauseWaypoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This pauses the playWaypoint thread. Sets pause to true or false depending on current value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Value of pause after this call.</dd></dl>
 
 </div>
 </div>
@@ -259,7 +280,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 7 2013 22:00:43 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 16 2013 22:28:21 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

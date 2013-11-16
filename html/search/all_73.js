@@ -4,8 +4,10 @@ var searchData=
   ['sendkeyinput',['SendKeyInput',['../classffxivlib_1_1_send_key_input.html',1,'ffxivlib']]],
   ['sendkeypress',['SendKeyPress',['../classffxivlib_1_1_send_key_input.html#a66eab8ca2057b2b7b37f1f1f76a43f2a',1,'ffxivlib::SendKeyInput']]],
   ['sendreturnkey',['SendReturnKey',['../classffxivlib_1_1_send_key_input.html#a3302a44e82c7edee92ad9ceacce87fa6',1,'ffxivlib::SendKeyInput']]],
+  ['serializabledictionary_3c_20tkey_2c_20tvalue_20_3e',['SerializableDictionary&lt; TKey, TValue &gt;',['../class_serializable_dictionary_3_01_t_key_00_01_t_value_01_4.html',1,'']]],
+  ['spiritbond',['Spiritbond',['../structffxivlib_1_1_inventory_1_1_i_t_e_m.html#afd93b5a4c9e11d131b4157666132b233',1,'ffxivlib::Inventory::ITEM']]],
+  ['sqlitedatabase',['SQLiteDatabase',['../class_s_q_lite_database.html',1,'SQLiteDatabase'],['../class_s_q_lite_database.html#af9bc221e2038f6930a6a04fbf0d8781e',1,'SQLiteDatabase.SQLiteDatabase()'],['../class_s_q_lite_database.html#ad9261ab4070d86a2d726389c93bd12b0',1,'SQLiteDatabase.SQLiteDatabase(String inputFile)'],['../class_s_q_lite_database.html#a7cb51ab3180452deecfbb61b15e13821',1,'SQLiteDatabase.SQLiteDatabase(Dictionary&lt; String, String &gt; connectionOpts)']]],
   ['startrecordingcoordinates',['startRecordingCoordinates',['../classffxivlib_1_1_movement_helper.html#a2270670d0784b93acc9cc2952118b480',1,'ffxivlib::MovementHelper']]],
   ['status',['STATUS',['../namespaceffxivlib.html#a856915176aeab1f9b643c0243cb008ee',1,'ffxivlib']]],
-  ['statuseffect',['STATUSEFFECT',['../structffxivlib_1_1_party_member_1_1_s_t_a_t_u_s_e_f_f_e_c_t.html',1,'ffxivlib::PartyMember']]],
   ['stoprecordingwaypoint',['stopRecordingWaypoint',['../classffxivlib_1_1_movement_helper.html#a81625fd8f23faf6079d19ddd552b30ba',1,'ffxivlib::MovementHelper']]]
 ];

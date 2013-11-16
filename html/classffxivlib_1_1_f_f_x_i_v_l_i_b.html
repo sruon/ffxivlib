@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
-   &#160;<span id="projectnumber">0.2.1</span>
+   &#160;<span id="projectnumber">0.3.1</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,21 +101,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb5cc13e23647bd93e9f550a7a6961d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_chatlog.html">Chatlog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#acb5cc13e23647bd93e9f550a7a6961d3">getChatlog</a> ()</td></tr>
 <tr class="memdesc:acb5cc13e23647bd93e9f550a7a6961d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function instantiates a <a class="el" href="classffxivlib_1_1_chatlog.html">Chatlog</a> object  <a href="#acb5cc13e23647bd93e9f550a7a6961d3">More...</a><br/></td></tr>
 <tr class="separator:acb5cc13e23647bd93e9f550a7a6961d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494ffffe0d2b77aef3457e9eb8969a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a494ffffe0d2b77aef3457e9eb8969a3b">getEntityById</a> (int id)</td></tr>
+<tr class="memdesc:a494ffffe0d2b77aef3457e9eb8969a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function build an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object according to the position in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array You may effectively loop by yourself on this function.  <a href="#a494ffffe0d2b77aef3457e9eb8969a3b">More...</a><br/></td></tr>
+<tr class="separator:a494ffffe0d2b77aef3457e9eb8969a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4632b29db89772dc247157184e99f684"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a4632b29db89772dc247157184e99f684">getEntityInfo</a> (int id)</td></tr>
-<tr class="memdesc:a4632b29db89772dc247157184e99f684"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function build an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object according to the position in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array You may effectively loop by yourself on this function.  <a href="#a4632b29db89772dc247157184e99f684">More...</a><br/></td></tr>
+<tr class="memdesc:a4632b29db89772dc247157184e99f684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated, use getEntityById  <a href="#a4632b29db89772dc247157184e99f684">More...</a><br/></td></tr>
 <tr class="separator:a4632b29db89772dc247157184e99f684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb451cfae304d94e04729c7ea5d26da6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#aeb451cfae304d94e04729c7ea5d26da6">getEntityByName</a> (string name)</td></tr>
-<tr class="memdesc:aeb451cfae304d94e04729c7ea5d26da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function attempts to retrieve an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> by its name in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array This is potentially a costly call as we build a complete list to look for the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>.  <a href="#aeb451cfae304d94e04729c7ea5d26da6">More...</a><br/></td></tr>
-<tr class="separator:aeb451cfae304d94e04729c7ea5d26da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88d3f8c698fc739a7afeb0f24a26a21"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ab88d3f8c698fc739a7afeb0f24a26a21">getEntityByName</a> (string name)</td></tr>
+<tr class="memdesc:ab88d3f8c698fc739a7afeb0f24a26a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function attempts to retrieve a list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> by its name in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array This is potentially a costly call as we build a complete list to look for the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>. This doesn't include Gathering nodes at the moment. To be fixed.  <a href="#ab88d3f8c698fc739a7afeb0f24a26a21">More...</a><br/></td></tr>
+<tr class="separator:ab88d3f8c698fc739a7afeb0f24a26a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5defd75dc15eee11ca1c0e4d3dc8fac3"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a5defd75dc15eee11ca1c0e4d3dc8fac3">getEntityByType</a> (<a class="el" href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">TYPE</a> type)</td></tr>
+<tr class="memdesc:a5defd75dc15eee11ca1c0e4d3dc8fac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> corresponding to the given TYPE Needs to be refactored.  <a href="#a5defd75dc15eee11ca1c0e4d3dc8fac3">More...</a><br/></td></tr>
+<tr class="separator:a5defd75dc15eee11ca1c0e4d3dc8fac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9deecbc7f2ceeac2b48b06620e8a665"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ac9deecbc7f2ceeac2b48b06620e8a665">FFXIVLIB</a> (int pid=0)</td></tr>
 <tr class="memdesc:ac9deecbc7f2ceeac2b48b06620e8a665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a <a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html">FFXIVLIB</a> instance. PID is optionnal but required if multiple FFXIV process are running.  <a href="#ac9deecbc7f2ceeac2b48b06620e8a665">More...</a><br/></td></tr>
 <tr class="separator:ac9deecbc7f2ceeac2b48b06620e8a665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeabe7f254cb3ad228f1fee754f6b5d1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#adeabe7f254cb3ad228f1fee754f6b5d1">getSelfInventory</a> ()</td></tr>
+<tr class="memdesc:adeabe7f254cb3ad228f1fee754f6b5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your inventory, extra inventory (gil, crystals, tomes, seals), key items, calamity salvager and currently equipped items  <a href="#adeabe7f254cb3ad228f1fee754f6b5d1">More...</a><br/></td></tr>
+<tr class="separator:adeabe7f254cb3ad228f1fee754f6b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3e897ef9b983484e479e237da9a424"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a8d3e897ef9b983484e479e237da9a424">getCurrentEquipment</a> ()</td></tr>
+<tr class="memdesc:a8d3e897ef9b983484e479e237da9a424"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your currently equipped items. See EQUIP_POS enum.  <a href="#a8d3e897ef9b983484e479e237da9a424">More...</a><br/></td></tr>
+<tr class="separator:a8d3e897ef9b983484e479e237da9a424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fba89890835ec84967ba636759c9db"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a08fba89890835ec84967ba636759c9db">getRetainerInventory</a> ()</td></tr>
+<tr class="memdesc:a08fba89890835ec84967ba636759c9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale. This only works while checking a retainer.  <a href="#a08fba89890835ec84967ba636759c9db">More...</a><br/></td></tr>
+<tr class="separator:a08fba89890835ec84967ba636759c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe239c8493c3dfef4c0dbfce645ccb1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a5fe239c8493c3dfef4c0dbfce645ccb1">getArmoryChest</a> ()</td></tr>
+<tr class="memdesc:a5fe239c8493c3dfef4c0dbfce645ccb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your whole Armory Chest.  <a href="#a5fe239c8493c3dfef4c0dbfce645ccb1">More...</a><br/></td></tr>
+<tr class="separator:a5fe239c8493c3dfef4c0dbfce645ccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5ab49e698ec5996139d39f73e3ec5b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a1c5ab49e698ec5996139d39f73e3ec5b">getCompanyInventory</a> ()</td></tr>
+<tr class="memdesc:a1c5ab49e698ec5996139d39f73e3ec5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest.  <a href="#a1c5ab49e698ec5996139d39f73e3ec5b">More...</a><br/></td></tr>
+<tr class="separator:a1c5ab49e698ec5996139d39f73e3ec5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e19fa6a85db14f2b15ff4038a33cd61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e19fa6a85db14f2b15ff4038a33cd61"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (IntPtr pointer, uint count)</td></tr>
+<tr class="separator:a2e19fa6a85db14f2b15ff4038a33cd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1032d39df92490bb83d6c40361accd77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_movement_helper.html">MovementHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a1032d39df92490bb83d6c40361accd77">getMovementHelper</a> (SendKeyInput.VKKeys _left_key=SendKeyInput.VKKeys.KEY_A, SendKeyInput.VKKeys _right_key=SendKeyInput.VKKeys.KEY_D, SendKeyInput.VKKeys _forward_key=SendKeyInput.VKKeys.KEY_W)</td></tr>
 <tr class="memdesc:a1032d39df92490bb83d6c40361accd77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classffxivlib_1_1_movement_helper.html" title="Credits to FFACETOOLS. ">MovementHelper</a> instance ready for work.  <a href="#a1032d39df92490bb83d6c40361accd77">More...</a><br/></td></tr>
 <tr class="separator:a1032d39df92490bb83d6c40361accd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd7985eb9beb13c092ae1ed5f21c9f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a8cd7985eb9beb13c092ae1ed5f21c9f8">getPartyMemberInfo</a> (int id)</td></tr>
-<tr class="memdesc:a8cd7985eb9beb13c092ae1ed5f21c9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves a <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> by its id in the <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> array The result might be empty, there is no sanity check at the time  <a href="#a8cd7985eb9beb13c092ae1ed5f21c9f8">More...</a><br/></td></tr>
+<tr class="memdesc:a8cd7985eb9beb13c092ae1ed5f21c9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated, use getPartyMemberById  <a href="#a8cd7985eb9beb13c092ae1ed5f21c9f8">More...</a><br/></td></tr>
 <tr class="separator:a8cd7985eb9beb13c092ae1ed5f21c9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f853ba79ff05b1f4bc9d20470071075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a1f853ba79ff05b1f4bc9d20470071075">getPartyMemberById</a> (int id)</td></tr>
+<tr class="memdesc:a1f853ba79ff05b1f4bc9d20470071075"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves a <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> by its id in the <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> array The result might be empty, there is no sanity check at the time  <a href="#a1f853ba79ff05b1f4bc9d20470071075">More...</a><br/></td></tr>
+<tr class="separator:a1f853ba79ff05b1f4bc9d20470071075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf42ae8d84f170a0f18207369fb8e1a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#aaf42ae8d84f170a0f18207369fb8e1a9">getPlayerInfo</a> ()</td></tr>
 <tr class="memdesc:aaf42ae8d84f170a0f18207369fb8e1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves the current <a class="el" href="classffxivlib_1_1_player.html">Player</a> info  <a href="#aaf42ae8d84f170a0f18207369fb8e1a9">More...</a><br/></td></tr>
 <tr class="separator:aaf42ae8d84f170a0f18207369fb8e1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +191,24 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5fe239c8493c3dfef4c0dbfce645ccb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a>&gt; ffxivlib.FFXIVLIB.getArmoryChest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns your whole Armory Chest. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acb5cc13e23647bd93e9f550a7a6961d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +224,42 @@ Public Member Functions</h2></td></tr>
 
 <p>This function instantiates a <a class="el" href="classffxivlib_1_1_chatlog.html">Chatlog</a> object </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classffxivlib_1_1_chatlog.html">Chatlog</a> instance</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c5ab49e698ec5996139d39f73e3ec5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a>&gt; ffxivlib.FFXIVLIB.getCompanyInventory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d3e897ef9b983484e479e237da9a424"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a>&gt; ffxivlib.FFXIVLIB.getCurrentEquipment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns your currently equipped items. See EQUIP_POS enum. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
 
 </div>
 </div>
@@ -200,37 +281,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb451cfae304d94e04729c7ea5d26da6"></a>
+<a class="anchor" id="a494ffffe0d2b77aef3457e9eb8969a3b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> ffxivlib.FFXIVLIB.getEntityByName </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function attempts to retrieve an <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> by its name in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array This is potentially a costly call as we build a complete list to look for the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> to be retrieved</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object or null</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4632b29db89772dc247157184e99f684"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> ffxivlib.FFXIVLIB.getEntityInfo </td>
+          <td class="memname"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> ffxivlib.FFXIVLIB.getEntityById </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -253,6 +309,81 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ab88d3f8c698fc739a7afeb0f24a26a21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerable&lt;<a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&gt; ffxivlib.FFXIVLIB.getEntityByName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function attempts to retrieve a list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> by its name in the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> array This is potentially a costly call as we build a complete list to look for the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>. This doesn't include Gathering nodes at the moment. To be fixed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> to be retrieved</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Enumerable list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object or</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5defd75dc15eee11ca1c0e4d3dc8fac3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerable&lt;<a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&gt; ffxivlib.FFXIVLIB.getEntityByType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> corresponding to the given TYPE Needs to be refactored. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type of entity</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Enumerable list of <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> objects</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4632b29db89772dc247157184e99f684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> ffxivlib.FFXIVLIB.getEntityInfo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated, use getEntityById </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -317,12 +448,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8cd7985eb9beb13c092ae1ed5f21c9f8"></a>
+<a class="anchor" id="a1f853ba79ff05b1f4bc9d20470071075"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> ffxivlib.FFXIVLIB.getPartyMemberInfo </td>
+          <td class="memname"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> ffxivlib.FFXIVLIB.getPartyMemberById </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -345,6 +476,31 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a8cd7985eb9beb13c092ae1ed5f21c9f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> ffxivlib.FFXIVLIB.getPartyMemberInfo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated, use getPartyMemberById </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -381,6 +537,42 @@ Public Member Functions</h2></td></tr>
 
 <p>This function retrieves the previous target </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object or null</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a08fba89890835ec84967ba636759c9db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a>&gt; ffxivlib.FFXIVLIB.getRetainerInventory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale. This only works while checking a retainer. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adeabe7f254cb3ad228f1fee754f6b5d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a>&gt; ffxivlib.FFXIVLIB.getSelfInventory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns your inventory, extra inventory (gil, crystals, tomes, seals), key items, calamity salvager and currently equipped items </p>
+<dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
 
 </div>
 </div>
@@ -472,6 +664,8 @@ Public Member Functions</h2></td></tr>
 <li>Chatlog.cs</li>
 <li>FFXIVLIB.cs</li>
 <li>Entity.cs</li>
+<li>Inventory.cs</li>
+<li>MemoryReader.cs</li>
 <li>MovementHelper.cs</li>
 <li>PartyMember.cs</li>
 <li>Player.cs</li>
@@ -482,7 +676,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 7 2013 22:00:42 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 16 2013 22:28:21 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

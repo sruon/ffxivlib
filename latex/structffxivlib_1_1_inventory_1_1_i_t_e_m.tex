@@ -1,0 +1,78 @@
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m}{\section{ffxivlib.\-Inventory.\-I\-T\-E\-M Struct Reference}
+\label{structffxivlib_1_1_inventory_1_1_i_t_e_m}\index{ffxivlib.\-Inventory.\-I\-T\-E\-M@{ffxivlib.\-Inventory.\-I\-T\-E\-M}}
+}
+
+
+Structure representing an item  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_ae48153102411b4fedbaf70a3eafa0328}{uint {\bfseries Item\-I\-D}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_ae48153102411b4fedbaf70a3eafa0328}
+
+\item 
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_a7db1f0e9aee7e558da228d1825c54ce6}{uint {\bfseries Amount}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_a7db1f0e9aee7e558da228d1825c54ce6}
+
+\item 
+short \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m_afd93b5a4c9e11d131b4157666132b233}{Spiritbond}
+\begin{DoxyCompactList}\small\item\em 10000 = fully spiritbond \end{DoxyCompactList}\item 
+short \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m_ae3e1f2bfac2b6746e5948e75a5a3b05a}{Durability}
+\begin{DoxyCompactList}\small\item\em 30000 = fully repaired \end{DoxyCompactList}\item 
+int \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m_aa5184c075480fa32e6c3f7da68811f02}{Materia\-\_\-unk1}
+\begin{DoxyCompactList}\small\item\em Related to materia slots, but no idea what. \end{DoxyCompactList}\item 
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_a654ff2f382b4780e5dad99ea88329dd4}{byte {\bfseries Materia\-\_\-unk2}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_a654ff2f382b4780e5dad99ea88329dd4}
+
+\item 
+uint \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m_ac030523cf6f369af9a9be1987df970ef}{Quest\-I\-D}
+\begin{DoxyCompactList}\small\item\em I am deeply confused about this one, if item is related to a quest this is equal to the Quest\-I\-D. B\-U\-T, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why S\-E? \end{DoxyCompactList}\item 
+short \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m_a634f97f3e65815bdbc434e7ab6da0fb5}{Padding}
+\begin{DoxyCompactList}\small\item\em Padding to make sure our struct are the same size as X\-I\-V ones, allows me to use Marshal.\-Size\-Of \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure representing an item 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_ae3e1f2bfac2b6746e5948e75a5a3b05a}{\index{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}!Durability@{Durability}}
+\index{Durability@{Durability}!ffxivlib::Inventory::ITEM@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}}
+\subsubsection[{Durability}]{\setlength{\rightskip}{0pt plus 5cm}short ffxivlib.\-Inventory.\-I\-T\-E\-M.\-Durability}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_ae3e1f2bfac2b6746e5948e75a5a3b05a}
+
+
+30000 = fully repaired 
+
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_aa5184c075480fa32e6c3f7da68811f02}{\index{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}!Materia\-\_\-unk1@{Materia\-\_\-unk1}}
+\index{Materia\-\_\-unk1@{Materia\-\_\-unk1}!ffxivlib::Inventory::ITEM@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}}
+\subsubsection[{Materia\-\_\-unk1}]{\setlength{\rightskip}{0pt plus 5cm}int ffxivlib.\-Inventory.\-I\-T\-E\-M.\-Materia\-\_\-unk1}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_aa5184c075480fa32e6c3f7da68811f02}
+
+
+Related to materia slots, but no idea what. 
+
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_a634f97f3e65815bdbc434e7ab6da0fb5}{\index{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}!Padding@{Padding}}
+\index{Padding@{Padding}!ffxivlib::Inventory::ITEM@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}}
+\subsubsection[{Padding}]{\setlength{\rightskip}{0pt plus 5cm}short ffxivlib.\-Inventory.\-I\-T\-E\-M.\-Padding}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_a634f97f3e65815bdbc434e7ab6da0fb5}
+
+
+Padding to make sure our struct are the same size as X\-I\-V ones, allows me to use Marshal.\-Size\-Of 
+
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_ac030523cf6f369af9a9be1987df970ef}{\index{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}!Quest\-I\-D@{Quest\-I\-D}}
+\index{Quest\-I\-D@{Quest\-I\-D}!ffxivlib::Inventory::ITEM@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}}
+\subsubsection[{Quest\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}uint ffxivlib.\-Inventory.\-I\-T\-E\-M.\-Quest\-I\-D}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_ac030523cf6f369af9a9be1987df970ef}
+
+
+I am deeply confused about this one, if item is related to a quest this is equal to the Quest\-I\-D. B\-U\-T, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why S\-E? 
+
+\hypertarget{structffxivlib_1_1_inventory_1_1_i_t_e_m_afd93b5a4c9e11d131b4157666132b233}{\index{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}!Spiritbond@{Spiritbond}}
+\index{Spiritbond@{Spiritbond}!ffxivlib::Inventory::ITEM@{ffxivlib\-::\-Inventory\-::\-I\-T\-E\-M}}
+\subsubsection[{Spiritbond}]{\setlength{\rightskip}{0pt plus 5cm}short ffxivlib.\-Inventory.\-I\-T\-E\-M.\-Spiritbond}}\label{structffxivlib_1_1_inventory_1_1_i_t_e_m_afd93b5a4c9e11d131b4157666132b233}
+
+
+10000 = fully spiritbond 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Inventory.\-cs\end{DoxyCompactItemize}

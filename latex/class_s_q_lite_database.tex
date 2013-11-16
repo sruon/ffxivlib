@@ -1,0 +1,244 @@
+\hypertarget{class_s_q_lite_database}{\section{S\-Q\-Lite\-Database Class Reference}
+\label{class_s_q_lite_database}\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_q_lite_database_af9bc221e2038f6930a6a04fbf0d8781e}{S\-Q\-Lite\-Database} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor for \hyperlink{class_s_q_lite_database}{S\-Q\-Lite\-Database} Class. \end{DoxyCompactList}\item 
+\hyperlink{class_s_q_lite_database_ad9261ab4070d86a2d726389c93bd12b0}{S\-Q\-Lite\-Database} (String input\-File)
+\begin{DoxyCompactList}\small\item\em Single Param Constructor for specifying the D\-B file. \end{DoxyCompactList}\item 
+\hyperlink{class_s_q_lite_database_a7cb51ab3180452deecfbb61b15e13821}{S\-Q\-Lite\-Database} (Dictionary$<$ String, String $>$ connection\-Opts)
+\begin{DoxyCompactList}\small\item\em Single Param Constructor for specifying advanced connection options. \end{DoxyCompactList}\item 
+Data\-Table \hyperlink{class_s_q_lite_database_adc6db7bc86389a2a21d65afd6f271ac0}{Get\-Data\-Table} (string sql)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to run a query against the Database. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_q_lite_database_a9ee14da74d06a29b7a87c45b9aed6e69}{Execute\-Non\-Query} (string sql)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to interact with the database for purposes other than a query. \end{DoxyCompactList}\item 
+string \hyperlink{class_s_q_lite_database_a330f9baa1179004fbe7bdd5a3cc2930d}{Execute\-Scalar} (string sql)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to retrieve single items from the D\-B. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_lite_database_a0458d1ad962e59b6602f3b58c600fb8e}{Update} (String table\-Name, Dictionary$<$ String, String $>$ data, String where)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to easily update rows in the D\-B. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_lite_database_a9cbab6bb03bdd2529dd0154de5261459}{Delete} (String table\-Name, String where)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to easily delete rows from the D\-B. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_lite_database_afb8919879352e752ef7e8d6f99bc5882}{Insert} (String table\-Name, Dictionary$<$ String, String $>$ data)
+\begin{DoxyCompactList}\small\item\em Allows the programmer to easily insert into the D\-B \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_lite_database_adfc1377fd6c1b46bc685944c1577ae68}{Clear\-D\-B} ()
+\begin{DoxyCompactList}\small\item\em Allows the programmer to easily delete all data from the D\-B. \end{DoxyCompactList}\item 
+\hypertarget{class_s_q_lite_database_add78f4e6f1d7b9631bd21503f6d29e67}{List$<$ String $>$ {\bfseries get\-Tables} ()}\label{class_s_q_lite_database_add78f4e6f1d7b9631bd21503f6d29e67}
+
+\item 
+bool \hyperlink{class_s_q_lite_database_a0afb4ab2317c329ae68a3c7da59329ee}{Clear\-Table} (String table)
+\begin{DoxyCompactList}\small\item\em Allows the user to easily clear all data from a specific table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_s_q_lite_database_af9bc221e2038f6930a6a04fbf0d8781e}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}}
+\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{S\-Q\-Lite\-Database}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-Lite\-Database.\-S\-Q\-Lite\-Database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_af9bc221e2038f6930a6a04fbf0d8781e}
+
+
+Default Constructor for \hyperlink{class_s_q_lite_database}{S\-Q\-Lite\-Database} Class. 
+
+\hypertarget{class_s_q_lite_database_ad9261ab4070d86a2d726389c93bd12b0}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}}
+\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{S\-Q\-Lite\-Database}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-Lite\-Database.\-S\-Q\-Lite\-Database (
+\begin{DoxyParamCaption}
+\item[{String}]{input\-File}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_ad9261ab4070d86a2d726389c93bd12b0}
+
+
+Single Param Constructor for specifying the D\-B file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-File} & The File containing the D\-B\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_q_lite_database_a7cb51ab3180452deecfbb61b15e13821}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}}
+\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{S\-Q\-Lite\-Database}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-Lite\-Database.\-S\-Q\-Lite\-Database (
+\begin{DoxyParamCaption}
+\item[{Dictionary$<$ String, String $>$}]{connection\-Opts}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a7cb51ab3180452deecfbb61b15e13821}
+
+
+Single Param Constructor for specifying advanced connection options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\-Opts} & A dictionary containing all desired options and their values\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_q_lite_database_adfc1377fd6c1b46bc685944c1577ae68}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Clear\-D\-B@{Clear\-D\-B}}
+\index{Clear\-D\-B@{Clear\-D\-B}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Clear\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-Q\-Lite\-Database.\-Clear\-D\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_adfc1377fd6c1b46bc685944c1577ae68}
+
+
+Allows the programmer to easily delete all data from the D\-B. 
+
+\begin{DoxyReturn}{Returns}
+A boolean true or false to signify success or failure.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_a0afb4ab2317c329ae68a3c7da59329ee}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Clear\-Table@{Clear\-Table}}
+\index{Clear\-Table@{Clear\-Table}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Clear\-Table}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-Q\-Lite\-Database.\-Clear\-Table (
+\begin{DoxyParamCaption}
+\item[{String}]{table}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a0afb4ab2317c329ae68a3c7da59329ee}
+
+
+Allows the user to easily clear all data from a specific table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & The name of the table to clear.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean true or false to signify success or failure.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_a9cbab6bb03bdd2529dd0154de5261459}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Delete@{Delete}}
+\index{Delete@{Delete}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-Q\-Lite\-Database.\-Delete (
+\begin{DoxyParamCaption}
+\item[{String}]{table\-Name, }
+\item[{String}]{where}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a9cbab6bb03bdd2529dd0154de5261459}
+
+
+Allows the programmer to easily delete rows from the D\-B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\-Name} & The table from which to delete.\\
+\hline
+{\em where} & The where clause for the delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean true or false to signify success or failure.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_a9ee14da74d06a29b7a87c45b9aed6e69}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Execute\-Non\-Query@{Execute\-Non\-Query}}
+\index{Execute\-Non\-Query@{Execute\-Non\-Query}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Execute\-Non\-Query}]{\setlength{\rightskip}{0pt plus 5cm}int S\-Q\-Lite\-Database.\-Execute\-Non\-Query (
+\begin{DoxyParamCaption}
+\item[{string}]{sql}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a9ee14da74d06a29b7a87c45b9aed6e69}
+
+
+Allows the programmer to interact with the database for purposes other than a query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & The S\-Q\-L to be run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Integer containing the number of rows updated.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_a330f9baa1179004fbe7bdd5a3cc2930d}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Execute\-Scalar@{Execute\-Scalar}}
+\index{Execute\-Scalar@{Execute\-Scalar}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Execute\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}string S\-Q\-Lite\-Database.\-Execute\-Scalar (
+\begin{DoxyParamCaption}
+\item[{string}]{sql}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a330f9baa1179004fbe7bdd5a3cc2930d}
+
+
+Allows the programmer to retrieve single items from the D\-B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & The query to run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_adc6db7bc86389a2a21d65afd6f271ac0}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Get\-Data\-Table@{Get\-Data\-Table}}
+\index{Get\-Data\-Table@{Get\-Data\-Table}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Get\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Data\-Table S\-Q\-Lite\-Database.\-Get\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{string}]{sql}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_adc6db7bc86389a2a21d65afd6f271ac0}
+
+
+Allows the programmer to run a query against the Database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & The S\-Q\-L to run\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Data\-Table containing the result set.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_afb8919879352e752ef7e8d6f99bc5882}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Insert@{Insert}}
+\index{Insert@{Insert}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-Q\-Lite\-Database.\-Insert (
+\begin{DoxyParamCaption}
+\item[{String}]{table\-Name, }
+\item[{Dictionary$<$ String, String $>$}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_afb8919879352e752ef7e8d6f99bc5882}
+
+
+Allows the programmer to easily insert into the D\-B 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\-Name} & The table into which we insert the data.\\
+\hline
+{\em data} & A dictionary containing the column names and data for the insert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean true or false to signify success or failure.
+\end{DoxyReturn}
+\hypertarget{class_s_q_lite_database_a0458d1ad962e59b6602f3b58c600fb8e}{\index{S\-Q\-Lite\-Database@{S\-Q\-Lite\-Database}!Update@{Update}}
+\index{Update@{Update}!SQLiteDatabase@{S\-Q\-Lite\-Database}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-Q\-Lite\-Database.\-Update (
+\begin{DoxyParamCaption}
+\item[{String}]{table\-Name, }
+\item[{Dictionary$<$ String, String $>$}]{data, }
+\item[{String}]{where}
+\end{DoxyParamCaption}
+)}}\label{class_s_q_lite_database_a0458d1ad962e59b6602f3b58c600fb8e}
+
+
+Allows the programmer to easily update rows in the D\-B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\-Name} & The table to update.\\
+\hline
+{\em data} & A dictionary containing Column names and their new values.\\
+\hline
+{\em where} & The where clause for the update statement.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean true or false to signify success or failure.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Tools/\-Resources\-Dumper/S\-Q\-Lite\-Database.\-cs\end{DoxyCompactItemize}

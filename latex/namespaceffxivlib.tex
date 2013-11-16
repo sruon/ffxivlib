@@ -4,6 +4,8 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+struct \hyperlink{structffxivlib_1_1_b_u_f_f}{B\-U\-F\-F}
+\item 
 class \hyperlink{classffxivlib_1_1_chatlog}{Chatlog}
 \item 
 class \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B}
@@ -12,6 +14,8 @@ class \hyperlink{classffxivlib_1_1_entity}{Entity}
 \item 
 class \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4}{I\-Container$<$ T, U $>$}
 \begin{DoxyCompactList}\small\item\em Basic managed container for structures and other infos \end{DoxyCompactList}\item 
+class \hyperlink{classffxivlib_1_1_inventory}{Inventory}
+\item 
 class {\bfseries Memory\-Reader}
 \item 
 class \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper}
@@ -19,6 +23,8 @@ class \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper}
 class \hyperlink{classffxivlib_1_1_party_member}{Party\-Member}
 \item 
 class \hyperlink{classffxivlib_1_1_player}{Player}
+\item 
+class {\bfseries Resource\-Parser}
 \item 
 class \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input}
 \item 
@@ -71,6 +77,10 @@ enum \hyperlink{namespaceffxivlib_a7273810711af045adb7151580e025a86}{J\-O\-B} \-
 {\bfseries Pet} = 0x2\-E
  \}
 \begin{DoxyCompactList}\small\item\em Job I\-D as used in various structures \end{DoxyCompactList}\item 
+enum {\bfseries S\-E\-X} \-: byte \{ {\bfseries Male} = 0x0, 
+{\bfseries Female} = 0x1
+ \}
+\item 
 enum \hyperlink{namespaceffxivlib_a93f054414b7ccf7ba7c36f54fcc392f5}{E\-N\-T\-I\-T\-Y\-S\-T\-A\-T\-U\-S} \-: byte \{ \\*
 {\bfseries Idle} = 0x01, 
 {\bfseries Dead} = 0x02, 
@@ -89,7 +99,8 @@ enum \hyperlink{namespaceffxivlib_a856915176aeab1f9b643c0243cb008ee}{S\-T\-A\-T\
 \begin{DoxyCompactList}\small\item\em Status of an Entity (P\-C/\-N\-P\-C) \end{DoxyCompactList}\item 
 enum \hyperlink{namespaceffxivlib_aaa4e86d1ea6dbc1661147e6616256e68}{T\-Y\-P\-E} \-: byte \{ {\bfseries Player} = 0x01, 
 {\bfseries Mob} = 0x02, 
-{\bfseries N\-P\-C} = 0x03
+{\bfseries N\-P\-C} = 0x03, 
+{\bfseries Gathering} = 0x06
  \}
 \begin{DoxyCompactList}\small\item\em Type of the entity \end{DoxyCompactList}\item 
 enum \hyperlink{namespaceffxivlib_a3a6b3a65a3fc9ba42586b2ccc07e4aac}{I\-C\-O\-N} \-: byte \{ \\*
@@ -133,7 +144,27 @@ enum \hyperlink{namespaceffxivlib_a027fd426531e3a42243f5c2b946dde31}{C\-U\-R\-R\
 {\bfseries True} = 0x2, 
 {\bfseries False} = 0x4
  \}
-\begin{DoxyCompactList}\small\item\em Because S\-E likes to use values that don't make sense. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Because S\-E likes to use values that don't make sense. \end{DoxyCompactList}\item 
+enum \hyperlink{namespaceffxivlib_a08bcc753fec0a3174d818ecaa25aec4f}{E\-Q\-U\-I\-P\-\_\-\-P\-O\-S} \-: byte \{ \\*
+{\bfseries Main\-Hand} = 0, 
+{\bfseries Off\-Hand} = 1, 
+{\bfseries Head} = 2, 
+{\bfseries Body} = 3, 
+\\*
+{\bfseries Hands} = 4, 
+{\bfseries Waist} = 5, 
+{\bfseries Legs} = 6, 
+{\bfseries Feet} = 7, 
+\\*
+{\bfseries Neck} = 8, 
+{\bfseries Ears} = 9, 
+{\bfseries Wrists} = 10, 
+{\bfseries Left\-Ring} = 11, 
+\\*
+{\bfseries Right\-Ring} = 12, 
+{\bfseries Soul\-Crystal} = 13
+ \}
+\begin{DoxyCompactList}\small\item\em This is used for get\-Current\-Equipment() \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Enumeration Type Documentation}
@@ -150,6 +181,13 @@ Because S\-E likes to use values that don't make sense.
 
 
 Current action of an \hyperlink{classffxivlib_1_1_entity}{Entity} (P\-C) 
+
+\hypertarget{namespaceffxivlib_a08bcc753fec0a3174d818ecaa25aec4f}{\index{ffxivlib@{ffxivlib}!E\-Q\-U\-I\-P\-\_\-\-P\-O\-S@{E\-Q\-U\-I\-P\-\_\-\-P\-O\-S}}
+\index{E\-Q\-U\-I\-P\-\_\-\-P\-O\-S@{E\-Q\-U\-I\-P\-\_\-\-P\-O\-S}!ffxivlib@{ffxivlib}}
+\subsubsection[{E\-Q\-U\-I\-P\-\_\-\-P\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ffxivlib.\-E\-Q\-U\-I\-P\-\_\-\-P\-O\-S} \-: byte}}\label{namespaceffxivlib_a08bcc753fec0a3174d818ecaa25aec4f}
+
+
+This is used for get\-Current\-Equipment() 
 
 \hypertarget{namespaceffxivlib_a3a6b3a65a3fc9ba42586b2ccc07e4aac}{\index{ffxivlib@{ffxivlib}!I\-C\-O\-N@{I\-C\-O\-N}}
 \index{I\-C\-O\-N@{I\-C\-O\-N}!ffxivlib@{ffxivlib}}
