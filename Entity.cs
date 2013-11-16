@@ -107,6 +107,7 @@ namespace ffxivlib
         /// <summary>
         ///     This function attempts to retrieve a list of Entity by its name in the Entity array
         ///     This is potentially a costly call as we build a complete list to look for the Entity.
+        /// This doesn't include Gathering nodes at the moment. To be fixed.
         /// </summary>
         /// <param name="name">Name of the Entity to be retrieved</param>
         /// <returns>Enumerable list of Entity object or</returns>
@@ -129,7 +130,12 @@ namespace ffxivlib
             var results = entity_list.Where(obj => obj.structure.name == name);
             return results;
         }
-
+        /// <summary>
+        /// Retrieves a list of Entity corresponding to the given TYPE
+        /// Needs to be refactored.
+        /// </summary>
+        /// <param name="type">Type of entity</param>
+        /// <returns>Enumerable list of Entity objects</returns>
         public IEnumerable<Entity> getEntityByType(TYPE type)
         {
             List<int> pointer_path = Constants.PCPTR;
