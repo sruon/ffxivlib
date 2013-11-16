@@ -16,6 +16,12 @@ public static class Constants
             0x0
         };
 
+    internal static readonly List<int> GATHERINGPTR = new List<int>
+        {
+            0x010D5C00,
+            0x0
+        };
+
     // This is the widget for party
     internal static readonly List<int> PARTYPTR = new List<int>
         {
@@ -54,7 +60,7 @@ public static class Constants
     internal const uint CHATLOG_ARRAY_SIZE = 1000;
     internal const uint ENTITY_ARRAY_SIZE = 100;
     internal const uint PARTY_MEMBER_ARRAY_SIZE = 8;
-
+    internal const uint GATHERING_ARRAY_SIZE = 40;
     #endregion
 
     #region Chat related
