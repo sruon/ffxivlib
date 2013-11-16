@@ -7,6 +7,7 @@ namespace ffxivlib
 {
     public class Entity : IContainer<Entity, Entity.ENTITYINFO>
     {
+
         public Entity(ENTITYINFO _structure, IntPtr _address)
         {
             structure = _structure;
@@ -16,6 +17,7 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct ENTITYINFO
         {
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0)] public int GatheringType;
             [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] [FieldOffset(0x30)] public string name;
             // Not exactly PC ID...
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x74)] public int PCID;
@@ -23,10 +25,12 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x8A)] public TYPE MobType;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x8C)] public CURRENTTARGET currentTarget;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x8D)] public byte distance;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x8E)] public byte GatheringStatus;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xA0)] public float X;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xA4)] public float Z;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xA8)] public float Y;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xB0)] public float heading;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x11C)] public byte GatheringInvisible;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x174)] public int ModelID;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x188)] public ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x189)] public bool IsGM;
@@ -81,7 +85,7 @@ namespace ffxivlib
             try
                 {
                     var e = new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer),
-                                       mr.ResolvePointer(pointer));
+                        mr.ResolvePointer(pointer));
                     return e;
                 }
             catch (Exception)
@@ -101,29 +105,56 @@ namespace ffxivlib
         }
 
         /// <summary>
-        ///     This function attempts to retrieve an Entity by its name in the Entity array
+        ///     This function attempts to retrieve a list of Entity by its name in the Entity array
         ///     This is potentially a costly call as we build a complete list to look for the Entity.
         /// </summary>
         /// <param name="name">Name of the Entity to be retrieved</param>
-        /// <returns>Entity object or null</returns>
-        public Entity getEntityByName(string name)
+        /// <returns>Enumerable list of Entity object or</returns>
+        public IEnumerable<Entity> getEntityByName(string name)
         {
             IntPtr pointer = mr.GetArrayStart(Constants.PCPTR);
             var entity_list = new List<Entity>();
             for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
+            {
+                IntPtr address = pointer + (i * 0x4);
+                try
                 {
-                    IntPtr address = pointer + (i*0x4);
-                    try
-                        {
-                            entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
-                        }
-                    catch (Exception)
-                        {
-                            // No Entity at this position
-                        }
+                    entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
                 }
-            Entity result = entity_list.SingleOrDefault(obj => obj.structure.name == name);
-            return result;
+                catch (Exception)
+                {
+                    // No Entity at this position
+                }
+            }
+            var results = entity_list.Where(obj => obj.structure.name == name);
+            return results;
+        }
+
+        public IEnumerable<Entity> getEntityByType(TYPE type)
+        {
+            List<int> pointer_path = Constants.PCPTR;
+            uint array_size = Constants.ENTITY_ARRAY_SIZE;
+            if (type == TYPE.Gathering)
+                {
+                    pointer_path = Constants.GATHERINGPTR;
+                    array_size = Constants.GATHERING_ARRAY_SIZE;
+                }
+            IntPtr pointer = mr.GetArrayStart(pointer_path);
+            var entity_list = new List<Entity>();
+            for (int i = 0; i < array_size; i++)
+            {
+                IntPtr address = pointer + (i * 0x4);
+                try
+                {
+                    entity_list.Add(new Entity(mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
+                }
+                catch (Exception)
+                {
+                    // No Entity at this position
+                }
+            }
+            var results = entity_list.Where(e => e.structure.MobType == type);
+            return results;
         }
     }
 }
