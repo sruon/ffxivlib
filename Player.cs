@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    public class Player : IContainer<Player, Player.PLAYERINFO>
+    public class Player : BaseObject<Player.PLAYERINFO>
     {
         /*
          * At 0x1 the character name is available, but C# throws a Run time error because it's not aligned on proper boundaries,
@@ -11,16 +11,216 @@ namespace ffxivlib
          * Refer to ENTITYINFO(0) for name.
          */
 
-        public Player(PLAYERINFO _structure, IntPtr _address)
+        #region Constructor
+
+        public Player(PLAYERINFO structure, IntPtr address)
+            : base(structure, address)
         {
-            structure = _structure;
-            address = _address;
+            Initialize();
         }
+
+        #endregion
+
+        #region Properties
+
+        public JOB Job { get; set; }
+
+        #region Job Levels
+
+        public byte PGL { get; set; }
+
+        public byte GLD { get; set; }
+
+        public byte MRD { get; set; }
+
+        public byte ARC { get; set; }
+
+        public byte LNC { get; set; }
+
+        public byte THM { get; set; }
+
+        public byte CNJ { get; set; }
+
+        public byte CPT { get; set; }
+
+        public byte BSM { get; set; }
+
+        public byte ARM { get; set; }
+
+        public byte GSM { get; set; }
+
+        public byte LTW { get; set; }
+
+        public byte WVR { get; set; }
+
+        public byte ALC { get; set; }
+
+        public byte CUL { get; set; }
+
+        public byte MIN { get; set; }
+
+        public byte BOT { get; set; }
+
+        public byte FSH { get; set; }
+
+        #endregion
+
+        #region Job Exp In Level
+
+        public int PGL_EIL { get; set; }
+
+        public int GLD_EIL { get; set; }
+
+        public int MRD_EIL { get; set; }
+
+        public int ARC_EIL { get; set; }
+
+        public int LNC_EIL { get; set; }
+
+        public int THM_EIL { get; set; }
+
+        public int CNJ_EIL { get; set; }
+
+        public int ACN_EIL { get; set; }
+
+        public int BSM_EIL { get; set; }
+
+        public int CPT_EIL { get; set; }
+
+        public int GSM_EIL { get; set; }
+
+        public int ARM_EIL { get; set; }
+
+        public int WVR_EIL { get; set; }
+
+        public int LTW_EIL { get; set; }
+
+        public int CUL_EIL { get; set; }
+
+        public int MIN_EIL { get; set; }
+
+        public int BOT_EIL { get; set; }
+
+        public int FSH_EIL { get; set; }
+
+        #endregion
+
+        #region Base Stats
+
+        public short BaseSTR { get; set; }
+
+        public short BaseDEX { get; set; }
+
+        public short BaseVIT { get; set; }
+
+        public short BaseINT { get; set; }
+
+        public short BaseMND { get; set; }
+
+        public short BasePIE { get; set; }
+
+        #endregion
+
+        #region Stats (base+gear+bonus)
+
+        public short STR { get; set; }
+
+        public short DEX { get; set; }
+
+        public short VIT { get; set; }
+
+        public short INT { get; set; }
+
+        public short MND { get; set; }
+
+        public short PIE { get; set; }
+
+        #endregion
+
+        #region Basic infos
+
+        public int MaxHP { get; set; }
+
+        public int MaxMP { get; set; }
+
+        public int MaxTP { get; set; }
+
+        public int MaxGP { get; set; }
+
+        public int MaxCP { get; set; }
+
+        #endregion
+
+        #region Defensive stats
+
+        public short Parry { get; set; }
+
+        public short Defense { get; set; }
+
+        public short Evasion { get; set; }
+
+        public short MagicDefense { get; set; }
+
+        public short SlashingRes { get; set; }
+
+        public short PiercingRes { get; set; }
+
+        public short BluntRes { get; set; }
+
+        public short FireRes { get; set; }
+
+        public short IceRes { get; set; }
+
+        public short WindRes { get; set; }
+
+        public short EarthRes { get; set; }
+
+        public short LightningRes { get; set; }
+
+        public short WaterRes { get; set; }
+
+        #endregion
+
+        #region Offensive stats
+
+        public short AttackPow { get; set; }
+
+        public short Accuracy { get; set; }
+
+        public short CritRate { get; set; }
+
+        public short AttackMagPot { get; set; }
+
+        public short HealMagPot { get; set; }
+
+        public short Determination { get; set; }
+
+        public short SkillSpeed { get; set; }
+
+        public short SpellSpeed { get; set; }
+
+        #endregion
+
+        #region DoH/DoL stats
+
+        public short Craftmanship { get; set; }
+
+        public short Control { get; set; }
+
+        public short Gathering { get; set; }
+
+        public short Perception { get; set; }
+
+        #endregion
+
+        #endregion
+
+        #region Unmanaged structure
 
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct PLAYERINFO
         {
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB job;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB Job;
 
             #region Job Levels
 
@@ -70,12 +270,12 @@ namespace ffxivlib
 
             #region Base Stats
 
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xE4)] public short baseSTR;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xE8)] public short baseDEX;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xEC)] public short baseVIT;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF0)] public short baseINT;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF4)] public short baseMND;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF8)] public short basePIE;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xE4)] public short BaseSTR;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xE8)] public short BaseDEX;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xEC)] public short BaseVIT;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF0)] public short BaseINT;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF4)] public short BaseMND;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xF8)] public short BasePIE;
 
             #endregion
 
@@ -92,11 +292,11 @@ namespace ffxivlib
 
             #region Basic infos
 
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x118)] public int mHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x111C)] public int mMP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x120)] public int mTP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x124)] public int mGP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x128)] public int mCP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x118)] public int MaxHP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x111C)] public int MaxMP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x120)] public int MaxTP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x124)] public int MaxGP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x128)] public int MaxCP;
 
             #endregion
 
@@ -140,19 +340,25 @@ namespace ffxivlib
 
             #endregion
         };
+
+        #endregion
     }
 
     public partial class FFXIVLIB
     {
+        #region Public methods
+
         /// <summary>
         ///     This function retrieves the current Player info
         /// </summary>
         /// <returns>Player object</returns>
-        public Player getPlayerInfo()
+        public Player GetPlayerInfo()
         {
-            IntPtr pointer = mr.ResolvePointerPath(Constants.PLAYERPTR);
-            var p = new Player(mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
+            IntPtr pointer = _mr.ResolvePointerPath(Constants.PLAYERPTR);
+            var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }
+
+        #endregion
     }
 }

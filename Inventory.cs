@@ -4,9 +4,25 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    public class Inventory : IContainer<Inventory, Inventory.INVENTORY>
+    public class Inventory : BaseObject<Inventory.INVENTORY>
     {
-        private readonly MemoryReader mr = MemoryReader.getInstance();
+        #region Constructor
+
+        public Inventory(INVENTORY structure, IntPtr address)
+            : base(structure, address)
+        {
+            Initialize();
+        }
+
+        #endregion
+
+        #region Fields
+
+        private readonly MemoryReader _mr = MemoryReader.GetInstance();
+
+        #endregion
+
+        #region Unmanaged structure
 
         /// <summary>
         /// Structure representing an item
@@ -14,38 +30,53 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct ITEM
         {
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public uint ItemID;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0C)] public uint Amount;
+            [MarshalAs(UnmanagedType.I4)]
+            [FieldOffset(0x8)]
+            public uint ItemID;
+            [MarshalAs(UnmanagedType.I4)]
+            [FieldOffset(0x0C)]
+            public uint Amount;
 
             /// <summary>
             /// 10000 = fully spiritbond
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x10)] public short Spiritbond;
+            [MarshalAs(UnmanagedType.I2)]
+            [FieldOffset(0x10)]
+            public short Spiritbond;
 
             /// <summary>
             /// 30000 = fully repaired
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x12)] public short Durability;
+            [MarshalAs(UnmanagedType.I2)]
+            [FieldOffset(0x12)]
+            public short Durability;
 
             /// <summary>
             /// Related to materia slots, but no idea what.
             /// </summary>
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int Materia_unk1;
+            [MarshalAs(UnmanagedType.I4)]
+            [FieldOffset(0x18)]
+            public int Materia_unk1;
 
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1E)] public byte Materia_unk2;
+            [MarshalAs(UnmanagedType.I1)]
+            [FieldOffset(0x1E)]
+            public byte Materia_unk2;
 
             /// <summary>
             /// I am deeply confused about this one, if item is related to a quest this is equal to the QuestID.
             /// BUT, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why SE?
             /// </summary>
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x3C)] public uint QuestID;
+            [MarshalAs(UnmanagedType.I4)]
+            [FieldOffset(0x3C)]
+            public uint QuestID;
 
             /// <summary>
             /// Padding to make sure our struct are the same size as XIV ones, allows me to use Marshal.SizeOf
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3E)] public short Padding;
+            [MarshalAs(UnmanagedType.I2)]
+            [FieldOffset(0x3E)]
+            public short Padding;
         };
-
         /// <summary>
         /// Structure holding all the pointers to different subarrays.
         /// </summary>
@@ -63,19 +94,16 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x24)] public int CompanyExtra;
         }
 
-        public Inventory(INVENTORY _structure, IntPtr _address)
-        {
-            structure = _structure;
-            address = _address;
-        }
+        #endregion
+
+        #region InventoryBuilder
 
         /// <summary>
         /// Basic container for our list of items.
         /// </summary>
         public class InventoryBuilder
         {
-            public List<ITEM> items { get; set; }
-            private readonly MemoryReader mr = MemoryReader.getInstance();
+            public List<ITEM> Items { get; set; }
 
             /// <summary>
             /// Constructor building the list of items out of initial pointer and count.
@@ -85,16 +113,20 @@ namespace ffxivlib
             /// <param name="clean">Should we ignore empty objects? Useful for currently equipped items.</param>
             internal InventoryBuilder(IntPtr pointer, int count, bool clean)
             {
-                items = new List<ITEM>();
+                MemoryReader mr = MemoryReader.GetInstance();
+                Items = new List<ITEM>();
                 for (int i = 0; i < count; i++)
                     {
-                        ITEM currentItem = mr.CreateStructFromAddress<ITEM>(pointer + (i*Marshal.SizeOf(typeof (ITEM))));
+                        var currentItem = mr.CreateStructFromAddress<ITEM>(pointer + (i*Marshal.SizeOf(typeof (ITEM))));
                         if (currentItem.ItemID != 0 || currentItem.QuestID != 0 || !clean)
-                            items.Add(currentItem);
+                            Items.Add(currentItem);
                     }
             }
 
-            internal InventoryBuilder() {}
+            internal InventoryBuilder()
+            {
+                var mr = MemoryReader.GetInstance();
+            }
 
             /// <summary>
             /// Merges two lists
@@ -104,94 +136,101 @@ namespace ffxivlib
             /// <returns>New merged list</returns>
             public static InventoryBuilder operator +(InventoryBuilder ic1, InventoryBuilder ic2)
             {
-                InventoryBuilder ic = new InventoryBuilder();
-                ic.items = new List<ITEM>();
-                if (ic1.items != null)
-                    ic.items.AddRange(ic1.items);
-                if (ic2.items != null)
-                    ic.items.AddRange(ic2.items);
+                var ic = new InventoryBuilder {Items = new List<ITEM>()};
+                if (ic1.Items != null)
+                    ic.Items.AddRange(ic1.Items);
+                if (ic2.Items != null)
+                    ic.Items.AddRange(ic2.Items);
                 return ic;
             }
         }
+
+        #endregion
+
+        #region Private methods
 
         /// <summary>
         /// Builds our list out of our pointers.
         /// </summary>
         /// <param name="ptr">First pointer to subarray</param>
         /// <param name="count">Number of pointers to process</param>
-        /// <param name="offset">Offset between pointers</param>
+        /// <param name="clean"></param>
         /// <returns>Final list</returns>
-        private InventoryBuilder buildSubList(IntPtr ptr, int count, bool clean = true)
+        private InventoryBuilder BuildSubList(IntPtr ptr, int count, bool clean = true)
         {
-            InventoryBuilder ic = new InventoryBuilder();
+            var ic = new InventoryBuilder();
             for (int i = 0; i < count; i++)
                 {
-                    IntPtr ic_ptr = mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET));
+                    IntPtr icPTR = _mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET));
                     // Count of container is at 0xC.
-                    int ic_count = (int)mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET) + 0xC);
-                    ic = ic + new InventoryBuilder(ic_ptr, ic_count, clean);
+                    var icCount = (int)_mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET) + 0xC);
+                    ic = ic + new InventoryBuilder(icPTR, icCount, clean);
                 }
             return ic;
         }
 
-        internal List<ITEM> getSelfInventory()
+        internal List<ITEM> GetSelfInventory()
         {
-            InventoryBuilder ic = buildSubList((IntPtr) structure.SelfInventory, Constants.SELF_INVENTORY_SIZE);
-            ic = ic + buildSubList((IntPtr) structure.SelfExtra, Constants.SELF_EXTRA_SIZE);
-            ic = ic + buildSubList((IntPtr) structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE);
-            return ic.items;
+            InventoryBuilder ic = BuildSubList((IntPtr) Structure.SelfInventory, Constants.SELF_INVENTORY_SIZE);
+            ic = ic + BuildSubList((IntPtr) Structure.SelfExtra, Constants.SELF_EXTRA_SIZE);
+            ic = ic + BuildSubList((IntPtr) Structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE);
+            return ic.Items;
         }
 
-        internal List<ITEM> getCurrentEquipment()
+        internal List<ITEM> GetCurrentEquipment()
         {
-            return buildSubList((IntPtr) structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE, false).items;
+            return BuildSubList((IntPtr) Structure.CurrentEquipment, Constants.CURRENT_EQUIPMENT_SIZE, false).Items;
         }
 
-        internal List<ITEM> getRetainerInventory()
+        internal List<ITEM> GetRetainerInventory()
         {
-            InventoryBuilder ic = buildSubList((IntPtr) structure.RetainerInventory, Constants.RETAINER_INVENTORY_SIZE);
-            ic = ic + buildSubList((IntPtr) structure.RetainerExtra, Constants.RETAINER_EXTRA_SIZE);
-            return ic.items;
+            InventoryBuilder ic = BuildSubList((IntPtr) Structure.RetainerInventory, Constants.RETAINER_INVENTORY_SIZE);
+            ic = ic + BuildSubList((IntPtr) Structure.RetainerExtra, Constants.RETAINER_EXTRA_SIZE);
+            return ic.Items;
         }
 
-        internal List<ITEM> getArmoryChest()
+        internal List<ITEM> GetArmoryChest()
         {
-            InventoryBuilder ic = buildSubList((IntPtr) structure.ArmoryChestMH, Constants.ARMORY_CHEST_MH_SIZE);
-            ic = ic + buildSubList((IntPtr) structure.ArmoryChest, Constants.ARMORY_CHEST_SIZE);
-            return ic.items;
+            InventoryBuilder ic = BuildSubList((IntPtr) Structure.ArmoryChestMH, Constants.ARMORY_CHEST_MH_SIZE);
+            ic = ic + BuildSubList((IntPtr) Structure.ArmoryChest, Constants.ARMORY_CHEST_SIZE);
+            return ic.Items;
         }
 
-        internal List<ITEM> getCompanyInventory()
+        internal List<ITEM> GetCompanyInventory()
         {
-            InventoryBuilder ic = buildSubList((IntPtr) structure.CompanyInventory, Constants.COMPANY_INVENTORY_SIZE);
-            ic = ic + buildSubList((IntPtr) structure.CompanyExtra, Constants.COMPANY_EXTRA_SIZE);
-            return ic.items;
+            InventoryBuilder ic = BuildSubList((IntPtr) Structure.CompanyInventory, Constants.COMPANY_INVENTORY_SIZE);
+            ic = ic + BuildSubList((IntPtr) Structure.CompanyExtra, Constants.COMPANY_EXTRA_SIZE);
+            return ic.Items;
         }
+
+        #endregion
     }
 
     public partial class FFXIVLIB
     {
+        #region Public methods
+
         /// <summary>
         /// This returns your inventory, extra inventory (gil, crystals, tomes, seals), 
         /// key items, calamity salvager and currently equipped items
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> getSelfInventory()
+        public List<Inventory.ITEM> GetSelfInventory()
         {
-            IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
-            var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            return i.getSelfInventory();
+            IntPtr pointer = _mr.GetArrayStart(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            return i.GetSelfInventory();
         }
 
         /// <summary>
         /// This returns your currently equipped items. See EQUIP_POS enum.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> getCurrentEquipment()
+        public List<Inventory.ITEM> GetCurrentEquipment()
         {
-            IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
-            var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            return i.getCurrentEquipment();
+            IntPtr pointer = _mr.GetArrayStart(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            return i.GetCurrentEquipment();
         }
 
         /// <summary>
@@ -199,22 +238,22 @@ namespace ffxivlib
         /// This only works while checking a retainer.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> getRetainerInventory()
+        public List<Inventory.ITEM> GetRetainerInventory()
         {
-            IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
-            var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            return i.getRetainerInventory();
+            IntPtr pointer = _mr.GetArrayStart(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            return i.GetRetainerInventory();
         }
 
         /// <summary>
         /// This returns your whole Armory Chest.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> getArmoryChest()
+        public List<Inventory.ITEM> GetArmoryChest()
         {
-            IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
-            var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            return i.getArmoryChest();
+            IntPtr pointer = _mr.GetArrayStart(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            return i.GetArmoryChest();
         }
 
         /// <summary>
@@ -222,11 +261,13 @@ namespace ffxivlib
         /// This might only work while checking the Free Company chest.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> getCompanyInventory()
+        public List<Inventory.ITEM> GetCompanyInventory()
         {
-            IntPtr pointer = mr.GetArrayStart(Constants.INVENTORYPTR);
-            var i = new Inventory(mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            return i.getCompanyInventory();
+            IntPtr pointer = _mr.GetArrayStart(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            return i.GetCompanyInventory();
         }
+
+        #endregion
     }
 }

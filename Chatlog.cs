@@ -5,30 +5,40 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    public partial class Chatlog : IContainer<Chatlog, Chatlog.CHATLOGINFO>
+    public partial class Chatlog : BaseObject<Chatlog.CHATLOGINFO>
     {
-        private readonly List<Entry> buffer = new List<Entry>();
-        private readonly MemoryReader mr = MemoryReader.getInstance();
-        private readonly List<int> offsets_list = new List<int>();
-        private int currentOffset;
-        private int previousArrayIndex;
-        private int previousOffset;
+        #region Constructor
 
-        public Chatlog(CHATLOGINFO _structure, IntPtr _address)
+        public Chatlog(CHATLOGINFO structure, IntPtr address)
+            : base(structure, address)
         {
-            structure = _structure;
-            address = _address;
+            Initialize();
         }
+
+        #endregion
+
+        #region Fields
+
+        private readonly List<Entry> _buffer = new List<Entry>();
+        private readonly MemoryReader _mr = MemoryReader.GetInstance();
+        private readonly List<int> _offsetsList = new List<int>();
+        private int _currentOffset;
+        private int _previousArrayIndex;
+        private int _previousOffset;
+
+        #endregion
+
+        #region Private Methods
 
         /// <summary>
         ///     Updates our offsets list
         /// </summary>
-        private void updateOffsetArray()
+        private void UpdateOffsetArray()
         {
-            offsets_list.Clear();
-            MemoryReader mr = MemoryReader.getInstance();
+            _offsetsList.Clear();
+            MemoryReader mr = MemoryReader.GetInstance();
             for (int i = 0; i < Constants.CHATLOG_ARRAY_SIZE; i++)
-                offsets_list.Add((int) mr.ResolvePointer((IntPtr) (structure.ArrayStart + (i*0x4))));
+                _offsetsList.Add((int) mr.ResolvePointer((IntPtr) (Structure.ArrayStart + (i*0x4))));
         }
 
         /// <summary>
@@ -42,7 +52,7 @@ namespace ffxivlib
             int bytesread;
 
             var cle =
-                new Entry(mr.ReadAdress((IntPtr) (structure.LogStart + start), (uint) (end - start), out bytesread));
+                new Entry(_mr.ReadAdress((IntPtr) (Structure.LogStart + start), (uint) (end - start), out bytesread));
             return cle;
         }
 
@@ -54,60 +64,68 @@ namespace ffxivlib
         /// <param name="start">Array index to start at</param>
         /// <param name="end">Array index to stop at</param>
         /// <returns>List of Entry instances</returns>
-        private List<Entry> ReadEntries(int start, int end)
+        private IEnumerable<Entry> ReadEntries(int start, int end)
         {
             var ret = new List<Entry>();
             for (int i = start; i < end; i++)
                 {
-                    currentOffset = offsets_list[i];
-                    ret.Add(ReadEntry(previousOffset, currentOffset));
-                    previousOffset = currentOffset;
+                    _currentOffset = _offsetsList[i];
+                    ret.Add(ReadEntry(_previousOffset, _currentOffset));
+                    _previousOffset = _currentOffset;
                 }
             return ret;
         }
 
         /// <summary>
+        ///     This updates our internal buffer.
+        /// </summary>
+        private void UpdateBuffer()
+        {
+            UpdateOffsetArray();
+            Structure = _mr.CreateStructFromAddress<CHATLOGINFO>(Address);
+            int currentArrayIndex = (Structure.ArrayCurrent - Structure.ArrayStart) / 4;
+
+            // I forgot why we did this
+            if (currentArrayIndex < _previousArrayIndex)
+            {
+                _buffer.AddRange(ReadEntries(_previousArrayIndex, (int)Constants.CHATLOG_ARRAY_SIZE));
+                _previousOffset = 0;
+                _previousArrayIndex = 0;
+            }
+            if (_previousArrayIndex < currentArrayIndex)
+                _buffer.AddRange(ReadEntries(_previousArrayIndex, currentArrayIndex));
+            _previousArrayIndex = currentArrayIndex;
+        }
+
+        #endregion
+
+        #region Public methods
+
+        /// <summary>
         ///     Is there a new line?
         /// </summary>
         /// <returns></returns>
-        public bool isNewLine()
+        public bool IsNewLine()
         {
-            updateBuffer();
-            return (buffer.Count > 0);
-        }
-
-        /// <summary>
-        ///     This updates our internal buffer.
-        /// </summary>
-        private void updateBuffer()
-        {
-            updateOffsetArray();
-            structure = mr.CreateStructFromAddress<CHATLOGINFO>(address);
-            int currentArrayIndex = (structure.ArrayCurrent - structure.ArrayStart)/4;
-
-            // I forgot why we did this
-            if (currentArrayIndex < previousArrayIndex)
-                {
-                    buffer.AddRange(ReadEntries(previousArrayIndex, (int) Constants.CHATLOG_ARRAY_SIZE));
-                    previousOffset = 0;
-                    previousArrayIndex = 0;
-                }
-            if (previousArrayIndex < currentArrayIndex)
-                buffer.AddRange(ReadEntries(previousArrayIndex, currentArrayIndex));
-            previousArrayIndex = currentArrayIndex;
+            UpdateBuffer();
+            return (_buffer.Count > 0);
         }
 
         /// <summary>
         ///     This returns a copy of our buffer, and clear it.
         /// </summary>
         /// <returns>List of Entry instances</returns>
-        public List<Entry> getChatLogLines()
+        public List<Entry> GetChatLogLines()
         {
-            updateBuffer();
-            List<Entry> newList = buffer.ToList();
-            buffer.Clear();
+            UpdateBuffer();
+            List<Entry> newList = _buffer.ToList();
+            _buffer.Clear();
             return newList;
         }
+
+        #endregion
+
+        #region Unmanaged structure
 
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct CHATLOGINFO
@@ -117,19 +135,25 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x24)] public int ArrayCurrent;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x30)] public int LogStart;
         };
+
+        #endregion
     }
 
     public partial class FFXIVLIB
     {
+        #region Public methods
+
         /// <summary>
         ///     This function instantiates a Chatlog object
         /// </summary>
         /// <returns>Chatlog instance</returns>
-        public Chatlog getChatlog()
+        public Chatlog GetChatlog()
         {
-            IntPtr pointer = mr.ResolvePointerPath(Constants.CHATPTR);
-            var c = new Chatlog(mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
+            IntPtr pointer = _mr.ResolvePointerPath(Constants.CHATPTR);
+            var c = new Chatlog(_mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
             return c;
         }
+
+        #endregion
     }
 }
