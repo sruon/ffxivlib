@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 public static class Constants
 {
+// ReSharper disable InconsistentNaming
     internal const string PROCESS_NAME = "ffxiv";
+
     internal const string WINDOW_TITLE = "FINAL FANTASY XIV: A Realm Reborn";
     // I don't remember why I had to check this, might be useless
     internal const Int32 PROCESS_MMS = 10000000;
@@ -105,4 +107,5 @@ public static class Constants
     }
 
     #endregion
+    // ReSharper restore InconsistentNaming
 }

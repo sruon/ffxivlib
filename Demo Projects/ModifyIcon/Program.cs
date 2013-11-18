@@ -9,9 +9,9 @@ namespace ModifyIcon
         {
             FFXIVLIB instance = new FFXIVLIB();
             // 0 is always your own character
-            Entity e = instance.getEntityInfo(0);
-            Console.WriteLine("Changing icon to Yoshi-P for player {0}", e.structure.name);
-            e.modify("icon", (byte) ICON.Yoshida);
+            Entity e = instance.GetEntityInfo(0);
+            Console.WriteLine("Changing icon to Yoshi-P for player {0}", e.Structure.Name);
+            e.Modify("icon", (byte) ICON.Yoshida);
             Console.WriteLine("Done..");
             Console.ReadLine();
         }

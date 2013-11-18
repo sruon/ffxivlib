@@ -12,9 +12,9 @@ namespace ModifyTarget
         {
             FFXIVLIB instance = new FFXIVLIB();
             // Retrieve our own character
-            Entity e = instance.getEntityInfo(0);
-            Target t = instance.getTargets();
-            t.modify("CurrentTarget", (int) e.address);
+            Entity e = instance.GetEntityInfo(0);
+            Target t = instance.GetTargets();
+            t.Modify("CurrentTarget", (int) e.Address);
         }
     }
 }

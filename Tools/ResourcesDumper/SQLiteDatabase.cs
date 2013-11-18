@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
+using System.Linq;
 
 class SQLiteDatabase
 {
-    String dbConnection;
+    readonly String _dbConnection;
 
     /// <summary>
     ///     Default Constructor for SQLiteDatabase Class.
     /// </summary>
     public SQLiteDatabase()
     {
-        dbConnection = "Data Source=recipes.s3db";
+        _dbConnection = "Data Source=recipes.s3db";
     }
 
     /// <summary>
@@ -21,7 +22,7 @@ class SQLiteDatabase
     /// <param name="inputFile">The File containing the DB</param>
     public SQLiteDatabase(String inputFile)
     {
-        dbConnection = String.Format("Data Source={0}", inputFile);
+        _dbConnection = String.Format("Data Source={0}", inputFile);
     }
 
     /// <summary>
@@ -30,13 +31,9 @@ class SQLiteDatabase
     /// <param name="connectionOpts">A dictionary containing all desired options and their values</param>
     public SQLiteDatabase(Dictionary<String, String> connectionOpts)
     {
-        String str = "";
-        foreach (KeyValuePair<String, String> row in connectionOpts)
-        {
-            str += String.Format("{0}={1}; ", row.Key, row.Value);
-        }
+        String str = connectionOpts.Aggregate("", (current, row) => current + String.Format("{0}={1}; ", row.Key, row.Value));
         str = str.Trim().Substring(0, str.Length - 1);
-        dbConnection = str;
+        _dbConnection = str;
     }
 
     /// <summary>
@@ -49,7 +46,7 @@ class SQLiteDatabase
         DataTable dt = new DataTable();
         try
         {
-            SQLiteConnection cnn = new SQLiteConnection(dbConnection);
+            SQLiteConnection cnn = new SQLiteConnection(_dbConnection);
             cnn.Open();
             SQLiteCommand mycommand = new SQLiteCommand(cnn);
             mycommand.CommandText = sql;
@@ -72,7 +69,7 @@ class SQLiteDatabase
     /// <returns>An Integer containing the number of rows updated.</returns>
     public int ExecuteNonQuery(string sql)
     {
-        SQLiteConnection cnn = new SQLiteConnection(dbConnection);
+        SQLiteConnection cnn = new SQLiteConnection(_dbConnection);
         cnn.Open();
         SQLiteCommand mycommand = new SQLiteCommand(cnn);
         mycommand.CommandText = sql;
@@ -88,7 +85,7 @@ class SQLiteDatabase
     /// <returns>A string.</returns>
     public string ExecuteScalar(string sql)
     {
-        SQLiteConnection cnn = new SQLiteConnection(dbConnection);
+        SQLiteConnection cnn = new SQLiteConnection(_dbConnection);
         cnn.Open();
         SQLiteCommand mycommand = new SQLiteCommand(cnn);
         mycommand.CommandText = sql;
@@ -113,16 +110,13 @@ class SQLiteDatabase
         String vals = "";
         Boolean returnCode = true;
         if (data.Count >= 1)
-        {
-            foreach (KeyValuePair<String, String> val in data)
             {
-                vals += String.Format(" {0} = '{1}',", val.Key.ToString(), val.Value.ToString());
+                vals = data.Aggregate(vals, (current, val) => current + String.Format(" {0} = '{1}',", val.Key.ToString(), val.Value.ToString()));
+                vals = vals.Substring(0, vals.Length - 1);
             }
-            vals = vals.Substring(0, vals.Length - 1);
-        }
         try
         {
-            this.ExecuteNonQuery(String.Format("update {0} set {1} where {2};", tableName, vals, where));
+            ExecuteNonQuery(String.Format("update {0} set {1} where {2};", tableName, vals, where));
         }
         catch
         {
@@ -142,7 +136,7 @@ class SQLiteDatabase
         Boolean returnCode = true;
         try
         {
-            this.ExecuteNonQuery(String.Format("delete from {0} where {1};", tableName, where));
+            ExecuteNonQuery(String.Format("delete from {0} where {1};", tableName, where));
         }
         catch (Exception)
         {
@@ -164,14 +158,14 @@ class SQLiteDatabase
         Boolean returnCode = true;
         foreach (KeyValuePair<String, String> val in data)
         {
-            columns += String.Format(" {0},", val.Key.ToString());
+            columns += String.Format(" {0},", val.Key);
             values += String.Format(" '{0}',", val.Value);
         }
         columns = columns.Substring(0, columns.Length - 1);
         values = values.Substring(0, values.Length - 1);
         try
         {
-            this.ExecuteNonQuery(String.Format("insert into {0}({1}) values({2});", tableName, columns, values));
+            ExecuteNonQuery(String.Format("insert into {0}({1}) values({2});", tableName, columns, values));
         }
         catch (Exception)
         {
@@ -184,15 +178,14 @@ class SQLiteDatabase
     ///     Allows the programmer to easily delete all data from the DB.
     /// </summary>
     /// <returns>A boolean true or false to signify success or failure.</returns>
-    public bool ClearDB()
+    public bool ClearDb()
     {
-        DataTable tables;
         try
         {
-            tables = this.GetDataTable("select NAME from SQLITE_MASTER where type='table' order by NAME;");
+            DataTable tables = GetDataTable("select NAME from SQLITE_MASTER where type='table' order by NAME;");
             foreach (DataRow table in tables.Rows)
             {
-                this.ClearTable(table["NAME"].ToString());
+                ClearTable(table["NAME"].ToString());
             }
             return true;
         }
@@ -202,18 +195,14 @@ class SQLiteDatabase
         }
     }
 
-    public List<String> getTables()
+    public List<String> GetTables()
     {
-        DataTable tables;
-        List<String> table_list = new List<String>();
+        List<String> tableList = new List<String>();
         try
         {
-            tables = this.GetDataTable("select NAME from SQLITE_MASTER where type='table' order by NAME;");
-            foreach (DataRow table in tables.Rows)
-            {
-                table_list.Add(table["NAME"].ToString());
-            }
-            return table_list;
+            DataTable tables = GetDataTable("select NAME from SQLITE_MASTER where type='table' order by NAME;");
+            tableList.AddRange(from DataRow table in tables.Rows select table["NAME"].ToString());
+            return tableList;
         }
         catch
         {
@@ -230,7 +219,7 @@ class SQLiteDatabase
         try
         {
 
-            this.ExecuteNonQuery(String.Format("delete from {0};", table));
+            ExecuteNonQuery(String.Format("delete from {0};", table));
             return true;
         }
         catch

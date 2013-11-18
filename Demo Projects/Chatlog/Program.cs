@@ -10,19 +10,20 @@ namespace ChatlogTest
         private static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
-            Chatlog c = instance.getChatlog();
+            Chatlog c = instance.GetChatlog();
             while (true)
                 {
-                    if (c.isNewLine())
+                    if (c.IsNewLine())
                         {
-                            List<Chatlog.Entry> test = c.getChatLogLines();
+                            List<Chatlog.Entry> test = c.GetChatLogLines();
                             if (test.Count > 0)
-                                Console.WriteLine("{0} new log lines", test.Count.ToString());
+                                Console.WriteLine("{0} new log lines", test.Count);
                             foreach (Chatlog.Entry line in test)
-                                Console.WriteLine("{0}[{1}] -> {2}", line.timestamp.ToString(), line.code, line.text);
+                                Console.WriteLine("{0}[{1}] -> {2}", line.Timestamp, line.Code, line.Text);
                         }
                     Thread.Sleep(300);
                 }
+// ReSharper disable once FunctionNeverReturns
         }
     }
 }

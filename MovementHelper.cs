@@ -10,27 +10,37 @@ namespace ffxivlib
     /// </summary>
     public class MovementHelper
     {
-        private volatile bool _stop;
-        private volatile bool _pause;
-        private readonly Entity player;
-        private readonly SendKeyInput ski = SendKeyInput.getInstance();
-        private List<Coords> coords_list = new List<Coords>();
-        private readonly Serializer serializer = new Serializer();
-        private readonly SendKeyInput.VKKeys left_key;
-        private readonly SendKeyInput.VKKeys right_key;
-        private readonly SendKeyInput.VKKeys forward_key;
+        #region Constructor
 
-        internal MovementHelper(Entity _player,
-                                SendKeyInput.VKKeys _left_key = SendKeyInput.VKKeys.KEY_A,
-                                SendKeyInput.VKKeys _right_key = SendKeyInput.VKKeys.KEY_D,
-                                SendKeyInput.VKKeys _forward_key = SendKeyInput.VKKeys.KEY_W)
+        internal MovementHelper(Entity player,
+                                SendKeyInput.VKKeys leftKey = SendKeyInput.VKKeys.KEY_A,
+                                SendKeyInput.VKKeys rightKey = SendKeyInput.VKKeys.KEY_D,
+                                SendKeyInput.VKKeys forwardKey = SendKeyInput.VKKeys.KEY_W)
         {
-            player = _player;
-            left_key = _left_key;
-            right_key = _right_key;
-            forward_key = _forward_key;
+            _player = player;
+            _leftKey = leftKey;
+            _rightKey = rightKey;
+            _forwardKey = forwardKey;
             _pause = false;
         }
+
+        #endregion
+
+        #region Fields
+
+        private volatile bool _stop;
+        private volatile bool _pause;
+        private readonly Entity _player;
+        private readonly SendKeyInput _ski = SendKeyInput.GetInstance();
+        private List<Coords> _coordsList = new List<Coords>();
+        private readonly Serializer _serializer = new Serializer();
+        private readonly SendKeyInput.VKKeys _leftKey;
+        private readonly SendKeyInput.VKKeys _rightKey;
+        private readonly SendKeyInput.VKKeys _forwardKey;
+
+        #endregion
+
+        #region Coords
 
         public struct Coords
         {
@@ -59,19 +69,23 @@ namespace ffxivlib
             }
         }
 
+        #endregion
+
+        #region Private methods
+
         /// <summary>
         /// Returns the distance to a given position
         /// </summary>
-        /// <param name="X">X</param>
-        /// <param name="Y">Y</param>
-        /// <param name="Z">Z</param>
+        /// <param name="x">X</param>
+        /// <param name="y">Y</param>
+        /// <param name="z">Z</param>
         /// <returns>Distance</returns>
-        private double DistanceTo(double X, double Y, double Z)
+        private double DistanceTo(double x, double y, double z)
         {
-            player.refresh();
+            _player.Refresh();
             return
-                Math.Sqrt(Math.Pow((player.structure.X - X), 2) + Math.Pow((player.structure.Y - Y), 2) +
-                          Math.Pow((Z - player.structure.Z), 2));
+                Math.Sqrt(Math.Pow((_player.Structure.X - x), 2) + Math.Pow((_player.Structure.Y - y), 2) +
+                          Math.Pow((z - _player.Structure.Z), 2));
         }
 
         /// <summary>
@@ -79,7 +93,7 @@ namespace ffxivlib
         /// </summary>
         /// <param name="angle">Radian angle (-Pi to Pi)</param>
         /// <returns>Degree angle (0 to 2Pi)</returns>
-        private float XIVRadianToDegree(float angle)
+        private static float XIVRadianToDegree(float angle)
         {
             return (float) ((angle + Math.PI)*(180.0/Math.PI));
         }
@@ -87,17 +101,16 @@ namespace ffxivlib
         /// <summary>
         /// Returns the angle we should face in order to reach the Target
         /// </summary>
-        /// <param name="X"></param>
-        /// <param name="Y"></param>
-        /// <param name="Z"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         /// <returns></returns>
-        private float HeadingTo(float X, float Y)
+        private float HeadingTo(float x, float y)
         {
-            X = X - player.structure.X;
-            Y = Y - player.structure.Y;
-            double H = -Math.Atan2(Y, X);
-            H = XIVRadianToDegree((float) H) + 90;
-            return (float) H%360;
+            x = x - _player.Structure.X;
+            y = y - _player.Structure.Y;
+            double h = -Math.Atan2(y, x);
+            h = XIVRadianToDegree((float) h) + 90;
+            return (float) h%360;
         }
 
         /// <summary>
@@ -126,65 +139,19 @@ namespace ffxivlib
             if (pHeading < tHeading)
                 {
                     if (tHeading - pHeading < 180)
-                        return left_key;
-                    else
-                        return right_key;
+                        return _leftKey;
+                    return _rightKey;
                 }
             if (pHeading > tHeading)
                 {
                     if (pHeading - tHeading < 180)
-                        return right_key;
-                    else
-                        return left_key;
+                        return _rightKey;
+                    return _leftKey;
                 }
-            return right_key;
+            return _rightKey;
         }
 
-        /// <summary>
-        /// Heads to a given coordinate
-        /// </summary>
-        /// <param name="X">X</param>
-        /// <param name="Y">Y</param>
-        /// <param name="Z">Z</param>
-        public void GoToPos(float X, float Y, float Z)
-        {
-            bool IsRunning = false;
-            float DistanceTolerance = 5f;
-            double Heading = 0.0f;
-            double PlayerHeading = 0.0f;
-            double Herror = 0.0f;
-            uint HeadingTolerance = 20;
-            while (DistanceTo(X, Y, Z) > DistanceTolerance)
-                {
-                    if (!_pause)
-                        {
-                            player.refresh();
-                            Heading = HeadingTo(X, Y);
-                            PlayerHeading = XIVRadianToDegree(player.structure.heading);
-                            Herror = HeadingError(PlayerHeading, Heading);
-                            while (Herror > HeadingTolerance)
-                                {
-                                    SendKeyInput.VKKeys key = WhereToHeadto(Heading, PlayerHeading);
-                                    ski.SendKeyPress(key);
-                                    player.refresh();
-                                    Heading = HeadingTo(X, Y);
-                                    PlayerHeading = XIVRadianToDegree(player.structure.heading);
-                                    Herror = HeadingError(PlayerHeading, Heading);
-                                }
-                            if (!IsRunning)
-                                {
-                                    IsRunning = true;
-                                    ski.SendKeyPress(forward_key, false);
-                                }
-                        }
-                    else
-                        {
-                            Thread.Sleep(500);
-                        }
-                }
-            ski.SendKeyPress(forward_key, true);
-        }
-
+        
         /// <summary>
         /// Starts recording a list of coords to be used later as a waypoint.
         /// </summary>
@@ -192,7 +159,7 @@ namespace ffxivlib
         /// <param name="delay">Optionnal delay between points</param>
         internal void _startRecordingWaypoint(string filename = null, int delay = 400)
         {
-            Coords last = new Coords
+            var last = new Coords
                 {
                     X = 0,
                     Y = 0,
@@ -201,46 +168,23 @@ namespace ffxivlib
             while (!_stop)
                 {
                     Thread.Sleep(delay);
-                    lock (coords_list)
+                    lock (_coordsList)
                         {
-                            if (coords_list.Count > 0)
-                                last = coords_list.Last();
-                            player.refresh();
-                            Coords new_pos = new Coords
+                            if (_coordsList.Count > 0)
+                                last = _coordsList.Last();
+                            _player.Refresh();
+                            var newPos = new Coords
                                 {
-                                    X = player.structure.X,
-                                    Y = player.structure.Y,
-                                    Z = player.structure.Z,
+                                    X = _player.Structure.X,
+                                    Y = _player.Structure.Y,
+                                    Z = _player.Structure.Z,
                                 };
-                            if (new_pos != last)
-                                coords_list.Add(new_pos);
+                            if (newPos != last)
+                                _coordsList.Add(newPos);
                         }
                 }
             if (filename != null)
-                serializer.Serialize(filename, coords_list);
-        }
-
-        /// <summary>
-        /// Starts a thread recording waypoint.
-        /// </summary>
-        /// <param name="filename">Filename to save waypoint to.</param>
-        /// <param name="delay">Delay in ms between coordinates (default: 400)</param>
-        public void startRecordingCoordinates(string filename = null, int delay = 400)
-        {
-            var t = new Thread(() => _startRecordingWaypoint(filename, delay));
-            t.Start();
-        }
-
-        /// <summary>
-        /// Stops the recording of Waypoint and return 
-        /// the list of coordinates if you wish to process them.
-        /// The waypoint is saved to file regardless.
-        /// </summary>
-        /// <returns>List of coordinates</returns>
-        public List<Coords> stopRecordingWaypoint()
-        {
-            _stop = true;
-            return coords_list;
+                _serializer.Serialize(filename, _coordsList);
         }
 
         /// <summary>
@@ -254,11 +198,80 @@ namespace ffxivlib
             if (list == null && filename == null)
                 return;
             if (list != null)
-                coords_list = list.ToList();
+                _coordsList = list.ToList();
             if (filename != null)
-                coords_list = serializer.Deserialize<List<Coords>>(filename);
-            foreach (Coords coord in coords_list)
+                _coordsList = _serializer.Deserialize<List<Coords>>(filename);
+            foreach (Coords coord in _coordsList)
                 GoToPos(coord.X, coord.Y, coord.Z);
+        }
+
+        #endregion
+
+        #region Public methods
+
+        /// <summary>
+        /// Heads to a given coordinate
+        /// </summary>
+        /// <param name="x">X</param>
+        /// <param name="y">Y</param>
+        /// <param name="z">Z</param>
+        public void GoToPos(float x, float y, float z)
+        {
+            bool isRunning = false;
+            const float distanceTolerance = 5f;
+            const uint headingTolerance = 20;
+            while (DistanceTo(x, y, z) > distanceTolerance)
+            {
+                if (!_pause)
+                {
+                    _player.Refresh();
+                    double heading = HeadingTo(x, y);
+                    double playerHeading = XIVRadianToDegree(_player.Structure.Heading);
+                    double herror = HeadingError(playerHeading, heading);
+                    while (herror > headingTolerance)
+                    {
+                        SendKeyInput.VKKeys key = WhereToHeadto(heading, playerHeading);
+                        _ski.SendKeyPress(key);
+                        _player.Refresh();
+                        heading = HeadingTo(x, y);
+                        playerHeading = XIVRadianToDegree(_player.Structure.Heading);
+                        herror = HeadingError(playerHeading, heading);
+                    }
+                    if (!isRunning)
+                    {
+                        isRunning = true;
+                        _ski.SendKeyPress(_forwardKey, false);
+                    }
+                }
+                else
+                {
+                    Thread.Sleep(500);
+                }
+            }
+            _ski.SendKeyPress(_forwardKey);
+        }
+
+        /// <summary>
+        /// Starts a thread recording waypoint.
+        /// </summary>
+        /// <param name="filename">Filename to save waypoint to.</param>
+        /// <param name="delay">Delay in ms between coordinates (default: 400)</param>
+        public void StartRecordingCoordinates(string filename = null, int delay = 400)
+        {
+            var t = new Thread(() => _startRecordingWaypoint(filename, delay));
+            t.Start();
+        }
+
+        /// <summary>
+        /// Stops the recording of Waypoint and return 
+        /// the list of coordinates if you wish to process them.
+        /// The waypoint is saved to file regardless.
+        /// </summary>
+        /// <returns>List of coordinates</returns>
+        public List<Coords> StopRecordingWaypoint()
+        {
+            _stop = true;
+            return _coordsList;
         }
 
         /// <summary>
@@ -267,7 +280,7 @@ namespace ffxivlib
         /// </summary>
         /// <param name="filename">File to read waypoint from</param>
         /// <param name="list">List of coordinates</param>
-        public void playWaypoint(string filename = null, List<Coords> list = null)
+        public void PlayWaypoint(string filename = null, List<Coords> list = null)
         {
             var t = new Thread(() => _playWaypoint(filename, list));
             t.Start();
@@ -278,27 +291,33 @@ namespace ffxivlib
         /// Sets pause to true or false depending on current value.
         /// </summary>
         /// <returns>Value of pause after this call.</returns>
-        public bool pauseWaypoint()
+        public bool PauseWaypoint()
         {
             _pause = !_pause;
             return (_pause);
         }
+
+        #endregion
     }
 
     public partial class FFXIVLIB
     {
+        #region Public methods
+
         /// <summary>
         /// Returns a MovementHelper instance ready for work.
         /// </summary>
-        /// <param name="_left_key">Left key (default: A)</param>
-        /// <param name="_right_key">Right key (default: D)</param>
-        /// <param name="_forward_key">Forward key (default: W)</param>
+        /// <param name="leftKey">Left key (default: A)</param>
+        /// <param name="rightKey">Right key (default: D)</param>
+        /// <param name="forwardKey">Forward key (default: W)</param>
         /// <returns>MovementHelper instance</returns>
-        public MovementHelper getMovementHelper(SendKeyInput.VKKeys _left_key = SendKeyInput.VKKeys.KEY_A,
-                                                SendKeyInput.VKKeys _right_key = SendKeyInput.VKKeys.KEY_D,
-                                                SendKeyInput.VKKeys _forward_key = SendKeyInput.VKKeys.KEY_W)
+        public MovementHelper GetMovementHelper(SendKeyInput.VKKeys leftKey = SendKeyInput.VKKeys.KEY_A,
+                                                SendKeyInput.VKKeys rightKey = SendKeyInput.VKKeys.KEY_D,
+                                                SendKeyInput.VKKeys forwardKey = SendKeyInput.VKKeys.KEY_W)
         {
-            return new MovementHelper(getEntityInfo(0), _left_key, _right_key, _forward_key);
+            return new MovementHelper(GetEntityInfo(0), leftKey, rightKey, forwardKey);
         }
+
+        #endregion
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace ffxivlib
@@ -12,6 +13,7 @@ namespace ffxivlib
         private enum ProcessAccessFlags : uint
         {
             All = 0x001F0FFF,
+            // ReSharper disable UnusedMember.Local
             Terminate = 0x00000001,
             CreateThread = 0x00000002,
             VMOperation = 0x00000008,
@@ -21,14 +23,15 @@ namespace ffxivlib
             SetInformation = 0x00000200,
             QueryInformation = 0x00000400,
             Synchronize = 0x00100000
+            // ReSharper restore UnusedMember.Local
         }
 
         #endregion
 
         #region Fields
 
-        private static MemoryReader instance;
-        private readonly Process ffxiv_process;
+        private static MemoryReader _instance;
+        private readonly Process _ffxivProcess;
         private IntPtr _processHandle;
 
         #endregion
@@ -38,11 +41,11 @@ namespace ffxivlib
         /// <summary>
         ///     Private constructor
         /// </summary>
-        /// <param name="ffxiv_process">FFXIV Process</param>
-        private MemoryReader(Process ffxiv_process)
+        /// <param name="ffxivProcess">FFXIV Process</param>
+        private MemoryReader(Process ffxivProcess)
         {
-            this.ffxiv_process = ffxiv_process;
-            OpenProcess((uint) ffxiv_process.Id);
+            _ffxivProcess = ffxivProcess;
+            OpenProcess((uint) ffxivProcess.Id);
         }
 
         /// <summary>
@@ -56,13 +59,11 @@ namespace ffxivlib
         /// <summary>
         ///     This is the Singleton instance creator
         /// </summary>
-        /// <param name="ffxiv_process">FFXIV Process</param>
+        /// <param name="ffxivProcess">FFXIV Process</param>
         /// <returns>The single MR instance</returns>
-        public static MemoryReader setInstance(Process ffxiv_process)
+        public static MemoryReader SetInstance(Process ffxivProcess)
         {
-            if (instance == null)
-                instance = new MemoryReader(ffxiv_process);
-            return instance;
+            return _instance ?? (_instance = new MemoryReader(ffxivProcess));
         }
 
         /// <summary>
@@ -70,11 +71,11 @@ namespace ffxivlib
         ///     This will choke in its own vomit if called before setInstance()
         /// </summary>
         /// <returns>The single MR instance</returns>
-        public static MemoryReader getInstance()
+        public static MemoryReader GetInstance()
         {
-            if (instance == null)
+            if (_instance == null)
                 throw new Exception("Something terrible happened.");
-            return instance;
+            return _instance;
         }
 
         #endregion
@@ -141,11 +142,8 @@ namespace ffxivlib
                             bytesRead = ptrBytesReaded.ToInt32();
                             return buffer;
                         }
-                    else
-                        {
-                            bytesRead = 0;
-                            return new byte[] {0, 0, 0, 0};
-                        }
+                    bytesRead = 0;
+                    return new byte[] {0, 0, 0, 0};
                 }
             catch (Exception ex)
                 {
@@ -159,11 +157,11 @@ namespace ffxivlib
 
         #region Helper methods
 
-        private void OpenProcess(uint FFXIVPID)
+        private void OpenProcess(uint ffxivpid)
         {
             try
                 {
-                    _processHandle = OpenProcess(ProcessAccessFlags.All, false, FFXIVPID);
+                    _processHandle = OpenProcess(ProcessAccessFlags.All, false, ffxivpid);
                 }
             catch {}
         }
@@ -188,7 +186,7 @@ namespace ffxivlib
         /// <returns>Final address</returns>
         public IntPtr ResolvePointerPath(List<int> path)
         {
-            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
+            IntPtr currentPtr = _ffxivProcess.MainModule.BaseAddress;
             IntPtr result = IntPtr.Zero;
             int count = path.Count;
             int i = 0;
@@ -216,11 +214,7 @@ namespace ffxivlib
         /// <returns></returns>
         public IntPtr GetArrayStart(List<int> path)
         {
-            IntPtr currentPtr = ffxiv_process.MainModule.BaseAddress;
-            IntPtr result = IntPtr.Zero;
-            foreach (int pointer in path)
-                currentPtr += pointer;
-            return currentPtr;
+            return path.Aggregate(_ffxivProcess.MainModule.BaseAddress, (current, pointer) => current + pointer);
         }
 
         /// <summary>
@@ -234,11 +228,11 @@ namespace ffxivlib
         {
             T structure = default(T);
 
-            IntPtr ffxiv_structure = address;
-            if (ffxiv_structure != IntPtr.Zero)
+            IntPtr ffxivStructure = address;
+            if (ffxivStructure != IntPtr.Zero)
                 {
                     int outres;
-                    byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
+                    byte[] chunk = ReadAdress(ffxivStructure, (uint) Marshal.SizeOf(typeof (T)), out outres);
                     GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
                     structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
                     handle.Free();
@@ -262,10 +256,10 @@ namespace ffxivlib
             T structure = default(T);
 
             byte[] pointer = ReadAdress(address, 4, out outres);
-            var ffxiv_structure = (IntPtr) BitConverter.ToInt32(pointer, 0);
-            if (ffxiv_structure != IntPtr.Zero)
+            var ffxivStructure = (IntPtr) BitConverter.ToInt32(pointer, 0);
+            if (ffxivStructure != IntPtr.Zero)
                 {
-                    byte[] chunk = ReadAdress(ffxiv_structure, (uint) Marshal.SizeOf(typeof (T)), out outres);
+                    byte[] chunk = ReadAdress(ffxivStructure, (uint) Marshal.SizeOf(typeof (T)), out outres);
                     GCHandle handle = GCHandle.Alloc(chunk, GCHandleType.Pinned);
                     structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof (T));
                     handle.Free();
@@ -282,7 +276,7 @@ namespace ffxivlib
         public byte[] ReadMemory(IntPtr pointer, uint count)
         {
             int outbytes;
-            return this.mr.ReadAdress(pointer, count, out outbytes);
+            return _mr.ReadAdress(pointer, count, out outbytes);
         }
     }
 }

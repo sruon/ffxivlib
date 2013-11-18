@@ -20,7 +20,7 @@ namespace ffxivlib
                 return null;
             try
                 {
-                    XmlSerializer serializer = new XmlSerializer(typeof (T));
+                    var serializer = new XmlSerializer(typeof (T));
                     TextWriter textWriter = new StreamWriter(filename);
                     serializer.Serialize(textWriter, list);
                     textWriter.Close();
@@ -49,11 +49,11 @@ namespace ffxivlib
                 return default(T);
             try
                 {
-                    XmlSerializer deserializer = new XmlSerializer(typeof (T));
+                    var deserializer = new XmlSerializer(typeof (T));
                     TextReader textReader = new StreamReader(filename);
-                    var des_list = (T) deserializer.Deserialize(textReader);
+                    var desList = (T) deserializer.Deserialize(textReader);
                     textReader.Close();
-                    return des_list;
+                    return desList;
                 }
             catch (IOException ex)
                 {

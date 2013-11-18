@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using ffxivlib;
 
 namespace GetInventory
@@ -11,11 +8,14 @@ namespace GetInventory
         static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
-            List<Inventory.ITEM> ic = instance.getSelfInventory();
-            ic = instance.getArmoryChest();
-            ic = instance.getCompanyInventory();
-            ic = instance.getRetainerInventory();
-            ic = instance.getCurrentEquipment();
+// ReSharper disable once NotAccessedVariable
+            List<Inventory.ITEM> ic = instance.GetSelfInventory();
+// ReSharper disable RedundantAssignment
+            ic = instance.GetArmoryChest();
+            ic = instance.GetCompanyInventory();
+            ic = instance.GetRetainerInventory();
+            ic = instance.GetCurrentEquipment();
+            // ReSharper restore RedundantAssignment
         }
     }
 }

@@ -6,29 +6,26 @@ namespace ffxivlib
 {
     internal class SigScanner
     {
-        private static int SearchBlockSize = 1024*100;
-        private readonly bool CloseOnDispose;
-        private readonly uint OldPermissions;
-        private readonly IntPtr ProcessHandle;
-        private readonly IntPtr ProcessStart;
-        private IntPtr UpperMemoryBound;
+        private const int SearchBlockSize = 1024*100;
+        private readonly bool _closeOnDispose;
+        private readonly uint _oldPermissions;
+        private readonly IntPtr _processHandle;
+        private readonly IntPtr _processStart;
+        private IntPtr _upperMemoryBound;
 
-        public SigScanner(int ProcessID, bool AllowClose)
+        public SigScanner(int processID, bool allowClose)
         {
-            ProcessHandle = IntPtr.Zero;
-            ProcessHandle = OpenProcess(ProcessAccessFlags.All, false, ProcessID);
-            if (IntPtr.Zero == ProcessHandle)
-                throw new Exception(string.Format("Unable to open process {0}.", ProcessID));
-            else
-                {
-                    CloseOnDispose = AllowClose;
-                    Process P = Process.GetProcessById(ProcessID);
-                    ProcessStart = P.MainModule.BaseAddress;
-                    UpperMemoryBound = new IntPtr(P.WorkingSet64);
+            _processHandle = IntPtr.Zero;
+            _processHandle = OpenProcess(ProcessAccessFlags.All, false, processID);
+            if (IntPtr.Zero == _processHandle)
+                throw new Exception(string.Format("Unable to open process {0}.", processID));
+            _closeOnDispose = allowClose;
+            Process p = Process.GetProcessById(processID);
+            _processStart = p.MainModule.BaseAddress;
+            _upperMemoryBound = new IntPtr(p.WorkingSet64);
 
-                    VirtualProtectEx(ProcessHandle, ProcessStart, UpperMemoryBound, ProcessAccessFlags.All,
-                                     out OldPermissions);
-                }
+            VirtualProtectEx(_processHandle, _processStart, _upperMemoryBound, ProcessAccessFlags.All,
+                out _oldPermissions);
         }
 
         [DllImport("kernel32.dll")]
@@ -50,37 +47,36 @@ namespace ffxivlib
         ~SigScanner()
         {
             uint perms;
-            VirtualProtectEx(ProcessHandle, ProcessStart, UpperMemoryBound, (ProcessAccessFlags) OldPermissions,
+            VirtualProtectEx(_processHandle, _processStart, _upperMemoryBound, (ProcessAccessFlags) _oldPermissions,
                              out perms);
-            if (ProcessHandle != IntPtr.Zero && CloseOnDispose)
-                CloseHandle(ProcessHandle);
+            if (_processHandle != IntPtr.Zero && _closeOnDispose)
+                CloseHandle(_processHandle);
         }
 
-        public IntPtr SigScan(byte[] Signature)
+        public IntPtr SigScan(byte[] signature)
         {
-            Debug.WriteLine((string.Format("Starting scan for:\n{0}\n", BitConverter.ToString(Signature))));
-            IntPtr CurrentLoc = ProcessStart;
-            byte[] MemoryChunk;
-            int readbytes = 0;
-            int SearchBlockOverride = 0;
-            int ByteMatches = 0;
+            Debug.WriteLine((string.Format("Starting scan for:\n{0}\n", BitConverter.ToString(signature))));
+            IntPtr currentLoc = _processStart;
+            int searchBlockOverride = 0;
+            int byteMatches = 0;
 
             while (true)
                 {
                     Debug.WriteLine(
-                        (string.Format("Current Loc {0} Block Size: {1}\n", CurrentLoc.ToInt64().ToString("X2"),
-                                       (SearchBlockOverride != 0) ? SearchBlockOverride : SearchBlockSize)));
-                    MemoryChunk = new byte[SearchBlockSize];
+                        (string.Format("Current Loc {0} Block Size: {1}\n", currentLoc.ToInt64().ToString("X2"),
+                                       (searchBlockOverride != 0) ? searchBlockOverride : SearchBlockSize)));
+                    var memoryChunk = new byte[SearchBlockSize];
+                    int readbytes;
                     while (true)
                         {
-                            ReadProcessMemory(ProcessHandle, CurrentLoc, MemoryChunk,
-                                              (SearchBlockOverride != 0) ? SearchBlockOverride : SearchBlockSize,
+                            ReadProcessMemory(_processHandle, currentLoc, memoryChunk,
+                                              (searchBlockOverride != 0) ? searchBlockOverride : SearchBlockSize,
                                               out readbytes);
                             if (readbytes == 0)
                                 {
                                     // Read 1000 bytes after the last readprocessmemory failed
                                     // This is a quick hack and will fail if sig is within the 1000 bytes range
-                                    CurrentLoc = new IntPtr(CurrentLoc.ToInt64() + 0x1000);
+                                    currentLoc = new IntPtr(currentLoc.ToInt64() + 0x1000);
                                 }
                             else
                                 break;
@@ -89,47 +85,44 @@ namespace ffxivlib
                     //make sure we read something
                     if (readbytes <= 0)
                         {
-                            Debug.WriteLine(string.Format("Error: readBytes: {0}\n", readbytes));
+                            Debug.WriteLine("Error: readBytes: {0}\n", readbytes);
                             return IntPtr.Zero;
                         }
                     //sanity check to aviod running out of process
-                    int BlockSize = (readbytes < SearchBlockSize) ? readbytes : SearchBlockSize;
+                    int blockSize = (readbytes < SearchBlockSize) ? readbytes : SearchBlockSize;
                     //                Debug.WriteLine(string.Format("Bytes read: {0} ",(readbytes < SearchBlockSize) ? readbytes : SearchBlockSize));
                     //walk the memoryChunk
-                    for (int ByteLoc = 0; ByteLoc < BlockSize; ByteLoc++)
+                    for (int byteLoc = 0; byteLoc < blockSize; byteLoc++)
                         {
-                            if (MemoryChunk[ByteLoc] == Signature[ByteMatches] || Signature[ByteMatches] == 0x99)
+                            if (memoryChunk[byteLoc] == signature[byteMatches] || signature[byteMatches] == 0x99)
                                 {
                                     //Debug.WriteLine("+");
                                     //match or wildcard inc byteMatches
-                                    ByteMatches++;
+                                    byteMatches++;
                                     //matched the whole sig
-                                    if (ByteMatches == Signature.Length)
-                                        return new IntPtr(CurrentLoc.ToInt64() + ByteLoc - (Signature.Length - 1));
+                                    if (byteMatches == signature.Length)
+                                        return new IntPtr(currentLoc.ToInt64() + byteLoc - (signature.Length - 1));
                                 }
                             else
-                                ByteMatches = 0;
+                                byteMatches = 0;
                         }
 
                     //sanity check to make sure we don't read outside of the process causing an access volation
-                    if (CurrentLoc.ToInt64() >= UpperMemoryBound.ToInt64()) /*Out of process*/
+                    if (currentLoc.ToInt64() >= _upperMemoryBound.ToInt64()) /*Out of process*/
                         {
                             Debug.WriteLine("Error: out of memory\n");
                             return IntPtr.Zero;
                         }
                     //make sure the next read doesn't run out of process
-                    if ((CurrentLoc.ToInt64() + SearchBlockSize) >= UpperMemoryBound.ToInt64())
+                    if ((currentLoc.ToInt64() + SearchBlockSize) >= _upperMemoryBound.ToInt64())
                         {
                             //make the next block the size of the remaining memory.
-                            SearchBlockOverride =
-                                Convert.ToInt32((CurrentLoc.ToInt64() + SearchBlockSize) - UpperMemoryBound.ToInt64());
-                            Debug.WriteLine(string.Format("SearchBlockOverride: {0}\n", SearchBlockOverride));
+                            searchBlockOverride =
+                                Convert.ToInt32((currentLoc.ToInt64() + SearchBlockSize) - _upperMemoryBound.ToInt64());
+                            Debug.WriteLine("SearchBlockOverride: {0}\n", searchBlockOverride);
                         }
                     //inc the starting point to the end of what we just searched. This will also allow us to match sigs accross searchBlocks
-                    if (BlockSize != SearchBlockSize)
-                        CurrentLoc = new IntPtr(CurrentLoc.ToInt64() + BlockSize);
-                    else
-                        CurrentLoc = new IntPtr(CurrentLoc.ToInt64() + SearchBlockSize);
+                    currentLoc = blockSize != SearchBlockSize ? new IntPtr(currentLoc.ToInt64() + blockSize) : new IntPtr(currentLoc.ToInt64() + SearchBlockSize);
                 }
 
             //if we get here, true is no longer true and the world has ended...
@@ -144,6 +137,7 @@ namespace ffxivlib
         private enum ProcessAccessFlags : uint
         {
             All = 0x001F0FFF,
+// ReSharper disable UnusedMember.Local
             Terminate = 0x00000001,
             CreateThread = 0x00000002,
             VMOperation = 0x00000008,
@@ -153,6 +147,7 @@ namespace ffxivlib
             SetInformation = 0x00000200,
             QueryInformation = 0x00000400,
             Synchronize = 0x00100000
+            // ReSharper restore UnusedMember.Local
         }
 
         #endregion
@@ -166,9 +161,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="signature">Signature to look for</param>
         /// <returns>IntPtr of address found or IntPtr.Zero</returns>
-        public IntPtr getSigScan(byte[] signature)
+        public IntPtr GetSigScan(byte[] signature)
         {
-            return ss.SigScan(signature);
+            return _ss.SigScan(signature);
         }
     }
 }

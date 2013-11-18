@@ -11,23 +11,24 @@ namespace CurrentTarget
             FFXIVLIB instance = new FFXIVLIB();
             while (true)
                 {
-                    Entity currentTarget = instance.getCurrentTarget();
-                    Entity mouseoverTarget = instance.getMouseoverTarget();
-                    Entity myself = instance.getEntityInfo(0);
+                    Entity currentTarget = instance.GetCurrentTarget();
+                    Entity mouseoverTarget = instance.GetMouseoverTarget();
+                    Entity myself = instance.GetEntityInfo(0);
                     if (currentTarget != null)
                         {
                             Console.WriteLine("Current target => {0} : {1}/{2} HP distance: {3} yalms",
-                                              currentTarget.structure.name, currentTarget.structure.cHP,
-                                              currentTarget.structure.mHP, currentTarget.structure.distance);
+                                              currentTarget.Name, currentTarget.CurrentHP,
+                                              currentTarget.MaxHP, currentTarget.Distance);
                         }
                     if (mouseoverTarget != null)
                         {
                             Console.WriteLine("Mouseover target => {0} : {1}/{2} HP distance: {3} float",
-                                              mouseoverTarget.structure.name, mouseoverTarget.structure.cHP,
-                                              mouseoverTarget.structure.mHP, mouseoverTarget.getDistanceTo(myself));
+                                              mouseoverTarget.Name, mouseoverTarget.CurrentHP,
+                                              mouseoverTarget.MaxHP, mouseoverTarget.GetDistanceTo(myself));
                         }
                     Thread.Sleep(1000);
                 }
+// ReSharper disable once FunctionNeverReturns
         }
     }
 }

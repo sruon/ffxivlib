@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Xml;
+using System.Xml.Schema;
 using System.Xml.Serialization;
 
 [XmlRoot("dictionary")]
@@ -7,13 +9,13 @@ public class SerializableDictionary<TKey, TValue>
 {
     #region IXmlSerializable Members
 
-    public System.Xml.Schema.XmlSchema GetSchema()
+    public XmlSchema GetSchema()
     {
         return null;
     }
 
 
-    public void ReadXml(System.Xml.XmlReader reader)
+    public void ReadXml(XmlReader reader)
     {
         XmlSerializer keySerializer = new XmlSerializer(typeof (TKey));
 
@@ -30,7 +32,7 @@ public class SerializableDictionary<TKey, TValue>
             return;
 
 
-        while (reader.NodeType != System.Xml.XmlNodeType.EndElement)
+        while (reader.NodeType != XmlNodeType.EndElement)
             {
                 reader.ReadStartElement("item");
 
@@ -61,7 +63,7 @@ public class SerializableDictionary<TKey, TValue>
     }
 
 
-    public void WriteXml(System.Xml.XmlWriter writer)
+    public void WriteXml(XmlWriter writer)
     {
         XmlSerializer keySerializer = new XmlSerializer(typeof (TKey));
 

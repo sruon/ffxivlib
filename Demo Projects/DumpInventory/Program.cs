@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using ffxivlib;
 
 namespace DumpInventory
@@ -22,25 +20,25 @@ namespace DumpInventory
             // ja, fr, de or en. Defaults to en if not set
             Constants.ResourceParser.RESOURCES_LANGUAGE = "de";
             FFXIVLIB instance = new FFXIVLIB();
-            List<Inventory.ITEM> items = instance.getSelfInventory();
+            List<Inventory.ITEM> items = instance.GetSelfInventory();
             // Just timing how long it takes
-            Stopwatch objSW = new Stopwatch();
-            objSW.Start();
+            Stopwatch objSw = new Stopwatch();
+            objSw.Start();
             foreach (Inventory.ITEM item in items)
                 {
-                    Console.WriteLine("{0} x{1}", ResourceParser.getItemName(item), item.Amount);
+                    Console.WriteLine("{0} x{1}", ResourceParser.GetItemName(item), item.Amount);
                 }
-            objSW.Stop();
+            objSw.Stop();
             // You can check the stopwatch here and note the time.
             Console.ReadLine();
-            objSW.Reset();
-            objSW.Start();
+            objSw.Reset();
+            objSw.Start();
             // In cache values
             foreach (Inventory.ITEM item in items)
             {
-                Console.WriteLine("{0} x{1}", ResourceParser.getItemName(item), item.Amount);
+                Console.WriteLine("{0} x{1}", ResourceParser.GetItemName(item), item.Amount);
             }
-            objSW.Stop();
+            objSw.Stop();
             // You can check the stopwatch value here and compare. Profit
             Console.ReadLine();
         }

@@ -8,9 +8,9 @@ namespace ffxivlib
         #region Fields
 
         private readonly Int32 ffxiv_pid;
-        private readonly MemoryReader mr;
-        internal readonly SendKeyInput ski;
-        private readonly SigScanner ss;
+        private readonly MemoryReader _mr;
+        internal readonly SendKeyInput Ski;
+        private readonly SigScanner _ss;
         private readonly Process ffxiv_process;
 
         #endregion
@@ -31,7 +31,7 @@ namespace ffxivlib
                     Process[] p = Process.GetProcessesByName(Constants.PROCESS_NAME);
                     if (p.Length <= 0)
                         throw new InvalidOperationException("No FFXIV process.");
-                    else if (p.Length > 1)
+                    if (p.Length > 1)
                         throw new NotImplementedException("Call the constructor with PID if multiple process.");
                     ffxiv_process = p[0];
                 }
@@ -46,9 +46,9 @@ namespace ffxivlib
             #endregion
 
             ffxiv_pid = ffxiv_process.Id;
-            mr = MemoryReader.setInstance(ffxiv_process);
-            ss = new SigScanner(ffxiv_pid, true);
-            ski = SendKeyInput.setInstance(ffxiv_process.MainWindowHandle);
+            _mr = MemoryReader.SetInstance(ffxiv_process);
+            _ss = new SigScanner(ffxiv_pid, true);
+            Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
         }
 
         #endregion

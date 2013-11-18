@@ -15,11 +15,11 @@ namespace PlayerHeading
         private static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
-            Entity player = instance.getEntityInfo(0);
+            Entity player = instance.GetEntityInfo(0);
             while (true)
                 {
                     string sResult = "Heading: ";
-                    double degrees = player.structure.heading*(180/Math.PI) + 180;
+                    double degrees = player.Structure.Heading*(180/Math.PI) + 180;
                     if (degrees > 360)
                         degrees -= 360;
                     else if (degrees < 0)
@@ -42,11 +42,12 @@ namespace PlayerHeading
                         sResult += "(E)";
                     else if (293 < degrees && 337 >= degrees)
                         sResult += "(NE)";
-                    Console.WriteLine("Heading: {0} Deg: {1}, X: {2}, Y: {3}", player.structure.heading.ToString(),
-                                      sResult, player.structure.X.ToString(), player.structure.Y.ToString());
-                    player.refresh();
+                    Console.WriteLine("Heading: {0} Deg: {1}, X: {2}, Y: {3}", player.Structure.Heading.ToString(),
+                                      sResult, player.Structure.X.ToString(), player.Structure.Y.ToString());
+                    player.Refresh();
                     Thread.Sleep(1000);
                 }
+// ReSharper disable once FunctionNeverReturns
         }
     }
 }

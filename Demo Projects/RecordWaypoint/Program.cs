@@ -14,10 +14,10 @@ namespace RecordWaypoint
         private static void Main(string[] args)
         {
             FFXIVLIB instance = new FFXIVLIB();
-            MovementHelper mh = instance.getMovementHelper();
-            mh.startRecordingCoordinates("my_waypoint");
+            MovementHelper mh = instance.GetMovementHelper();
+            mh.StartRecordingCoordinates("my_waypoint");
             Thread.Sleep(30000);
-            mh.stopRecordingWaypoint();
+            mh.StopRecordingWaypoint();
         }
     }
 }

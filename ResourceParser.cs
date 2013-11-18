@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -10,7 +9,7 @@ namespace ffxivlib
 {
     public static class ResourceParser
     {
-        private static Dictionary<string, Dictionary<int, string>> Cache = new Dictionary<string, Dictionary<int, string>>(); 
+        private static readonly Dictionary<string, Dictionary<int, string>> Cache = new Dictionary<string, Dictionary<int, string>>(); 
         
         /// <summary>
         /// Generator to stream the XML.
@@ -20,7 +19,7 @@ namespace ffxivlib
         /// <returns>Yields next element</returns>
         private static IEnumerable<XElement> StreamElements(string fileName, string elementName)
         {
-            using (StreamReader sr = new StreamReader(fileName, Encoding.GetEncoding("UTF-8")))
+            using (var sr = new StreamReader(fileName, Encoding.GetEncoding("UTF-8")))
                 {
                     using (var rdr = XmlTextReader.Create(sr))
                         {
@@ -47,11 +46,11 @@ namespace ffxivlib
         /// </summary>
         /// <param name="filename">Resource file to parse</param>
         /// <param name="node">Type of resource</param>
-        /// <param name="lookup_key">On what field to match</param>
-        /// <param name="result_key">What field do we need to get back</param>
+        /// <param name="lookupKey">On what field to match</param>
+        /// <param name="resultKey">What field do we need to get back</param>
         /// <param name="search">The search parameter</param>
         /// <returns>The key (ID) or -1</returns>
-        private static int runLinqQuery(string filename, string node, string lookup_key, string result_key, string search)
+        private static int RunLinqQuery(string filename, string node, string lookupKey, string resultKey, string search)
         {
             if (search == "")
                 return -1;
@@ -70,8 +69,8 @@ namespace ffxivlib
                 Cache.Add(node, new Dictionary<int, string>());
             }
             var result = (from item in StreamElements(filename, node)
-                          where item.Element(lookup_key).Value == search
-                          select item.Element(result_key).Value).FirstOrDefault();
+                          where item.Element(lookupKey).Value == search
+                          select item.Element(resultKey).Value).FirstOrDefault();
             int key = int.Parse(result);
             if (key > 0)
                 {
@@ -86,11 +85,11 @@ namespace ffxivlib
         /// </summary>
         /// <param name="filename">Resource file to parse</param>
         /// <param name="node">Type of resource</param>
-        /// <param name="lookup_key">On what field to match</param>
-        /// <param name="result_key">What field do we need to get back</param>
+        /// <param name="lookupKey">On what field to match</param>
+        /// <param name="resultKey">What field do we need to get back</param>
         /// <param name="search">The search parameter</param>
         /// <returns>The value (string) or string.empty</returns>
-        private static string runLinqQuery(string filename, string node, string lookup_key, string result_key, int search)
+        private static string RunLinqQuery(string filename, string node, string lookupKey, string resultKey, int search)
         {
             if (search == 0)
                 return string.Empty;
@@ -106,8 +105,8 @@ namespace ffxivlib
                     Cache.Add(node, new Dictionary<int, string>());
                 }
             var result = (from item in StreamElements(filename, node)
-                          where int.Parse(item.Element(lookup_key).Value) == search
-                          select item.Element(result_key).Value).FirstOrDefault();
+                          where int.Parse(item.Element(lookupKey).Value) == search
+                          select item.Element(resultKey).Value).FirstOrDefault();
             if (result != null)
                 {
                     Cache[node][search] = result;
@@ -121,9 +120,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="id">Item ID</param>
         /// <returns>Item Name</returns>
-        public static string getItemName(int id)
+        public static string GetItemName(int id)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
         /// <summary>
@@ -131,9 +130,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="item">Item structure</param>
         /// <returns>Item Name</returns>
-        public static string getItemName(Inventory.ITEM item)
+        public static string GetItemName(Inventory.ITEM item)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (int)item.ItemID);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "Key", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (int)item.ItemID);
         }
 
         /// <summary>
@@ -141,9 +140,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="name">Item Name</param>
         /// <returns>Item ID</returns>
-        public static int getItemID(string name)
+        public static int GetItemID(string name)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ITEM_FILE), "Item", "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
         }
         #endregion
 
@@ -153,19 +152,18 @@ namespace ffxivlib
         /// </summary>
         /// <param name="id">Buff ID</param>
         /// <returns>Buff Name</returns>
-        public static string getBuffName(short id)
+        public static string GetBuffName(short id)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", id);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", id);
         }
 
         /// <summary>
         /// Retrieves Buff name corresponding to ID in BUFF structure
         /// </summary>
-        /// <param name="id">Buff structure</param>
         /// <returns>Buff Name</returns>
-        public static string getBuffName(BUFF item)
+        public static string GetBuffName(BUFF item)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", item.BuffID);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", item.BuffID);
         }
 
         /// <summary>
@@ -173,9 +171,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="name">Buff name</param>
         /// <returns>Buff ID</returns>
-        public static int getBuffID(string name)
+        public static int GetBuffID(string name)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "name", "id", name);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.BUFF_FILE), "Buff", "name", "id", name);
         }
         #endregion
 
@@ -186,9 +184,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="id">Title ID</param>
         /// <returns>Title name</returns>
-        public static string getTitleName(byte id)
+        public static string GetTitleName(byte id)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
         /// <summary>
@@ -196,9 +194,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="e">Entity</param>
         /// <returns>Title name</returns>
-        public static string getTitleName(Entity e)
+        public static string GetTitleName(Entity e)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.Title);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.TITLE_FILE), "Title", "Key", "Male_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.Structure.Title);
         }
 
         #endregion
@@ -210,9 +208,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="id">GC ID</param>
         /// <returns>GC Name</returns>
-        public static string getGrandCompany(byte id)
+        public static string GetGrandCompany(byte id)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
         /// <summary>
@@ -220,9 +218,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="e">Entity</param>
         /// <returns>GC Name</returns>
-        public static string getGrandCompany(Entity e)
+        public static string GetGrandCompany(Entity e)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.GrandCompany);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_FILE), "GrandCompany", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.Structure.GrandCompany);
         }
 
         /// <summary>
@@ -231,9 +229,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="id">GC Rank ID</param>
         /// <returns>GC Rank Name</returns>
-        public static string getGrandCompanyRank(byte id)
+        public static string GetGrandCompanyRank(byte id)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
         }
 
         /// <summary>
@@ -242,9 +240,9 @@ namespace ffxivlib
         /// </summary>
         /// <param name="e">Entity</param>
         /// <returns>GC Rank Name</returns>
-        public static string getGrandCompanyRank(Entity e)
+        public static string GetGrandCompanyRank(Entity e)
         {
-            return runLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.structure.GrandCompanyRank);
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.GRAND_COMPANY_RANK_FILE), "GCRankUldahMaleText", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, e.Structure.GrandCompanyRank);
         }
 
         #endregion

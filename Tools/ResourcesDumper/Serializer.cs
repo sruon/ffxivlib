@@ -13,6 +13,7 @@ namespace ResourcesDumper
         /// <typeparam name="T">Type of the object to serialize</typeparam>
         /// <param name="filename">Filename to save the XML output</param>
         /// <param name="list">List of instances</param>
+        /// <param name="table"></param>
         /// <returns>Filename or null on failure</returns>
         public string Serialize<T>(string filename, T list, string table)
         {
@@ -62,9 +63,9 @@ namespace ResourcesDumper
                 {
                     XmlSerializer deserializer = new XmlSerializer(typeof (T));
                     TextReader textReader = new StreamReader(filename);
-                    var des_list = (T) deserializer.Deserialize(textReader);
+                    var desList = (T) deserializer.Deserialize(textReader);
                     textReader.Close();
-                    return des_list;
+                    return desList;
                 }
             catch (IOException ex)
                 {

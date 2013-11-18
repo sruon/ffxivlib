@@ -49,7 +49,7 @@
     <Compile Include="Enums.cs" />
     <Compile Include="FFXIVLIB.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="Interface.cs" />
+    <Compile Include="BaseObject.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="MemoryReader.cs" />
     <Compile Include="Entity.cs" />
