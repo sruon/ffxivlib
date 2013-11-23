@@ -53,7 +53,10 @@ namespace ffxivlib
                 {
                     var value = field.GetValue(Structure);
                     var prop = GetType().GetProperty(field.Name);
-                    prop.SetValue(this, value, null);
+                    if (prop != null)
+                        {
+                            prop.SetValue(this, value, null);
+                        }
                 }
         }
 
