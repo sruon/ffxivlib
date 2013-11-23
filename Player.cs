@@ -339,6 +339,8 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x220)] public short Perception;
 
             #endregion
+
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x529)] public byte Padding;
         };
 
         #endregion
@@ -358,7 +360,6 @@ namespace ffxivlib
             var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }
-
         #endregion
     }
 }
