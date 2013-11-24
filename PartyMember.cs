@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace ffxivlib
@@ -39,7 +40,7 @@ namespace ffxivlib
 
         public short MaxGP { get; set; }
 
-        public BUFF[] Buffs { get; set; }
+        public Buff.BUFFINFO[] Buffs { get; set; }
 
         public float X { get; set; }
 
@@ -65,7 +66,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x64)] public short CurrentTP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x66)] public short CurrentGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x68)] public short MaxGP;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x70)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x70)] public Buff.BUFFINFO[] Buffs;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F0)] public float X;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F4)] public float Z;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F8)] public float Y;
