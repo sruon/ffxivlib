@@ -93,7 +93,7 @@ namespace ffxivlib
         public struct ENTITYINFO
         {
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0)] public int GatheringType;
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] [FieldOffset(0x30)] public string Name;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] [FieldOffset(0x30)] public byte[] name_data;
             // Not exactly PC ID...
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x74)] public int PCId;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x78)] public int NPCId;
@@ -127,6 +127,13 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB8)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB9)] public SEX Sex;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2F48)] public BUFF[] Buffs;
+			 public string name
+            {
+                get
+                {
+                    return System.Text.Encoding.UTF8.GetString(name_data).Split(new char[] { '\0' }, StringSplitOptions.RemoveEmptyEntries)[0];
+                }
+            }
         };
 
         #endregion

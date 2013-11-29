@@ -27,13 +27,13 @@ public static class Constants
     // This is the widget for party
     internal static readonly List<int> PARTYPTR = new List<int>
         {
-            0x0014B600,
+            0x0014B590,
             0x0
         };
 
     internal static readonly List<int> TARGETPTR = new List<int>
         {
-            0x00C87644,
+            0x00C87524,
             0x28
         };
 
