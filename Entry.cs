@@ -103,6 +103,8 @@ namespace ffxivlib
                     0xAF,
                     0x20
                 };
+                if (workingCopy.Count <= 0)
+                    return workingCopy;
                 if (pattern.Where((t, i) => workingCopy[i] != t).Any())
                     return workingCopy;
                 workingCopy.RemoveRange(0, pattern.Count);
