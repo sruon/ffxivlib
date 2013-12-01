@@ -11,7 +11,7 @@ namespace ModifyIcon
             // 0 is always your own character
             Entity e = instance.GetEntityInfo(0);
             Console.WriteLine("Changing icon to Yoshi-P for player {0}", e.Structure.Name);
-            e.Modify("icon", (byte) ICON.Yoshida);
+            e.Modify("Icon", (byte) ICON.Yoshida);
             Console.WriteLine("Done..");
             Console.ReadLine();
         }
