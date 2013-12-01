@@ -172,21 +172,21 @@ void \hyperlink{classffxivlib_1_1_send_key_input_aa8f7cbdf5bafad8f57313b1bd5731c
 \begin{DoxyCompactList}\small\item\em Send text string to game window \end{DoxyCompactList}\item 
 void \hyperlink{classffxivlib_1_1_send_key_input_a3302a44e82c7edee92ad9ceacce87fa6}{Send\-Return\-Key} (int delay=100)
 \begin{DoxyCompactList}\small\item\em Send Enter keypress \end{DoxyCompactList}\item 
-void \hyperlink{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}{Send\-Key\-Press} (V\-K\-Keys Key, bool keyup=true, int delay=100)
+void \hyperlink{classffxivlib_1_1_send_key_input_a929f24cc17ff7ef019f13dcf4ed24805}{Send\-Key\-Press} (V\-K\-Keys key, bool keyup=true, int delay=100)
 \begin{DoxyCompactList}\small\item\em Send a Virtual Key to F\-F\-X\-I\-V \end{DoxyCompactList}\item 
 \hypertarget{classffxivlib_1_1_send_key_input_aec916a6b910122da2683c311b2cacb67}{void {\bfseries Set\-Focus} ()}\label{classffxivlib_1_1_send_key_input_aec916a6b910122da2683c311b2cacb67}
 
 \item 
-\hypertarget{classffxivlib_1_1_send_key_input_a01a23da6e4e33c5e8d107c6942c491d8}{void {\bfseries Post\-Message\-P\-T\-R} (uint Msg, Int\-Ptr w\-Param, Int\-Ptr l\-Param)}\label{classffxivlib_1_1_send_key_input_a01a23da6e4e33c5e8d107c6942c491d8}
+\hypertarget{classffxivlib_1_1_send_key_input_ad8abc46b579a90effb462da85f54046b}{void {\bfseries Post\-Message\-P\-T\-R} (uint msg, Int\-Ptr w\-Param, Int\-Ptr l\-Param)}\label{classffxivlib_1_1_send_key_input_ad8abc46b579a90effb462da85f54046b}
 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classffxivlib_1_1_send_key_input_a61972fc0a62991c8a5d9b0987cd5984f}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries set\-Instance} (Int\-Ptr F\-F\-X\-I\-V\-Window)}\label{classffxivlib_1_1_send_key_input_a61972fc0a62991c8a5d9b0987cd5984f}
+\hypertarget{classffxivlib_1_1_send_key_input_ac361080c20631c135489b06e4ecdf358}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries Set\-Instance} (Int\-Ptr ffxiv\-Window)}\label{classffxivlib_1_1_send_key_input_ac361080c20631c135489b06e4ecdf358}
 
 \item 
-\hypertarget{classffxivlib_1_1_send_key_input_a75e37e328b5fe2d9ad557f9702b17119}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries get\-Instance} ()}\label{classffxivlib_1_1_send_key_input_a75e37e328b5fe2d9ad557f9702b17119}
+\hypertarget{classffxivlib_1_1_send_key_input_a79307c1693981a786db6eca2faa584b7}{static \hyperlink{classffxivlib_1_1_send_key_input}{Send\-Key\-Input} {\bfseries Get\-Instance} ()}\label{classffxivlib_1_1_send_key_input_a79307c1693981a786db6eca2faa584b7}
 
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
@@ -226,23 +226,25 @@ Send text string to game window
 \begin{DoxyParams}{Parameters}
 {\em c\-String} & \\
 \hline
+{\em delay} & \\
+\hline
 \end{DoxyParams}
-\hypertarget{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}{\index{ffxivlib\-::\-Send\-Key\-Input@{ffxivlib\-::\-Send\-Key\-Input}!Send\-Key\-Press@{Send\-Key\-Press}}
+\hypertarget{classffxivlib_1_1_send_key_input_a929f24cc17ff7ef019f13dcf4ed24805}{\index{ffxivlib\-::\-Send\-Key\-Input@{ffxivlib\-::\-Send\-Key\-Input}!Send\-Key\-Press@{Send\-Key\-Press}}
 \index{Send\-Key\-Press@{Send\-Key\-Press}!ffxivlib::SendKeyInput@{ffxivlib\-::\-Send\-Key\-Input}}
 \subsubsection[{Send\-Key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Send\-Key\-Input.\-Send\-Key\-Press (
 \begin{DoxyParamCaption}
-\item[{V\-K\-Keys}]{Key, }
+\item[{V\-K\-Keys}]{key, }
 \item[{bool}]{keyup = {\ttfamily true}, }
 \item[{int}]{delay = {\ttfamily 100}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_send_key_input_a66eab8ca2057b2b7b37f1f1f76a43f2a}
+)}}\label{classffxivlib_1_1_send_key_input_a929f24cc17ff7ef019f13dcf4ed24805}
 
 
 Send a Virtual Key to F\-F\-X\-I\-V 
 
 
 \begin{DoxyParams}{Parameters}
-{\em Key} & Virtual Key to press\\
+{\em key} & Virtual Key to press\\
 \hline
 {\em keyup} & Should we keypress up (default\-: true)\\
 \hline

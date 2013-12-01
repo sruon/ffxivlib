@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
+   &#160;<span id="projectnumber">0.3.2</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -271,24 +272,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3302a44e82c7edee92ad9ceacce87fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_send_key_input.html#a3302a44e82c7edee92ad9ceacce87fa6">SendReturnKey</a> (int delay=100)</td></tr>
 <tr class="memdesc:a3302a44e82c7edee92ad9ceacce87fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Enter keypress  <a href="#a3302a44e82c7edee92ad9ceacce87fa6">More...</a><br/></td></tr>
 <tr class="separator:a3302a44e82c7edee92ad9ceacce87fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66eab8ca2057b2b7b37f1f1f76a43f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_send_key_input.html#a66eab8ca2057b2b7b37f1f1f76a43f2a">SendKeyPress</a> (VKKeys Key, bool keyup=true, int delay=100)</td></tr>
-<tr class="memdesc:a66eab8ca2057b2b7b37f1f1f76a43f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Virtual Key to FFXIV  <a href="#a66eab8ca2057b2b7b37f1f1f76a43f2a">More...</a><br/></td></tr>
-<tr class="separator:a66eab8ca2057b2b7b37f1f1f76a43f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929f24cc17ff7ef019f13dcf4ed24805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_send_key_input.html#a929f24cc17ff7ef019f13dcf4ed24805">SendKeyPress</a> (VKKeys key, bool keyup=true, int delay=100)</td></tr>
+<tr class="memdesc:a929f24cc17ff7ef019f13dcf4ed24805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Virtual Key to FFXIV  <a href="#a929f24cc17ff7ef019f13dcf4ed24805">More...</a><br/></td></tr>
+<tr class="separator:a929f24cc17ff7ef019f13dcf4ed24805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec916a6b910122da2683c311b2cacb67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec916a6b910122da2683c311b2cacb67"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFocus</b> ()</td></tr>
 <tr class="separator:aec916a6b910122da2683c311b2cacb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01a23da6e4e33c5e8d107c6942c491d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01a23da6e4e33c5e8d107c6942c491d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PostMessagePTR</b> (uint Msg, IntPtr wParam, IntPtr lParam)</td></tr>
-<tr class="separator:a01a23da6e4e33c5e8d107c6942c491d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8abc46b579a90effb462da85f54046b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8abc46b579a90effb462da85f54046b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PostMessagePTR</b> (uint msg, IntPtr wParam, IntPtr lParam)</td></tr>
+<tr class="separator:ad8abc46b579a90effb462da85f54046b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a61972fc0a62991c8a5d9b0987cd5984f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61972fc0a62991c8a5d9b0987cd5984f"></a>
-static <a class="el" href="classffxivlib_1_1_send_key_input.html">SendKeyInput</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setInstance</b> (IntPtr FFXIVWindow)</td></tr>
-<tr class="separator:a61972fc0a62991c8a5d9b0987cd5984f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e37e328b5fe2d9ad557f9702b17119"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75e37e328b5fe2d9ad557f9702b17119"></a>
-static <a class="el" href="classffxivlib_1_1_send_key_input.html">SendKeyInput</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
-<tr class="separator:a75e37e328b5fe2d9ad557f9702b17119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac361080c20631c135489b06e4ecdf358"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac361080c20631c135489b06e4ecdf358"></a>
+static <a class="el" href="classffxivlib_1_1_send_key_input.html">SendKeyInput</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (IntPtr ffxivWindow)</td></tr>
+<tr class="separator:ac361080c20631c135489b06e4ecdf358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79307c1693981a786db6eca2faa584b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79307c1693981a786db6eca2faa584b7"></a>
+static <a class="el" href="classffxivlib_1_1_send_key_input.html">SendKeyInput</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="separator:a79307c1693981a786db6eca2faa584b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -337,13 +338,14 @@ const uint&#160;</td><td class="memItemRight" valign="bottom"><b>MAPVK_VK_TO_VSC
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cString</td><td></td></tr>
+    <tr><td class="paramname">delay</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a66eab8ca2057b2b7b37f1f1f76a43f2a"></a>
+<a class="anchor" id="a929f24cc17ff7ef019f13dcf4ed24805"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -351,7 +353,7 @@ const uint&#160;</td><td class="memItemRight" valign="bottom"><b>MAPVK_VK_TO_VSC
           <td class="memname">void ffxivlib.SendKeyInput.SendKeyPress </td>
           <td>(</td>
           <td class="paramtype">VKKeys&#160;</td>
-          <td class="paramname"><em>Key</em>, </td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -376,7 +378,7 @@ const uint&#160;</td><td class="memItemRight" valign="bottom"><b>MAPVK_VK_TO_VSC
 <p>Send a Virtual Key to FFXIV </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Key</td><td>Virtual Key to press</td></tr>
+    <tr><td class="paramname">key</td><td>Virtual Key to press</td></tr>
     <tr><td class="paramname">keyup</td><td>Should we keypress up (default: true)</td></tr>
     <tr><td class="paramname">delay</td><td>Delay between keydown and keyup (default: 100ms)</td></tr>
   </table>
@@ -409,7 +411,7 @@ const uint&#160;</td><td class="memItemRight" valign="bottom"><b>MAPVK_VK_TO_VSC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 16 2013 22:36:30 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 1 2013 18:02:04 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

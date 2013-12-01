@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
+   &#160;<span id="projectnumber">0.3.2</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classffxivlib_1_1_entity-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ffxivlib.Entity Class Reference</div>  </div>
@@ -101,7 +103,7 @@ Inheritance diagram for ffxivlib.Entity:</div>
  <div class="center">
   <img src="classffxivlib_1_1_entity.png" usemap="#ffxivlib.Entity_map" alt=""/>
   <map id="ffxivlib.Entity_map" name="ffxivlib.Entity_map">
-<area href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html" title="Basic managed container for structures and other infos " alt="ffxivlib.IContainer&lt; T, U &gt;" shape="rect" coords="0,0,159,24"/>
+<area href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html" title="Abstract base class for various objects " alt="ffxivlib.BaseObject&lt; TU &gt;" shape="rect" coords="0,0,157,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,37 +114,139 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad8f9917fb98bf79a98427972aae4a0f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8f9917fb98bf79a98427972aae4a0f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (<a class="el" href="structffxivlib_1_1_entity_1_1_e_n_t_i_t_y_i_n_f_o.html">ENTITYINFO</a> _structure, IntPtr _address)</td></tr>
-<tr class="separator:ad8f9917fb98bf79a98427972aae4a0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a6be98a59610b3ed8f8fb2cb653424"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_entity.html#ab8a6be98a59610b3ed8f8fb2cb653424">getDistanceTo</a> (<a class="el" href="classffxivlib_1_1_entity.html">Entity</a> other)</td></tr>
-<tr class="memdesc:ab8a6be98a59610b3ed8f8fb2cb653424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between current <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> and a given <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>  <a href="#ab8a6be98a59610b3ed8f8fb2cb653424">More...</a><br/></td></tr>
-<tr class="separator:ab8a6be98a59610b3ed8f8fb2cb653424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html">ffxivlib.IContainer&lt; T, U &gt;</a></td></tr>
-<tr class="memitem:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html#ae9081b3163d43d4d655dc72ea50b7a3d">modify&lt; X &gt;</a> (string field, X value)</td></tr>
-<tr class="memdesc:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the address inside FFXIV process space to be modified for a given field and then modifies it.  <a href="#ae9081b3163d43d4d655dc72ea50b7a3d">More...</a><br/></td></tr>
-<tr class="separator:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html#adf190803540c072242e04f8380befc46">refresh</a> ()</td></tr>
-<tr class="memdesc:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This refreshes the instance It may have unexpected behavior if address changes.  <a href="#adf190803540c072242e04f8380befc46">More...</a><br/></td></tr>
-<tr class="separator:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb213479edb67da5f95f3d0197285f87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb213479edb67da5f95f3d0197285f87"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (<a class="el" href="structffxivlib_1_1_entity_1_1_e_n_t_i_t_y_i_n_f_o.html">ENTITYINFO</a> structure, IntPtr address)</td></tr>
+<tr class="separator:adb213479edb67da5f95f3d0197285f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990f9fe0b9053251c82e53879acd0c69"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_entity.html#a990f9fe0b9053251c82e53879acd0c69">GetDistanceTo</a> (<a class="el" href="classffxivlib_1_1_entity.html">Entity</a> other)</td></tr>
+<tr class="memdesc:a990f9fe0b9053251c82e53879acd0c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between current <a class="el" href="classffxivlib_1_1_entity.html">Entity</a> and a given <a class="el" href="classffxivlib_1_1_entity.html">Entity</a>  <a href="#a990f9fe0b9053251c82e53879acd0c69">More...</a><br/></td></tr>
+<tr class="separator:a990f9fe0b9053251c82e53879acd0c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html">ffxivlib.BaseObject&lt; TU &gt;</a></td></tr>
+<tr class="memitem:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#aa91f90297fae776b0b80a21b6055625e">Modify&lt; TX &gt;</a> (string field, TX value)</td></tr>
+<tr class="memdesc:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the address inside FFXIV process space to be modified for a given field and then modifies it. This will be deprecated with proper setters.  <a href="#aa91f90297fae776b0b80a21b6055625e">More...</a><br/></td></tr>
+<tr class="separator:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#a22d6f6d332514c8c3e73b906ba8b9d8e">Refresh</a> ()</td></tr>
+<tr class="memdesc:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This refreshes the instance It may have unexpected behavior if address changes. This will be deprecated with proper getters.  <a href="#a22d6f6d332514c8c3e73b906ba8b9d8e">More...</a><br/></td></tr>
+<tr class="separator:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html">ffxivlib.IContainer&lt; T, U &gt;</a></td></tr>
-<tr class="memitem:a4c25b42d6bd8f3114947d137bea657c1 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c25b42d6bd8f3114947d137bea657c1"></a>
-IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>address</b></td></tr>
-<tr class="separator:a4c25b42d6bd8f3114947d137bea657c1 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a077a13df5c84a292c1c03e05bc9ac7 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a077a13df5c84a292c1c03e05bc9ac7"></a>
-U&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b></td></tr>
-<tr class="separator:a4a077a13df5c84a292c1c03e05bc9ac7 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:af7a8bbc10eb934a3ae91c7fde01f90f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7a8bbc10eb934a3ae91c7fde01f90f3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringType</b><code> [get, set]</code></td></tr>
+<tr class="separator:af7a8bbc10eb934a3ae91c7fde01f90f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303b06d132824f0a1b7d1f8d0030f515"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303b06d132824f0a1b7d1f8d0030f515"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
+<tr class="separator:a303b06d132824f0a1b7d1f8d0030f515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5fb14311d84b70ffec718cde329d49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d5fb14311d84b70ffec718cde329d49"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PCId</b><code> [get, set]</code></td></tr>
+<tr class="separator:a8d5fb14311d84b70ffec718cde329d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354ca709a53b5b163a0061a92992f320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a354ca709a53b5b163a0061a92992f320"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>NPCId</b><code> [get, set]</code></td></tr>
+<tr class="separator:a354ca709a53b5b163a0061a92992f320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897bc6943199c0d108b0ab526714e609"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a897bc6943199c0d108b0ab526714e609"></a>
+<a class="el" href="namespaceffxivlib.html#aaa4e86d1ea6dbc1661147e6616256e68">TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MobType</b><code> [get, set]</code></td></tr>
+<tr class="separator:a897bc6943199c0d108b0ab526714e609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129539565619ab0481ae8e30953965d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a129539565619ab0481ae8e30953965d5"></a>
+<a class="el" href="namespaceffxivlib.html#a027fd426531e3a42243f5c2b946dde31">CURRENTTARGET</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentTarget</b><code> [get, set]</code></td></tr>
+<tr class="separator:a129539565619ab0481ae8e30953965d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87f3ff423f600318c16c4268f55920b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa87f3ff423f600318c16c4268f55920b"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Distance</b><code> [get, set]</code></td></tr>
+<tr class="separator:aa87f3ff423f600318c16c4268f55920b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57bf663faef4b34cb759a4a582e2aed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae57bf663faef4b34cb759a4a582e2aed"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringStatus</b><code> [get, set]</code></td></tr>
+<tr class="separator:ae57bf663faef4b34cb759a4a582e2aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c4bdca751e821e88a8a77e025b3558"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59c4bdca751e821e88a8a77e025b3558"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>X</b><code> [get, set]</code></td></tr>
+<tr class="separator:a59c4bdca751e821e88a8a77e025b3558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48dfbfd3945139c2ecab703cc4435fd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48dfbfd3945139c2ecab703cc4435fd8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, set]</code></td></tr>
+<tr class="separator:a48dfbfd3945139c2ecab703cc4435fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd02256d29bec7c8be2652be90b3f5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbd02256d29bec7c8be2652be90b3f5c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Y</b><code> [get, set]</code></td></tr>
+<tr class="separator:afbd02256d29bec7c8be2652be90b3f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2dc27b8b8915d0b727c47081821d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d2dc27b8b8915d0b727c47081821d68"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Heading</b><code> [get, set]</code></td></tr>
+<tr class="separator:a5d2dc27b8b8915d0b727c47081821d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175f70e6a8ea7c1dfc6d299aad989a21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a175f70e6a8ea7c1dfc6d299aad989a21"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GatheringInvisible</b><code> [get, set]</code></td></tr>
+<tr class="separator:a175f70e6a8ea7c1dfc6d299aad989a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f143ce5f3071e01253d04199d6b68ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f143ce5f3071e01253d04199d6b68ba"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ModelID</b><code> [get, set]</code></td></tr>
+<tr class="separator:a9f143ce5f3071e01253d04199d6b68ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef7d5a7c745f8abe4c7188fc44acb99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef7d5a7c745f8abe4c7188fc44acb99"></a>
+<a class="el" href="namespaceffxivlib.html#a93f054414b7ccf7ba7c36f54fcc392f5">ENTITYSTATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerStatus</b><code> [get, set]</code></td></tr>
+<tr class="separator:a5ef7d5a7c745f8abe4c7188fc44acb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa5db73f4c162e3e0c625e4109933d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaa5db73f4c162e3e0c625e4109933d2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGM</b><code> [get, set]</code></td></tr>
+<tr class="separator:afaa5db73f4c162e3e0c625e4109933d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6320c563654af675db2779a498a0d76c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6320c563654af675db2779a498a0d76c"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b><code> [get, set]</code></td></tr>
+<tr class="separator:a6320c563654af675db2779a498a0d76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6e30626e85e3a8424978d5c928d96f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc6e30626e85e3a8424978d5c928d96f"></a>
+<a class="el" href="namespaceffxivlib.html#a856915176aeab1f9b643c0243cb008ee">STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsEngaged</b><code> [get, set]</code></td></tr>
+<tr class="separator:abc6e30626e85e3a8424978d5c928d96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c297f6e91524a3d5f003d07b763452d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c297f6e91524a3d5f003d07b763452d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>TargetId</b><code> [get, set]</code></td></tr>
+<tr class="separator:a6c297f6e91524a3d5f003d07b763452d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab188c5e6099bce056c0e1c8603aeda8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab188c5e6099bce056c0e1c8603aeda8b"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GrandCompany</b><code> [get, set]</code></td></tr>
+<tr class="separator:ab188c5e6099bce056c0e1c8603aeda8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d30710b16a255cf1a97ed8f582a07e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8d30710b16a255cf1a97ed8f582a07e"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>GrandCompanyRank</b><code> [get, set]</code></td></tr>
+<tr class="separator:af8d30710b16a255cf1a97ed8f582a07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176a835e7508acd922e83c80249b16a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176a835e7508acd922e83c80249b16a9"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Title</b><code> [get, set]</code></td></tr>
+<tr class="separator:a176a835e7508acd922e83c80249b16a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a01d6de26b6c6429051ecc9993faf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13a01d6de26b6c6429051ecc9993faf2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentHP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a13a01d6de26b6c6429051ecc9993faf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fbe3e4bbd7f19392bb1223dae1b5a18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fbe3e4bbd7f19392bb1223dae1b5a18"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a3fbe3e4bbd7f19392bb1223dae1b5a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b292e9e7ad09c2f0f7f1f98bb59ec6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6b292e9e7ad09c2f0f7f1f98bb59ec6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentMP</b><code> [get, set]</code></td></tr>
+<tr class="separator:ab6b292e9e7ad09c2f0f7f1f98bb59ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb80abb8a52f0ac621727a2cac39793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadb80abb8a52f0ac621727a2cac39793"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMP</b><code> [get, set]</code></td></tr>
+<tr class="separator:aadb80abb8a52f0ac621727a2cac39793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b3d5be244c223b519655fd6c26c380"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38b3d5be244c223b519655fd6c26c380"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentTP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a38b3d5be244c223b519655fd6c26c380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad891cbc0ba70833d22194eb030328a8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad891cbc0ba70833d22194eb030328a8d"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentGP</b><code> [get, set]</code></td></tr>
+<tr class="separator:ad891cbc0ba70833d22194eb030328a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a3465c7ff2db65844d0fdfdca67b43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60a3465c7ff2db65844d0fdfdca67b43"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>MaxGP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a60a3465c7ff2db65844d0fdfdca67b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5648de13303deb9fe81cb64b2b81ec54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5648de13303deb9fe81cb64b2b81ec54"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentCP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a5648de13303deb9fe81cb64b2b81ec54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153c751772ddccbdc12ea07f9d337576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153c751772ddccbdc12ea07f9d337576"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>MaxCP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a153c751772ddccbdc12ea07f9d337576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a33a5f212feee8b9ac3fa61f12901dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a33a5f212feee8b9ac3fa61f12901dc"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Race</b><code> [get, set]</code></td></tr>
+<tr class="separator:a4a33a5f212feee8b9ac3fa61f12901dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f636e311762cd7eafeaec8ec7cc596a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f636e311762cd7eafeaec8ec7cc596a"></a>
+SEX&#160;</td><td class="memItemRight" valign="bottom"><b>Sex</b><code> [get, set]</code></td></tr>
+<tr class="separator:a4f636e311762cd7eafeaec8ec7cc596a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6583792c92e38736451eaa8417ced9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d6583792c92e38736451eaa8417ced9"></a>
+<a class="el" href="structffxivlib_1_1_b_u_f_f.html">BUFF</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Buffs</b><code> [get, set]</code></td></tr>
+<tr class="separator:a6d6583792c92e38736451eaa8417ced9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('properties_classffxivlib_1_1_base_object_3_01_t_u_01_4')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html">ffxivlib.BaseObject&lt; TU &gt;</a></td></tr>
+<tr class="memitem:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#af644322145b27ade7ef186fc80ad1f8c">Address</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of object in FFXIV memory space.  <a href="#af644322145b27ade7ef186fc80ad1f8c">More...</a><br/></td></tr>
+<tr class="separator:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">TU&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#a65d04f0f244699a122f3fbe3f35a86e3">Structure</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure related to object.  <a href="#a65d04f0f244699a122f3fbe3f35a86e3">More...</a><br/></td></tr>
+<tr class="separator:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab8a6be98a59610b3ed8f8fb2cb653424"></a>
+<a class="anchor" id="a990f9fe0b9053251c82e53879acd0c69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float ffxivlib.Entity.getDistanceTo </td>
+          <td class="memname">float ffxivlib.Entity.GetDistanceTo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -168,7 +272,7 @@ U&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 16 2013 22:36:30 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 1 2013 18:02:03 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

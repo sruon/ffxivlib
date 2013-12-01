@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
+   &#160;<span id="projectnumber">0.3.2</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classffxivlib_1_1_party_member-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ffxivlib.PartyMember Class Reference</div>  </div>
@@ -101,7 +103,7 @@ Inheritance diagram for ffxivlib.PartyMember:</div>
  <div class="center">
   <img src="classffxivlib_1_1_party_member.png" usemap="#ffxivlib.PartyMember_map" alt=""/>
   <map id="ffxivlib.PartyMember_map" name="ffxivlib.PartyMember_map">
-<area href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html" title="Basic managed container for structures and other infos " alt="ffxivlib.IContainer&lt; T, U &gt;" shape="rect" coords="0,0,159,24"/>
+<area href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html" title="Abstract base class for various objects " alt="ffxivlib.BaseObject&lt; TU &gt;" shape="rect" coords="0,0,157,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,26 +114,71 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc4a8b102bf341ca1dce3a2a7f92fa28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc4a8b102bf341ca1dce3a2a7f92fa28"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PartyMember</b> (<a class="el" href="structffxivlib_1_1_party_member_1_1_p_a_r_t_y_m_e_m_b_e_r_i_n_f_o.html">PARTYMEMBERINFO</a> _structure, IntPtr _address)</td></tr>
-<tr class="separator:adc4a8b102bf341ca1dce3a2a7f92fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html">ffxivlib.IContainer&lt; T, U &gt;</a></td></tr>
-<tr class="memitem:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html#ae9081b3163d43d4d655dc72ea50b7a3d">modify&lt; X &gt;</a> (string field, X value)</td></tr>
-<tr class="memdesc:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the address inside FFXIV process space to be modified for a given field and then modifies it.  <a href="#ae9081b3163d43d4d655dc72ea50b7a3d">More...</a><br/></td></tr>
-<tr class="separator:ae9081b3163d43d4d655dc72ea50b7a3d inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html#adf190803540c072242e04f8380befc46">refresh</a> ()</td></tr>
-<tr class="memdesc:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This refreshes the instance It may have unexpected behavior if address changes.  <a href="#adf190803540c072242e04f8380befc46">More...</a><br/></td></tr>
-<tr class="separator:adf190803540c072242e04f8380befc46 inherit pub_methods_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff972ec625974fc90a8af7e577c96d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ff972ec625974fc90a8af7e577c96d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PartyMember</b> (<a class="el" href="structffxivlib_1_1_party_member_1_1_p_a_r_t_y_m_e_m_b_e_r_i_n_f_o.html">PARTYMEMBERINFO</a> structure, IntPtr address)</td></tr>
+<tr class="separator:a2ff972ec625974fc90a8af7e577c96d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html">ffxivlib.BaseObject&lt; TU &gt;</a></td></tr>
+<tr class="memitem:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#aa91f90297fae776b0b80a21b6055625e">Modify&lt; TX &gt;</a> (string field, TX value)</td></tr>
+<tr class="memdesc:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the address inside FFXIV process space to be modified for a given field and then modifies it. This will be deprecated with proper setters.  <a href="#aa91f90297fae776b0b80a21b6055625e">More...</a><br/></td></tr>
+<tr class="separator:aa91f90297fae776b0b80a21b6055625e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#a22d6f6d332514c8c3e73b906ba8b9d8e">Refresh</a> ()</td></tr>
+<tr class="memdesc:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This refreshes the instance It may have unexpected behavior if address changes. This will be deprecated with proper getters.  <a href="#a22d6f6d332514c8c3e73b906ba8b9d8e">More...</a><br/></td></tr>
+<tr class="separator:a22d6f6d332514c8c3e73b906ba8b9d8e inherit pub_methods_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4.html">ffxivlib.IContainer&lt; T, U &gt;</a></td></tr>
-<tr class="memitem:a4c25b42d6bd8f3114947d137bea657c1 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c25b42d6bd8f3114947d137bea657c1"></a>
-IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>address</b></td></tr>
-<tr class="separator:a4c25b42d6bd8f3114947d137bea657c1 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a077a13df5c84a292c1c03e05bc9ac7 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a077a13df5c84a292c1c03e05bc9ac7"></a>
-U&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b></td></tr>
-<tr class="separator:a4a077a13df5c84a292c1c03e05bc9ac7 inherit pub_attribs_classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:acf69aba810a3271d2b9887be3a1c4c0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf69aba810a3271d2b9887be3a1c4c0e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerID</b><code> [get, set]</code></td></tr>
+<tr class="separator:acf69aba810a3271d2b9887be3a1c4c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34544c2c70d1278bdeeb24232203f8fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34544c2c70d1278bdeeb24232203f8fc"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
+<tr class="separator:a34544c2c70d1278bdeeb24232203f8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c512cc64c71e318f3576c681bc3fc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2c512cc64c71e318f3576c681bc3fc4"></a>
+<a class="el" href="namespaceffxivlib.html#a7273810711af045adb7151580e025a86">JOB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Job</b><code> [get, set]</code></td></tr>
+<tr class="separator:af2c512cc64c71e318f3576c681bc3fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa08d473848adb402ac6ff1329806e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fa08d473848adb402ac6ff1329806e1"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b><code> [get, set]</code></td></tr>
+<tr class="separator:a1fa08d473848adb402ac6ff1329806e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf72c8802ba87b5afad7b9de896934a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bf72c8802ba87b5afad7b9de896934a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentHP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a9bf72c8802ba87b5afad7b9de896934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76fee05e006634f4ccb85f6ac73c40d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae76fee05e006634f4ccb85f6ac73c40d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHP</b><code> [get, set]</code></td></tr>
+<tr class="separator:ae76fee05e006634f4ccb85f6ac73c40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac50f2981cc802b8f2ea6dd7a6b1ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adac50f2981cc802b8f2ea6dd7a6b1ca0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentMP</b><code> [get, set]</code></td></tr>
+<tr class="separator:adac50f2981cc802b8f2ea6dd7a6b1ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438c57f32517c6471541333504747b33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a438c57f32517c6471541333504747b33"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a438c57f32517c6471541333504747b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191224412d870b90e3dce6e70b22705d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a191224412d870b90e3dce6e70b22705d"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentTP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a191224412d870b90e3dce6e70b22705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff1d9559c087ddd5a9437427f54630b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaff1d9559c087ddd5a9437427f54630b"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentGP</b><code> [get, set]</code></td></tr>
+<tr class="separator:aaff1d9559c087ddd5a9437427f54630b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0eb631fc7e9cfb9a0d2f0f8cf68ed4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0eb631fc7e9cfb9a0d2f0f8cf68ed4"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>MaxGP</b><code> [get, set]</code></td></tr>
+<tr class="separator:a8a0eb631fc7e9cfb9a0d2f0f8cf68ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6be84a7fbd4c70a2ab826ae264bf952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6be84a7fbd4c70a2ab826ae264bf952"></a>
+<a class="el" href="structffxivlib_1_1_b_u_f_f.html">BUFF</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Buffs</b><code> [get, set]</code></td></tr>
+<tr class="separator:ad6be84a7fbd4c70a2ab826ae264bf952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36af049209a8e7753db0495ae087afc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36af049209a8e7753db0495ae087afc"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>X</b><code> [get, set]</code></td></tr>
+<tr class="separator:ae36af049209a8e7753db0495ae087afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c945dd5a32f0b733527566849e1465f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c945dd5a32f0b733527566849e1465f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, set]</code></td></tr>
+<tr class="separator:a2c945dd5a32f0b733527566849e1465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba751b8dca3725402af945fbdf0bfc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adba751b8dca3725402af945fbdf0bfc3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Y</b><code> [get, set]</code></td></tr>
+<tr class="separator:adba751b8dca3725402af945fbdf0bfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td colspan="2" onclick="javascript:toggleInherit('properties_classffxivlib_1_1_base_object_3_01_t_u_01_4')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html">ffxivlib.BaseObject&lt; TU &gt;</a></td></tr>
+<tr class="memitem:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#af644322145b27ade7ef186fc80ad1f8c">Address</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of object in FFXIV memory space.  <a href="#af644322145b27ade7ef186fc80ad1f8c">More...</a><br/></td></tr>
+<tr class="separator:af644322145b27ade7ef186fc80ad1f8c inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memItemLeft" align="right" valign="top">TU&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_base_object_3_01_t_u_01_4.html#a65d04f0f244699a122f3fbe3f35a86e3">Structure</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure related to object.  <a href="#a65d04f0f244699a122f3fbe3f35a86e3">More...</a><br/></td></tr>
+<tr class="separator:a65d04f0f244699a122f3fbe3f35a86e3 inherit properties_classffxivlib_1_1_base_object_3_01_t_u_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>PartyMember.cs</li>
@@ -139,7 +186,7 @@ U&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 16 2013 22:36:30 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 1 2013 18:02:04 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

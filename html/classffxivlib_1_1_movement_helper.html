@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
+   &#160;<span id="projectnumber">0.3.2</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,26 +107,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7cb94afc3e302ca7a9e4503e43182b2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a7cb94afc3e302ca7a9e4503e43182b2a">GoToPos</a> (float X, float Y, float Z)</td></tr>
-<tr class="memdesc:a7cb94afc3e302ca7a9e4503e43182b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heads to a given coordinate  <a href="#a7cb94afc3e302ca7a9e4503e43182b2a">More...</a><br/></td></tr>
-<tr class="separator:a7cb94afc3e302ca7a9e4503e43182b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2270670d0784b93acc9cc2952118b480"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a2270670d0784b93acc9cc2952118b480">startRecordingCoordinates</a> (string filename=null, int delay=400)</td></tr>
-<tr class="memdesc:a2270670d0784b93acc9cc2952118b480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a thread recording waypoint.  <a href="#a2270670d0784b93acc9cc2952118b480">More...</a><br/></td></tr>
-<tr class="separator:a2270670d0784b93acc9cc2952118b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81625fd8f23faf6079d19ddd552b30ba"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a81625fd8f23faf6079d19ddd552b30ba">stopRecordingWaypoint</a> ()</td></tr>
-<tr class="memdesc:a81625fd8f23faf6079d19ddd552b30ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the recording of Waypoint and return the list of coordinates if you wish to process them. The waypoint is saved to file regardless.  <a href="#a81625fd8f23faf6079d19ddd552b30ba">More...</a><br/></td></tr>
-<tr class="separator:a81625fd8f23faf6079d19ddd552b30ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af119b35d20fb48f78a105bb6a5db9b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#af119b35d20fb48f78a105bb6a5db9b08">playWaypoint</a> (string filename=null, List&lt; <a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a> &gt; list=null)</td></tr>
-<tr class="memdesc:af119b35d20fb48f78a105bb6a5db9b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a pre-recorded waypoint file (XML) or a list of coordinates. It cannot handles both.  <a href="#af119b35d20fb48f78a105bb6a5db9b08">More...</a><br/></td></tr>
-<tr class="separator:af119b35d20fb48f78a105bb6a5db9b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5910202861046f64d46a59fcbcd57076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a5910202861046f64d46a59fcbcd57076">pauseWaypoint</a> ()</td></tr>
-<tr class="memdesc:a5910202861046f64d46a59fcbcd57076"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pauses the playWaypoint thread. Sets pause to true or false depending on current value.  <a href="#a5910202861046f64d46a59fcbcd57076">More...</a><br/></td></tr>
-<tr class="separator:a5910202861046f64d46a59fcbcd57076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8706ad00f8ca28ee9a2272d45879d7cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a8706ad00f8ca28ee9a2272d45879d7cb">GoToPos</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:a8706ad00f8ca28ee9a2272d45879d7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heads to a given coordinate  <a href="#a8706ad00f8ca28ee9a2272d45879d7cb">More...</a><br/></td></tr>
+<tr class="separator:a8706ad00f8ca28ee9a2272d45879d7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d42147d0c8dbaba8688b02b28da555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a66d42147d0c8dbaba8688b02b28da555">StartRecordingCoordinates</a> (string filename=null, int delay=400)</td></tr>
+<tr class="memdesc:a66d42147d0c8dbaba8688b02b28da555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a thread recording waypoint.  <a href="#a66d42147d0c8dbaba8688b02b28da555">More...</a><br/></td></tr>
+<tr class="separator:a66d42147d0c8dbaba8688b02b28da555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb131c04b6f624007be210202fed5d60"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#adb131c04b6f624007be210202fed5d60">StopRecordingWaypoint</a> ()</td></tr>
+<tr class="memdesc:adb131c04b6f624007be210202fed5d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the recording of Waypoint and return the list of coordinates if you wish to process them. The waypoint is saved to file regardless.  <a href="#adb131c04b6f624007be210202fed5d60">More...</a><br/></td></tr>
+<tr class="separator:adb131c04b6f624007be210202fed5d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907374f2640eef358e8293c194d70d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a907374f2640eef358e8293c194d70d48">PlayWaypoint</a> (string filename=null, List&lt; <a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a> &gt; list=null)</td></tr>
+<tr class="memdesc:a907374f2640eef358e8293c194d70d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a pre-recorded waypoint file (XML) or a list of coordinates. It cannot handles both.  <a href="#a907374f2640eef358e8293c194d70d48">More...</a><br/></td></tr>
+<tr class="separator:a907374f2640eef358e8293c194d70d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6b3bedbe39ca3570ca44cd6605bff2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_movement_helper.html#a6c6b3bedbe39ca3570ca44cd6605bff2">PauseWaypoint</a> ()</td></tr>
+<tr class="memdesc:a6c6b3bedbe39ca3570ca44cd6605bff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pauses the playWaypoint thread. Sets pause to true or false depending on current value.  <a href="#a6c6b3bedbe39ca3570ca44cd6605bff2">More...</a><br/></td></tr>
+<tr class="separator:a6c6b3bedbe39ca3570ca44cd6605bff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Credits to FFACETOOLS. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7cb94afc3e302ca7a9e4503e43182b2a"></a>
+<a class="anchor" id="a8706ad00f8ca28ee9a2272d45879d7cb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -133,19 +134,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void ffxivlib.MovementHelper.GoToPos </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>X</em>, </td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>Y</em>, </td>
+          <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>Z</em>&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -158,21 +159,21 @@ Public Member Functions</h2></td></tr>
 <p>Heads to a given coordinate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">X</td><td>X</td></tr>
-    <tr><td class="paramname">Y</td><td>Y</td></tr>
-    <tr><td class="paramname">Z</td><td>Z</td></tr>
+    <tr><td class="paramname">x</td><td>X</td></tr>
+    <tr><td class="paramname">y</td><td>Y</td></tr>
+    <tr><td class="paramname">z</td><td>Z</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a5910202861046f64d46a59fcbcd57076"></a>
+<a class="anchor" id="a6c6b3bedbe39ca3570ca44cd6605bff2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ffxivlib.MovementHelper.pauseWaypoint </td>
+          <td class="memname">bool ffxivlib.MovementHelper.PauseWaypoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -185,12 +186,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af119b35d20fb48f78a105bb6a5db9b08"></a>
+<a class="anchor" id="a907374f2640eef358e8293c194d70d48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ffxivlib.MovementHelper.playWaypoint </td>
+          <td class="memname">void ffxivlib.MovementHelper.PlayWaypoint </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>filename</em> = <code>null</code>, </td>
@@ -220,12 +221,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2270670d0784b93acc9cc2952118b480"></a>
+<a class="anchor" id="a66d42147d0c8dbaba8688b02b28da555"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ffxivlib.MovementHelper.startRecordingCoordinates </td>
+          <td class="memname">void ffxivlib.MovementHelper.StartRecordingCoordinates </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>filename</em> = <code>null</code>, </td>
@@ -255,12 +256,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a81625fd8f23faf6079d19ddd552b30ba"></a>
+<a class="anchor" id="adb131c04b6f624007be210202fed5d60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a>&gt; ffxivlib.MovementHelper.stopRecordingWaypoint </td>
+          <td class="memname">List&lt;<a class="el" href="structffxivlib_1_1_movement_helper_1_1_coords.html">Coords</a>&gt; ffxivlib.MovementHelper.StopRecordingWaypoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -279,7 +280,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 16 2013 22:36:30 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 1 2013 18:02:04 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

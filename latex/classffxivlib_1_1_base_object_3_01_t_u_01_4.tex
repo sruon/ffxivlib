@@ -1,0 +1,98 @@
+\hypertarget{classffxivlib_1_1_base_object_3_01_t_u_01_4}{\section{ffxivlib.\-Base\-Object$<$ T\-U $>$ Class Template Reference}
+\label{classffxivlib_1_1_base_object_3_01_t_u_01_4}\index{ffxivlib.\-Base\-Object$<$ T\-U $>$@{ffxivlib.\-Base\-Object$<$ T\-U $>$}}
+}
+
+
+Abstract base class for various objects  
+
+
+Inheritance diagram for ffxivlib.\-Base\-Object$<$ T\-U $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.969697cm]{classffxivlib_1_1_base_object_3_01_t_u_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classffxivlib_1_1_base_object_3_01_t_u_01_4_aa91f90297fae776b0b80a21b6055625e}{Modify$<$ T\-X $>$} (string field, T\-X value)
+\begin{DoxyCompactList}\small\item\em This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. This will be deprecated with proper setters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classffxivlib_1_1_base_object_3_01_t_u_01_4_a22d6f6d332514c8c3e73b906ba8b9d8e}{Refresh} ()
+\begin{DoxyCompactList}\small\item\em This refreshes the instance It may have unexpected behavior if address changes. This will be deprecated with proper getters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Int\-Ptr \hyperlink{classffxivlib_1_1_base_object_3_01_t_u_01_4_af644322145b27ade7ef186fc80ad1f8c}{Address}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Address of object in F\-F\-X\-I\-V memory space. \end{DoxyCompactList}\item 
+T\-U \hyperlink{classffxivlib_1_1_base_object_3_01_t_u_01_4_a65d04f0f244699a122f3fbe3f35a86e3}{Structure}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Structure related to object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for various objects 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\-U} & Structure type\\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classffxivlib_1_1_base_object_3_01_t_u_01_4_aa91f90297fae776b0b80a21b6055625e}{\index{ffxivlib\-::\-Base\-Object$<$ T\-U $>$@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}!Modify$<$ T\-X $>$@{Modify$<$ T\-X $>$}}
+\index{Modify$<$ T\-X $>$@{Modify$<$ T\-X $>$}!ffxivlib::BaseObject< TU >@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}}
+\subsubsection[{Modify$<$ T\-X $>$}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ffxivlib.\-Base\-Object$<$ T\-U $>$.Modify$<$ T\-X $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{field, }
+\item[{T\-X}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classffxivlib_1_1_base_object_3_01_t_u_01_4_aa91f90297fae776b0b80a21b6055625e}
+
+
+This function computes the address inside F\-F\-X\-I\-V process space to be modified for a given field and then modifies it. This will be deprecated with proper setters. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\-X} & Type of the value to modify, stick to base types\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em field} & Name of the structure field to modify\\
+\hline
+{\em value} & Value to assign to field\\
+\hline
+\end{DoxyParams}
+\hypertarget{classffxivlib_1_1_base_object_3_01_t_u_01_4_a22d6f6d332514c8c3e73b906ba8b9d8e}{\index{ffxivlib\-::\-Base\-Object$<$ T\-U $>$@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ffxivlib::BaseObject< TU >@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}}
+\subsubsection[{Refresh}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ffxivlib.\-Base\-Object$<$ T\-U $>$.Refresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classffxivlib_1_1_base_object_3_01_t_u_01_4_a22d6f6d332514c8c3e73b906ba8b9d8e}
+
+
+This refreshes the instance It may have unexpected behavior if address changes. This will be deprecated with proper getters. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{classffxivlib_1_1_base_object_3_01_t_u_01_4_af644322145b27ade7ef186fc80ad1f8c}{\index{ffxivlib\-::\-Base\-Object$<$ T\-U $>$@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}!Address@{Address}}
+\index{Address@{Address}!ffxivlib::BaseObject< TU >@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}}
+\subsubsection[{Address}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr ffxivlib.\-Base\-Object$<$ T\-U $>$.Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{classffxivlib_1_1_base_object_3_01_t_u_01_4_af644322145b27ade7ef186fc80ad1f8c}
+
+
+Address of object in F\-F\-X\-I\-V memory space. 
+
+\hypertarget{classffxivlib_1_1_base_object_3_01_t_u_01_4_a65d04f0f244699a122f3fbe3f35a86e3}{\index{ffxivlib\-::\-Base\-Object$<$ T\-U $>$@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}!Structure@{Structure}}
+\index{Structure@{Structure}!ffxivlib::BaseObject< TU >@{ffxivlib\-::\-Base\-Object$<$ T\-U $>$}}
+\subsubsection[{Structure}]{\setlength{\rightskip}{0pt plus 5cm}T\-U ffxivlib.\-Base\-Object$<$ T\-U $>$.Structure\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{classffxivlib_1_1_base_object_3_01_t_u_01_4_a65d04f0f244699a122f3fbe3f35a86e3}
+
+
+Structure related to object. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Base\-Object.\-cs\end{DoxyCompactItemize}

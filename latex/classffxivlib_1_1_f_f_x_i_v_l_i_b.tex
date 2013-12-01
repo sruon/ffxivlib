@@ -4,50 +4,53 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classffxivlib_1_1_chatlog}{Chatlog} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}{get\-Chatlog} ()
+\hyperlink{classffxivlib_1_1_chatlog}{Chatlog} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1d98f70dcbf35902584a11c95e785d29}{Get\-Chatlog} ()
 \begin{DoxyCompactList}\small\item\em This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} object \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a494ffffe0d2b77aef3457e9eb8969a3b}{get\-Entity\-By\-Id} (int id)
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a73db6395aaa77cf29e9c71aa867e5729}{\hyperlink{classffxivlib_1_1_player}{Player} {\bfseries Get\-Companion\-Info} ()}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a73db6395aaa77cf29e9c71aa867e5729}
+
+\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a707e78d2924dd2694ec104b2ee6e1bb6}{Get\-Entity\-By\-Id} (int id)
 \begin{DoxyCompactList}\small\item\em This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object according to the position in the \hyperlink{classffxivlib_1_1_entity}{Entity} array You may effectively loop by yourself on this function. \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}{get\-Entity\-Info} (int id)
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_abf21279e4f445a6d4609a7b1ab4c5c64}{Get\-Entity\-Info} (int id)
 \begin{DoxyCompactList}\small\item\em Deprecated, use get\-Entity\-By\-Id \end{DoxyCompactList}\item 
-I\-Enumerable$<$ \hyperlink{classffxivlib_1_1_entity}{Entity} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab88d3f8c698fc739a7afeb0f24a26a21}{get\-Entity\-By\-Name} (string name)
+I\-Enumerable$<$ \hyperlink{classffxivlib_1_1_entity}{Entity} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8986a3f2a5a3d4d2680ae779e3bb68fd}{Get\-Entity\-By\-Name} (string name)
 \begin{DoxyCompactList}\small\item\em This function attempts to retrieve a list of \hyperlink{classffxivlib_1_1_entity}{Entity} by its name in the \hyperlink{classffxivlib_1_1_entity}{Entity} array This is potentially a costly call as we build a complete list to look for the \hyperlink{classffxivlib_1_1_entity}{Entity}. This doesn't include Gathering nodes at the moment. To be fixed. \end{DoxyCompactList}\item 
-I\-Enumerable$<$ \hyperlink{classffxivlib_1_1_entity}{Entity} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5defd75dc15eee11ca1c0e4d3dc8fac3}{get\-Entity\-By\-Type} (\hyperlink{namespaceffxivlib_aaa4e86d1ea6dbc1661147e6616256e68}{T\-Y\-P\-E} type)
+I\-Enumerable$<$ \hyperlink{classffxivlib_1_1_entity}{Entity} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5290e1392e9cca47455d4fa215c8cb84}{Get\-Entity\-By\-Type} (\hyperlink{namespaceffxivlib_aaa4e86d1ea6dbc1661147e6616256e68}{T\-Y\-P\-E} type)
 \begin{DoxyCompactList}\small\item\em Retrieves a list of \hyperlink{classffxivlib_1_1_entity}{Entity} corresponding to the given T\-Y\-P\-E Needs to be refactored. \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac9deecbc7f2ceeac2b48b06620e8a665}{F\-F\-X\-I\-V\-L\-I\-B} (int pid=0)
 \begin{DoxyCompactList}\small\item\em Instantiates a \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B} instance. P\-I\-D is optionnal but required if multiple F\-F\-X\-I\-V process are running. \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_adeabe7f254cb3ad228f1fee754f6b5d1}{get\-Self\-Inventory} ()
+List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a414e7d6cf920df6a210b28979d4e256b}{Get\-Self\-Inventory} ()
 \begin{DoxyCompactList}\small\item\em This returns your inventory, extra inventory (gil, crystals, tomes, seals), key items, calamity salvager and currently equipped items \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8d3e897ef9b983484e479e237da9a424}{get\-Current\-Equipment} ()
+List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4ad97fc36d32d6c56d1ea7c12b5b211e}{Get\-Current\-Equipment} ()
 \begin{DoxyCompactList}\small\item\em This returns your currently equipped items. See E\-Q\-U\-I\-P\-\_\-\-P\-O\-S enum. \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08fba89890835ec84967ba636759c9db}{get\-Retainer\-Inventory} ()
+List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae3c5c77d26ed45d4be8ddd8e0caf3bb9}{Get\-Retainer\-Inventory} ()
 \begin{DoxyCompactList}\small\item\em This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale. This only works while checking a retainer. \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5fe239c8493c3dfef4c0dbfce645ccb1}{get\-Armory\-Chest} ()
+List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1b51a968a6d6e59d5a0a3b265d19a742}{Get\-Armory\-Chest} ()
 \begin{DoxyCompactList}\small\item\em This returns your whole Armory Chest. \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1c5ab49e698ec5996139d39f73e3ec5b}{get\-Company\-Inventory} ()
+List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9e3b1f4f0b1c203583e6c38a5bcf9c0c}{Get\-Company\-Inventory} ()
 \begin{DoxyCompactList}\small\item\em This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. \end{DoxyCompactList}\item 
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a2e19fa6a85db14f2b15ff4038a33cd61}{byte\mbox{[}$\,$\mbox{]} {\bfseries Read\-Memory} (Int\-Ptr pointer, uint count)}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a2e19fa6a85db14f2b15ff4038a33cd61}
 
 \item 
-\hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}{get\-Movement\-Helper} (Send\-Key\-Input.\-V\-K\-Keys \-\_\-left\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-A, Send\-Key\-Input.\-V\-K\-Keys \-\_\-right\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-D, Send\-Key\-Input.\-V\-K\-Keys \-\_\-forward\-\_\-key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-W)
+\hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a889468d923f65d7ae6ac52135048c1d6}{Get\-Movement\-Helper} (Send\-Key\-Input.\-V\-K\-Keys left\-Key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-A, Send\-Key\-Input.\-V\-K\-Keys right\-Key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-D, Send\-Key\-Input.\-V\-K\-Keys forward\-Key=Send\-Key\-Input.\-V\-K\-Keys.\-K\-E\-Y\-\_\-\-W)
 \begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance ready for work. \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{get\-Party\-Member\-Info} (int id)
+\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4c0f7a81a068c9ff5b668ff22a7e15d4}{Get\-Party\-Member\-Info} (int id)
 \begin{DoxyCompactList}\small\item\em Deprecated, use get\-Party\-Member\-By\-Id \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1f853ba79ff05b1f4bc9d20470071075}{get\-Party\-Member\-By\-Id} (int id)
+\hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aae35e1fac36dcac4b4c0ad42550f918d}{Get\-Party\-Member\-By\-Id} (int id)
 \begin{DoxyCompactList}\small\item\em This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{get\-Player\-Info} ()
+\hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a66e0eb2208e2d9332633ca9476976d53}{Get\-Player\-Info} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info \end{DoxyCompactList}\item 
 void \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac4d88c5b015e78af8455be0bef6f3aca}{Send\-Key} (Int\-Ptr key, bool keyup=true, int delay=100)
 \begin{DoxyCompactList}\small\item\em This function sends a keystroke to the Final Fantasy X\-I\-V window \end{DoxyCompactList}\item 
-Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{get\-Sig\-Scan} (byte\mbox{[}$\,$\mbox{]} signature)
+Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9a29f9a5a3872f96ab9b3a1dd48c3256}{Get\-Sig\-Scan} (byte\mbox{[}$\,$\mbox{]} signature)
 \begin{DoxyCompactList}\small\item\em Finds address of specified signature This hasnt been tested in a long time \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_target}{Target} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa2b9e679d4edcc20ecda7e4457dffc5d}{get\-Targets} ()
+\hyperlink{classffxivlib_1_1_target}{Target} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab9c4560506d6cdb37c138b25da38f7f7}{Get\-Targets} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the target array \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}{get\-Previous\-Target} ()
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9f332cf47bdc90a63d62131f51ad69bb}{Get\-Previous\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the previous target \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}{get\-Mouseover\-Target} ()
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a53f76a0a73f50e6e4e76b61780c4915a}{Get\-Mouseover\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current Mouseover target \end{DoxyCompactList}\item 
-\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{get\-Current\-Target} ()
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_abb0899feb3c378445a01d70d59866f43}{Get\-Current\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -71,13 +74,13 @@ Instantiates a \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5fe239c8493c3dfef4c0dbfce645ccb1}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Armory\-Chest@{get\-Armory\-Chest}}
-\index{get\-Armory\-Chest@{get\-Armory\-Chest}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Armory\-Chest}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Armory\-Chest (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1b51a968a6d6e59d5a0a3b265d19a742}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Armory\-Chest@{Get\-Armory\-Chest}}
+\index{Get\-Armory\-Chest@{Get\-Armory\-Chest}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Armory\-Chest}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Armory\-Chest (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5fe239c8493c3dfef4c0dbfce645ccb1}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1b51a968a6d6e59d5a0a3b265d19a742}
 
 
 This returns your whole Armory Chest. 
@@ -85,13 +88,13 @@ This returns your whole Armory Chest.
 \begin{DoxyReturn}{Returns}
 List of items
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Chatlog@{get\-Chatlog}}
-\index{get\-Chatlog@{get\-Chatlog}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Chatlog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chatlog} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Chatlog (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1d98f70dcbf35902584a11c95e785d29}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Chatlog@{Get\-Chatlog}}
+\index{Get\-Chatlog@{Get\-Chatlog}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Chatlog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chatlog} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Chatlog (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_acb5cc13e23647bd93e9f550a7a6961d3}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1d98f70dcbf35902584a11c95e785d29}
 
 
 This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} object 
@@ -99,13 +102,13 @@ This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} obje
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} instance
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1c5ab49e698ec5996139d39f73e3ec5b}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Company\-Inventory@{get\-Company\-Inventory}}
-\index{get\-Company\-Inventory@{get\-Company\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Company\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Company\-Inventory (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9e3b1f4f0b1c203583e6c38a5bcf9c0c}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Company\-Inventory@{Get\-Company\-Inventory}}
+\index{Get\-Company\-Inventory@{Get\-Company\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Company\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Company\-Inventory (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1c5ab49e698ec5996139d39f73e3ec5b}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9e3b1f4f0b1c203583e6c38a5bcf9c0c}
 
 
 This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. 
@@ -113,13 +116,13 @@ This returns your Free Company inventory, extra inventory (currency, crystals) T
 \begin{DoxyReturn}{Returns}
 List of items
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8d3e897ef9b983484e479e237da9a424}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Current\-Equipment@{get\-Current\-Equipment}}
-\index{get\-Current\-Equipment@{get\-Current\-Equipment}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Current\-Equipment}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Current\-Equipment (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4ad97fc36d32d6c56d1ea7c12b5b211e}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Current\-Equipment@{Get\-Current\-Equipment}}
+\index{Get\-Current\-Equipment@{Get\-Current\-Equipment}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Current\-Equipment}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Current\-Equipment (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8d3e897ef9b983484e479e237da9a424}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4ad97fc36d32d6c56d1ea7c12b5b211e}
 
 
 This returns your currently equipped items. See E\-Q\-U\-I\-P\-\_\-\-P\-O\-S enum. 
@@ -127,13 +130,13 @@ This returns your currently equipped items. See E\-Q\-U\-I\-P\-\_\-\-P\-O\-S enu
 \begin{DoxyReturn}{Returns}
 List of items
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Current\-Target@{get\-Current\-Target}}
-\index{get\-Current\-Target@{get\-Current\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Current\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Current\-Target (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_abb0899feb3c378445a01d70d59866f43}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Current\-Target@{Get\-Current\-Target}}
+\index{Get\-Current\-Target@{Get\-Current\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Current\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Current\-Target (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aee1b206ae927123785f8362b4761aec3}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_abb0899feb3c378445a01d70d59866f43}
 
 
 This function retrieves the current target 
@@ -141,13 +144,13 @@ This function retrieves the current target
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_entity}{Entity} object or null
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a494ffffe0d2b77aef3457e9eb8969a3b}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-By\-Id@{get\-Entity\-By\-Id}}
-\index{get\-Entity\-By\-Id@{get\-Entity\-By\-Id}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Entity\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-By\-Id (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a707e78d2924dd2694ec104b2ee6e1bb6}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Entity\-By\-Id@{Get\-Entity\-By\-Id}}
+\index{Get\-Entity\-By\-Id@{Get\-Entity\-By\-Id}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Entity\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Entity\-By\-Id (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a494ffffe0d2b77aef3457e9eb8969a3b}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a707e78d2924dd2694ec104b2ee6e1bb6}
 
 
 This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object according to the position in the \hyperlink{classffxivlib_1_1_entity}{Entity} array You may effectively loop by yourself on this function. 
@@ -165,13 +168,13 @@ This function build an \hyperlink{classffxivlib_1_1_entity}{Entity} object accor
 {\em System.\-Index\-Out\-Of\-Range\-Exception} & Out of range\\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab88d3f8c698fc739a7afeb0f24a26a21}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-By\-Name@{get\-Entity\-By\-Name}}
-\index{get\-Entity\-By\-Name@{get\-Entity\-By\-Name}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Entity\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Entity}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-By\-Name (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8986a3f2a5a3d4d2680ae779e3bb68fd}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Entity\-By\-Name@{Get\-Entity\-By\-Name}}
+\index{Get\-Entity\-By\-Name@{Get\-Entity\-By\-Name}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Entity\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Entity}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Entity\-By\-Name (
 \begin{DoxyParamCaption}
 \item[{string}]{name}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab88d3f8c698fc739a7afeb0f24a26a21}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8986a3f2a5a3d4d2680ae779e3bb68fd}
 
 
 This function attempts to retrieve a list of \hyperlink{classffxivlib_1_1_entity}{Entity} by its name in the \hyperlink{classffxivlib_1_1_entity}{Entity} array This is potentially a costly call as we build a complete list to look for the \hyperlink{classffxivlib_1_1_entity}{Entity}. This doesn't include Gathering nodes at the moment. To be fixed. 
@@ -184,13 +187,13 @@ This function attempts to retrieve a list of \hyperlink{classffxivlib_1_1_entity
 \begin{DoxyReturn}{Returns}
 Enumerable list of \hyperlink{classffxivlib_1_1_entity}{Entity} object or
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5defd75dc15eee11ca1c0e4d3dc8fac3}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-By\-Type@{get\-Entity\-By\-Type}}
-\index{get\-Entity\-By\-Type@{get\-Entity\-By\-Type}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Entity\-By\-Type}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Entity}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-By\-Type (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5290e1392e9cca47455d4fa215c8cb84}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Entity\-By\-Type@{Get\-Entity\-By\-Type}}
+\index{Get\-Entity\-By\-Type@{Get\-Entity\-By\-Type}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Entity\-By\-Type}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Entity}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Entity\-By\-Type (
 \begin{DoxyParamCaption}
 \item[{{\bf T\-Y\-P\-E}}]{type}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5defd75dc15eee11ca1c0e4d3dc8fac3}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a5290e1392e9cca47455d4fa215c8cb84}
 
 
 Retrieves a list of \hyperlink{classffxivlib_1_1_entity}{Entity} corresponding to the given T\-Y\-P\-E Needs to be refactored. 
@@ -203,13 +206,13 @@ Retrieves a list of \hyperlink{classffxivlib_1_1_entity}{Entity} corresponding t
 \begin{DoxyReturn}{Returns}
 Enumerable list of \hyperlink{classffxivlib_1_1_entity}{Entity} objects
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Entity\-Info@{get\-Entity\-Info}}
-\index{get\-Entity\-Info@{get\-Entity\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Entity\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Entity\-Info (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_abf21279e4f445a6d4609a7b1ab4c5c64}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Entity\-Info@{Get\-Entity\-Info}}
+\index{Get\-Entity\-Info@{Get\-Entity\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Entity\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Entity\-Info (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4632b29db89772dc247157184e99f684}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_abf21279e4f445a6d4609a7b1ab4c5c64}
 
 
 Deprecated, use get\-Entity\-By\-Id 
@@ -222,13 +225,13 @@ Deprecated, use get\-Entity\-By\-Id
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Mouseover\-Target@{get\-Mouseover\-Target}}
-\index{get\-Mouseover\-Target@{get\-Mouseover\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Mouseover\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Mouseover\-Target (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a53f76a0a73f50e6e4e76b61780c4915a}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Mouseover\-Target@{Get\-Mouseover\-Target}}
+\index{Get\-Mouseover\-Target@{Get\-Mouseover\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Mouseover\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Mouseover\-Target (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae778171978d95c2cb4a3519e2cc9761a}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a53f76a0a73f50e6e4e76b61780c4915a}
 
 
 This function retrieves the current Mouseover target 
@@ -236,38 +239,38 @@ This function retrieves the current Mouseover target
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_entity}{Entity} object or null
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Movement\-Helper@{get\-Movement\-Helper}}
-\index{get\-Movement\-Helper@{get\-Movement\-Helper}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Movement\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Movement\-Helper} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Movement\-Helper (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a889468d923f65d7ae6ac52135048c1d6}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Movement\-Helper@{Get\-Movement\-Helper}}
+\index{Get\-Movement\-Helper@{Get\-Movement\-Helper}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Movement\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Movement\-Helper} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Movement\-Helper (
 \begin{DoxyParamCaption}
-\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-left\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-A}, }
-\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-right\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-D}, }
-\item[{Send\-Key\-Input.\-V\-K\-Keys}]{\-\_\-forward\-\_\-key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-W}}
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{left\-Key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-A}, }
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{right\-Key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-D}, }
+\item[{Send\-Key\-Input.\-V\-K\-Keys}]{forward\-Key = {\ttfamily SendKeyInput.VKKeys.KEY\-\_\-W}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1032d39df92490bb83d6c40361accd77}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a889468d923f65d7ae6ac52135048c1d6}
 
 
 Returns a \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance ready for work. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \-\_\-left\-\_\-key} & Left key (default\-: A)\\
+{\em left\-Key} & Left key (default\-: A)\\
 \hline
-{\em \-\_\-right\-\_\-key} & Right key (default\-: D)\\
+{\em right\-Key} & Right key (default\-: D)\\
 \hline
-{\em \-\_\-forward\-\_\-key} & Forward key (default\-: W)\\
+{\em forward\-Key} & Forward key (default\-: W)\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_movement_helper}{Movement\-Helper} instance
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1f853ba79ff05b1f4bc9d20470071075}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Party\-Member\-By\-Id@{get\-Party\-Member\-By\-Id}}
-\index{get\-Party\-Member\-By\-Id@{get\-Party\-Member\-By\-Id}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Party\-Member\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Party\-Member} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Party\-Member\-By\-Id (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aae35e1fac36dcac4b4c0ad42550f918d}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Party\-Member\-By\-Id@{Get\-Party\-Member\-By\-Id}}
+\index{Get\-Party\-Member\-By\-Id@{Get\-Party\-Member\-By\-Id}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Party\-Member\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Party\-Member} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Party\-Member\-By\-Id (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1f853ba79ff05b1f4bc9d20470071075}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aae35e1fac36dcac4b4c0ad42550f918d}
 
 
 This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time 
@@ -285,13 +288,13 @@ This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Memb
 {\em System.\-Index\-Out\-Of\-Range\-Exception} & Out of range\\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Party\-Member\-Info@{get\-Party\-Member\-Info}}
-\index{get\-Party\-Member\-Info@{get\-Party\-Member\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Party\-Member\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Party\-Member} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Party\-Member\-Info (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4c0f7a81a068c9ff5b668ff22a7e15d4}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Party\-Member\-Info@{Get\-Party\-Member\-Info}}
+\index{Get\-Party\-Member\-Info@{Get\-Party\-Member\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Party\-Member\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Party\-Member} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Party\-Member\-Info (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a8cd7985eb9beb13c092ae1ed5f21c9f8}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a4c0f7a81a068c9ff5b668ff22a7e15d4}
 
 
 Deprecated, use get\-Party\-Member\-By\-Id 
@@ -304,13 +307,13 @@ Deprecated, use get\-Party\-Member\-By\-Id
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Player\-Info@{get\-Player\-Info}}
-\index{get\-Player\-Info@{get\-Player\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Player\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Player\-Info (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a66e0eb2208e2d9332633ca9476976d53}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Player\-Info@{Get\-Player\-Info}}
+\index{Get\-Player\-Info@{Get\-Player\-Info}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Player\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Player\-Info (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aaf42ae8d84f170a0f18207369fb8e1a9}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a66e0eb2208e2d9332633ca9476976d53}
 
 
 This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info 
@@ -318,13 +321,13 @@ This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player}
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_player}{Player} object
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Previous\-Target@{get\-Previous\-Target}}
-\index{get\-Previous\-Target@{get\-Previous\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Previous\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Previous\-Target (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9f332cf47bdc90a63d62131f51ad69bb}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Previous\-Target@{Get\-Previous\-Target}}
+\index{Get\-Previous\-Target@{Get\-Previous\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Previous\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Previous\-Target (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a7a8097d470f118e59855c48528bd67bb}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9f332cf47bdc90a63d62131f51ad69bb}
 
 
 This function retrieves the previous target 
@@ -332,13 +335,13 @@ This function retrieves the previous target
 \begin{DoxyReturn}{Returns}
 \hyperlink{classffxivlib_1_1_entity}{Entity} object or null
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08fba89890835ec84967ba636759c9db}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Retainer\-Inventory@{get\-Retainer\-Inventory}}
-\index{get\-Retainer\-Inventory@{get\-Retainer\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Retainer\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Retainer\-Inventory (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae3c5c77d26ed45d4be8ddd8e0caf3bb9}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Retainer\-Inventory@{Get\-Retainer\-Inventory}}
+\index{Get\-Retainer\-Inventory@{Get\-Retainer\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Retainer\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Retainer\-Inventory (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a08fba89890835ec84967ba636759c9db}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae3c5c77d26ed45d4be8ddd8e0caf3bb9}
 
 
 This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale. This only works while checking a retainer. 
@@ -346,13 +349,13 @@ This returns your retainer inventory, extra inventory (gil, crystals) and what i
 \begin{DoxyReturn}{Returns}
 List of items
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_adeabe7f254cb3ad228f1fee754f6b5d1}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Self\-Inventory@{get\-Self\-Inventory}}
-\index{get\-Self\-Inventory@{get\-Self\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Self\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Self\-Inventory (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a414e7d6cf920df6a210b28979d4e256b}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Self\-Inventory@{Get\-Self\-Inventory}}
+\index{Get\-Self\-Inventory@{Get\-Self\-Inventory}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Self\-Inventory}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Inventory.\-I\-T\-E\-M}$>$ ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Self\-Inventory (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_adeabe7f254cb3ad228f1fee754f6b5d1}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a414e7d6cf920df6a210b28979d4e256b}
 
 
 This returns your inventory, extra inventory (gil, crystals, tomes, seals), key items, calamity salvager and currently equipped items 
@@ -360,13 +363,13 @@ This returns your inventory, extra inventory (gil, crystals, tomes, seals), key 
 \begin{DoxyReturn}{Returns}
 List of items
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Sig\-Scan@{get\-Sig\-Scan}}
-\index{get\-Sig\-Scan@{get\-Sig\-Scan}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Sig\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Sig\-Scan (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9a29f9a5a3872f96ab9b3a1dd48c3256}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Sig\-Scan@{Get\-Sig\-Scan}}
+\index{Get\-Sig\-Scan@{Get\-Sig\-Scan}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Sig\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Sig\-Scan (
 \begin{DoxyParamCaption}
 \item[{byte\mbox{[}$\,$\mbox{]}}]{signature}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a532f7bcc0371915d2bbd74e6fdaf47ae}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9a29f9a5a3872f96ab9b3a1dd48c3256}
 
 
 Finds address of specified signature This hasnt been tested in a long time 
@@ -379,13 +382,13 @@ Finds address of specified signature This hasnt been tested in a long time
 \begin{DoxyReturn}{Returns}
 Int\-Ptr of address found or Int\-Ptr.\-Zero
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa2b9e679d4edcc20ecda7e4457dffc5d}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!get\-Targets@{get\-Targets}}
-\index{get\-Targets@{get\-Targets}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
-\subsubsection[{get\-Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-get\-Targets (
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab9c4560506d6cdb37c138b25da38f7f7}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Targets@{Get\-Targets}}
+\index{Get\-Targets@{Get\-Targets}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Targets (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_aa2b9e679d4edcc20ecda7e4457dffc5d}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ab9c4560506d6cdb37c138b25da38f7f7}
 
 
 This function retrieves the target array 
@@ -410,6 +413,8 @@ This function sends a keystroke to the Final Fantasy X\-I\-V window
 \begin{DoxyParams}{Parameters}
 {\em key} & Key to press (see Virtual Key Codes for information)\\
 \hline
+{\em keyup} & Should we keyup after keydown (default\-: true)\\
+\hline
 {\em delay} & (Optional) Delay between keypress down and keypress up\\
 \hline
 \end{DoxyParams}
@@ -419,6 +424,7 @@ The documentation for this class was generated from the following files\-:\begin
 \item 
 Chatlog.\-cs\item 
 F\-F\-X\-I\-V\-L\-I\-B.\-cs\item 
+Companion.\-cs\item 
 Entity.\-cs\item 
 Inventory.\-cs\item 
 Memory\-Reader.\-cs\item 

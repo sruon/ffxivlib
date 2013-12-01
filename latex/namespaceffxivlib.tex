@@ -4,16 +4,18 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classffxivlib_1_1_base_object_3_01_t_u_01_4}{Base\-Object$<$ T\-U $>$}
+\begin{DoxyCompactList}\small\item\em Abstract base class for various objects \end{DoxyCompactList}\item 
 struct \hyperlink{structffxivlib_1_1_b_u_f_f}{B\-U\-F\-F}
 \item 
 class \hyperlink{classffxivlib_1_1_chatlog}{Chatlog}
 \item 
 class \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b}{F\-F\-X\-I\-V\-L\-I\-B}
 \item 
+class \hyperlink{classffxivlib_1_1_companion}{Companion}
+\item 
 class \hyperlink{classffxivlib_1_1_entity}{Entity}
 \item 
-class \hyperlink{classffxivlib_1_1_i_container_3_01_t_00_01_u_01_4}{I\-Container$<$ T, U $>$}
-\begin{DoxyCompactList}\small\item\em Basic managed container for structures and other infos \end{DoxyCompactList}\item 
 class \hyperlink{classffxivlib_1_1_inventory}{Inventory}
 \item 
 class {\bfseries Memory\-Reader}
@@ -94,13 +96,18 @@ enum \hyperlink{namespaceffxivlib_a93f054414b7ccf7ba7c36f54fcc392f5}{E\-N\-T\-I\
  \}
 \begin{DoxyCompactList}\small\item\em Current action of an Entity (P\-C) \end{DoxyCompactList}\item 
 enum \hyperlink{namespaceffxivlib_a856915176aeab1f9b643c0243cb008ee}{S\-T\-A\-T\-U\-S} \-: byte \{ {\bfseries Engaged} = 0x01, 
-{\bfseries Idle} = 0x02
+{\bfseries Idle} = 0x02, 
+{\bfseries Crafting} = 0x05
  \}
 \begin{DoxyCompactList}\small\item\em Status of an Entity (P\-C/\-N\-P\-C) \end{DoxyCompactList}\item 
-enum \hyperlink{namespaceffxivlib_aaa4e86d1ea6dbc1661147e6616256e68}{T\-Y\-P\-E} \-: byte \{ {\bfseries Player} = 0x01, 
+enum \hyperlink{namespaceffxivlib_aaa4e86d1ea6dbc1661147e6616256e68}{T\-Y\-P\-E} \-: byte \{ \\*
+{\bfseries Player} = 0x01, 
 {\bfseries Mob} = 0x02, 
 {\bfseries N\-P\-C} = 0x03, 
-{\bfseries Gathering} = 0x06
+{\bfseries Aetheryte} = 0x05, 
+\\*
+{\bfseries Gathering} = 0x06, 
+{\bfseries Minion} = 0x09
  \}
 \begin{DoxyCompactList}\small\item\em Type of the entity \end{DoxyCompactList}\item 
 enum \hyperlink{namespaceffxivlib_a3a6b3a65a3fc9ba42586b2ccc07e4aac}{I\-C\-O\-N} \-: byte \{ \\*
@@ -110,32 +117,32 @@ enum \hyperlink{namespaceffxivlib_a3a6b3a65a3fc9ba42586b2ccc07e4aac}{I\-C\-O\-N}
 {\bfseries S\-G\-M} = 0x3, 
 \\*
 {\bfseries Clover} = 0x4, 
-{\bfseries D\-C} = 0x5, 
+{\bfseries Dc} = 0x5, 
 {\bfseries Smiley} = 0x6, 
-{\bfseries Red\-\_\-cross} = 0x9, 
+{\bfseries Red\-Cross} = 0x9, 
 \\*
-{\bfseries Grey\-\_\-\-D\-C} = 0x\-A, 
+{\bfseries Grey\-Dc} = 0x\-A, 
 {\bfseries Processing} = 0x\-B, 
 {\bfseries Busy} = 0x\-C, 
 {\bfseries Duty} = 0x\-D, 
 \\*
-{\bfseries Processing\-\_\-yellow} = 0x\-E, 
-{\bfseries Processing\-\_\-grey} = 0x\-F, 
+{\bfseries Processing\-Yellow} = 0x\-E, 
+{\bfseries Processing\-Grey} = 0x\-F, 
 {\bfseries Cutscene} = 0x10, 
 {\bfseries Chocobo} = 0x12, 
 \\*
 {\bfseries Sitting} = 0x13, 
-{\bfseries Wrench\-\_\-yellow} = 0x14, 
+{\bfseries Wrench\-Yellow} = 0x14, 
 {\bfseries Wrench} = 0x15, 
 {\bfseries Dice} = 0x16, 
 \\*
-{\bfseries Processing\-\_\-green} = 0x17, 
+{\bfseries Processing\-Green} = 0x17, 
 {\bfseries Sword} = 0x18, 
 {\bfseries Duty\-Finder} = 0x19, 
-{\bfseries Alliance\-\_\-leader} = 0x1\-A, 
+{\bfseries Alliance\-Leader} = 0x1\-A, 
 \\*
-{\bfseries Alliance\-\_\-blue\-\_\-leader} = 0x1\-B, 
-{\bfseries Alliance\-\_\-blue} = 0x1\-C, 
+{\bfseries Alliance\-Blue\-Leader} = 0x1\-B, 
+{\bfseries Alliance\-Blue} = 0x1\-C, 
 {\bfseries Sprout} = 0x1\-F, 
 {\bfseries Gil} = 0x20
  \}

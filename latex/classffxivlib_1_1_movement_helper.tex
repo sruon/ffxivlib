@@ -14,15 +14,15 @@ struct \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classffxivlib_1_1_movement_helper_a7cb94afc3e302ca7a9e4503e43182b2a}{Go\-To\-Pos} (float X, float Y, float Z)
+void \hyperlink{classffxivlib_1_1_movement_helper_a8706ad00f8ca28ee9a2272d45879d7cb}{Go\-To\-Pos} (float x, float y, float z)
 \begin{DoxyCompactList}\small\item\em Heads to a given coordinate \end{DoxyCompactList}\item 
-void \hyperlink{classffxivlib_1_1_movement_helper_a2270670d0784b93acc9cc2952118b480}{start\-Recording\-Coordinates} (string filename=null, int delay=400)
+void \hyperlink{classffxivlib_1_1_movement_helper_a66d42147d0c8dbaba8688b02b28da555}{Start\-Recording\-Coordinates} (string filename=null, int delay=400)
 \begin{DoxyCompactList}\small\item\em Starts a thread recording waypoint. \end{DoxyCompactList}\item 
-List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ \hyperlink{classffxivlib_1_1_movement_helper_a81625fd8f23faf6079d19ddd552b30ba}{stop\-Recording\-Waypoint} ()
+List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ \hyperlink{classffxivlib_1_1_movement_helper_adb131c04b6f624007be210202fed5d60}{Stop\-Recording\-Waypoint} ()
 \begin{DoxyCompactList}\small\item\em Stops the recording of Waypoint and return the list of coordinates if you wish to process them. The waypoint is saved to file regardless. \end{DoxyCompactList}\item 
-void \hyperlink{classffxivlib_1_1_movement_helper_af119b35d20fb48f78a105bb6a5db9b08}{play\-Waypoint} (string filename=null, List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ list=null)
+void \hyperlink{classffxivlib_1_1_movement_helper_a907374f2640eef358e8293c194d70d48}{Play\-Waypoint} (string filename=null, List$<$ \hyperlink{structffxivlib_1_1_movement_helper_1_1_coords}{Coords} $>$ list=null)
 \begin{DoxyCompactList}\small\item\em Plays a pre-\/recorded waypoint file (X\-M\-L) or a list of coordinates. It cannot handles both. \end{DoxyCompactList}\item 
-bool \hyperlink{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}{pause\-Waypoint} ()
+bool \hyperlink{classffxivlib_1_1_movement_helper_a6c6b3bedbe39ca3570ca44cd6605bff2}{Pause\-Waypoint} ()
 \begin{DoxyCompactList}\small\item\em This pauses the play\-Waypoint thread. Sets pause to true or false depending on current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -32,35 +32,35 @@ Credits to F\-F\-A\-C\-E\-T\-O\-O\-L\-S.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classffxivlib_1_1_movement_helper_a7cb94afc3e302ca7a9e4503e43182b2a}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Go\-To\-Pos@{Go\-To\-Pos}}
+\hypertarget{classffxivlib_1_1_movement_helper_a8706ad00f8ca28ee9a2272d45879d7cb}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Go\-To\-Pos@{Go\-To\-Pos}}
 \index{Go\-To\-Pos@{Go\-To\-Pos}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
 \subsubsection[{Go\-To\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-Go\-To\-Pos (
 \begin{DoxyParamCaption}
-\item[{float}]{X, }
-\item[{float}]{Y, }
-\item[{float}]{Z}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_movement_helper_a7cb94afc3e302ca7a9e4503e43182b2a}
+)}}\label{classffxivlib_1_1_movement_helper_a8706ad00f8ca28ee9a2272d45879d7cb}
 
 
 Heads to a given coordinate 
 
 
 \begin{DoxyParams}{Parameters}
-{\em X} & X\\
+{\em x} & X\\
 \hline
-{\em Y} & Y\\
+{\em y} & Y\\
 \hline
-{\em Z} & Z\\
+{\em z} & Z\\
 \hline
 \end{DoxyParams}
-\hypertarget{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!pause\-Waypoint@{pause\-Waypoint}}
-\index{pause\-Waypoint@{pause\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
-\subsubsection[{pause\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}bool ffxivlib.\-Movement\-Helper.\-pause\-Waypoint (
+\hypertarget{classffxivlib_1_1_movement_helper_a6c6b3bedbe39ca3570ca44cd6605bff2}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Pause\-Waypoint@{Pause\-Waypoint}}
+\index{Pause\-Waypoint@{Pause\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
+\subsubsection[{Pause\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}bool ffxivlib.\-Movement\-Helper.\-Pause\-Waypoint (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_movement_helper_a5910202861046f64d46a59fcbcd57076}
+)}}\label{classffxivlib_1_1_movement_helper_a6c6b3bedbe39ca3570ca44cd6605bff2}
 
 
 This pauses the play\-Waypoint thread. Sets pause to true or false depending on current value. 
@@ -68,14 +68,14 @@ This pauses the play\-Waypoint thread. Sets pause to true or false depending on 
 \begin{DoxyReturn}{Returns}
 Value of pause after this call.
 \end{DoxyReturn}
-\hypertarget{classffxivlib_1_1_movement_helper_af119b35d20fb48f78a105bb6a5db9b08}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!play\-Waypoint@{play\-Waypoint}}
-\index{play\-Waypoint@{play\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
-\subsubsection[{play\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-play\-Waypoint (
+\hypertarget{classffxivlib_1_1_movement_helper_a907374f2640eef358e8293c194d70d48}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Play\-Waypoint@{Play\-Waypoint}}
+\index{Play\-Waypoint@{Play\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
+\subsubsection[{Play\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-Play\-Waypoint (
 \begin{DoxyParamCaption}
 \item[{string}]{filename = {\ttfamily null}, }
 \item[{List$<$ {\bf Coords} $>$}]{list = {\ttfamily null}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_movement_helper_af119b35d20fb48f78a105bb6a5db9b08}
+)}}\label{classffxivlib_1_1_movement_helper_a907374f2640eef358e8293c194d70d48}
 
 
 Plays a pre-\/recorded waypoint file (X\-M\-L) or a list of coordinates. It cannot handles both. 
@@ -87,14 +87,14 @@ Plays a pre-\/recorded waypoint file (X\-M\-L) or a list of coordinates. It cann
 {\em list} & List of coordinates\\
 \hline
 \end{DoxyParams}
-\hypertarget{classffxivlib_1_1_movement_helper_a2270670d0784b93acc9cc2952118b480}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!start\-Recording\-Coordinates@{start\-Recording\-Coordinates}}
-\index{start\-Recording\-Coordinates@{start\-Recording\-Coordinates}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
-\subsubsection[{start\-Recording\-Coordinates}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-start\-Recording\-Coordinates (
+\hypertarget{classffxivlib_1_1_movement_helper_a66d42147d0c8dbaba8688b02b28da555}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Start\-Recording\-Coordinates@{Start\-Recording\-Coordinates}}
+\index{Start\-Recording\-Coordinates@{Start\-Recording\-Coordinates}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
+\subsubsection[{Start\-Recording\-Coordinates}]{\setlength{\rightskip}{0pt plus 5cm}void ffxivlib.\-Movement\-Helper.\-Start\-Recording\-Coordinates (
 \begin{DoxyParamCaption}
 \item[{string}]{filename = {\ttfamily null}, }
 \item[{int}]{delay = {\ttfamily 400}}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_movement_helper_a2270670d0784b93acc9cc2952118b480}
+)}}\label{classffxivlib_1_1_movement_helper_a66d42147d0c8dbaba8688b02b28da555}
 
 
 Starts a thread recording waypoint. 
@@ -106,13 +106,13 @@ Starts a thread recording waypoint.
 {\em delay} & Delay in ms between coordinates (default\-: 400)\\
 \hline
 \end{DoxyParams}
-\hypertarget{classffxivlib_1_1_movement_helper_a81625fd8f23faf6079d19ddd552b30ba}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!stop\-Recording\-Waypoint@{stop\-Recording\-Waypoint}}
-\index{stop\-Recording\-Waypoint@{stop\-Recording\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
-\subsubsection[{stop\-Recording\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Coords}$>$ ffxivlib.\-Movement\-Helper.\-stop\-Recording\-Waypoint (
+\hypertarget{classffxivlib_1_1_movement_helper_adb131c04b6f624007be210202fed5d60}{\index{ffxivlib\-::\-Movement\-Helper@{ffxivlib\-::\-Movement\-Helper}!Stop\-Recording\-Waypoint@{Stop\-Recording\-Waypoint}}
+\index{Stop\-Recording\-Waypoint@{Stop\-Recording\-Waypoint}!ffxivlib::MovementHelper@{ffxivlib\-::\-Movement\-Helper}}
+\subsubsection[{Stop\-Recording\-Waypoint}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Coords}$>$ ffxivlib.\-Movement\-Helper.\-Stop\-Recording\-Waypoint (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classffxivlib_1_1_movement_helper_a81625fd8f23faf6079d19ddd552b30ba}
+)}}\label{classffxivlib_1_1_movement_helper_adb131c04b6f624007be210202fed5d60}
 
 
 Stops the recording of Waypoint and return the list of coordinates if you wish to process them. The waypoint is saved to file regardless. 
