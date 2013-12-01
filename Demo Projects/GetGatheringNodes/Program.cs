@@ -13,6 +13,7 @@ namespace GetGatheringNodes
                 {
                     Console.WriteLine("{0} {1}", e.Name, e.Structure.GatheringStatus);
                 }
+            Console.ReadLine();
         }
     }
 }
