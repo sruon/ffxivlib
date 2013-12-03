@@ -18,6 +18,8 @@ namespace ffxivlib
 
         public int MouseoverTarget { get; set; }
 
+        public int FocusTarget { get; set; }
+
         public int PreviousTarget { get; set; }
 
         public int CurrentTargetID { get; set; }
@@ -31,6 +33,7 @@ namespace ffxivlib
         {
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0)] public int CurrentTarget;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int MouseoverTarget;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x40)] public int FocusTarget;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x4C)] public int PreviousTarget;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x60)] public int CurrentTargetID;
         }
@@ -108,6 +111,27 @@ namespace ffxivlib
                     var e = new Entity(
                         _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.CurrentTarget),
                         (IntPtr) t.Structure.CurrentTarget);
+                    return e;
+                }
+            catch (Exception)
+                {
+                    return null;
+                }
+        }
+
+        /// <summary>
+        ///     This function retrieves the focus target
+        /// </summary>
+        /// <returns>Entity object or null</returns>
+        public Entity GetFocusTarget()
+        {
+            IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
+            var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
+            try
+                {
+                    var e = new Entity(
+                        _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.FocusTarget),
+                        (IntPtr) t.Structure.FocusTarget);
                     return e;
                 }
             catch (Exception)
