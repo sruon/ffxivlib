@@ -36,15 +36,6 @@ namespace ffxivlib
                     ffxiv_process = p[0];
                 }
 
-            #region Sanity checks
-
-            if (!ffxiv_process.MainWindowTitle.Equals(Constants.WINDOW_TITLE))
-                throw new InvalidOperationException("We might not be attaching to FFXIV, is something wrong?");
-            if (ffxiv_process.MainModule.ModuleMemorySize < Constants.PROCESS_MMS)
-                throw new InvalidOperationException("Wrong MMS.");
-
-            #endregion
-
             ffxiv_pid = ffxiv_process.Id;
             _mr = MemoryReader.SetInstance(ffxiv_process);
             _ss = new SigScanner(ffxiv_pid, true);

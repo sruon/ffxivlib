@@ -6,10 +6,6 @@ public static class Constants
 // ReSharper disable InconsistentNaming
     internal const string PROCESS_NAME = "ffxiv";
 
-    internal const string WINDOW_TITLE = "FINAL FANTASY XIV: A Realm Reborn";
-    // I don't remember why I had to check this, might be useless
-    internal const Int32 PROCESS_MMS = 10000000;
-
     #region Pointer paths
     // Simple representation of pointer paths, do not add base module, last member will be expected to be the offset so may have to add extra 0 at the end if you dont need it
     internal static readonly List<int> PCPTR = new List<int>
