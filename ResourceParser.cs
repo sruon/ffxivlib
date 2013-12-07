@@ -114,6 +114,62 @@ namespace ffxivlib
             return result;
         }
 
+        /// <summary>
+        /// Attempts to retrieve the value in internal cache or run the Linq query
+        /// The value is then added to the cache.
+        /// This needs to be reworked to handle multiple search parameters easily.
+        /// </summary>
+        /// <param name="filename">Resource file to parse</param>
+        /// <param name="node">Type of resource</param>
+        /// <param name="lookupKeys"></param>
+        /// <param name="resultKey">What field do we need to get back</param>
+        /// <param name="searchValues"></param>
+        /// <returns>The value (string) or string.empty</returns>
+        private static string RunLinqQuery(string filename, string node, string[] lookupKeys, string resultKey, int[] searchValues)
+        {
+            if (searchValues.First() == 0)
+                return string.Empty;
+            if (Cache.ContainsKey(node))
+                {
+                    int key = int.Parse(string.Format("{0}{1}", searchValues.First(), searchValues.Last()));
+                if (Cache[node].ContainsKey(key))
+                {
+                    return Cache[node][key];
+                }
+            }
+            else
+            {
+                Cache.Add(node, new Dictionary<int, string>());
+            }
+            var result = (from item in StreamElements(filename, node)
+                          where int.Parse(item.Element(lookupKeys[0]).Value) == searchValues[0] &&
+                                int.Parse(item.Element(lookupKeys[1]).Value) == searchValues[1]
+                          select item.Element(resultKey).Value).FirstOrDefault();
+            if (result != null)
+            {
+                int key = int.Parse(string.Format("{0}{1}", searchValues.First(), searchValues.Last()));
+                Cache[node][key] = result;
+            }
+            return result;
+        }
+
+        #region Autotranslate lookups
+
+        /// <summary>
+        /// Retrieves Autotranslate corresponding to ID
+        /// </summary>
+        /// <param name="id">Item ID</param>
+        /// <returns>Item Name</returns>
+        public static string GetAutotranslate(int CategoryId, int Id)
+        {
+            string[] lookupKeys = {"CategoryId", "Id"};
+            int[] searchValues = {CategoryId, Id};
+
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.AUTOTRANSLATE_FILE), "Autotranslate", lookupKeys, "Content", searchValues);
+        }
+
+        #endregion
+
         #region Item lookups
         /// <summary>
         /// Retrieves Item name corresponding to ID
