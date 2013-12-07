@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public static class Constants
 {
+    //ffxiv.exe + 00f8ebe0 + 0x65A -> Server
 // ReSharper disable InconsistentNaming
     internal const string PROCESS_NAME = "ffxiv";
 
@@ -100,6 +101,7 @@ public static class Constants
         internal const string TITLE_FILE = "Title.xml";
         internal const string GRAND_COMPANY_FILE = "GrandCompany.xml";
         internal const string GRAND_COMPANY_RANK_FILE = "GCRankUldahMaleText.xml";
+        internal const string AUTOTRANSLATE_FILE = "Autotranslate.xml";
     }
 
     #endregion
