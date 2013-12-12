@@ -14,6 +14,10 @@ namespace GetServer
             while (true)
                 {
                     Console.WriteLine(instance.GetServerName());
+                    Player p = instance.GetPlayerInfo();
+                    Console.WriteLine("{0} - {1}", 
+                        ResourceParser.GetZoneName(p.Zone), 
+                        ResourceParser.GetZoneName(p.Subzone));
                     Thread.Sleep(1000);
                 }
         }
