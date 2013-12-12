@@ -241,16 +241,6 @@
     <description>Cannot be detected by enemies. Movement speed is reduced.</description>
   </Buff>
   <Buff>
-    <id>48</id>
-    <name>Food Benefits (EXP +3%)</name>
-    <description></description>
-  </Buff>
-  <Buff>
-    <id>49</id>
-    <name></name>
-    <description></description>
-  </Buff>
-  <Buff>
     <id>50</id>
     <name>Sprint</name>
     <description>Movement speed is increased.</description>
@@ -761,16 +751,6 @@
     <description>Regenerating HP over time.</description>
   </Buff>
   <Buff>
-    <id>152</id>
-    <name>ストンスキン（物理攻撃）</name>
-    <description>一定量の物理ダメージを無効化する状態。</description>
-  </Buff>
-  <Buff>
-    <id>153</id>
-    <name>ストンスキン（魔法攻撃）</name>
-    <description>一定量の魔法ダメージを無効化する状態。</description>
-  </Buff>
-  <Buff>
     <id>154</id>
     <name>Shroud of Saints</name>
     <description>Enmity is temporarily halved and MP is gradually being restored.</description>
@@ -1176,16 +1156,6 @@
     <description>Surveying the land for the nearest mineral deposit or rocky outcrop.</description>
   </Buff>
   <Buff>
-    <id>235</id>
-    <name />
-    <description />
-  </Buff>
-  <Buff>
-    <id>236</id>
-    <name />
-    <description />
-  </Buff>
-  <Buff>
     <id>237</id>
     <name>Choco Regen</name>
     <description>Regenerating HP over time.</description>
@@ -1384,16 +1354,6 @@
     <id>276</id>
     <name>Voice of Valor</name>
     <description>Regenerating HP over time.</description>
-  </Buff>
-  <Buff>
-    <id>277</id>
-    <name>堅忍の誉れ：効果</name>
-    <description>受けるダメージの一部が軽減される状態。</description>
-  </Buff>
-  <Buff>
-    <id>278</id>
-    <name>堅忍の誉れ：効果</name>
-    <description>受けるダメージの一部が軽減される状態。</description>
   </Buff>
   <Buff>
     <id>279</id>
@@ -1789,16 +1749,6 @@
     <id>357</id>
     <name>Eat from the Hand</name>
     <description>Craftsmanship is increased when a Disciple of the Hand. (Company Action)</description>
-  </Buff>
-  <Buff>
-    <id>358</id>
-    <name />
-    <description />
-  </Buff>
-  <Buff>
-    <id>359</id>
-    <name />
-    <description />
   </Buff>
   <Buff>
     <id>360</id>
