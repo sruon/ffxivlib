@@ -60,6 +60,18 @@ public static class Constants
         0x36C,
         0x0
     };
+
+    internal static readonly List<int> ZONEPTR = new List<int>
+    {
+        0x00660280,
+        0x0
+    };
+
+    internal static readonly List<int> SUBZONEPTR = new List<int>
+    {
+        0x00660280,
+        0x4
+    };
     #endregion
 
     #region Array size
@@ -110,6 +122,7 @@ public static class Constants
         internal const string GRAND_COMPANY_FILE = "GrandCompany.xml";
         internal const string GRAND_COMPANY_RANK_FILE = "GCRankUldahMaleText.xml";
         internal const string AUTOTRANSLATE_FILE = "Autotranslate.xml";
+        internal const string ZONE_FILE = "PlaceName.xml";
     }
 
     #endregion
