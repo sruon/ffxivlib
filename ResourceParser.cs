@@ -170,6 +170,30 @@ namespace ffxivlib
 
         #endregion
 
+        #region Zone lookups
+
+        /// <summary>
+        /// Retrieves Zone Name corresponding to ID.
+        /// </summary>
+        /// <param name="id">Zone ID</param>
+        /// <returns>Zone name</returns>
+        public static string GetZoneName(int id)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ZONE_FILE), "PlaceName", "Key", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+        }
+
+        /// <summary>
+        /// Retrieves Zone ID corresponding to Name.
+        /// </summary>
+        /// <param name="name">Zone name</param>
+        /// <returns>Zone ID</returns>
+        public static int GetZoneID(string name)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.ZONE_FILE), "PlaceName", "SGL_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
+        }
+
+        #endregion
+
         #region Item lookups
         /// <summary>
         /// Retrieves Item name corresponding to ID
