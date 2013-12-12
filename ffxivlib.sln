@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ffxivlib", "ffxivlib.csproj", "{3B68E5B2-4439-4CAC-A701-58102F1B8A21}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo projects", "Demo projects", "{28885452-0C6B-40F7-9AE0-C350F5191622}"
@@ -30,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpInventory", "Demo Projects\DumpInventory\DumpInventory.csproj", "{83396CE8-175E-477D-B817-626484F3FA16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetGatheringNodes", "Demo Projects\GetGatheringNodes\GetGatheringNodes.csproj", "{5F91052B-451F-41E1-9BC2-6FC7EA3F5F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetServer", "Demo Projects\GetServer\GetServer.csproj", "{DEA5B06E-313B-4516-9DA7-FEA221F26816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -162,6 +162,16 @@ Global
 		{5F91052B-451F-41E1-9BC2-6FC7EA3F5F24}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{5F91052B-451F-41E1-9BC2-6FC7EA3F5F24}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5F91052B-451F-41E1-9BC2-6FC7EA3F5F24}.Release|x86.ActiveCfg = Release|Any CPU
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Debug|x86.ActiveCfg = Debug|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Debug|x86.Build.0 = Debug|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Release|Any CPU.ActiveCfg = Release|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Release|x86.ActiveCfg = Release|x86
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -177,6 +187,7 @@ Global
 		{2A9529C7-5BFD-45F4-809A-DB1A3C11E39A} = {28885452-0C6B-40F7-9AE0-C350F5191622}
 		{83396CE8-175E-477D-B817-626484F3FA16} = {28885452-0C6B-40F7-9AE0-C350F5191622}
 		{5F91052B-451F-41E1-9BC2-6FC7EA3F5F24} = {28885452-0C6B-40F7-9AE0-C350F5191622}
+		{DEA5B06E-313B-4516-9DA7-FEA221F26816} = {28885452-0C6B-40F7-9AE0-C350F5191622}
 		{1968E921-FACE-4BD2-A0B6-BC304B79C8A1} = {F09058FB-C282-4434-86BC-DE6553209E0F}
 	EndGlobalSection
 EndGlobal

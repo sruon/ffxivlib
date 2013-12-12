@@ -52,6 +52,14 @@ public static class Constants
             -0x8
         };
 
+    internal static readonly List<int> SERVERPTR = new List<int>
+    {
+        0x00F8EBE0,
+        0x34,
+        0x4F8,
+        0x36C,
+        0x0
+    };
     #endregion
 
     #region Array size

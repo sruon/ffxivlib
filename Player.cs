@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace ffxivlib
 {
@@ -349,6 +350,18 @@ namespace ffxivlib
     public partial class FFXIVLIB
     {
         #region Public methods
+
+        /// <summary>
+        /// Returns current server, testing, might not work reliably.
+        /// </summary>
+        /// <returns></returns>
+        public string GetServerName()
+        {
+            IntPtr ptr = _mr.ResolvePointerPath(Constants.SERVERPTR);
+            byte[] server = ReadMemory(ptr, 32);
+            string ret = Encoding.UTF8.GetString(server);
+            return ret.Split('\0')[0];
+        }
 
         /// <summary>
         ///     This function retrieves the current Player info
