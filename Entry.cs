@@ -65,11 +65,69 @@ namespace ffxivlib
                 workingCopy.RemoveRange(0, 4);
                 int sep = workingCopy[1] == ':' ? 2 : 1; // Removes :: separators 
                 workingCopy.RemoveRange(0, sep);
+                workingCopy = ReplaceAutotranslate(workingCopy);
                 workingCopy = CleanFormat(workingCopy);
                 workingCopy = CleanName(workingCopy);
                 workingCopy = CleanMob(workingCopy);
                 workingCopy = CleanHQ(workingCopy);
                 Text = CleanString(Encoding.UTF8.GetString(workingCopy.ToArray()));
+            }
+            
+            /// <summary>
+            /// Replaces auto-translate.
+            /// TODO: Use a fucking regex.
+            /// </summary>
+            /// <param name="workingCopy"></param>
+            /// <returns></returns>
+            private static List<byte> ReplaceAutotranslate(List<byte> workingCopy)
+            {
+                //I have plans [02 2E] OPEN [05] COUNT [05] CATEGORY [F2 01 F7] ID [03] CLOSE
+                var openATPattern = new List<byte>
+                {
+                    0x02,
+                    0x2E
+                };
+                var closeAT = 0x03;
+                int[] idx = workingCopy.Select((b, i) => b == openATPattern[0] ? i : -1).Where(i => i != -1).ToArray();
+                foreach (int i in idx)
+                    {
+                        int cpy = i;
+                        if (workingCopy[++cpy] == openATPattern[1])
+                            {
+                                List<byte> extracted = new List<byte>();
+                                byte count = workingCopy[++cpy];
+                                while (workingCopy[++cpy] != closeAT || extracted.Count == 0)
+                                    {
+                                        extracted.Add(workingCopy[cpy]);
+                                    }
+                                byte category = extracted[0];
+                                extracted.RemoveAt(0);
+                                if (extracted[0] == 0xF0 || extracted[0] == 0xF2 || extracted[0] == 0xF4 || extracted[0] == 0xF6)
+                                    {
+                                        extracted.RemoveAt(0); 
+                                    }
+                                int atId = 0;
+                                foreach (byte b in extracted)
+                                    {
+                                        atId <<= 8;
+                                        atId |= b;
+                                    }
+                                string replacement;
+                                // Let's not raise if user doesn't have resource files
+                                try
+                                    {
+                                        replacement = string.Format("{{{0}}}", ResourceParser.GetAutotranslate(category, atId));
+                                    }
+                                catch (Exception)
+                                    {
+                                        replacement = string.Format("{{[{0} {1}]}}", category, atId);
+                                    }
+                                workingCopy.RemoveRange(i, count + 3);
+                                workingCopy.InsertRange(i, Encoding.UTF8.GetBytes(replacement));
+                                return ReplaceAutotranslate(workingCopy);
+                            }
+                    }
+                return workingCopy;
             }
 
             /// <summary>

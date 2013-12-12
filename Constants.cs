@@ -72,6 +72,7 @@ public static class Constants
         0x00660280,
         0x4
     };
+
     #endregion
 
     #region Array size
