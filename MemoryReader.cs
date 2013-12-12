@@ -167,6 +167,17 @@ namespace ffxivlib
         }
 
         /// <summary>
+        /// Reads an INT4
+        /// </summary>
+        /// <param name="pointer"></param>
+        /// <returns></returns>
+        public int ReadInt4(IntPtr pointer)
+        {
+            int result = (int)ResolvePointer(pointer);
+            return result;
+        }
+
+        /// <summary>
         ///     Simple pointer reading
         /// </summary>
         /// <param name="pointer">Pointer to read</param>

@@ -24,6 +24,22 @@ namespace ffxivlib
 
         #region Properties
 
+        public int Zone
+        {
+            get
+            {
+                return GetZone();
+            } 
+        }
+
+        public int Subzone
+        {
+            get
+            {
+                return GetSubzone();
+            }
+        }
+
         public JOB Job { get; set; }
 
         #region Job Levels
@@ -216,6 +232,30 @@ namespace ffxivlib
 
         #endregion
 
+        #region Methods
+
+        /// <summary>
+        /// Retrieves the ZoneID
+        /// </summary>
+        /// <returns>Zone ID</returns>
+        private int GetZone()
+        {
+            IntPtr ptr = MemoryReader.GetInstance().ResolvePointerPath(Constants.ZONEPTR);
+            return MemoryReader.GetInstance().ReadInt4(ptr);
+        }
+
+        /// <summary>
+        /// Retrieves the Subzone ID
+        /// </summary>
+        /// <returns>Subzone ID or 0</returns>
+        private int GetSubzone()
+        {
+            IntPtr ptr = MemoryReader.GetInstance().ResolvePointerPath(Constants.SUBZONEPTR);
+            return MemoryReader.GetInstance().ReadInt4(ptr);
+        }
+
+        #endregion
+
         #region Unmanaged structure
 
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
@@ -352,7 +392,10 @@ namespace ffxivlib
         #region Public methods
 
         /// <summary>
-        /// Returns current server, testing, might not work reliably.
+        /// TL;DR : Returns current server, testing, might not work reliably.
+        /// Longer version : This is set by the Lobby widgets, which no longer exist
+        /// while in-game, as such the memory space they used can be under some condition
+        /// garbage collected/wiped.
         /// </summary>
         /// <returns></returns>
         public string GetServerName()
