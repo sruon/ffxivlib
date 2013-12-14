@@ -8,7 +8,7 @@ namespace ffxivlib
     {
         /*
          * At 0x1 the character name is available, but C# throws a Run time error because it's not aligned on proper boundaries,
-         * therefore I'm not making it available for now as that'd require me to unalign pretty much everything else.
+         * therefore I'm not making it available for now as that'd require me to unalign everything else.
          * Refer to ENTITYINFO(0) for name.
          */
 

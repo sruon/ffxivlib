@@ -30,53 +30,38 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct ITEM
         {
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x8)]
-            public uint ItemID;
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x0C)]
-            public uint Amount;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public uint ItemID;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0C)] public uint Amount;
 
             /// <summary>
             /// 10000 = fully spiritbond
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)]
-            [FieldOffset(0x10)]
-            public short Spiritbond;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x10)] public short Spiritbond;
 
             /// <summary>
             /// 30000 = fully repaired
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)]
-            [FieldOffset(0x12)]
-            public short Durability;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x12)] public short Durability;
 
             /// <summary>
             /// Related to materia slots, but no idea what.
             /// </summary>
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x18)]
-            public int Materia_unk1;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int Materia_unk1;
 
-            [MarshalAs(UnmanagedType.I1)]
-            [FieldOffset(0x1E)]
-            public byte Materia_unk2;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1E)] public byte Materia_unk2;
 
             /// <summary>
             /// I am deeply confused about this one, if item is related to a quest this is equal to the QuestID.
             /// BUT, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why SE?
             /// </summary>
-            [MarshalAs(UnmanagedType.I4)]
-            [FieldOffset(0x3C)]
-            public uint QuestID;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x3C)] public uint QuestID;
 
             /// <summary>
             /// Padding to make sure our struct are the same size as XIV ones, allows me to use Marshal.SizeOf
             /// </summary>
-            [MarshalAs(UnmanagedType.I2)]
-            [FieldOffset(0x3E)]
-            public short Padding;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3E)] public short Padding;
         };
+
         /// <summary>
         /// Structure holding all the pointers to different subarrays.
         /// </summary>
@@ -161,9 +146,9 @@ namespace ffxivlib
             var ic = new InventoryBuilder();
             for (int i = 0; i < count; i++)
                 {
-                    IntPtr icPTR = _mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET));
+                    IntPtr icPTR = _mr.ResolvePointer(ptr + (i*Constants.INVENTORY_PTR_OFFSET));
                     // Count of container is at 0xC.
-                    var icCount = (int)_mr.ResolvePointer(ptr + (i * Constants.INVENTORY_PTR_OFFSET) + 0xC);
+                    var icCount = (int) _mr.ResolvePointer(ptr + (i*Constants.INVENTORY_PTR_OFFSET) + 0xC);
                     ic = ic + new InventoryBuilder(icPTR, icCount, clean);
                 }
             return ic;
@@ -258,7 +243,7 @@ namespace ffxivlib
 
         /// <summary>
         /// This returns your Free Company inventory, extra inventory (currency, crystals)
-        /// This might only work while checking the Free Company chest.
+        /// This only works while checking the Free Company chest.
         /// </summary>
         /// <returns>List of items</returns>
         public List<Inventory.ITEM> GetCompanyInventory()
