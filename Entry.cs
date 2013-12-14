@@ -17,7 +17,7 @@ namespace ffxivlib
             public string Code { get; set; }
             public string Text { get; set; }
             public string RawString { get; set; }
-
+            public byte[] RawModified { get; set; }
             #endregion
 
             #region Constructor
@@ -70,6 +70,8 @@ namespace ffxivlib
                 workingCopy = CleanName(workingCopy);
                 workingCopy = CleanMob(workingCopy);
                 workingCopy = CleanHQ(workingCopy);
+                workingCopy = CleanEmote(workingCopy);
+                RawModified = workingCopy.ToArray();
                 Text = CleanString(Encoding.UTF8.GetString(workingCopy.ToArray()));
             }
             
@@ -143,6 +145,57 @@ namespace ffxivlib
                     value == 0x0009 ||
                     value == 0x000A ||
                     value == 0x000D).ToArray());
+            }
+
+            
+
+            /// <summary>
+            ///     Removes junk around emotes that's only useful to the client.
+            /// </summary>
+            /// <param name="workingCopy"></param>
+            /// <returns></returns>
+            private static List<byte> CleanEmote(List<byte> workingCopy)
+            {
+                var openEmotePattern = new List<byte>
+                {
+                    0x02,
+                    0x27,
+                    0x12,
+                    0x01,
+                    0x01,
+                    0x01,
+                    0x01,
+                    0xFF
+                };
+                var closeEmotePattern = new List<byte>
+                {
+                    0x02,
+                    0x27,
+                    0x07,
+                    0xCF,
+                    0x01,
+                    0x01,
+                    0x01,
+                    0xFF,
+                    0x01,
+                    0x03
+                };
+                int emoteIndex;
+                while ((emoteIndex = Library.ByteSearch(workingCopy.ToArray(), openEmotePattern.ToArray())) != -1)
+                    {
+                        int i = workingCopy.FindIndex(item => item == 0x03);
+                        if (i != -1)
+                            {
+                                int limit = (i - emoteIndex);
+                                workingCopy.RemoveRange(emoteIndex, limit);
+                                if ((emoteIndex = Library.ByteSearch(workingCopy.ToArray(), closeEmotePattern.ToArray())) != -1)
+                                    {
+                                        workingCopy.RemoveRange(emoteIndex, closeEmotePattern.Count);
+                                    }
+                            }
+                    }
+
+                return workingCopy;
             }
 
             /// <summary>
