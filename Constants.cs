@@ -199,8 +199,8 @@ public static class Constants
 
     internal static readonly List<int> TARGETPTR = new List<int>
         {
-            0x00C87524,
-            0x28
+            0x13510,
+            0x190
         };
 
     internal static readonly List<int> PLAYERPTR = new List<int>
