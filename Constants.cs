@@ -193,8 +193,8 @@ public static class Constants
 
     internal static readonly List<int> PARTYPTR = new List<int>
         {
-            0x0014B590,
-            0x0
+            0x4590C,
+            0x10
         };
 
     internal static readonly List<int> TARGETPTR = new List<int>
@@ -205,7 +205,6 @@ public static class Constants
 
     internal static readonly List<int> PLAYERPTR = new List<int>
         {
-            0x5C570,
             0x7CF70,
             0x0
         };
