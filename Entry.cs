@@ -183,14 +183,21 @@ namespace ffxivlib
                 int emoteIndex;
                 while ((emoteIndex = Library.ByteSearch(workingCopy.ToArray(), openEmotePattern.ToArray())) != -1)
                     {
-                        int i = workingCopy.FindIndex(item => item == 0x03);
+                    int i = workingCopy.FindIndex(emoteIndex, item => item == 0x03);
                         if (i != -1)
                             {
                                 int limit = (i - emoteIndex);
-                                workingCopy.RemoveRange(emoteIndex, limit);
-                                if ((emoteIndex = Library.ByteSearch(workingCopy.ToArray(), closeEmotePattern.ToArray())) != -1)
+                                if (limit > 0)
                                     {
-                                        workingCopy.RemoveRange(emoteIndex, closeEmotePattern.Count);
+                                        workingCopy.RemoveRange(emoteIndex, limit);
+
+                                        if (
+                                            (emoteIndex =
+                                                Library.ByteSearch(workingCopy.ToArray(), closeEmotePattern.ToArray())) !=
+                                            -1)
+                                            {
+                                                workingCopy.RemoveRange(emoteIndex, closeEmotePattern.Count);
+                                            }
                                     }
                             }
                     }

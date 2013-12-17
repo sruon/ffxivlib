@@ -8,7 +8,7 @@ namespace CurrentTarget
     {
         private static void Main(string[] args)
         {
-            FFXIVLIB instance = new FFXIVLIB();
+            FFXIVLIB instance = new FFXIVLIB(0x1A98);
             while (true)
                 {
                     Entity currentTarget = instance.GetCurrentTarget();

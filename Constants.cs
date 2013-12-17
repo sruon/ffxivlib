@@ -211,9 +211,9 @@ public static class Constants
 
     internal static readonly List<int> CHATPTR = new List<int>
         {
-            0xF875A8,
+            0x106DB98,
             0x18,
-            0x200
+            0x204
         };
     internal static readonly List<int> INVENTORYPTR = new List<int>
         {
