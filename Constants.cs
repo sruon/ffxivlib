@@ -231,13 +231,13 @@ public static class Constants
 
     internal static readonly List<int> ZONEPTR = new List<int>
     {
-        0x00660280,
+        0x8AF6C,
         0x0
     };
 
     internal static readonly List<int> SUBZONEPTR = new List<int>
     {
-        0x00660280,
+        0x8AF6C,
         0x4
     };
 
