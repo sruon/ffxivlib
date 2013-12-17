@@ -226,8 +226,7 @@ public static class Constants
         0x1073A10,
         0x34,
         0x4F4,
-        0x5A6,
-        0x0
+        0x5A6
     };
 
     internal static readonly List<int> ZONEPTR = new List<int>
