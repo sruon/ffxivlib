@@ -9,7 +9,7 @@ namespace ChatlogTest
     {
         private static void Main(string[] args)
         {
-            FFXIVLIB instance = new FFXIVLIB(0x1A98);
+            FFXIVLIB instance = new FFXIVLIB();
             Chatlog c = instance.GetChatlog();
             while (true)
                 {
@@ -19,11 +19,7 @@ namespace ChatlogTest
                             if (test.Count > 0)
                                 Console.WriteLine("{0} new log lines", test.Count);
                             foreach (Chatlog.Entry line in test)
-                                {
-                                    Console.WriteLine("{0}[{1}] -> {2}", line.Timestamp, line.Code, line.Text);
-                                    if (line.RawModified != null)
-                                        Console.WriteLine(BitConverter.ToString(line.RawModified));
-                                }
+                                Console.WriteLine("{0}[{1}] -> {2}", line.Timestamp, line.Code, line.Text);
                         }
                     Thread.Sleep(300);
                 }
