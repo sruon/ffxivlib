@@ -223,10 +223,10 @@ public static class Constants
 
     internal static readonly List<int> SERVERPTR = new List<int>
     {
-        0x00F8EBE0,
+        0x1073A10,
         0x34,
-        0x4F8,
-        0x36C,
+        0x4F4,
+        0x5A6,
         0x0
     };
 
