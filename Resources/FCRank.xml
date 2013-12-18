@@ -22,6 +22,21 @@
     <FCRank>
       <Key>5</Key>
       <CurrentPoint>64691</CurrentPoint>
+      <NextPoint>98228</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>6</Key>
+      <CurrentPoint>98228</CurrentPoint>
+      <NextPoint>145555</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>7</Key>
+      <CurrentPoint>145555</CurrentPoint>
+      <NextPoint>198117</NextPoint>
+    </FCRank>
+    <FCRank>
+      <Key>8</Key>
+      <CurrentPoint>198117</CurrentPoint>
       <NextPoint>999999999</NextPoint>
     </FCRank>
   </ArrayOfFCRank>

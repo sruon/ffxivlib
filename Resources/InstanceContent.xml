@@ -2,22 +2,22 @@
     <InstanceContent>
       <Key>1</Key>
       <Name_ja>監獄廃墟 トトラクの千獄</Name_ja>
-      <Name_en>the Thousand Maws of Toto-Rak</Name_en>
-      <Name_fr>les Mille Gueules de Toto-Rak</Name_fr>
+      <Name_en>The Thousand Maws Of Toto-Rak</Name_en>
+      <Name_fr>Les Mille Gueules de Toto-Rak</Name_fr>
       <Name_de>Tausend Löcher von Toto-Rak</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>2</Key>
       <Name_ja>地下霊殿 タムタラの墓所</Name_ja>
-      <Name_en>the Tam-Tara Deepcroft</Name_en>
-      <Name_fr>l'Hypogée de Tam-Tara</Name_fr>
+      <Name_en>The Tam-Tara Deepcroft</Name_en>
+      <Name_fr>L'Hypogée de Tam-Tara</Name_fr>
       <Name_de>Totenacker Tam-Tara</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>3</Key>
       <Name_ja>封鎖坑道 カッパーベル銅山</Name_ja>
       <Name_en>Copperbell Mines</Name_en>
-      <Name_fr>les Mines de Clochecuivre</Name_fr>
+      <Name_fr>Les Mines de Clochecuivre</Name_fr>
       <Name_de>Kupferglocken-Mine</Name_de>
     </InstanceContent>
     <InstanceContent>
@@ -30,15 +30,15 @@
     <InstanceContent>
       <Key>5</Key>
       <Name_ja>霧中行軍 オーラムヴェイル</Name_ja>
-      <Name_en>the Aurum Vale</Name_en>
-      <Name_fr>le Val d'aurum</Name_fr>
+      <Name_en>The Aurum Vale</Name_en>
+      <Name_fr>Le Val d'aurum</Name_fr>
       <Name_de>Goldklamm</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>6</Key>
       <Name_ja>名門屋敷 ハウケタ御用邸</Name_ja>
       <Name_en>Haukke Manor</Name_en>
-      <Name_fr>le Manoir des Haukke</Name_fr>
+      <Name_fr>Le Manoir des Haukke</Name_fr>
       <Name_de>Haukke-Herrenhaus</Name_de>
     </InstanceContent>
     <InstanceContent>
@@ -52,49 +52,49 @@
       <Key>8</Key>
       <Name_ja>奪還支援 ブレイフロクスの野営地</Name_ja>
       <Name_en>Brayflox's Longstop</Name_en>
-      <Name_fr>le Bivouac de Brayflox</Name_fr>
+      <Name_fr>Le Bivouac de Brayflox</Name_fr>
       <Name_de>Brüllvolx' Langrast</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>9</Key>
       <Name_ja>遺跡探索 カルン埋没寺院</Name_ja>
-      <Name_en>the Sunken Temple of Qarn</Name_en>
-      <Name_fr>le Temple enseveli de Qarn</Name_fr>
+      <Name_en>The Sunken Temple Of Qarn</Name_en>
+      <Name_fr>Le Temple enseveli de Qarn</Name_fr>
       <Name_de>Versunkener Tempel von Qarn</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10</Key>
       <Name_ja>旅神聖域 ワンダラーパレス</Name_ja>
-      <Name_en>the Wanderer's Palace</Name_en>
-      <Name_fr>le Palais du Vagabond</Name_fr>
+      <Name_en>The Wanderer's Palace</Name_en>
+      <Name_fr>Le Palais du Vagabond</Name_fr>
       <Name_de>Palast des Wanderers</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>11</Key>
       <Name_ja>城塞攻略 ストーンヴィジル</Name_ja>
-      <Name_en>the Stone Vigil</Name_en>
-      <Name_fr>le Vigile de pierre</Name_fr>
+      <Name_en>The Stone Vigil</Name_en>
+      <Name_fr>Le Vigile de pierre</Name_fr>
       <Name_de>Steinerne Wacht</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>12</Key>
       <Name_ja>流砂迷宮 カッターズクライ</Name_ja>
       <Name_en>Cutter's Cry</Name_en>
-      <Name_fr>le Gouffre hurlant</Name_fr>
+      <Name_fr>Le Gouffre hurlant</Name_fr>
       <Name_de>Sägerschrei</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>13</Key>
       <Name_ja>掃討作戦 ゼーメル要塞</Name_ja>
       <Name_en>Dzemael Darkhold</Name_en>
-      <Name_fr>la Forteresse de Dzemael</Name_fr>
+      <Name_fr>La Forteresse de Dzemael</Name_fr>
       <Name_de>Die Feste Dzemael</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>14</Key>
       <Name_ja>邪教排撃 古城アムダプール</Name_ja>
       <Name_en>Amdapor Keep</Name_en>
-      <Name_fr>le château d'Amdapor</Name_fr>
+      <Name_fr>Le château d'Amdapor</Name_fr>
       <Name_de>Die Ruinen von Amdapor</Name_de>
     </InstanceContent>
     <InstanceContent>
@@ -107,9 +107,30 @@
     <InstanceContent>
       <Key>16</Key>
       <Name_ja>最終決戦 魔導城プラエトリウム</Name_ja>
-      <Name_en>the Praetorium</Name_en>
-      <Name_fr>le Praetorium</Name_fr>
+      <Name_en>The Praetorium</Name_en>
+      <Name_fr>Le Praetorium</Name_fr>
       <Name_de>Castrum Meridianum - Praetorium</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>17</Key>
+      <Name_ja>怪鳥巨塔 シリウス大灯台</Name_ja>
+      <Name_en>Pharos Sirius</Name_en>
+      <Name_fr>Le Phare de Sirius</Name_fr>
+      <Name_de>Pharos Sirius</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>18</Key>
+      <Name_ja>騒乱坑道 カッパーベル銅山</Name_ja>
+      <Name_en>Copperbell Mines (Hard)</Name_en>
+      <Name_fr>Les Mines de Clochecuivre (brutal)</Name_fr>
+      <Name_de>Kupferglocken-Mine (schwer)</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>19</Key>
+      <Name_ja>妖異屋敷 ハウケタ御用邸</Name_ja>
+      <Name_en>Haukke Manor (Hard)</Name_en>
+      <Name_fr>Le Manoir des Haukke (brutal)</Name_fr>
+      <Name_de>Haukke-Herrenhaus (schwer)</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10001</Key>
@@ -121,7 +142,7 @@
     <InstanceContent>
       <Key>10002</Key>
       <Name_ja>彷徨う死霊を討て！</Name_ja>
-      <Name_en>Under the Armor</Name_en>
+      <Name_en>Under The Armor</Name_en>
       <Name_fr>Chasse au fantôme fantoche</Name_fr>
       <Name_de>Bockmanns Gefolge</Name_de>
     </InstanceContent>
@@ -135,7 +156,7 @@
     <InstanceContent>
       <Key>10004</Key>
       <Name_ja>ギルガメを捕獲せよ！</Name_ja>
-      <Name_en>Hero on the Halfshell</Name_en>
+      <Name_en>Hero On The Halfshell</Name_en>
       <Name_fr>Reconquête d'une carapace escamotée</Name_fr>
       <Name_de>Gil oder Leben</Name_de>
     </InstanceContent>
@@ -156,42 +177,42 @@
     <InstanceContent>
       <Key>10007</Key>
       <Name_ja>夢幻のブラキシオを討て！</Name_ja>
-      <Name_en>All's Well that Ends in the Well</Name_en>
+      <Name_en>All's Well That Ends In The Well</Name_en>
       <Name_fr>Briaxio à bras raccourcis</Name_fr>
       <Name_de>Briaxio ausschalten</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10008</Key>
       <Name_ja>爆弾魔ゴブリン軍団を撃滅せよ！</Name_ja>
-      <Name_en>Flicking Sticks and Taking Names</Name_en>
+      <Name_en>Flicking Sticks And Taking Names</Name_en>
       <Name_fr>Les Gobelins bombardiers</Name_fr>
       <Name_de>Bombige Goblins</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10009</Key>
       <Name_ja>汚染源モルボルを討て！</Name_ja>
-      <Name_en>More than a Feeler</Name_en>
+      <Name_en>More Than A Feeler</Name_en>
       <Name_fr>Sus au morbol pollueur</Name_fr>
       <Name_de>Tödliches Rankenspiel</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10010</Key>
       <Name_ja>坑道に現れた妖異ブソを討て！</Name_ja>
-      <Name_en>Annoy the Void</Name_en>
+      <Name_en>Annoy The Void</Name_en>
       <Name_fr>Buso l'immolateur</Name_fr>
       <Name_de>Gefahr aus dem Nichts</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10011</Key>
       <Name_ja>無敵の眷属を従えし、大型妖異を討て！</Name_ja>
-      <Name_en>Shadow and Claw</Name_en>
+      <Name_en>Shadow And Claw</Name_en>
       <Name_fr>Ombres et griffes</Name_fr>
       <Name_de>Kampf gegen Schatten</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>10012</Key>
       <Name_ja>ボムを率いる「ボムクイーン」を討て！</Name_ja>
-      <Name_en>Long Live the Queen</Name_en>
+      <Name_en>Long Live The Queen</Name_en>
       <Name_fr>Longue vie à la Reine</Name_fr>
       <Name_de>Miss Bombastic</Name_de>
     </InstanceContent>
@@ -212,42 +233,42 @@
     <InstanceContent>
       <Key>20001</Key>
       <Name_ja>イフリート討伐戦</Name_ja>
-      <Name_en>the Bowl of Embers</Name_en>
-      <Name_fr>le Cratère des tisons</Name_fr>
+      <Name_en>The Bowl Of Embers</Name_en>
+      <Name_fr>Le Cratère des tisons</Name_fr>
       <Name_de>Das Grab der Lohe</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>20002</Key>
       <Name_ja>タイタン討伐戦</Name_ja>
-      <Name_en>the Navel</Name_en>
-      <Name_fr>le Nombril</Name_fr>
+      <Name_en>The Navel</Name_en>
+      <Name_fr>Le Nombril</Name_fr>
       <Name_de>Der Nabel</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>20003</Key>
       <Name_ja>ガルーダ討伐戦</Name_ja>
-      <Name_en>the Howling Eye</Name_en>
+      <Name_en>The Howling Eye</Name_en>
       <Name_fr>Hurlœil</Name_fr>
       <Name_de>Das Tosende Auge</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>20004</Key>
       <Name_ja>真イフリート討滅戦</Name_ja>
-      <Name_en>the Bowl of Embers (Hard)</Name_en>
-      <Name_fr>le Cratère des tisons (brutal)</Name_fr>
+      <Name_en>The Bowl Of Embers (Hard)</Name_en>
+      <Name_fr>Le Cratère des tisons (brutal)</Name_fr>
       <Name_de>Götterdämmerung - Ifrit</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>20005</Key>
       <Name_ja>真タイタン討滅戦</Name_ja>
-      <Name_en>the Navel (Hard)</Name_en>
-      <Name_fr>le Nombril (brutal)</Name_fr>
+      <Name_en>The Navel (Hard)</Name_en>
+      <Name_fr>Le Nombril (brutal)</Name_fr>
       <Name_de>Götterdämmerung - Titan</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>20006</Key>
       <Name_ja>真ガルーダ討滅戦</Name_ja>
-      <Name_en>the Howing Eye (Hard)</Name_en>
+      <Name_en>The Howling Eye (Hard)</Name_en>
       <Name_fr>Hurlœil (brutal)</Name_fr>
       <Name_de>Götterdämmerung - Garuda</Name_de>
     </InstanceContent>
@@ -255,76 +276,132 @@
       <Key>20007</Key>
       <Name_ja>リットアティン強襲戦</Name_ja>
       <Name_en>Cape Westwind</Name_en>
-      <Name_fr>le Cap Vendouest</Name_fr>
+      <Name_fr>Le Cap Vendouest</Name_fr>
       <Name_de>Kap Westwind</Name_de>
     </InstanceContent>
     <InstanceContent>
+      <Key>20008</Key>
+      <Name_ja>極イフリート討滅戦</Name_ja>
+      <Name_en>The Bowl Of Embers (Extreme)</Name_en>
+      <Name_fr>Le Cratère des tisons (extrême)</Name_fr>
+      <Name_de>Zenit der Götter - Ifrit</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20009</Key>
+      <Name_ja>極タイタン討滅戦</Name_ja>
+      <Name_en>The Navel (Extreme)</Name_en>
+      <Name_fr>Le Nombril (extrême)</Name_fr>
+      <Name_de>Zenit der Götter - Titan</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20010</Key>
+      <Name_ja>極ガルーダ討滅戦</Name_ja>
+      <Name_en>The Howling Eye (Extreme)</Name_en>
+      <Name_fr>Hurlœil (extrême)</Name_fr>
+      <Name_de>Zenit der Götter - Garuda</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20011</Key>
+      <Name_ja>善王モグル・モグXII世討滅戦</Name_ja>
+      <Name_en>Thornmarch</Name_en>
+      <Name_fr>La Lisière de ronces</Name_fr>
+      <Name_de>Königliche Konfrontation (Mogul Mog)</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20013</Key>
+      <Name_ja>究極幻想 アルテマウェポン破壊作戦</Name_ja>
+      <Name_en>The Minstrel's Ballad: Ultima's Bane</Name_en>
+      <Name_fr>Le fléau d'Ultima</Name_fr>
+      <Name_de>Heldenlied von Ultima</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20015</Key>
+      <Name_ja>イベント用コンテンツ：1</Name_ja>
+      <Name_en />
+      <Name_fr />
+      <Name_de />
+    </InstanceContent>
+    <InstanceContent>
+      <Key>20016</Key>
+      <Name_ja>イベント用コンテンツ：2</Name_ja>
+      <Name_en />
+      <Name_fr />
+      <Name_de />
+    </InstanceContent>
+    <InstanceContent>
       <Key>30001</Key>
-      <Name_ja>（仮）クリスタルタワー第一層</Name_ja>
-      <Name_en>Crystal Tower - 1F</Name_en>
-      <Name_fr>la Tour de cristal - Hall d'entrée</Name_fr>
-      <Name_de>Kristallturm - Erdgeschoss</Name_de>
+      <Name_ja>クリスタルタワー：古代の民の迷宮</Name_ja>
+      <Name_en>Labyrinth Of The Ancients</Name_en>
+      <Name_fr>La Tour de cristal - Dédale antique</Name_fr>
+      <Name_de>Kristallturm - Das Labyrinth der Alten</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>30002</Key>
       <Name_ja>大迷宮バハムート：邂逅編1</Name_ja>
-      <Name_en>The Binding Coil of Bahamut - Turn 1</Name_en>
-      <Name_fr>le Labyrinthe de Bahamut I</Name_fr>
+      <Name_en>The Binding Coil Of Bahamut - Turn 1</Name_en>
+      <Name_fr>Le Labyrinthe de Bahamut I</Name_fr>
       <Name_de>Die Verschlungenen Schatten von Bahamut 1</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>30003</Key>
       <Name_ja>大迷宮バハムート：邂逅編2</Name_ja>
-      <Name_en>The Binding Coil of Bahamut - Turn 2</Name_en>
-      <Name_fr>le Labyrinthe de Bahamut II</Name_fr>
+      <Name_en>The Binding Coil Of Bahamut - Turn 2</Name_en>
+      <Name_fr>Le Labyrinthe de Bahamut II</Name_fr>
       <Name_de>Die Verschlungenen Schatten von Bahamut 2</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>30004</Key>
       <Name_ja>大迷宮バハムート：邂逅編3</Name_ja>
-      <Name_en>The Binding Coil of Bahamut - Turn 3</Name_en>
-      <Name_fr>le Labyrinthe de Bahamut III</Name_fr>
+      <Name_en>The Binding Coil Of Bahamut - Turn 3</Name_en>
+      <Name_fr>Le Labyrinthe de Bahamut III</Name_fr>
       <Name_de>Die Verschlungenen Schatten von Bahamut 3</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>30005</Key>
       <Name_ja>大迷宮バハムート：邂逅編4</Name_ja>
-      <Name_en>The Binding Coil of Bahamut - Turn 4</Name_en>
-      <Name_fr>le Labyrinthe de Bahamut IV</Name_fr>
+      <Name_en>The Binding Coil Of Bahamut - Turn 4</Name_en>
+      <Name_fr>Le Labyrinthe de Bahamut IV</Name_fr>
       <Name_de>Die Verschlungenen Schatten von Bahamut 4</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>30006</Key>
       <Name_ja>大迷宮バハムート：邂逅編5</Name_ja>
-      <Name_en>The Binding Coil of Bahamut - Turn 5</Name_en>
-      <Name_fr>le Labyrinthe de Bahamut V</Name_fr>
+      <Name_en>The Binding Coil Of Bahamut - Turn 5</Name_en>
+      <Name_fr>Le Labyrinthe de Bahamut V</Name_fr>
       <Name_de>Die Verschlungenen Schatten von Bahamut 5</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>40001</Key>
       <Name_ja>ウルヴズジェイル</Name_ja>
-      <Name_en>the Wolves' Den</Name_en>
-      <Name_fr>l'Antre des loups</Name_fr>
+      <Name_en>The Wolves' Den</Name_en>
+      <Name_fr>L'Antre des loups</Name_fr>
       <Name_de>Die Wolfshöhle</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>40002</Key>
       <Name_ja>ウルヴズジェイル</Name_ja>
-      <Name_en>the Wolves' Den</Name_en>
-      <Name_fr>l'Antre des loups</Name_fr>
+      <Name_en>The Wolves' Den</Name_en>
+      <Name_fr>L'Antre des loups</Name_fr>
       <Name_de>Die Wolfshöhle</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>40003</Key>
-      <Name_ja>ウルヴズジェイル</Name_ja>
-      <Name_en>the Wolves' Den</Name_en>
-      <Name_fr>l'Antre des loups</Name_fr>
+      <Name_ja>ウルヴズジェイル（マッチングパーティ専用）</Name_ja>
+      <Name_en>The Wolves' Den</Name_en>
+      <Name_fr>L'Antre des loups (groupage automatique)</Name_fr>
+      <Name_de>Die Wolfshöhle</Name_de>
+    </InstanceContent>
+    <InstanceContent>
+      <Key>40004</Key>
+      <Name_ja>ウルヴズジェイル（固定ライトパーティ専用）</Name_ja>
+      <Name_en>The Wolves' Den</Name_en>
+      <Name_fr>L'Antre des loups (équipe préformée)</Name_fr>
       <Name_de>Die Wolfshöhle</Name_de>
     </InstanceContent>
     <InstanceContent>
       <Key>65000</Key>
       <Name_ja>入室テスト用ダミーコンテンツ</Name_ja>
-      <Name_en>the Seventh Gate of Hell</Name_en>
+      <Name_en>The Seventh Gate Of Hell</Name_en>
       <Name_fr />
       <Name_de>Test-Inhalt</Name_de>
     </InstanceContent>

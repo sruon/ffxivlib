@@ -93,7 +93,7 @@
       <Name_ja>ターゲット・順送り </Name_ja>
       <Name_en>Target Forward</Name_en>
       <Name_fr>Ciblage</Name_fr>
-      <Name_de>Zielen vorwärts</Name_de>
+      <Name_de>Nächstes Ziel</Name_de>
     </GeneralAction>
     <GeneralAction>
       <Key>17</Key>
@@ -101,6 +101,30 @@
       <Name_ja>ターゲット・逆送り </Name_ja>
       <Name_en>Target Back</Name_en>
       <Name_fr>Ciblage contraire</Name_fr>
-      <Name_de>Zielen rückwärts</Name_de>
+      <Name_de>Voriges Ziel</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>18</Key>
+      <Icon>61112</Icon>
+      <Name_ja>設置</Name_ja>
+      <Name_en>Set Down</Name_en>
+      <Name_fr />
+      <Name_de>Abstellen</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>19</Key>
+      <Icon>115</Icon>
+      <Name_ja>ディサイファー</Name_ja>
+      <Name_en>Decipher</Name_en>
+      <Name_fr>Déchiffrage</Name_fr>
+      <Name_de>Entziffern</Name_de>
+    </GeneralAction>
+    <GeneralAction>
+      <Key>20</Key>
+      <Icon>116</Icon>
+      <Name_ja>ディグ</Name_ja>
+      <Name_en>Dig</Name_en>
+      <Name_fr>Excavation</Name_fr>
+      <Name_de>Ausgraben</Name_de>
     </GeneralAction>
   </ArrayOfGeneralAction>

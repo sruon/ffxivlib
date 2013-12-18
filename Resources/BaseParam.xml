@@ -414,7 +414,7 @@
     </BaseParam>
     <BaseParam>
       <Key>60</Key>
-      <Name_ja>静寂耐性</Name_ja>
+      <Name_ja>沈黙耐性</Name_ja>
       <Name_en>Silence Resistance</Name_en>
       <Name_fr>Résistance à Silence</Name_fr>
       <Name_de>Resistenz gegen Schweigen</Name_de>
@@ -428,7 +428,7 @@
     </BaseParam>
     <BaseParam>
       <Key>62</Key>
-      <Name_ja>中毒耐性</Name_ja>
+      <Name_ja>毒耐性</Name_ja>
       <Name_en>Poison Resistance</Name_en>
       <Name_fr>Résistance à Poison</Name_fr>
       <Name_de>Resistenz gegen Gift</Name_de>

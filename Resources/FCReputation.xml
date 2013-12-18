@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?><ArrayOfFCReputation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <FCReputation>
       <Key>1</Key>
-      <Color>4294031195</Color>
+      <Color>4288588031</Color>
       <CurrentPoint>0</CurrentPoint>
       <NextPoint>6138</NextPoint>
       <Text_ja>中立</Text_ja>
@@ -12,7 +12,7 @@
     </FCReputation>
     <FCReputation>
       <Key>2</Key>
-      <Color>4294767210</Color>
+      <Color>4283219711</Color>
       <CurrentPoint>6138</CurrentPoint>
       <NextPoint>24553</NextPoint>
       <Text_ja>認定</Text_ja>
@@ -23,7 +23,7 @@
     </FCReputation>
     <FCReputation>
       <Key>3</Key>
-      <Color>4291624755</Color>
+      <Color>4279949014</Color>
       <CurrentPoint>24553</CurrentPoint>
       <NextPoint>55244</NextPoint>
       <Text_ja>友好</Text_ja>
@@ -34,7 +34,7 @@
     </FCReputation>
     <FCReputation>
       <Key>4</Key>
-      <Color>4286500689</Color>
+      <Color>4281258373</Color>
       <CurrentPoint>55244</CurrentPoint>
       <NextPoint>98211</NextPoint>
       <Text_ja>信頼</Text_ja>
@@ -45,7 +45,7 @@
     </FCReputation>
     <FCReputation>
       <Key>5</Key>
-      <Color>4278235216</Color>
+      <Color>4284012066</Color>
       <CurrentPoint>98211</CurrentPoint>
       <NextPoint>153455</NextPoint>
       <Text_ja>敬意</Text_ja>
@@ -56,7 +56,7 @@
     </FCReputation>
     <FCReputation>
       <Key>6</Key>
-      <Color>4278229401</Color>
+      <Color>4290897198</Color>
       <CurrentPoint>153455</CurrentPoint>
       <NextPoint>220974</NextPoint>
       <Text_ja>名誉</Text_ja>
@@ -67,7 +67,7 @@
     </FCReputation>
     <FCReputation>
       <Key>7</Key>
-      <Color>4280321504</Color>
+      <Color>4294306663</Color>
       <CurrentPoint>220974</CurrentPoint>
       <NextPoint>300771</NextPoint>
       <Text_ja>誓約</Text_ja>
@@ -78,9 +78,9 @@
     </FCReputation>
     <FCReputation>
       <Key>8</Key>
-      <Color>4285617137</Color>
+      <Color>4294031195</Color>
       <CurrentPoint>300771</CurrentPoint>
-      <NextPoint>999999999</NextPoint>
+      <NextPoint>313799</NextPoint>
       <Text_ja>盟友</Text_ja>
       <Text_en>Allied</Text_en>
       <Text_fr>Allié</Text_fr>

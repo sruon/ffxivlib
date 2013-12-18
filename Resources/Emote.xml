@@ -92,7 +92,7 @@
       <Icon>64012</Icon>
       <Name_ja>問い詰める</Name_ja>
       <Name_en>Doubt</Name_en>
-      <Name_fr>Douter</Name_fr>
+      <Name_fr>Questionner</Name_fr>
       <Name_de>Beschuldigen</Name_de>
     </Emote>
     <Emote>
@@ -590,5 +590,45 @@
       <Name_en>Worried</Name_en>
       <Name_fr>Visage inquiet</Name_fr>
       <Name_de>Besorgt</Name_de>
+    </Emote>
+    <Emote>
+      <Key>85</Key>
+      <Icon>64050</Icon>
+      <Name_ja>投げる</Name_ja>
+      <Name_en>Throw</Name_en>
+      <Name_fr>Lancer</Name_fr>
+      <Name_de>Werfen</Name_de>
+    </Emote>
+    <Emote>
+      <Key>86</Key>
+      <Icon>64050</Icon>
+      <Name_ja>雪玉を投げる</Name_ja>
+      <Name_en>Snowball</Name_en>
+      <Name_fr>Boule de neige</Name_fr>
+      <Name_de>Schneeball</Name_de>
+    </Emote>
+    <Emote>
+      <Key>87</Key>
+      <Icon>64050</Icon>
+      <Name_ja>雪玉を投げる</Name_ja>
+      <Name_en>Snowball</Name_en>
+      <Name_fr>Boule de neige</Name_fr>
+      <Name_de>Schneeball</Name_de>
+    </Emote>
+    <Emote>
+      <Key>88</Key>
+      <Icon>64054</Icon>
+      <Name_ja>寝る</Name_ja>
+      <Name_en>Sleep</Name_en>
+      <Name_fr>Dormir</Name_fr>
+      <Name_de>Schlafen</Name_de>
+    </Emote>
+    <Emote>
+      <Key>90</Key>
+      <Icon>64054</Icon>
+      <Name_ja>腕組み</Name_ja>
+      <Name_en>Cross Arms</Name_en>
+      <Name_fr />
+      <Name_de>Verschränkte Arme</Name_de>
     </Emote>
   </ArrayOfEmote>

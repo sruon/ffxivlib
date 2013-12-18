@@ -11,14 +11,14 @@
       <Name_ja>キャラクター</Name_ja>
       <Name_en>Class</Name_en>
       <Name_fr>Personnage</Name_fr>
-      <Name_de>Charakterentwicklung</Name_de>
+      <Name_de>Charakter</Name_de>
     </AchievementKind>
     <AchievementKind>
       <Key>4</Key>
       <Name_ja>アイテム</Name_ja>
       <Name_en>Items</Name_en>
       <Name_fr>Objets</Name_fr>
-      <Name_de>Objekte der Begierde</Name_de>
+      <Name_de>Gegenstände</Name_de>
     </AchievementKind>
     <AchievementKind>
       <Key>5</Key>
@@ -32,14 +32,14 @@
       <Name_ja>採集</Name_ja>
       <Name_en>Gathering</Name_en>
       <Name_fr>Récolte</Name_fr>
-      <Name_de>Sammelleidenschaft</Name_de>
+      <Name_de>Sammeln</Name_de>
     </AchievementKind>
     <AchievementKind>
       <Key>8</Key>
       <Name_ja>クエスト</Name_ja>
       <Name_en>Quests</Name_en>
       <Name_fr>Quêtes</Name_fr>
-      <Name_de>Auftragslage</Name_de>
+      <Name_de>Aufträge</Name_de>
     </AchievementKind>
     <AchievementKind>
       <Key>11</Key>

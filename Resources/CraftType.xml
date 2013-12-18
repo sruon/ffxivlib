@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfCraftType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CraftType>
+      <Key>0</Key>
+      <ClassJob>8</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>1</Key>
+      <ClassJob>9</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>2</Key>
+      <ClassJob>10</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>3</Key>
+      <ClassJob>11</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>4</Key>
+      <ClassJob>12</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>5</Key>
+      <ClassJob>13</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>6</Key>
+      <ClassJob>14</ClassJob>
+    </CraftType>
+    <CraftType>
+      <Key>7</Key>
+      <ClassJob>15</ClassJob>
+    </CraftType>
+  </ArrayOfCraftType>

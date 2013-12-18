@@ -17,14 +17,46 @@
     </AchievementCategory>
     <AchievementCategory>
       <Key>3</Key>
+      <Kind>1</Kind>
+      <Name_ja>コロセウム</Name_ja>
+      <Name_en>The Wolves' Den</Name_en>
+      <Name_fr>L'Antre des loups</Name_fr>
+      <Name_de>Wolfshöhle</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>4</Key>
+      <Kind>1</Kind>
+      <Name_ja>討伐・討滅戦</Name_ja>
+      <Name_en>Trials</Name_en>
+      <Name_fr>Défis</Name_fr>
+      <Name_de>Prüfungen</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>5</Key>
+      <Kind>1</Kind>
+      <Name_ja>トレジャーハント</Name_ja>
+      <Name_en>Treasure Hunt</Name_en>
+      <Name_fr>Chasse aux trésors</Name_fr>
+      <Name_de>Schatzjagd</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>6</Key>
+      <Kind>1</Kind>
+      <Name_ja>レイド</Name_ja>
+      <Name_en>Raids</Name_en>
+      <Name_fr>Raids</Name_fr>
+      <Name_de>Raids</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>7</Key>
       <Kind>2</Kind>
       <Name_ja>全般</Name_ja>
       <Name_en>Class</Name_en>
       <Name_fr>Général</Name_fr>
-      <Name_de>Charakterentwicklung</Name_de>
+      <Name_de>Charakter</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>4</Key>
+      <Key>8</Key>
       <Kind>2</Kind>
       <Name_ja>剣術士</Name_ja>
       <Name_en>Gladiator</Name_en>
@@ -32,7 +64,7 @@
       <Name_de>Gladiator</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>5</Key>
+      <Key>9</Key>
       <Kind>2</Kind>
       <Name_ja>格闘士</Name_ja>
       <Name_en>Pugilist</Name_en>
@@ -40,7 +72,7 @@
       <Name_de>Faustkämpfer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>6</Key>
+      <Key>10</Key>
       <Kind>2</Kind>
       <Name_ja>斧術士</Name_ja>
       <Name_en>Marauder</Name_en>
@@ -48,7 +80,7 @@
       <Name_de>Marodeur</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>7</Key>
+      <Key>11</Key>
       <Kind>2</Kind>
       <Name_ja>槍術士</Name_ja>
       <Name_en>Lancer</Name_en>
@@ -56,7 +88,7 @@
       <Name_de>Pikenier</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>8</Key>
+      <Key>12</Key>
       <Kind>2</Kind>
       <Name_ja>弓術士</Name_ja>
       <Name_en>Archer</Name_en>
@@ -64,7 +96,7 @@
       <Name_de>Waldläufer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>9</Key>
+      <Key>13</Key>
       <Kind>2</Kind>
       <Name_ja>幻術士</Name_ja>
       <Name_en>Conjurer</Name_en>
@@ -72,7 +104,7 @@
       <Name_de>Druide</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>10</Key>
+      <Key>14</Key>
       <Kind>2</Kind>
       <Name_ja>呪術士</Name_ja>
       <Name_en>Thaumaturge</Name_en>
@@ -80,7 +112,7 @@
       <Name_de>Thaumaturg</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>11</Key>
+      <Key>15</Key>
       <Kind>2</Kind>
       <Name_ja>巴術士</Name_ja>
       <Name_en>Arcanist</Name_en>
@@ -88,7 +120,7 @@
       <Name_de>Hermetiker</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>12</Key>
+      <Key>16</Key>
       <Kind>2</Kind>
       <Name_ja>木工師</Name_ja>
       <Name_en>Carpenter</Name_en>
@@ -96,7 +128,7 @@
       <Name_de>Zimmerer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>13</Key>
+      <Key>17</Key>
       <Kind>2</Kind>
       <Name_ja>鍛冶師</Name_ja>
       <Name_en>Blacksmith</Name_en>
@@ -104,7 +136,7 @@
       <Name_de>Grobschmied</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>14</Key>
+      <Key>18</Key>
       <Kind>2</Kind>
       <Name_ja>甲冑師</Name_ja>
       <Name_en>Armorer</Name_en>
@@ -112,7 +144,7 @@
       <Name_de>Plattner</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>15</Key>
+      <Key>19</Key>
       <Kind>2</Kind>
       <Name_ja>彫金師</Name_ja>
       <Name_en>Goldsmith</Name_en>
@@ -120,7 +152,7 @@
       <Name_de>Goldschmied</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>16</Key>
+      <Key>20</Key>
       <Kind>2</Kind>
       <Name_ja>革細工師</Name_ja>
       <Name_en>Leatherworker</Name_en>
@@ -128,7 +160,7 @@
       <Name_de>Gerber</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>17</Key>
+      <Key>21</Key>
       <Kind>2</Kind>
       <Name_ja>裁縫師</Name_ja>
       <Name_en>Weaver</Name_en>
@@ -136,7 +168,7 @@
       <Name_de>Weber</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>18</Key>
+      <Key>22</Key>
       <Kind>2</Kind>
       <Name_ja>錬金術師</Name_ja>
       <Name_en>Alchemist</Name_en>
@@ -144,7 +176,7 @@
       <Name_de>Alchemist</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>19</Key>
+      <Key>23</Key>
       <Kind>2</Kind>
       <Name_ja>調理師</Name_ja>
       <Name_en>Culinarian</Name_en>
@@ -152,7 +184,7 @@
       <Name_de>Gourmet</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>20</Key>
+      <Key>24</Key>
       <Kind>2</Kind>
       <Name_ja>採掘師</Name_ja>
       <Name_en>Miner</Name_en>
@@ -160,7 +192,7 @@
       <Name_de>Minenarbeiter</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>21</Key>
+      <Key>25</Key>
       <Kind>2</Kind>
       <Name_ja>園芸師</Name_ja>
       <Name_en>Botanist</Name_en>
@@ -168,7 +200,7 @@
       <Name_de>Gärtner</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>22</Key>
+      <Key>26</Key>
       <Kind>2</Kind>
       <Name_ja>漁師</Name_ja>
       <Name_en>Fisher</Name_en>
@@ -176,7 +208,23 @@
       <Name_de>Fischer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>23</Key>
+      <Key>27</Key>
+      <Kind>2</Kind>
+      <Name_ja>PvP</Name_ja>
+      <Name_en>PvP</Name_en>
+      <Name_fr>JcJ</Name_fr>
+      <Name_de>PvP</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>28</Key>
+      <Kind>2</Kind>
+      <Name_ja>MIP</Name_ja>
+      <Name_en>Commendation</Name_en>
+      <Name_fr>Honneurs</Name_fr>
+      <Name_de>Ehrungen</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>29</Key>
       <Kind>4</Kind>
       <Name_ja>全般</Name_ja>
       <Name_en>Items</Name_en>
@@ -184,7 +232,7 @@
       <Name_de>Gegenstände</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>24</Key>
+      <Key>30</Key>
       <Kind>4</Kind>
       <Name_ja>通貨</Name_ja>
       <Name_en>Currency</Name_en>
@@ -192,7 +240,7 @@
       <Name_de>Vermögen</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>25</Key>
+      <Key>31</Key>
       <Kind>4</Kind>
       <Name_ja>マテリア</Name_ja>
       <Name_en>Materia</Name_en>
@@ -200,7 +248,7 @@
       <Name_de>Materia</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>26</Key>
+      <Key>32</Key>
       <Kind>5</Kind>
       <Name_ja>木工師</Name_ja>
       <Name_en>Carpenter</Name_en>
@@ -208,7 +256,7 @@
       <Name_de>Zimmerer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>27</Key>
+      <Key>33</Key>
       <Kind>5</Kind>
       <Name_ja>鍛冶師</Name_ja>
       <Name_en>Blacksmith</Name_en>
@@ -216,7 +264,7 @@
       <Name_de>Grobschmied</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>28</Key>
+      <Key>34</Key>
       <Kind>5</Kind>
       <Name_ja>甲冑師</Name_ja>
       <Name_en>Armorer</Name_en>
@@ -224,7 +272,7 @@
       <Name_de>Plattner</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>29</Key>
+      <Key>35</Key>
       <Kind>5</Kind>
       <Name_ja>彫金師</Name_ja>
       <Name_en>Goldsmith</Name_en>
@@ -232,7 +280,7 @@
       <Name_de>Goldschmied</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>30</Key>
+      <Key>36</Key>
       <Kind>5</Kind>
       <Name_ja>革細工師</Name_ja>
       <Name_en>Leatherworker</Name_en>
@@ -240,7 +288,7 @@
       <Name_de>Gerber</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>31</Key>
+      <Key>37</Key>
       <Kind>5</Kind>
       <Name_ja>裁縫師</Name_ja>
       <Name_en>Weaver</Name_en>
@@ -248,7 +296,7 @@
       <Name_de>Weber</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>32</Key>
+      <Key>38</Key>
       <Kind>5</Kind>
       <Name_ja>錬金術師</Name_ja>
       <Name_en>Alchemist</Name_en>
@@ -256,7 +304,7 @@
       <Name_de>Alchemist</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>33</Key>
+      <Key>39</Key>
       <Kind>5</Kind>
       <Name_ja>調理師</Name_ja>
       <Name_en>Culinarian</Name_en>
@@ -264,7 +312,7 @@
       <Name_de>Gourmet</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>34</Key>
+      <Key>40</Key>
       <Kind>6</Kind>
       <Name_ja>採掘師</Name_ja>
       <Name_en>Miner</Name_en>
@@ -272,7 +320,7 @@
       <Name_de>Minenarbeiter</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>35</Key>
+      <Key>41</Key>
       <Kind>6</Kind>
       <Name_ja>園芸師</Name_ja>
       <Name_en>Botanist</Name_en>
@@ -280,7 +328,7 @@
       <Name_de>Gärtner</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>36</Key>
+      <Key>42</Key>
       <Kind>6</Kind>
       <Name_ja>漁師</Name_ja>
       <Name_en>Fisher</Name_en>
@@ -288,7 +336,7 @@
       <Name_de>Fischer</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>37</Key>
+      <Key>43</Key>
       <Kind>8</Kind>
       <Name_ja>全般</Name_ja>
       <Name_en>Quests</Name_en>
@@ -296,7 +344,7 @@
       <Name_de>Aufträge</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>38</Key>
+      <Key>44</Key>
       <Kind>8</Kind>
       <Name_ja>リーヴ</Name_ja>
       <Name_en>Levequests</Name_en>
@@ -304,7 +352,15 @@
       <Name_de>Freibriefe</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>39</Key>
+      <Key>45</Key>
+      <Kind>8</Kind>
+      <Name_ja>蛮族クエスト</Name_ja>
+      <Name_en>Beast Tribe Quests</Name_en>
+      <Name_fr>Quêtes tribales</Name_fr>
+      <Name_de>Wilde Stämme</Name_de>
+    </AchievementCategory>
+    <AchievementCategory>
+      <Key>46</Key>
       <Kind>8</Kind>
       <Name_ja>シーズナルイベント</Name_ja>
       <Name_en>Seasonal Events</Name_en>
@@ -312,7 +368,7 @@
       <Name_de>Saisonale Ereignisse</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>40</Key>
+      <Key>47</Key>
       <Kind>11</Kind>
       <Name_ja>ラノシア</Name_ja>
       <Name_en>La Noscea</Name_en>
@@ -320,23 +376,23 @@
       <Name_de>La Noscea</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>41</Key>
+      <Key>48</Key>
       <Kind>11</Kind>
       <Name_ja>黒衣森</Name_ja>
       <Name_en>The Black Shroud</Name_en>
       <Name_fr>Forêt de Sombrelinceul</Name_fr>
-      <Name_de>Thanalan</Name_de>
+      <Name_de>Finsterwald</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>42</Key>
+      <Key>49</Key>
       <Kind>11</Kind>
       <Name_ja>ザナラーン</Name_ja>
       <Name_en>Thanalan</Name_en>
       <Name_fr>Thanalan</Name_fr>
-      <Name_de>Finsterwald</Name_de>
+      <Name_de>Thanalan</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>43</Key>
+      <Key>50</Key>
       <Kind>11</Kind>
       <Name_ja>クルザス</Name_ja>
       <Name_en>Coerthas</Name_en>
@@ -344,7 +400,7 @@
       <Name_de>Coerthas</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>44</Key>
+      <Key>51</Key>
       <Kind>11</Kind>
       <Name_ja>モードゥナ</Name_ja>
       <Name_en>Mor Dhona</Name_en>
@@ -352,7 +408,7 @@
       <Name_de>Mor Dhona</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>45</Key>
+      <Key>52</Key>
       <Kind>12</Kind>
       <Name_ja>全般</Name_ja>
       <Name_en>Grand Company</Name_en>
@@ -360,7 +416,7 @@
       <Name_de>Staatliche Gesellschaften</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>46</Key>
+      <Key>53</Key>
       <Kind>12</Kind>
       <Name_ja>黒渦団</Name_ja>
       <Name_en>Maelstrom</Name_en>
@@ -368,7 +424,7 @@
       <Name_de>Mahlstrom</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>47</Key>
+      <Key>54</Key>
       <Kind>12</Kind>
       <Name_ja>双蛇党</Name_ja>
       <Name_en>Order of the Twin Adder</Name_en>
@@ -376,7 +432,7 @@
       <Name_de>Bruderschaft</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>48</Key>
+      <Key>55</Key>
       <Kind>12</Kind>
       <Name_ja>不滅隊</Name_ja>
       <Name_en>Immortal Flames</Name_en>
@@ -384,7 +440,7 @@
       <Name_de>Legion</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>49</Key>
+      <Key>56</Key>
       <Kind>13</Kind>
       <Name_ja>バトル</Name_ja>
       <Name_en>Battle</Name_en>
@@ -392,7 +448,7 @@
       <Name_de>Kampferfolge</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>50</Key>
+      <Key>57</Key>
       <Kind>13</Kind>
       <Name_ja>通貨</Name_ja>
       <Name_en>Currency</Name_en>
@@ -400,23 +456,23 @@
       <Name_de>Vermögen</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>51</Key>
+      <Key>58</Key>
       <Kind>13</Kind>
       <Name_ja>採集</Name_ja>
       <Name_en>Gathering</Name_en>
       <Name_fr>Récolte</Name_fr>
-      <Name_de>Sammelleidenschaft</Name_de>
+      <Name_de>Sammeln</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>52</Key>
+      <Key>59</Key>
       <Kind>13</Kind>
       <Name_ja>クエスト</Name_ja>
       <Name_en>Quests</Name_en>
       <Name_fr>Quêtes</Name_fr>
-      <Name_de>Auftragslage</Name_de>
+      <Name_de>Aufträge</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>53</Key>
+      <Key>60</Key>
       <Kind>13</Kind>
       <Name_ja>シーズナルイベント</Name_ja>
       <Name_en>Seasonal Events</Name_en>
@@ -424,7 +480,7 @@
       <Name_de>Saisonale Ereignisse</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>54</Key>
+      <Key>61</Key>
       <Kind>13</Kind>
       <Name_ja>ダンジョン</Name_ja>
       <Name_en>Dungeons</Name_en>
@@ -432,7 +488,7 @@
       <Name_de>Dungeons</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>55</Key>
+      <Key>62</Key>
       <Kind>13</Kind>
       <Name_ja>探検</Name_ja>
       <Name_en>Exploration</Name_en>
@@ -440,7 +496,7 @@
       <Name_de>Erkundungen</Name_de>
     </AchievementCategory>
     <AchievementCategory>
-      <Key>56</Key>
+      <Key>63</Key>
       <Kind>13</Kind>
       <Name_ja>グランドカンパニー</Name_ja>
       <Name_en>Grand Company</Name_en>
