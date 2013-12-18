@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-16"?><ArrayOfRecipeElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <RecipeElement>
+      <Key>0</Key>
+      <Name_ja>属性：無</Name_ja>
+      <Name_en>Aspect: None</Name_en>
+      <Name_fr>Neutre</Name_fr>
+      <Name_de />
+    </RecipeElement>
+    <RecipeElement>
+      <Key>1</Key>
+      <Name_ja>属性：火</Name_ja>
+      <Name_en>Aspect: Fire</Name_en>
+      <Name_fr>Pouvoir du feu</Name_fr>
+      <Name_de>Element: Feuer</Name_de>
+    </RecipeElement>
+    <RecipeElement>
+      <Key>2</Key>
+      <Name_ja>属性：氷</Name_ja>
+      <Name_en>Aspect: Ice</Name_en>
+      <Name_fr>Pouvoir de la glace</Name_fr>
+      <Name_de>Element: Eis</Name_de>
+    </RecipeElement>
+    <RecipeElement>
+      <Key>3</Key>
+      <Name_ja>属性：風</Name_ja>
+      <Name_en>Aspect: Wind</Name_en>
+      <Name_fr>Pouvoir du vent</Name_fr>
+      <Name_de>Element: Wind</Name_de>
+    </RecipeElement>
+    <RecipeElement>
+      <Key>4</Key>
+      <Name_ja>属性：土</Name_ja>
+      <Name_en>Aspect: Earth</Name_en>
+      <Name_fr>Pouvoir de la terre</Name_fr>
+      <Name_de>Element: Erde</Name_de>
+    </RecipeElement>
+    <RecipeElement>
+      <Key>5</Key>
+      <Name_ja>属性：雷</Name_ja>
+      <Name_en>Aspect: Lightning</Name_en>
+      <Name_fr>Pouvoir de la foudre</Name_fr>
+      <Name_de>Element: Blitz</Name_de>
+    </RecipeElement>
+    <RecipeElement>
+      <Key>6</Key>
+      <Name_ja>属性：水</Name_ja>
+      <Name_en>Aspect: Water</Name_en>
+      <Name_fr>Pouvoir de l'eau</Name_fr>
+      <Name_de>Element: Wasser</Name_de>
+    </RecipeElement>
+  </ArrayOfRecipeElement>

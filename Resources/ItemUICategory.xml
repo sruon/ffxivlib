@@ -48,7 +48,7 @@
       <Key>6</Key>
       <Kind>1</Kind>
       <Name_ja>片手呪具</Name_ja>
-      <Name_en>Thaumaturge's Arm</Name_en>
+      <Name_en>One-handed Thaumaturge's Arm</Name_en>
       <Name_fr>Arme d'occultiste</Name_fr>
       <Name_de>Thaumaturgen-Waffe</Name_de>
       <Priority>7</Priority>
@@ -66,7 +66,7 @@
       <Key>8</Key>
       <Kind>1</Kind>
       <Name_ja>片手幻具</Name_ja>
-      <Name_en>Conjurer's Arm</Name_en>
+      <Name_en>One-handed Conjurer's Arm</Name_en>
       <Name_fr>Arme d'élémentaliste</Name_fr>
       <Name_de>Druiden-Waffe</Name_de>
       <Priority>5</Priority>
@@ -289,12 +289,12 @@
     </ItemUICategory>
     <ItemUICategory>
       <Key>33</Key>
-      <Kind>2</Kind>
-      <Name_ja>釣餌</Name_ja>
+      <Kind>7</Kind>
+      <Name_ja>釣り餌</Name_ja>
       <Name_en>Fishing Tackle</Name_en>
       <Name_fr>Appât de pêche</Name_fr>
       <Name_de>Angelköder</Name_de>
-      <Priority>21</Priority>
+      <Priority>24</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>34</Key>
@@ -321,7 +321,7 @@
       <Name_en>Legs</Name_en>
       <Name_fr>Jambes</Name_fr>
       <Name_de>Beine</Name_de>
-      <Priority>3</Priority>
+      <Priority>5</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>37</Key>
@@ -330,7 +330,7 @@
       <Name_en>Hands</Name_en>
       <Name_fr>Mains</Name_fr>
       <Name_de>Hände</Name_de>
-      <Priority>4</Priority>
+      <Priority>3</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>38</Key>
@@ -339,7 +339,7 @@
       <Name_en>Feet</Name_en>
       <Name_fr>Pieds</Name_fr>
       <Name_de>Füße</Name_de>
-      <Priority>5</Priority>
+      <Priority>6</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>39</Key>
@@ -348,7 +348,7 @@
       <Name_en>Waist</Name_en>
       <Name_fr>Ceinture</Name_fr>
       <Name_de>Taille</Name_de>
-      <Priority>6</Priority>
+      <Priority>4</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>40</Key>
@@ -492,7 +492,7 @@
       <Name_en>Dye</Name_en>
       <Name_fr>Teinture</Name_fr>
       <Name_de>Farbstoff</Name_de>
-      <Priority>9</Priority>
+      <Priority>10</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>56</Key>
@@ -501,7 +501,16 @@
       <Name_en>Part</Name_en>
       <Name_fr>Composant</Name_fr>
       <Name_de>Einzelteil</Name_de>
-      <Priority>10</Priority>
+      <Priority>9</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>57</Key>
+      <Kind>7</Kind>
+      <Name_ja>調度品</Name_ja>
+      <Name_en>Furnishing</Name_en>
+      <Name_fr>Meuble</Name_fr>
+      <Name_de>Mobiliar</Name_de>
+      <Priority>19</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>58</Key>
@@ -510,7 +519,7 @@
       <Name_en>Materia</Name_en>
       <Name_fr>Matéria</Name_fr>
       <Name_de>Materia</Name_de>
-      <Priority>1</Priority>
+      <Priority>0</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>59</Key>
@@ -519,7 +528,7 @@
       <Name_en>Crystal</Name_en>
       <Name_fr>Cristal</Name_fr>
       <Name_de>Kristall</Name_de>
-      <Priority>2</Priority>
+      <Priority>1</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>60</Key>
@@ -528,7 +537,7 @@
       <Name_en>Catalyst</Name_en>
       <Name_fr>Catalyseur</Name_fr>
       <Name_de>Katalysator</Name_de>
-      <Priority>3</Priority>
+      <Priority>2</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>61</Key>
@@ -537,16 +546,16 @@
       <Name_en>Miscellany</Name_en>
       <Name_fr>Divers</Name_fr>
       <Name_de>Verschiedenes</Name_de>
-      <Priority>4</Priority>
+      <Priority>3</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>62</Key>
-      <Kind>7</Kind>
+      <Kind>4</Kind>
       <Name_ja>ソウルクリスタル</Name_ja>
       <Name_en>Soul Crystal</Name_en>
       <Name_fr>Cristal de job</Name_fr>
       <Name_de>Jobkristall</Name_de>
-      <Priority>5</Priority>
+      <Priority>4</Priority>
     </ItemUICategory>
     <ItemUICategory>
       <Key>63</Key>
@@ -555,6 +564,168 @@
       <Name_en>Other</Name_en>
       <Name_fr>Autre</Name_fr>
       <Name_de>Anderes</Name_de>
+      <Priority>5</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>64</Key>
+      <Kind>7</Kind>
+      <Name_ja>建築物権利証書</Name_ja>
+      <Name_en>Construction Permit</Name_en>
+      <Name_fr>Titre immobilier</Name_fr>
+      <Name_de>Baugenehmigung</Name_de>
       <Priority>6</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>65</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(屋根)</Name_ja>
+      <Name_en>Roof</Name_en>
+      <Name_fr>Toit</Name_fr>
+      <Name_de>Dach</Name_de>
+      <Priority>7</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>66</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(外壁)</Name_ja>
+      <Name_en>Exterior Wall</Name_en>
+      <Name_fr>Élément de façade</Name_fr>
+      <Name_de>Mauer</Name_de>
+      <Priority>8</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>67</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(窓)</Name_ja>
+      <Name_en>Window</Name_en>
+      <Name_fr>Fenêtre</Name_fr>
+      <Name_de>Fenster</Name_de>
+      <Priority>9</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>68</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(扉)</Name_ja>
+      <Name_en>Door</Name_en>
+      <Name_fr>Porte</Name_fr>
+      <Name_de>Tür</Name_de>
+      <Priority>10</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>69</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(屋根装飾)</Name_ja>
+      <Name_en>Roof Decoration</Name_en>
+      <Name_fr>Décoration de toit</Name_fr>
+      <Name_de>Dachdekoration</Name_de>
+      <Priority>11</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>70</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(外壁装飾)</Name_ja>
+      <Name_en>Exterior Wall Decoration</Name_en>
+      <Name_fr>Décoration de façade</Name_fr>
+      <Name_de>Fassadendekoration</Name_de>
+      <Priority>12</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>71</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(看板)</Name_ja>
+      <Name_en>Placard</Name_en>
+      <Name_fr>Panneau</Name_fr>
+      <Name_de>Tafel</Name_de>
+      <Priority>13</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>72</Key>
+      <Kind>7</Kind>
+      <Name_ja>外装建材(塀)</Name_ja>
+      <Name_en>Fence</Name_en>
+      <Name_fr>Muret</Name_fr>
+      <Name_de>Zaun</Name_de>
+      <Priority>14</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>73</Key>
+      <Kind>7</Kind>
+      <Name_ja>内装建材(内壁)</Name_ja>
+      <Name_en>Interior Wall</Name_en>
+      <Name_fr>Tapisserie</Name_fr>
+      <Name_de>Innenwand</Name_de>
+      <Priority>15</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>74</Key>
+      <Kind>7</Kind>
+      <Name_ja>内装建材(床)</Name_ja>
+      <Name_en>Flooring</Name_en>
+      <Name_fr>Sol</Name_fr>
+      <Name_de>Boden</Name_de>
+      <Priority>16</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>75</Key>
+      <Kind>7</Kind>
+      <Name_ja>内装建材(天井照明)</Name_ja>
+      <Name_en>Ceiling Light</Name_en>
+      <Name_fr>Luminaire</Name_fr>
+      <Name_de>Deckenleuchte</Name_de>
+      <Priority>17</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>76</Key>
+      <Kind>7</Kind>
+      <Name_ja>庭具</Name_ja>
+      <Name_en>Outdoor Furnishing</Name_en>
+      <Name_fr>Meuble de jardin</Name_fr>
+      <Name_de>Gartenausstattung</Name_de>
+      <Priority>18</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>77</Key>
+      <Kind>7</Kind>
+      <Name_ja>調度品(台座)</Name_ja>
+      <Name_en>Table</Name_en>
+      <Name_fr>Table</Name_fr>
+      <Name_de>Tisch/Sockel</Name_de>
+      <Priority>20</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>78</Key>
+      <Kind>7</Kind>
+      <Name_ja>調度品(卓上)</Name_ja>
+      <Name_en>Tabletop</Name_en>
+      <Name_fr>Mobilier de table</Name_fr>
+      <Name_de>Tischdekoration</Name_de>
+      <Priority>21</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>79</Key>
+      <Kind>7</Kind>
+      <Name_ja>調度品(壁掛)</Name_ja>
+      <Name_en>Wall-mounted</Name_en>
+      <Name_fr>Mobilier mural</Name_fr>
+      <Name_de>Wandmöbel</Name_de>
+      <Priority>22</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>80</Key>
+      <Kind>7</Kind>
+      <Name_ja>調度品(敷物)</Name_ja>
+      <Name_en>Rug</Name_en>
+      <Name_fr>Tapis</Name_fr>
+      <Name_de>Teppich</Name_de>
+      <Priority>23</Priority>
+    </ItemUICategory>
+    <ItemUICategory>
+      <Key>81</Key>
+      <Kind>7</Kind>
+      <Name_ja>ミニオン</Name_ja>
+      <Name_en>Minion</Name_en>
+      <Name_fr>Mascotte</Name_fr>
+      <Name_de>Begleiter</Name_de>
+      <Priority>4</Priority>
     </ItemUICategory>
   </ArrayOfItemUICategory>

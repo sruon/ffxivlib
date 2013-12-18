@@ -145,7 +145,7 @@
     </PlaceName>
     <PlaceName>
       <Key>37</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>ワンダラーパレス</SGL_ja>
       <SGL_en>The Wanderer's Palace</SGL_en>
       <SGL_fr>Palais du Vagabond</SGL_fr>
@@ -217,7 +217,7 @@
     </PlaceName>
     <PlaceName>
       <Key>47</Key>
-      <region />
+      <region>24</region>
       <SGL_ja>カッターズクライ</SGL_ja>
       <SGL_en>Cutter's Cry</SGL_en>
       <SGL_fr>Gouffre hurlant</SGL_fr>
@@ -321,7 +321,7 @@
     </PlaceName>
     <PlaceName>
       <Key>61</Key>
-      <region />
+      <region>23</region>
       <SGL_ja>トトラクの千獄</SGL_ja>
       <SGL_en>The Thousand Maws of Toto-Rak</SGL_en>
       <SGL_fr>Mille Gueules de Toto-Rak</SGL_fr>
@@ -345,7 +345,7 @@
     </PlaceName>
     <PlaceName>
       <Key>64</Key>
-      <region />
+      <region>25</region>
       <SGL_ja>ゼーメル要塞</SGL_ja>
       <SGL_en>Dzemael Darkhold</SGL_en>
       <SGL_fr>Forteresse de Dzemael</SGL_fr>
@@ -353,7 +353,7 @@
     </PlaceName>
     <PlaceName>
       <Key>65</Key>
-      <region />
+      <region>25</region>
       <SGL_ja>オーラムヴェイル</SGL_ja>
       <SGL_en>Aurum Vale</SGL_en>
       <SGL_fr>Val d'aurum</SGL_fr>
@@ -813,7 +813,7 @@
       <SGL_ja>古アムダプール市街</SGL_ja>
       <SGL_en>Ruins of Amdapor</SGL_en>
       <SGL_fr>Ruines d'Amdapor</SGL_fr>
-      <SGL_de>Ruinen von Amdapor</SGL_de>
+      <SGL_de>Historisches Amdapor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>126</Key>
@@ -833,11 +833,11 @@
     </PlaceName>
     <PlaceName>
       <Key>128</Key>
-      <region />
+      <region>23</region>
       <SGL_ja>古城アムダプール</SGL_ja>
       <SGL_en>Amdapor Keep</SGL_en>
       <SGL_fr>Château d'Amdapor</SGL_fr>
-      <SGL_de>Burgfried von Amdapor</SGL_de>
+      <SGL_de>Ruinen von Amdapor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>129</Key>
@@ -964,7 +964,7 @@
       <region />
       <SGL_ja>イクサル軍伐採所</SGL_ja>
       <SGL_en>Ixali Logging Grounds</SGL_en>
-      <SGL_fr>Site de déboisage des Ixali</SGL_fr>
+      <SGL_fr>Site de déboisement ixal</SGL_fr>
       <SGL_de>Ixal-Kahlhieb</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -985,15 +985,15 @@
     </PlaceName>
     <PlaceName>
       <Key>152</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>エオルゼア地下空間</SGL_ja>
-      <SGL_en />
-      <SGL_fr />
-      <SGL_de />
+      <SGL_en>Eorzean Subterrane</SGL_en>
+      <SGL_fr>Sous-sol éorzéen</SGL_fr>
+      <SGL_de>Tiefstes Inneres</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>153</Key>
-      <region>148</region>
+      <region />
       <SGL_ja>モルディオン監獄</SGL_ja>
       <SGL_en>Mordion Gaol</SGL_en>
       <SGL_fr>Geôle de Mordion</SGL_fr>
@@ -1001,7 +1001,7 @@
     </PlaceName>
     <PlaceName>
       <Key>154</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>ウルヴズジェイル</SGL_ja>
       <SGL_en>The Wolves' Den</SGL_en>
       <SGL_fr>L'Antre des loups</SGL_fr>
@@ -1564,7 +1564,7 @@
       <region />
       <SGL_ja>キャンプ・スカルバレー</SGL_ja>
       <SGL_en>Camp Skull Valley</SGL_en>
-      <SGL_fr>Camp de la vallée du Crâne</SGL_fr>
+      <SGL_fr>Camp de la Vallée du Crâne</SGL_fr>
       <SGL_de>Camp Schädeltal</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -1601,7 +1601,7 @@
     </PlaceName>
     <PlaceName>
       <Key>230</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>シリウス大灯台</SGL_ja>
       <SGL_en>Pharos Sirius</SGL_en>
       <SGL_fr>Phare de Sirius</SGL_fr>
@@ -1841,7 +1841,7 @@
     </PlaceName>
     <PlaceName>
       <Key>260</Key>
-      <region />
+      <region>24</region>
       <SGL_ja>カストルム・メリディアヌム</SGL_ja>
       <SGL_en>Castrum Meridianum</SGL_en>
       <SGL_fr>Castrum Meridianum</SGL_fr>
@@ -2427,7 +2427,7 @@
       <Key>333</Key>
       <region />
       <SGL_ja>カストルム・メリディアヌム</SGL_ja>
-      <SGL_en>Castrum Meridianum Baileys</SGL_en>
+      <SGL_en>Castrum Meridianum</SGL_en>
       <SGL_fr>Enceinte de Castrum Meridianum</SGL_fr>
       <SGL_de>Castrum Meridianum</SGL_de>
     </PlaceName>
@@ -2625,11 +2625,11 @@
     </PlaceName>
     <PlaceName>
       <Key>358</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>ウルヴズジェイル係船場</SGL_ja>
       <SGL_en>Wolves' Den Pier</SGL_en>
       <SGL_fr>Jetée de l'Antre des loups</SGL_fr>
-      <SGL_de>Wolfshöhlen-Steg</SGL_de>
+      <SGL_de>Wolfshöhlen-Pier</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>359</Key>
@@ -2638,6 +2638,14 @@
       <SGL_en>The Navel</SGL_en>
       <SGL_fr>Le Nombril</SGL_fr>
       <SGL_de>Der Nabel</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>360</Key>
+      <region>23</region>
+      <SGL_ja>茨の園</SGL_ja>
+      <SGL_en>Thornmarch</SGL_en>
+      <SGL_fr>Lisière de ronces</SGL_fr>
+      <SGL_de>Dornmarsch</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>361</Key>
@@ -2723,7 +2731,7 @@
       <Key>373</Key>
       <region />
       <SGL_ja>ザル回廊</SGL_ja>
-      <SGL_en>Merchant Strip - Steps of Thal</SGL_en>
+      <SGL_en>Merchant Strip</SGL_en>
       <SGL_fr>Faubourg de Thal</SGL_fr>
       <SGL_de>Thal-Kreuzgang</SGL_de>
     </PlaceName>
@@ -2945,7 +2953,7 @@
     </PlaceName>
     <PlaceName>
       <Key>401</Key>
-      <region />
+      <region>25</region>
       <SGL_ja>ストーンヴィジル</SGL_ja>
       <SGL_en>Stone Vigil</SGL_en>
       <SGL_fr>Vigile de pierre</SGL_fr>
@@ -2964,7 +2972,7 @@
       <region />
       <SGL_ja>ベヒーモスの縄張り</SGL_ja>
       <SGL_en>Behemoth's Dominion</SGL_en>
-      <SGL_fr>Territoire de Béhémoth</SGL_fr>
+      <SGL_fr>Territoire du béhémoth</SGL_fr>
       <SGL_de>Behemoth-Dominium</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -3004,8 +3012,8 @@
       <region />
       <SGL_ja>白狼門（中央森林方面）</SGL_ja>
       <SGL_en>White Wolf Gate</SGL_en>
-      <SGL_fr>Porte du loup blanc&lt;br&gt;(Forêt centrale)</SGL_fr>
-      <SGL_de>Weißwolf-Pforte&lt;br&gt;(zum Tiefen Wald)</SGL_de>
+      <SGL_fr>Forêt centrale via la porte du loup blanc</SGL_fr>
+      <SGL_de>Weißwolf-Pforte &lt;br&gt;(zum Tiefen Wald)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>409</Key>
@@ -3092,8 +3100,8 @@
       <region />
       <SGL_ja>エバーシェイド&lt;br&gt;[長老の木]</SGL_ja>
       <SGL_en>Everschade&lt;br&gt;(The Guardian Tree)</SGL_en>
-      <SGL_fr>Breuil de l'ombre éternelle&lt;br&gt;(Arbre gardien)</SGL_fr>
-      <SGL_de>Immerschatten&lt;br&gt;(Wächterbaum)</SGL_de>
+      <SGL_fr>Breuil de l'ombre éternelle&lt;br&gt;Arbre gardien</SGL_fr>
+      <SGL_de>Immerschatten &lt;br&gt;(Wächterbaum)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>420</Key>
@@ -3117,7 +3125,7 @@
       <SGL_ja>ブレイブハート号</SGL_ja>
       <SGL_en>The Braveheart</SGL_en>
       <SGL_fr>Le Cœurbrave</SGL_fr>
-      <SGL_de>Die &lt;i&gt;Braveheart&lt;/i&gt;</SGL_de>
+      <SGL_de>Die Braveheart</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>423</Key>
@@ -3131,13 +3139,13 @@
       <Key>424</Key>
       <region />
       <SGL_ja>船着場：ウルヴズジェイル</SGL_ja>
-      <SGL_en>Wolves' Den Pier</SGL_en>
+      <SGL_en>Wolves' Den Docks</SGL_en>
       <SGL_fr>Quai de l'Antre des loups</SGL_fr>
       <SGL_de>Die Wolfshöhle</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>425</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>ミスト・ヴィレッジ</SGL_ja>
       <SGL_en>Mist</SGL_en>
       <SGL_fr>Brumée</SGL_fr>
@@ -3145,17 +3153,17 @@
     </PlaceName>
     <PlaceName>
       <Key>426</Key>
-      <region />
+      <region>23</region>
       <SGL_ja>ラベンダーベッド</SGL_ja>
       <SGL_en>Lavender Beds</SGL_en>
-      <SGL_fr>Lavendière</SGL_fr>
+      <SGL_fr>Lavandière</SGL_fr>
       <SGL_de>Lavendelbeete</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>427</Key>
-      <region />
+      <region>24</region>
       <SGL_ja>ゴブレットビュート</SGL_ja>
-      <SGL_en>Goblet Butte</SGL_en>
+      <SGL_en>The Goblet</SGL_en>
       <SGL_fr>La Coupe</SGL_fr>
       <SGL_de>Kelchkuppe</SGL_de>
     </PlaceName>
@@ -3177,7 +3185,7 @@
     </PlaceName>
     <PlaceName>
       <Key>430</Key>
-      <region />
+      <region>24</region>
       <SGL_ja>魔導城プラエトリウム</SGL_ja>
       <SGL_en>Praetorium</SGL_en>
       <SGL_fr>Praetorium</SGL_fr>
@@ -3409,7 +3417,7 @@
     </PlaceName>
     <PlaceName>
       <Key>459</Key>
-      <region />
+      <region>25</region>
       <SGL_ja>ハウリングアイ外縁</SGL_ja>
       <SGL_en>The Howling Eye</SGL_en>
       <SGL_fr>Hurlœil</SGL_fr>
@@ -3445,11 +3453,11 @@
       <SGL_ja>ラグナロク級拘束艦</SGL_ja>
       <SGL_en>The Ragnarok</SGL_en>
       <SGL_fr>Le Ragnarok</SGL_fr>
-      <SGL_de>Die &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Die Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>464</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>メテオ探査坑浅部</SGL_ja>
       <SGL_en>Upper Aetheroacoustic Exploratory Site</SGL_en>
       <SGL_fr>Site impérial d'exploration supérieur</SGL_fr>
@@ -3457,7 +3465,7 @@
     </PlaceName>
     <PlaceName>
       <Key>465</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>メテオ探査坑深部</SGL_ja>
       <SGL_en>Lower Aetheroacoustic Exploratory Site</SGL_en>
       <SGL_fr>Site impérial d'exploration inférieur</SGL_fr>
@@ -3465,35 +3473,35 @@
     </PlaceName>
     <PlaceName>
       <Key>466</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>ラグナロク級拘束艦</SGL_ja>
       <SGL_en>The Ragnarok</SGL_en>
       <SGL_fr>Le Ragnarok</SGL_fr>
-      <SGL_de>Die &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Die Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>467</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>稼働隔壁</SGL_ja>
       <SGL_en>Ragnarok Drive Cylinder</SGL_en>
       <SGL_fr>Cylindre propulseur du Ragnarok</SGL_fr>
-      <SGL_de>Antriebszylinder der &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Antriebszylinder der Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>468</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>中枢区画</SGL_ja>
       <SGL_en>Ragnarok Central Core</SGL_en>
       <SGL_fr>Noyau central du Ragnarok</SGL_fr>
-      <SGL_de>Kernsektor der &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Kernsektor der Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>469</Key>
-      <region />
+      <region>22</region>
       <SGL_ja>第一艦橋</SGL_ja>
       <SGL_en>Ragnarok Main Bridge</SGL_en>
       <SGL_fr>Pont principal du Ragnarok</SGL_fr>
-      <SGL_de>Kommandobrücke der &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Kommandobrücke der Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>470</Key>
@@ -3534,6 +3542,86 @@
       <SGL_en>Training Area</SGL_en>
       <SGL_fr>Quartier des soldats</SGL_fr>
       <SGL_de>Ausbildungsplatz</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>475</Key>
+      <region />
+      <SGL_ja>船着場：鏡池桟橋</SGL_ja>
+      <SGL_en>Mirror Planks Docks</SGL_en>
+      <SGL_fr>Quai de l'appontement du Miroir</SGL_fr>
+      <SGL_de>Spiegelsee-Pier</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>476</Key>
+      <region />
+      <SGL_ja>船着場：ラベンダーベッド</SGL_ja>
+      <SGL_en>Lavender Beds Docks</SGL_en>
+      <SGL_fr>Quai de Lavandière</SGL_fr>
+      <SGL_de>Lavendelbeet-Pier</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>477</Key>
+      <region>24</region>
+      <SGL_ja>ポルタ・デクマーナ</SGL_ja>
+      <SGL_en>Porta Decumana</SGL_en>
+      <SGL_fr>Porta decumana</SGL_fr>
+      <SGL_de>Porta Decumana</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>478</Key>
+      <region>26</region>
+      <SGL_ja>古代の民の迷宮</SGL_ja>
+      <SGL_en>Labyrinth of the Ancients</SGL_en>
+      <SGL_fr>Dédale antique</SGL_fr>
+      <SGL_de>Labyrinth der Alten</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>479</Key>
+      <region />
+      <SGL_ja>古代の民の迷宮階層1</SGL_ja>
+      <SGL_en>Lower Labyrinth</SGL_en>
+      <SGL_fr>Premier niveau du Dédale</SGL_fr>
+      <SGL_de>Erste Ebene</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>480</Key>
+      <region />
+      <SGL_ja>古代の民の迷宮階層2</SGL_ja>
+      <SGL_en>Upper Labyrinth</SGL_en>
+      <SGL_fr>Deuxième niveau du Dédale</SGL_fr>
+      <SGL_de>Zweite Ebene</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>481</Key>
+      <region>26</region>
+      <SGL_ja>石の家</SGL_ja>
+      <SGL_en>The Rising Stones</SGL_en>
+      <SGL_fr>Refuge des roches</SGL_fr>
+      <SGL_de>Sonnenstein</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>482</Key>
+      <region />
+      <SGL_ja>灰の陣営</SGL_ja>
+      <SGL_en>Ring of Ash</SGL_en>
+      <SGL_fr>Camp de la Ligue des cendres</SGL_fr>
+      <SGL_de>Ring der Asche</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>483</Key>
+      <region>24</region>
+      <SGL_ja>カッパーベル銅山（騒乱坑道）</SGL_ja>
+      <SGL_en>Copperbell Mines (Hard)</SGL_en>
+      <SGL_fr>Mines de Clochecuivre (brutal)</SGL_fr>
+      <SGL_de>Kupferglocken-Mine (schwer)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>484</Key>
+      <region>23</region>
+      <SGL_ja>ハウケタ御用邸（妖異屋敷）</SGL_ja>
+      <SGL_en>Haukke Manor (Hard)</SGL_en>
+      <SGL_fr>Manoir des Haukke (brutal)</SGL_fr>
+      <SGL_de>Haukke-Herrenhaus (schwer)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>500</Key>
@@ -3789,7 +3877,7 @@
       <SGL_ja>古木の祭壇</SGL_ja>
       <SGL_en>Wormwood Altar</SGL_en>
       <SGL_fr>Autel du vieux bois</SGL_fr>
-      <SGL_de>Wurmstich-Altar</SGL_de>
+      <SGL_de>Wurmholz-Altar</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>542</Key>
@@ -3837,7 +3925,7 @@
       <SGL_ja>カーラインカフェ&lt;br&gt;[冒険者ギルド]</SGL_ja>
       <SGL_en>Carline Canopy&lt;br&gt;(Adventurers' Guild)</SGL_en>
       <SGL_fr>Aux Feuilles de carline&lt;br&gt;Guilde des aventuriers</SGL_fr>
-      <SGL_de>Miounnes Hexenstübchen&lt;br&gt;(Abenteurergilde)</SGL_de>
+      <SGL_de>Miounnes Hexenstübchen &lt;br&gt;(Abenteurergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>548</Key>
@@ -3901,7 +3989,7 @@
       <SGL_ja>古樫の高堂&lt;br&gt;[木工師ギルド]</SGL_ja>
       <SGL_en>The Oak Atrium&lt;br&gt;(Carpenters' Guild)</SGL_en>
       <SGL_fr>Le Pavillon de chêne&lt;br&gt;Guilde des menuisiers</SGL_fr>
-      <SGL_de>Atrium der Immergrünen Eichen&lt;br&gt;(Gilde der Zimmerer)</SGL_de>
+      <SGL_de>Atrium der Immergrünen Eichen &lt;br&gt;(Gilde der Zimmerer)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>556</Key>
@@ -3965,7 +4053,7 @@
       <SGL_ja>神勇隊司令砦&lt;br&gt;[弓術士ギルド]</SGL_ja>
       <SGL_en>Quiver's Hold&lt;br&gt;(Archers' Guild)</SGL_en>
       <SGL_fr>Le Carquois&lt;br&gt;Guilde des archers</SGL_fr>
-      <SGL_de>Kleine Waldschanze&lt;br&gt;(Gilde der Waldläufer)</SGL_de>
+      <SGL_de>Kleine Waldschanze &lt;br&gt;(Gilde der Waldläufer)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>564</Key>
@@ -4037,7 +4125,7 @@
       <SGL_ja>鬼哭隊屯所&lt;br&gt;[槍術士ギルド]</SGL_ja>
       <SGL_en>Wailing Barracks&lt;br&gt;(Lancers' Guild)</SGL_en>
       <SGL_fr>Caserne des Vigiles&lt;br&gt;Guilde des maîtres d'hast</SGL_fr>
-      <SGL_de>Große Waldschanze&lt;br&gt;(Gilde der Pikeniere)</SGL_de>
+      <SGL_de>Große Waldschanze &lt;br&gt;(Gilde der Pikeniere)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>573</Key>
@@ -4085,7 +4173,7 @@
       <SGL_ja>碩老樹瞑想窟&lt;br&gt;[幻術士ギルド]</SGL_ja>
       <SGL_en>Stillglade Fane&lt;br&gt;(Conjurers' Guild)</SGL_en>
       <SGL_fr>Temple de la sérénité&lt;br&gt;Guilde des élémentalistes</SGL_fr>
-      <SGL_de>Grotte der Versunkenen Gedanken&lt;br&gt;(Gilde der Druiden)</SGL_de>
+      <SGL_de>Grotte der Versunkenen Gedanken &lt;br&gt;(Gilde der Druiden)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>579</Key>
@@ -4125,7 +4213,7 @@
       <SGL_ja>グレートローム農場&lt;br&gt;[園芸師ギルド]</SGL_ja>
       <SGL_en>Greatloam Growery&lt;br&gt;(Botanists' Guild)</SGL_en>
       <SGL_fr>Le Courtil&lt;br&gt;Guilde des botanistes</SGL_fr>
-      <SGL_de>Ährenkranzkolonie&lt;br&gt;(Gärtnergilde)</SGL_de>
+      <SGL_de>Ährenkranzkolonie &lt;br&gt;(Gärtnergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>584</Key>
@@ -4173,7 +4261,7 @@
       <SGL_ja>ムントゥイ醸造庫</SGL_ja>
       <SGL_en>The Mun-Tuy Cellars</SGL_en>
       <SGL_fr>Les Caves de Mun-Tuy</SGL_fr>
-      <SGL_de>Die Mun-Tuy-Braukeller</SGL_de>
+      <SGL_de>Mun-Tuy-Braukeller</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>590</Key>
@@ -4197,7 +4285,7 @@
       <SGL_ja>東桟橋&lt;br&gt;黒衣森：東部森林</SGL_ja>
       <SGL_en>Westshore Pier&lt;br&gt;East Shroud</SGL_en>
       <SGL_fr>Jetée de la rive est&lt;br&gt;Forêt de l'est</SGL_fr>
-      <SGL_de>Süßholz-Steg&lt;br&gt;Fähre zum Ostwald</SGL_de>
+      <SGL_de>Süßholz-Steg &lt;br&gt;Fähre zum Ostwald</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>593</Key>
@@ -4213,7 +4301,7 @@
       <SGL_ja>アトリエ「フェン・イル」&lt;br&gt;[革細工師ギルド]</SGL_ja>
       <SGL_en>Atelier Fen-Yll&lt;br&gt;(Leatherworkers' Guild)</SGL_en>
       <SGL_fr>Atelier Fen-Yll&lt;br&gt;Guilde des tanneurs</SGL_fr>
-      <SGL_de>Atelier Fen-Yll&lt;br&gt;(Gerbergilde)</SGL_de>
+      <SGL_de>Atelier Fen-Yll &lt;br&gt;(Gerbergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>595</Key>
@@ -4421,7 +4509,7 @@
       <SGL_ja>プラチナミラージュ&lt;br&gt;[格闘士ギルド]</SGL_ja>
       <SGL_en>Platinum Mirage&lt;br&gt;(Pugilists' Guild)</SGL_en>
       <SGL_fr>Le Mirage de platine&lt;br&gt;Guilde des pugilistes</SGL_fr>
-      <SGL_de>Palais Platin&lt;br&gt;(Faustkämpfergilde)</SGL_de>
+      <SGL_de>Palais Platin &lt;br&gt;(Faustkämpfergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>621</Key>
@@ -4453,7 +4541,7 @@
       <SGL_ja>コロセウム&lt;br&gt;[剣術士ギルド]</SGL_ja>
       <SGL_en>The Coliseum&lt;br&gt;(Gladiators' Guild)</SGL_en>
       <SGL_fr>Le Colisée&lt;br&gt;Guilde des gladiateurs</SGL_fr>
-      <SGL_de>Das Kolosseum&lt;br&gt;(Gladiatorengilde)</SGL_de>
+      <SGL_de>Das Kolosseum &lt;br&gt;(Gladiatorengilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>625</Key>
@@ -4501,7 +4589,7 @@
       <SGL_ja>アルダネス聖櫃堂&lt;br&gt;[呪術士ギルド]</SGL_ja>
       <SGL_en>Arrzaneth Ossuary&lt;br&gt;(Thaumaturges' Guild)</SGL_en>
       <SGL_fr>Ossuaire d'Arrzaneth&lt;br&gt;Guilde des occultistes</SGL_fr>
-      <SGL_de>Arrzaneth-Ossarium&lt;br&gt;(Thaumaturgengilde)</SGL_de>
+      <SGL_de>Arrzaneth-Ossarium &lt;br&gt;(Thaumaturgengilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>631</Key>
@@ -4533,7 +4621,7 @@
       <SGL_ja>エシュテム直営工房&lt;br&gt;[彫金師ギルド]</SGL_ja>
       <SGL_en>Eshtaime's Lapidaries&lt;br&gt;(Goldsmiths' Guild)</SGL_en>
       <SGL_fr>Les Lapidaires d'Eshtaime&lt;br&gt;Guilde des orfèvres</SGL_fr>
-      <SGL_de>Edelsteinschleiferei Eshtaime&lt;br&gt;(Goldschmiedegilde)</SGL_de>
+      <SGL_de>Edelsteinschleiferei Eshtaime &lt;br&gt;(Goldschmiedegilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>635</Key>
@@ -4557,14 +4645,14 @@
       <SGL_ja>アマジナ鉱山社&lt;br&gt;[採掘師ギルド]</SGL_ja>
       <SGL_en>Amajina &amp; Sons Mineral Concern&lt;br&gt;(Miners' Guild)</SGL_en>
       <SGL_fr>Les Bons filons d'Amajina et Fils&lt;br&gt;Guilde des mineurs</SGL_fr>
-      <SGL_de>Amajina Bergbau AG&lt;br&gt;(Minenarbeitergilde)</SGL_de>
+      <SGL_de>Amajina Bergbau AG &lt;br&gt;(Minenarbeitergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>638</Key>
       <region />
       <SGL_ja>オニキスレーン</SGL_ja>
       <SGL_en>Onyx Lane</SGL_en>
-      <SGL_fr>Rue de d'onyx</SGL_fr>
+      <SGL_fr>Rue d'onyx</SGL_fr>
       <SGL_de>Onyxgasse</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -4613,7 +4701,7 @@
       <SGL_ja>織物「サンシルク」&lt;br&gt;[裁縫師ギルド]</SGL_ja>
       <SGL_en>Sunsilk Tapestries&lt;br&gt;(Weavers' Guild)</SGL_en>
       <SGL_fr>Les Soieries du soleil&lt;br&gt;Guilde des couturiers</SGL_fr>
-      <SGL_de>Haute Couture Sonnenseide&lt;br&gt;(Webergilde)</SGL_de>
+      <SGL_de>Haute Couture Sonnenseide &lt;br&gt;(Webergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>645</Key>
@@ -4669,7 +4757,7 @@
       <SGL_ja>フロンデール薬学院&lt;br&gt;[錬金術師ギルド]</SGL_ja>
       <SGL_en>Frondale's Phrontistery&lt;br&gt;(Alchemists' Guild)</SGL_en>
       <SGL_fr>Académie médicale de Frondale&lt;br&gt;Guilde des alchimistes</SGL_fr>
-      <SGL_de>Frondales Physiatrische Akademie&lt;br&gt;(Alchemistengilde)</SGL_de>
+      <SGL_de>Frondales Physiatrische Akademie &lt;br&gt;(Alchemistengilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>652</Key>
@@ -4931,7 +5019,7 @@
       <Key>684</Key>
       <region />
       <SGL_ja>泥濘の水源地</SGL_ja>
-      <SGL_en>Mudsop Watergush</SGL_en>
+      <SGL_en>Mudstop Watergush</SGL_en>
       <SGL_fr>Source du marais</SGL_fr>
       <SGL_de>Moorseen</SGL_de>
     </PlaceName>
@@ -4989,7 +5077,7 @@
       <SGL_ja>野営地の内門</SGL_ja>
       <SGL_en>Longstop Gutgate</SGL_en>
       <SGL_fr>Centre du Bivouac</SGL_fr>
-      <SGL_de>Lagerplatz - Innerer Block</SGL_de>
+      <SGL_de>Langrast - Innerer Block</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>692</Key>
@@ -5045,7 +5133,7 @@
       <SGL_ja>アスタリシア号</SGL_ja>
       <SGL_en>The Astalicia</SGL_en>
       <SGL_fr>L'Astalicia</SGL_fr>
-      <SGL_de>Die &lt;i&gt;Astalicia&lt;/i&gt;</SGL_de>
+      <SGL_de>Die Astalicia</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>703</Key>
@@ -5053,7 +5141,7 @@
       <SGL_ja>コーラルタワー&lt;br&gt;[斧術士ギルド]</SGL_ja>
       <SGL_en>Coral Tower&lt;br&gt;(Marauders' Guild)</SGL_en>
       <SGL_fr>L'Astalicia&lt;br&gt;Guilde des maraudeurs</SGL_fr>
-      <SGL_de>Korallenturm&lt;br&gt;(Gilde der Marodeure)</SGL_de>
+      <SGL_de>Korallenturm &lt;br&gt;(Gilde der Marodeure)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>704</Key>
@@ -5085,7 +5173,7 @@
       <SGL_ja>メルヴァン税関公社&lt;br&gt;[巴術士ギルド]</SGL_ja>
       <SGL_en>Mealvaan's Gate&lt;br&gt;(Arcanists' Guild)</SGL_en>
       <SGL_fr>Douane de Mealvaan&lt;br&gt;Guilde des arcanistes</SGL_fr>
-      <SGL_de>Mealvaan-Tor&lt;br&gt;(Gilde der Hermetiker)</SGL_de>
+      <SGL_de>Mealvaan-Tor &lt;br&gt;(Gilde der Hermetiker)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>708</Key>
@@ -5101,7 +5189,7 @@
       <SGL_ja>レストラン「ビスマルク」&lt;br&gt;[調理師ギルド]</SGL_ja>
       <SGL_en>The Bismarck&lt;br&gt;(Culinarians' Guild)</SGL_en>
       <SGL_fr>Le Bismarck&lt;br&gt;Guilde des cuisiniers</SGL_fr>
-      <SGL_de>Restaurant Bismarck&lt;br&gt;(Gilde der Gourmets)</SGL_de>
+      <SGL_de>Restaurant Bismarck &lt;br&gt;(Gilde der Gourmets)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>710</Key>
@@ -5117,7 +5205,7 @@
       <SGL_ja>ナルディク＆ヴィメリー社&lt;br&gt;[鍛冶師ギルド]&lt;br&gt;[甲冑師ギルド]</SGL_ja>
       <SGL_en>Naldiq &amp; Vymelli's&lt;br&gt;(Blacksmiths' Guild)&lt;br&gt;(Armorers' Guild)</SGL_en>
       <SGL_fr>Naldiq et Vymelli&lt;br&gt;Guilde des forgerons et des armuriers</SGL_fr>
-      <SGL_de>Naldiq &amp; Vymelli&lt;br&gt;(Gilde der Grobschmiede)&lt;br&gt;(Gilde der Plattner)</SGL_de>
+      <SGL_de>Naldiq &amp; Vymelli &lt;br&gt;(Gilde der Grobschmiede)&lt;br&gt;(Gilde der Plattner)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>712</Key>
@@ -5141,7 +5229,7 @@
       <SGL_ja>網倉&lt;br&gt;[漁師ギルド]</SGL_ja>
       <SGL_en>Fisherman's Bottom&lt;br&gt;(Fishermen's Guild)</SGL_en>
       <SGL_fr>L'Escale du pêcheur&lt;br&gt;Guilde des pêcheurs</SGL_fr>
-      <SGL_de>Fischers Bodden&lt;br&gt;(Fischergilde)</SGL_de>
+      <SGL_de>Fischers Bodden &lt;br&gt;(Fischergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>715</Key>
@@ -5157,7 +5245,7 @@
       <SGL_ja>溺れた海豚亭&lt;br&gt;[冒険者ギルド]</SGL_ja>
       <SGL_en>The Drowning Wench&lt;br&gt;(Adventurers' Guild)</SGL_en>
       <SGL_fr>Le Dauphin noyé&lt;br&gt;Guilde des aventuriers</SGL_fr>
-      <SGL_de>Zur Ertränkten Sorge&lt;br&gt;(Abenteurergilde)</SGL_de>
+      <SGL_de>Zur Ertränkten Sorge &lt;br&gt;(Abenteurergilde)</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>717</Key>
@@ -5493,7 +5581,7 @@
       <SGL_ja>避難地の主門</SGL_ja>
       <SGL_en>Runstop Headgate</SGL_en>
       <SGL_fr>Porte frontale de l'Arrêt</SGL_fr>
-      <SGL_de>Laufstopp-Großtor</SGL_de>
+      <SGL_de>Versteck-Haupttor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>760</Key>
@@ -5501,7 +5589,7 @@
       <SGL_ja>避難地の内門</SGL_ja>
       <SGL_en>Runstop Gutgate</SGL_en>
       <SGL_fr>Porte centrale de l'Arrêt</SGL_fr>
-      <SGL_de>Laufstopp-Innentor</SGL_de>
+      <SGL_de>Versteck-Innentor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>761</Key>
@@ -5509,7 +5597,7 @@
       <SGL_ja>避難地の裏門</SGL_ja>
       <SGL_en>Runstop Backgate</SGL_en>
       <SGL_fr>Porte arrière de l'Arrêt</SGL_fr>
-      <SGL_de>Laufstopp-Hintentor</SGL_de>
+      <SGL_de>Versteck-Hintertor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>762</Key>
@@ -5517,7 +5605,7 @@
       <SGL_ja>野営地の主門</SGL_ja>
       <SGL_en>Longstop Headgate</SGL_en>
       <SGL_fr>Porte frontale du Bivouac</SGL_fr>
-      <SGL_de>Langrast-Großtor</SGL_de>
+      <SGL_de>Langrast-Haupttor</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>763</Key>
@@ -5532,15 +5620,15 @@
       <region />
       <SGL_ja>アフトカースル（甲冑師/鍛冶師/冒険者ギルド）</SGL_ja>
       <SGL_en>The Aftcastle</SGL_en>
-      <SGL_fr>La Dunette</SGL_fr>
+      <SGL_fr>La Dunette (Guildes des armuriers/forgerons/aventuriers)</SGL_fr>
       <SGL_de>Achterburg</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>765</Key>
       <region />
-      <SGL_ja>レストランビスマルク（調理師ギルド）</SGL_ja>
+      <SGL_ja>レストラン「ビスマルク」（調理師ギルド）</SGL_ja>
       <SGL_en>The Bismarck</SGL_en>
-      <SGL_fr>Le Bismarck</SGL_fr>
+      <SGL_fr>Le Bismarck (Guilde des cuisiniers)</SGL_fr>
       <SGL_de>Restaurant Bismarck</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5548,7 +5636,7 @@
       <region />
       <SGL_ja>コーラルタワー（斧術士ギルド）</SGL_ja>
       <SGL_en>Coral Tower</SGL_en>
-      <SGL_fr>Tour de Corail</SGL_fr>
+      <SGL_fr>Tour de Corail (Guilde des maraudeurs)</SGL_fr>
       <SGL_de>Korallenturm (Gilde der Marodeure)</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5556,7 +5644,7 @@
       <region />
       <SGL_ja>国際街広場（マーケット）</SGL_ja>
       <SGL_en>Hawkers' Alley</SGL_en>
-      <SGL_fr>La Camelotade</SGL_fr>
+      <SGL_fr>La Camelotade / Quartiers marchands</SGL_fr>
       <SGL_de>Kaufmannsplatz</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5564,7 +5652,7 @@
       <region />
       <SGL_ja>漁師ギルド前</SGL_ja>
       <SGL_en>Fisherman's Bottom</SGL_en>
-      <SGL_fr>L'Escale du pêcheur</SGL_fr>
+      <SGL_fr>L'Escale du pêcheur (Guilde des pêcheurs)</SGL_fr>
       <SGL_de>Fischergilde</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5594,9 +5682,9 @@
     <PlaceName>
       <Key>772</Key>
       <region />
-      <SGL_ja>冒険者ギルド前</SGL_ja>
+      <SGL_ja>冒険者ギルド/マーケット前</SGL_ja>
       <SGL_en>Adventurers' Guild</SGL_en>
-      <SGL_fr>Guilde des aventuriers</SGL_fr>
+      <SGL_fr>Guilde des aventuriers / Quartiers marchands</SGL_fr>
       <SGL_de>Abenteurergilde</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5612,7 +5700,7 @@
       <region />
       <SGL_ja>コロセウム（剣術士ギルド）</SGL_ja>
       <SGL_en>The Coliseum</SGL_en>
-      <SGL_fr>Le Colisée</SGL_fr>
+      <SGL_fr>Le Colisée (Guilde des gladiateurs)</SGL_fr>
       <SGL_de>Das Kolosseum</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -5682,9 +5770,9 @@
     <PlaceName>
       <Key>783</Key>
       <region />
-      <SGL_ja>革細工師ギルド前</SGL_ja>
+      <SGL_ja>革細工師ギルド/マーケット前</SGL_ja>
       <SGL_en>Leatherworkers' Guild</SGL_en>
-      <SGL_fr>Guilde des tanneurs</SGL_fr>
+      <SGL_fr>Guilde des tanneurs / Quartiers marchands</SGL_fr>
       <SGL_de>Gerbergilde</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -6272,6 +6360,110 @@
       <SGL_de>Unteres Sanktum</SGL_de>
     </PlaceName>
     <PlaceName>
+      <Key>857</Key>
+      <region />
+      <SGL_ja>大十字の広間</SGL_ja>
+      <SGL_en>The Crossroads</SGL_en>
+      <SGL_fr>Croisée des chemins</SGL_fr>
+      <SGL_de>Die Gabelung</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>858</Key>
+      <region />
+      <SGL_ja>腐汁の迷宮</SGL_ja>
+      <SGL_en>Path of Decay</SGL_en>
+      <SGL_fr>Chemin de la purulence</SGL_fr>
+      <SGL_de>Pfad des Verfalls</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>859</Key>
+      <region />
+      <SGL_ja>異界の迷宮</SGL_ja>
+      <SGL_en>Path of Vice</SGL_en>
+      <SGL_fr>Chemin du vice</SGL_fr>
+      <SGL_de>Pfad der Sünde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>860</Key>
+      <region />
+      <SGL_ja>煉獄の迷宮</SGL_ja>
+      <SGL_en>Path of Redemption</SGL_en>
+      <SGL_fr>Chemin de l'expiation</SGL_fr>
+      <SGL_de>Pfad der Sühne</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>861</Key>
+      <region />
+      <SGL_ja>昇天の歩廊</SGL_ja>
+      <SGL_en>Walk of Ascension</SGL_en>
+      <SGL_fr>Couloir de l'ascension</SGL_fr>
+      <SGL_de>Pfad der Aszension</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>862</Key>
+      <region />
+      <SGL_ja>死者の浴室</SGL_ja>
+      <SGL_en>Pools of Demise</SGL_en>
+      <SGL_fr>Cloaque des défunts</SGL_fr>
+      <SGL_de>Becken des Todes</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>863</Key>
+      <region />
+      <SGL_ja>入口（仮）</SGL_ja>
+      <SGL_en />
+      <SGL_fr />
+      <SGL_de />
+    </PlaceName>
+    <PlaceName>
+      <Key>864</Key>
+      <region />
+      <SGL_ja>愚者の浴室</SGL_ja>
+      <SGL_en>Pools of Folly</SGL_en>
+      <SGL_fr>Cloaque de la folie</SGL_fr>
+      <SGL_de>Becken der Torheit</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>865</Key>
+      <region />
+      <SGL_ja>腐王の廟堂</SGL_ja>
+      <SGL_en>Hall of the Tainted</SGL_en>
+      <SGL_fr>Hall du Putride</SGL_fr>
+      <SGL_de>Halle der Befleckten</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>866</Key>
+      <region />
+      <SGL_ja>嘆声の歩廊</SGL_ja>
+      <SGL_en>Walk of Lament</SGL_en>
+      <SGL_fr>Couloir des lamentations</SGL_fr>
+      <SGL_de>Gang der Klagen</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>867</Key>
+      <region />
+      <SGL_ja>妖王の廟堂</SGL_ja>
+      <SGL_en>Hall of the Deviant</SGL_en>
+      <SGL_fr>Hall de la Décadente</SGL_fr>
+      <SGL_de>Halle der Entarteten</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>868</Key>
+      <region />
+      <SGL_ja>焦熱の歩廊</SGL_ja>
+      <SGL_en>Walk of Fire</SGL_en>
+      <SGL_fr>Couloir des flammes</SGL_fr>
+      <SGL_de>Gang des Feuers</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>869</Key>
+      <region />
+      <SGL_ja>獣王の廟堂</SGL_ja>
+      <SGL_en>Hall of the Savage</SGL_en>
+      <SGL_fr>Hall du Sauvage</SGL_fr>
+      <SGL_de>Halle der Entfesselten</SGL_de>
+    </PlaceName>
+    <PlaceName>
       <Key>870</Key>
       <region />
       <SGL_ja>不浄の大広間</SGL_ja>
@@ -6308,7 +6500,7 @@
       <region />
       <SGL_ja>2F</SGL_ja>
       <SGL_en>Second Floor</SGL_en>
-      <SGL_fr>2e étage</SGL_fr>
+      <SGL_fr>1er étage</SGL_fr>
       <SGL_de>Erster Stock</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -6316,7 +6508,7 @@
       <region />
       <SGL_ja>3F</SGL_ja>
       <SGL_en>Third Floor</SGL_en>
-      <SGL_fr>3e étage</SGL_fr>
+      <SGL_fr>2e étage</SGL_fr>
       <SGL_de>Zweiter Stock</SGL_de>
     </PlaceName>
     <PlaceName>
@@ -6366,6 +6558,38 @@
       <SGL_en>The Left Brattice</SGL_en>
       <SGL_fr>Cloison gauche</SGL_fr>
       <SGL_de>Linker Verschlag</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>882</Key>
+      <region />
+      <SGL_ja>勇将の廟堂</SGL_ja>
+      <SGL_en>Hall of the Inexorable</SGL_en>
+      <SGL_fr>Hall du Valeureux</SGL_fr>
+      <SGL_de>Halle der Tapferkeit</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>883</Key>
+      <region />
+      <SGL_ja>亡者の浴室</SGL_ja>
+      <SGL_en>Pools of Oblivion</SGL_en>
+      <SGL_fr>Cloaque des oubliés</SGL_fr>
+      <SGL_de>Becken des Vergessens</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>884</Key>
+      <region />
+      <SGL_ja>被疑者の間の扉</SGL_ja>
+      <SGL_en>Accusation Chamber door</SGL_en>
+      <SGL_fr>Porte de la chambre d'accusation</SGL_fr>
+      <SGL_de>Pforte der Anklage</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>885</Key>
+      <region />
+      <SGL_ja>拷問の間の扉</SGL_ja>
+      <SGL_en>Abacination Chamber door</SGL_en>
+      <SGL_fr>Porte de la chambre de torture</SGL_fr>
+      <SGL_de>Pforte der Folter</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>886</Key>
@@ -6637,7 +6861,7 @@
       <SGL_ja>拘束艦</SGL_ja>
       <SGL_en>The Ragnarok</SGL_en>
       <SGL_fr>Le Ragnarok</SGL_fr>
-      <SGL_de>Die &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Die Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>920</Key>
@@ -6653,7 +6877,7 @@
       <SGL_ja>拘束艦稼働隔壁</SGL_ja>
       <SGL_en>Ragnarok Outer Hull</SGL_en>
       <SGL_fr>Coque extérieure du Ragnarok</SGL_fr>
-      <SGL_de>Außenhülle der &lt;i&gt;Ragnarök&lt;/i&gt;</SGL_de>
+      <SGL_de>Außenhülle der Ragnarök</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>922</Key>
@@ -6694,6 +6918,142 @@
       <SGL_en>Propellant Chamber</SGL_en>
       <SGL_fr>Chambre du propulseur</SGL_fr>
       <SGL_de>Propellerkammer</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>927</Key>
+      <region />
+      <SGL_ja>シリウス大灯台</SGL_ja>
+      <SGL_en>Pharos Sirius</SGL_en>
+      <SGL_fr>Phare de Sirius</SGL_fr>
+      <SGL_de>Pharos Sirius</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>928</Key>
+      <region />
+      <SGL_ja>第二塔基部</SGL_ja>
+      <SGL_en>Second Spire</SGL_en>
+      <SGL_fr>Deuxième tour</SGL_fr>
+      <SGL_de>Zweiter Turmbau</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>929</Key>
+      <region />
+      <SGL_ja>エーテル貯蔵室</SGL_ja>
+      <SGL_en>Fuel Chamber</SGL_en>
+      <SGL_fr>Réservoir d'éther</SGL_fr>
+      <SGL_de>Ätherspeicher</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>930</Key>
+      <region />
+      <SGL_ja>エーテル圧縮室</SGL_ja>
+      <SGL_en>Aether Compressor</SGL_en>
+      <SGL_fr>Compresseur d'éther</SGL_fr>
+      <SGL_de>Ätherpresse</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>931</Key>
+      <region />
+      <SGL_ja>シリウスの灯室</SGL_ja>
+      <SGL_en>Beacon Chamber</SGL_en>
+      <SGL_fr>Salle du fanal</SGL_fr>
+      <SGL_de>Feuerkammer</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>932</Key>
+      <region />
+      <SGL_ja>第三塔基部</SGL_ja>
+      <SGL_en>Third Spire</SGL_en>
+      <SGL_fr>Troisième tour</SGL_fr>
+      <SGL_de>Dritter Turmbau</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>933</Key>
+      <region />
+      <SGL_ja>第四塔基部</SGL_ja>
+      <SGL_en>Fourth Spire</SGL_en>
+      <SGL_fr>Quatrième tour</SGL_fr>
+      <SGL_de>Vierter Turmbau</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>934</Key>
+      <region />
+      <SGL_ja>エーテルポンプ室</SGL_ja>
+      <SGL_en>Aether Pump</SGL_en>
+      <SGL_fr>Pompe à éther</SGL_fr>
+      <SGL_de>Ätherpumpe</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>935</Key>
+      <region />
+      <SGL_ja>5F</SGL_ja>
+      <SGL_en>Fifth Floor</SGL_en>
+      <SGL_fr>4e étage</SGL_fr>
+      <SGL_de>Fünfter Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>936</Key>
+      <region />
+      <SGL_ja>4F</SGL_ja>
+      <SGL_en>Fourth Floor</SGL_en>
+      <SGL_fr>3e étage</SGL_fr>
+      <SGL_de>Vierter Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>937</Key>
+      <region />
+      <SGL_ja>3F</SGL_ja>
+      <SGL_en>Third Floor</SGL_en>
+      <SGL_fr>2e étage</SGL_fr>
+      <SGL_de>Dritter Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>938</Key>
+      <region />
+      <SGL_ja>2F</SGL_ja>
+      <SGL_en>Second Floor</SGL_en>
+      <SGL_fr>1er étage</SGL_fr>
+      <SGL_de>Zweiter Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>939</Key>
+      <region />
+      <SGL_ja>1F</SGL_ja>
+      <SGL_en>Ground Floor</SGL_en>
+      <SGL_fr>Rez-de-sol</SGL_fr>
+      <SGL_de>Fundament</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>940</Key>
+      <region />
+      <SGL_ja>B1F</SGL_ja>
+      <SGL_en>Flood Cellar</SGL_en>
+      <SGL_fr>Sous-sol inondé</SGL_fr>
+      <SGL_de>Flutkeller</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>941</Key>
+      <region />
+      <SGL_ja>クリスタルゲート</SGL_ja>
+      <SGL_en>Crystal Gate</SGL_en>
+      <SGL_fr>Grande porte de cristal</SGL_fr>
+      <SGL_de>Kristalltor</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>942</Key>
+      <region />
+      <SGL_ja>八剣士の前庭</SGL_ja>
+      <SGL_en>The Eight Sentinels</SGL_en>
+      <SGL_fr>Les Huit sentinelles</SGL_fr>
+      <SGL_de>Die Acht Wächter</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>943</Key>
+      <region />
+      <SGL_ja>セブンスヘブン</SGL_ja>
+      <SGL_en>The Seventh Heaven</SGL_en>
+      <SGL_fr>Le Septième ciel</SGL_fr>
+      <SGL_de>Siebter Himmel</SGL_de>
     </PlaceName>
     <PlaceName>
       <Key>950</Key>
@@ -7102,5 +7462,981 @@
       <SGL_en>Whispering Gorge</SGL_en>
       <SGL_fr>Ravin des lamentations</SGL_fr>
       <SGL_de>Säuselschlucht</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1100</Key>
+      <region>22</region>
+      <SGL_ja>ミスト・ヴィレッジ：コテージ</SGL_ja>
+      <SGL_en>Private Cottage - Mist</SGL_en>
+      <SGL_fr>Maisonnette - Brumée</SGL_fr>
+      <SGL_de>Privathütte (Dorf des Nebels)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1101</Key>
+      <region>22</region>
+      <SGL_ja>ミスト・ヴィレッジ：ハウス</SGL_ja>
+      <SGL_en>Private House - Mist</SGL_en>
+      <SGL_fr>Pavillon - Brumée</SGL_fr>
+      <SGL_de>Privathaus (Dorf des Nebels)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1102</Key>
+      <region>22</region>
+      <SGL_ja>ミスト・ヴィレッジ：レジデンス</SGL_ja>
+      <SGL_en>Private Mansion - Mist</SGL_en>
+      <SGL_fr>Villa - Brumée</SGL_fr>
+      <SGL_de>Privatresidenz (Dorf des Nebels)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1103</Key>
+      <region>24</region>
+      <SGL_ja>ゴブレットビュート：コテージ</SGL_ja>
+      <SGL_en>Private Cottage - The Goblet</SGL_en>
+      <SGL_fr>Maisonnette - la Coupe</SGL_fr>
+      <SGL_de>Privathütte (Kelchkuppe)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1104</Key>
+      <region>24</region>
+      <SGL_ja>ゴブレットビュート：ハウス</SGL_ja>
+      <SGL_en>Private House - The Goblet</SGL_en>
+      <SGL_fr>Pavillon - la Coupe</SGL_fr>
+      <SGL_de>Privathaus (Kelchkuppe)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1105</Key>
+      <region>24</region>
+      <SGL_ja>ゴブレットビュート：レジデンス</SGL_ja>
+      <SGL_en>Private Mansion - The Goblet</SGL_en>
+      <SGL_fr>Villa - la Coupe</SGL_fr>
+      <SGL_de>Privatresidenz (Kelchkuppe)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1106</Key>
+      <region>23</region>
+      <SGL_ja>ラベンダーベッド：コテージ</SGL_ja>
+      <SGL_en>Private Cottage - Lavender Beds</SGL_en>
+      <SGL_fr>Maisonnette - Lavandière</SGL_fr>
+      <SGL_de>Privathütte (Lavendelbeete)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1107</Key>
+      <region>23</region>
+      <SGL_ja>ラベンダーベッド：ハウス</SGL_ja>
+      <SGL_en>Private House - Lavender Beds</SGL_en>
+      <SGL_fr>Pavillon - Lavandière</SGL_fr>
+      <SGL_de>Privathaus (Lavendelbeete)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1108</Key>
+      <region>23</region>
+      <SGL_ja>ラベンダーベッド：レジデンス</SGL_ja>
+      <SGL_en>Private Mansion - Lavender Beds</SGL_en>
+      <SGL_fr>Villa - Lavandière</SGL_fr>
+      <SGL_de>Privatresidenz (Lavendelbeete)</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1109</Key>
+      <region />
+      <SGL_ja>1F</SGL_ja>
+      <SGL_en>Ground Floor</SGL_en>
+      <SGL_fr>Rez-de-chaussée</SGL_fr>
+      <SGL_de>Erdgeschoss</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1110</Key>
+      <region />
+      <SGL_ja>2F</SGL_ja>
+      <SGL_en>Second Floor</SGL_en>
+      <SGL_fr>1er étage</SGL_fr>
+      <SGL_de>Erster Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1111</Key>
+      <region />
+      <SGL_ja>B1F</SGL_ja>
+      <SGL_en>Cellarage</SGL_en>
+      <SGL_fr>Cave</SGL_fr>
+      <SGL_de>Keller</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1112</Key>
+      <region />
+      <SGL_ja>1F</SGL_ja>
+      <SGL_en>Ground Floor</SGL_en>
+      <SGL_fr>Rez-de-chaussée</SGL_fr>
+      <SGL_de>Erdgeschoss</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1113</Key>
+      <region />
+      <SGL_ja>2F</SGL_ja>
+      <SGL_en>Second Floor</SGL_en>
+      <SGL_fr>1er étage</SGL_fr>
+      <SGL_de>Erster Stock</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1114</Key>
+      <region />
+      <SGL_ja>B1F</SGL_ja>
+      <SGL_en>Cellarage</SGL_en>
+      <SGL_fr>Cave</SGL_fr>
+      <SGL_de>Keller</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1115</Key>
+      <region />
+      <SGL_ja>1</SGL_ja>
+      <SGL_en>1</SGL_en>
+      <SGL_fr>1</SGL_fr>
+      <SGL_de>1</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1116</Key>
+      <region />
+      <SGL_ja>2</SGL_ja>
+      <SGL_en>2</SGL_en>
+      <SGL_fr>2</SGL_fr>
+      <SGL_de>2</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1117</Key>
+      <region />
+      <SGL_ja>3</SGL_ja>
+      <SGL_en>3</SGL_en>
+      <SGL_fr>3</SGL_fr>
+      <SGL_de>3</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1118</Key>
+      <region />
+      <SGL_ja>4</SGL_ja>
+      <SGL_en>4</SGL_en>
+      <SGL_fr>4</SGL_fr>
+      <SGL_de>4</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1119</Key>
+      <region />
+      <SGL_ja>5</SGL_ja>
+      <SGL_en>5</SGL_en>
+      <SGL_fr>5</SGL_fr>
+      <SGL_de>5</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1120</Key>
+      <region />
+      <SGL_ja>6</SGL_ja>
+      <SGL_en>6</SGL_en>
+      <SGL_fr>6</SGL_fr>
+      <SGL_de>6</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1121</Key>
+      <region />
+      <SGL_ja>7</SGL_ja>
+      <SGL_en>7</SGL_en>
+      <SGL_fr>7</SGL_fr>
+      <SGL_de>7</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1122</Key>
+      <region />
+      <SGL_ja>8</SGL_ja>
+      <SGL_en>8</SGL_en>
+      <SGL_fr>8</SGL_fr>
+      <SGL_de>8</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1123</Key>
+      <region />
+      <SGL_ja>9</SGL_ja>
+      <SGL_en>9</SGL_en>
+      <SGL_fr>9</SGL_fr>
+      <SGL_de>9</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1124</Key>
+      <region />
+      <SGL_ja>10</SGL_ja>
+      <SGL_en>10</SGL_en>
+      <SGL_fr>10</SGL_fr>
+      <SGL_de>10</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1125</Key>
+      <region />
+      <SGL_ja>11</SGL_ja>
+      <SGL_en>11</SGL_en>
+      <SGL_fr>11</SGL_fr>
+      <SGL_de>11</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1126</Key>
+      <region />
+      <SGL_ja>12</SGL_ja>
+      <SGL_en>12</SGL_en>
+      <SGL_fr>12</SGL_fr>
+      <SGL_de>12</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1127</Key>
+      <region />
+      <SGL_ja>13</SGL_ja>
+      <SGL_en>13</SGL_en>
+      <SGL_fr>13</SGL_fr>
+      <SGL_de>13</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1128</Key>
+      <region />
+      <SGL_ja>14</SGL_ja>
+      <SGL_en>14</SGL_en>
+      <SGL_fr>14</SGL_fr>
+      <SGL_de>14</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1129</Key>
+      <region />
+      <SGL_ja>15</SGL_ja>
+      <SGL_en>15</SGL_en>
+      <SGL_fr>15</SGL_fr>
+      <SGL_de>15</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1130</Key>
+      <region />
+      <SGL_ja>16</SGL_ja>
+      <SGL_en>16</SGL_en>
+      <SGL_fr>16</SGL_fr>
+      <SGL_de>16</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1131</Key>
+      <region />
+      <SGL_ja>17</SGL_ja>
+      <SGL_en>17</SGL_en>
+      <SGL_fr>17</SGL_fr>
+      <SGL_de>17</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1132</Key>
+      <region />
+      <SGL_ja>18</SGL_ja>
+      <SGL_en>18</SGL_en>
+      <SGL_fr>18</SGL_fr>
+      <SGL_de>18</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1133</Key>
+      <region />
+      <SGL_ja>19</SGL_ja>
+      <SGL_en>19</SGL_en>
+      <SGL_fr>19</SGL_fr>
+      <SGL_de>19</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1134</Key>
+      <region />
+      <SGL_ja>20</SGL_ja>
+      <SGL_en>20</SGL_en>
+      <SGL_fr>20</SGL_fr>
+      <SGL_de>20</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1135</Key>
+      <region />
+      <SGL_ja>21</SGL_ja>
+      <SGL_en>21</SGL_en>
+      <SGL_fr>21</SGL_fr>
+      <SGL_de>21</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1136</Key>
+      <region />
+      <SGL_ja>22</SGL_ja>
+      <SGL_en>22</SGL_en>
+      <SGL_fr>22</SGL_fr>
+      <SGL_de>22</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1137</Key>
+      <region />
+      <SGL_ja>23</SGL_ja>
+      <SGL_en>23</SGL_en>
+      <SGL_fr>23</SGL_fr>
+      <SGL_de>23</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1138</Key>
+      <region />
+      <SGL_ja>24</SGL_ja>
+      <SGL_en>24</SGL_en>
+      <SGL_fr>24</SGL_fr>
+      <SGL_de>24</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1139</Key>
+      <region />
+      <SGL_ja>25</SGL_ja>
+      <SGL_en>25</SGL_en>
+      <SGL_fr>25</SGL_fr>
+      <SGL_de>25</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1140</Key>
+      <region />
+      <SGL_ja>26</SGL_ja>
+      <SGL_en>26</SGL_en>
+      <SGL_fr>26</SGL_fr>
+      <SGL_de>26</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1141</Key>
+      <region />
+      <SGL_ja>27</SGL_ja>
+      <SGL_en>27</SGL_en>
+      <SGL_fr>27</SGL_fr>
+      <SGL_de>27</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1142</Key>
+      <region />
+      <SGL_ja>28</SGL_ja>
+      <SGL_en>28</SGL_en>
+      <SGL_fr>28</SGL_fr>
+      <SGL_de>28</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1143</Key>
+      <region />
+      <SGL_ja>29</SGL_ja>
+      <SGL_en>29</SGL_en>
+      <SGL_fr>29</SGL_fr>
+      <SGL_de>29</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1144</Key>
+      <region />
+      <SGL_ja>30</SGL_ja>
+      <SGL_en>30</SGL_en>
+      <SGL_fr>30</SGL_fr>
+      <SGL_de>30</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1200</Key>
+      <region />
+      <SGL_ja>ミストゲート・スクエア</SGL_ja>
+      <SGL_en>Mistgate Square</SGL_en>
+      <SGL_fr>Place du frimas</SGL_fr>
+      <SGL_de>Gezeitentor</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1201</Key>
+      <region />
+      <SGL_ja>メルウィブ水道橋</SGL_ja>
+      <SGL_en>The Admiral's Waterspire</SGL_en>
+      <SGL_fr>Aqueduc de l'Amirale</SGL_fr>
+      <SGL_de>Admirals-Aquaedukt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1202</Key>
+      <region />
+      <SGL_ja>シーゲイズ商通り</SGL_ja>
+      <SGL_en>Seagaze Markets</SGL_en>
+      <SGL_fr>Bazar du littoral</SGL_fr>
+      <SGL_de>Seeblick-Markt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1203</Key>
+      <region />
+      <SGL_ja>ミストビーチ</SGL_ja>
+      <SGL_en>Mist Beach</SGL_en>
+      <SGL_fr>L'Azuréenne</SGL_fr>
+      <SGL_de>Strand</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1204</Key>
+      <region />
+      <SGL_ja>ミスト・ヴィレッジ北西</SGL_ja>
+      <SGL_en>Mist West</SGL_en>
+      <SGL_fr>Brumée ouest</SGL_fr>
+      <SGL_de>West-Nebeldorf</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1205</Key>
+      <region />
+      <SGL_ja>ミスト・ヴィレッジ北東</SGL_ja>
+      <SGL_en>Mist Northeast</SGL_en>
+      <SGL_fr>Brumée nord-est</SGL_fr>
+      <SGL_de>Nordost-Nebeldorf</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1206</Key>
+      <region />
+      <SGL_ja>シーゲイズ商通り（居住区担当官）</SGL_ja>
+      <SGL_en>Seagaze Markets</SGL_en>
+      <SGL_fr>Bazar du littoral</SGL_fr>
+      <SGL_de>Seeblick-Markt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1207</Key>
+      <region />
+      <SGL_ja>ミスト・ヴィレッジ南東</SGL_ja>
+      <SGL_en>Mist Southeast</SGL_en>
+      <SGL_fr>Brumée sud-est</SGL_fr>
+      <SGL_de>Südost-Nebeldorf</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1208</Key>
+      <region />
+      <SGL_ja>ゴブレット市場</SGL_ja>
+      <SGL_en>Goblet Exchange</SGL_en>
+      <SGL_fr>Place de la bourse</SGL_fr>
+      <SGL_de>Kuppenmarkt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1209</Key>
+      <region />
+      <SGL_ja>エンドレスドラフト</SGL_ja>
+      <SGL_en>The Endless Draught</SGL_en>
+      <SGL_fr>Le Gisement intarissable</SGL_fr>
+      <SGL_de>Die Große Dürre</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1210</Key>
+      <region />
+      <SGL_ja>ブリミングハート広場</SGL_ja>
+      <SGL_en>The Brimming Heart</SGL_en>
+      <SGL_fr>Pleincœur </SGL_fr>
+      <SGL_de>Das Überströmende Herz</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1211</Key>
+      <region />
+      <SGL_ja>ナナモ大風車</SGL_ja>
+      <SGL_en>The Sultana's Breath</SGL_en>
+      <SGL_fr>Le Souffle de la Sultane</SGL_fr>
+      <SGL_de>Der Atem der Sultana</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1212</Key>
+      <region />
+      <SGL_ja>ラウバーンの腕</SGL_ja>
+      <SGL_en>Raubahn's Salute</SGL_en>
+      <SGL_fr>Salut de Raubahn</SGL_fr>
+      <SGL_de>Raubahns Arm</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1213</Key>
+      <region />
+      <SGL_ja>ゴブレット市場（居住区担当官）</SGL_ja>
+      <SGL_en>Goblet Exchange</SGL_en>
+      <SGL_fr>Place de la bourse</SGL_fr>
+      <SGL_de>Kuppenmarkt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1214</Key>
+      <region />
+      <SGL_ja>ゴブレットビュート北東</SGL_ja>
+      <SGL_en>Goblet Northeast</SGL_en>
+      <SGL_fr>La Coupe nord-est</SGL_fr>
+      <SGL_de>Kelchkuppe Nordost</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1215</Key>
+      <region />
+      <SGL_ja>ゴブレットビュート西</SGL_ja>
+      <SGL_en>Goblet West</SGL_en>
+      <SGL_fr>La Coupe ouest</SGL_fr>
+      <SGL_de>Kelchkuppe West</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1216</Key>
+      <region />
+      <SGL_ja>ゴブレットビュート東</SGL_ja>
+      <SGL_en>Goblet East</SGL_en>
+      <SGL_fr>La Coupe est</SGL_fr>
+      <SGL_de>Kelchkuppe Ost</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1217</Key>
+      <region />
+      <SGL_ja>樹冠商店街</SGL_ja>
+      <SGL_en>Dappled Stalls</SGL_en>
+      <SGL_fr>Comptoirs de la Canopée</SGL_fr>
+      <SGL_de>Baumkronen-Markt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1218</Key>
+      <region />
+      <SGL_ja>センナの大樹</SGL_ja>
+      <SGL_en>Senna's Pride</SGL_en>
+      <SGL_fr>Fierté de Senna</SGL_fr>
+      <SGL_de>Stütze der Senna</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1219</Key>
+      <region />
+      <SGL_ja>鎮守の石門</SGL_ja>
+      <SGL_en>Autumn's Sentinels</SGL_en>
+      <SGL_fr>Dolmen du Gardien</SGL_fr>
+      <SGL_de>Herbstwache</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1220</Key>
+      <region />
+      <SGL_ja>若草商店街</SGL_ja>
+      <SGL_en>Wildflower Stalls</SGL_en>
+      <SGL_fr>Comptoirs de la Bouquetière</SGL_fr>
+      <SGL_de>Wildblumen-Basar</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1221</Key>
+      <region />
+      <SGL_ja>ヤイヌ・パーの円庭</SGL_ja>
+      <SGL_en>Yainu-Par</SGL_en>
+      <SGL_fr>Yainu-Par</SGL_fr>
+      <SGL_de>Yainu-Par</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1222</Key>
+      <region />
+      <SGL_ja>紫水桟橋</SGL_ja>
+      <SGL_en>Amethyst Shallows</SGL_en>
+      <SGL_fr>Appontement de l'Améthyste</SGL_fr>
+      <SGL_de>Amethyst-Steg</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1223</Key>
+      <region />
+      <SGL_ja>ラベンダーベッド北西</SGL_ja>
+      <SGL_en>Lavender Northwest</SGL_en>
+      <SGL_fr>Lavendière nord-ouest</SGL_fr>
+      <SGL_de>Nordwestliche Lavendelbeete</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1224</Key>
+      <region />
+      <SGL_ja>ラベンダーベッド南東</SGL_ja>
+      <SGL_en>Lavender Southeast</SGL_en>
+      <SGL_fr>Lavendière sud-est</SGL_fr>
+      <SGL_de>Südöstliche Lavendelbeete</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1225</Key>
+      <region />
+      <SGL_ja>ラベンダーベッド南西</SGL_ja>
+      <SGL_en>Lavender Southwest</SGL_en>
+      <SGL_fr>Lavendière sud-ouest</SGL_fr>
+      <SGL_de>Südwestliche Lavendelbeete</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1226</Key>
+      <region />
+      <SGL_ja>樹冠商店街（居住区担当官）</SGL_ja>
+      <SGL_en>Dappled Stalls</SGL_en>
+      <SGL_fr>Comptoirs de la Canopée</SGL_fr>
+      <SGL_de>Baumkronen-Markt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1230</Key>
+      <region />
+      <SGL_ja>エーテライト</SGL_ja>
+      <SGL_en>Aetheryte</SGL_en>
+      <SGL_fr>Éthérite</SGL_fr>
+      <SGL_de>Ätheryt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1231</Key>
+      <region />
+      <SGL_ja>都市内転送網</SGL_ja>
+      <SGL_en>Aethernet Shard</SGL_en>
+      <SGL_fr>Éthérite urbaine</SGL_fr>
+      <SGL_de>Stadt-Ätheryt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1232</Key>
+      <region />
+      <SGL_ja>ショップ</SGL_ja>
+      <SGL_en>Shop</SGL_en>
+      <SGL_fr>Échoppe</SGL_fr>
+      <SGL_de>Händler</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1233</Key>
+      <region />
+      <SGL_ja>修理</SGL_ja>
+      <SGL_en>Repairs</SGL_en>
+      <SGL_fr>Réparations</SGL_fr>
+      <SGL_de>Reparatur</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1234</Key>
+      <region />
+      <SGL_ja>モグレター</SGL_ja>
+      <SGL_en>Delivery Moogle</SGL_en>
+      <SGL_fr>Courrier mog</SGL_fr>
+      <SGL_de>Mogry-Post</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1235</Key>
+      <region />
+      <SGL_ja>リテイナー呼び鈴</SGL_ja>
+      <SGL_en>Summoning Bell</SGL_en>
+      <SGL_fr>Sonnette</SGL_fr>
+      <SGL_de>Krämerklingel</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1236</Key>
+      <region />
+      <SGL_ja>リテイナー雇用</SGL_ja>
+      <SGL_en>Retainer Vocate</SGL_en>
+      <SGL_fr>Comptoir d'embauche des servants</SGL_fr>
+      <SGL_de>Gehilfen-Schalter</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1237</Key>
+      <region />
+      <SGL_ja>リンクシェル発行</SGL_ja>
+      <SGL_en>Linkshell Distributor</SGL_en>
+      <SGL_fr>Responsable des linkshells</SGL_fr>
+      <SGL_de>Kontaktperlen-Ausgabe</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1238</Key>
+      <region />
+      <SGL_ja>カンパニーチェスト</SGL_ja>
+      <SGL_en>Company Chest</SGL_en>
+      <SGL_fr>Coffre de compagnie</SGL_fr>
+      <SGL_de>Truhe der Gesellschaft</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1239</Key>
+      <region />
+      <SGL_ja>呼び鈴（宿屋内）</SGL_ja>
+      <SGL_en>Summoning Bell (Inn Room)</SGL_en>
+      <SGL_fr>Sonnette (auberge)</SGL_fr>
+      <SGL_de>Krämerklingel</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1240</Key>
+      <region />
+      <SGL_ja>ベッド（宿屋内）</SGL_ja>
+      <SGL_en>Bed (Inn Room)</SGL_en>
+      <SGL_fr>Lit (auberge)</SGL_fr>
+      <SGL_de>Bett</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1241</Key>
+      <region />
+      <SGL_ja>訪問帳</SGL_ja>
+      <SGL_en>Guestbook Stand</SGL_en>
+      <SGL_fr>Pupitre de livre d'or</SGL_fr>
+      <SGL_de>Gästebuch</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1242</Key>
+      <region />
+      <SGL_ja>簡易エーテライト</SGL_ja>
+      <SGL_en>Miniature Aetheryte</SGL_en>
+      <SGL_fr>Éthérite miniature</SGL_fr>
+      <SGL_de>Miniatur-Ätheryt</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1243</Key>
+      <region />
+      <SGL_ja>ダンジョン</SGL_ja>
+      <SGL_en>Dungeon</SGL_en>
+      <SGL_fr>Donjon</SGL_fr>
+      <SGL_de>Dungeon</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1244</Key>
+      <region />
+      <SGL_ja>船着場</SGL_ja>
+      <SGL_en>Ferry Docks</SGL_en>
+      <SGL_fr>Embarcadère</SGL_fr>
+      <SGL_de>Fähranleger</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1245</Key>
+      <region />
+      <SGL_ja>フェリードック</SGL_ja>
+      <SGL_en>Ferry Docks</SGL_en>
+      <SGL_fr>Embarcadère</SGL_fr>
+      <SGL_de>Fähranleger</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1246</Key>
+      <region />
+      <SGL_ja>飛空艇乗り場</SGL_ja>
+      <SGL_en>Airship Landing</SGL_en>
+      <SGL_fr>Aérodrome</SGL_fr>
+      <SGL_de>Luftschiff-Landeplatz</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1247</Key>
+      <region />
+      <SGL_ja>拠点/集落</SGL_ja>
+      <SGL_en>Settlement</SGL_en>
+      <SGL_fr>Colonie / Hameau</SGL_fr>
+      <SGL_de>Siedlung</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1248</Key>
+      <region />
+      <SGL_ja>宿屋</SGL_ja>
+      <SGL_en>Inn</SGL_en>
+      <SGL_fr>Auberge</SGL_fr>
+      <SGL_de>Herberge</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1249</Key>
+      <region />
+      <SGL_ja>冒険者ギルド</SGL_ja>
+      <SGL_en>Adventurers' Guild</SGL_en>
+      <SGL_fr>Guilde des aventuriers</SGL_fr>
+      <SGL_de>Abenteurergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1250</Key>
+      <region />
+      <SGL_ja>上の階層へ移動</SGL_ja>
+      <SGL_en>To Upper Level</SGL_en>
+      <SGL_fr>Niveau supérieur</SGL_fr>
+      <SGL_de>Hoch</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1251</Key>
+      <region />
+      <SGL_ja>下の階層へ移動</SGL_ja>
+      <SGL_en>To Lower Level</SGL_en>
+      <SGL_fr>Niveau inférieur</SGL_fr>
+      <SGL_de>Runter</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1252</Key>
+      <region />
+      <SGL_ja>隣接エリアへ移動</SGL_ja>
+      <SGL_en>Adjoining Area</SGL_en>
+      <SGL_fr>Zone adjacente</SGL_fr>
+      <SGL_de>Benachbartes Areal</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1253</Key>
+      <region />
+      <SGL_ja>蛮族拠点：アマルジャ族</SGL_ja>
+      <SGL_en>Amalj'aa Stronghold</SGL_en>
+      <SGL_fr>Bastion amalj'aa</SGL_fr>
+      <SGL_de>Amalj'aa-Lager</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1254</Key>
+      <region />
+      <SGL_ja>蛮族拠点：シルフ族</SGL_ja>
+      <SGL_en>Sylph Stronghold</SGL_en>
+      <SGL_fr>Bastion sylphe</SGL_fr>
+      <SGL_de>Sylphen-Lager</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1255</Key>
+      <region />
+      <SGL_ja>蛮族拠点：イクサル族</SGL_ja>
+      <SGL_en>Ixali Stronghold</SGL_en>
+      <SGL_fr>Bastion ixal</SGL_fr>
+      <SGL_de>Ixal-Lager</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1256</Key>
+      <region />
+      <SGL_ja>蛮族拠点：サハギン族</SGL_ja>
+      <SGL_en>Sahagin Stronghold</SGL_en>
+      <SGL_fr>Bastion sahuagin</SGL_fr>
+      <SGL_de>Sahagin-Lager</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1257</Key>
+      <region />
+      <SGL_ja>蛮族拠点：コボルド族</SGL_ja>
+      <SGL_en>Kobold Stronghold</SGL_en>
+      <SGL_fr>Bastion kobold</SGL_fr>
+      <SGL_de>Kobold-Lager</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1258</Key>
+      <region />
+      <SGL_ja>剣術士ギルド</SGL_ja>
+      <SGL_en>Gladiators' Guild</SGL_en>
+      <SGL_fr>Guilde des gladiateurs</SGL_fr>
+      <SGL_de>Gladiatorengilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1259</Key>
+      <region />
+      <SGL_ja>格闘士ギルド</SGL_ja>
+      <SGL_en>Pugilists' Guild</SGL_en>
+      <SGL_fr>Guilde des pugilistes</SGL_fr>
+      <SGL_de>Faustkämpfergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1260</Key>
+      <region />
+      <SGL_ja>斧術士ギルド</SGL_ja>
+      <SGL_en>Marauders' Guild</SGL_en>
+      <SGL_fr>Guilde des maraudeurs</SGL_fr>
+      <SGL_de>Gilde der Marodeure</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1261</Key>
+      <region />
+      <SGL_ja>槍術士ギルド</SGL_ja>
+      <SGL_en>Lancers' Guild</SGL_en>
+      <SGL_fr>Guilde des maîtres d'hast</SGL_fr>
+      <SGL_de>Gilde der Pikeniere</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1262</Key>
+      <region />
+      <SGL_ja>弓術士ギルド</SGL_ja>
+      <SGL_en>Archers' Guild</SGL_en>
+      <SGL_fr>Guilde des archers</SGL_fr>
+      <SGL_de>Gilde der Waldläufer</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1263</Key>
+      <region />
+      <SGL_ja>幻術士ギルド</SGL_ja>
+      <SGL_en>Conjurers' Guild</SGL_en>
+      <SGL_fr>Guilde des élémentalistes</SGL_fr>
+      <SGL_de>Gilde der Druiden</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1264</Key>
+      <region />
+      <SGL_ja>呪術士ギルド</SGL_ja>
+      <SGL_en>Thaumaturges' Guild</SGL_en>
+      <SGL_fr>Guilde des occultistes</SGL_fr>
+      <SGL_de>Thaumaturgengilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1265</Key>
+      <region />
+      <SGL_ja>巴術士ギルド</SGL_ja>
+      <SGL_en>Arcanists' Guild</SGL_en>
+      <SGL_fr>Guilde des arcanistes</SGL_fr>
+      <SGL_de>Hermetikergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1266</Key>
+      <region />
+      <SGL_ja>木工師ギルド</SGL_ja>
+      <SGL_en>Carpenters' Guild</SGL_en>
+      <SGL_fr>Guilde des menuisiers</SGL_fr>
+      <SGL_de>Gilde der Zimmerer</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1267</Key>
+      <region />
+      <SGL_ja>鍛冶師ギルド</SGL_ja>
+      <SGL_en>Blacksmiths' Guild</SGL_en>
+      <SGL_fr>Guilde des forgerons</SGL_fr>
+      <SGL_de>Grobschmiedegilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1268</Key>
+      <region />
+      <SGL_ja>甲冑師ギルド</SGL_ja>
+      <SGL_en>Armorers' Guild</SGL_en>
+      <SGL_fr>Guilde des armuriers</SGL_fr>
+      <SGL_de>Plattnergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1269</Key>
+      <region />
+      <SGL_ja>彫金師ギルド</SGL_ja>
+      <SGL_en>Goldsmiths' Guild</SGL_en>
+      <SGL_fr>Guilde des orfèvres</SGL_fr>
+      <SGL_de>Goldschmiedegilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1270</Key>
+      <region />
+      <SGL_ja>革細工師ギルド</SGL_ja>
+      <SGL_en>Leatherworkers' Guild</SGL_en>
+      <SGL_fr>Guilde des tanneurs</SGL_fr>
+      <SGL_de>Gerbergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1271</Key>
+      <region />
+      <SGL_ja>裁縫師ギルド</SGL_ja>
+      <SGL_en>Weavers' Guild</SGL_en>
+      <SGL_fr>Guilde des couturiers</SGL_fr>
+      <SGL_de>Webergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1272</Key>
+      <region />
+      <SGL_ja>錬金術師ギルド</SGL_ja>
+      <SGL_en>Alchemists' Guild</SGL_en>
+      <SGL_fr>Guilde des alchimistes</SGL_fr>
+      <SGL_de>Alchemistengilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1273</Key>
+      <region />
+      <SGL_ja>調理師ギルド</SGL_ja>
+      <SGL_en>Culinarians' Guild</SGL_en>
+      <SGL_fr>Guilde des cuisiniers</SGL_fr>
+      <SGL_de>Gourmetgilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1274</Key>
+      <region />
+      <SGL_ja>採掘師ギルド</SGL_ja>
+      <SGL_en>Miners' Guild</SGL_en>
+      <SGL_fr>Guilde des mineurs</SGL_fr>
+      <SGL_de>Minenarbeitergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1275</Key>
+      <region />
+      <SGL_ja>園芸師ギルド</SGL_ja>
+      <SGL_en>Botanists' Guild</SGL_en>
+      <SGL_fr>Guilde des botanistes</SGL_fr>
+      <SGL_de>Gärtnergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1276</Key>
+      <region />
+      <SGL_ja>漁師ギルド</SGL_ja>
+      <SGL_en>Fishermen's Guild</SGL_en>
+      <SGL_fr>Guilde des pêcheurs</SGL_fr>
+      <SGL_de>Fischergilde</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1277</Key>
+      <region />
+      <SGL_ja>黒渦団・軍令部</SGL_ja>
+      <SGL_en>Maelstrom Command</SGL_en>
+      <SGL_fr>Quartier général du Maelstrom</SGL_fr>
+      <SGL_de>Mahlstrom-Flottenkommando</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1278</Key>
+      <region />
+      <SGL_ja>双蛇党：統合司令部</SGL_ja>
+      <SGL_en>Adders' Nest</SGL_en>
+      <SGL_fr>Quartier général de l'Ordre des deux vipères</SGL_fr>
+      <SGL_de>Abaton der Bruderschaft</SGL_de>
+    </PlaceName>
+    <PlaceName>
+      <Key>1279</Key>
+      <region />
+      <SGL_ja>不滅隊：作戦本部</SGL_ja>
+      <SGL_en>Hall of Flames</SGL_en>
+      <SGL_fr>Quartier général des Immortels</SGL_fr>
+      <SGL_de>Die Ewige Halle</SGL_de>
     </PlaceName>
   </ArrayOfPlaceName>

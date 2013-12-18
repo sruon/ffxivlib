@@ -13,10 +13,34 @@
       <Name_ja>クロニクルクエスト</Name_ja>
       <Name_en>Chronicles of a New Era</Name_en>
       <Name_fr>Chroniques d'une nouvelle ère</Name_fr>
-      <Name_de>Chroniken einer neuen Ära</Name_de>
+      <Name_de>Chroniken der neuen Ära</Name_de>
     </JournalCategory>
     <JournalCategory>
       <Key>3</Key>
+      <label>QUEST_MAIN</label>
+      <Name_ja>蛮族クエスト：アマルジャ</Name_ja>
+      <Name_en>Amalj'aa Quests</Name_en>
+      <Name_fr>Quêtes tribales des Amalj'aa</Name_fr>
+      <Name_de>Aufträge der Amalj'aa</Name_de>
+    </JournalCategory>
+    <JournalCategory>
+      <Key>4</Key>
+      <label>QUEST_MAIN</label>
+      <Name_ja>蛮族クエスト：シルフ</Name_ja>
+      <Name_en>Sylph Quests</Name_en>
+      <Name_fr>Quêtes tribales des Sylphes</Name_fr>
+      <Name_de>Aufträge der Sylphen</Name_de>
+    </JournalCategory>
+    <JournalCategory>
+      <Key>5</Key>
+      <label>QUEST_SUB</label>
+      <Name_ja>サブストーリークエスト</Name_ja>
+      <Name_en>Side Story Quests</Name_en>
+      <Name_fr>Histoires annexes</Name_fr>
+      <Name_de>Szenario-Nebenaufträge</Name_de>
+    </JournalCategory>
+    <JournalCategory>
+      <Key>6</Key>
       <label>QUEST_SUB</label>
       <Name_ja>サブクエスト：ラノシア</Name_ja>
       <Name_en>Lominsan Sidequests</Name_en>
@@ -24,7 +48,7 @@
       <Name_de>Aufträge La Noscea</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>4</Key>
+      <Key>7</Key>
       <label>QUEST_SUB</label>
       <Name_ja>サブクエスト：黒衣森</Name_ja>
       <Name_en>Gridanian Sidequests</Name_en>
@@ -32,7 +56,7 @@
       <Name_de>Aufträge Finsterwald</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>5</Key>
+      <Key>8</Key>
       <label>QUEST_SUB</label>
       <Name_ja>サブクエスト：ザナラーン</Name_ja>
       <Name_en>Ul'dahn Sidequests</Name_en>
@@ -40,7 +64,7 @@
       <Name_de>Aufträge Thanalan</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>6</Key>
+      <Key>9</Key>
       <label>QUEST_SUB</label>
       <Name_ja>サブクエスト：クルザス</Name_ja>
       <Name_en>Ishgardian Sidequests</Name_en>
@@ -48,7 +72,7 @@
       <Name_de>Aufträge Coerthas</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>7</Key>
+      <Key>10</Key>
       <label>QUEST_SUB</label>
       <Name_ja>サブクエスト：モードゥナ</Name_ja>
       <Name_en>Mor Dhonan Sidequests</Name_en>
@@ -56,7 +80,7 @@
       <Name_de>Aufträge Mor Dhona</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>8</Key>
+      <Key>11</Key>
       <label>QUEST_CLASS</label>
       <Name_ja>クラスクエスト</Name_ja>
       <Name_en>Class Quests</Name_en>
@@ -64,7 +88,7 @@
       <Name_de>Gildenaufträge</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>9</Key>
+      <Key>12</Key>
       <label>QUEST_JOB</label>
       <Name_ja>ジョブクエスト</Name_ja>
       <Name_en>Job Quests</Name_en>
@@ -72,7 +96,7 @@
       <Name_de>Jobaufträge</Name_de>
     </JournalCategory>
     <JournalCategory>
-      <Key>10</Key>
+      <Key>13</Key>
       <label>QUEST_COMPANY</label>
       <Name_ja>グランドカンパニークエスト</Name_ja>
       <Name_en>Grand Company Quests</Name_en>

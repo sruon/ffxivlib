@@ -3,112 +3,112 @@
       <Key>1</Key>
       <Name_ja>武器</Name_ja>
       <Name_en>Weapon</Name_en>
-      <Name_fr>Arme de pugiliste</Name_fr>
+      <Name_fr>Arme de disciple de la guerre</Name_fr>
       <Name_de>Hauptwaffe der Faustkämpfer</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>2</Key>
       <Name_ja>魔器</Name_ja>
       <Name_en>Arcana</Name_en>
-      <Name_fr>Arme de gladiateur</Name_fr>
+      <Name_fr>Arme de disciple de la magie</Name_fr>
       <Name_de>Hauptwaffe der Gladiatoren</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>3</Key>
       <Name_ja>盾</Name_ja>
       <Name_en>Shield</Name_en>
-      <Name_fr>Arme de maraudeur</Name_fr>
+      <Name_fr>Bouclier</Name_fr>
       <Name_de>Hauptwaffe der Marodeure</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>4</Key>
       <Name_ja>防具</Name_ja>
       <Name_en>Armor</Name_en>
-      <Name_fr>Arme d'archer</Name_fr>
+      <Name_fr>Équipement défensif</Name_fr>
       <Name_de>Hauptwaffe der Waldläufer</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>5</Key>
       <Name_ja>食品</Name_ja>
       <Name_en>Food</Name_en>
-      <Name_fr>Arme d'hast</Name_fr>
+      <Name_fr>Plat ou boisson</Name_fr>
       <Name_de>Hauptwaffe der Pikeniere</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>6</Key>
       <Name_ja>パラメータ強化アイテム</Name_ja>
       <Name_en>Enhancement</Name_en>
-      <Name_fr>Arme d'occultiste</Name_fr>
+      <Name_fr>Améliore les caractéristiques</Name_fr>
       <Name_de>Thaumaturgen-Waffe</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>7</Key>
       <Name_ja>ステータス付与アイテム</Name_ja>
       <Name_en>Enfeeblement</Name_en>
-      <Name_fr>Arme à deux mains d'occultiste</Name_fr>
+      <Name_fr>Confère un état</Name_fr>
       <Name_de>Thaumaturgen-Zweihandwaffe</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>8</Key>
       <Name_ja>ポーション</Name_ja>
       <Name_en>Potion</Name_en>
-      <Name_fr>Arme d'élémentaliste</Name_fr>
+      <Name_fr>Potion</Name_fr>
       <Name_de>Druiden-Waffe</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>9</Key>
       <Name_ja>エーテル</Name_ja>
       <Name_en>Ether</Name_en>
-      <Name_fr>Arme à deux mains d'élémentaliste</Name_fr>
+      <Name_fr>Éther</Name_fr>
       <Name_de>Druiden-Zweihandwaffe</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>10</Key>
       <Name_ja>エリクサー</Name_ja>
       <Name_en>Elixer</Name_en>
-      <Name_fr>Grimoire</Name_fr>
+      <Name_fr>Élixir</Name_fr>
       <Name_de>Grimoire</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>11</Key>
       <Name_ja>クリスタル</Name_ja>
       <Name_en>Crystal</Name_en>
-      <Name_fr>Bouclier</Name_fr>
+      <Name_fr>Cristal</Name_fr>
       <Name_de>Schild</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>12</Key>
       <Name_ja>製作素材</Name_ja>
       <Name_en>Material</Name_en>
-      <Name_fr>Outil principal de menuisier</Name_fr>
+      <Name_fr>Matériau d'artisanat</Name_fr>
       <Name_de>Zimmermannszeug</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>13</Key>
       <Name_ja>マテリア</Name_ja>
       <Name_en>Materia</Name_en>
-      <Name_fr>Outil principal de forgeron</Name_fr>
+      <Name_fr>Matéria</Name_fr>
       <Name_de>Schmiedezeug</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>14</Key>
       <Name_ja>調度品</Name_ja>
       <Name_en>Furnishing</Name_en>
-      <Name_fr>Outil principal d'armurier</Name_fr>
+      <Name_fr>Ameublement</Name_fr>
       <Name_de>Plattnerzeug</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>15</Key>
       <Name_ja>染色材</Name_ja>
       <Name_en>Dye</Name_en>
-      <Name_fr>Outil principal d'orfèvre</Name_fr>
+      <Name_fr>Teinture</Name_fr>
       <Name_de>Goldschmiedezeug</Name_de>
     </ItemCategory>
     <ItemCategory>
       <Key>16</Key>
       <Name_ja>一般アイテム</Name_ja>
       <Name_en>Miscellany</Name_en>
-      <Name_fr>Outil principal de tanneur</Name_fr>
+      <Name_fr>Divers</Name_fr>
       <Name_de>Gerberzeug</Name_de>
     </ItemCategory>
   </ArrayOfItemCategory>

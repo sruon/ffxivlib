@@ -10,61 +10,133 @@
     </JournalGenre>
     <JournalGenre>
       <Key>2</Key>
-      <Category>2</Category>
+      <Category>1</Category>
       <label>QUEST_MAIN</label>
-      <Name_ja>クロニクルクエスト</Name_ja>
-      <Name_en>Chronicles of a New Era</Name_en>
-      <Name_fr>Chroniques d'une nouvelle ère</Name_fr>
-      <Name_de>Chroniken einer neuen Ära</Name_de>
+      <Name_ja>メインクエスト：覚醒せし者たち</Name_ja>
+      <Name_en>A Realm Awoken Quests</Name_en>
+      <Name_fr>Après Ultima : l'éveil de la menace</Name_fr>
+      <Name_de>Eorzeas Erwachen</Name_de>
     </JournalGenre>
     <JournalGenre>
       <Key>3</Key>
+      <Category>2</Category>
+      <label>QUEST_SUB</label>
+      <Name_ja>クロニクルクエスト</Name_ja>
+      <Name_en>Chronicles of a New Era</Name_en>
+      <Name_fr>Chroniques d'une nouvelle ère</Name_fr>
+      <Name_de>Chroniken der neuen Ära</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>4</Key>
+      <Category>2</Category>
+      <label>QUEST_SUB</label>
+      <Name_ja>クロニクルクエスト：バハムート</Name_ja>
+      <Name_en>Bahamut Quests</Name_en>
+      <Name_fr>Bahamut</Name_fr>
+      <Name_de>Bahamut</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>5</Key>
+      <Category>2</Category>
+      <label>QUEST_SUB</label>
+      <Name_ja>クロニクルクエスト：クリスタルタワー</Name_ja>
+      <Name_en>Crystal Tower Quests</Name_en>
+      <Name_fr>La Tour de Cristal</Name_fr>
+      <Name_de>Kristallturm</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>6</Key>
       <Category>3</Category>
       <label>QUEST_SUB</label>
+      <Name_ja>蛮族クエスト：アマルジャ：ストーリー</Name_ja>
+      <Name_en>Amalj'aa Quests (Main)</Name_en>
+      <Name_fr>Histoire principale</Name_fr>
+      <Name_de>Amalj'aa-Aufträge (Haupt)</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>7</Key>
+      <Category>3</Category>
+      <label>QUEST_SUB</label>
+      <Name_ja>蛮族クエスト：アマルジャ：デイリークエスト</Name_ja>
+      <Name_en>Amalj'aa Quests (Side)</Name_en>
+      <Name_fr>Quêtes quotidiennes</Name_fr>
+      <Name_de>Amalj'aa-Aufträge (Neben)</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>8</Key>
+      <Category>4</Category>
+      <label />
+      <Name_ja>蛮族クエスト：シルフ：ストーリー</Name_ja>
+      <Name_en>Sylph Quests (Main)</Name_en>
+      <Name_fr>Histoire principale</Name_fr>
+      <Name_de>Sylphen-Aufträge (Haupt)</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>9</Key>
+      <Category>4</Category>
+      <label />
+      <Name_ja>蛮族クエスト：シルフ：デイリークエスト</Name_ja>
+      <Name_en>Sylph Quests (Side)</Name_en>
+      <Name_fr>Quêtes quotidiennes</Name_fr>
+      <Name_de>Sylphen-Aufträge (Neben)</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>10</Key>
+      <Category>5</Category>
+      <label />
+      <Name_ja>サブストーリークエスト：ヒルディブランド</Name_ja>
+      <Name_en>Hildibrand Quests</Name_en>
+      <Name_fr>Hildibrand, gentilhomme détective</Name_fr>
+      <Name_de>Hildibrands Fälle</Name_de>
+    </JournalGenre>
+    <JournalGenre>
+      <Key>12</Key>
+      <Category>6</Category>
+      <label />
       <Name_ja>サブクエスト：ラノシア</Name_ja>
       <Name_en>La Noscean Sidequests</Name_en>
       <Name_fr>Noscea</Name_fr>
       <Name_de>Nebenauftrag La Noscea</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>4</Key>
-      <Category>4</Category>
-      <label>QUEST_SUB</label>
+      <Key>13</Key>
+      <Category>7</Category>
+      <label />
       <Name_ja>サブクエスト：黒衣森</Name_ja>
       <Name_en>Gridanian Sidequests</Name_en>
       <Name_fr>Sombrelinceul</Name_fr>
       <Name_de>Nebenauftrag Finsterwald</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>5</Key>
-      <Category>5</Category>
-      <label>QUEST_SUB</label>
+      <Key>14</Key>
+      <Category>8</Category>
+      <label />
       <Name_ja>サブクエスト：ザナラーン</Name_ja>
       <Name_en>Ul'dahn Sidequests</Name_en>
       <Name_fr>Thanalan</Name_fr>
       <Name_de>Nebenauftrag Thanalan</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>6</Key>
-      <Category>6</Category>
-      <label>QUEST_SUB</label>
+      <Key>15</Key>
+      <Category>9</Category>
+      <label />
       <Name_ja>サブクエスト：クルザス</Name_ja>
       <Name_en>Ishgardian Sidequests</Name_en>
       <Name_fr>Coerthas</Name_fr>
       <Name_de>Nebenauftrag Coerthas</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>7</Key>
-      <Category>7</Category>
-      <label>QUEST_SUB</label>
+      <Key>16</Key>
+      <Category>10</Category>
+      <label />
       <Name_ja>サブクエスト：モードゥナ</Name_ja>
       <Name_en>Mor Dhonan Sidequests</Name_en>
       <Name_fr>Mor Dhona</Name_fr>
       <Name_de>Nebenauftrag Mor Dhona</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>8</Key>
-      <Category>8</Category>
+      <Key>17</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>剣術士クエスト</Name_ja>
       <Name_en>Gladiator Quests</Name_en>
@@ -72,8 +144,8 @@
       <Name_de>Gildenauftrag der Gladiatoren</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>9</Key>
-      <Category>8</Category>
+      <Key>18</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>格闘士クエスト</Name_ja>
       <Name_en>Pugilist Quests</Name_en>
@@ -81,8 +153,8 @@
       <Name_de>Gildenauftrag der Faustkämpfer</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>10</Key>
-      <Category>8</Category>
+      <Key>19</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>斧術士クエスト</Name_ja>
       <Name_en>Marauder Quests</Name_en>
@@ -90,8 +162,8 @@
       <Name_de>Gildenauftrag der Marodeure</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>11</Key>
-      <Category>8</Category>
+      <Key>20</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>槍術士クエスト</Name_ja>
       <Name_en>Lancer Quests</Name_en>
@@ -99,8 +171,8 @@
       <Name_de>Gildenauftrag der Pikeniere</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>12</Key>
-      <Category>8</Category>
+      <Key>21</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>弓術士クエスト</Name_ja>
       <Name_en>Archer Quests</Name_en>
@@ -108,8 +180,8 @@
       <Name_de>Gildenauftrag der Waldläufer</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>13</Key>
-      <Category>8</Category>
+      <Key>22</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>幻術士クエスト</Name_ja>
       <Name_en>Conjurer Quests</Name_en>
@@ -117,8 +189,8 @@
       <Name_de>Gildenauftrag der Druiden</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>14</Key>
-      <Category>8</Category>
+      <Key>23</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>呪術士クエスト</Name_ja>
       <Name_en>Thaumaturge Quests</Name_en>
@@ -126,8 +198,8 @@
       <Name_de>Gildenauftrag der Thaumaturgen</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>15</Key>
-      <Category>8</Category>
+      <Key>24</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>巴術士クエスト</Name_ja>
       <Name_en>Arcanist Quests</Name_en>
@@ -135,8 +207,8 @@
       <Name_de>Gildenauftrag der Hermetiker</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>16</Key>
-      <Category>8</Category>
+      <Key>25</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>木工師クエスト</Name_ja>
       <Name_en>Carpenter Quests</Name_en>
@@ -144,8 +216,8 @@
       <Name_de>Gildenauftrag der Zimmerer</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>17</Key>
-      <Category>8</Category>
+      <Key>26</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>鍛冶師クエスト</Name_ja>
       <Name_en>Blacksmith Quests</Name_en>
@@ -153,8 +225,8 @@
       <Name_de>Gildenauftrag der Grobschmiede</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>18</Key>
-      <Category>8</Category>
+      <Key>27</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>甲冑師クエスト</Name_ja>
       <Name_en>Armorer Quests</Name_en>
@@ -162,8 +234,8 @@
       <Name_de>Gildenauftrag der Plattner</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>19</Key>
-      <Category>8</Category>
+      <Key>28</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>彫金師クエスト</Name_ja>
       <Name_en>Goldsmith Quests</Name_en>
@@ -171,8 +243,8 @@
       <Name_de>Gildenauftrag der Goldschmiede</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>20</Key>
-      <Category>8</Category>
+      <Key>29</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>革細工師クエスト</Name_ja>
       <Name_en>Leatherworker Quests</Name_en>
@@ -180,8 +252,8 @@
       <Name_de>Gildenauftrag der Gerber</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>21</Key>
-      <Category>8</Category>
+      <Key>30</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>裁縫師クエスト</Name_ja>
       <Name_en>Weaver Quests</Name_en>
@@ -189,8 +261,8 @@
       <Name_de>Gildenauftrag der Weber</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>22</Key>
-      <Category>8</Category>
+      <Key>31</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>錬金術師クエスト</Name_ja>
       <Name_en>Alchemist Quests</Name_en>
@@ -198,8 +270,8 @@
       <Name_de>Gildenauftrag der Alchemisten</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>23</Key>
-      <Category>8</Category>
+      <Key>32</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>調理師クエスト</Name_ja>
       <Name_en>Culinarian Quests</Name_en>
@@ -207,8 +279,8 @@
       <Name_de>Gildenauftrag der Gourmets</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>24</Key>
-      <Category>8</Category>
+      <Key>33</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>採掘師クエスト</Name_ja>
       <Name_en>Miner Quests</Name_en>
@@ -216,8 +288,8 @@
       <Name_de>Gildenauftrag der Minenarbeiter</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>25</Key>
-      <Category>8</Category>
+      <Key>34</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>園芸師クエスト</Name_ja>
       <Name_en>Botanist Quests</Name_en>
@@ -225,8 +297,8 @@
       <Name_de>Gildenauftrag der Gärtner</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>26</Key>
-      <Category>8</Category>
+      <Key>35</Key>
+      <Category>11</Category>
       <label />
       <Name_ja>漁師クエスト</Name_ja>
       <Name_en>Fisher Quests</Name_en>
@@ -234,8 +306,8 @@
       <Name_de>Gildenauftrag der Fischer</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>27</Key>
-      <Category>9</Category>
+      <Key>36</Key>
+      <Category>12</Category>
       <label />
       <Name_ja>ナイトクエスト</Name_ja>
       <Name_en>Paladin Quests</Name_en>
@@ -243,8 +315,8 @@
       <Name_de>Paladin-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>28</Key>
-      <Category>9</Category>
+      <Key>37</Key>
+      <Category>12</Category>
       <label />
       <Name_ja>モンククエスト</Name_ja>
       <Name_en>Monk Quests</Name_en>
@@ -252,8 +324,8 @@
       <Name_de>Mönch-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>29</Key>
-      <Category>9</Category>
+      <Key>38</Key>
+      <Category>12</Category>
       <label />
       <Name_ja>戦士クエスト</Name_ja>
       <Name_en>Warrior Quests</Name_en>
@@ -261,81 +333,81 @@
       <Name_de>Krieger-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>30</Key>
-      <Category>9</Category>
-      <label />
+      <Key>39</Key>
+      <Category>12</Category>
+      <label>LEVE_BATTLE</label>
       <Name_ja>竜騎士クエスト</Name_ja>
       <Name_en>Dragoon Quests</Name_en>
       <Name_fr>Quêtes de chevalier dragon</Name_fr>
       <Name_de>Dragoon-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>31</Key>
-      <Category>9</Category>
-      <label />
+      <Key>40</Key>
+      <Category>12</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>吟遊詩人クエスト</Name_ja>
       <Name_en>Bard Quests</Name_en>
       <Name_fr>Quêtes de barde</Name_fr>
       <Name_de>Barde-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>32</Key>
-      <Category>9</Category>
-      <label />
+      <Key>41</Key>
+      <Category>12</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>白魔道士クエスト</Name_ja>
       <Name_en>White Mage Quests</Name_en>
       <Name_fr>Quêtes de mage blanc</Name_fr>
       <Name_de>Weißmagier-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>33</Key>
-      <Category>9</Category>
-      <label />
+      <Key>42</Key>
+      <Category>12</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>黒魔道士クエスト</Name_ja>
       <Name_en>Black Mage Quests</Name_en>
       <Name_fr>Quêtes de mage noir</Name_fr>
       <Name_de>Schwarzmagier-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>34</Key>
-      <Category>9</Category>
-      <label />
+      <Key>43</Key>
+      <Category>12</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>召喚士クエスト</Name_ja>
       <Name_en>Summoner Quests</Name_en>
       <Name_fr>Quêtes d'invocateur</Name_fr>
       <Name_de>Beschwörer-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>35</Key>
-      <Category>9</Category>
-      <label />
+      <Key>44</Key>
+      <Category>12</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>学者クエスト</Name_ja>
       <Name_en>Scholar Quests</Name_en>
       <Name_fr>Quêtes d'érudit</Name_fr>
       <Name_de>Gelehrter-Jobauftrag</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>36</Key>
-      <Category>10</Category>
-      <label />
+      <Key>45</Key>
+      <Category>13</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>黒渦団クエスト</Name_ja>
       <Name_en>Maelstrom Quests</Name_en>
       <Name_fr>Quêtes du Maelstrom</Name_fr>
       <Name_de>Auftrag des Mahlstroms</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>37</Key>
-      <Category>10</Category>
-      <label />
+      <Key>46</Key>
+      <Category>13</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>双蛇党クエスト</Name_ja>
       <Name_en>Order of the Twin Adder Quests</Name_en>
       <Name_fr>Quêtes de l'Ordre des deux vipères</Name_fr>
       <Name_de>Auftrag der Bruderschaft der Morgenviper</Name_de>
     </JournalGenre>
     <JournalGenre>
-      <Key>38</Key>
-      <Category>10</Category>
-      <label />
+      <Key>47</Key>
+      <Category>13</Category>
+      <label>LEVE_CRAFT</label>
       <Name_ja>不滅隊クエスト</Name_ja>
       <Name_en>Immortal Flames Quests</Name_en>
       <Name_fr>Quêtes des Immortels</Name_fr>

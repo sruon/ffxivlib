@@ -1068,7 +1068,7 @@
       <Key>72</Key>
       <Female_de>des Amalj'aas schlimmster Albtraum</Female_de>
       <Female_en>An Amalj'aa's Worst Nightmare</Female_en>
-      <Female_fr>cauchemar des Amal'jaa</Female_fr>
+      <Female_fr>cauchemar des Amalj'aa</Female_fr>
       <Female_ja>An Amalj'aa's Worst Nightmare</Female_ja>
       <Front_de>False</Front_de>
       <Front_en>False</Front_en>
@@ -1076,14 +1076,14 @@
       <Front_ja>False</Front_ja>
       <Male_de>des Amalj'aas schlimmster Albtraum</Male_de>
       <Male_en>An Amalj'aa's Worst Nightmare</Male_en>
-      <Male_fr>cauchemar des Amal'jaa</Male_fr>
+      <Male_fr>cauchemar des Amalj'aa</Male_fr>
       <Male_ja>An Amalj'aa's Worst Nightmare</Male_ja>
     </Title>
     <Title>
       <Key>73</Key>
       <Female_de>die Wächterin des Bierhafens</Female_de>
       <Female_en>the Guardian of Aleport</Female_en>
-      <Female_fr>défenseur de Port-aux-ales</Female_fr>
+      <Female_fr>défenseur de Port-aux-Ales</Female_fr>
       <Female_ja>the Guardian of Aleport</Female_ja>
       <Front_de>False</Front_de>
       <Front_en>False</Front_en>
@@ -1091,7 +1091,7 @@
       <Front_ja>False</Front_ja>
       <Male_de>der Wächter des Bierhafens</Male_de>
       <Male_en>the Guardian of Aleport</Male_en>
-      <Male_fr>défenseur de Port-aux-ales</Male_fr>
+      <Male_fr>défenseur de Port-aux-Ales</Male_fr>
       <Male_ja>the Guardian of Aleport</Male_ja>
     </Title>
     <Title>
@@ -1128,7 +1128,7 @@
       <Key>76</Key>
       <Female_de>der frische Wind des Bierhafens</Female_de>
       <Female_en>the Wind of Aleport</Female_en>
-      <Female_fr>pourvoyeuse de Port-aux-ales</Female_fr>
+      <Female_fr>pourvoyeuse de Port-aux-Ales</Female_fr>
       <Female_ja>the Wind of Aleport</Female_ja>
       <Front_de>False</Front_de>
       <Front_en>False</Front_en>
@@ -1136,7 +1136,7 @@
       <Front_ja>False</Front_ja>
       <Male_de>der frische Wind des Bierhafens</Male_de>
       <Male_en>the Wind of Aleport</Male_en>
-      <Male_fr>pourvoyeur de Port-aux-ales</Male_fr>
+      <Male_fr>pourvoyeur de Port-aux-Ales</Male_fr>
       <Male_ja>the Wind of Aleport</Male_ja>
     </Title>
     <Title>
@@ -1173,7 +1173,7 @@
       <Key>79</Key>
       <Female_de>die helfende Hand des Bierhafens</Female_de>
       <Female_en>the Hand of Aleport</Female_en>
-      <Female_fr>sertisseuse de Port-aux-ales</Female_fr>
+      <Female_fr>sertisseuse de Port-aux-Ales</Female_fr>
       <Female_ja>the Hand of Aleport</Female_ja>
       <Front_de>False</Front_de>
       <Front_en>False</Front_en>
@@ -1181,7 +1181,7 @@
       <Front_ja>False</Front_ja>
       <Male_de>die helfende Hand des Bierhafens</Male_de>
       <Male_en>the Hand of Aleport</Male_en>
-      <Male_fr>sertisseur de Port-aux-ales</Male_fr>
+      <Male_fr>sertisseur de Port-aux-Ales</Male_fr>
       <Male_ja>the Hand of Aleport</Male_ja>
     </Title>
     <Title>
@@ -1663,5 +1663,545 @@
       <Male_en>Elite Cascadier</Male_en>
       <Male_fr>membre honoraire de la B.A.B.</Male_fr>
       <Male_ja>ABU Mercenary</Male_ja>
+    </Title>
+    <Title>
+      <Key>112</Key>
+      <Female_de>Mahlstrom-Welpe</Female_de>
+      <Female_en>Storm Puppy</Female_en>
+      <Female_fr>louveteau des tempêtes</Female_fr>
+      <Female_ja>Lominsan Puppy</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Welpe</Male_de>
+      <Male_en>Storm Puppy</Male_en>
+      <Male_fr>louveteau des tempêtes</Male_fr>
+      <Male_ja>Lominsan Puppy</Male_ja>
+    </Title>
+    <Title>
+      <Key>113</Key>
+      <Female_de>Mahlstrom-Winslerin</Female_de>
+      <Female_en>Storm Howler</Female_en>
+      <Female_fr>hurleuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Howler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Winsler</Male_de>
+      <Male_en>Storm Howler</Male_en>
+      <Male_fr>hurleur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Howler</Male_ja>
+    </Title>
+    <Title>
+      <Key>114</Key>
+      <Female_de>Mahlstrom-Knurrerin</Female_de>
+      <Female_en>Storm Growler</Female_en>
+      <Female_fr>grogneuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Growler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Knurrer</Male_de>
+      <Male_en>Storm Growler</Male_en>
+      <Male_fr>grogneur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Growler</Male_ja>
+    </Title>
+    <Title>
+      <Key>115</Key>
+      <Female_de>Mahlstrom-Heulerin</Female_de>
+      <Female_en>Storm Hound</Female_en>
+      <Female_fr>harceleuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Hound</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Heuler</Male_de>
+      <Male_en>Storm Hound</Male_en>
+      <Male_fr>harceleur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Hound</Male_ja>
+    </Title>
+    <Title>
+      <Key>116</Key>
+      <Female_de>Mahlstrom-Pirscherin</Female_de>
+      <Female_en>Storm Stalker</Female_en>
+      <Female_fr>traqueuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Stalker</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Pirscher</Male_de>
+      <Male_en>Storm Stalker</Male_en>
+      <Male_fr>traqueur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Stalker</Male_ja>
+    </Title>
+    <Title>
+      <Key>117</Key>
+      <Female_de>Mahlstrom-Hetzerin</Female_de>
+      <Female_en>Storm Chaser</Female_en>
+      <Female_fr>pourchasseuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Chaser</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Hetzer</Male_de>
+      <Male_en>Storm Chaser</Male_en>
+      <Male_fr>pourchasseur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Chaser</Male_ja>
+    </Title>
+    <Title>
+      <Key>118</Key>
+      <Female_de>Mahlstrom-Reißerin</Female_de>
+      <Female_en>Storm Ripper</Female_en>
+      <Female_fr>égorgeuse des tempêtes</Female_fr>
+      <Female_ja>Lominsan Ripper</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Reißer</Male_de>
+      <Male_en>Storm Ripper</Male_en>
+      <Male_fr>égorgeur des tempêtes</Male_fr>
+      <Male_ja>Lominsan Ripper</Male_ja>
+    </Title>
+    <Title>
+      <Key>119</Key>
+      <Female_de>Mahlstrom-Wölfin</Female_de>
+      <Female_en>Storm Wolf</Female_en>
+      <Female_fr>louve des tempêtes</Female_fr>
+      <Female_ja>Lominsan Wolf</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Wolf</Male_de>
+      <Male_en>Storm Wolf</Male_en>
+      <Male_fr>loup des tempêtes</Male_fr>
+      <Male_ja>Lominsan Wolf</Male_ja>
+    </Title>
+    <Title>
+      <Key>120</Key>
+      <Female_de>Mahlstrom-Rudelsführerin</Female_de>
+      <Female_en>Ocean Star</Female_en>
+      <Female_fr>chef de meute des tempêtes</Female_fr>
+      <Female_ja>Ocean Star</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Mahlstrom-Rudelsführer</Male_de>
+      <Male_en>Ocean Star</Male_en>
+      <Male_fr>chef de meute des tempêtes</Male_fr>
+      <Male_ja>Ocean Star</Male_ja>
+    </Title>
+    <Title>
+      <Key>121</Key>
+      <Female_de>die Hüterin der See</Female_de>
+      <Female_en>the Protector of the Sea</Female_en>
+      <Female_fr>protectrice des mers</Female_fr>
+      <Female_ja>Protector of the Sea</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Hüter der See</Male_de>
+      <Male_en>the Protector of the Sea</Male_en>
+      <Male_fr>protecteur des mers</Male_fr>
+      <Male_ja>Protector of the Sea</Male_ja>
+    </Title>
+    <Title>
+      <Key>122</Key>
+      <Female_de>Ordens-Welpe</Female_de>
+      <Female_en>Serpent Puppy</Female_en>
+      <Female_fr>louveteau du serpent</Female_fr>
+      <Female_ja>Gridanian Puppy</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Welpe</Male_de>
+      <Male_en>Serpent Puppy</Male_en>
+      <Male_fr>louveteau du serpent</Male_fr>
+      <Male_ja>Gridanian Puppy</Male_ja>
+    </Title>
+    <Title>
+      <Key>123</Key>
+      <Female_de>Ordens-Winslerin</Female_de>
+      <Female_en>Serpent Howler</Female_en>
+      <Female_fr>hurleuse du serpent</Female_fr>
+      <Female_ja>Gridanian Howler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Winsler</Male_de>
+      <Male_en>Serpent Howler</Male_en>
+      <Male_fr>hurleur du serpent</Male_fr>
+      <Male_ja>Gridanian Howler</Male_ja>
+    </Title>
+    <Title>
+      <Key>124</Key>
+      <Female_de>Ordens-Knurrerin</Female_de>
+      <Female_en>Serpent Growler</Female_en>
+      <Female_fr>grogneuse du serpent</Female_fr>
+      <Female_ja>Gridanian Growler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Knurrer</Male_de>
+      <Male_en>Serpent Growler</Male_en>
+      <Male_fr>grogneur du serpent</Male_fr>
+      <Male_ja>Gridanian Growler</Male_ja>
+    </Title>
+    <Title>
+      <Key>125</Key>
+      <Female_de>Ordens-Heulerin</Female_de>
+      <Female_en>Serpent Hound</Female_en>
+      <Female_fr>harceleuse du serpent</Female_fr>
+      <Female_ja>Gridanian Hound</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Heuler</Male_de>
+      <Male_en>Serpent Hound</Male_en>
+      <Male_fr>harceleur du serpent</Male_fr>
+      <Male_ja>Gridanian Hound</Male_ja>
+    </Title>
+    <Title>
+      <Key>126</Key>
+      <Female_de>Ordens-Pirscherin</Female_de>
+      <Female_en>Serpent Stalker</Female_en>
+      <Female_fr>traqueuse du serpent</Female_fr>
+      <Female_ja>Gridanian Stalker</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Pirscher</Male_de>
+      <Male_en>Serpent Stalker</Male_en>
+      <Male_fr>traqueur du serpent</Male_fr>
+      <Male_ja>Gridanian Stalker</Male_ja>
+    </Title>
+    <Title>
+      <Key>127</Key>
+      <Female_de>Ordens-Hetzerin</Female_de>
+      <Female_en>Serpent Chaser</Female_en>
+      <Female_fr>pourchasseuse du serpent</Female_fr>
+      <Female_ja>Gridanian Chaser</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Hetzer</Male_de>
+      <Male_en>Serpent Chaser</Male_en>
+      <Male_fr>pourchasseur du serpent</Male_fr>
+      <Male_ja>Gridanian Chaser</Male_ja>
+    </Title>
+    <Title>
+      <Key>128</Key>
+      <Female_de>Ordens-Reißerin</Female_de>
+      <Female_en>Serpent Ripper</Female_en>
+      <Female_fr>égorgeuse du serpent</Female_fr>
+      <Female_ja>Gridanian Ripper</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Reißer</Male_de>
+      <Male_en>Serpent Ripper</Male_en>
+      <Male_fr>égorgeur du serpent</Male_fr>
+      <Male_ja>Gridanian Ripper</Male_ja>
+    </Title>
+    <Title>
+      <Key>129</Key>
+      <Female_de>Ordens-Wölfin</Female_de>
+      <Female_en>Serpent Wolf</Female_en>
+      <Female_fr>louve du serpent</Female_fr>
+      <Female_ja>Gridanian Wolf</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Wolf</Male_de>
+      <Male_en>Serpent Wolf</Male_en>
+      <Male_fr>loup du serpent</Male_fr>
+      <Male_ja>Gridanian Wolf</Male_ja>
+    </Title>
+    <Title>
+      <Key>130</Key>
+      <Female_de>Ordens-Rudelsführerin</Female_de>
+      <Female_en>Shroud Star</Female_en>
+      <Female_fr>chef de meute du serpent</Female_fr>
+      <Female_ja>Shroud Star</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Ordens-Rudelsführer</Male_de>
+      <Male_en>Shroud Star</Male_en>
+      <Male_fr>chef de meute du serpent</Male_fr>
+      <Male_ja>Shroud Star</Male_ja>
+    </Title>
+    <Title>
+      <Key>131</Key>
+      <Female_de>die Hüterin des Waldes</Female_de>
+      <Female_en>the Protector of the Wood</Female_en>
+      <Female_fr>protectrice de la forêt</Female_fr>
+      <Female_ja>Protector of the Wood</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Hüter des Waldes</Male_de>
+      <Male_en>the Protector of the Wood</Male_en>
+      <Male_fr>protecteur de la forêt</Male_fr>
+      <Male_ja>Protector of the Wood</Male_ja>
+    </Title>
+    <Title>
+      <Key>132</Key>
+      <Female_de>Legions-Welpe</Female_de>
+      <Female_en>Flame Puppy</Female_en>
+      <Female_fr>louveteau des sables</Female_fr>
+      <Female_ja>Ul'dahn Puppy</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Welpe</Male_de>
+      <Male_en>Flame Puppy</Male_en>
+      <Male_fr>louveteau des sables</Male_fr>
+      <Male_ja>Ul'dahn Puppy</Male_ja>
+    </Title>
+    <Title>
+      <Key>133</Key>
+      <Female_de>Legions-Winslerin</Female_de>
+      <Female_en>Flame Howler</Female_en>
+      <Female_fr>hurleuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Howler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Winsler</Male_de>
+      <Male_en>Flame Howler</Male_en>
+      <Male_fr>hurleur des sables</Male_fr>
+      <Male_ja>Ul'dahn Howler</Male_ja>
+    </Title>
+    <Title>
+      <Key>134</Key>
+      <Female_de>Legions-Knurrerin</Female_de>
+      <Female_en>Flame Growler</Female_en>
+      <Female_fr>grogneuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Growler</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Knurrer</Male_de>
+      <Male_en>Flame Growler</Male_en>
+      <Male_fr>grogneur des sables</Male_fr>
+      <Male_ja>Ul'dahn Growler</Male_ja>
+    </Title>
+    <Title>
+      <Key>135</Key>
+      <Female_de>Legions-Heulerin</Female_de>
+      <Female_en>Flame Hound</Female_en>
+      <Female_fr>harceleuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Hound</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Heuler</Male_de>
+      <Male_en>Flame Hound</Male_en>
+      <Male_fr>harceleur des sables</Male_fr>
+      <Male_ja>Ul'dahn Hound</Male_ja>
+    </Title>
+    <Title>
+      <Key>136</Key>
+      <Female_de>Legions-Pirscherin</Female_de>
+      <Female_en>Flame Stalker</Female_en>
+      <Female_fr>traqueuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Stalker</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Pirscher</Male_de>
+      <Male_en>Flame Stalker</Male_en>
+      <Male_fr>traqueur des sables</Male_fr>
+      <Male_ja>Ul'dahn Stalker</Male_ja>
+    </Title>
+    <Title>
+      <Key>137</Key>
+      <Female_de>Legions-Hetzerin</Female_de>
+      <Female_en>Flame Chaser</Female_en>
+      <Female_fr>pourchasseuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Chaser</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Hetzer</Male_de>
+      <Male_en>Flame Chaser</Male_en>
+      <Male_fr>pourchasseur des sables</Male_fr>
+      <Male_ja>Ul'dahn Chaser</Male_ja>
+    </Title>
+    <Title>
+      <Key>138</Key>
+      <Female_de>Legions-Reißerin</Female_de>
+      <Female_en>Flame Ripper</Female_en>
+      <Female_fr>égorgeuse des sables</Female_fr>
+      <Female_ja>Ul'dahn Ripper</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Reißer</Male_de>
+      <Male_en>Flame Ripper</Male_en>
+      <Male_fr>égorgeur des sables</Male_fr>
+      <Male_ja>Ul'dahn Ripper</Male_ja>
+    </Title>
+    <Title>
+      <Key>139</Key>
+      <Female_de>Legions-Wölfin</Female_de>
+      <Female_en>Flame Wolf</Female_en>
+      <Female_fr>louve des sables</Female_fr>
+      <Female_ja>Ul'dahn Wolf</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Wolf</Male_de>
+      <Male_en>Flame Wolf</Male_en>
+      <Male_fr>loup des sables</Male_fr>
+      <Male_ja>Ul'dahn Wolf</Male_ja>
+    </Title>
+    <Title>
+      <Key>140</Key>
+      <Female_de>Legions-Rudelsführerin</Female_de>
+      <Female_en>Desert Star</Female_en>
+      <Female_fr>chef de meute des sables</Female_fr>
+      <Female_ja>Desert Star</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Legions-Rudelsführer</Male_de>
+      <Male_en>Desert Star</Male_en>
+      <Male_fr>chef de meute des sables</Male_fr>
+      <Male_ja>Desert Star</Male_ja>
+    </Title>
+    <Title>
+      <Key>141</Key>
+      <Female_de>die Hüterin der Wüste</Female_de>
+      <Female_en>the Protector of the Sands</Female_en>
+      <Female_fr>protectrice du désert</Female_fr>
+      <Female_ja>Protector of the Sands</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Hüter der Wüste</Male_de>
+      <Male_en>the Protector of the Sands</Male_en>
+      <Male_fr>protecteur du désert</Male_fr>
+      <Male_ja>Protector of the Sands</Male_ja>
+    </Title>
+    <Title>
+      <Key>142</Key>
+      <Female_de>die Große Böse Wölfin</Female_de>
+      <Female_en>the Ravenous Wolf</Female_en>
+      <Female_fr>la grande méchante louve</Female_fr>
+      <Female_ja>Ravenous Wolf</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Große Böse Wolf</Male_de>
+      <Male_en>the Ravenous Wolf</Male_en>
+      <Male_fr>le grand méchant loup</Male_fr>
+      <Male_ja>Ravenous Wolf</Male_ja>
+    </Title>
+    <Title>
+      <Key>143</Key>
+      <Female_de>die Alpha-Wölfin</Female_de>
+      <Female_en>the Alpha Wolf</Female_en>
+      <Female_fr>la louve alpha</Female_fr>
+      <Female_ja>Alpha Wolf</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>der Alpha-Wolf</Male_de>
+      <Male_en>the Alpha Wolf</Male_en>
+      <Male_fr>le loup alpha</Male_fr>
+      <Male_ja>Alpha Wolf</Male_ja>
+    </Title>
+    <Title>
+      <Key>144</Key>
+      <Female_de>die Seele des Rudels</Female_de>
+      <Female_en>the Heart of the Party</Female_en>
+      <Female_fr>la vedette de l'équipe</Female_fr>
+      <Female_ja>Heart of the Party</Female_ja>
+      <Front_de>False</Front_de>
+      <Front_en>False</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>die Seele des Rudels</Male_de>
+      <Male_en>the Heart of the Party</Male_en>
+      <Male_fr>la vedette de l'équipe</Male_fr>
+      <Male_ja>Heart of the Party</Male_ja>
+    </Title>
+    <Title>
+      <Key>145</Key>
+      <Female_de>Schwester der Asche</Female_de>
+      <Female_en>Sister of Ash</Female_en>
+      <Female_fr>sœur des cendres</Female_fr>
+      <Female_ja>Ashen Warrior</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>True</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Bruder der Asche</Male_de>
+      <Male_en>Brother of Ash</Male_en>
+      <Male_fr>frère des cendres</Male_fr>
+      <Male_ja>Ashen Warrior</Male_ja>
+    </Title>
+    <Title>
+      <Key>146</Key>
+      <Female_de>Sylphen-Freundin</Female_de>
+      <Female_en>Sylph-Friend</Female_en>
+      <Female_fr>amie des Sylphes</Female_fr>
+      <Female_ja>Sylph-Friend</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>True</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Sylphen-Freund</Male_de>
+      <Male_en>Sylph-Friend</Male_en>
+      <Male_fr>ami des Sylphes</Male_fr>
+      <Male_ja>Sylph-Friend</Male_ja>
+    </Title>
+    <Title>
+      <Key>147</Key>
+      <Female_de>Schatzjägerin</Female_de>
+      <Female_en>Treasure Hunter</Female_en>
+      <Female_fr>chasseuse de trésors</Female_fr>
+      <Female_ja>Treasure Hunter</Female_ja>
+      <Front_de>True</Front_de>
+      <Front_en>True</Front_en>
+      <Front_fr>False</Front_fr>
+      <Front_ja>True</Front_ja>
+      <Male_de>Schatzjäger</Male_de>
+      <Male_en>Treasure Hunter</Male_en>
+      <Male_fr>chasseur de trésors</Male_fr>
+      <Male_ja>Treasure Hunter</Male_ja>
     </Title>
   </ArrayOfTitle>
