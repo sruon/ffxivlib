@@ -217,8 +217,8 @@ public static class Constants
         };
     internal static readonly List<int> INVENTORYPTR = new List<int>
         {
-            0x10B95B8,
-            -0x8
+            0x1194C48,
+            0
         };
 
     internal static readonly List<int> SERVERPTR = new List<int>
