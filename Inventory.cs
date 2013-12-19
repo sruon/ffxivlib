@@ -62,21 +62,23 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3E)] public short Padding;
         };
 
+        [StructLayout(LayoutKind.Explicit, Pack = 1)]
+        public struct INVENTORYCONTAINER
+        {
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0)] public int Pointer;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x4)] public int Header;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public int Count;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x14)] public int Padding;
+        }
+
         /// <summary>
         /// Structure holding all the pointers to different subarrays.
         /// </summary>
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct INVENTORY
         {
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0)] public int SelfInventory;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x4)] public int CurrentEquipment;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public int SelfExtra;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xC)] public int RetainerInventory;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x14)] public int RetainerExtra;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int ArmoryChestMH;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1C)] public int ArmoryChest;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x20)] public int CompanyInventory;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x24)] public int CompanyExtra;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 56)] [FieldOffset(0x0)] public INVENTORYCONTAINER[]
+                Containers;
         }
 
         #endregion
