@@ -88,21 +88,6 @@ public static class Constants
 
     #endregion
 
-    #region Inventory related
-
-    internal const int INVENTORY_PTR_OFFSET = 0x20;
-    internal const int SELF_INVENTORY_SIZE = 4;
-    internal const int CURRENT_EQUIPMENT_SIZE = 1;
-    internal const int SELF_EXTRA_SIZE = 11;
-    internal const int RETAINER_INVENTORY_SIZE = 7;
-    internal const int RETAINER_EXTRA_SIZE = 3;
-    internal const int ARMORY_CHEST_MH_SIZE = 1;
-    internal const int ARMORY_CHEST_SIZE = 12;
-    internal const int COMPANY_INVENTORY_SIZE = 3;
-    internal const int COMPANY_EXTRA_SIZE = 2;
-
-    #endregion
-
     #region ResourceParser related
 
     /// <summary>
