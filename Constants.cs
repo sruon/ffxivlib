@@ -10,13 +10,13 @@ public static class Constants
     // Simple representation of pointer paths, do not add base module, last member will be expected to be the offset so may have to add extra 0 at the end if you dont need it
     internal static readonly List<int> PCPTR = new List<int>
         {
-            0x010BED9C,
+            0x0119A514,
             0x0
         };
 
     internal static readonly List<int> GATHERINGPTR = new List<int>
         {
-            0x010D5C00,
+            0x1193FC8,
             0x0
         };
 
