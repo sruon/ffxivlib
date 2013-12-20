@@ -26,18 +26,12 @@ namespace ffxivlib
 
         public int Zone
         {
-            get
-            {
-                return GetZone();
-            } 
+            get { return GetZone(); }
         }
 
         public int Subzone
         {
-            get
-            {
-                return GetSubzone();
-            }
+            get { return GetSubzone(); }
         }
 
         public JOB Job { get; set; }
@@ -232,6 +226,36 @@ namespace ffxivlib
 
         #endregion
 
+        #region Companion Stats
+
+        public int CompanionEil { get; set; }
+
+        public byte CompanionLevel { get; set; }
+
+        public byte CompanionDefenderLevel { get; set; }
+
+        public byte CompanionAttackerLevel { get; set; }
+
+        public byte CompanionHealerLevel { get; set; }
+
+        #endregion
+
+        #region PvP Stats
+
+        public byte PvpLevel { get; set; }
+
+        public short PvpTotalEXP { get; set; }
+
+        public short PvpTotalMatches { get; set; }
+
+        public short PvpTotalWins { get; set; }
+
+        public short PvpWeeklyMatches { get; set; }
+
+        public short PvpWeeklyWins { get; set; }
+
+        #endregion
+
         #endregion
 
         #region Methods
@@ -384,7 +408,26 @@ namespace ffxivlib
 
             #endregion
 
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x529)] public byte Padding;
+            #region Companion stats
+
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x5A8)] public int CompanionEil;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x5AC)] public byte CompanionLevel;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x5AE)] public byte CompanionDefenderLevel;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x5AF)] public byte CompanionAttackerLevel;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x5B0)] public byte CompanionHealerLevel;
+
+            #endregion
+
+            #region PvP Stats
+
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x755)] public byte PvpLevel;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x756)] public short PvpTotalEXP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x758)] public short PvpTotalMatches;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x75A)] public short PvpTotalWins;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x75C)] public short PvpWeeklyMatches;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x75E)] public short PvpWeeklyWins;
+
+            #endregion
         };
 
         #endregion
@@ -419,6 +462,7 @@ namespace ffxivlib
             var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }
+
         #endregion
     }
 }
