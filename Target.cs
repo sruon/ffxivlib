@@ -108,6 +108,7 @@ namespace ffxivlib
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
             try
                 {
+                    if (t.Structure.CurrentTarget == 0) return null;
                     var e = new Entity(
                         _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.CurrentTarget),
                         (IntPtr) t.Structure.CurrentTarget);
