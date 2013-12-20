@@ -281,6 +281,60 @@ namespace ffxivlib
 
         #endregion
 
+        #region Job lookups
+
+        /// <summary>
+        /// Retrieves Job Name corresponding to ID.
+        /// </summary>
+        /// <param name="id">Job ID</param>
+        /// <returns>Job name</returns>
+        public static string GetJobName(JOB id)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.JOB_FILE), "ClassJob", "Key", "Name_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (byte)id);
+        }
+
+        /// <summary>
+        /// Retrieves Job Name corresponding to ID in Entity.
+        /// </summary>
+        /// <param name="e">Entity</param>
+        /// <returns>Job name</returns>
+        public static string GetJobName(Entity e)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.JOB_FILE), "ClassJob", "Key", "Name_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (byte)e.Job);
+        }
+
+        /// <summary>
+        /// Retrieves Job shortname corresponding to ID.
+        /// </summary>
+        /// <param name="id">Job ID</param>
+        /// <returns>Job shortname</returns>
+        public static string GetJobShortname(JOB id)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.JOB_FILE), "ClassJob", "Key", "Abbreviation_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (byte)id);
+        }
+
+        /// <summary>
+        /// Retrieves Job shortname corresponding to ID in Entity.
+        /// </summary>
+        /// <param name="e">Entity</param>
+        /// <returns>Job shortname</returns>
+        public static string GetJobShortname(Entity e)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.JOB_FILE), "ClassJob", "Key", "Abbreviation_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (byte)e.Job);
+        }
+
+        /// <summary>
+        /// Retrieves Job ID corresponding to shortname.
+        /// </summary>
+        /// <param name="name">Job shortname</param>
+        /// <returns>Job ID</returns>
+        public static int GetJobID(string name)
+        {
+            return RunLinqQuery(string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER, Constants.ResourceParser.JOB_FILE), "ClassJob", "Abbreviation_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
+        }
+
+        #endregion
+
         #region Grand Company lookups
 
         /// <summary>

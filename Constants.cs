@@ -103,6 +103,7 @@ public static class Constants
         internal const string BUFF_FILE = "Buffs.xml";
         internal const string ITEM_FILE = "Item.xml";
         internal const string TITLE_FILE = "Title.xml";
+        internal const string JOB_FILE = "ClassJob.xml";
         internal const string GRAND_COMPANY_FILE = "GrandCompany.xml";
         internal const string GRAND_COMPANY_RANK_FILE = "GCRankUldahMaleText.xml";
         internal const string AUTOTRANSLATE_FILE = "Autotranslate.xml";
