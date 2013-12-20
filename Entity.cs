@@ -90,6 +90,7 @@ namespace ffxivlib
         public SEX Sex { get; set; }
 
         public byte Aggro { get; set; }
+
         public BUFF[] Buffs { get; set; }
 
         #endregion
@@ -175,10 +176,12 @@ namespace ffxivlib
             if (id >= Constants.ENTITY_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
             IntPtr pointer = IntPtr.Add(_mr.GetArrayStart(Constants.PCPTR), id*0x4);
+            IntPtr address = _mr.ResolvePointer(pointer);
+            if (address == IntPtr.Zero) return null;
             try
                 {
                     var e = new Entity(_mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer),
-                        _mr.ResolvePointer(pointer));
+                        address);
                     return e;
                 }
             catch (Exception)
