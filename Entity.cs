@@ -63,6 +63,10 @@ namespace ffxivlib
 
         public byte Title { get; set; }
 
+        public JOB Job { get; set; }
+
+        public byte Level { get; set; }
+
         public int CurrentHP { get; set; }
 
         public int MaxHP { get; set; }
@@ -118,6 +122,8 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168A)] public byte GrandCompany;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168B)] public byte GrandCompanyRank;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168E)] public byte Title;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1698)] public JOB Job;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1699)] public byte Level;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A0)] public int CurrentHP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A4)] public int MaxHP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A8)] public int CurrentMP;
