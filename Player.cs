@@ -298,9 +298,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x9C)] public int LNC_EIL;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xA0)] public int THM_EIL;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xA4)] public int CNJ_EIL;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xA8)] public int ACN_EIL;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xA8)] public int CPT_EIL;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xAC)] public int BSM_EIL;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xB0)] public int CPT_EIL;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xB0)] public int ACN_EIL; // Not sure about that one
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xB4)] public int GSM_EIL;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xB8)] public int ARM_EIL;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xBC)] public int WVR_EIL;
@@ -337,7 +337,7 @@ namespace ffxivlib
             #region Basic infos
 
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x118)] public int MaxHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x111C)] public int MaxMP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x11C)] public int MaxMP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x120)] public int MaxTP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x124)] public int MaxGP;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x128)] public int MaxCP;
