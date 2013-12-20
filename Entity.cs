@@ -119,10 +119,10 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x189)] public bool IsGM;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x18A)] public byte Icon;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x195)] public STATUS IsEngaged;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD58)] public int TargetId;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168A)] public byte GrandCompany;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168B)] public byte GrandCompanyRank;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168E)] public byte Title;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD78)] public int TargetId;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169A)] public byte GrandCompany;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169B)] public byte GrandCompanyRank;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169E)] public byte Title;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1698)] public JOB Job;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1699)] public byte Level;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A0)] public int CurrentHP;
@@ -134,8 +134,8 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B4)] public short MaxGP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B6)] public short CurrentCP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B8)] public short MaxCP;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB8)] public byte Race;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB9)] public SEX Sex;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E58)] public byte Race;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E59)] public SEX Sex;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public byte Aggro;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
         };
