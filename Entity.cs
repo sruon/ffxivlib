@@ -85,6 +85,7 @@ namespace ffxivlib
 
         public SEX Sex { get; set; }
 
+        public byte Aggro { get; set; }
         public BUFF[] Buffs { get; set; }
 
         #endregion
@@ -128,6 +129,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B8)] public short MaxCP;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB8)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB9)] public SEX Sex;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public byte Aggro;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
         };
 
