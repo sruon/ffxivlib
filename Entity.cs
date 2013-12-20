@@ -117,18 +117,18 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168A)] public byte GrandCompany;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168B)] public byte GrandCompanyRank;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x168E)] public byte Title;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1690)] public int CurrentHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1694)] public int MaxHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x1698)] public int CurrentMP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x169C)] public int MaxMP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A0)] public short CurrentTP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A2)] public short CurrentGP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A4)] public short MaxGP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A6)] public short CurrentCP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16A8)] public short MaxCP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A0)] public int CurrentHP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A4)] public int MaxHP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16A8)] public int CurrentMP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x16AC)] public int MaxMP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B0)] public short CurrentTP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B2)] public short CurrentGP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B4)] public short MaxGP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B6)] public short CurrentCP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B8)] public short MaxCP;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB8)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2DB9)] public SEX Sex;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2F48)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
         };
 
         #endregion
