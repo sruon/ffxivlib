@@ -54,22 +54,19 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct PARTYMEMBERINFO
         {
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0)] public int PlayerID;
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] [FieldOffset(0x10)] public string Name;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x51)] public JOB Job;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x53)] public byte Level;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x58)] public int CurrentHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x5C)] public int MaxHP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x60)] public int CurrentMP;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x62)] public int MaxMP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x64)] public short CurrentTP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x66)] public short CurrentGP;
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x68)] public short MaxGP;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x70)] public BUFF[] Buffs;
-            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F0)] public float X;
-            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F4)] public float Z;
-            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x1F8)] public float Y;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x38C)] public int padding;
+            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x0)] public float X;
+            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x4)] public float Z;
+            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x8)] public float Y;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int PlayerID;
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] [FieldOffset(0x20)] public string Name;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x61)] public JOB Job;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x63)] public byte Level;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x68)] public int CurrentHP;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x6C)] public int MaxHP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x70)] public short CurrentMP;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x72)] public short MaxMP;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x80)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x39F)] public byte Padding;
         };
 
         #endregion
