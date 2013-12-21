@@ -12,8 +12,7 @@ var searchData=
   ['getentitybyname',['GetEntityByName',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a8986a3f2a5a3d4d2680ae779e3bb68fd',1,'ffxivlib::FFXIVLIB']]],
   ['getentitybytype',['GetEntityByType',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a5290e1392e9cca47455d4fa215c8cb84',1,'ffxivlib::FFXIVLIB']]],
   ['getentityinfo',['GetEntityInfo',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#abf21279e4f445a6d4609a7b1ab4c5c64',1,'ffxivlib::FFXIVLIB']]],
-  ['getgatheringnodes',['GetGatheringNodes',['../namespace_get_gathering_nodes.html',1,'']]],
-  ['getinventory',['GetInventory',['../namespace_get_inventory.html',1,'']]],
+  ['getfocustarget',['GetFocusTarget',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a61b106aad35dc8e3d5062f7dcd03dd0a',1,'ffxivlib::FFXIVLIB']]],
   ['getmouseovertarget',['GetMouseoverTarget',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a53f76a0a73f50e6e4e76b61780c4915a',1,'ffxivlib::FFXIVLIB']]],
   ['getmovementhelper',['GetMovementHelper',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a889468d923f65d7ae6ac52135048c1d6',1,'ffxivlib::FFXIVLIB']]],
   ['getpartymemberbyid',['GetPartyMemberById',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#aae35e1fac36dcac4b4c0ad42550f918d',1,'ffxivlib::FFXIVLIB']]],
@@ -22,6 +21,7 @@ var searchData=
   ['getprevioustarget',['GetPreviousTarget',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a9f332cf47bdc90a63d62131f51ad69bb',1,'ffxivlib::FFXIVLIB']]],
   ['getretainerinventory',['GetRetainerInventory',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ae3c5c77d26ed45d4be8ddd8e0caf3bb9',1,'ffxivlib::FFXIVLIB']]],
   ['getselfinventory',['GetSelfInventory',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a414e7d6cf920df6a210b28979d4e256b',1,'ffxivlib::FFXIVLIB']]],
+  ['getservername',['GetServerName',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ae9550203b3b309168034af53f505f39d',1,'ffxivlib::FFXIVLIB']]],
   ['getsigscan',['GetSigScan',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a9a29f9a5a3872f96ab9b3a1dd48c3256',1,'ffxivlib::FFXIVLIB']]],
   ['gettargets',['GetTargets',['../classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ab9c4560506d6cdb37c138b25da38f7f7',1,'ffxivlib::FFXIVLIB']]],
   ['gotopos',['GoToPos',['../classffxivlib_1_1_movement_helper.html#a8706ad00f8ca28ee9a2272d45879d7cb',1,'ffxivlib::MovementHelper']]]

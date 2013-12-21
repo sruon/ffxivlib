@@ -28,7 +28,7 @@ List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E
 List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a1b51a968a6d6e59d5a0a3b265d19a742}{Get\-Armory\-Chest} ()
 \begin{DoxyCompactList}\small\item\em This returns your whole Armory Chest. \end{DoxyCompactList}\item 
 List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E\-M} $>$ \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9e3b1f4f0b1c203583e6c38a5bcf9c0c}{Get\-Company\-Inventory} ()
-\begin{DoxyCompactList}\small\item\em This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This returns your Free Company inventory, extra inventory (currency, crystals) This only works while checking the Free Company chest. \end{DoxyCompactList}\item 
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a2e19fa6a85db14f2b15ff4038a33cd61}{byte\mbox{[}$\,$\mbox{]} {\bfseries Read\-Memory} (Int\-Ptr pointer, uint count)}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a2e19fa6a85db14f2b15ff4038a33cd61}
 
 \item 
@@ -38,6 +38,8 @@ List$<$ \hyperlink{structffxivlib_1_1_inventory_1_1_i_t_e_m}{Inventory.\-I\-T\-E
 \begin{DoxyCompactList}\small\item\em Deprecated, use get\-Party\-Member\-By\-Id \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_aae35e1fac36dcac4b4c0ad42550f918d}{Get\-Party\-Member\-By\-Id} (int id)
 \begin{DoxyCompactList}\small\item\em This function retrieves a \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} by its id in the \hyperlink{classffxivlib_1_1_party_member}{Party\-Member} array The result might be empty, there is no sanity check at the time \end{DoxyCompactList}\item 
+string \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae9550203b3b309168034af53f505f39d}{Get\-Server\-Name} ()
+\begin{DoxyCompactList}\small\item\em T\-L;D\-R \-: Returns current server, testing, might not work reliably. Longer version \-: This is set by the Lobby widgets, which no longer exist while in-\/game, as such the memory space they used can be under some condition garbage collected/wiped. \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_player}{Player} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a66e0eb2208e2d9332633ca9476976d53}{Get\-Player\-Info} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current \hyperlink{classffxivlib_1_1_player}{Player} info \end{DoxyCompactList}\item 
 void \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_ac4d88c5b015e78af8455be0bef6f3aca}{Send\-Key} (Int\-Ptr key, bool keyup=true, int delay=100)
@@ -51,7 +53,9 @@ Int\-Ptr \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9a29f9a5a3872f96ab9b3a1dd
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a53f76a0a73f50e6e4e76b61780c4915a}{Get\-Mouseover\-Target} ()
 \begin{DoxyCompactList}\small\item\em This function retrieves the current Mouseover target \end{DoxyCompactList}\item 
 \hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_abb0899feb3c378445a01d70d59866f43}{Get\-Current\-Target} ()
-\begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function retrieves the current target \end{DoxyCompactList}\item 
+\hyperlink{classffxivlib_1_1_entity}{Entity} \hyperlink{classffxivlib_1_1_f_f_x_i_v_l_i_b_a61b106aad35dc8e3d5062f7dcd03dd0a}{Get\-Focus\-Target} ()
+\begin{DoxyCompactList}\small\item\em This function retrieves the focus target \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -111,7 +115,7 @@ This function instantiates a \hyperlink{classffxivlib_1_1_chatlog}{Chatlog} obje
 )}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9e3b1f4f0b1c203583e6c38a5bcf9c0c}
 
 
-This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. 
+This returns your Free Company inventory, extra inventory (currency, crystals) This only works while checking the Free Company chest. 
 
 \begin{DoxyReturn}{Returns}
 List of items
@@ -224,6 +228,20 @@ Deprecated, use get\-Entity\-By\-Id
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a61b106aad35dc8e3d5062f7dcd03dd0a}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Focus\-Target@{Get\-Focus\-Target}}
+\index{Get\-Focus\-Target@{Get\-Focus\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Focus\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Focus\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_a61b106aad35dc8e3d5062f7dcd03dd0a}
+
+
+This function retrieves the focus target 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classffxivlib_1_1_entity}{Entity} object or null
 \end{DoxyReturn}
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a53f76a0a73f50e6e4e76b61780c4915a}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Mouseover\-Target@{Get\-Mouseover\-Target}}
 \index{Get\-Mouseover\-Target@{Get\-Mouseover\-Target}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
@@ -362,6 +380,20 @@ This returns your inventory, extra inventory (gil, crystals, tomes, seals), key 
 
 \begin{DoxyReturn}{Returns}
 List of items
+\end{DoxyReturn}
+\hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae9550203b3b309168034af53f505f39d}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Server\-Name@{Get\-Server\-Name}}
+\index{Get\-Server\-Name@{Get\-Server\-Name}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}
+\subsubsection[{Get\-Server\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string ffxivlib.\-F\-F\-X\-I\-V\-L\-I\-B.\-Get\-Server\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classffxivlib_1_1_f_f_x_i_v_l_i_b_ae9550203b3b309168034af53f505f39d}
+
+
+T\-L;D\-R \-: Returns current server, testing, might not work reliably. Longer version \-: This is set by the Lobby widgets, which no longer exist while in-\/game, as such the memory space they used can be under some condition garbage collected/wiped. 
+
+\begin{DoxyReturn}{Returns}
+
 \end{DoxyReturn}
 \hypertarget{classffxivlib_1_1_f_f_x_i_v_l_i_b_a9a29f9a5a3872f96ab9b3a1dd48c3256}{\index{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}!Get\-Sig\-Scan@{Get\-Sig\-Scan}}
 \index{Get\-Sig\-Scan@{Get\-Sig\-Scan}!ffxivlib::FFXIVLIB@{ffxivlib\-::\-F\-F\-X\-I\-V\-L\-I\-B}}

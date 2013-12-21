@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FFXIVLIB
-   &#160;<span id="projectnumber">0.3.2</span>
+   &#160;<span id="projectnumber">0.4.1</span>
    </div>
    <div id="projectbrief">FFXIVLIB is a library designed to help creating 3rd party tools for FFXIV</div>
   </td>
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1b51a968a6d6e59d5a0a3b265d19a742"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your whole Armory Chest.  <a href="#a1b51a968a6d6e59d5a0a3b265d19a742">More...</a><br/></td></tr>
 <tr class="separator:a1b51a968a6d6e59d5a0a3b265d19a742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3b1f4f0b1c203583e6c38a5bcf9c0c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structffxivlib_1_1_inventory_1_1_i_t_e_m.html">Inventory.ITEM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a9e3b1f4f0b1c203583e6c38a5bcf9c0c">GetCompanyInventory</a> ()</td></tr>
-<tr class="memdesc:a9e3b1f4f0b1c203583e6c38a5bcf9c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest.  <a href="#a9e3b1f4f0b1c203583e6c38a5bcf9c0c">More...</a><br/></td></tr>
+<tr class="memdesc:a9e3b1f4f0b1c203583e6c38a5bcf9c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns your Free Company inventory, extra inventory (currency, crystals) This only works while checking the Free Company chest.  <a href="#a9e3b1f4f0b1c203583e6c38a5bcf9c0c">More...</a><br/></td></tr>
 <tr class="separator:a9e3b1f4f0b1c203583e6c38a5bcf9c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e19fa6a85db14f2b15ff4038a33cd61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e19fa6a85db14f2b15ff4038a33cd61"></a>
 byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (IntPtr pointer, uint count)</td></tr>
@@ -146,6 +146,9 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
 <tr class="memitem:aae35e1fac36dcac4b4c0ad42550f918d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#aae35e1fac36dcac4b4c0ad42550f918d">GetPartyMemberById</a> (int id)</td></tr>
 <tr class="memdesc:aae35e1fac36dcac4b4c0ad42550f918d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves a <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> by its id in the <a class="el" href="classffxivlib_1_1_party_member.html">PartyMember</a> array The result might be empty, there is no sanity check at the time  <a href="#aae35e1fac36dcac4b4c0ad42550f918d">More...</a><br/></td></tr>
 <tr class="separator:aae35e1fac36dcac4b4c0ad42550f918d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9550203b3b309168034af53f505f39d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#ae9550203b3b309168034af53f505f39d">GetServerName</a> ()</td></tr>
+<tr class="memdesc:ae9550203b3b309168034af53f505f39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">TL;DR : Returns current server, testing, might not work reliably. Longer version : This is set by the Lobby widgets, which no longer exist while in-game, as such the memory space they used can be under some condition garbage collected/wiped.  <a href="#ae9550203b3b309168034af53f505f39d">More...</a><br/></td></tr>
+<tr class="separator:ae9550203b3b309168034af53f505f39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e0eb2208e2d9332633ca9476976d53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a66e0eb2208e2d9332633ca9476976d53">GetPlayerInfo</a> ()</td></tr>
 <tr class="memdesc:a66e0eb2208e2d9332633ca9476976d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves the current <a class="el" href="classffxivlib_1_1_player.html">Player</a> info  <a href="#a66e0eb2208e2d9332633ca9476976d53">More...</a><br/></td></tr>
 <tr class="separator:a66e0eb2208e2d9332633ca9476976d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +170,9 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
 <tr class="memitem:abb0899feb3c378445a01d70d59866f43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#abb0899feb3c378445a01d70d59866f43">GetCurrentTarget</a> ()</td></tr>
 <tr class="memdesc:abb0899feb3c378445a01d70d59866f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves the current target  <a href="#abb0899feb3c378445a01d70d59866f43">More...</a><br/></td></tr>
 <tr class="separator:abb0899feb3c378445a01d70d59866f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b106aad35dc8e3d5062f7dcd03dd0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classffxivlib_1_1_f_f_x_i_v_l_i_b.html#a61b106aad35dc8e3d5062f7dcd03dd0a">GetFocusTarget</a> ()</td></tr>
+<tr class="memdesc:a61b106aad35dc8e3d5062f7dcd03dd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function retrieves the focus target  <a href="#a61b106aad35dc8e3d5062f7dcd03dd0a">More...</a><br/></td></tr>
+<tr class="separator:a61b106aad35dc8e3d5062f7dcd03dd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac9deecbc7f2ceeac2b48b06620e8a665"></a>
@@ -243,7 +249,7 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
       </table>
 </div><div class="memdoc">
 
-<p>This returns your Free Company inventory, extra inventory (currency, crystals) This might only work while checking the Free Company chest. </p>
+<p>This returns your Free Company inventory, extra inventory (currency, crystals) This only works while checking the Free Company chest. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of items</dd></dl>
 
 </div>
@@ -387,6 +393,24 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a61b106aad35dc8e3d5062f7dcd03dd0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> ffxivlib.FFXIVLIB.GetFocusTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function retrieves the focus target </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classffxivlib_1_1_entity.html">Entity</a> object or null</dd></dl>
 
 </div>
 </div>
@@ -579,6 +603,24 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
 
 </div>
 </div>
+<a class="anchor" id="ae9550203b3b309168034af53f505f39d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ffxivlib.FFXIVLIB.GetServerName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TL;DR : Returns current server, testing, might not work reliably. Longer version : This is set by the Lobby widgets, which no longer exist while in-game, as such the memory space they used can be under some condition garbage collected/wiped. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9a29f9a5a3872f96ab9b3a1dd48c3256"></a>
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +723,7 @@ byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadMemory</b> (Int
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 1 2013 18:02:03 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 21 2013 01:17:20 for FFXIVLIB by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
