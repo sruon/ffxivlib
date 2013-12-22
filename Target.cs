@@ -8,7 +8,10 @@ namespace ffxivlib
         #region Constructor
 
         public Target(TARGET structure, IntPtr address)
-            : base(structure, address) {}
+            : base(structure, address)
+        {
+            Initialize();
+        }
 
         #endregion
 
@@ -64,17 +67,13 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            try
-                {
-                    var e =
-                        new Entity(_mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.PreviousTarget),
-                            (IntPtr) t.Structure.PreviousTarget);
-                    return e;
-                }
-            catch (Exception)
-                {
-                    return null;
-                }
+                    Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.PreviousTarget);
+                    if (!Equals(en, default(Entity.ENTITYINFO)))
+                    {
+                        Entity e = new Entity(en, (IntPtr)t.PreviousTarget);
+                        return e;
+                    }
+            return null;
         }
 
         /// <summary>
@@ -85,17 +84,13 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            try
-                {
-                    var e =
-                        new Entity(_mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.MouseoverTarget),
-                            (IntPtr) t.Structure.MouseoverTarget);
-                    return e;
-                }
-            catch (Exception)
-                {
-                    return null;
-                }
+            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.MouseoverTarget);
+            if (!Equals(en, default(Entity.ENTITYINFO)))
+            {
+                Entity e = new Entity(en, (IntPtr)t.MouseoverTarget);
+                return e;
+            }
+            return null;
         }
 
         /// <summary>
@@ -106,18 +101,13 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            try
-                {
-                    if (t.Structure.CurrentTarget == 0) return null;
-                    var e = new Entity(
-                        _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.CurrentTarget),
-                        (IntPtr) t.Structure.CurrentTarget);
-                    return e;
-                }
-            catch (Exception)
-                {
-                    return null;
-                }
+            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.CurrentTarget);
+            if (!Equals(en, default(Entity.ENTITYINFO)))
+            {
+                Entity e = new Entity(en, (IntPtr)t.CurrentTarget);
+                return e;
+            }
+            return null;
         }
 
         /// <summary>
@@ -128,17 +118,13 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            try
-                {
-                    var e = new Entity(
-                        _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.Structure.FocusTarget),
-                        (IntPtr) t.Structure.FocusTarget);
-                    return e;
-                }
-            catch (Exception)
-                {
-                    return null;
-                }
+            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.FocusTarget);
+            if (!Equals(en, default(Entity.ENTITYINFO)))
+            {
+                Entity e = new Entity(en, (IntPtr)t.FocusTarget);
+                return e;
+            }
+            return null;
         }
 
         #endregion

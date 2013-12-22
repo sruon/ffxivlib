@@ -178,16 +178,13 @@ namespace ffxivlib
             IntPtr pointer = IntPtr.Add(_mr.GetArrayStart(Constants.PCPTR), id*0x4);
             IntPtr address = _mr.ResolvePointer(pointer);
             if (address == IntPtr.Zero) return null;
-            try
+            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>(address);
+            if (!Equals(en, default(Entity.ENTITYINFO)))
                 {
-                    var e = new Entity(_mr.CreateStructFromPointer<Entity.ENTITYINFO>(pointer),
-                        address);
+                    Entity e = new Entity(en, address);
                     return e;
                 }
-            catch (Exception)
-                {
-                    return null;
-                }
+            return null;
         }
 
         /// <summary>
@@ -214,13 +211,11 @@ namespace ffxivlib
             for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
                 {
                     IntPtr address = pointer + (i*0x4);
-                    try
+                    Entity.ENTITYINFO en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
+                    if (!Equals(en, default(Entity.ENTITYINFO)))
                         {
-                            entityList.Add(new Entity(_mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
-                        }
-                    catch (Exception)
-                        {
-                            // No Entity at this position
+                            Entity e = new Entity(en, address);
+                            entityList.Add(e);
                         }
                 }
             var results = entityList.Where(obj => obj.Structure.Name == name);
@@ -247,13 +242,11 @@ namespace ffxivlib
             for (int i = 0; i < arraySize; i++)
                 {
                     IntPtr address = pointer + (i*0x4);
-                    try
+                    Entity.ENTITYINFO en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
+                    if (!Equals(en, default(Entity.ENTITYINFO)))
                         {
-                            entityList.Add(new Entity(_mr.CreateStructFromPointer<Entity.ENTITYINFO>(address), address));
-                        }
-                    catch (Exception)
-                        {
-                            // No Entity at this position
+                            Entity e = new Entity(en, address);
+                            entityList.Add(e);
                         }
                 }
             var results = entityList.Where(e => e.Structure.MobType == type);
