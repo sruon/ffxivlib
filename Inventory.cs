@@ -177,16 +177,32 @@ namespace ffxivlib
             return ic;
         }
 
+        /// <summary>
+        /// Builds our list out of our pointers.
+        /// </summary>
+        /// <param name="ptr">First pointer to subarray</param>
+        /// <param name="count">Number of pointers to process</param>
+        /// <param name="clean"></param>
+        /// <returns>Final list</returns>
+        private InventoryBuilder BuildSubList(bool cleaned, params INVENTORYCONTAINER[] inventorycontainer)
+        {
+            var ib = new InventoryBuilder();
+            foreach (INVENTORYCONTAINER container in inventorycontainer)
+                {
+                    var ic = new InventoryBuilder((IntPtr) container.Pointer, container.Count, cleaned);
+                    ib = ib + ic;
+                }
+            return ib;
+        }
+
         internal List<ITEM> GetSelfInventory()
         {
-            InventoryBuilder ic = BuildSubList(Structure.Containers[(int) Type.INVENTORY_1]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.INVENTORY_2]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.INVENTORY_3]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.INVENTORY_4]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.CRYSTALS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.EXTRA_EQ]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.CURRENT_EQ]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.QUESTS_KI]);
+            InventoryBuilder ic = BuildSubList(true, Structure.Containers[(int) Type.INVENTORY_1],
+                Structure.Containers[(int) Type.INVENTORY_2], Structure.Containers[(int) Type.INVENTORY_2],
+                Structure.Containers[(int) Type.INVENTORY_3], Structure.Containers[(int) Type.INVENTORY_4],
+                Structure.Containers[(int) Type.CRYSTALS], Structure.Containers[(int) Type.EXTRA_EQ],
+                Structure.Containers[(int) Type.CURRENT_EQ], Structure.Containers[(int) Type.QUESTS_KI]
+                );
             return ic.Items;
         }
 
@@ -202,19 +218,13 @@ namespace ffxivlib
 
         internal List<ITEM> GetArmoryChest()
         {
-            InventoryBuilder ic = BuildSubList(Structure.Containers[(int) Type.AC_MH]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_OH]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_HEAD]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_BODY]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_HANDS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_BELT]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_LEGS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_FEET]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_EARRINGS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_NECK]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_RINGS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_WRISTS]);
-            ic = ic + BuildSubList(Structure.Containers[(int) Type.AC_SOULS]);
+            InventoryBuilder ic = BuildSubList(true, Structure.Containers[(int) Type.AC_MH],
+                Structure.Containers[(int) Type.AC_OH], Structure.Containers[(int) Type.AC_HEAD],
+                Structure.Containers[(int) Type.AC_BODY], Structure.Containers[(int) Type.AC_HANDS],
+                Structure.Containers[(int) Type.AC_BELT], Structure.Containers[(int) Type.AC_LEGS],
+                Structure.Containers[(int) Type.AC_FEET], Structure.Containers[(int) Type.AC_EARRINGS],
+                Structure.Containers[(int) Type.AC_NECK], Structure.Containers[(int) Type.AC_RINGS],
+                Structure.Containers[(int) Type.AC_WRISTS], Structure.Containers[(int) Type.AC_SOULS]);
             return ic.Items;
         }
 

@@ -18,7 +18,7 @@ namespace DumpInventory
             // Default folder is Resources, you may override it here
             Constants.ResourceParser.RESOURCES_FOLDER = "myresourcefolder";
             // ja, fr, de or en. Defaults to en if not set
-            Constants.ResourceParser.RESOURCES_LANGUAGE = "de";
+            Constants.ResourceParser.RESOURCES_LANGUAGE = "en";
             FFXIVLIB instance = new FFXIVLIB();
             List<Inventory.ITEM> items = instance.GetSelfInventory();
             // Just timing how long it takes
