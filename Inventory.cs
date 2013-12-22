@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace ffxivlib
@@ -54,7 +55,7 @@ namespace ffxivlib
             /// I am deeply confused about this one, if item is related to a quest this is equal to the QuestID.
             /// BUT, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why SE?
             /// </summary>
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x3C)] public uint QuestID;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x3C)] public int QuestID;
 
             /// <summary>
             /// Padding to make sure our struct are the same size as XIV ones, allows me to use Marshal.SizeOf
@@ -211,6 +212,11 @@ namespace ffxivlib
             return BuildSubList(Structure.Containers[(int) Type.CURRENT_EQ], false).Items;
         }
 
+        internal List<ITEM> GetQuests()
+        {
+            return BuildSubList(Structure.Containers[(int) Type.QUESTS_KI], false).Items;
+        }
+
         internal List<ITEM> GetRetainerInventory()
         {
             throw new NotImplementedException();
@@ -233,10 +239,6 @@ namespace ffxivlib
             throw new NotImplementedException();
         }
 
-        internal List<ITEM> GetQuests()
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
     }
@@ -301,6 +303,26 @@ namespace ffxivlib
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
             return i.GetCompanyInventory();
+        }
+
+        /// <summary>
+        /// Retrieves current quests
+        /// </summary>
+        /// <returns>List of quests ID</returns>
+        public IEnumerable<int> GetQuests()
+        {
+            IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
+            var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
+            var quests = i.GetQuests();
+            List<int> questsIds = new List<int>();
+            foreach (Inventory.ITEM quest in quests)
+                {
+                    if (quest.QuestID != 0) // Key items have ID 0
+                        {
+                            questsIds.Add(quest.QuestID);
+                        }
+                }
+            return questsIds.Distinct();
         }
 
         #endregion

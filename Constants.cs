@@ -108,6 +108,7 @@ public static class Constants
         internal const string GRAND_COMPANY_RANK_FILE = "GCRankUldahMaleText.xml";
         internal const string AUTOTRANSLATE_FILE = "Autotranslate.xml";
         internal const string ZONE_FILE = "PlaceName.xml";
+        internal const string QUEST_FILE = "Quest.xml";
     }
 
     #endregion
