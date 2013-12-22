@@ -32,7 +32,7 @@ namespace ffxivlib
                     if (p.Length <= 0)
                         throw new InvalidOperationException("No FFXIV process.");
                     if (p.Length > 1)
-                        throw new NotImplementedException("Call the constructor with PID if multiple process.");
+                        throw new InvalidOperationException("Call the constructor with PID if multiple process.");
                     ffxiv_process = p[0];
                 }
 

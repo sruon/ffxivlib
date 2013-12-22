@@ -1,5 +1,7 @@
 ﻿namespace ffxivlib
 {
+    
+
     /// <summary>
     ///     Job ID as used in various structures
     /// </summary>
@@ -103,17 +105,20 @@
         ProcessingYellow = 0xE,
         ProcessingGrey = 0xF,
         Cutscene = 0x10,
-        Chocobo = 0x12,
+        Away = 0x12,
         Sitting = 0x13,
         WrenchYellow = 0x14,
         Wrench = 0x15,
         Dice = 0x16,
         ProcessingGreen = 0x17,
         Sword = 0x18,
-        DutyFinder = 0x19,
         AllianceLeader = 0x1A,
         AllianceBlueLeader = 0x1B,
         AllianceBlue = 0x1C,
+        PartyLeader = 0x1D,
+        PartyMember = 0x1E,
+        DutyFinder = 0x18,
+        Recruiting = 0x19,
         Sprout = 0x1F,
         Gil = 0x20
     }

@@ -117,7 +117,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x174)] public int ModelID;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x188)] public ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x189)] public bool IsGM;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x18A)] public byte Icon;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x194)] public ICON Icon;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x195)] public STATUS IsEngaged;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD78)] public int TargetId;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169A)] public byte GrandCompany;
