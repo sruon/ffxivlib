@@ -14,7 +14,7 @@ Features
 
 Getting Started
 ========
-Include this snippet in your application
+Add a reference to ffxivlib.dll in your application and include this snippet
 
 ```c#
 using ffxivlib;
@@ -42,3 +42,4 @@ Please feel free to create an issue and submit pull requests to discuss changes,
 ## Links
 - [Documentation](http://sruon.github.io/ffxivlib/html/functions.html)
 - [Support thread](http://www.ffevo.net/topic/3264-ffxivlib/)
+- [Download](http://www.ffevo.net/files/file/242-ffxivlib/)
