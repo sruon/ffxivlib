@@ -187,6 +187,7 @@ namespace ffxivlib
                         if (i != -1)
                             {
                                 int limit = (i - emoteIndex);
+                                if (limit < 0) return workingCopy;
                                 workingCopy.RemoveRange(emoteIndex, limit);
                                 if ((emoteIndex = Library.ByteSearch(workingCopy.ToArray(), closeEmotePattern.ToArray())) != -1)
                                     {

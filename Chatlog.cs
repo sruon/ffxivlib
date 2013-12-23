@@ -36,9 +36,8 @@ namespace ffxivlib
         private void UpdateOffsetArray()
         {
             _offsetsList.Clear();
-            MemoryReader mr = MemoryReader.GetInstance();
             for (int i = 0; i < Constants.CHATLOG_ARRAY_SIZE; i++)
-                _offsetsList.Add((int) mr.ResolvePointer((IntPtr) (Structure.ArrayStart + (i*0x4))));
+                _offsetsList.Add((int) _mr.ResolvePointer((IntPtr) (Structure.ArrayStart + (i*0x4))));
         }
 
         /// <summary>
@@ -51,9 +50,9 @@ namespace ffxivlib
         {
             int bytesread;
 
-            var cle =
+            var entry =
                 new Entry(_mr.ReadAdress((IntPtr) (Structure.LogStart + start), (uint) (end - start), out bytesread));
-            return cle;
+            return entry;
         }
 
         /// <summary>
@@ -69,6 +68,7 @@ namespace ffxivlib
             var ret = new List<Entry>();
             for (int i = start; i < end; i++)
                 {
+                    UpdateOffsetArray();
                     _currentOffset = _offsetsList[i];
                     ret.Add(ReadEntry(_previousOffset, _currentOffset));
                     _previousOffset = _currentOffset;
