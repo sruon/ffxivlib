@@ -93,6 +93,28 @@ namespace ffxivlib
 
         public BUFF[] Buffs { get; set; }
 
+        public bool IsCasting { get; set; }
+
+        public short CastingSpellId { get; set; }
+
+        public float CastingProgress { get; set; }
+
+        public float CastingTime { get; set; }
+
+        #endregion
+
+        #region Extra properties
+
+        public int CastingPercentage
+        {
+            get
+            {
+                if (IsCasting && CastingTime > 0)
+                    return (int)((CastingProgress / CastingTime) * 100);
+                return 0;
+            }
+        }
+
         #endregion
 
         #region Unmanaged structure
@@ -138,6 +160,10 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E59)] public SEX Sex;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public byte Aggro;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x3170)] public bool IsCasting;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3174)] public short CastingSpellId;
+            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x31A4)] public float CastingProgress;
+            [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x31A8)] public float CastingTime;
         };
 
         #endregion
