@@ -465,5 +465,47 @@ namespace ffxivlib
         }
 
         #endregion
+
+        #region Actions lookups
+
+        /// <summary>
+        /// Retrieves Action name corresponding to ID
+        /// </summary>
+        /// <param name="id">Action ID</param>
+        /// <returns>Action Name</returns>
+        public static string GetActionName(int id)
+        {
+            return
+                RunLinqQuery(
+                    string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER,
+                        Constants.ResourceParser.ACTION_FILE), "Action", "Key",
+                    "Name_" + Constants.ResourceParser.RESOURCES_LANGUAGE, id);
+        }
+
+        /// <summary>
+        /// Retrieves Action name corresponding to ID
+        /// </summary>
+        /// <param name="id">Action ID</param>
+        /// <returns>Action Name</returns>
+        public static string GetActionName(short id)
+        {
+            return GetActionName((int)id);
+        }
+
+        /// <summary>
+        /// Retrieves Action ID corresponding to name
+        /// </summary>
+        /// <param name="name">Action Name</param>
+        /// <returns>Action ID</returns>
+        public static int GetActionID(string name)
+        {
+            return
+                RunLinqQuery(
+                    string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER,
+                        Constants.ResourceParser.ACTION_FILE), "Action",
+                    "Name_" + Constants.ResourceParser.RESOURCES_LANGUAGE, "Key", name);
+        }
+
+        #endregion
     }
 }

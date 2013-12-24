@@ -109,6 +109,7 @@ public static class Constants
         internal const string AUTOTRANSLATE_FILE = "Autotranslate.xml";
         internal const string ZONE_FILE = "PlaceName.xml";
         internal const string QUEST_FILE = "Quest.xml";
+        internal const string ACTION_FILE = "Action.xml";
     }
 
     #endregion
