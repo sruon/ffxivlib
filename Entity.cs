@@ -43,6 +43,8 @@ namespace ffxivlib
 
         public float Heading { get; set; }
 
+        public short FateId { get; set; }
+
         public byte GatheringInvisible { get; set; }
 
         public int ModelID { get; set; }
@@ -110,9 +112,14 @@ namespace ffxivlib
             get
             {
                 if (IsCasting && CastingTime > 0)
-                    return (int)((CastingProgress / CastingTime) * 100);
+                    return (int) ((CastingProgress/CastingTime)*100);
                 return 0;
             }
+        }
+
+        public bool IsFate
+        {
+            get { return FateId != 0; }
         }
 
         #endregion
@@ -135,8 +142,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xA4)] public float Z;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xA8)] public float Y;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0xB0)] public float Heading;
+            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0xE8)] public short FateId;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x11C)] public byte GatheringInvisible;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x174)] public int ModelID;
+            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x174)] public int ModelId;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x188)] public ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x189)] public bool IsGM;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x194)] public ICON Icon;
@@ -171,7 +179,7 @@ namespace ffxivlib
         #region Public methods
 
         /// <summary>
-        /// Returns the distance between current Entity and a given Entity
+        ///     Returns the distance between current Entity and a given Entity
         /// </summary>
         /// <param name="other">Entity to compare to</param>
         /// <returns>Distance</returns>
@@ -204,17 +212,17 @@ namespace ffxivlib
             IntPtr pointer = IntPtr.Add(_mr.GetArrayStart(Constants.PCPTR), id*0x4);
             IntPtr address = _mr.ResolvePointer(pointer);
             if (address == IntPtr.Zero) return null;
-            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>(address);
+            var en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>(address);
             if (!Equals(en, default(Entity.ENTITYINFO)))
-                {
-                    Entity e = new Entity(en, address);
-                    return e;
-                }
+            {
+                var e = new Entity(en, address);
+                return e;
+            }
             return null;
         }
 
         /// <summary>
-        /// Deprecated, use getEntityById
+        ///     Deprecated, use getEntityById
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -226,7 +234,7 @@ namespace ffxivlib
         /// <summary>
         ///     This function attempts to retrieve a list of Entity by its name in the Entity array
         ///     This is potentially a costly call as we build a complete list to look for the Entity.
-        /// This doesn't include Gathering nodes at the moment. To be fixed.
+        ///     This doesn't include Gathering nodes at the moment. To be fixed.
         /// </summary>
         /// <param name="name">Name of the Entity to be retrieved</param>
         /// <returns>Enumerable list of Entity object or</returns>
@@ -235,47 +243,47 @@ namespace ffxivlib
             IntPtr pointer = _mr.GetArrayStart(Constants.PCPTR);
             var entityList = new List<Entity>();
             for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
+            {
+                IntPtr address = pointer + (i*0x4);
+                var en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
+                if (!Equals(en, default(Entity.ENTITYINFO)))
                 {
-                    IntPtr address = pointer + (i*0x4);
-                    Entity.ENTITYINFO en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
-                    if (!Equals(en, default(Entity.ENTITYINFO)))
-                        {
-                            Entity e = new Entity(en, address);
-                            entityList.Add(e);
-                        }
+                    var e = new Entity(en, address);
+                    entityList.Add(e);
                 }
-            var results = entityList.Where(obj => obj.Structure.Name == name);
+            }
+            IEnumerable<Entity> results = entityList.Where(obj => obj.Structure.Name == name);
             return results;
         }
 
         /// <summary>
-        /// Retrieves a list of Entity corresponding to the given TYPE
-        /// Needs to be refactored.
+        ///     Retrieves a list of Entity corresponding to the given TYPE
+        ///     Needs to be refactored.
         /// </summary>
         /// <param name="type">Type of entity</param>
         /// <returns>Enumerable list of Entity objects</returns>
         public IEnumerable<Entity> GetEntityByType(TYPE type)
         {
-            var pointerPath = Constants.PCPTR;
+            List<int> pointerPath = Constants.PCPTR;
             uint arraySize = Constants.ENTITY_ARRAY_SIZE;
             if (type == TYPE.Gathering)
-                {
-                    pointerPath = Constants.GATHERINGPTR;
-                    arraySize = Constants.GATHERING_ARRAY_SIZE;
-                }
+            {
+                pointerPath = Constants.GATHERINGPTR;
+                arraySize = Constants.GATHERING_ARRAY_SIZE;
+            }
             IntPtr pointer = _mr.GetArrayStart(pointerPath);
             var entityList = new List<Entity>();
             for (int i = 0; i < arraySize; i++)
+            {
+                IntPtr address = pointer + (i*0x4);
+                var en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
+                if (!Equals(en, default(Entity.ENTITYINFO)))
                 {
-                    IntPtr address = pointer + (i*0x4);
-                    Entity.ENTITYINFO en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
-                    if (!Equals(en, default(Entity.ENTITYINFO)))
-                        {
-                            Entity e = new Entity(en, address);
-                            entityList.Add(e);
-                        }
+                    var e = new Entity(en, address);
+                    entityList.Add(e);
                 }
-            var results = entityList.Where(e => e.Structure.MobType == type);
+            }
+            IEnumerable<Entity> results = entityList.Where(e => e.Structure.MobType == type);
             return results;
         }
 
