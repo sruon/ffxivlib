@@ -89,7 +89,7 @@ namespace ffxivlib
 
         public SEX Sex { get; set; }
 
-        public byte Aggro { get; set; }
+        public COMBATSTATUS CombatStatus { get; set; }
 
         public BUFF[] Buffs { get; set; }
 
@@ -158,7 +158,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B8)] public short MaxCP;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E58)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E59)] public SEX Sex;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public byte Aggro;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public COMBATSTATUS CombatStatus;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x3170)] public bool IsCasting;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3174)] public short CastingSpellId;

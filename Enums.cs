@@ -62,7 +62,21 @@
     }
 
     /// <summary>
-    ///     Status of an Entity (PC/NPC)
+    ///     
+    /// </summary>
+    public enum COMBATSTATUS : byte
+    {
+        Passive = 0x0,
+        Aggressive = 0x1,
+        AttackingOther = 0x7,
+        Attacking = 0x6,
+        // Hmm...
+        AttackingOther_2 = 135,
+        Attacking_2 = 134
+    }
+
+    /// <summary>
+    ///  Status of an Entity (PC/NPC)
     /// </summary>
     public enum STATUS : byte
     {
@@ -70,7 +84,6 @@
         Idle = 0x02,
         Crafting = 0x05
     }
-
     /// <summary>
     ///     Type of the entity
     /// </summary>
