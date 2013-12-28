@@ -37,6 +37,40 @@ namespace ffxivlib
         };
 
         #endregion
+
+        #region Helper methods
+
+        public void MoveRight()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveLeft()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveForward()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveBackward()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HeadLeft()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HeadRight()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 
     public partial class FFXIVLIB
