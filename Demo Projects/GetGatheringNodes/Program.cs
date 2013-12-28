@@ -10,7 +10,7 @@ namespace GetGatheringNodes
     {
         static void Main(string[] args)
         {
-            FFXIVLIB instance = new FFXIVLIB(0xC18);
+            FFXIVLIB instance = new FFXIVLIB();
             var nodeList = instance.GetEntityByType(TYPE.Gathering);
             foreach (Entity e in nodeList)
             {
