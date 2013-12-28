@@ -70,6 +70,11 @@ public static class Constants
         0x4
     };
 
+    internal static readonly List<int> MOVEMENTPTR = new List<int>
+    {
+        0x790954,
+        0x0
+    };
     #endregion
 
     #region Array size
