@@ -5,11 +5,55 @@ namespace ffxivlib
 {
     public class Movement : BaseObject<Movement.MOVEMENTINFO>
     {
+        #region Constructor
+
         public Movement(MOVEMENTINFO structure, IntPtr address)
             : base(structure, address)
         {
             Initialize();
         }
+
+        #endregion
+
+        #region Properties
+
+        public bool IsMoving { get; set; }
+
+        public bool IsHeading { get; set; }
+
+        public bool IsWalking { get; set; }
+
+        public bool IsFollowing { get; set; }
+
+        public float CurrentSpeed { get; set; }
+
+        public float ForwardSpeed { get; set; }
+
+        public float SideSpeed { get; set; }
+
+        public float BackwardSpeed { get; set; }
+
+        public float Heading { get; set; }
+
+        public float X { get; set; }
+
+        public float Z { get; set; }
+
+        public float Y { get; set; }
+
+        public bool IsHeadingLeft { get; set; }
+
+        public bool IsHeadingRight { get; set; }
+
+        public bool IsMovingRight { get; set; }
+
+        public bool IsMovingLeft { get; set; }
+
+        public bool IsMovingBackward { get; set; }
+
+        public bool IsMovingForward { get; set; }
+
+        #endregion
 
         #region Unmanaged structure
 
@@ -40,34 +84,65 @@ namespace ffxivlib
 
         #region Helper methods
 
+        /// <summary>
+        /// Start moving to the right.
+        /// </summary>
         public void MoveRight()
         {
-            throw new NotImplementedException();
+            this.Modify("IsMovingRight", true);
         }
 
+        /// <summary>
+        /// Start moving to the left.
+        /// </summary>
         public void MoveLeft()
         {
-            throw new NotImplementedException();
+            this.Modify("IsMovingLeft", true);
         }
 
+        /// <summary>
+        /// Start moving forward.
+        /// </summary>
         public void MoveForward()
         {
-            throw new NotImplementedException();
+            this.Modify("IsMovingForward", true);
         }
 
+        /// <summary>
+        /// Start moving backward.
+        /// </summary>
         public void MoveBackward()
         {
-            throw new NotImplementedException();
+            this.Modify("IsMovingBackward", true);
         }
 
+        /// <summary>
+        /// Start heading left.
+        /// </summary>
         public void HeadLeft()
         {
-            throw new NotImplementedException();
+            this.Modify("IsHeadingLeft", true);
         }
 
+        /// <summary>
+        /// Start heading right.
+        /// </summary>
         public void HeadRight()
         {
-            throw new NotImplementedException();
+            this.Modify("IsHeadingRight", true);
+        }
+
+        /// <summary>
+        /// Stop any movement.
+        /// </summary>
+        public void StopMoving()
+        {
+            this.Modify("IsMovingRight", false);
+            this.Modify("IsMovingLeft", false);
+            this.Modify("IsMovingForward", false);
+            this.Modify("IsMovingBackward", false);
+            this.Modify("IsHeadingLeft", false);
+            this.Modify("IsHeadingRight", false);
         }
 
         #endregion
