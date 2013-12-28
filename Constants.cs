@@ -70,6 +70,15 @@ public static class Constants
         0x4
     };
 
+    internal static readonly List<int> ACTIONPTR = new List<int>
+    {
+        0x119C3A0,
+        0x7A8,
+        0xC48,
+        0x20,
+        0x14
+    };
+
     internal static readonly List<int> MOVEMENTPTR = new List<int>
     {
         0x790954,
