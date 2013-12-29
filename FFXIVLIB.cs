@@ -7,7 +7,7 @@ namespace ffxivlib
     {
         #region Fields
 
-        private readonly Int32 ffxiv_pid;
+        public readonly Int32 Pid;
         private readonly MemoryReader _mr;
         internal readonly SendKeyInput Ski;
         private readonly SigScanner _ss;
@@ -36,9 +36,9 @@ namespace ffxivlib
                     ffxiv_process = p[0];
                 }
 
-            ffxiv_pid = ffxiv_process.Id;
+            Pid = ffxiv_process.Id;
             _mr = MemoryReader.SetInstance(ffxiv_process);
-            _ss = new SigScanner(ffxiv_pid, true);
+            _ss = new SigScanner(Pid, true);
             Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
         }
 
