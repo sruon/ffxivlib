@@ -93,7 +93,7 @@ namespace ffxivlib
 
         public COMBATSTATUS CombatStatus { get; set; }
 
-        public BUFF[] Buffs { get; set; }
+        public Buff.BUFFINFO[] _Buffs { get; set; }
 
         public bool IsCasting { get; set; }
 
@@ -106,6 +106,19 @@ namespace ffxivlib
         #endregion
 
         #region Extra properties
+
+        public List<Buff> Buffs
+        {
+            get
+            {
+                var BuffList = new List<Buff>();
+                foreach (Buff.BUFFINFO buff in _Buffs)
+                {
+                    BuffList.Add(new Buff(buff, IntPtr.Zero));
+                }
+                return BuffList;
+            }
+        }
 
         public int CastingPercentage
         {
@@ -167,7 +180,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E58)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E59)] public SEX Sex;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public COMBATSTATUS CombatStatus;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public Buff.BUFFINFO[] _Buffs;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x3170)] public bool IsCasting;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3174)] public short CastingSpellId;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x31A4)] public float CastingProgress;

@@ -257,12 +257,12 @@ namespace ffxivlib
         /// Retrieves Buff name corresponding to ID in BUFF structure
         /// </summary>
         /// <returns>Buff Name</returns>
-        public static string GetBuffName(BUFF item)
+        public static string GetBuffName(Buff item)
         {
             return
                 RunLinqQuery(
                     string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER,
-                        Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", item.BuffID);
+                        Constants.ResourceParser.BUFF_FILE), "Buff", "id", "name", item.Id);
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace ffxivlib
@@ -39,13 +40,30 @@ namespace ffxivlib
 
         public short MaxGP { get; set; }
 
-        public BUFF[] Buffs { get; set; }
+        public Buff.BUFFINFO[] _Buffs { get; set; }
 
         public float X { get; set; }
 
         public float Z { get; set; }
 
         public float Y { get; set; }
+
+        #endregion
+
+        #region Extra properties
+
+        public List<Buff> Buffs
+        {
+            get
+            {
+                var BuffList = new List<Buff>();
+                foreach (Buff.BUFFINFO buff in _Buffs)
+                {
+                    BuffList.Add(new Buff(buff, IntPtr.Zero));
+                }
+                return BuffList;
+            }
+        }
 
         #endregion
 
@@ -65,7 +83,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x6C)] public int MaxHP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x70)] public short CurrentMP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x72)] public short MaxMP;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x80)] public BUFF[] Buffs;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x80)] public Buff.BUFFINFO[] _Buffs;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x39F)] public byte Padding;
         };
 
@@ -77,7 +95,7 @@ namespace ffxivlib
         #region Public methods
 
         /// <summary>
-        /// Deprecated, use getPartyMemberById
+        ///     Deprecated, use getPartyMemberById
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
