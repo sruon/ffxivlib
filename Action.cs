@@ -3,11 +3,11 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-    public class Action : BaseObject<Action.ACTION>
+    public class Action : BaseObject<Action.ACTIONINFO>
     {
         #region Constructor
 
-        public Action(ACTION structure, IntPtr address)
+        public Action(ACTIONINFO structure, IntPtr address)
             : base(structure, address)
         {
             Initialize();
@@ -38,7 +38,7 @@ namespace ffxivlib
         #region Unmanaged structure
 
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
-        public struct ACTION
+        public struct ACTIONINFO
         {
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x4)] public int Unk_1;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public int Unk_2;
