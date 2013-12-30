@@ -47,6 +47,7 @@
     <Compile Include="Chatlog.cs" />
     <Compile Include="ActionList.cs" />
     <Compile Include="Action.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="Movement.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="Enums.cs" />

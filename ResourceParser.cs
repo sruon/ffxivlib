@@ -213,13 +213,13 @@ namespace ffxivlib
         /// </summary>
         /// <param name="item">Item structure</param>
         /// <returns>Item Name</returns>
-        public static string GetItemName(Inventory.ITEM item)
+        public static string GetItemName(Item item)
         {
             return
                 RunLinqQuery(
                     string.Format("{0}/{1}", Constants.ResourceParser.RESOURCES_FOLDER,
                         Constants.ResourceParser.ITEM_FILE), "Item", "Key",
-                    "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (int) item.ItemID);
+                    "UIName_" + Constants.ResourceParser.RESOURCES_LANGUAGE, (int) item.Id);
         }
 
         /// <summary>
