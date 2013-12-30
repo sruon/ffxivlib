@@ -163,7 +163,7 @@ namespace ResourcesDumper
             s.Serialize("Buff.xml", buffsList, "Buff");
         }
 
-        static void DumpSqlite(string filename)
+ /*       static void DumpSqlite(string filename)
         {
             Serializer s = new Serializer();
             try
@@ -195,8 +195,8 @@ namespace ResourcesDumper
                 error += fail.Message + "\n\n";
             }
 
-
-        }
+        
+        }*/
         static void Main(string[] args)
         {
             Serializer s = new Serializer();
