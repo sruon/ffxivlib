@@ -19,7 +19,7 @@ namespace ffxivlib
 
         /// <summary>
         /// Instantiates a FFXIVLIB instance.
-        /// PID is optionnal but required if multiple FFXIV process are running.
+        /// PID is optional but required if multiple FFXIV process are running.
         /// </summary>
         /// <param name="pid">FFXIV PID (optionnal)</param>
         public FFXIVLIB(int pid = 0)
