@@ -20,11 +20,10 @@ namespace DumpInventory
             // ja, fr, de or en. Defaults to en if not set
             Constants.ResourceParser.RESOURCES_LANGUAGE = "en";
             FFXIVLIB instance = new FFXIVLIB();
-            List<Inventory.ITEM> items = instance.GetSelfInventory();
             // Just timing how long it takes
             Stopwatch objSw = new Stopwatch();
             objSw.Start();
-            foreach (Inventory.ITEM item in items)
+            foreach (Item item in instance.GetSelfInventory())
                 {
                     Console.WriteLine("{0} x{1}", ResourceParser.GetItemName(item), item.Amount);
                 }
@@ -34,7 +33,7 @@ namespace DumpInventory
             objSw.Reset();
             objSw.Start();
             // In cache values
-            foreach (Inventory.ITEM item in items)
+            foreach (Item item in instance.GetSelfInventory())
             {
                 Console.WriteLine("{0} x{1}", ResourceParser.GetItemName(item), item.Amount);
             }

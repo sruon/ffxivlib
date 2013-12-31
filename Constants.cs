@@ -6,6 +6,29 @@ public static class Constants
 // ReSharper disable InconsistentNaming
     internal const string PROCESS_NAME = "ffxiv";
 
+    #region Widget related pointer paths
+
+    // Lobby widget
+    internal static readonly List<int> SERVERPTR = new List<int>
+    {
+        0x1073A10,
+        0x34,
+        0x4F4,
+        0x5A6
+    };
+
+    // Action bar widget
+    internal static readonly List<int> ACTIONPTR = new List<int>
+    {
+        0x119C3A0,
+        0x7A8,
+        0xC48,
+        0x20,
+        0x14
+    };
+
+    #endregion
+
     #region Pointer paths
     // Simple representation of pointer paths, do not add base module, last member will be expected to be the offset so may have to add extra 0 at the end if you dont need it
     internal static readonly List<int> PCPTR = new List<int>
@@ -44,19 +67,12 @@ public static class Constants
             0x18,
             0x204
         };
+
     internal static readonly List<int> INVENTORYPTR = new List<int>
         {
             0x1194C48,
             0
         };
-
-    internal static readonly List<int> SERVERPTR = new List<int>
-    {
-        0x1073A10,
-        0x34,
-        0x4F4,
-        0x5A6
-    };
 
     internal static readonly List<int> ZONEPTR = new List<int>
     {
@@ -68,15 +84,6 @@ public static class Constants
     {
         0x8AF5C,
         0x4
-    };
-
-    internal static readonly List<int> ACTIONPTR = new List<int>
-    {
-        0x119C3A0,
-        0x7A8,
-        0xC48,
-        0x20,
-        0x14
     };
 
     internal static readonly List<int> MOVEMENTPTR = new List<int>

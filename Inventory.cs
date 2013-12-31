@@ -26,42 +26,14 @@ namespace ffxivlib
         #region Unmanaged structure
 
         /// <summary>
-        /// Structure representing an item
+        ///     Structure holding all the pointers to different subarrays.
         /// </summary>
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
-        public struct ITEM
+        public struct INVENTORY
         {
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x8)] public uint ItemID;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0C)] public uint Amount;
-
-            /// <summary>
-            /// 10000 = fully spiritbond
-            /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x10)] public short Spiritbond;
-
-            /// <summary>
-            /// 30000 = fully repaired
-            /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x12)] public short Durability;
-
-            /// <summary>
-            /// Related to materia slots, but no idea what.
-            /// </summary>
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x18)] public int Materia_unk1;
-
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x1E)] public byte Materia_unk2;
-
-            /// <summary>
-            /// I am deeply confused about this one, if item is related to a quest this is equal to the QuestID.
-            /// BUT, if you accept a quest, there will still be instances in the keyitem container of said questid with empty items. Why SE?
-            /// </summary>
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x3C)] public int QuestID;
-
-            /// <summary>
-            /// Padding to make sure our struct are the same size as XIV ones, allows me to use Marshal.SizeOf
-            /// </summary>
-            [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3E)] public short Padding;
-        };
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 56)] [FieldOffset(0x0)] public INVENTORYCONTAINER[]
+                Containers;
+        }
 
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct INVENTORYCONTAINER
@@ -72,29 +44,17 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x14)] public int Padding;
         }
 
-        /// <summary>
-        /// Structure holding all the pointers to different subarrays.
-        /// </summary>
-        [StructLayout(LayoutKind.Explicit, Pack = 1)]
-        public struct INVENTORY
-        {
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 56)] [FieldOffset(0x0)] public INVENTORYCONTAINER[]
-                Containers;
-        }
-
         #endregion
 
         #region InventoryBuilder
 
         /// <summary>
-        /// Basic container for our list of items.
+        ///     Basic container for our list of items.
         /// </summary>
         public class InventoryBuilder
         {
-            public List<ITEM> Items { get; set; }
-
             /// <summary>
-            /// Constructor building the list of items out of initial pointer and count.
+            ///     Constructor building the list of items out of initial pointer and count.
             /// </summary>
             /// <param name="pointer">Subarray pointer</param>
             /// <param name="count">Subarray max elements</param>
@@ -102,29 +62,32 @@ namespace ffxivlib
             internal InventoryBuilder(IntPtr pointer, int count, bool clean)
             {
                 MemoryReader mr = MemoryReader.GetInstance();
-                Items = new List<ITEM>();
+                Items = new List<Item>();
                 for (int i = 0; i < count; i++)
-                    {
-                        var currentItem = mr.CreateStructFromAddress<ITEM>(pointer + (i*Marshal.SizeOf(typeof (ITEM))));
-                        if (currentItem.ItemID != 0 || currentItem.QuestID != 0 || !clean)
-                            Items.Add(currentItem);
-                    }
+                {
+                    IntPtr address = pointer + (i*Marshal.SizeOf(typeof (Item.ITEMINFO)));
+                    var currentItem = new Item(mr.CreateStructFromAddress<Item.ITEMINFO>(address), address);
+                    if (currentItem.Id != 0 || currentItem.QuestID != 0 || !clean)
+                        Items.Add(currentItem);
+                }
             }
 
             internal InventoryBuilder()
             {
-                var mr = MemoryReader.GetInstance();
+                MemoryReader mr = MemoryReader.GetInstance();
             }
 
+            public List<Item> Items { get; set; }
+
             /// <summary>
-            /// Merges two lists
+            ///     Merges two lists
             /// </summary>
             /// <param name="ic1">First list</param>
             /// <param name="ic2">Second list</param>
             /// <returns>New merged list</returns>
             public static InventoryBuilder operator +(InventoryBuilder ic1, InventoryBuilder ic2)
             {
-                var ic = new InventoryBuilder {Items = new List<ITEM>()};
+                var ic = new InventoryBuilder {Items = new List<Item>()};
                 if (ic1.Items != null)
                     ic.Items.AddRange(ic1.Items);
                 if (ic2.Items != null)
@@ -136,9 +99,9 @@ namespace ffxivlib
         #endregion
 
         /// <summary>
-        /// Position of the specific inventory in the master array
+        ///     Position of the specific inventory in the master array
         /// </summary>
-        private enum Type : int
+        private enum Type
         {
             INVENTORY_1 = 0,
             INVENTORY_2 = 1,
@@ -166,7 +129,7 @@ namespace ffxivlib
         #region Private methods
 
         /// <summary>
-        /// Builds our list out of our pointers.
+        ///     Builds our list out of our pointers.
         /// </summary>
         /// <param name="ptr">First pointer to subarray</param>
         /// <param name="count">Number of pointers to process</param>
@@ -179,7 +142,7 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// Builds our list out of our pointers.
+        ///     Builds our list out of our pointers.
         /// </summary>
         /// <param name="ptr">First pointer to subarray</param>
         /// <param name="count">Number of pointers to process</param>
@@ -189,56 +152,65 @@ namespace ffxivlib
         {
             var ib = new InventoryBuilder();
             foreach (INVENTORYCONTAINER container in inventorycontainer)
-                {
-                    var ic = new InventoryBuilder((IntPtr) container.Pointer, container.Count, cleaned);
-                    ib = ib + ic;
-                }
+            {
+                var ic = new InventoryBuilder((IntPtr) container.Pointer, container.Count, cleaned);
+                ib = ib + ic;
+            }
             return ib;
         }
 
-        internal List<ITEM> GetSelfInventory()
+        internal List<Item> GetSelfInventory()
         {
             InventoryBuilder ic = BuildSubList(true, Structure.Containers[(int) Type.INVENTORY_1],
-                Structure.Containers[(int) Type.INVENTORY_2], Structure.Containers[(int) Type.INVENTORY_2],
-                Structure.Containers[(int) Type.INVENTORY_3], Structure.Containers[(int) Type.INVENTORY_4],
-                Structure.Containers[(int) Type.CRYSTALS], Structure.Containers[(int) Type.EXTRA_EQ],
-                Structure.Containers[(int) Type.CURRENT_EQ], Structure.Containers[(int) Type.QUESTS_KI]
+                                               Structure.Containers[(int) Type.INVENTORY_2],
+                                               Structure.Containers[(int) Type.INVENTORY_2],
+                                               Structure.Containers[(int) Type.INVENTORY_3],
+                                               Structure.Containers[(int) Type.INVENTORY_4],
+                                               Structure.Containers[(int) Type.CRYSTALS],
+                                               Structure.Containers[(int) Type.EXTRA_EQ],
+                                               Structure.Containers[(int) Type.CURRENT_EQ],
+                                               Structure.Containers[(int) Type.QUESTS_KI]
                 );
             return ic.Items;
         }
 
-        internal List<ITEM> GetCurrentEquipment()
+        internal List<Item> GetCurrentEquipment()
         {
             return BuildSubList(Structure.Containers[(int) Type.CURRENT_EQ], false).Items;
         }
 
-        internal List<ITEM> GetQuests()
+        internal List<Item> GetQuests()
         {
             return BuildSubList(Structure.Containers[(int) Type.QUESTS_KI], false).Items;
         }
 
-        internal List<ITEM> GetRetainerInventory()
+        internal List<Item> GetRetainerInventory()
         {
             throw new NotImplementedException();
         }
 
-        internal List<ITEM> GetArmoryChest()
+        internal List<Item> GetArmoryChest()
         {
             InventoryBuilder ic = BuildSubList(true, Structure.Containers[(int) Type.AC_MH],
-                Structure.Containers[(int) Type.AC_OH], Structure.Containers[(int) Type.AC_HEAD],
-                Structure.Containers[(int) Type.AC_BODY], Structure.Containers[(int) Type.AC_HANDS],
-                Structure.Containers[(int) Type.AC_BELT], Structure.Containers[(int) Type.AC_LEGS],
-                Structure.Containers[(int) Type.AC_FEET], Structure.Containers[(int) Type.AC_EARRINGS],
-                Structure.Containers[(int) Type.AC_NECK], Structure.Containers[(int) Type.AC_RINGS],
-                Structure.Containers[(int) Type.AC_WRISTS], Structure.Containers[(int) Type.AC_SOULS]);
+                                               Structure.Containers[(int) Type.AC_OH],
+                                               Structure.Containers[(int) Type.AC_HEAD],
+                                               Structure.Containers[(int) Type.AC_BODY],
+                                               Structure.Containers[(int) Type.AC_HANDS],
+                                               Structure.Containers[(int) Type.AC_BELT],
+                                               Structure.Containers[(int) Type.AC_LEGS],
+                                               Structure.Containers[(int) Type.AC_FEET],
+                                               Structure.Containers[(int) Type.AC_EARRINGS],
+                                               Structure.Containers[(int) Type.AC_NECK],
+                                               Structure.Containers[(int) Type.AC_RINGS],
+                                               Structure.Containers[(int) Type.AC_WRISTS],
+                                               Structure.Containers[(int) Type.AC_SOULS]);
             return ic.Items;
         }
 
-        internal List<ITEM> GetCompanyInventory()
+        internal List<Item> GetCompanyInventory()
         {
             throw new NotImplementedException();
         }
-
 
         #endregion
     }
@@ -248,11 +220,11 @@ namespace ffxivlib
         #region Public methods
 
         /// <summary>
-        /// This returns your inventory, extra inventory (gil, crystals, tomes, seals), 
-        /// key items, calamity salvager and currently equipped items
+        ///     This returns your inventory, extra inventory (gil, crystals, tomes, seals),
+        ///     key items, calamity salvager and currently equipped items
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> GetSelfInventory()
+        public List<Item> GetSelfInventory()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
@@ -260,10 +232,10 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// This returns your currently equipped items. See EQUIP_POS enum.
+        ///     This returns your currently equipped items. See EQUIP_POS enum.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> GetCurrentEquipment()
+        public List<Item> GetCurrentEquipment()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
@@ -271,11 +243,11 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale.
-        /// This only works while checking a retainer.
+        ///     This returns your retainer inventory, extra inventory (gil, crystals) and what is up for sale.
+        ///     This only works while checking a retainer.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> GetRetainerInventory()
+        public List<Item> GetRetainerInventory()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
@@ -283,10 +255,10 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// This returns your whole Armory Chest.
+        ///     This returns your whole Armory Chest.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> GetArmoryChest()
+        public List<Item> GetArmoryChest()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
@@ -294,11 +266,11 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// This returns your Free Company inventory, extra inventory (currency, crystals)
-        /// This only works while checking the Free Company chest.
+        ///     This returns your Free Company inventory, extra inventory (currency, crystals)
+        ///     This only works while checking the Free Company chest.
         /// </summary>
         /// <returns>List of items</returns>
-        public List<Inventory.ITEM> GetCompanyInventory()
+        public List<Item> GetCompanyInventory()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
@@ -306,22 +278,22 @@ namespace ffxivlib
         }
 
         /// <summary>
-        /// Retrieves current quests
+        ///     Retrieves current quests
         /// </summary>
         /// <returns>List of quests ID</returns>
         public IEnumerable<int> GetQuests()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.INVENTORYPTR);
             var i = new Inventory(_mr.CreateStructFromAddress<Inventory.INVENTORY>(pointer), pointer);
-            var quests = i.GetQuests();
-            List<int> questsIds = new List<int>();
-            foreach (Inventory.ITEM quest in quests)
+            List<Item> quests = i.GetQuests();
+            var questsIds = new List<int>();
+            foreach (Item quest in quests)
+            {
+                if (quest.QuestID != 0) // Key items have ID 0
                 {
-                    if (quest.QuestID != 0) // Key items have ID 0
-                        {
-                            questsIds.Add(quest.QuestID);
-                        }
+                    questsIds.Add(quest.QuestID);
                 }
+            }
             return questsIds.Distinct();
         }
 

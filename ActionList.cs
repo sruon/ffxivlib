@@ -14,7 +14,7 @@ namespace ffxivlib
 
         #region Properties
 
-        public Action.ACTION[] Actions { get; set; }
+        public Action.ACTIONINFO[] Actions { get; set; }
 
         #endregion
 
@@ -23,7 +23,7 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct ACTIONLIST
         {
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] [FieldOffset(0x0)] public Action.ACTION[] Actions;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] [FieldOffset(0x0)] public Action.ACTIONINFO[] Actions;
         };
 
         #endregion
@@ -37,11 +37,11 @@ namespace ffxivlib
             IntPtr pointer = _mr.ResolvePointerPath(Constants.ACTIONPTR);
             var i = new ActionList(_mr.CreateStructFromAddress<ActionList.ACTIONLIST>(pointer), pointer);
             int idx = 0;
-            foreach (Action.ACTION action in i.Actions)
+            foreach (Action.ACTIONINFO action in i.Actions)
             {
                 ActionListRet.Add(
                     new Action(action,
-                        i.Address + (idx*Marshal.SizeOf(typeof (Action.ACTION)))
+                        i.Address + (idx*Marshal.SizeOf(typeof (Action.ACTIONINFO)))
                         ));
                 idx++;
             }

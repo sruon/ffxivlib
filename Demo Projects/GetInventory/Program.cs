@@ -9,7 +9,7 @@ namespace GetInventory
         {
             FFXIVLIB instance = new FFXIVLIB();
 // ReSharper disable once NotAccessedVariable
-            List<Inventory.ITEM> ic = instance.GetSelfInventory();
+            List<Item> ic = instance.GetSelfInventory();
 // ReSharper disable RedundantAssignment
             ic = instance.GetArmoryChest();
             ic = instance.GetCompanyInventory();

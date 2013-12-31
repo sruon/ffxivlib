@@ -67,12 +67,12 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-                    Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.PreviousTarget);
-                    if (!Equals(en, default(Entity.ENTITYINFO)))
-                    {
-                        Entity e = new Entity(en, (IntPtr)t.PreviousTarget);
-                        return e;
-                    }
+            var en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.PreviousTarget);
+            if (!Equals(en, default(Entity.ENTITYINFO)))
+            {
+                var e = new Entity(en, (IntPtr) t.PreviousTarget);
+                return e;
+            }
             return null;
         }
 
@@ -84,10 +84,10 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.MouseoverTarget);
+            var en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.MouseoverTarget);
             if (!Equals(en, default(Entity.ENTITYINFO)))
             {
-                Entity e = new Entity(en, (IntPtr)t.MouseoverTarget);
+                var e = new Entity(en, (IntPtr) t.MouseoverTarget);
                 return e;
             }
             return null;
@@ -101,10 +101,10 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.CurrentTarget);
+            var en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.CurrentTarget);
             if (!Equals(en, default(Entity.ENTITYINFO)))
             {
-                Entity e = new Entity(en, (IntPtr)t.CurrentTarget);
+                var e = new Entity(en, (IntPtr) t.CurrentTarget);
                 return e;
             }
             return null;
@@ -118,10 +118,10 @@ namespace ffxivlib
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.TARGETPTR);
             var t = new Target(_mr.CreateStructFromAddress<Target.TARGET>(pointer), pointer);
-            Entity.ENTITYINFO en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr)t.FocusTarget);
+            var en = _mr.CreateStructFromAddress<Entity.ENTITYINFO>((IntPtr) t.FocusTarget);
             if (!Equals(en, default(Entity.ENTITYINFO)))
             {
-                Entity e = new Entity(en, (IntPtr)t.FocusTarget);
+                var e = new Entity(en, (IntPtr) t.FocusTarget);
                 return e;
             }
             return null;

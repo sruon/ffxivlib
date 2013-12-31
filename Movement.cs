@@ -153,8 +153,8 @@ namespace ffxivlib
         public Movement GetMovement()
         {
             IntPtr pointer = _mr.ResolvePointerPath(Constants.MOVEMENTPTR);
-            var MovementInfo = new Movement(_mr.CreateStructFromAddress<Movement.MOVEMENTINFO>(pointer), pointer);
-            return MovementInfo;
+            var movementInfo = new Movement(_mr.CreateStructFromAddress<Movement.MOVEMENTINFO>(pointer), pointer);
+            return movementInfo;
         }
     }
 }

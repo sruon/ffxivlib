@@ -7,6 +7,13 @@ namespace ffxivlib
 {
     internal class Library
     {
+        /// <summary>
+        /// Retrieves a byte array (needle) in another byte array (haystack)
+        /// </summary>
+        /// <param name="haystack">Byte array to search in</param>
+        /// <param name="needle">Byte array to search for</param>
+        /// <param name="start">Optionnal : Position to start from</param>
+        /// <returns>Position of the needle in the haystack or -1</returns>
         internal static int ByteSearch(byte[] haystack, byte[] needle, int start = 0)
         {
             int found = -1;
