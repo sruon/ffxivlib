@@ -1,6 +1,8 @@
 FFXIVLIB
 ========
 FFXIVLIB is an open-source C# library allowing you to create easily 3rd party tools for FINAL FANTASY XIV MMORPG
+
+![Build](https://travis-ci.org/sruon/ffxivlib.png)
 Features
 ========
 - Player support
