@@ -12,16 +12,11 @@ namespace ffxivlib
     {
         #region Constructor
 
-        internal MovementHelper(Entity player,
-                                SendKeyInput.VKKeys leftKey = SendKeyInput.VKKeys.KEY_A,
-                                SendKeyInput.VKKeys rightKey = SendKeyInput.VKKeys.KEY_D,
-                                SendKeyInput.VKKeys forwardKey = SendKeyInput.VKKeys.KEY_W)
+		internal MovementHelper(Entity player, Movement mov)
         {
             _player = player;
-            _leftKey = leftKey;
-            _rightKey = rightKey;
-            _forwardKey = forwardKey;
             _pause = false;
+			_mov = mov;
         }
 
         #endregion
@@ -31,13 +26,9 @@ namespace ffxivlib
         private volatile bool _stop;
         private volatile bool _pause;
         private readonly Entity _player;
-        private readonly SendKeyInput _ski = SendKeyInput.GetInstance();
         private List<Coords> _coordsList = new List<Coords>();
         private readonly Serializer _serializer = new Serializer();
-        private readonly SendKeyInput.VKKeys _leftKey;
-        private readonly SendKeyInput.VKKeys _rightKey;
-        private readonly SendKeyInput.VKKeys _forwardKey;
-
+		private Movement _mov;
         #endregion
 
         #region Coords
@@ -134,21 +125,23 @@ namespace ffxivlib
         /// <param name="tHeading">Target heading</param>
         /// <param name="pHeading">Player heading</param>
         /// <returns>Key to press (left or right)</returns>
-        private SendKeyInput.VKKeys WhereToHeadto(double tHeading, double pHeading)
+		private System.Action WhereToHeadto(double tHeading, double pHeading)
         {
             if (pHeading < tHeading)
                 {
-                    if (tHeading - pHeading < 180)
-                        return _leftKey;
-                    return _rightKey;
+				if (tHeading - pHeading < 180) {
+					return _mov.MoveLeft;
+				}
+					return _mov.MoveRight;
                 }
             if (pHeading > tHeading)
                 {
-                    if (pHeading - tHeading < 180)
-                        return _rightKey;
-                    return _leftKey;
+				if (pHeading - tHeading < 180) {
+					return _mov.MoveRight;
+				}
+				return _mov.MoveLeft;
                 }
-            return _rightKey;
+			return _mov.MoveRight;
         }
 
         
@@ -230,8 +223,8 @@ namespace ffxivlib
                     double herror = HeadingError(playerHeading, heading);
                     while (herror > headingTolerance)
                     {
-                        SendKeyInput.VKKeys key = WhereToHeadto(heading, playerHeading);
-                        _ski.SendKeyPress(key);
+						System.Action action = WhereToHeadto(heading, playerHeading);
+						action();
                         _player.Refresh();
                         heading = HeadingTo(x, y);
                         playerHeading = XIVRadianToDegree(_player.Structure.Heading);
@@ -240,7 +233,7 @@ namespace ffxivlib
                     if (!isRunning)
                     {
                         isRunning = true;
-                        _ski.SendKeyPress(_forwardKey, false);
+						_mov.MoveForward();
                     }
                 }
                 else
@@ -248,7 +241,7 @@ namespace ffxivlib
                     Thread.Sleep(500);
                 }
             }
-            _ski.SendKeyPress(_forwardKey);
+			_mov.StopMoving();
         }
 
         /// <summary>
@@ -311,11 +304,9 @@ namespace ffxivlib
         /// <param name="rightKey">Right key (default: D)</param>
         /// <param name="forwardKey">Forward key (default: W)</param>
         /// <returns>MovementHelper instance</returns>
-        public MovementHelper GetMovementHelper(SendKeyInput.VKKeys leftKey = SendKeyInput.VKKeys.KEY_A,
-                                                SendKeyInput.VKKeys rightKey = SendKeyInput.VKKeys.KEY_D,
-                                                SendKeyInput.VKKeys forwardKey = SendKeyInput.VKKeys.KEY_W)
+        public MovementHelper GetMovementHelper()
         {
-            return new MovementHelper(GetEntityInfo(0), leftKey, rightKey, forwardKey);
+			return new MovementHelper(GetEntityInfo(0), GetMovement());
         }
 
         #endregion
