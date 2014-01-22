@@ -17,12 +17,6 @@ namespace ffxivlib
 
         #endregion
 
-        #region Fields
-
-        private readonly MemoryReader _mr = MemoryReader.GetInstance();
-
-        #endregion
-
         #region Unmanaged structure
 
         /// <summary>
@@ -74,7 +68,6 @@ namespace ffxivlib
 
             internal InventoryBuilder()
             {
-                MemoryReader mr = MemoryReader.GetInstance();
             }
 
             public List<Item> Items { get; set; }
