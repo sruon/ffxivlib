@@ -96,9 +96,9 @@ public static class Constants
     #region Array size
 
     internal const uint CHATLOG_ARRAY_SIZE = 1000;
-    internal const uint ENTITY_ARRAY_SIZE = 100;
-    internal const uint PARTY_MEMBER_ARRAY_SIZE = 8;
-    internal const uint GATHERING_ARRAY_SIZE = 40;
+    public const uint ENTITY_ARRAY_SIZE = 100;
+    public const uint PARTY_MEMBER_ARRAY_SIZE = 8;
+    public const uint GATHERING_ARRAY_SIZE = 40;
 
     #endregion
 
