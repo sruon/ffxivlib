@@ -20,6 +20,9 @@ namespace ffxivlib
         /// <returns>Yields next element</returns>
         private static IEnumerable<XElement> StreamElements(string fileName, string elementName)
         {
+            if (!File.Exists(fileName))
+                yield break;
+
             using (var sr = new StreamReader(fileName, Encoding.GetEncoding("UTF-8")))
                 {
                     using (var rdr = XmlTextReader.Create(sr))
