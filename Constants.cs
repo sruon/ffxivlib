@@ -63,7 +63,7 @@ public static class Constants
 
     internal static readonly List<int> CHATPTR = new List<int>
         {
-            0x106EB98,
+            0xE8C6A8,
             0x18,
             0x204
         };
