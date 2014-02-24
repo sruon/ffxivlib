@@ -57,7 +57,7 @@ public static class Constants
 
     internal static readonly List<int> PLAYERPTR = new List<int>
         {
-            0x7CF80,
+            0xED7C0,
             0x0
         };
 
