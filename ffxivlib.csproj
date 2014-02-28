@@ -67,6 +67,8 @@
     <Compile Include="Serializer.cs" />
     <Compile Include="SigScanner.cs" />
     <Compile Include="Target.cs" />
+    <Compile Include="KeyBind.cs" />
+    <Compile Include="KeyBindList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
