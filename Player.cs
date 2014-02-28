@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Linq;
 
 namespace ffxivlib
 {
@@ -14,15 +15,18 @@ namespace ffxivlib
 
         #region Constructor
 
-        public Player(PLAYERINFO structure, IntPtr address)
+		public Player(PLAYERINFO structure, IntPtr address)
             : base(structure, address)
         {
             Initialize();
+			Name = Encoding.Default.GetString(new ArraySegment<byte> (structure.MarkName, 1, 32).ToArray());
         }
 
         #endregion
 
         #region Properties
+
+		public string Name;
 
         public int Zone
         {
@@ -287,7 +291,8 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct PLAYERINFO
         {
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB Job;
+			[MarshalAs(UnmanagedType.ByValArray, SizeConst=33)] [FieldOffset(0x00)] public byte[] MarkName;
+			[MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB Job;
 
             #region Job Levels
 
@@ -458,8 +463,9 @@ namespace ffxivlib
         /// <returns>Player object</returns>
         public Player GetPlayerInfo()
         {
-            IntPtr pointer = _mr.ResolvePointerPath(Constants.PLAYERPTR);
-            var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
+			//IntPtr pointer = _mr.ResolvePointerPath(Constants.PLAYERPTR);
+			IntPtr pointer = _mr.ResolveAddress(Constants.PLAYERADDR);
+			var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
             return p;
         }
 

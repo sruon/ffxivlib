@@ -84,7 +84,7 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x70)] public short CurrentMP;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x72)] public short MaxMP;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)] [FieldOffset(0x80)] public Buff.BUFFINFO[] _Buffs;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x39F)] public byte Padding;
+			[MarshalAs(UnmanagedType.I1)] [FieldOffset(0x21F)] public byte Padding;
         };
 
         #endregion
@@ -104,6 +104,13 @@ namespace ffxivlib
             return GetPartyMemberById(id);
         }
 
+		public byte GetPartyMemberCount()
+		{
+			int bytesRead;
+			byte count = _mr.ReadAdress (Constants.PARTYSIZELOC, sizeof(byte), out bytesRead)[0];
+			return count;
+		}
+
         /// <summary>
         ///     This function retrieves a PartyMember by its id in the PartyMember array
         ///     The result might be empty, there is no sanity check at the time
@@ -116,7 +123,9 @@ namespace ffxivlib
             if (id >= Constants.PARTY_MEMBER_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
             IntPtr pointer = _mr.ResolvePointerPath(Constants.PARTYPTR);
-            pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof (PartyMember.PARTYMEMBERINFO))*id);
+			pointer = _ss.SigScan (Constants.PARTYPTRSIG);
+			pointer = IntPtr.Add (pointer, Constants.PARTYPTRSIG.Length);
+			pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof (PartyMember.PARTYMEMBERINFO))*id);
             var p = new PartyMember(_mr.CreateStructFromAddress<PartyMember.PARTYMEMBERINFO>(pointer), pointer);
             return p;
         }
