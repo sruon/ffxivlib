@@ -25,6 +25,7 @@ public static class Constants
 		0x14
 	};
 
+	// The actual hotbar
 	internal static readonly List<int> HOTBARPTR = new List<int>
 	{
 		0xE93560,
@@ -34,14 +35,7 @@ public static class Constants
 		0x48
 	};
 
-	internal static readonly List<int> HOTBARBINDPTR = new List<int>
-	{
-		0x10F7660,
-		0x334,
-		0x10,
-		0x64C,
-		0x20
-	};
+	internal static readonly int HOTBAROFFSET = 0x1640;
 
 	#endregion
 
