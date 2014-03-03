@@ -39,7 +39,7 @@ namespace ffxivlib
             Pid = ffxiv_process.Id;
             _mr = MemoryReader.SetInstance(ffxiv_process);
             _ss = new SigScanner(Pid, true);
-            Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
+			Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
         }
 
         #endregion

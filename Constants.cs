@@ -53,7 +53,15 @@ public static class Constants
 		0x0
 	};
 
-	internal static readonly IntPtr PARTYSIZELOC = IntPtr.Zero + 0x195E59C;
+	internal static readonly List<int> PARTYSIZEPTR = new List<int>
+	{
+		0xFB1038,
+		0x224,
+		0xD4,
+		0x50,
+		0x8,
+		0x1E8
+	};
 
 	internal static readonly List<int> PARTYPTR = new List<int>
 	{

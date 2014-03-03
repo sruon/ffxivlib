@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.ComponentModel;
 
 namespace ffxivlib
 {
@@ -20,7 +21,8 @@ namespace ffxivlib
         [return: MarshalAs(UnmanagedType.Bool)]
         [DllImport("user32.dll", SetLastError = true)]
         //static extern bool PostMessage (HandleRef hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
-        private static extern bool PostMessage(IntPtr hWnd, uint msg, VKKeys wParam, Int32 lParam);
+		//private static extern bool PostMessage(IntPtr hWnd, uint msg, VKKeys wParam, Int32 lParam);
+		private static extern bool PostMessage (IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
 
         //static extern bool PostMessage (IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
@@ -468,11 +470,11 @@ namespace ffxivlib
         public void SendReturnKey(int delay = 100)
         {
             //
-            PostMessage(_ffxivWindow, WM_KEYDOWN, VKKeys.RETURN,
-                        (Int32) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
+			PostMessage(_ffxivWindow, WM_KEYDOWN, (IntPtr)VKKeys.RETURN,
+				(IntPtr) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
             Thread.Sleep(delay);
-            PostMessage(_ffxivWindow, WM_KEYUP, VKKeys.RETURN,
-                        (Int32) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
+			PostMessage(_ffxivWindow, WM_KEYUP, (IntPtr)VKKeys.RETURN,
+				(IntPtr) (MapVirtualKey((UInt16) VKKeys.RETURN, 0x00) << 16));
         }
 
         /// <summary>
@@ -483,11 +485,11 @@ namespace ffxivlib
         /// <param name="delay">Delay between keydown and keyup (default: 100ms)</param>
         public void SendKeyPress(VKKeys key, bool keyup = true, int delay = 100)
         {
-            PostMessage(_ffxivWindow, WM_KEYDOWN, key, 0);
+			PostMessage(_ffxivWindow, WM_KEYDOWN, (IntPtr)key, IntPtr.Zero);
             if (keyup)
                 {
                     Thread.Sleep(delay);
-                    PostMessage(_ffxivWindow, WM_KEYUP, key, 0);
+				PostMessage(_ffxivWindow, WM_KEYUP, (IntPtr)key, IntPtr.Zero);
                 }
         }
 

@@ -106,10 +106,14 @@ namespace ffxivlib
 
 		public byte GetPartyMemberCount()
 		{
-			int bytesRead;
-			byte count = _mr.ReadAdress (Constants.PARTYSIZELOC, sizeof(byte), out bytesRead)[0];
+			int bytesRead = 0;
+			IntPtr pointer = _mr.ResolvePointerPath (Constants.PARTYSIZEPTR);
+			byte count = _mr.ReadAdress (pointer, 1, out bytesRead)[0];
 			return count;
 		}
+
+		public bool resolvedPartySig = false;
+		private IntPtr resolvedPartyPtr = IntPtr.Zero;
 
         /// <summary>
         ///     This function retrieves a PartyMember by its id in the PartyMember array
@@ -122,9 +126,18 @@ namespace ffxivlib
         {
             if (id >= Constants.PARTY_MEMBER_ARRAY_SIZE)
                 throw new IndexOutOfRangeException();
-            IntPtr pointer = _mr.ResolvePointerPath(Constants.PARTYPTR);
-			pointer = _ss.SigScan (Constants.PARTYPTRSIG);
-			pointer = IntPtr.Add (pointer, Constants.PARTYPTRSIG.Length);
+			//IntPtr pointer = _mr.ResolvePointerPath(Constants.PARTYPTR);
+			IntPtr pointer = IntPtr.Zero;
+			if (!resolvedPartySig)
+			{
+				pointer = _ss.SigScan (Constants.PARTYPTRSIG);
+				pointer = IntPtr.Add (pointer, Constants.PARTYPTRSIG.Length);
+				resolvedPartyPtr = pointer;
+				resolvedPartySig = true;
+			}
+			else
+				pointer = resolvedPartyPtr;
+
 			pointer = IntPtr.Add(pointer, Marshal.SizeOf(typeof (PartyMember.PARTYMEMBERINFO))*id);
             var p = new PartyMember(_mr.CreateStructFromAddress<PartyMember.PARTYMEMBERINFO>(pointer), pointer);
             return p;

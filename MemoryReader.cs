@@ -209,29 +209,19 @@ namespace ffxivlib
 			int count = path.Count;
 			int i = 0;
 
-			#if DEBUG
-			Console.WriteLine ("Attempting to resolve from base address " + currentPtr.ToString() + " with " + count + " offsets");
-			#endif
-
 			foreach (int pointer in path)
 			{
 				if (++i < count)
 				{
 					int readBytes;
 					currentPtr += pointer;
-					#if DEBUG
-					Console.WriteLine("Followed pointer " + pointer + " to offset " + currentPtr.ToString());
-					#endif
+
 					byte[] chunk = ReadAdress(currentPtr, 4, out readBytes);
 					currentPtr = (IntPtr) BitConverter.ToInt32(chunk, 0);
 				}
 				else
 					result = currentPtr + pointer;
 			}
-
-			#if DEBUG
-			Console.WriteLine ("Resolved to " + result.ToString ());
-			#endif
 
 			return result;
 		}
