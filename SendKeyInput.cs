@@ -493,6 +493,14 @@ namespace ffxivlib
                 }
         }
 
+		public void ToggleKeyState(VKKeys key, bool keydown = true)
+		{
+			if (keydown)
+				PostMessage (_ffxivWindow, WM_KEYDOWN, (IntPtr)key, IntPtr.Zero);
+			else
+				PostMessage (_ffxivWindow, WM_KEYUP, (IntPtr)key, IntPtr.Zero);
+		}
+
         public void SetFocus()
         {
             SetFocus(_ffxivWindow);

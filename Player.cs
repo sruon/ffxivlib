@@ -469,6 +469,20 @@ namespace ffxivlib
             return p;
         }
 
+		public bool PlayerInBattle()
+		{
+			IntPtr pointer = _mr.ResolvePointerPath (Constants.PARTYINBATTLEPTR);
+			byte[] value = ReadMemory (pointer, 1);
+			return value [0] == 1;
+		}
+
+		public bool PlayerFollowing()
+		{
+			//IntPtr pointer = _mr.ResolvePointerPath (Constants.PLAYERFOLLOWINGPTR);
+			byte[] value = ReadMemory (IntPtr.Zero + Constants.PLAYERFOLLOWINGADDR, 1);
+			return value[0] == 1;
+		}
+
         #endregion
     }
 }

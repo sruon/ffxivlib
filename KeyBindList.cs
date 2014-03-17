@@ -4,16 +4,22 @@ using System.Runtime.InteropServices;
 
 namespace ffxivlib
 {
-	public class KeyBinds
+	public static class KeyBinds
 	{
-		public KeyBinds ()
+		public static void sendAction(KeyBind bind)
 		{
-		}
+			SendKeyInput instance = SendKeyInput.GetInstance ();
 
-		public bool sendAction(int actionId)
-		{
-
-			return false;
+			SendKeyInput.VKKeys key = (SendKeyInput.VKKeys)bind.keyBindString [0];
+			if (bind.keyBindModifier == "Shift")
+				instance.ToggleKeyState (SendKeyInput.VKKeys.SHIFT, true);
+			if (bind.keyBindModifier == "CTRL")
+				instance.ToggleKeyState (SendKeyInput.VKKeys.CONTROL, true);
+			instance.SendKeyPress (key);
+			if (bind.keyBindModifier == "Shift")
+				instance.ToggleKeyState (SendKeyInput.VKKeys.SHIFT, false);
+			if (bind.keyBindModifier == "CTRL")
+				instance.ToggleKeyState (SendKeyInput.VKKeys.CONTROL, false);
 		}
 	}
 

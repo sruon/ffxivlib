@@ -108,7 +108,8 @@ namespace ffxivlib
 		{
 			int bytesRead = 0;
 			IntPtr pointer = _mr.ResolvePointerPath (Constants.PARTYSIZEPTR);
-			byte count = _mr.ReadAdress (pointer, 1, out bytesRead)[0];
+			byte count = _mr.ReadAdress (pointer, 1, out bytesRead) [0];
+			//byte count = _mr.ReadAdress (IntPtr.Zero + Constants.PARTYSIZEADDR, 1, out bytesRead)[0];
 			return count;
 		}
 
