@@ -270,10 +270,10 @@ namespace ffxivlib
             //           0xB8-0xB9,  // Reserved
             //OEM_1 = 0xBA,  // Used for miscellaneous characters; it can vary by keyboard.
             // Windows 2000/XP: For the US standard keyboard, the ';:' key 
-            //OEM_PLUS = 0xBB,  // Windows 2000/XP: For any country/region, the '+' key
-            //OEM_COMMA = 0xBC,  // Windows 2000/XP: For any country/region, the ',' key
-            //OEM_MINUS = 0xBD,  // Windows 2000/XP: For any country/region, the '-' key
-            //OEM_PERIOD = 0xBE,  // Windows 2000/XP: For any country/region, the '.' key
+            OEM_PLUS = 0xBB,  // Windows 2000/XP: For any country/region, the '+' key
+            OEM_COMMA = 0xBC,  // Windows 2000/XP: For any country/region, the ',' key
+            OEM_MINUS = 0xBD,  // Windows 2000/XP: For any country/region, the '-' key
+            OEM_PERIOD = 0xBE,  // Windows 2000/XP: For any country/region, the '.' key
             //OEM_2 = 0xBF,  // Used for miscellaneous characters; it can vary by keyboard.
 #pragma warning disable 1587
             /// Windows 2000/XP: For the US standard keyboard, the '/?' key 

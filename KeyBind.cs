@@ -29,7 +29,7 @@ namespace ffxivlib
 			}
 
 			actionString = Encoding.Default.GetString (new ArraySegment<byte> (structure.actionDescription, 2, 20).ToArray ());
-			keyBindString = Encoding.Default.GetString (new ArraySegment<byte> (structure.keyBindBytes, (structure.keyBindBytes[2] == 0xC2)?4:2, 2).ToArray());
+			keyBindString = Encoding.Default.GetString (new ArraySegment<byte> (structure.keyBindBytes, (structure.keyBindBytes[2] == 0xC2)?4:2, 2).ToArray()).Trim();
 		}
 
 		public int actionId { get; set; }

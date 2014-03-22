@@ -9,8 +9,27 @@ namespace ffxivlib
 		public static void sendAction(KeyBind bind)
 		{
 			SendKeyInput instance = SendKeyInput.GetInstance ();
+			SendKeyInput.VKKeys key = 0;
 
-			SendKeyInput.VKKeys key = (SendKeyInput.VKKeys)bind.keyBindString [0];
+			switch (bind.keyBindString [0])
+			{
+			case '=':
+				key = SendKeyInput.VKKeys.OEM_PLUS;
+				break;
+			case ',':
+				key = SendKeyInput.VKKeys.OEM_COMMA;
+				break;
+			case '-':
+				key = SendKeyInput.VKKeys.OEM_MINUS;
+				break;
+			case '.':
+				key = SendKeyInput.VKKeys.OEM_PERIOD;
+				break;
+			default:
+				key = (SendKeyInput.VKKeys)bind.keyBindString [0];
+				break;
+			}
+
 			if (bind.keyBindModifier == "Shift")
 				instance.ToggleKeyState (SendKeyInput.VKKeys.SHIFT, true);
 			if (bind.keyBindModifier == "CTRL")
