@@ -19,7 +19,15 @@ namespace ffxivlib
             : base(structure, address)
         {
             Initialize();
-			Name = Encoding.Default.GetString(new ArraySegment<byte> (structure.MarkName, 1, 32).ToArray());
+			string temp = Encoding.Default.GetString(new ArraySegment<byte> (structure.MarkName, 1, 32).ToArray());
+			for (int i = 0; i < 32; ++i)
+			{
+				if (temp [i] == 0)
+				{
+					Name = temp.Substring (0, i);
+					break;
+				}
+			}
         }
 
         #endregion

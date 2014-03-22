@@ -12,6 +12,7 @@ namespace ffxivlib
         internal readonly SendKeyInput Ski;
         private readonly SigScanner _ss;
         private readonly Process ffxiv_process;
+		private IntPtr entityPointer = IntPtr.Zero;
 
         #endregion
 

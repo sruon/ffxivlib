@@ -68,8 +68,10 @@
     {
         Passive = 0x0,
         Aggressive = 0x1,
+		ReadyStance = 0x4,
         AttackingOther = 0x7,
         Attacking = 0x6,
+		Casting = 0x84,
         // Hmm...
         AttackingOther_2 = 135,
         Attacking_2 = 134

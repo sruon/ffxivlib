@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -22,6 +23,8 @@ namespace ffxivlib
         public int GatheringType { get; set; }
 
         public string Name { get; set; }
+
+		public byte[] NameBytes { get; set; }
 
         public int PCId { get; set; }
 
@@ -143,7 +146,9 @@ namespace ffxivlib
         public struct ENTITYINFO
         {
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x0)] public int GatheringType;
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] [FieldOffset(0x30)] public string Name;
+			[MarshalAs(UnmanagedType.ByValTStr, SizeConst=32)] [FieldOffset(0x30)] public string Name;
+			//[MarshalAs(UnmanagedType.ByValArray, SizeConst=32)][FieldOffset(0x30)] public byte[] NameBytes;
+			//[MarshalAs(UnmanagedType.LPStr, SizeConst = 32)] [FieldOffset(0x30)] public string Name;
             // Not exactly PC ID...
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x74)] public int PCId;
             [MarshalAs(UnmanagedType.I4)] [FieldOffset(0x78)] public int NPCId;
@@ -161,8 +166,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x188)] public ENTITYSTATUS PlayerStatus;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x189)] public bool IsGM;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x194)] public ICON Icon;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x195)] public STATUS IsEngaged;
-            [MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD78)] public int TargetId;
+            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x195)] public STATUS IsEngaged;            
+			[MarshalAs(UnmanagedType.I1)] [FieldOffset(0xAA0)] public bool HasTarget;
+			[MarshalAs(UnmanagedType.I4)] [FieldOffset(0xD78)] public int TargetId;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169A)] public byte GrandCompany;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169B)] public byte GrandCompanyRank;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x169E)] public byte Title;
@@ -179,8 +185,9 @@ namespace ffxivlib
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x16B8)] public short MaxCP;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E58)] public byte Race;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E59)] public SEX Sex;
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public COMBATSTATUS CombatStatus;
+			//[MarshalAs(UnmanagedType.I1)] [FieldOffset(0x2E72)] public COMBATSTATUS CombatStatus;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] [FieldOffset(0x2FF8)] public Buff.BUFFINFO[] _Buffs;
+			[MarshalAs(UnmanagedType.I1)] [FieldOffset(0x3012)] public COMBATSTATUS CombatStatus;
             [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x3170)] public bool IsCasting;
             [MarshalAs(UnmanagedType.I2)] [FieldOffset(0x3174)] public short CastingSpellId;
             [MarshalAs(UnmanagedType.R4)] [FieldOffset(0x31A4)] public float CastingProgress;
@@ -253,20 +260,35 @@ namespace ffxivlib
         /// <returns>Enumerable list of Entity object or</returns>
         public IEnumerable<Entity> GetEntityByName(string name)
         {
-            IntPtr pointer = _mr.GetArrayStart(Constants.PCPTR);
+			/*
+			if (entityPointer == IntPtr.Zero)
+			{
+				Player p = GetPlayerInfo ();
+				byte[] playerName = Encoding.Default.GetBytes (p.Name.Trim());
+				byte[] temp = Constants.ENTITYPTRSIG.Concat (playerName).ToArray();
+				entityPointer = GetSigScan (temp);
+			}
+			*/
+
+			IntPtr pointer = _mr.GetArrayStart(Constants.PCPTR);
+			//IntPtr pointer = entityPointer;
             var entityList = new List<Entity>();
             for (int i = 0; i < Constants.ENTITY_ARRAY_SIZE; i++)
             {
-                IntPtr address = pointer + (i*0x4);
+				IntPtr address = pointer + (i*0x4);
                 var en = _mr.CreateStructFromPointer<Entity.ENTITYINFO>(address);
                 if (!Equals(en, default(Entity.ENTITYINFO)))
                 {
-                    var e = new Entity(en, address);
-                    entityList.Add(e);
+					var e = new Entity (en, address);
+					if (e.Name.Contains(name))
+						entityList.Add (e);
                 }
             }
-            IEnumerable<Entity> results = entityList.Where(obj => obj.Structure.Name == name);
-            return results;
+			// Can't see why we would populate a list then cull after.
+			//IEnumerable<Entity> results = entityList.Where(obj => obj.Structure.Name.Contains(name));
+			//IEnumerable<Entity> results = entityList.Where(obj => obj.Name.Contains(name));
+			//return results;
+			return entityList;
         }
 
         /// <summary>
