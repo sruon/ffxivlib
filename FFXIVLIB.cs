@@ -12,6 +12,7 @@ namespace ffxivlib
         internal readonly SendKeyInput Ski;
         private readonly SigScanner _ss;
         private readonly Process ffxiv_process;
+		private IntPtr entityPointer = IntPtr.Zero;
 
         #endregion
 
@@ -39,7 +40,7 @@ namespace ffxivlib
             Pid = ffxiv_process.Id;
             _mr = MemoryReader.SetInstance(ffxiv_process);
             _ss = new SigScanner(Pid, true);
-            Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
+			Ski = SendKeyInput.SetInstance(ffxiv_process.MainWindowHandle);
         }
 
         #endregion

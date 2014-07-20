@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Linq;
 
 namespace ffxivlib
 {
@@ -14,15 +15,26 @@ namespace ffxivlib
 
         #region Constructor
 
-        public Player(PLAYERINFO structure, IntPtr address)
+		public Player(PLAYERINFO structure, IntPtr address)
             : base(structure, address)
         {
             Initialize();
+			string temp = Encoding.Default.GetString(new ArraySegment<byte> (structure.MarkName, 1, 32).ToArray());
+			for (int i = 0; i < 32; ++i)
+			{
+				if (temp [i] == 0)
+				{
+					Name = temp.Substring (0, i);
+					break;
+				}
+			}
         }
 
         #endregion
 
         #region Properties
+
+		public string Name;
 
         public int Zone
         {
@@ -287,7 +299,8 @@ namespace ffxivlib
         [StructLayout(LayoutKind.Explicit, Pack = 1)]
         public struct PLAYERINFO
         {
-            [MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB Job;
+			[MarshalAs(UnmanagedType.ByValArray, SizeConst=33)] [FieldOffset(0x00)] public byte[] MarkName;
+			[MarshalAs(UnmanagedType.I1)] [FieldOffset(0x64)] public JOB Job;
 
             #region Job Levels
 
@@ -435,6 +448,12 @@ namespace ffxivlib
 
     public partial class FFXIVLIB
     {
+		#region Internal Items
+
+		private IntPtr PlayerStructLocation = IntPtr.Zero;
+
+		#endregion
+
         #region Public methods
 
         /// <summary>
@@ -458,10 +477,29 @@ namespace ffxivlib
         /// <returns>Player object</returns>
         public Player GetPlayerInfo()
         {
-            IntPtr pointer = _mr.ResolvePointerPath(Constants.PLAYERPTR);
-            var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
+			if (this.PlayerStructLocation == IntPtr.Zero)
+			{
+				IntPtr ptr = _ss.SigScan (Constants.PLAYERADDRSIG);
+				ptr = IntPtr.Add (ptr, Constants.PLAYERADDRSIG.Length);
+				this.PlayerStructLocation = _mr.ResolvePointer (ptr);
+			}
+			var p = new Player (_mr.CreateStructFromAddress<Player.PLAYERINFO> (this.PlayerStructLocation), this.PlayerStructLocation);
             return p;
         }
+
+		public bool PlayerInBattle()
+		{
+			IntPtr pointer = _mr.ResolvePointerPath (Constants.PARTYINBATTLEPTR);
+			byte[] value = ReadMemory (pointer, 1);
+			return value [0] == 1;
+		}
+
+		public bool PlayerFollowing()
+		{
+			//IntPtr pointer = _mr.ResolvePointerPath (Constants.PLAYERFOLLOWINGPTR);
+			byte[] value = ReadMemory (IntPtr.Zero + Constants.PLAYERFOLLOWINGADDR, 1);
+			return value[0] == 1;
+		}
 
         #endregion
     }
