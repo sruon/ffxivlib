@@ -448,6 +448,12 @@ namespace ffxivlib
 
     public partial class FFXIVLIB
     {
+		#region Internal Items
+
+		private IntPtr PlayerStructLocation = IntPtr.Zero;
+
+		#endregion
+
         #region Public methods
 
         /// <summary>
@@ -471,9 +477,13 @@ namespace ffxivlib
         /// <returns>Player object</returns>
         public Player GetPlayerInfo()
         {
-			//IntPtr pointer = _mr.ResolvePointerPath(Constants.PLAYERPTR);
-			IntPtr pointer = _mr.ResolveAddress(Constants.PLAYERADDR);
-			var p = new Player(_mr.CreateStructFromAddress<Player.PLAYERINFO>(pointer), pointer);
+			if (this.PlayerStructLocation == IntPtr.Zero)
+			{
+				IntPtr ptr = _ss.SigScan (Constants.PLAYERADDRSIG);
+				ptr = IntPtr.Add (ptr, Constants.PLAYERADDRSIG.Length);
+				this.PlayerStructLocation = _mr.ResolvePointer (ptr);
+			}
+			var p = new Player (_mr.CreateStructFromAddress<Player.PLAYERINFO> (this.PlayerStructLocation), this.PlayerStructLocation);
             return p;
         }
 

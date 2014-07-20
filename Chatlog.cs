@@ -141,6 +141,12 @@ namespace ffxivlib
 
     public partial class FFXIVLIB
     {
+		#region Internal properties
+
+		private IntPtr ChatLogLocation = IntPtr.Zero;
+
+		#endregion
+
         #region Public methods
 
         /// <summary>
@@ -149,8 +155,15 @@ namespace ffxivlib
         /// <returns>Chatlog instance</returns>
         public Chatlog GetChatlog()
         {
-            IntPtr pointer = _mr.ResolvePointerPath(Constants.CHATPTR);
-            var c = new Chatlog(_mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
+			if (this.ChatLogLocation == IntPtr.Zero)
+			{
+				IntPtr ptr = _ss.SigScan (Constants.CHATSIGPTR);
+				ptr = IntPtr.Add (ptr, Constants.CHATSIGPTR.Length);
+				this.ChatLogLocation = _mr.ResolvePointer (ptr);
+			}
+            //IntPtr pointer = _mr.ResolvePointerPath(Constants.CHATPTR);
+            //var c = new Chatlog(_mr.CreateStructFromAddress<Chatlog.CHATLOGINFO>(pointer), pointer);
+			var c = new Chatlog (_mr.CreateStructFromAddress<Chatlog.CHATLOGINFO> (this.ChatLogLocation), this.ChatLogLocation);
             return c;
         }
 
