@@ -63,9 +63,10 @@ public static class Constants
 
     internal static readonly List<int> CHATPTR = new List<int>
         {
-            0xE8C6A8,
-            0x18,
-            0x204
+            0x00f9b4f0,
+            0x30,
+            0x5f0,
+            0x14
         };
 
     internal static readonly List<int> INVENTORYPTR = new List<int>
